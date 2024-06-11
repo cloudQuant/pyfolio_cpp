@@ -14,3 +14,6 @@
 [submodule "pyfolio_cpp"]
 	path = pyfolio_cpp
 	url = https://github.com/cloudQuant/pyfolio_cpp.git
+[submodule "pyfolio"]
+	path = pyfolio
+	url = https://github.com/cloudQuant/pyfolio.git
