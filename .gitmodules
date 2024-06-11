@@ -11,6 +11,6 @@
 [submodule "implot"]
 	path = implot
 	url = https://github.com/cloudQuant/implot
-[submodule "pyfolio"]
-	path = pyfolio
-	url = https://gitee.com/yunjinqi/pyfolio.git
+[submodule "pyfolio_cpp"]
+	path = pyfolio_cpp
+	url = https://github.com/cloudQuant/pyfolio_cpp.git
