@@ -1,0 +1,5 @@
+if(EXISTS "/Users/yunjinqi/Documents/pyfolio_cpp/build/pyfolio_test[1]_tests.cmake")
+  include("/Users/yunjinqi/Documents/pyfolio_cpp/build/pyfolio_test[1]_tests.cmake")
+else()
+  add_test(pyfolio_test_NOT_BUILT pyfolio_test_NOT_BUILT)
+endif()

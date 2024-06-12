@@ -44,6 +44,7 @@ endif()
 
 set(PYFOLIO_HEADERS
         include/pyfolio/utils.h
+        include/pyfolio/pos.h
 )
 
 set(PYFOLIO_SOURCES
@@ -76,7 +77,8 @@ enable_testing()
 
 add_executable(
         pyfolio_test
-        tests/test_imgui_plot.cpp
+        tests/test_plot.cpp
+        tests/test_pos.cpp
 )
 
 target_link_libraries(
