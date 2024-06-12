@@ -2,16 +2,6 @@
 	path = empyrical_cpp
 	url = https://github.com/cloudQuant/empyrical_cpp.git
 
-[submodule "implot_demos"]
-	path = implot_demos
-	url = https://github.com/cloudQuant/implot_demos
-[submodule "imgui"]
-	path = imgui
-	url = https://github.com/cloudQuant/imgui
-[submodule "implot"]
-	path = implot
-	url = https://github.com/cloudQuant/implot
-
 [submodule "pyfolio"]
 	path = pyfolio
 	url = https://github.com/cloudQuant/pyfolio.git
