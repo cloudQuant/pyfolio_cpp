@@ -1,0 +1,409 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig" kind="struct" language="C++" prot="public">
+    <compoundname>pyfolio::reporting::TearSheetConfig</compoundname>
+    <includes refid="d3/d66/tears_8h" local="no">tears.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig_1a51b2f3b26bc39e3ed52237948142c7e6" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool pyfolio::reporting::TearSheetConfig::show_plots</definition>
+        <argsstring></argsstring>
+        <name>show_plots</name>
+        <qualifiedname>pyfolio::reporting::TearSheetConfig::show_plots</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" line="23" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig_1a895394099f268e428a39e8ae8e2be802" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool pyfolio::reporting::TearSheetConfig::save_plots</definition>
+        <argsstring></argsstring>
+        <name>save_plots</name>
+        <qualifiedname>pyfolio::reporting::TearSheetConfig::save_plots</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" line="24" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig_1a5a53d80ecbf30fce8a35da55afbcb338" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string pyfolio::reporting::TearSheetConfig::output_directory</definition>
+        <argsstring></argsstring>
+        <name>output_directory</name>
+        <qualifiedname>pyfolio::reporting::TearSheetConfig::output_directory</qualifiedname>
+        <initializer>= &quot;./tear_sheets/&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" line="25" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig_1a2ebf5cc342300c59893ced3dfe5b8962" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string pyfolio::reporting::TearSheetConfig::output_format</definition>
+        <argsstring></argsstring>
+        <name>output_format</name>
+        <qualifiedname>pyfolio::reporting::TearSheetConfig::output_format</qualifiedname>
+        <initializer>= &quot;png&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" line="26" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig_1a9b292e20966ec5ba05cc066ea8e50e7b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int pyfolio::reporting::TearSheetConfig::figure_dpi</definition>
+        <argsstring></argsstring>
+        <name>figure_dpi</name>
+        <qualifiedname>pyfolio::reporting::TearSheetConfig::figure_dpi</qualifiedname>
+        <initializer>= 150</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" line="27" column="9" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig_1adcd648e0bcda9ab74265124382baa8e0" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool pyfolio::reporting::TearSheetConfig::verbose</definition>
+        <argsstring></argsstring>
+        <name>verbose</name>
+        <qualifiedname>pyfolio::reporting::TearSheetConfig::verbose</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" line="28" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig_1ae6b30d7795d62d570d2d096f339c5392" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int pyfolio::reporting::TearSheetConfig::periods_per_year</definition>
+        <argsstring></argsstring>
+        <name>periods_per_year</name>
+        <qualifiedname>pyfolio::reporting::TearSheetConfig::periods_per_year</qualifiedname>
+        <initializer>= 252</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" line="31" column="9" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig_1abcf428add5d7da5ea05bcbf6e61333b2" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::reporting::TearSheetConfig::risk_free_rate</definition>
+        <argsstring></argsstring>
+        <name>risk_free_rate</name>
+        <qualifiedname>pyfolio::reporting::TearSheetConfig::risk_free_rate</qualifiedname>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" line="32" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" bodystart="32" bodyend="-1"/>
+        <referencedby refid="d7/d68/namespacepyfolio_1_1reporting_1a958bce537a9c62b948257a4c6953425f" compoundref="d3/d66/tears_8h" startline="368" endline="422">pyfolio::reporting::create_simple_tear_sheet</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig_1a9ebff0223aad5ed5c2a073f80b2249e7" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; pyfolio::reporting::TearSheetConfig::cone_std</definition>
+        <argsstring></argsstring>
+        <name>cone_std</name>
+        <qualifiedname>pyfolio::reporting::TearSheetConfig::cone_std</qualifiedname>
+        <initializer>= {1.0, 1.5, 2.0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" line="35" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig_1a5e595df60f5ca39ab10957f12a6d9721" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool pyfolio::reporting::TearSheetConfig::bootstrap</definition>
+        <argsstring></argsstring>
+        <name>bootstrap</name>
+        <qualifiedname>pyfolio::reporting::TearSheetConfig::bootstrap</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" line="36" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig_1a5c68e5168c40f762c13b2a5bb1ae864b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int pyfolio::reporting::TearSheetConfig::bootstrap_samples</definition>
+        <argsstring></argsstring>
+        <name>bootstrap_samples</name>
+        <qualifiedname>pyfolio::reporting::TearSheetConfig::bootstrap_samples</qualifiedname>
+        <initializer>= 1000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" line="37" column="9" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig_1add8d4ba42a36897c089424be090a0129" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::reporting::TearSheetConfig::var_confidence_level</definition>
+        <argsstring></argsstring>
+        <name>var_confidence_level</name>
+        <qualifiedname>pyfolio::reporting::TearSheetConfig::var_confidence_level</qualifiedname>
+        <initializer>= 0.95</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" line="40" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig_1a216b745c2d757b99a03118a05202413d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool pyfolio::reporting::TearSheetConfig::hide_positions</definition>
+        <argsstring></argsstring>
+        <name>hide_positions</name>
+        <qualifiedname>pyfolio::reporting::TearSheetConfig::hide_positions</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" line="43" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig_1ab18485d1eed78069b9f4cf54877abd6f" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool pyfolio::reporting::TearSheetConfig::positions_in_dollars</definition>
+        <argsstring></argsstring>
+        <name>positions_in_dollars</name>
+        <qualifiedname>pyfolio::reporting::TearSheetConfig::positions_in_dollars</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" line="44" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig_1ac75c445a6796f61b0044018f89af5f56" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool pyfolio::reporting::TearSheetConfig::include_transaction_costs</definition>
+        <argsstring></argsstring>
+        <name>include_transaction_costs</name>
+        <qualifiedname>pyfolio::reporting::TearSheetConfig::include_transaction_costs</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" line="47" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig_1a71cc0e6547f9b8c7fdcd24cf9ae1926b" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::reporting::TearSheetConfig::default_slippage_bps</definition>
+        <argsstring></argsstring>
+        <name>default_slippage_bps</name>
+        <qualifiedname>pyfolio::reporting::TearSheetConfig::default_slippage_bps</qualifiedname>
+        <initializer>= 10.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" line="48" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig_1aa3175462d6934b551beca0da5ba6db5c" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool pyfolio::reporting::TearSheetConfig::analyze_round_trips</definition>
+        <argsstring></argsstring>
+        <name>analyze_round_trips</name>
+        <qualifiedname>pyfolio::reporting::TearSheetConfig::analyze_round_trips</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" line="51" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig_1ab8ac8869461b58ba54861a623d3984d6" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool pyfolio::reporting::TearSheetConfig::include_bayesian</definition>
+        <argsstring></argsstring>
+        <name>include_bayesian</name>
+        <qualifiedname>pyfolio::reporting::TearSheetConfig::include_bayesian</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" line="54" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig_1a7234753188000afa0b25859fac4840bb" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int pyfolio::reporting::TearSheetConfig::mcmc_samples</definition>
+        <argsstring></argsstring>
+        <name>mcmc_samples</name>
+        <qualifiedname>pyfolio::reporting::TearSheetConfig::mcmc_samples</qualifiedname>
+        <initializer>= 2000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" line="55" column="9" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig_1ad5cd4e8720627e094167f49df6c358e0" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool pyfolio::reporting::TearSheetConfig::include_factor_analysis</definition>
+        <argsstring></argsstring>
+        <name>include_factor_analysis</name>
+        <qualifiedname>pyfolio::reporting::TearSheetConfig::include_factor_analysis</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" line="58" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig_1ad6ff94b4661bb487be58a2e79cc0b00d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool pyfolio::reporting::TearSheetConfig::include_capacity_analysis</definition>
+        <argsstring></argsstring>
+        <name>include_capacity_analysis</name>
+        <qualifiedname>pyfolio::reporting::TearSheetConfig::include_capacity_analysis</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" line="61" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig_1a7013ec22d29e0dcf5c958bf924806cad" prot="public" static="no" mutable="no">
+        <type>std::optional&lt; <ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref> &gt;</type>
+        <definition>std::optional&lt;DateTime&gt; pyfolio::reporting::TearSheetConfig::live_start_date</definition>
+        <argsstring></argsstring>
+        <name>live_start_date</name>
+        <qualifiedname>pyfolio::reporting::TearSheetConfig::live_start_date</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" line="64" column="19" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig_1adfcefa25da0e45f4bc6acdd307483b8a" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool pyfolio::reporting::TearSheetConfig::compare_to_benchmark</definition>
+        <argsstring></argsstring>
+        <name>compare_to_benchmark</name>
+        <qualifiedname>pyfolio::reporting::TearSheetConfig::compare_to_benchmark</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" line="67" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Configuration for tear sheet generation. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>pyfolio::reporting::TearSheetConfig</label>
+        <link refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>output_directory</edgelabel>
+          <edgelabel>output_format</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>cone_std</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="2">
+        <label>std::string</label>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>std::vector&lt; double &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" line="22" column="1" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" bodystart="22" bodyend="68"/>
+    <listofallmembers>
+      <member refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig_1aa3175462d6934b551beca0da5ba6db5c" prot="public" virt="non-virtual"><scope>pyfolio::reporting::TearSheetConfig</scope><name>analyze_round_trips</name></member>
+      <member refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig_1a5e595df60f5ca39ab10957f12a6d9721" prot="public" virt="non-virtual"><scope>pyfolio::reporting::TearSheetConfig</scope><name>bootstrap</name></member>
+      <member refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig_1a5c68e5168c40f762c13b2a5bb1ae864b" prot="public" virt="non-virtual"><scope>pyfolio::reporting::TearSheetConfig</scope><name>bootstrap_samples</name></member>
+      <member refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig_1adfcefa25da0e45f4bc6acdd307483b8a" prot="public" virt="non-virtual"><scope>pyfolio::reporting::TearSheetConfig</scope><name>compare_to_benchmark</name></member>
+      <member refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig_1a9ebff0223aad5ed5c2a073f80b2249e7" prot="public" virt="non-virtual"><scope>pyfolio::reporting::TearSheetConfig</scope><name>cone_std</name></member>
+      <member refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig_1a71cc0e6547f9b8c7fdcd24cf9ae1926b" prot="public" virt="non-virtual"><scope>pyfolio::reporting::TearSheetConfig</scope><name>default_slippage_bps</name></member>
+      <member refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig_1a9b292e20966ec5ba05cc066ea8e50e7b" prot="public" virt="non-virtual"><scope>pyfolio::reporting::TearSheetConfig</scope><name>figure_dpi</name></member>
+      <member refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig_1a216b745c2d757b99a03118a05202413d" prot="public" virt="non-virtual"><scope>pyfolio::reporting::TearSheetConfig</scope><name>hide_positions</name></member>
+      <member refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig_1ab8ac8869461b58ba54861a623d3984d6" prot="public" virt="non-virtual"><scope>pyfolio::reporting::TearSheetConfig</scope><name>include_bayesian</name></member>
+      <member refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig_1ad6ff94b4661bb487be58a2e79cc0b00d" prot="public" virt="non-virtual"><scope>pyfolio::reporting::TearSheetConfig</scope><name>include_capacity_analysis</name></member>
+      <member refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig_1ad5cd4e8720627e094167f49df6c358e0" prot="public" virt="non-virtual"><scope>pyfolio::reporting::TearSheetConfig</scope><name>include_factor_analysis</name></member>
+      <member refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig_1ac75c445a6796f61b0044018f89af5f56" prot="public" virt="non-virtual"><scope>pyfolio::reporting::TearSheetConfig</scope><name>include_transaction_costs</name></member>
+      <member refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig_1a7013ec22d29e0dcf5c958bf924806cad" prot="public" virt="non-virtual"><scope>pyfolio::reporting::TearSheetConfig</scope><name>live_start_date</name></member>
+      <member refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig_1a7234753188000afa0b25859fac4840bb" prot="public" virt="non-virtual"><scope>pyfolio::reporting::TearSheetConfig</scope><name>mcmc_samples</name></member>
+      <member refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig_1a5a53d80ecbf30fce8a35da55afbcb338" prot="public" virt="non-virtual"><scope>pyfolio::reporting::TearSheetConfig</scope><name>output_directory</name></member>
+      <member refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig_1a2ebf5cc342300c59893ced3dfe5b8962" prot="public" virt="non-virtual"><scope>pyfolio::reporting::TearSheetConfig</scope><name>output_format</name></member>
+      <member refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig_1ae6b30d7795d62d570d2d096f339c5392" prot="public" virt="non-virtual"><scope>pyfolio::reporting::TearSheetConfig</scope><name>periods_per_year</name></member>
+      <member refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig_1ab18485d1eed78069b9f4cf54877abd6f" prot="public" virt="non-virtual"><scope>pyfolio::reporting::TearSheetConfig</scope><name>positions_in_dollars</name></member>
+      <member refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig_1abcf428add5d7da5ea05bcbf6e61333b2" prot="public" virt="non-virtual"><scope>pyfolio::reporting::TearSheetConfig</scope><name>risk_free_rate</name></member>
+      <member refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig_1a895394099f268e428a39e8ae8e2be802" prot="public" virt="non-virtual"><scope>pyfolio::reporting::TearSheetConfig</scope><name>save_plots</name></member>
+      <member refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig_1a51b2f3b26bc39e3ed52237948142c7e6" prot="public" virt="non-virtual"><scope>pyfolio::reporting::TearSheetConfig</scope><name>show_plots</name></member>
+      <member refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig_1add8d4ba42a36897c089424be090a0129" prot="public" virt="non-virtual"><scope>pyfolio::reporting::TearSheetConfig</scope><name>var_confidence_level</name></member>
+      <member refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig_1adcd648e0bcda9ab74265124382baa8e0" prot="public" virt="non-virtual"><scope>pyfolio::reporting::TearSheetConfig</scope><name>verbose</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

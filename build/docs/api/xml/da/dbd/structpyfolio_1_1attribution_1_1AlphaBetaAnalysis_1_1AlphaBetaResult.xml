@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="da/dbd/structpyfolio_1_1attribution_1_1AlphaBetaAnalysis_1_1AlphaBetaResult" kind="struct" language="C++" prot="public">
+    <compoundname>pyfolio::attribution::AlphaBetaAnalysis::AlphaBetaResult</compoundname>
+    <includes refid="da/dd4/attribution_8h" local="no">attribution.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="da/dbd/structpyfolio_1_1attribution_1_1AlphaBetaAnalysis_1_1AlphaBetaResult_1a5a9d35e58d436aedbadd418650cd1444" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::attribution::AlphaBetaAnalysis::AlphaBetaResult::alpha</definition>
+        <argsstring></argsstring>
+        <name>alpha</name>
+        <qualifiedname>pyfolio::attribution::AlphaBetaAnalysis::AlphaBetaResult::alpha</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" line="404" column="16" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" bodystart="404" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dbd/structpyfolio_1_1attribution_1_1AlphaBetaAnalysis_1_1AlphaBetaResult_1a8ac9e2b0cb92b5b59f234c4f4271ae1a" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::attribution::AlphaBetaAnalysis::AlphaBetaResult::beta</definition>
+        <argsstring></argsstring>
+        <name>beta</name>
+        <qualifiedname>pyfolio::attribution::AlphaBetaAnalysis::AlphaBetaResult::beta</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" line="405" column="16" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" bodystart="405" bodyend="-1"/>
+        <referencedby refid="d9/dc2/classpyfolio_1_1attribution_1_1AlphaBetaAnalysis_1aa1a010f21d746f4b5ca020320a4ad529" compoundref="da/dd4/attribution_8h" startline="417" endline="484">pyfolio::attribution::AlphaBetaAnalysis::calculate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="da/dbd/structpyfolio_1_1attribution_1_1AlphaBetaAnalysis_1_1AlphaBetaResult_1a31c462a120c3bdc2e43751b28226d800" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::attribution::AlphaBetaAnalysis::AlphaBetaResult::r_squared</definition>
+        <argsstring></argsstring>
+        <name>r_squared</name>
+        <qualifiedname>pyfolio::attribution::AlphaBetaAnalysis::AlphaBetaResult::r_squared</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" line="406" column="16" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" bodystart="406" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dbd/structpyfolio_1_1attribution_1_1AlphaBetaAnalysis_1_1AlphaBetaResult_1abdc71904641a095d8c7acbfcd8060c5a" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::attribution::AlphaBetaAnalysis::AlphaBetaResult::tracking_error</definition>
+        <argsstring></argsstring>
+        <name>tracking_error</name>
+        <qualifiedname>pyfolio::attribution::AlphaBetaAnalysis::AlphaBetaResult::tracking_error</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" line="407" column="16" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" bodystart="407" bodyend="-1"/>
+        <referencedby refid="d9/dc2/classpyfolio_1_1attribution_1_1AlphaBetaAnalysis_1aa1a010f21d746f4b5ca020320a4ad529" compoundref="da/dd4/attribution_8h" startline="417" endline="484">pyfolio::attribution::AlphaBetaAnalysis::calculate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="da/dbd/structpyfolio_1_1attribution_1_1AlphaBetaAnalysis_1_1AlphaBetaResult_1af4dd7d95f36605e3733e29fed79d657f" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::attribution::AlphaBetaAnalysis::AlphaBetaResult::information_ratio</definition>
+        <argsstring></argsstring>
+        <name>information_ratio</name>
+        <qualifiedname>pyfolio::attribution::AlphaBetaAnalysis::AlphaBetaResult::information_ratio</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" line="408" column="16" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" bodystart="408" bodyend="-1"/>
+        <referencedby refid="d9/dc2/classpyfolio_1_1attribution_1_1AlphaBetaAnalysis_1aa1a010f21d746f4b5ca020320a4ad529" compoundref="da/dd4/attribution_8h" startline="417" endline="484">pyfolio::attribution::AlphaBetaAnalysis::calculate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="da/dbd/structpyfolio_1_1attribution_1_1AlphaBetaAnalysis_1_1AlphaBetaResult_1ad37262010c03f54c2a8fb0444de158a1" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::attribution::AlphaBetaAnalysis::AlphaBetaResult::active_return</definition>
+        <argsstring></argsstring>
+        <name>active_return</name>
+        <qualifiedname>pyfolio::attribution::AlphaBetaAnalysis::AlphaBetaResult::active_return</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" line="409" column="16" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" bodystart="409" bodyend="-1"/>
+        <referencedby refid="d9/dc2/classpyfolio_1_1attribution_1_1AlphaBetaAnalysis_1aa1a010f21d746f4b5ca020320a4ad529" compoundref="da/dd4/attribution_8h" startline="417" endline="484">pyfolio::attribution::AlphaBetaAnalysis::calculate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="da/dbd/structpyfolio_1_1attribution_1_1AlphaBetaAnalysis_1_1AlphaBetaResult_1a68f6ed1ac77d0c54b824d89c6d598d52" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::attribution::AlphaBetaAnalysis::AlphaBetaResult::systematic_risk</definition>
+        <argsstring></argsstring>
+        <name>systematic_risk</name>
+        <qualifiedname>pyfolio::attribution::AlphaBetaAnalysis::AlphaBetaResult::systematic_risk</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" line="410" column="16" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" bodystart="410" bodyend="-1"/>
+        <referencedby refid="d9/dc2/classpyfolio_1_1attribution_1_1AlphaBetaAnalysis_1aa1a010f21d746f4b5ca020320a4ad529" compoundref="da/dd4/attribution_8h" startline="417" endline="484">pyfolio::attribution::AlphaBetaAnalysis::calculate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="da/dbd/structpyfolio_1_1attribution_1_1AlphaBetaAnalysis_1_1AlphaBetaResult_1a2cf02a111b19b5e14f172656a2f89fda" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::attribution::AlphaBetaAnalysis::AlphaBetaResult::specific_risk</definition>
+        <argsstring></argsstring>
+        <name>specific_risk</name>
+        <qualifiedname>pyfolio::attribution::AlphaBetaAnalysis::AlphaBetaResult::specific_risk</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" line="411" column="16" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" bodystart="411" bodyend="-1"/>
+        <referencedby refid="d9/dc2/classpyfolio_1_1attribution_1_1AlphaBetaAnalysis_1aa1a010f21d746f4b5ca020320a4ad529" compoundref="da/dd4/attribution_8h" startline="417" endline="484">pyfolio::attribution::AlphaBetaAnalysis::calculate</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" line="403" column="5" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" bodystart="403" bodyend="412"/>
+    <listofallmembers>
+      <member refid="da/dbd/structpyfolio_1_1attribution_1_1AlphaBetaAnalysis_1_1AlphaBetaResult_1ad37262010c03f54c2a8fb0444de158a1" prot="public" virt="non-virtual"><scope>pyfolio::attribution::AlphaBetaAnalysis::AlphaBetaResult</scope><name>active_return</name></member>
+      <member refid="da/dbd/structpyfolio_1_1attribution_1_1AlphaBetaAnalysis_1_1AlphaBetaResult_1a5a9d35e58d436aedbadd418650cd1444" prot="public" virt="non-virtual"><scope>pyfolio::attribution::AlphaBetaAnalysis::AlphaBetaResult</scope><name>alpha</name></member>
+      <member refid="da/dbd/structpyfolio_1_1attribution_1_1AlphaBetaAnalysis_1_1AlphaBetaResult_1a8ac9e2b0cb92b5b59f234c4f4271ae1a" prot="public" virt="non-virtual"><scope>pyfolio::attribution::AlphaBetaAnalysis::AlphaBetaResult</scope><name>beta</name></member>
+      <member refid="da/dbd/structpyfolio_1_1attribution_1_1AlphaBetaAnalysis_1_1AlphaBetaResult_1af4dd7d95f36605e3733e29fed79d657f" prot="public" virt="non-virtual"><scope>pyfolio::attribution::AlphaBetaAnalysis::AlphaBetaResult</scope><name>information_ratio</name></member>
+      <member refid="da/dbd/structpyfolio_1_1attribution_1_1AlphaBetaAnalysis_1_1AlphaBetaResult_1a31c462a120c3bdc2e43751b28226d800" prot="public" virt="non-virtual"><scope>pyfolio::attribution::AlphaBetaAnalysis::AlphaBetaResult</scope><name>r_squared</name></member>
+      <member refid="da/dbd/structpyfolio_1_1attribution_1_1AlphaBetaAnalysis_1_1AlphaBetaResult_1a2cf02a111b19b5e14f172656a2f89fda" prot="public" virt="non-virtual"><scope>pyfolio::attribution::AlphaBetaAnalysis::AlphaBetaResult</scope><name>specific_risk</name></member>
+      <member refid="da/dbd/structpyfolio_1_1attribution_1_1AlphaBetaAnalysis_1_1AlphaBetaResult_1a68f6ed1ac77d0c54b824d89c6d598d52" prot="public" virt="non-virtual"><scope>pyfolio::attribution::AlphaBetaAnalysis::AlphaBetaResult</scope><name>systematic_risk</name></member>
+      <member refid="da/dbd/structpyfolio_1_1attribution_1_1AlphaBetaAnalysis_1_1AlphaBetaResult_1abdc71904641a095d8c7acbfcd8060c5a" prot="public" virt="non-virtual"><scope>pyfolio::attribution::AlphaBetaAnalysis::AlphaBetaResult</scope><name>tracking_error</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

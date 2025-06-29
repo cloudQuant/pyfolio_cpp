@@ -1,0 +1,31 @@
+# Core dependencies
+numpy>=1.20.0
+pandas>=1.3.0
+pybind11>=2.10.0
+
+# Optional dependencies for enhanced functionality
+matplotlib>=3.3.0
+scipy>=1.7.0
+
+# Visualization (optional)
+plotly>=5.0.0
+dash>=2.0.0
+
+# Machine Learning (optional)
+scikit-learn>=1.0.0
+
+# Development dependencies (optional)
+pytest>=6.0
+pytest-cov
+black
+flake8
+mypy
+
+# Documentation (optional)
+sphinx
+sphinx-rtd-theme
+nbsphinx
+
+# Jupyter support (optional)
+jupyter
+ipywidgets

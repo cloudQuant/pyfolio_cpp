@@ -1,0 +1,927 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="d9/d49/types_8h" kind="file" language="C++">
+    <compoundname>types.h</compoundname>
+    <includes local="no">chrono</includes>
+    <includes local="no">concepts</includes>
+    <includes local="no">cstddef</includes>
+    <includes local="no">cstdint</includes>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="d6/dfe/bayesian_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h</includedby>
+    <includedby refid="d4/dc1/cached__performance__metrics_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/cached_performance_metrics.h</includedby>
+    <includedby refid="d4/d7b/market__indicators_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h</includedby>
+    <includedby refid="de/d88/performance__metrics_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h</includedby>
+    <includedby refid="d2/dfc/regime__detection_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h</includedby>
+    <includedby refid="d5/db2/analytics_2statistics_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h</includedby>
+    <includedby refid="d2/d40/turnover__enhanced_8h" local="no">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h</includedby>
+    <includedby refid="da/dd4/attribution_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h</includedby>
+    <includedby refid="db/d26/capacity_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/capacity/capacity.h</includedby>
+    <includedby refid="d2/d99/dataframe_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/dataframe.h</includedby>
+    <includedby refid="de/d1b/datetime_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h</includedby>
+    <includedby refid="d8/d51/time__series_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/time_series.h</includedby>
+    <includedby refid="d2/db9/data__loader_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/io/data_loader.h</includedby>
+    <includedby refid="d6/d99/simd__math_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/simd_math.h</includedby>
+    <includedby refid="d3/dbe/math_2statistics_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h</includedby>
+    <includedby refid="df/d9d/pool__allocator_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h</includedby>
+    <includedby refid="d9/d36/parallel__algorithms_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/parallel/parallel_algorithms.h</includedby>
+    <includedby refid="d8/de8/drawdown_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/drawdown.h</includedby>
+    <includedby refid="d7/d06/ratios_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/ratios.h</includedby>
+    <includedby refid="d4/d73/returns_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/returns.h</includedby>
+    <includedby refid="d3/d7e/rolling__metrics_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/rolling_metrics.h</includedby>
+    <includedby refid="d0/db7/allocation_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h</includedby>
+    <includedby refid="d7/d0c/holdings_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/holdings.h</includedby>
+    <includedby refid="d0/d04/positions_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/positions.h</includedby>
+    <includedby refid="d3/d30/pyfolio_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/pyfolio.h</includedby>
+    <includedby refid="d3/d66/tears_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h</includedby>
+    <includedby refid="d4/da5/factor__exposure_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/factor_exposure.h</includedby>
+    <includedby refid="df/d46/var_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/var.h</includedby>
+    <includedby refid="d7/d00/round__trips_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/round_trips.h</includedby>
+    <includedby refid="dd/d45/trading__costs_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/trading_costs.h</includedby>
+    <includedby refid="d0/db6/transaction_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/transaction.h</includedby>
+    <includedby refid="d2/d59/intraday_8h" local="no">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/utils/intraday.h</includedby>
+    <includedby refid="db/d38/validation_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/utils/validation.h</includedby>
+    <includedby refid="dc/d16/matplotlib__integration_8h" local="no">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h</includedby>
+    <includedby refid="d1/dcd/plotly__enhanced_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotly_enhanced.h</includedby>
+    <includedby refid="d3/df8/plotting_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h</includedby>
+    <includedby refid="d4/d45/json__serializer_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/json_serializer.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/types.h</label>
+        <link refid="d9/d49/types_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>chrono</label>
+      </node>
+      <node id="3">
+        <label>concepts</label>
+      </node>
+      <node id="4">
+        <label>cstddef</label>
+      </node>
+      <node id="5">
+        <label>cstdint</label>
+      </node>
+      <node id="6">
+        <label>string</label>
+      </node>
+      <node id="7">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="20">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/examples/attribution_example.cpp</label>
+        <link refid="d8/d00/attribution__example_8cpp"/>
+      </node>
+      <node id="30">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/examples/basic_example.cpp</label>
+        <link refid="d3/d6a/basic__example_8cpp"/>
+      </node>
+      <node id="3">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/examples/bayesian_analysis_example.cpp</label>
+        <link refid="da/d7c/bayesian__analysis__example_8cpp"/>
+      </node>
+      <node id="22">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/examples/capacity_analysis_example.cpp</label>
+        <link refid="d1/db6/capacity__analysis__example_8cpp"/>
+      </node>
+      <node id="12">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/examples/plotly_enhanced_example.cpp</label>
+        <link refid="d7/d5f/plotly__enhanced__example_8cpp"/>
+      </node>
+      <node id="8">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/examples/rest_api_example.cpp</label>
+        <link refid="d1/d43/rest__api__example_8cpp"/>
+      </node>
+      <node id="31">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/examples/risk_analysis_example.cpp</label>
+        <link refid="db/dc6/risk__analysis__example_8cpp"/>
+      </node>
+      <node id="25">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/examples/transaction_analysis_example.cpp</label>
+        <link refid="d7/d56/transaction__analysis__example_8cpp"/>
+      </node>
+      <node id="2">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h</label>
+        <link refid="d6/dfe/bayesian_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/cached_performance_metrics.h</label>
+        <link refid="d4/dc1/cached__performance__metrics_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h</label>
+        <link refid="d4/d7b/market__indicators_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/parallel_performance_suite.h</label>
+        <link refid="dd/d71/parallel__performance__suite_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_analysis_suite.h</label>
+        <link refid="df/de7/performance__analysis__suite_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h</label>
+        <link refid="de/d88/performance__metrics_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h</label>
+        <link refid="d2/dfc/regime__detection_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h</label>
+        <link refid="d5/db2/analytics_2statistics_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h</label>
+        <link refid="d2/d40/turnover__enhanced_8h"/>
+      </node>
+      <node id="19">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h</label>
+        <link refid="da/dd4/attribution_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/capacity/capacity.h</label>
+        <link refid="db/d26/capacity_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/dataframe.h</label>
+        <link refid="d2/d99/dataframe_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h</label>
+        <link refid="de/d1b/datetime_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/time_series.h</label>
+        <link refid="d8/d51/time__series_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/types.h</label>
+        <link refid="d9/d49/types_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/io/data_loader.h</label>
+        <link refid="d2/db9/data__loader_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/simd_math.h</label>
+        <link refid="d6/d99/simd__math_8h"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h</label>
+        <link refid="d3/dbe/math_2statistics_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h</label>
+        <link refid="df/d9d/pool__allocator_8h"/>
+      </node>
+      <node id="41">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/parallel/parallel_algorithms.h</label>
+        <link refid="d9/d36/parallel__algorithms_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/drawdown.h</label>
+        <link refid="d8/de8/drawdown_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/ratios.h</label>
+        <link refid="d7/d06/ratios_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/returns.h</label>
+        <link refid="d4/d73/returns_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/rolling_metrics.h</label>
+        <link refid="d3/d7e/rolling__metrics_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h</label>
+        <link refid="d0/db7/allocation_8h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/holdings.h</label>
+        <link refid="d7/d0c/holdings_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/positions.h</label>
+        <link refid="d0/d04/positions_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/pyfolio.h</label>
+        <link refid="d3/d30/pyfolio_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/interesting_periods.h</label>
+        <link refid="d2/d26/interesting__periods_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h</label>
+        <link refid="d3/d66/tears_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/factor_exposure.h</label>
+        <link refid="d4/da5/factor__exposure_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/var.h</label>
+        <link refid="df/d46/var_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/round_trips.h</label>
+        <link refid="d7/d00/round__trips_8h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/trading_costs.h</label>
+        <link refid="dd/d45/trading__costs_8h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/transaction.h</label>
+        <link refid="d0/db6/transaction_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/utils/intraday.h</label>
+        <link refid="d2/d59/intraday_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/utils/validation.h</label>
+        <link refid="db/d38/validation_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h</label>
+        <link refid="dc/d16/matplotlib__integration_8h"/>
+      </node>
+      <node id="14">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotly_enhanced.h</label>
+        <link refid="d1/dcd/plotly__enhanced_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h</label>
+        <link refid="d3/df8/plotting_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/json_serializer.h</label>
+        <link refid="d4/d45/json__serializer_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/rest_api_server.h</label>
+        <link refid="de/de7/rest__api__server_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/math/simd_math.cpp</label>
+        <link refid="df/d95/simd__math_8cpp"/>
+      </node>
+      <node id="28">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/utils/intraday.cpp</label>
+        <link refid="dc/d51/intraday_8cpp"/>
+      </node>
+      <node id="15">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp</label>
+        <link refid="d2/dd1/plotly__enhanced_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d8/dde/classpyfolio_1_1StrongType" prot="public">pyfolio::StrongType</innerclass>
+    <innerclass refid="dc/d5c/structpyfolio_1_1PriceTag" prot="public">pyfolio::PriceTag</innerclass>
+    <innerclass refid="d3/d9b/structpyfolio_1_1ReturnTag" prot="public">pyfolio::ReturnTag</innerclass>
+    <innerclass refid="d9/d23/structpyfolio_1_1VolumeTag" prot="public">pyfolio::VolumeTag</innerclass>
+    <innerclass refid="dc/dc1/structpyfolio_1_1WeightTag" prot="public">pyfolio::WeightTag</innerclass>
+    <innerclass refid="de/d03/structpyfolio_1_1MarketData" prot="public">pyfolio::MarketData</innerclass>
+    <innerclass refid="d4/d3e/structpyfolio_1_1OHLCVData" prot="public">pyfolio::OHLCVData</innerclass>
+    <innerclass refid="d6/df6/structpyfolio_1_1Position" prot="public">pyfolio::Position</innerclass>
+    <innerclass refid="d5/d11/structpyfolio_1_1Transaction" prot="public">pyfolio::Transaction</innerclass>
+    <innernamespace refid="d7/df8/namespacepyfolio">pyfolio</innernamespace>
+    <innernamespace refid="db/d9c/namespacepyfolio_1_1constants">pyfolio::constants</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;chrono&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;concepts&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstddef&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdint&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d7/df8/namespacepyfolio" kindref="compound">pyfolio</ref><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Fundamental<sp/>types</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="d7/df8/namespacepyfolio_1a7801b507a1c22f3c1a83bdef81846fc6" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="d7/df8/namespacepyfolio_1a7801b507a1c22f3c1a83bdef81846fc6" kindref="member">Price</ref><sp/><sp/>=<sp/>double;</highlight></codeline>
+<codeline lineno="14" refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref><sp/>=<sp/>double;</highlight></codeline>
+<codeline lineno="15" refid="d7/df8/namespacepyfolio_1a8585524138273c4f4b446ce83ef01994" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="d7/df8/namespacepyfolio_1a8585524138273c4f4b446ce83ef01994" kindref="member">Volume</ref><sp/>=<sp/>double;</highlight></codeline>
+<codeline lineno="16" refid="d7/df8/namespacepyfolio_1ae1b4389f0d1a53d3ebd7d2aec59e0360" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="d7/df8/namespacepyfolio_1ae1b4389f0d1a53d3ebd7d2aec59e0360" kindref="member">Shares</ref><sp/>=<sp/>double;</highlight></codeline>
+<codeline lineno="17" refid="d7/df8/namespacepyfolio_1af989fd50261f45e6abc49511c6dfbdf0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="d7/df8/namespacepyfolio_1af989fd50261f45e6abc49511c6dfbdf0" kindref="member">Weight</ref><sp/>=<sp/>double;</highlight></codeline>
+<codeline lineno="18" refid="d7/df8/namespacepyfolio_1a233d643c58ac2bafc01cbbb358eb20d4" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="d7/df8/namespacepyfolio_1a233d643c58ac2bafc01cbbb358eb20d4" kindref="member">Ratio</ref><sp/><sp/>=<sp/>double;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Time<sp/>types</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="d7/df8/namespacepyfolio_1ad77d362107c51226c09e896bdf822f9d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="d7/df8/namespacepyfolio_1ad77d362107c51226c09e896bdf822f9d" kindref="member">TimePoint</ref><sp/>=<sp/>std::chrono::system_clock::time_point;</highlight></codeline>
+<codeline lineno="22" refid="d7/df8/namespacepyfolio_1a5ae899d21899d08c2d1ae83add7cadbb" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="d7/df8/namespacepyfolio_1a5ae899d21899d08c2d1ae83add7cadbb" kindref="member">Duration</ref><sp/><sp/>=<sp/>std::chrono::system_clock::duration;</highlight></codeline>
+<codeline lineno="23" refid="d7/df8/namespacepyfolio_1a0eb4888cbb06a75f7f9f58ec28061ba8" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="d7/df8/namespacepyfolio_1a0eb4888cbb06a75f7f9f58ec28061ba8" kindref="member">Date</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>std::chrono::year_month_day;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/>String<sp/>types</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="d7/df8/namespacepyfolio_1a66e3e2ebe494a9dccbeb419408aaf7ea" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="d7/df8/namespacepyfolio_1a66e3e2ebe494a9dccbeb419408aaf7ea" kindref="member">Symbol</ref><sp/><sp/><sp/>=<sp/>std::string;</highlight></codeline>
+<codeline lineno="27" refid="d7/df8/namespacepyfolio_1a49f3a0c47eb3421e87ad773e9b97ff2a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="d7/df8/namespacepyfolio_1a49f3a0c47eb3421e87ad773e9b97ff2a" kindref="member">Currency</ref><sp/>=<sp/>std::string;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Index<sp/>types</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="d7/df8/namespacepyfolio_1a04d0049d218cd541cdc1785744d848cd" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="d7/df8/namespacepyfolio_1a04d0049d218cd541cdc1785744d848cd" kindref="member">Index</ref><sp/>=<sp/>std::size_t;</highlight></codeline>
+<codeline lineno="31" refid="d7/df8/namespacepyfolio_1a03c09fd9b3b52c867944288b0322d060" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="d7/df8/namespacepyfolio_1a03c09fd9b3b52c867944288b0322d060" kindref="member">Count</ref><sp/>=<sp/>std::size_t;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Financial<sp/>concepts</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="35" refid="dd/daf/conceptpyfolio_1_1Numeric" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">concept<sp/></highlight><highlight class="normal"><ref refid="dd/daf/conceptpyfolio_1_1Numeric" kindref="compound">Numeric</ref><sp/>=<sp/>std::integral&lt;T&gt;<sp/>||<sp/>std::floating_point&lt;T&gt;;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="38" refid="d4/dcc/conceptpyfolio_1_1FinancialValue" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">concept<sp/></highlight><highlight class="normal"><ref refid="d4/dcc/conceptpyfolio_1_1FinancialValue" kindref="compound">FinancialValue</ref><sp/>=<sp/><ref refid="dd/daf/conceptpyfolio_1_1Numeric" kindref="compound">Numeric&lt;T&gt;</ref><sp/>&amp;&amp;<sp/></highlight><highlight class="keyword">requires</highlight><highlight class="normal">(T<sp/>t)<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>t<sp/>&gt;=<sp/>T{0};<sp/><sp/></highlight><highlight class="comment">//<sp/>Must<sp/>support<sp/>comparison<sp/>with<sp/>zero</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="43" refid="db/dc7/conceptpyfolio_1_1TimeSeriesValue" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">concept<sp/></highlight><highlight class="normal"><ref refid="db/dc7/conceptpyfolio_1_1TimeSeriesValue" kindref="compound">TimeSeriesValue</ref><sp/>=<sp/></highlight><highlight class="keyword">requires</highlight><highlight class="normal">(T<sp/>t)<sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T::value_type;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>t.size();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>t.begin();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>t.end();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="51" refid="d3/d21/conceptpyfolio_1_1Portfolio" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">concept<sp/></highlight><highlight class="normal"><ref refid="d3/d21/conceptpyfolio_1_1Portfolio" kindref="compound">Portfolio</ref><sp/>=<sp/></highlight><highlight class="keyword">requires</highlight><highlight class="normal">(T<sp/>t)<sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>t.get_returns();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>t.get_positions();</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>t.get_transactions();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Constants</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="db/d9c/namespacepyfolio_1_1constants" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="db/d9c/namespacepyfolio_1_1constants" kindref="compound">constants</ref><sp/>{</highlight></codeline>
+<codeline lineno="59" refid="db/d9c/namespacepyfolio_1_1constants_1accf4b9e8a1c9179437b61a3f9a0e2e53" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="db/d9c/namespacepyfolio_1_1constants_1accf4b9e8a1c9179437b61a3f9a0e2e53" kindref="member">TRADING_DAYS_PER_YEAR</ref><sp/><sp/>=<sp/>252.0;</highlight></codeline>
+<codeline lineno="60" refid="db/d9c/namespacepyfolio_1_1constants_1a4b20009daae97408f5f6992d397238df" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="db/d9c/namespacepyfolio_1_1constants_1a4b20009daae97408f5f6992d397238df" kindref="member">BUSINESS_DAYS_PER_YEAR</ref><sp/>=<sp/>260.0;</highlight></codeline>
+<codeline lineno="61" refid="db/d9c/namespacepyfolio_1_1constants_1a3476d65d02bb09c32b963a656fbabc54" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="db/d9c/namespacepyfolio_1_1constants_1a3476d65d02bb09c32b963a656fbabc54" kindref="member">DAYS_PER_YEAR</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>365.25;</highlight></codeline>
+<codeline lineno="62" refid="db/d9c/namespacepyfolio_1_1constants_1aaf02ba4a6fdbff6c4d053915aef4c583" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="db/d9c/namespacepyfolio_1_1constants_1aaf02ba4a6fdbff6c4d053915aef4c583" kindref="member">MONTHS_PER_YEAR</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>12.0;</highlight></codeline>
+<codeline lineno="63" refid="db/d9c/namespacepyfolio_1_1constants_1a72bad45b01d55a713757d670c72152d5" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="db/d9c/namespacepyfolio_1_1constants_1a72bad45b01d55a713757d670c72152d5" kindref="member">WEEKS_PER_YEAR</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>52.0;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="db/d9c/namespacepyfolio_1_1constants_1a6b629b058e12e9c8e6b1c39036389ddf" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="db/d9c/namespacepyfolio_1_1constants_1a6b629b058e12e9c8e6b1c39036389ddf" kindref="member">DEFAULT_RISK_FREE_RATE</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0.02;<sp/><sp/></highlight><highlight class="comment">//<sp/>2%<sp/>annual<sp/>risk-free<sp/>rate</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="db/d9c/namespacepyfolio_1_1constants_1a73eeb10def941e165c021f17d8d35a93" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="db/d9c/namespacepyfolio_1_1constants_1a73eeb10def941e165c021f17d8d35a93" kindref="member">DEFAULT_CONFIDENCE_LEVEL</ref><sp/><sp/><sp/><sp/>=<sp/>0.95;</highlight></codeline>
+<codeline lineno="67" refid="db/d9c/namespacepyfolio_1_1constants_1a71673d2da2f4399213373b47600a5c2d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="db/d9c/namespacepyfolio_1_1constants_1a71673d2da2f4399213373b47600a5c2d" kindref="member">DEFAULT_LIQUIDITY_THRESHOLD</ref><sp/>=<sp/>0.2;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="db/d9c/namespacepyfolio_1_1constants_1a68db126ae84ec5242d631178d2b74542" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="db/d9c/namespacepyfolio_1_1constants_1a68db126ae84ec5242d631178d2b74542" kindref="member">EPSILON</ref><sp/>=<sp/>1e-10;</highlight></codeline>
+<codeline lineno="70" refid="db/d9c/namespacepyfolio_1_1constants_1a2f4a46f89359aea86c5badcd5aadb3f1" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="db/d9c/namespacepyfolio_1_1constants_1a2f4a46f89359aea86c5badcd5aadb3f1" kindref="member">NaN</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>std::numeric_limits&lt;double&gt;::quiet_NaN();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>constants</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Enumerations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="d7/df8/namespacepyfolio_1ad4beb384aab829428a007308f1d0c92eac512b685438f41daa7386329a3b8f8d3" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1ad4beb384aab829428a007308f1d0c92e" kindref="member">Frequency</ref><sp/>{<sp/><ref refid="d7/df8/namespacepyfolio_1ad4beb384aab829428a007308f1d0c92eac512b685438f41daa7386329a3b8f8d3" kindref="member">Daily</ref>,<sp/><ref refid="d7/df8/namespacepyfolio_1ad4beb384aab829428a007308f1d0c92ea6c25e6a6da95b3d583c6ec4c3f82ed4d" kindref="member">Weekly</ref>,<sp/><ref refid="d7/df8/namespacepyfolio_1ad4beb384aab829428a007308f1d0c92ea9030e39f00132d583da4122532e509e9" kindref="member">Monthly</ref>,<sp/><ref refid="d7/df8/namespacepyfolio_1ad4beb384aab829428a007308f1d0c92eabe92c62702dcec6751c101b5adb0ce3b" kindref="member">Quarterly</ref>,<sp/><ref refid="d7/df8/namespacepyfolio_1ad4beb384aab829428a007308f1d0c92eacf5ea7953dc47105e0eb179dbefaaf46" kindref="member">Yearly</ref><sp/>};</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="d7/df8/namespacepyfolio_1a9824011f2c73eaead63036496a839c64ad1d25b9ff7906919775079068a81aee7" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1a9824011f2c73eaead63036496a839c64" kindref="member">ReturnType</ref><sp/>{<sp/><ref refid="d7/df8/namespacepyfolio_1a9824011f2c73eaead63036496a839c64a1fbb1e3943c2c6c560247ac8f9289780" kindref="member">Simple</ref>,<sp/><ref refid="d7/df8/namespacepyfolio_1a9824011f2c73eaead63036496a839c64a2f8e38ec1a5832670c5011a71603c929" kindref="member">Logarithmic</ref>,<sp/><ref refid="d7/df8/namespacepyfolio_1a9824011f2c73eaead63036496a839c64ad1d25b9ff7906919775079068a81aee7" kindref="member">Excess</ref><sp/>};</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="d7/df8/namespacepyfolio_1a878d87f23cdfd8de543f93bf4511621da169eb748ed4f8d7c897dd1d589420bdc" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1a878d87f23cdfd8de543f93bf4511621d" kindref="member">RiskMetric</ref><sp/>{<sp/><ref refid="d7/df8/namespacepyfolio_1a878d87f23cdfd8de543f93bf4511621da899857f2795e1307be64b0d9b2acac5c" kindref="member">VaR</ref>,<sp/><ref refid="d7/df8/namespacepyfolio_1a878d87f23cdfd8de543f93bf4511621da169eb748ed4f8d7c897dd1d589420bdc" kindref="member">CVaR</ref>,<sp/><ref refid="d7/df8/namespacepyfolio_1a878d87f23cdfd8de543f93bf4511621da6a2bb691bf584e7b0eb367d9e0f603ec" kindref="member">MaxDrawdown</ref>,<sp/><ref refid="d7/df8/namespacepyfolio_1a878d87f23cdfd8de543f93bf4511621dad4192ca9679d38110983141b896eebbf" kindref="member">Volatility</ref><sp/>};</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="d7/df8/namespacepyfolio_1a33386bf5b0e8995594411112bb776bd8" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1a33386bf5b0e8995594411112bb776bd8" kindref="member">AttributionMethod</ref><sp/>{<sp/><ref refid="d7/df8/namespacepyfolio_1a33386bf5b0e8995594411112bb776bd8adb8990b2de3db44c0982bdd844195666" kindref="member">Brinson</ref>,<sp/><ref refid="d7/df8/namespacepyfolio_1a33386bf5b0e8995594411112bb776bd8af129b025518842a5db215f398cf8495d" kindref="member">BrinsonFachler</ref>,<sp/><ref refid="d7/df8/namespacepyfolio_1a33386bf5b0e8995594411112bb776bd8aadf9f772a73f364e4ce6c52b9fae740d" kindref="member">Geometric</ref><sp/>};</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Resampling<sp/>frequency<sp/>alias<sp/>for<sp/>compatibility</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="d7/df8/namespacepyfolio_1aba6ec9c72e78b7a0d257947aa5ee8133" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="d7/df8/namespacepyfolio_1aba6ec9c72e78b7a0d257947aa5ee8133" kindref="member">ResampleFrequency</ref><sp/>=<sp/><ref refid="d7/df8/namespacepyfolio_1ad4beb384aab829428a007308f1d0c92e" kindref="member">Frequency</ref>;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Fill<sp/>method<sp/>for<sp/>missing<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="d7/df8/namespacepyfolio_1a3d46f8329f981a02b2794451931e6c03ab3263eb38f8903efc271cc7a760da510" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1a3d46f8329f981a02b2794451931e6c03" kindref="member">FillMethod</ref><sp/>{<sp/><ref refid="d7/df8/namespacepyfolio_1a3d46f8329f981a02b2794451931e6c03a67d2f6740a8eaebf4d5c6f79be8da481" kindref="member">Forward</ref>,<sp/><ref refid="d7/df8/namespacepyfolio_1a3d46f8329f981a02b2794451931e6c03ab3263eb38f8903efc271cc7a760da510" kindref="member">Backward</ref>,<sp/><ref refid="d7/df8/namespacepyfolio_1a3d46f8329f981a02b2794451931e6c03ad53238014015da17926bca398282211f" kindref="member">Interpolate</ref>,<sp/><ref refid="d7/df8/namespacepyfolio_1a3d46f8329f981a02b2794451931e6c03a3e679cff5b3a6f6f8f32aead541a0a12" kindref="member">Drop</ref><sp/>};</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Strong<sp/>types<sp/>for<sp/>type<sp/>safety</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Tag&gt;</highlight></codeline>
+<codeline lineno="90" refid="d8/dde/classpyfolio_1_1StrongType" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d8/dde/classpyfolio_1_1StrongType_1a5e6f6ff8282dd4881ffcf6b663401023" kindref="member">StrongType</ref><sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/>value_;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="95" refid="d8/dde/classpyfolio_1_1StrongType_1a5e6f6ff8282dd4881ffcf6b663401023" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/><ref refid="d8/dde/classpyfolio_1_1StrongType_1a5e6f6ff8282dd4881ffcf6b663401023" kindref="member">StrongType</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>value)<sp/>:<sp/>value_(value)<sp/>{}</highlight></codeline>
+<codeline lineno="96" refid="d8/dde/classpyfolio_1_1StrongType_1a13b4468bf589be9590d0721d3885e822" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/><ref refid="d8/dde/classpyfolio_1_1StrongType_1a13b4468bf589be9590d0721d3885e822" kindref="member">StrongType</ref>(T&amp;&amp;<sp/>value)<sp/>:<sp/>value_(std::move(value))<sp/>{}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="d8/dde/classpyfolio_1_1StrongType_1a18e86407a346699ea115f79f0f07da08" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/><ref refid="d8/dde/classpyfolio_1_1StrongType_1a18e86407a346699ea115f79f0f07da08" kindref="member">get</ref>()<sp/>const<sp/>noexcept<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>value_;<sp/>}</highlight></codeline>
+<codeline lineno="99" refid="d8/dde/classpyfolio_1_1StrongType_1a2dd5dbb50f0a1b70b13c0b29b16cbc01" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>T&amp;<sp/><ref refid="d8/dde/classpyfolio_1_1StrongType_1a2dd5dbb50f0a1b70b13c0b29b16cbc01" kindref="member">get</ref>()<sp/>noexcept<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>value_;<sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="d8/dde/classpyfolio_1_1StrongType_1aea65949ebee4df7c4acd4cbedbf604ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal"><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>value_;<sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Arithmetic<sp/>operations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="d8/dde/classpyfolio_1_1StrongType_1a5ed1e49ea9ed1e48e8287295b83efb17" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/><ref refid="d8/dde/classpyfolio_1_1StrongType_1a5e6f6ff8282dd4881ffcf6b663401023" kindref="member">StrongType</ref><sp/><ref refid="d8/dde/classpyfolio_1_1StrongType_1a5ed1e49ea9ed1e48e8287295b83efb17" kindref="member">operator+</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d8/dde/classpyfolio_1_1StrongType_1a5e6f6ff8282dd4881ffcf6b663401023" kindref="member">StrongType</ref>&amp;<sp/>other)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">requires</highlight><highlight class="normal"><sp/><ref refid="dd/daf/conceptpyfolio_1_1Numeric" kindref="compound">Numeric&lt;T&gt;</ref></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d8/dde/classpyfolio_1_1StrongType_1a5e6f6ff8282dd4881ffcf6b663401023" kindref="member">StrongType</ref>{value_<sp/>+<sp/>other.value_};</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="d8/dde/classpyfolio_1_1StrongType_1a56a0df93034f8387c69d9c4f0aa60e08" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/><ref refid="d8/dde/classpyfolio_1_1StrongType_1a5e6f6ff8282dd4881ffcf6b663401023" kindref="member">StrongType</ref><sp/><ref refid="d8/dde/classpyfolio_1_1StrongType_1a56a0df93034f8387c69d9c4f0aa60e08" kindref="member">operator-</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d8/dde/classpyfolio_1_1StrongType_1a5e6f6ff8282dd4881ffcf6b663401023" kindref="member">StrongType</ref>&amp;<sp/>other)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">requires</highlight><highlight class="normal"><sp/><ref refid="dd/daf/conceptpyfolio_1_1Numeric" kindref="compound">Numeric&lt;T&gt;</ref></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d8/dde/classpyfolio_1_1StrongType_1a5e6f6ff8282dd4881ffcf6b663401023" kindref="member">StrongType</ref>{value_<sp/>-<sp/>other.value_};</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="d8/dde/classpyfolio_1_1StrongType_1a4ed95b9c5e9d13f8c273a5a62ca8dc05" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/><ref refid="d8/dde/classpyfolio_1_1StrongType_1a5e6f6ff8282dd4881ffcf6b663401023" kindref="member">StrongType</ref><sp/><ref refid="d8/dde/classpyfolio_1_1StrongType_1a4ed95b9c5e9d13f8c273a5a62ca8dc05" kindref="member">operator*</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d8/dde/classpyfolio_1_1StrongType_1a5e6f6ff8282dd4881ffcf6b663401023" kindref="member">StrongType</ref>&amp;<sp/>other)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">requires</highlight><highlight class="normal"><sp/><ref refid="dd/daf/conceptpyfolio_1_1Numeric" kindref="compound">Numeric&lt;T&gt;</ref></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d8/dde/classpyfolio_1_1StrongType_1a5e6f6ff8282dd4881ffcf6b663401023" kindref="member">StrongType</ref>{value_<sp/>*<sp/>other.value_};</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="d8/dde/classpyfolio_1_1StrongType_1a7d73e2d68c89e256b95378442ea9329d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/><ref refid="d8/dde/classpyfolio_1_1StrongType_1a5e6f6ff8282dd4881ffcf6b663401023" kindref="member">StrongType</ref><sp/><ref refid="d8/dde/classpyfolio_1_1StrongType_1a7d73e2d68c89e256b95378442ea9329d" kindref="member">operator/</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d8/dde/classpyfolio_1_1StrongType_1a5e6f6ff8282dd4881ffcf6b663401023" kindref="member">StrongType</ref>&amp;<sp/>other)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">requires</highlight><highlight class="normal"><sp/><ref refid="dd/daf/conceptpyfolio_1_1Numeric" kindref="compound">Numeric&lt;T&gt;</ref></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d8/dde/classpyfolio_1_1StrongType_1a5e6f6ff8282dd4881ffcf6b663401023" kindref="member">StrongType</ref>{value_<sp/>/<sp/>other.value_};</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Comparison<sp/>operations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129" refid="d8/dde/classpyfolio_1_1StrongType_1a85cf0c83cac52719fcf9440198d13873" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d8/dde/classpyfolio_1_1StrongType_1a85cf0c83cac52719fcf9440198d13873" kindref="member">operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d8/dde/classpyfolio_1_1StrongType_1a5e6f6ff8282dd4881ffcf6b663401023" kindref="member">StrongType</ref>&amp;<sp/>other)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="130" refid="d8/dde/classpyfolio_1_1StrongType_1a835913bc2c08b782e3b2f582a7bb46f3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="d8/dde/classpyfolio_1_1StrongType_1a835913bc2c08b782e3b2f582a7bb46f3" kindref="member">operator&lt;=&gt;</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d8/dde/classpyfolio_1_1StrongType_1a5e6f6ff8282dd4881ffcf6b663401023" kindref="member">StrongType</ref>&amp;<sp/>other)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Financial<sp/>strong<sp/>types</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134" refid="dc/d5c/structpyfolio_1_1PriceTag" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="dc/d5c/structpyfolio_1_1PriceTag" kindref="compound">PriceTag</ref><sp/>{};</highlight></codeline>
+<codeline lineno="135" refid="d3/d9b/structpyfolio_1_1ReturnTag" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d3/d9b/structpyfolio_1_1ReturnTag" kindref="compound">ReturnTag</ref><sp/>{};</highlight></codeline>
+<codeline lineno="136" refid="d9/d23/structpyfolio_1_1VolumeTag" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d9/d23/structpyfolio_1_1VolumeTag" kindref="compound">VolumeTag</ref><sp/>{};</highlight></codeline>
+<codeline lineno="137" refid="dc/dc1/structpyfolio_1_1WeightTag" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="dc/dc1/structpyfolio_1_1WeightTag" kindref="compound">WeightTag</ref><sp/>{};</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="d7/df8/namespacepyfolio_1a9d64d4ff31e5a56c93fb053c693d59b5" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="d7/df8/namespacepyfolio_1a9d64d4ff31e5a56c93fb053c693d59b5" kindref="member">StrongPrice</ref><sp/><sp/>=<sp/><ref refid="d8/dde/classpyfolio_1_1StrongType" kindref="compound">StrongType&lt;double, PriceTag&gt;</ref>;</highlight></codeline>
+<codeline lineno="140" refid="d7/df8/namespacepyfolio_1ad2be772c24f0d9efc27cd1ebd5402289" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="d7/df8/namespacepyfolio_1ad2be772c24f0d9efc27cd1ebd5402289" kindref="member">StrongReturn</ref><sp/>=<sp/><ref refid="d8/dde/classpyfolio_1_1StrongType" kindref="compound">StrongType&lt;double, ReturnTag&gt;</ref>;</highlight></codeline>
+<codeline lineno="141" refid="d7/df8/namespacepyfolio_1a578d65aea07a396538d840912162d2b3" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="d7/df8/namespacepyfolio_1a578d65aea07a396538d840912162d2b3" kindref="member">StrongVolume</ref><sp/>=<sp/><ref refid="d8/dde/classpyfolio_1_1StrongType" kindref="compound">StrongType&lt;double, VolumeTag&gt;</ref>;</highlight></codeline>
+<codeline lineno="142" refid="d7/df8/namespacepyfolio_1a02e1926d342741668a586db5d322e7ad" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="d7/df8/namespacepyfolio_1a02e1926d342741668a586db5d322e7ad" kindref="member">StrongWeight</ref><sp/>=<sp/><ref refid="d8/dde/classpyfolio_1_1StrongType" kindref="compound">StrongType&lt;double, WeightTag&gt;</ref>;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Market<sp/>data<sp/>structure<sp/>(time<sp/>series<sp/>of<sp/>prices<sp/>and<sp/>volumes)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145" refid="de/d03/structpyfolio_1_1MarketData" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="de/d03/structpyfolio_1_1MarketData" kindref="compound">MarketData</ref><sp/>{</highlight></codeline>
+<codeline lineno="146" refid="de/d03/structpyfolio_1_1MarketData_1a4d23eba647782cb3ad3afe55a8b89143" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Price&gt;<sp/><ref refid="de/d03/structpyfolio_1_1MarketData_1a4d23eba647782cb3ad3afe55a8b89143" kindref="member">prices</ref>;</highlight></codeline>
+<codeline lineno="147" refid="de/d03/structpyfolio_1_1MarketData_1a2a7074ad7546205839db4e7ec9a168e3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Volume&gt;<sp/><ref refid="de/d03/structpyfolio_1_1MarketData_1a2a7074ad7546205839db4e7ec9a168e3" kindref="member">volumes</ref>;</highlight></codeline>
+<codeline lineno="148" refid="de/d03/structpyfolio_1_1MarketData_1a1529be0962f66cccb9d489302e1435fe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;TimePoint&gt;<sp/><ref refid="de/d03/structpyfolio_1_1MarketData_1a1529be0962f66cccb9d489302e1435fe" kindref="member">timestamps</ref>;</highlight></codeline>
+<codeline lineno="149" refid="de/d03/structpyfolio_1_1MarketData_1a0acc03e3574fcacaa068077cf8304f0e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df8/namespacepyfolio_1a66e3e2ebe494a9dccbeb419408aaf7ea" kindref="member">Symbol</ref><sp/><ref refid="de/d03/structpyfolio_1_1MarketData_1a0acc03e3574fcacaa068077cf8304f0e" kindref="member">symbol</ref>;</highlight></codeline>
+<codeline lineno="150" refid="de/d03/structpyfolio_1_1MarketData_1aa6886729a9295cdf415e75fe231286d6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df8/namespacepyfolio_1a49f3a0c47eb3421e87ad773e9b97ff2a" kindref="member">Currency</ref><sp/><ref refid="de/d03/structpyfolio_1_1MarketData_1aa6886729a9295cdf415e75fe231286d6" kindref="member">currency</ref>;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OHLCV<sp/>(Open,<sp/>High,<sp/>Low,<sp/>Close,<sp/>Volume)<sp/>data<sp/>structure</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154" refid="d4/d3e/structpyfolio_1_1OHLCVData" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d4/d3e/structpyfolio_1_1OHLCVData" kindref="compound">OHLCVData</ref><sp/>{</highlight></codeline>
+<codeline lineno="155" refid="d4/d3e/structpyfolio_1_1OHLCVData_1ab85ef732a84134465a2ec3960651ff6e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df8/namespacepyfolio_1a7801b507a1c22f3c1a83bdef81846fc6" kindref="member">Price</ref><sp/><ref refid="d4/d3e/structpyfolio_1_1OHLCVData_1ab85ef732a84134465a2ec3960651ff6e" kindref="member">open</ref>;</highlight></codeline>
+<codeline lineno="156" refid="d4/d3e/structpyfolio_1_1OHLCVData_1a5323b6c05a97f2f1afe9626c1ffd74a0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df8/namespacepyfolio_1a7801b507a1c22f3c1a83bdef81846fc6" kindref="member">Price</ref><sp/><ref refid="d4/d3e/structpyfolio_1_1OHLCVData_1a5323b6c05a97f2f1afe9626c1ffd74a0" kindref="member">high</ref>;</highlight></codeline>
+<codeline lineno="157" refid="d4/d3e/structpyfolio_1_1OHLCVData_1aed7a6499b6725375c345c2bf1de086c1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df8/namespacepyfolio_1a7801b507a1c22f3c1a83bdef81846fc6" kindref="member">Price</ref><sp/><ref refid="d4/d3e/structpyfolio_1_1OHLCVData_1aed7a6499b6725375c345c2bf1de086c1" kindref="member">low</ref>;</highlight></codeline>
+<codeline lineno="158" refid="d4/d3e/structpyfolio_1_1OHLCVData_1aa58c6408e02f8b4d931456756b77a05c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df8/namespacepyfolio_1a7801b507a1c22f3c1a83bdef81846fc6" kindref="member">Price</ref><sp/><ref refid="d4/d3e/structpyfolio_1_1OHLCVData_1aa58c6408e02f8b4d931456756b77a05c" kindref="member">close</ref>;</highlight></codeline>
+<codeline lineno="159" refid="d4/d3e/structpyfolio_1_1OHLCVData_1a0f63ae681c7824d79deee446f7caa87e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df8/namespacepyfolio_1a8585524138273c4f4b446ce83ef01994" kindref="member">Volume</ref><sp/><ref refid="d4/d3e/structpyfolio_1_1OHLCVData_1a0f63ae681c7824d79deee446f7caa87e" kindref="member">volume</ref>;</highlight></codeline>
+<codeline lineno="160" refid="d4/d3e/structpyfolio_1_1OHLCVData_1a986489e73a2d8c6229c3b9e2d0861dfc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df8/namespacepyfolio_1ad77d362107c51226c09e896bdf822f9d" kindref="member">TimePoint</ref><sp/><ref refid="d4/d3e/structpyfolio_1_1OHLCVData_1a986489e73a2d8c6229c3b9e2d0861dfc" kindref="member">timestamp</ref>;</highlight></codeline>
+<codeline lineno="161" refid="d4/d3e/structpyfolio_1_1OHLCVData_1adc9c8e37314266fd06c4bca87a4ca7de" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df8/namespacepyfolio_1a66e3e2ebe494a9dccbeb419408aaf7ea" kindref="member">Symbol</ref><sp/><ref refid="d4/d3e/structpyfolio_1_1OHLCVData_1adc9c8e37314266fd06c4bca87a4ca7de" kindref="member">symbol</ref>;</highlight></codeline>
+<codeline lineno="162" refid="d4/d3e/structpyfolio_1_1OHLCVData_1ac37a0d88d187311a04eb2a6e27a57281" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df8/namespacepyfolio_1a49f3a0c47eb3421e87ad773e9b97ff2a" kindref="member">Currency</ref><sp/><ref refid="d4/d3e/structpyfolio_1_1OHLCVData_1ac37a0d88d187311a04eb2a6e27a57281" kindref="member">currency</ref>;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Position<sp/>data<sp/>structure</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166" refid="d6/df6/structpyfolio_1_1Position" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d6/df6/structpyfolio_1_1Position_1a52e1fd704ef203bedab25b64f87aa3f8" kindref="member">Position</ref><sp/>{</highlight></codeline>
+<codeline lineno="167" refid="d6/df6/structpyfolio_1_1Position_1a65c89d1989617ff5a48b7dccc42ade60" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df8/namespacepyfolio_1a66e3e2ebe494a9dccbeb419408aaf7ea" kindref="member">Symbol</ref><sp/><ref refid="d6/df6/structpyfolio_1_1Position_1a65c89d1989617ff5a48b7dccc42ade60" kindref="member">symbol</ref>;</highlight></codeline>
+<codeline lineno="168" refid="d6/df6/structpyfolio_1_1Position_1ad9d09358cc73817f7bd64e74b642285d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df8/namespacepyfolio_1ae1b4389f0d1a53d3ebd7d2aec59e0360" kindref="member">Shares</ref><sp/><ref refid="d6/df6/structpyfolio_1_1Position_1ad9d09358cc73817f7bd64e74b642285d" kindref="member">shares</ref>;</highlight></codeline>
+<codeline lineno="169" refid="d6/df6/structpyfolio_1_1Position_1a00af48d137fbc0bc89ef114232cf829a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df8/namespacepyfolio_1a7801b507a1c22f3c1a83bdef81846fc6" kindref="member">Price</ref><sp/><ref refid="d6/df6/structpyfolio_1_1Position_1a00af48d137fbc0bc89ef114232cf829a" kindref="member">price</ref>;</highlight></codeline>
+<codeline lineno="170" refid="d6/df6/structpyfolio_1_1Position_1ab77b33188ab69c1548adbdaa6496b71e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df8/namespacepyfolio_1af989fd50261f45e6abc49511c6dfbdf0" kindref="member">Weight</ref><sp/><ref refid="d6/df6/structpyfolio_1_1Position_1ab77b33188ab69c1548adbdaa6496b71e" kindref="member">weight</ref>;</highlight></codeline>
+<codeline lineno="171" refid="d6/df6/structpyfolio_1_1Position_1aa67adcc363a83b5dae028dcfb6e0aea3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df8/namespacepyfolio_1ad77d362107c51226c09e896bdf822f9d" kindref="member">TimePoint</ref><sp/><ref refid="d6/df6/structpyfolio_1_1Position_1aa67adcc363a83b5dae028dcfb6e0aea3" kindref="member">timestamp</ref>;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Constructor<sp/>for<sp/>basic<sp/>initialization</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174" refid="d6/df6/structpyfolio_1_1Position_1a52e1fd704ef203bedab25b64f87aa3f8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/df6/structpyfolio_1_1Position_1a52e1fd704ef203bedab25b64f87aa3f8" kindref="member">Position</ref>()<sp/>:<sp/><ref refid="d6/df6/structpyfolio_1_1Position_1ad9d09358cc73817f7bd64e74b642285d" kindref="member">shares</ref>(0.0),<sp/><ref refid="d6/df6/structpyfolio_1_1Position_1a00af48d137fbc0bc89ef114232cf829a" kindref="member">price</ref>(0.0),<sp/><ref refid="d6/df6/structpyfolio_1_1Position_1ab77b33188ab69c1548adbdaa6496b71e" kindref="member">weight</ref>(0.0),<sp/><ref refid="d6/df6/structpyfolio_1_1Position_1aa67adcc363a83b5dae028dcfb6e0aea3" kindref="member">timestamp</ref>{}<sp/>{}</highlight></codeline>
+<codeline lineno="175" refid="d6/df6/structpyfolio_1_1Position_1ae5dff5091c5f0fb77b4cfd0cc6eabbda" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/df6/structpyfolio_1_1Position_1ae5dff5091c5f0fb77b4cfd0cc6eabbda" kindref="member">Position</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1a66e3e2ebe494a9dccbeb419408aaf7ea" kindref="member">Symbol</ref>&amp;<sp/>sym,<sp/><ref refid="d7/df8/namespacepyfolio_1ae1b4389f0d1a53d3ebd7d2aec59e0360" kindref="member">Shares</ref><sp/>sh,<sp/><ref refid="d7/df8/namespacepyfolio_1a7801b507a1c22f3c1a83bdef81846fc6" kindref="member">Price</ref><sp/>pr,<sp/><ref refid="d7/df8/namespacepyfolio_1af989fd50261f45e6abc49511c6dfbdf0" kindref="member">Weight</ref><sp/>wt,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1ad77d362107c51226c09e896bdf822f9d" kindref="member">TimePoint</ref>&amp;<sp/>ts)</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="d6/df6/structpyfolio_1_1Position_1a65c89d1989617ff5a48b7dccc42ade60" kindref="member">symbol</ref>(sym),<sp/><ref refid="d6/df6/structpyfolio_1_1Position_1ad9d09358cc73817f7bd64e74b642285d" kindref="member">shares</ref>(sh),<sp/><ref refid="d6/df6/structpyfolio_1_1Position_1a00af48d137fbc0bc89ef114232cf829a" kindref="member">price</ref>(pr),<sp/><ref refid="d6/df6/structpyfolio_1_1Position_1ab77b33188ab69c1548adbdaa6496b71e" kindref="member">weight</ref>(wt),<sp/><ref refid="d6/df6/structpyfolio_1_1Position_1aa67adcc363a83b5dae028dcfb6e0aea3" kindref="member">timestamp</ref>(ts)<sp/>{}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Transaction<sp/>side<sp/>enumeration</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180" refid="d7/df8/namespacepyfolio_1a621f4de5bafda9e6d787a2bfb28e90cfa831a28f1e8df07c553fcd59546465d13" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1a621f4de5bafda9e6d787a2bfb28e90cf" kindref="member">TransactionSide</ref><sp/>{<sp/><ref refid="d7/df8/namespacepyfolio_1a621f4de5bafda9e6d787a2bfb28e90cfa831a28f1e8df07c553fcd59546465d13" kindref="member">Buy</ref>,<sp/><ref refid="d7/df8/namespacepyfolio_1a621f4de5bafda9e6d787a2bfb28e90cfa3068c5a98c003498f1fec0c489212e8b" kindref="member">Sell</ref><sp/>};</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Transaction<sp/>data<sp/>structure</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183" refid="d5/d11/structpyfolio_1_1Transaction" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d5/d11/structpyfolio_1_1Transaction" kindref="compound">Transaction</ref><sp/>{</highlight></codeline>
+<codeline lineno="184" refid="d5/d11/structpyfolio_1_1Transaction_1a442fd0fce2fd2abb5c0534a39243f3f2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df8/namespacepyfolio_1a66e3e2ebe494a9dccbeb419408aaf7ea" kindref="member">Symbol</ref><sp/><ref refid="d5/d11/structpyfolio_1_1Transaction_1a442fd0fce2fd2abb5c0534a39243f3f2" kindref="member">symbol</ref>;</highlight></codeline>
+<codeline lineno="185" refid="d5/d11/structpyfolio_1_1Transaction_1a6d588dfc84908e293004bab0afca46ff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df8/namespacepyfolio_1ae1b4389f0d1a53d3ebd7d2aec59e0360" kindref="member">Shares</ref><sp/><ref refid="d5/d11/structpyfolio_1_1Transaction_1a6d588dfc84908e293004bab0afca46ff" kindref="member">shares</ref>;</highlight></codeline>
+<codeline lineno="186" refid="d5/d11/structpyfolio_1_1Transaction_1a7764e932f900f56ca558b181c9bc1cbf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df8/namespacepyfolio_1a7801b507a1c22f3c1a83bdef81846fc6" kindref="member">Price</ref><sp/><ref refid="d5/d11/structpyfolio_1_1Transaction_1a7764e932f900f56ca558b181c9bc1cbf" kindref="member">price</ref>;</highlight></codeline>
+<codeline lineno="187" refid="d5/d11/structpyfolio_1_1Transaction_1a93ffd5908ac831f42cf3e1196d96a377" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df8/namespacepyfolio_1ad77d362107c51226c09e896bdf822f9d" kindref="member">TimePoint</ref><sp/><ref refid="d5/d11/structpyfolio_1_1Transaction_1a93ffd5908ac831f42cf3e1196d96a377" kindref="member">timestamp</ref>;</highlight></codeline>
+<codeline lineno="188" refid="d5/d11/structpyfolio_1_1Transaction_1aeb2a027b02e00bd8ed44767fd81d9dc7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df8/namespacepyfolio_1a49f3a0c47eb3421e87ad773e9b97ff2a" kindref="member">Currency</ref><sp/><ref refid="d5/d11/structpyfolio_1_1Transaction_1aeb2a027b02e00bd8ed44767fd81d9dc7" kindref="member">currency</ref>;</highlight></codeline>
+<codeline lineno="189" refid="d5/d11/structpyfolio_1_1Transaction_1adee32ed06ae858b4d50e48b6471b3a8d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d5/d11/structpyfolio_1_1Transaction_1adee32ed06ae858b4d50e48b6471b3a8d" kindref="member">commission</ref><sp/><sp/><sp/><sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="190" refid="d5/d11/structpyfolio_1_1Transaction_1abc2ac8f9a1ebfd077b91873d65131e4a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df8/namespacepyfolio_1a621f4de5bafda9e6d787a2bfb28e90cf" kindref="member">TransactionSide</ref><sp/><ref refid="d5/d11/structpyfolio_1_1Transaction_1abc2ac8f9a1ebfd077b91873d65131e4a" kindref="member">side</ref><sp/>=<sp/><ref refid="d7/df8/namespacepyfolio_1a621f4de5bafda9e6d787a2bfb28e90cfa831a28f1e8df07c553fcd59546465d13" kindref="member">TransactionSide::Buy</ref>;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>DateTime<sp/>datetime;<sp/><sp/>//<sp/>Additional<sp/>datetime<sp/>field<sp/>for<sp/>compatibility<sp/>-<sp/>use<sp/>timestamp<sp/>instead</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Forward<sp/>declarations<sp/>for<sp/>time<sp/>series<sp/>types</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Additional<sp/>type<sp/>aliases<sp/>for<sp/>common<sp/>collections</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199" refid="d7/df8/namespacepyfolio_1a8b225a867ab95979be89a7d9e8519eb1" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="d7/df8/namespacepyfolio_1a8b225a867ab95979be89a7d9e8519eb1" kindref="member">PositionSeries</ref><sp/><sp/><sp/><sp/>=<sp/>std::vector&lt;Position&gt;;</highlight></codeline>
+<codeline lineno="200" refid="d7/df8/namespacepyfolio_1a4b722d754217aac2549ef3ef5fa23fff" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="d7/df8/namespacepyfolio_1a4b722d754217aac2549ef3ef5fa23fff" kindref="member">TransactionSeries</ref><sp/>=<sp/>std::vector&lt;Transaction&gt;;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>pyfolio</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/types.h"/>
+  </compounddef>
+</doxygen>

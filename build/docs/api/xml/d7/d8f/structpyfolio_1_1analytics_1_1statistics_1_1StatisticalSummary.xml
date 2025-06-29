@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="d7/d8f/structpyfolio_1_1analytics_1_1statistics_1_1StatisticalSummary" kind="struct" language="C++" prot="public">
+    <compoundname>pyfolio::analytics::statistics::StatisticalSummary</compoundname>
+    <includes refid="d5/db2/analytics_2statistics_8h" local="no">statistics.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d7/d8f/structpyfolio_1_1analytics_1_1statistics_1_1StatisticalSummary_1a87379a8c3c1da5f160dda7bb01b65c37" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::statistics::StatisticalSummary::mean</definition>
+        <argsstring></argsstring>
+        <name>mean</name>
+        <qualifiedname>pyfolio::analytics::statistics::StatisticalSummary::mean</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" line="24" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" bodystart="24" bodyend="-1"/>
+        <referencedby refid="dc/d21/namespacepyfolio_1_1analytics_1_1statistics_1a03d3ac2bfd1691d61e27da8e7d951c22" compoundref="d5/db2/analytics_2statistics_8h" startline="42" endline="104">pyfolio::analytics::statistics::calculate_summary</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d8f/structpyfolio_1_1analytics_1_1statistics_1_1StatisticalSummary_1a68f8fd7448c4fc00a33f2cf6ad9cae85" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::statistics::StatisticalSummary::median</definition>
+        <argsstring></argsstring>
+        <name>median</name>
+        <qualifiedname>pyfolio::analytics::statistics::StatisticalSummary::median</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" line="25" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" bodystart="25" bodyend="-1"/>
+        <referencedby refid="dc/d21/namespacepyfolio_1_1analytics_1_1statistics_1a03d3ac2bfd1691d61e27da8e7d951c22" compoundref="d5/db2/analytics_2statistics_8h" startline="42" endline="104">pyfolio::analytics::statistics::calculate_summary</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d8f/structpyfolio_1_1analytics_1_1statistics_1_1StatisticalSummary_1ac7d14cbc905a968a84cfad71465b5d20" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::statistics::StatisticalSummary::std_dev</definition>
+        <argsstring></argsstring>
+        <name>std_dev</name>
+        <qualifiedname>pyfolio::analytics::statistics::StatisticalSummary::std_dev</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" line="26" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" bodystart="26" bodyend="-1"/>
+        <referencedby refid="dc/d21/namespacepyfolio_1_1analytics_1_1statistics_1a03d3ac2bfd1691d61e27da8e7d951c22" compoundref="d5/db2/analytics_2statistics_8h" startline="42" endline="104">pyfolio::analytics::statistics::calculate_summary</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d8f/structpyfolio_1_1analytics_1_1statistics_1_1StatisticalSummary_1a3c3aefbef971393744f6d2e9061f80ba" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::statistics::StatisticalSummary::variance</definition>
+        <argsstring></argsstring>
+        <name>variance</name>
+        <qualifiedname>pyfolio::analytics::statistics::StatisticalSummary::variance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" line="27" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" bodystart="27" bodyend="-1"/>
+        <referencedby refid="dc/d21/namespacepyfolio_1_1analytics_1_1statistics_1a03d3ac2bfd1691d61e27da8e7d951c22" compoundref="d5/db2/analytics_2statistics_8h" startline="42" endline="104">pyfolio::analytics::statistics::calculate_summary</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d8f/structpyfolio_1_1analytics_1_1statistics_1_1StatisticalSummary_1a9f423b88da0f32202f9394a9a2b94386" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::statistics::StatisticalSummary::skewness</definition>
+        <argsstring></argsstring>
+        <name>skewness</name>
+        <qualifiedname>pyfolio::analytics::statistics::StatisticalSummary::skewness</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" line="28" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" bodystart="28" bodyend="-1"/>
+        <referencedby refid="dc/d21/namespacepyfolio_1_1analytics_1_1statistics_1a03d3ac2bfd1691d61e27da8e7d951c22" compoundref="d5/db2/analytics_2statistics_8h" startline="42" endline="104">pyfolio::analytics::statistics::calculate_summary</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d8f/structpyfolio_1_1analytics_1_1statistics_1_1StatisticalSummary_1a6c8ba30e75b0bad9c7af2696fe891dd1" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::statistics::StatisticalSummary::kurtosis</definition>
+        <argsstring></argsstring>
+        <name>kurtosis</name>
+        <qualifiedname>pyfolio::analytics::statistics::StatisticalSummary::kurtosis</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" line="29" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" bodystart="29" bodyend="-1"/>
+        <referencedby refid="dc/d21/namespacepyfolio_1_1analytics_1_1statistics_1a03d3ac2bfd1691d61e27da8e7d951c22" compoundref="d5/db2/analytics_2statistics_8h" startline="42" endline="104">pyfolio::analytics::statistics::calculate_summary</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d8f/structpyfolio_1_1analytics_1_1statistics_1_1StatisticalSummary_1aac90dfbe9ab39c7dab6be80d7bdcf793" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::statistics::StatisticalSummary::min_value</definition>
+        <argsstring></argsstring>
+        <name>min_value</name>
+        <qualifiedname>pyfolio::analytics::statistics::StatisticalSummary::min_value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" line="30" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" bodystart="30" bodyend="-1"/>
+        <referencedby refid="dc/d21/namespacepyfolio_1_1analytics_1_1statistics_1a03d3ac2bfd1691d61e27da8e7d951c22" compoundref="d5/db2/analytics_2statistics_8h" startline="42" endline="104">pyfolio::analytics::statistics::calculate_summary</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d8f/structpyfolio_1_1analytics_1_1statistics_1_1StatisticalSummary_1a1883c524bd3fbeee01b0c3492237234f" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::statistics::StatisticalSummary::max_value</definition>
+        <argsstring></argsstring>
+        <name>max_value</name>
+        <qualifiedname>pyfolio::analytics::statistics::StatisticalSummary::max_value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" line="31" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" bodystart="31" bodyend="-1"/>
+        <referencedby refid="dc/d21/namespacepyfolio_1_1analytics_1_1statistics_1a03d3ac2bfd1691d61e27da8e7d951c22" compoundref="d5/db2/analytics_2statistics_8h" startline="42" endline="104">pyfolio::analytics::statistics::calculate_summary</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d8f/structpyfolio_1_1analytics_1_1statistics_1_1StatisticalSummary_1a306d451f016550d4b46c2a223ce6b405" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::statistics::StatisticalSummary::q25</definition>
+        <argsstring></argsstring>
+        <name>q25</name>
+        <qualifiedname>pyfolio::analytics::statistics::StatisticalSummary::q25</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" line="32" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" bodystart="32" bodyend="-1"/>
+        <referencedby refid="dc/d21/namespacepyfolio_1_1analytics_1_1statistics_1a03d3ac2bfd1691d61e27da8e7d951c22" compoundref="d5/db2/analytics_2statistics_8h" startline="42" endline="104">pyfolio::analytics::statistics::calculate_summary</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d8f/structpyfolio_1_1analytics_1_1statistics_1_1StatisticalSummary_1a652bff760f4b828847ff897ac5adb646" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::statistics::StatisticalSummary::q75</definition>
+        <argsstring></argsstring>
+        <name>q75</name>
+        <qualifiedname>pyfolio::analytics::statistics::StatisticalSummary::q75</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" line="33" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" bodystart="33" bodyend="-1"/>
+        <referencedby refid="dc/d21/namespacepyfolio_1_1analytics_1_1statistics_1a03d3ac2bfd1691d61e27da8e7d951c22" compoundref="d5/db2/analytics_2statistics_8h" startline="42" endline="104">pyfolio::analytics::statistics::calculate_summary</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d8f/structpyfolio_1_1analytics_1_1statistics_1_1StatisticalSummary_1afab7ebad63b2eef66800a4a9cdf6ae54" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t pyfolio::analytics::statistics::StatisticalSummary::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <qualifiedname>pyfolio::analytics::statistics::StatisticalSummary::count</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" line="34" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" bodystart="34" bodyend="-1"/>
+        <referencedby refid="dc/d21/namespacepyfolio_1_1analytics_1_1statistics_1a03d3ac2bfd1691d61e27da8e7d951c22" compoundref="d5/db2/analytics_2statistics_8h" startline="42" endline="104">pyfolio::analytics::statistics::calculate_summary</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d8f/structpyfolio_1_1analytics_1_1statistics_1_1StatisticalSummary_1a4b937cbd0dbbfa26d44e76c2b7db5854" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t pyfolio::analytics::statistics::StatisticalSummary::missing_count</definition>
+        <argsstring></argsstring>
+        <name>missing_count</name>
+        <qualifiedname>pyfolio::analytics::statistics::StatisticalSummary::missing_count</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" line="35" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" bodystart="35" bodyend="-1"/>
+        <referencedby refid="dc/d21/namespacepyfolio_1_1analytics_1_1statistics_1a03d3ac2bfd1691d61e27da8e7d951c22" compoundref="d5/db2/analytics_2statistics_8h" startline="42" endline="104">pyfolio::analytics::statistics::calculate_summary</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Statistical summary for a time series. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" line="23" column="1" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" bodystart="23" bodyend="36"/>
+    <listofallmembers>
+      <member refid="d7/d8f/structpyfolio_1_1analytics_1_1statistics_1_1StatisticalSummary_1afab7ebad63b2eef66800a4a9cdf6ae54" prot="public" virt="non-virtual"><scope>pyfolio::analytics::statistics::StatisticalSummary</scope><name>count</name></member>
+      <member refid="d7/d8f/structpyfolio_1_1analytics_1_1statistics_1_1StatisticalSummary_1a6c8ba30e75b0bad9c7af2696fe891dd1" prot="public" virt="non-virtual"><scope>pyfolio::analytics::statistics::StatisticalSummary</scope><name>kurtosis</name></member>
+      <member refid="d7/d8f/structpyfolio_1_1analytics_1_1statistics_1_1StatisticalSummary_1a1883c524bd3fbeee01b0c3492237234f" prot="public" virt="non-virtual"><scope>pyfolio::analytics::statistics::StatisticalSummary</scope><name>max_value</name></member>
+      <member refid="d7/d8f/structpyfolio_1_1analytics_1_1statistics_1_1StatisticalSummary_1a87379a8c3c1da5f160dda7bb01b65c37" prot="public" virt="non-virtual"><scope>pyfolio::analytics::statistics::StatisticalSummary</scope><name>mean</name></member>
+      <member refid="d7/d8f/structpyfolio_1_1analytics_1_1statistics_1_1StatisticalSummary_1a68f8fd7448c4fc00a33f2cf6ad9cae85" prot="public" virt="non-virtual"><scope>pyfolio::analytics::statistics::StatisticalSummary</scope><name>median</name></member>
+      <member refid="d7/d8f/structpyfolio_1_1analytics_1_1statistics_1_1StatisticalSummary_1aac90dfbe9ab39c7dab6be80d7bdcf793" prot="public" virt="non-virtual"><scope>pyfolio::analytics::statistics::StatisticalSummary</scope><name>min_value</name></member>
+      <member refid="d7/d8f/structpyfolio_1_1analytics_1_1statistics_1_1StatisticalSummary_1a4b937cbd0dbbfa26d44e76c2b7db5854" prot="public" virt="non-virtual"><scope>pyfolio::analytics::statistics::StatisticalSummary</scope><name>missing_count</name></member>
+      <member refid="d7/d8f/structpyfolio_1_1analytics_1_1statistics_1_1StatisticalSummary_1a306d451f016550d4b46c2a223ce6b405" prot="public" virt="non-virtual"><scope>pyfolio::analytics::statistics::StatisticalSummary</scope><name>q25</name></member>
+      <member refid="d7/d8f/structpyfolio_1_1analytics_1_1statistics_1_1StatisticalSummary_1a652bff760f4b828847ff897ac5adb646" prot="public" virt="non-virtual"><scope>pyfolio::analytics::statistics::StatisticalSummary</scope><name>q75</name></member>
+      <member refid="d7/d8f/structpyfolio_1_1analytics_1_1statistics_1_1StatisticalSummary_1a9f423b88da0f32202f9394a9a2b94386" prot="public" virt="non-virtual"><scope>pyfolio::analytics::statistics::StatisticalSummary</scope><name>skewness</name></member>
+      <member refid="d7/d8f/structpyfolio_1_1analytics_1_1statistics_1_1StatisticalSummary_1ac7d14cbc905a968a84cfad71465b5d20" prot="public" virt="non-virtual"><scope>pyfolio::analytics::statistics::StatisticalSummary</scope><name>std_dev</name></member>
+      <member refid="d7/d8f/structpyfolio_1_1analytics_1_1statistics_1_1StatisticalSummary_1a3c3aefbef971393744f6d2e9061f80ba" prot="public" virt="non-virtual"><scope>pyfolio::analytics::statistics::StatisticalSummary</scope><name>variance</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

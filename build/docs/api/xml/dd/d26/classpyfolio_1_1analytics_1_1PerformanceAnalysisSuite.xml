@@ -1,0 +1,336 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dd/d26/classpyfolio_1_1analytics_1_1PerformanceAnalysisSuite" kind="class" language="C++" prot="public">
+    <compoundname>pyfolio::analytics::PerformanceAnalysisSuite</compoundname>
+    <derivedcompoundref refid="d3/d03/classpyfolio_1_1analytics_1_1ParallelPerformanceAnalysisSuite" prot="public" virt="non-virtual">pyfolio::analytics::ParallelPerformanceAnalysisSuite</derivedcompoundref>
+    <includes refid="df/de7/performance__analysis__suite_8h" local="no">performance_analysis_suite.h</includes>
+    <innerclass refid="df/de7/structpyfolio_1_1analytics_1_1PerformanceAnalysisSuite_1_1SuitePerformanceStats" prot="public">pyfolio::analytics::PerformanceAnalysisSuite::SuitePerformanceStats</innerclass>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="dd/d26/classpyfolio_1_1analytics_1_1PerformanceAnalysisSuite_1a5b47576975b0f429173695c5e9868f33" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="de/d09/classpyfolio_1_1analytics_1_1CachedPerformanceCalculator" kindref="compound">CachedPerformanceCalculator</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;CachedPerformanceCalculator&gt; pyfolio::analytics::PerformanceAnalysisSuite::cache_calculator_</definition>
+        <argsstring></argsstring>
+        <name>cache_calculator_</name>
+        <qualifiedname>pyfolio::analytics::PerformanceAnalysisSuite::cache_calculator_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_analysis_suite.h" line="102" column="21" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_analysis_suite.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d26/classpyfolio_1_1analytics_1_1PerformanceAnalysisSuite_1ad5d03190e82eefb8e0e1d7cee1e3746f" prot="private" static="no" mutable="no">
+        <type><ref refid="de/d28/structpyfolio_1_1analytics_1_1AnalysisConfig" kindref="compound">AnalysisConfig</ref></type>
+        <definition>AnalysisConfig pyfolio::analytics::PerformanceAnalysisSuite::config_</definition>
+        <argsstring></argsstring>
+        <name>config_</name>
+        <qualifiedname>pyfolio::analytics::PerformanceAnalysisSuite::config_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_analysis_suite.h" line="103" column="20" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_analysis_suite.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d26/classpyfolio_1_1analytics_1_1PerformanceAnalysisSuite_1a4a40fd9252a8c8fb37d42236501a3f69" prot="private" static="no" mutable="yes">
+        <type>std::chrono::steady_clock::time_point</type>
+        <definition>std::chrono::steady_clock::time_point pyfolio::analytics::PerformanceAnalysisSuite::last_analysis_time_</definition>
+        <argsstring></argsstring>
+        <name>last_analysis_time_</name>
+        <qualifiedname>pyfolio::analytics::PerformanceAnalysisSuite::last_analysis_time_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_analysis_suite.h" line="106" column="51" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_analysis_suite.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d26/classpyfolio_1_1analytics_1_1PerformanceAnalysisSuite_1aa5b7af14119db440ebea535b19021ae4" prot="private" static="no" mutable="yes">
+        <type>size_t</type>
+        <definition>size_t pyfolio::analytics::PerformanceAnalysisSuite::total_analyses_performed_</definition>
+        <argsstring></argsstring>
+        <name>total_analyses_performed_</name>
+        <qualifiedname>pyfolio::analytics::PerformanceAnalysisSuite::total_analyses_performed_</qualifiedname>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_analysis_suite.h" line="107" column="20" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_analysis_suite.h" bodystart="107" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d26/classpyfolio_1_1analytics_1_1PerformanceAnalysisSuite_1a0bbe1f5e3530e021ce882daffddc092f" prot="private" static="no" mutable="yes">
+        <type>std::chrono::nanoseconds</type>
+        <definition>std::chrono::nanoseconds pyfolio::analytics::PerformanceAnalysisSuite::total_computation_time_</definition>
+        <argsstring></argsstring>
+        <name>total_computation_time_</name>
+        <qualifiedname>pyfolio::analytics::PerformanceAnalysisSuite::total_computation_time_</qualifiedname>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_analysis_suite.h" line="108" column="38" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_analysis_suite.h" bodystart="108" bodyend="108"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="dd/d26/classpyfolio_1_1analytics_1_1PerformanceAnalysisSuite_1a35170357258e14e8cf2595080c92fcb9" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; void &gt;</type>
+        <definition>Result&lt; void &gt; pyfolio::analytics::PerformanceAnalysisSuite::calculate_risk_metrics</definition>
+        <argsstring>(const TimeSeries&lt; T &gt; &amp;returns, AnalysisReport &amp;report) const</argsstring>
+        <name>calculate_risk_metrics</name>
+        <qualifiedname>pyfolio::analytics::PerformanceAnalysisSuite::calculate_risk_metrics</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; T &gt; &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <param>
+          <type><ref refid="d4/dd2/structpyfolio_1_1analytics_1_1AnalysisReport" kindref="compound">AnalysisReport</ref> &amp;</type>
+          <declname>report</declname>
+        </param>
+        <briefdescription>
+<para>Calculate risk-adjusted metrics. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_analysis_suite.h" line="114" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_analysis_suite.h" bodystart="114" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d26/classpyfolio_1_1analytics_1_1PerformanceAnalysisSuite_1a575e41e0554cd29223d56ab53bad96ae" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; void &gt;</type>
+        <definition>Result&lt; void &gt; pyfolio::analytics::PerformanceAnalysisSuite::calculate_rolling_metrics</definition>
+        <argsstring>(const TimeSeries&lt; T &gt; &amp;returns, AnalysisReport &amp;report) const</argsstring>
+        <name>calculate_rolling_metrics</name>
+        <qualifiedname>pyfolio::analytics::PerformanceAnalysisSuite::calculate_rolling_metrics</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; T &gt; &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <param>
+          <type><ref refid="d4/dd2/structpyfolio_1_1analytics_1_1AnalysisReport" kindref="compound">AnalysisReport</ref> &amp;</type>
+          <declname>report</declname>
+        </param>
+        <briefdescription>
+<para>Calculate rolling metrics efficiently. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_analysis_suite.h" line="157" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_analysis_suite.h" bodystart="157" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d26/classpyfolio_1_1analytics_1_1PerformanceAnalysisSuite_1a53f9db0601659f95be60af59e57af838" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void pyfolio::analytics::PerformanceAnalysisSuite::perform_risk_analysis</definition>
+        <argsstring>(AnalysisReport &amp;report) const</argsstring>
+        <name>perform_risk_analysis</name>
+        <qualifiedname>pyfolio::analytics::PerformanceAnalysisSuite::perform_risk_analysis</qualifiedname>
+        <param>
+          <type><ref refid="d4/dd2/structpyfolio_1_1analytics_1_1AnalysisReport" kindref="compound">AnalysisReport</ref> &amp;</type>
+          <declname>report</declname>
+        </param>
+        <briefdescription>
+<para>Perform risk checks and generate recommendations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_analysis_suite.h" line="202" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_analysis_suite.h" bodystart="202" bodyend="244"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="dd/d26/classpyfolio_1_1analytics_1_1PerformanceAnalysisSuite_1ac5e98814fe2f4a8f987a8c300f09e495" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>pyfolio::analytics::PerformanceAnalysisSuite::PerformanceAnalysisSuite</definition>
+        <argsstring>(AnalysisConfig config={})</argsstring>
+        <name>PerformanceAnalysisSuite</name>
+        <qualifiedname>pyfolio::analytics::PerformanceAnalysisSuite::PerformanceAnalysisSuite</qualifiedname>
+        <param>
+          <type><ref refid="de/d28/structpyfolio_1_1analytics_1_1AnalysisConfig" kindref="compound">AnalysisConfig</ref></type>
+          <declname>config</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_analysis_suite.h" line="247" column="14" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_analysis_suite.h" bodystart="247" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d26/classpyfolio_1_1analytics_1_1PerformanceAnalysisSuite_1a2a89a113f35927f33af40fa23ed44a70" prot="public" static="no" nodiscard="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; <ref refid="d4/dd2/structpyfolio_1_1analytics_1_1AnalysisReport" kindref="compound">AnalysisReport</ref> &gt;</type>
+        <definition>Result&lt; AnalysisReport &gt; pyfolio::analytics::PerformanceAnalysisSuite::analyze_performance</definition>
+        <argsstring>(const TimeSeries&lt; T &gt; &amp;returns, const std::optional&lt; TimeSeries&lt; T &gt; &gt; &amp;benchmark=std::nullopt) const</argsstring>
+        <name>analyze_performance</name>
+        <qualifiedname>pyfolio::analytics::PerformanceAnalysisSuite::analyze_performance</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; T &gt; &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <param>
+          <type>const std::optional&lt; <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; T &gt; &gt; &amp;</type>
+          <declname>benchmark</declname>
+          <defval>std::nullopt</defval>
+        </param>
+        <briefdescription>
+<para>Perform comprehensive performance analysis. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_analysis_suite.h" line="255" column="13" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_analysis_suite.h" bodystart="255" bodyend="403"/>
+        <references refid="d4/dd2/structpyfolio_1_1analytics_1_1AnalysisReport_1a589288c7e12f07f9f3867fa281cd9c20" compoundref="df/de7/performance__analysis__suite_8h" startline="75">pyfolio::analytics::AnalysisReport::alpha</references>
+        <references refid="d4/dd2/structpyfolio_1_1analytics_1_1AnalysisReport_1a38e681a3c837376a89f3a7ffa37760f6" compoundref="df/de7/performance__analysis__suite_8h" startline="85">pyfolio::analytics::AnalysisReport::analysis_timestamp</references>
+        <references refid="d4/dd2/structpyfolio_1_1analytics_1_1AnalysisReport_1a057108c0f1de79cfc11d1fce00a10bbc" compoundref="df/de7/performance__analysis__suite_8h" startline="55">pyfolio::analytics::AnalysisReport::annual_return</references>
+        <references refid="d4/dd2/structpyfolio_1_1analytics_1_1AnalysisReport_1ace446e8c5677012b2678dca187af9063" compoundref="df/de7/performance__analysis__suite_8h" startline="56">pyfolio::analytics::AnalysisReport::annual_volatility</references>
+        <references refid="d4/dd2/structpyfolio_1_1analytics_1_1AnalysisReport_1a2fa5e7ed544be1661d558ad1edcd4da5" compoundref="df/de7/performance__analysis__suite_8h" startline="76">pyfolio::analytics::AnalysisReport::beta</references>
+        <references refid="d4/dd2/structpyfolio_1_1analytics_1_1AnalysisReport_1a2048a961d567d59bb0bb091f88036aa1" compoundref="df/de7/performance__analysis__suite_8h" startline="81">pyfolio::analytics::AnalysisReport::cache_stats</references>
+        <references refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9aacbb30bd92a04a43bc1ea560dac5c241" compoundref="d3/d11/error__handling_8h" startline="26">pyfolio::CalculationError</references>
+        <references refid="d4/dd2/structpyfolio_1_1analytics_1_1AnalysisReport_1a1793e83fd50dd8746042ea5ba00d5080" compoundref="df/de7/performance__analysis__suite_8h" startline="60">pyfolio::analytics::AnalysisReport::calmar_ratio</references>
+        <references refid="d4/dd2/structpyfolio_1_1analytics_1_1AnalysisReport_1aea6e909bb3b3a4eec443c64b9df0efe3" compoundref="df/de7/performance__analysis__suite_8h" startline="84">pyfolio::analytics::AnalysisReport::computation_time</references>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1aabcf1a46e463e3a482632eacb0265394" compoundref="d8/d51/time__series_8h" startline="499" endline="510">pyfolio::TimeSeries&lt; T &gt;::cumsum</references>
+        <references refid="d4/dd2/structpyfolio_1_1analytics_1_1AnalysisReport_1a60b8f792068fea150e521f59ae5c2ef4" compoundref="df/de7/performance__analysis__suite_8h" startline="65">pyfolio::analytics::AnalysisReport::downside_deviation</references>
+        <references refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" compoundref="d3/d11/error__handling_8h" startline="111" endline="116">pyfolio::Result&lt; T &gt;::error</references>
+        <references refid="d4/dd2/structpyfolio_1_1analytics_1_1AnalysisReport_1a51e8da4f046598e3a1782461458592fb" compoundref="df/de7/performance__analysis__suite_8h" startline="77">pyfolio::analytics::AnalysisReport::information_ratio</references>
+        <references refid="d4/dd2/structpyfolio_1_1analytics_1_1AnalysisReport_1af034819dd16f0dfa7f6f893a489ae4b6" compoundref="df/de7/performance__analysis__suite_8h" startline="67">pyfolio::analytics::AnalysisReport::kurtosis</references>
+        <references refid="d4/dd2/structpyfolio_1_1analytics_1_1AnalysisReport_1ac4146ae68810aea2e6cf56ee444065bd" compoundref="df/de7/performance__analysis__suite_8h" startline="59">pyfolio::analytics::AnalysisReport::max_drawdown</references>
+        <references refid="d4/dd2/structpyfolio_1_1analytics_1_1AnalysisReport_1a2a5d413c1c804eb72b4be7d22c520cbd" compoundref="df/de7/performance__analysis__suite_8h" startline="57">pyfolio::analytics::AnalysisReport::sharpe_ratio</references>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1a82aad601509b554d6968521b8461f50e" compoundref="d8/d51/time__series_8h" startline="102" endline="102">pyfolio::TimeSeries&lt; T &gt;::size</references>
+        <references refid="d4/dd2/structpyfolio_1_1analytics_1_1AnalysisReport_1a1b30866872455b4c679ec6a363766a60" compoundref="df/de7/performance__analysis__suite_8h" startline="66">pyfolio::analytics::AnalysisReport::skewness</references>
+        <references refid="d4/dd2/structpyfolio_1_1analytics_1_1AnalysisReport_1a4a5a77ef63033f3419685398489e8b5a" compoundref="df/de7/performance__analysis__suite_8h" startline="58">pyfolio::analytics::AnalysisReport::sortino_ratio</references>
+        <references refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" compoundref="d3/d11/error__handling_8h" startline="74" endline="74">pyfolio::Result&lt; T &gt;::success</references>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1a0374bbc62bd808749ac476b3af4b0ead" compoundref="d8/d51/time__series_8h" startline="124" endline="124">pyfolio::TimeSeries&lt; T &gt;::timestamps</references>
+        <references refid="d4/dd2/structpyfolio_1_1analytics_1_1AnalysisReport_1a015c2dffe6e3ed1db704f3115ca1fcd3" compoundref="df/de7/performance__analysis__suite_8h" startline="54">pyfolio::analytics::AnalysisReport::total_return</references>
+        <references refid="d4/dd2/structpyfolio_1_1analytics_1_1AnalysisReport_1ac408b3c65b0e589794b742200d5532cb" compoundref="df/de7/performance__analysis__suite_8h" startline="78">pyfolio::analytics::AnalysisReport::tracking_error</references>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1ab0b20c4945cdde977885888f384256c3" compoundref="d8/d51/time__series_8h" startline="125" endline="125">pyfolio::TimeSeries&lt; T &gt;::values</references>
+        <referencedby refid="d3/d03/classpyfolio_1_1analytics_1_1ParallelPerformanceAnalysisSuite_1a7c39e9da13b225d9186ed324da6514d5" compoundref="dd/d71/parallel__performance__suite_8h" startline="158" endline="334">pyfolio::analytics::ParallelPerformanceAnalysisSuite::analyze_performance_parallel</referencedby>
+        <referencedby refid="d2/d10/namespacepyfolio_1_1analytics_1a692d3d38854a2039ea715d0ba5ca5838" compoundref="df/de7/performance__analysis__suite_8h" startline="459" endline="462">pyfolio::analytics::analyze_portfolio_performance</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="dd/d26/classpyfolio_1_1analytics_1_1PerformanceAnalysisSuite_1a6b9722354403aaccf8862317429bb32a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="df/de7/structpyfolio_1_1analytics_1_1PerformanceAnalysisSuite_1_1SuitePerformanceStats" kindref="compound">SuitePerformanceStats</ref></type>
+        <definition>SuitePerformanceStats pyfolio::analytics::PerformanceAnalysisSuite::get_performance_stats</definition>
+        <argsstring>() const</argsstring>
+        <name>get_performance_stats</name>
+        <qualifiedname>pyfolio::analytics::PerformanceAnalysisSuite::get_performance_stats</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_analysis_suite.h" line="416" column="27" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_analysis_suite.h" bodystart="416" bodyend="426"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d26/classpyfolio_1_1analytics_1_1PerformanceAnalysisSuite_1ab34d166961357e7173775299f6994bcf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void pyfolio::analytics::PerformanceAnalysisSuite::update_config</definition>
+        <argsstring>(const AnalysisConfig &amp;new_config)</argsstring>
+        <name>update_config</name>
+        <qualifiedname>pyfolio::analytics::PerformanceAnalysisSuite::update_config</qualifiedname>
+        <param>
+          <type>const <ref refid="de/d28/structpyfolio_1_1analytics_1_1AnalysisConfig" kindref="compound">AnalysisConfig</ref> &amp;</type>
+          <declname>new_config</declname>
+        </param>
+        <briefdescription>
+<para>Update configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_analysis_suite.h" line="431" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_analysis_suite.h" bodystart="431" bodyend="434"/>
+        <references refid="de/d28/structpyfolio_1_1analytics_1_1AnalysisConfig_1a3f41c3fd36eaed927e6182e041d658a5" compoundref="df/de7/performance__analysis__suite_8h" startline="31">pyfolio::analytics::AnalysisConfig::cache_config</references>
+      </memberdef>
+      <memberdef kind="function" id="dd/d26/classpyfolio_1_1analytics_1_1PerformanceAnalysisSuite_1a5eafaa5c5624cb9b40b16bbe944489a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void pyfolio::analytics::PerformanceAnalysisSuite::clear_cache</definition>
+        <argsstring>()</argsstring>
+        <name>clear_cache</name>
+        <qualifiedname>pyfolio::analytics::PerformanceAnalysisSuite::clear_cache</qualifiedname>
+        <briefdescription>
+<para>Clear all caches. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_analysis_suite.h" line="439" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_analysis_suite.h" bodystart="439" bodyend="439"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d26/classpyfolio_1_1analytics_1_1PerformanceAnalysisSuite_1a9198fb2924ab75dae4386bab25d050a0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="de/d28/structpyfolio_1_1analytics_1_1AnalysisConfig" kindref="compound">AnalysisConfig</ref> &amp;</type>
+        <definition>const AnalysisConfig &amp; pyfolio::analytics::PerformanceAnalysisSuite::get_config</definition>
+        <argsstring>() const</argsstring>
+        <name>get_config</name>
+        <qualifiedname>pyfolio::analytics::PerformanceAnalysisSuite::get_config</qualifiedname>
+        <briefdescription>
+<para>Get current configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_analysis_suite.h" line="444" column="26" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_analysis_suite.h" bodystart="444" bodyend="444"/>
+        <referencedby refid="d3/d03/classpyfolio_1_1analytics_1_1ParallelPerformanceAnalysisSuite_1a7c39e9da13b225d9186ed324da6514d5" compoundref="dd/d71/parallel__performance__suite_8h" startline="158" endline="334">pyfolio::analytics::ParallelPerformanceAnalysisSuite::analyze_performance_parallel</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>High-performance portfolio analysis suite. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class provides a comprehensive toolkit for portfolio performance analysis with intelligent caching, risk management, and real-time monitoring capabilities. Designed for high-frequency trading environments where performance is critical. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>pyfolio::analytics::ParallelPerformanceAnalysisSuite</label>
+        <link refid="d3/d03/classpyfolio_1_1analytics_1_1ParallelPerformanceAnalysisSuite"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>pyfolio::analytics::PerformanceAnalysisSuite</label>
+        <link refid="dd/d26/classpyfolio_1_1analytics_1_1PerformanceAnalysisSuite"/>
+      </node>
+    </inheritancegraph>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_analysis_suite.h" line="100" column="1" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_analysis_suite.h" bodystart="100" bodyend="445"/>
+    <listofallmembers>
+      <member refid="dd/d26/classpyfolio_1_1analytics_1_1PerformanceAnalysisSuite_1a2a89a113f35927f33af40fa23ed44a70" prot="public" virt="non-virtual"><scope>pyfolio::analytics::PerformanceAnalysisSuite</scope><name>analyze_performance</name></member>
+      <member refid="dd/d26/classpyfolio_1_1analytics_1_1PerformanceAnalysisSuite_1a5b47576975b0f429173695c5e9868f33" prot="private" virt="non-virtual"><scope>pyfolio::analytics::PerformanceAnalysisSuite</scope><name>cache_calculator_</name></member>
+      <member refid="dd/d26/classpyfolio_1_1analytics_1_1PerformanceAnalysisSuite_1a35170357258e14e8cf2595080c92fcb9" prot="private" virt="non-virtual"><scope>pyfolio::analytics::PerformanceAnalysisSuite</scope><name>calculate_risk_metrics</name></member>
+      <member refid="dd/d26/classpyfolio_1_1analytics_1_1PerformanceAnalysisSuite_1a575e41e0554cd29223d56ab53bad96ae" prot="private" virt="non-virtual"><scope>pyfolio::analytics::PerformanceAnalysisSuite</scope><name>calculate_rolling_metrics</name></member>
+      <member refid="dd/d26/classpyfolio_1_1analytics_1_1PerformanceAnalysisSuite_1a5eafaa5c5624cb9b40b16bbe944489a6" prot="public" virt="non-virtual"><scope>pyfolio::analytics::PerformanceAnalysisSuite</scope><name>clear_cache</name></member>
+      <member refid="dd/d26/classpyfolio_1_1analytics_1_1PerformanceAnalysisSuite_1ad5d03190e82eefb8e0e1d7cee1e3746f" prot="private" virt="non-virtual"><scope>pyfolio::analytics::PerformanceAnalysisSuite</scope><name>config_</name></member>
+      <member refid="dd/d26/classpyfolio_1_1analytics_1_1PerformanceAnalysisSuite_1a9198fb2924ab75dae4386bab25d050a0" prot="public" virt="non-virtual"><scope>pyfolio::analytics::PerformanceAnalysisSuite</scope><name>get_config</name></member>
+      <member refid="dd/d26/classpyfolio_1_1analytics_1_1PerformanceAnalysisSuite_1a6b9722354403aaccf8862317429bb32a" prot="public" virt="non-virtual"><scope>pyfolio::analytics::PerformanceAnalysisSuite</scope><name>get_performance_stats</name></member>
+      <member refid="dd/d26/classpyfolio_1_1analytics_1_1PerformanceAnalysisSuite_1a4a40fd9252a8c8fb37d42236501a3f69" prot="private" virt="non-virtual"><scope>pyfolio::analytics::PerformanceAnalysisSuite</scope><name>last_analysis_time_</name></member>
+      <member refid="dd/d26/classpyfolio_1_1analytics_1_1PerformanceAnalysisSuite_1a53f9db0601659f95be60af59e57af838" prot="private" virt="non-virtual"><scope>pyfolio::analytics::PerformanceAnalysisSuite</scope><name>perform_risk_analysis</name></member>
+      <member refid="dd/d26/classpyfolio_1_1analytics_1_1PerformanceAnalysisSuite_1ac5e98814fe2f4a8f987a8c300f09e495" prot="public" virt="non-virtual"><scope>pyfolio::analytics::PerformanceAnalysisSuite</scope><name>PerformanceAnalysisSuite</name></member>
+      <member refid="dd/d26/classpyfolio_1_1analytics_1_1PerformanceAnalysisSuite_1aa5b7af14119db440ebea535b19021ae4" prot="private" virt="non-virtual"><scope>pyfolio::analytics::PerformanceAnalysisSuite</scope><name>total_analyses_performed_</name></member>
+      <member refid="dd/d26/classpyfolio_1_1analytics_1_1PerformanceAnalysisSuite_1a0bbe1f5e3530e021ce882daffddc092f" prot="private" virt="non-virtual"><scope>pyfolio::analytics::PerformanceAnalysisSuite</scope><name>total_computation_time_</name></member>
+      <member refid="dd/d26/classpyfolio_1_1analytics_1_1PerformanceAnalysisSuite_1ab34d166961357e7173775299f6994bcf" prot="public" virt="non-virtual"><scope>pyfolio::analytics::PerformanceAnalysisSuite</scope><name>update_config</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

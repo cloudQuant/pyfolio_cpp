@@ -1,0 +1,1044 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="d7/d68/namespacepyfolio_1_1reporting" kind="namespace" language="C++">
+    <compoundname>pyfolio::reporting</compoundname>
+    <innerclass refid="d7/d42/structpyfolio_1_1reporting_1_1InterestingPeriod" prot="public">pyfolio::reporting::InterestingPeriod</innerclass>
+    <innerclass refid="d0/dd1/classpyfolio_1_1reporting_1_1InterestingPeriods" prot="public">pyfolio::reporting::InterestingPeriods</innerclass>
+    <innerclass refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig" prot="public">pyfolio::reporting::TearSheetConfig</innerclass>
+    <innerclass refid="db/db8/structpyfolio_1_1reporting_1_1TearSheetResult" prot="public">pyfolio::reporting::TearSheetResult</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="d7/d68/namespacepyfolio_1_1reporting_1aac9c6c66a273fe37313f67bd6bd67903" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; <ref refid="db/db8/structpyfolio_1_1reporting_1_1TearSheetResult" kindref="compound">TearSheetResult</ref> &gt;</type>
+        <definition>Result&lt; TearSheetResult &gt; pyfolio::reporting::create_full_tear_sheet</definition>
+        <argsstring>(const TimeSeries&lt; Return &gt; &amp;returns, const std::optional&lt; TimeSeries&lt; std::unordered_map&lt; std::string, Position &gt; &gt; &gt; &amp;positions=std::nullopt, const std::optional&lt; std::vector&lt; Transaction &gt; &gt; &amp;transactions=std::nullopt, const std::optional&lt; TimeSeries&lt; Return &gt; &gt; &amp;benchmark_returns=std::nullopt, const TearSheetConfig &amp;config=TearSheetConfig{})</argsstring>
+        <name>create_full_tear_sheet</name>
+        <qualifiedname>pyfolio::reporting::create_full_tear_sheet</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <param>
+          <type>const std::optional&lt; <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; std::unordered_map&lt; std::string, <ref refid="d6/df6/structpyfolio_1_1Position" kindref="compound">Position</ref> &gt; &gt; &gt; &amp;</type>
+          <declname>positions</declname>
+          <defval>std::nullopt</defval>
+        </param>
+        <param>
+          <type>const std::optional&lt; std::vector&lt; <ref refid="d5/d11/structpyfolio_1_1Transaction" kindref="compound">Transaction</ref> &gt; &gt; &amp;</type>
+          <declname>transactions</declname>
+          <defval>std::nullopt</defval>
+        </param>
+        <param>
+          <type>const std::optional&lt; <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &gt; &amp;</type>
+          <declname>benchmark_returns</declname>
+          <defval>std::nullopt</defval>
+        </param>
+        <param>
+          <type>const <ref refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig" kindref="compound">TearSheetConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval><ref refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig" kindref="compound">TearSheetConfig</ref>{}</defval>
+        </param>
+        <briefdescription>
+<para>Create a full tear sheet with all analyses. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the most comprehensive tear sheet, including:<itemizedlist>
+<listitem><para>Performance metrics and plots</para>
+</listitem><listitem><para>Risk analysis</para>
+</listitem><listitem><para><ref refid="d6/df6/structpyfolio_1_1Position" kindref="compound">Position</ref> analysis (if positions provided)</para>
+</listitem><listitem><para><ref refid="d5/d11/structpyfolio_1_1Transaction" kindref="compound">Transaction</ref> analysis (if transactions provided)</para>
+</listitem><listitem><para>Round trip analysis</para>
+</listitem><listitem><para>Drawdown periods</para>
+</listitem><listitem><para>Interesting time periods</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>returns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time series of returns </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>positions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional time series of positions </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>transactions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional transaction data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>benchmark_returns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional benchmark returns for comparison </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Configuration options </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref> containing summary statistics and generated plots </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" line="424" column="15" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" bodystart="424" bodyend="439" declfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" declline="123" declcolumn="8"/>
+        <references refid="d7/d68/namespacepyfolio_1_1reporting_1a958bce537a9c62b948257a4c6953425f" compoundref="d3/d66/tears_8h" startline="368" endline="422">create_simple_tear_sheet</references>
+        <references refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" compoundref="d3/d11/error__handling_8h" startline="74" endline="74">pyfolio::Result&lt; T &gt;::success</references>
+        <referencedby refid="d7/d68/namespacepyfolio_1_1reporting_1a16455bc47e91fc0ce588687e7bc83cd2" compoundref="d3/d66/tears_8h" startline="495" endline="512">create_all_tear_sheets</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/d68/namespacepyfolio_1_1reporting_1a958bce537a9c62b948257a4c6953425f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; <ref refid="db/db8/structpyfolio_1_1reporting_1_1TearSheetResult" kindref="compound">TearSheetResult</ref> &gt;</type>
+        <definition>Result&lt; TearSheetResult &gt; pyfolio::reporting::create_simple_tear_sheet</definition>
+        <argsstring>(const TimeSeries&lt; Return &gt; &amp;returns, const std::optional&lt; TimeSeries&lt; Return &gt; &gt; &amp;benchmark_returns=std::nullopt, const TearSheetConfig &amp;config=TearSheetConfig{})</argsstring>
+        <name>create_simple_tear_sheet</name>
+        <qualifiedname>pyfolio::reporting::create_simple_tear_sheet</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <param>
+          <type>const std::optional&lt; <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &gt; &amp;</type>
+          <declname>benchmark_returns</declname>
+          <defval>std::nullopt</defval>
+        </param>
+        <param>
+          <type>const <ref refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig" kindref="compound">TearSheetConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval><ref refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig" kindref="compound">TearSheetConfig</ref>{}</defval>
+        </param>
+        <briefdescription>
+<para>Create a simple tear sheet with basic performance metrics. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Includes:<itemizedlist>
+<listitem><para>Summary statistics</para>
+</listitem><listitem><para>Cumulative returns plot</para>
+</listitem><listitem><para>Rolling volatility</para>
+</listitem><listitem><para>Drawdown plot</para>
+</listitem><listitem><para>Monthly returns heatmap</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>returns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time series of returns </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>benchmark_returns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional benchmark returns </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Configuration options </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref> containing summary statistics and generated plots </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" line="368" column="15" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" bodystart="368" bodyend="422" declfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" declline="145" declcolumn="8"/>
+        <references refid="d5/d01/structpyfolio_1_1reporting_1_1TearSheetResult_1_1PerformanceSummary_1a2eec1ff15d47cfb19cf02e60e8bc6e21" compoundref="d3/d66/tears_8h" startline="77">pyfolio::reporting::TearSheetResult::PerformanceSummary::annual_return</references>
+        <references refid="d5/d01/structpyfolio_1_1reporting_1_1TearSheetResult_1_1PerformanceSummary_1a6c5d0224bd93f03335ad6e6665a761b4" compoundref="d3/d66/tears_8h" startline="78">pyfolio::reporting::TearSheetResult::PerformanceSummary::annual_volatility</references>
+        <references refid="d5/d01/structpyfolio_1_1reporting_1_1TearSheetResult_1_1PerformanceSummary_1aa8f6e8acc5031b9fd80af74fbad37be0" compoundref="d3/d66/tears_8h" startline="82">pyfolio::reporting::TearSheetResult::PerformanceSummary::calmar_ratio</references>
+        <references refid="d5/d01/structpyfolio_1_1reporting_1_1TearSheetResult_1_1PerformanceSummary_1a6cb8533f9f82ec86b68d282323d211fc" compoundref="d3/d66/tears_8h" startline="88">pyfolio::reporting::TearSheetResult::PerformanceSummary::conditional_value_at_risk</references>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1a7401475da2acefda00385214b27e7c59" compoundref="d8/d51/time__series_8h" startline="103" endline="103">pyfolio::TimeSeries&lt; T &gt;::empty</references>
+        <references refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" compoundref="d3/d11/error__handling_8h" startline="111" endline="116">pyfolio::Result&lt; T &gt;::error</references>
+        <references refid="db/db8/structpyfolio_1_1reporting_1_1TearSheetResult_1abb40d595e5a0b5f5642be16690015c1c" compoundref="d3/d66/tears_8h" startline="101">pyfolio::reporting::TearSheetResult::generation_time_seconds</references>
+        <references refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9ad8f78ca9a692a9411afbc7584b69d043" compoundref="d3/d11/error__handling_8h" startline="17">pyfolio::InvalidInput</references>
+        <references refid="d5/d01/structpyfolio_1_1reporting_1_1TearSheetResult_1_1PerformanceSummary_1ac8122816c643d8cfbde848c1c04d0574" compoundref="d3/d66/tears_8h" startline="85">pyfolio::reporting::TearSheetResult::PerformanceSummary::kurtosis</references>
+        <references refid="d5/d01/structpyfolio_1_1reporting_1_1TearSheetResult_1_1PerformanceSummary_1aa93b7cc6b807d1d02970b7560669055e" compoundref="d3/d66/tears_8h" startline="81">pyfolio::reporting::TearSheetResult::PerformanceSummary::max_drawdown</references>
+        <references refid="d5/d01/structpyfolio_1_1reporting_1_1TearSheetResult_1_1PerformanceSummary_1a8e12aad10f555158dadea14e5f4b5b8a" compoundref="d3/d66/tears_8h" startline="83">pyfolio::reporting::TearSheetResult::PerformanceSummary::omega_ratio</references>
+        <references refid="db/db8/structpyfolio_1_1reporting_1_1TearSheetResult_1a7149cba74ada5bf3464dac01df44de0a">pyfolio::reporting::TearSheetResult::performance</references>
+        <references refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig_1abcf428add5d7da5ea05bcbf6e61333b2" compoundref="d3/d66/tears_8h" startline="32">pyfolio::reporting::TearSheetConfig::risk_free_rate</references>
+        <references refid="d5/d01/structpyfolio_1_1reporting_1_1TearSheetResult_1_1PerformanceSummary_1afd208ddaf20d66eb8e573aba03c1bd0d" compoundref="d3/d66/tears_8h" startline="79">pyfolio::reporting::TearSheetResult::PerformanceSummary::sharpe_ratio</references>
+        <references refid="d5/d01/structpyfolio_1_1reporting_1_1TearSheetResult_1_1PerformanceSummary_1ae61b4834953dbb1a4c7e11a523279e7a" compoundref="d3/d66/tears_8h" startline="84">pyfolio::reporting::TearSheetResult::PerformanceSummary::skewness</references>
+        <references refid="d5/d01/structpyfolio_1_1reporting_1_1TearSheetResult_1_1PerformanceSummary_1a54f925bf1a9afcf4db0db2fa962ad872" compoundref="d3/d66/tears_8h" startline="80">pyfolio::reporting::TearSheetResult::PerformanceSummary::sortino_ratio</references>
+        <references refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" compoundref="d3/d11/error__handling_8h" startline="74" endline="74">pyfolio::Result&lt; T &gt;::success</references>
+        <references refid="d5/d01/structpyfolio_1_1reporting_1_1TearSheetResult_1_1PerformanceSummary_1a0479796f98b7be4cd19e0517251c240b" compoundref="d3/d66/tears_8h" startline="86">pyfolio::reporting::TearSheetResult::PerformanceSummary::tail_ratio</references>
+        <references refid="d5/d01/structpyfolio_1_1reporting_1_1TearSheetResult_1_1PerformanceSummary_1ab4b618173c3cfa6a39578cdd3720b5f0" compoundref="d3/d66/tears_8h" startline="76">pyfolio::reporting::TearSheetResult::PerformanceSummary::total_return</references>
+        <references refid="d5/d01/structpyfolio_1_1reporting_1_1TearSheetResult_1_1PerformanceSummary_1a12860d372ce266b2bb06ea53c0efd631" compoundref="d3/d66/tears_8h" startline="87">pyfolio::reporting::TearSheetResult::PerformanceSummary::value_at_risk</references>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1ab0b20c4945cdde977885888f384256c3" compoundref="d8/d51/time__series_8h" startline="125" endline="125">pyfolio::TimeSeries&lt; T &gt;::values</references>
+        <referencedby refid="d7/d68/namespacepyfolio_1_1reporting_1a16455bc47e91fc0ce588687e7bc83cd2" compoundref="d3/d66/tears_8h" startline="495" endline="512">create_all_tear_sheets</referencedby>
+        <referencedby refid="d7/d68/namespacepyfolio_1_1reporting_1aac9c6c66a273fe37313f67bd6bd67903" compoundref="d3/d66/tears_8h" startline="424" endline="439">create_full_tear_sheet</referencedby>
+        <referencedby refid="d7/d68/namespacepyfolio_1_1reporting_1af2f92bc46ca295a03f224ee505ffb638" compoundref="d3/d66/tears_8h" startline="489" endline="493">create_interesting_times_tear_sheet</referencedby>
+        <referencedby refid="d7/d68/namespacepyfolio_1_1reporting_1a31cb157f7b3fd4e572b2f62db5308edd" compoundref="d3/d66/tears_8h" startline="447" endline="459">create_position_tear_sheet</referencedby>
+        <referencedby refid="d7/d68/namespacepyfolio_1_1reporting_1a14f0f60fc91109a6adab9785c92632eb" compoundref="d3/d66/tears_8h" startline="441" endline="445">create_returns_tear_sheet</referencedby>
+        <referencedby refid="d7/d68/namespacepyfolio_1_1reporting_1aac57d5e791c078f956065e1a4d2cdc01" compoundref="d3/d66/tears_8h" startline="475" endline="487">create_round_trip_tear_sheet</referencedby>
+        <referencedby refid="d7/d68/namespacepyfolio_1_1reporting_1a8ccd9b1e38e0190c91d5d06595b486fa" compoundref="d3/d66/tears_8h" startline="461" endline="473">create_txn_tear_sheet</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/d68/namespacepyfolio_1_1reporting_1a14f0f60fc91109a6adab9785c92632eb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; <ref refid="db/db8/structpyfolio_1_1reporting_1_1TearSheetResult" kindref="compound">TearSheetResult</ref> &gt;</type>
+        <definition>Result&lt; TearSheetResult &gt; pyfolio::reporting::create_returns_tear_sheet</definition>
+        <argsstring>(const TimeSeries&lt; Return &gt; &amp;returns, const std::optional&lt; TimeSeries&lt; Return &gt; &gt; &amp;benchmark_returns=std::nullopt, const TearSheetConfig &amp;config=TearSheetConfig{})</argsstring>
+        <name>create_returns_tear_sheet</name>
+        <qualifiedname>pyfolio::reporting::create_returns_tear_sheet</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <param>
+          <type>const std::optional&lt; <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &gt; &amp;</type>
+          <declname>benchmark_returns</declname>
+          <defval>std::nullopt</defval>
+        </param>
+        <param>
+          <type>const <ref refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig" kindref="compound">TearSheetConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval><ref refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig" kindref="compound">TearSheetConfig</ref>{}</defval>
+        </param>
+        <briefdescription>
+<para>Create a returns-focused tear sheet. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Detailed analysis of return characteristics including:<itemizedlist>
+<listitem><para><ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> distribution analysis</para>
+</listitem><listitem><para>Rolling return metrics</para>
+</listitem><listitem><para>Regime analysis</para>
+</listitem><listitem><para>Autocorrelation analysis</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>returns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time series of returns </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>benchmark_returns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional benchmark returns </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Configuration options </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref> containing analysis results </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" line="441" column="15" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" bodystart="441" bodyend="445" declfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" declline="163" declcolumn="8"/>
+        <references refid="d7/d68/namespacepyfolio_1_1reporting_1a958bce537a9c62b948257a4c6953425f" compoundref="d3/d66/tears_8h" startline="368" endline="422">create_simple_tear_sheet</references>
+      </memberdef>
+      <memberdef kind="function" id="d7/d68/namespacepyfolio_1_1reporting_1a31cb157f7b3fd4e572b2f62db5308edd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; <ref refid="db/db8/structpyfolio_1_1reporting_1_1TearSheetResult" kindref="compound">TearSheetResult</ref> &gt;</type>
+        <definition>Result&lt; TearSheetResult &gt; pyfolio::reporting::create_position_tear_sheet</definition>
+        <argsstring>(const TimeSeries&lt; Return &gt; &amp;returns, const TimeSeries&lt; std::unordered_map&lt; std::string, Position &gt; &gt; &amp;positions, const TearSheetConfig &amp;config=TearSheetConfig{})</argsstring>
+        <name>create_position_tear_sheet</name>
+        <qualifiedname>pyfolio::reporting::create_position_tear_sheet</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; std::unordered_map&lt; std::string, <ref refid="d6/df6/structpyfolio_1_1Position" kindref="compound">Position</ref> &gt; &gt; &amp;</type>
+          <declname>positions</declname>
+        </param>
+        <param>
+          <type>const <ref refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig" kindref="compound">TearSheetConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval><ref refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig" kindref="compound">TearSheetConfig</ref>{}</defval>
+        </param>
+        <briefdescription>
+<para>Create a position-focused tear sheet. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Analyzes portfolio positions including:<itemizedlist>
+<listitem><para><ref refid="d6/df6/structpyfolio_1_1Position" kindref="compound">Position</ref> concentrations</para>
+</listitem><listitem><para>Sector/asset allocations</para>
+</listitem><listitem><para>Leverage analysis</para>
+</listitem><listitem><para>Long/short exposure</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>returns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time series of returns </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>positions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time series of positions </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Configuration options </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref> containing position analysis </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" line="447" column="15" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" bodystart="447" bodyend="459" declfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" declline="181" declcolumn="8"/>
+        <references refid="d7/d68/namespacepyfolio_1_1reporting_1a958bce537a9c62b948257a4c6953425f" compoundref="d3/d66/tears_8h" startline="368" endline="422">create_simple_tear_sheet</references>
+        <references refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" compoundref="d3/d11/error__handling_8h" startline="74" endline="74">pyfolio::Result&lt; T &gt;::success</references>
+      </memberdef>
+      <memberdef kind="function" id="d7/d68/namespacepyfolio_1_1reporting_1a8ccd9b1e38e0190c91d5d06595b486fa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; <ref refid="db/db8/structpyfolio_1_1reporting_1_1TearSheetResult" kindref="compound">TearSheetResult</ref> &gt;</type>
+        <definition>Result&lt; TearSheetResult &gt; pyfolio::reporting::create_txn_tear_sheet</definition>
+        <argsstring>(const TimeSeries&lt; Return &gt; &amp;returns, const TimeSeries&lt; std::unordered_map&lt; std::string, Position &gt; &gt; &amp;positions, const std::vector&lt; Transaction &gt; &amp;transactions, const TearSheetConfig &amp;config=TearSheetConfig{})</argsstring>
+        <name>create_txn_tear_sheet</name>
+        <qualifiedname>pyfolio::reporting::create_txn_tear_sheet</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; std::unordered_map&lt; std::string, <ref refid="d6/df6/structpyfolio_1_1Position" kindref="compound">Position</ref> &gt; &gt; &amp;</type>
+          <declname>positions</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="d5/d11/structpyfolio_1_1Transaction" kindref="compound">Transaction</ref> &gt; &amp;</type>
+          <declname>transactions</declname>
+        </param>
+        <param>
+          <type>const <ref refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig" kindref="compound">TearSheetConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval><ref refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig" kindref="compound">TearSheetConfig</ref>{}</defval>
+        </param>
+        <briefdescription>
+<para>Create a transaction-focused tear sheet. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Analyzes trading activity including:<itemizedlist>
+<listitem><para><ref refid="d5/d11/structpyfolio_1_1Transaction" kindref="compound">Transaction</ref> costs</para>
+</listitem><listitem><para>Turnover analysis</para>
+</listitem><listitem><para>Trade timing</para>
+</listitem><listitem><para>Slippage analysis</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>returns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time series of returns </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>positions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time series of positions </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>transactions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="d5/d11/structpyfolio_1_1Transaction" kindref="compound">Transaction</ref> data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Configuration options </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref> containing transaction analysis </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" line="461" column="15" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" bodystart="461" bodyend="473" declfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" declline="200" declcolumn="8"/>
+        <references refid="d7/d68/namespacepyfolio_1_1reporting_1a958bce537a9c62b948257a4c6953425f" compoundref="d3/d66/tears_8h" startline="368" endline="422">create_simple_tear_sheet</references>
+        <references refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" compoundref="d3/d11/error__handling_8h" startline="74" endline="74">pyfolio::Result&lt; T &gt;::success</references>
+      </memberdef>
+      <memberdef kind="function" id="d7/d68/namespacepyfolio_1_1reporting_1aac57d5e791c078f956065e1a4d2cdc01" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; <ref refid="db/db8/structpyfolio_1_1reporting_1_1TearSheetResult" kindref="compound">TearSheetResult</ref> &gt;</type>
+        <definition>Result&lt; TearSheetResult &gt; pyfolio::reporting::create_round_trip_tear_sheet</definition>
+        <argsstring>(const TimeSeries&lt; Return &gt; &amp;returns, const TimeSeries&lt; std::unordered_map&lt; std::string, Position &gt; &gt; &amp;positions, const std::vector&lt; Transaction &gt; &amp;transactions, const TearSheetConfig &amp;config=TearSheetConfig{})</argsstring>
+        <name>create_round_trip_tear_sheet</name>
+        <qualifiedname>pyfolio::reporting::create_round_trip_tear_sheet</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; std::unordered_map&lt; std::string, <ref refid="d6/df6/structpyfolio_1_1Position" kindref="compound">Position</ref> &gt; &gt; &amp;</type>
+          <declname>positions</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="d5/d11/structpyfolio_1_1Transaction" kindref="compound">Transaction</ref> &gt; &amp;</type>
+          <declname>transactions</declname>
+        </param>
+        <param>
+          <type>const <ref refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig" kindref="compound">TearSheetConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval><ref refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig" kindref="compound">TearSheetConfig</ref>{}</defval>
+        </param>
+        <briefdescription>
+<para>Create a round trip analysis tear sheet. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Analyzes completed round trip trades:<itemizedlist>
+<listitem><para>Win/loss ratios</para>
+</listitem><listitem><para>Holding period analysis</para>
+</listitem><listitem><para>PnL distribution</para>
+</listitem><listitem><para>Trade efficiency</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>returns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time series of returns </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>positions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time series of positions </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>transactions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="d5/d11/structpyfolio_1_1Transaction" kindref="compound">Transaction</ref> data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Configuration options </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref> containing round trip analysis </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" line="475" column="15" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" bodystart="475" bodyend="487" declfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" declline="220" declcolumn="8"/>
+        <references refid="d7/d68/namespacepyfolio_1_1reporting_1a958bce537a9c62b948257a4c6953425f" compoundref="d3/d66/tears_8h" startline="368" endline="422">create_simple_tear_sheet</references>
+        <references refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" compoundref="d3/d11/error__handling_8h" startline="74" endline="74">pyfolio::Result&lt; T &gt;::success</references>
+      </memberdef>
+      <memberdef kind="function" id="d7/d68/namespacepyfolio_1_1reporting_1af2f92bc46ca295a03f224ee505ffb638" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; <ref refid="db/db8/structpyfolio_1_1reporting_1_1TearSheetResult" kindref="compound">TearSheetResult</ref> &gt;</type>
+        <definition>Result&lt; TearSheetResult &gt; pyfolio::reporting::create_interesting_times_tear_sheet</definition>
+        <argsstring>(const TimeSeries&lt; Return &gt; &amp;returns, const std::optional&lt; TimeSeries&lt; Return &gt; &gt; &amp;benchmark_returns=std::nullopt, const TearSheetConfig &amp;config=TearSheetConfig{})</argsstring>
+        <name>create_interesting_times_tear_sheet</name>
+        <qualifiedname>pyfolio::reporting::create_interesting_times_tear_sheet</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <param>
+          <type>const std::optional&lt; <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &gt; &amp;</type>
+          <declname>benchmark_returns</declname>
+          <defval>std::nullopt</defval>
+        </param>
+        <param>
+          <type>const <ref refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig" kindref="compound">TearSheetConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval><ref refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig" kindref="compound">TearSheetConfig</ref>{}</defval>
+        </param>
+        <briefdescription>
+<para>Create an interesting times tear sheet. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Analyzes performance during significant market events:<itemizedlist>
+<listitem><para>Financial crises</para>
+</listitem><listitem><para>Market corrections</para>
+</listitem><listitem><para>High volatility periods</para>
+</listitem><listitem><para>Custom time periods</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>returns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time series of returns </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>benchmark_returns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional benchmark returns </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Configuration options </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref> containing event period analysis </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" line="489" column="15" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" bodystart="489" bodyend="493" declfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" declline="238" declcolumn="8"/>
+        <references refid="d7/d68/namespacepyfolio_1_1reporting_1a958bce537a9c62b948257a4c6953425f" compoundref="d3/d66/tears_8h" startline="368" endline="422">create_simple_tear_sheet</references>
+      </memberdef>
+      <memberdef kind="function" id="d7/d68/namespacepyfolio_1_1reporting_1a706b60e14b4c380a2cf7293496dfd6e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; <ref refid="db/db8/structpyfolio_1_1reporting_1_1TearSheetResult" kindref="compound">TearSheetResult</ref> &gt;</type>
+        <definition>Result&lt; TearSheetResult &gt; pyfolio::reporting::create_capacity_tear_sheet</definition>
+        <argsstring>(const TimeSeries&lt; Return &gt; &amp;returns, const TimeSeries&lt; std::unordered_map&lt; std::string, Position &gt; &gt; &amp;positions, const std::vector&lt; Transaction &gt; &amp;transactions, const TimeSeries&lt; std::unordered_map&lt; std::string, MarketData &gt; &gt; &amp;market_data, const TearSheetConfig &amp;config=TearSheetConfig{})</argsstring>
+        <name>create_capacity_tear_sheet</name>
+        <qualifiedname>pyfolio::reporting::create_capacity_tear_sheet</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; std::unordered_map&lt; std::string, <ref refid="d6/df6/structpyfolio_1_1Position" kindref="compound">Position</ref> &gt; &gt; &amp;</type>
+          <declname>positions</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="d5/d11/structpyfolio_1_1Transaction" kindref="compound">Transaction</ref> &gt; &amp;</type>
+          <declname>transactions</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; std::unordered_map&lt; std::string, <ref refid="de/d03/structpyfolio_1_1MarketData" kindref="compound">MarketData</ref> &gt; &gt; &amp;</type>
+          <declname>market_data</declname>
+        </param>
+        <param>
+          <type>const <ref refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig" kindref="compound">TearSheetConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval><ref refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig" kindref="compound">TearSheetConfig</ref>{}</defval>
+        </param>
+        <briefdescription>
+<para>Create a capacity analysis tear sheet. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Estimates strategy capacity based on:<itemizedlist>
+<listitem><para>Market impact modeling</para>
+</listitem><listitem><para>Liquidity constraints</para>
+</listitem><listitem><para><ref refid="d5/d11/structpyfolio_1_1Transaction" kindref="compound">Transaction</ref> costs at scale</para>
+</listitem><listitem><para>Slippage estimates</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>returns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time series of returns </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>positions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time series of positions </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>transactions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="d5/d11/structpyfolio_1_1Transaction" kindref="compound">Transaction</ref> data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>market_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Market volume and liquidity data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Configuration options </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref> containing capacity estimates </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" line="258" column="8" declfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" declline="258" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d68/namespacepyfolio_1_1reporting_1a2ebf18aa53b9cbf8219fdbea7631cf2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; <ref refid="db/db8/structpyfolio_1_1reporting_1_1TearSheetResult" kindref="compound">TearSheetResult</ref> &gt;</type>
+        <definition>Result&lt; TearSheetResult &gt; pyfolio::reporting::create_bayesian_tear_sheet</definition>
+        <argsstring>(const TimeSeries&lt; Return &gt; &amp;returns, const std::optional&lt; TimeSeries&lt; Return &gt; &gt; &amp;benchmark_returns=std::nullopt, const TearSheetConfig &amp;config=TearSheetConfig{})</argsstring>
+        <name>create_bayesian_tear_sheet</name>
+        <qualifiedname>pyfolio::reporting::create_bayesian_tear_sheet</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <param>
+          <type>const std::optional&lt; <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &gt; &amp;</type>
+          <declname>benchmark_returns</declname>
+          <defval>std::nullopt</defval>
+        </param>
+        <param>
+          <type>const <ref refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig" kindref="compound">TearSheetConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval><ref refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig" kindref="compound">TearSheetConfig</ref>{}</defval>
+        </param>
+        <briefdescription>
+<para>Create a Bayesian tear sheet. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Uses Bayesian methods to analyze:<itemizedlist>
+<listitem><para>Parameter uncertainty</para>
+</listitem><listitem><para>Out-of-sample predictions</para>
+</listitem><listitem><para>Regime probabilities</para>
+</listitem><listitem><para>Model comparison</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>returns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time series of returns </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>benchmark_returns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional benchmark returns </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Configuration options (must have include_bayesian = true) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref> containing Bayesian analysis </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" line="278" column="8" declfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" declline="278" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d68/namespacepyfolio_1_1reporting_1a3502ba757f9da7822b24bf4d869a84d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; <ref refid="db/db8/structpyfolio_1_1reporting_1_1TearSheetResult" kindref="compound">TearSheetResult</ref> &gt;</type>
+        <definition>Result&lt; TearSheetResult &gt; pyfolio::reporting::create_risk_tear_sheet</definition>
+        <argsstring>(const TimeSeries&lt; Return &gt; &amp;returns, const TimeSeries&lt; std::unordered_map&lt; std::string, Position &gt; &gt; &amp;positions, const TimeSeries&lt; std::unordered_map&lt; std::string, Return &gt; &gt; &amp;factor_returns, const TearSheetConfig &amp;config=TearSheetConfig{})</argsstring>
+        <name>create_risk_tear_sheet</name>
+        <qualifiedname>pyfolio::reporting::create_risk_tear_sheet</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; std::unordered_map&lt; std::string, <ref refid="d6/df6/structpyfolio_1_1Position" kindref="compound">Position</ref> &gt; &gt; &amp;</type>
+          <declname>positions</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; std::unordered_map&lt; std::string, <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &gt; &amp;</type>
+          <declname>factor_returns</declname>
+        </param>
+        <param>
+          <type>const <ref refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig" kindref="compound">TearSheetConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval><ref refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig" kindref="compound">TearSheetConfig</ref>{}</defval>
+        </param>
+        <briefdescription>
+<para>Create a risk analysis tear sheet. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Comprehensive risk analysis including:<itemizedlist>
+<listitem><para>Factor exposures</para>
+</listitem><listitem><para>Risk decomposition</para>
+</listitem><listitem><para>Stress testing</para>
+</listitem><listitem><para>Tail risk analysis</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>returns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time series of returns </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>positions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time series of positions </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>factor_returns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Factor return data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Configuration options </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref> containing risk analysis </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" line="297" column="8" declfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" declline="297" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d68/namespacepyfolio_1_1reporting_1a47a6aa53c9e563f086d729cfa6f0ad37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; <ref refid="db/db8/structpyfolio_1_1reporting_1_1TearSheetResult" kindref="compound">TearSheetResult</ref> &gt;</type>
+        <definition>Result&lt; TearSheetResult &gt; pyfolio::reporting::create_perf_attrib_tear_sheet</definition>
+        <argsstring>(const TimeSeries&lt; Return &gt; &amp;returns, const TimeSeries&lt; std::unordered_map&lt; std::string, Position &gt; &gt; &amp;positions, const TimeSeries&lt; std::unordered_map&lt; std::string, Return &gt; &gt; &amp;factor_returns, const std::optional&lt; TimeSeries&lt; std::unordered_map&lt; std::string, double &gt; &gt; &gt; &amp;factor_loadings=std::nullopt, const TearSheetConfig &amp;config=TearSheetConfig{})</argsstring>
+        <name>create_perf_attrib_tear_sheet</name>
+        <qualifiedname>pyfolio::reporting::create_perf_attrib_tear_sheet</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; std::unordered_map&lt; std::string, <ref refid="d6/df6/structpyfolio_1_1Position" kindref="compound">Position</ref> &gt; &gt; &amp;</type>
+          <declname>positions</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; std::unordered_map&lt; std::string, <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &gt; &amp;</type>
+          <declname>factor_returns</declname>
+        </param>
+        <param>
+          <type>const std::optional&lt; <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; std::unordered_map&lt; std::string, double &gt; &gt; &gt; &amp;</type>
+          <declname>factor_loadings</declname>
+          <defval>std::nullopt</defval>
+        </param>
+        <param>
+          <type>const <ref refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig" kindref="compound">TearSheetConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval><ref refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig" kindref="compound">TearSheetConfig</ref>{}</defval>
+        </param>
+        <briefdescription>
+<para>Create a performance attribution tear sheet. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Decomposes returns into:<itemizedlist>
+<listitem><para>Alpha and beta components</para>
+</listitem><listitem><para>Factor contributions</para>
+</listitem><listitem><para>Selection vs timing effects</para>
+</listitem><listitem><para>Sector/style attribution</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>returns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time series of returns </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>positions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time series of positions </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>factor_returns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Factor return data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>factor_loadings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pre-computed factor loadings (optional) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Configuration options </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref> containing attribution analysis </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" line="318" column="8" declfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" declline="318" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d68/namespacepyfolio_1_1reporting_1a12e6df2bc3f6fcf3c5b5026bd178df1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; std::string &gt;</type>
+        <definition>Result&lt; std::string &gt; pyfolio::reporting::generate_html_report</definition>
+        <argsstring>(const std::vector&lt; TearSheetResult &gt; &amp;results, const std::string &amp;output_path, const std::string &amp;title=&quot;Portfolio Analysis Report&quot;)</argsstring>
+        <name>generate_html_report</name>
+        <qualifiedname>pyfolio::reporting::generate_html_report</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="db/db8/structpyfolio_1_1reporting_1_1TearSheetResult" kindref="compound">TearSheetResult</ref> &gt; &amp;</type>
+          <declname>results</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>output_path</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>title</declname>
+          <defval>&quot;Portfolio Analysis Report&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Generate an HTML report from tear sheet results. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a standalone HTML file with:<itemizedlist>
+<listitem><para>Summary statistics tables</para>
+</listitem><listitem><para>Embedded plots</para>
+</listitem><listitem><para>Interactive elements</para>
+</listitem><listitem><para>Print-friendly formatting</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>results</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector of tear sheet results to combine </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>output_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path for the HTML file </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Report title </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref> indicating success or failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" line="338" column="8" declfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" declline="338" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d68/namespacepyfolio_1_1reporting_1a16455bc47e91fc0ce588687e7bc83cd2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; <ref refid="db/db8/structpyfolio_1_1reporting_1_1TearSheetResult" kindref="compound">TearSheetResult</ref> &gt; &gt;</type>
+        <definition>std::vector&lt; Result&lt; TearSheetResult &gt; &gt; pyfolio::reporting::create_all_tear_sheets</definition>
+        <argsstring>(const TimeSeries&lt; Return &gt; &amp;returns, const std::optional&lt; TimeSeries&lt; std::unordered_map&lt; std::string, Position &gt; &gt; &gt; &amp;positions=std::nullopt, const std::optional&lt; std::vector&lt; Transaction &gt; &gt; &amp;transactions=std::nullopt, const std::optional&lt; TimeSeries&lt; Return &gt; &gt; &amp;benchmark_returns=std::nullopt, const std::optional&lt; TimeSeries&lt; std::unordered_map&lt; std::string, Return &gt; &gt; &gt; &amp;factor_returns=std::nullopt, const std::optional&lt; TimeSeries&lt; std::unordered_map&lt; std::string, MarketData &gt; &gt; &gt; &amp;market_data=std::nullopt, const TearSheetConfig &amp;config=TearSheetConfig{})</argsstring>
+        <name>create_all_tear_sheets</name>
+        <qualifiedname>pyfolio::reporting::create_all_tear_sheets</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <param>
+          <type>const std::optional&lt; <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; std::unordered_map&lt; std::string, <ref refid="d6/df6/structpyfolio_1_1Position" kindref="compound">Position</ref> &gt; &gt; &gt; &amp;</type>
+          <declname>positions</declname>
+          <defval>std::nullopt</defval>
+        </param>
+        <param>
+          <type>const std::optional&lt; std::vector&lt; <ref refid="d5/d11/structpyfolio_1_1Transaction" kindref="compound">Transaction</ref> &gt; &gt; &amp;</type>
+          <declname>transactions</declname>
+          <defval>std::nullopt</defval>
+        </param>
+        <param>
+          <type>const std::optional&lt; <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &gt; &amp;</type>
+          <declname>benchmark_returns</declname>
+          <defval>std::nullopt</defval>
+        </param>
+        <param>
+          <type>const std::optional&lt; <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; std::unordered_map&lt; std::string, <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &gt; &gt; &amp;</type>
+          <declname>factor_returns</declname>
+          <defval>std::nullopt</defval>
+        </param>
+        <param>
+          <type>const std::optional&lt; <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; std::unordered_map&lt; std::string, <ref refid="de/d03/structpyfolio_1_1MarketData" kindref="compound">MarketData</ref> &gt; &gt; &gt; &amp;</type>
+          <declname>market_data</declname>
+          <defval>std::nullopt</defval>
+        </param>
+        <param>
+          <type>const <ref refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig" kindref="compound">TearSheetConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval><ref refid="dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig" kindref="compound">TearSheetConfig</ref>{}</defval>
+        </param>
+        <briefdescription>
+<para>Helper function to create all tear sheets at once. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Generates all applicable tear sheets based on provided data</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>returns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time series of returns </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>positions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional positions data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>transactions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional transaction data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>benchmark_returns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional benchmark returns </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>factor_returns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional factor returns </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>market_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional market data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Configuration options </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Vector of all generated tear sheet results </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" line="495" column="20" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" bodystart="495" bodyend="512" declfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h" declline="355" declcolumn="13"/>
+        <references refid="d7/d68/namespacepyfolio_1_1reporting_1aac9c6c66a273fe37313f67bd6bd67903" compoundref="d3/d66/tears_8h" startline="424" endline="439">create_full_tear_sheet</references>
+        <references refid="d7/d68/namespacepyfolio_1_1reporting_1a958bce537a9c62b948257a4c6953425f" compoundref="d3/d66/tears_8h" startline="368" endline="422">create_simple_tear_sheet</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/interesting_periods.h" line="9" column="1"/>
+  </compounddef>
+</doxygen>

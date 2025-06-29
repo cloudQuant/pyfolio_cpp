@@ -1,0 +1,399 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="d0/d04/positions_8h" kind="file" language="C++">
+    <compoundname>positions.h</compoundname>
+    <includes refid="d3/d11/error__handling_8h" local="yes">../core/error_handling.h</includes>
+    <includes refid="d8/d51/time__series_8h" local="yes">../core/time_series.h</includes>
+    <includes refid="d9/d49/types_8h" local="yes">../core/types.h</includes>
+    <includes refid="d0/db7/allocation_8h" local="yes">allocation.h</includes>
+    <includes refid="d7/d0c/holdings_8h" local="yes">holdings.h</includes>
+    <includedby refid="d7/d5f/plotly__enhanced__example_8cpp" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/examples/plotly_enhanced_example.cpp</includedby>
+    <includedby refid="d2/d40/turnover__enhanced_8h" local="no">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h</includedby>
+    <includedby refid="d2/d59/intraday_8h" local="no">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/utils/intraday.h</includedby>
+    <includedby refid="dc/d16/matplotlib__integration_8h" local="no">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h</includedby>
+    <includedby refid="d1/dcd/plotly__enhanced_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotly_enhanced.h</includedby>
+    <includedby refid="d4/d45/json__serializer_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/json_serializer.h</includedby>
+    <includedby refid="de/de7/rest__api__server_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/rest_api_server.h</includedby>
+    <incdepgraph>
+      <node id="27">
+        <label>../core/dataframe.h</label>
+        <link refid="d2/d99/dataframe_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>datetime.h</label>
+        <link refid="de/d1b/datetime_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>../core/error_handling.h</label>
+        <link refid="d3/d11/error__handling_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>../core/time_series.h</label>
+        <link refid="d8/d51/time__series_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>../core/types.h</label>
+        <link refid="d9/d49/types_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>../math/simd_math.h</label>
+        <link refid="d6/d99/simd__math_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>allocation.h</label>
+        <link refid="d0/db7/allocation_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>holdings.h</label>
+        <link refid="d7/d0c/holdings_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/positions.h</label>
+        <link refid="d0/d04/positions_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>../transactions/transaction.h</label>
+        <link refid="d0/db6/transaction_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>algorithm</label>
+      </node>
+      <node id="28">
+        <label>any</label>
+      </node>
+      <node id="12">
+        <label>chrono</label>
+      </node>
+      <node id="21">
+        <label>cmath</label>
+      </node>
+      <node id="13">
+        <label>concepts</label>
+      </node>
+      <node id="14">
+        <label>cstddef</label>
+      </node>
+      <node id="15">
+        <label>cstdint</label>
+      </node>
+      <node id="22">
+        <label>deque</label>
+      </node>
+      <node id="3">
+        <label>exception</label>
+      </node>
+      <node id="4">
+        <label>functional</label>
+      </node>
+      <node id="23">
+        <label>limits</label>
+      </node>
+      <node id="24">
+        <label>map</label>
+      </node>
+      <node id="25">
+        <label>numeric</label>
+      </node>
+      <node id="5">
+        <label>optional</label>
+      </node>
+      <node id="20">
+        <label>set</label>
+      </node>
+      <node id="6">
+        <label>source_location</label>
+      </node>
+      <node id="18">
+        <label>span</label>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="29">
+        <label>typeindex</label>
+      </node>
+      <node id="8">
+        <label>variant</label>
+      </node>
+      <node id="16">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/examples/plotly_enhanced_example.cpp</label>
+        <link refid="d7/d5f/plotly__enhanced__example_8cpp"/>
+      </node>
+      <node id="11">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/examples/rest_api_example.cpp</label>
+        <link refid="d1/d43/rest__api__example_8cpp"/>
+      </node>
+      <node id="3">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h</label>
+        <link refid="d2/d40/turnover__enhanced_8h"/>
+      </node>
+      <node id="1">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/positions.h</label>
+        <link refid="d0/d04/positions_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/utils/intraday.h</label>
+        <link refid="d2/d59/intraday_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h</label>
+        <link refid="dc/d16/matplotlib__integration_8h"/>
+      </node>
+      <node id="7">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotly_enhanced.h</label>
+        <link refid="d1/dcd/plotly__enhanced_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/json_serializer.h</label>
+        <link refid="d4/d45/json__serializer_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/rest_api_server.h</label>
+        <link refid="de/de7/rest__api__server_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/utils/intraday.cpp</label>
+        <link refid="dc/d51/intraday_8cpp"/>
+      </node>
+      <node id="8">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp</label>
+        <link refid="d2/dd1/plotly__enhanced_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d0/dae/classpyfolio_1_1positions_1_1PositionAnalyzer" prot="public">pyfolio::positions::PositionAnalyzer</innerclass>
+    <innernamespace refid="d7/df8/namespacepyfolio">pyfolio</innernamespace>
+    <innernamespace refid="df/d8b/namespacepyfolio_1_1positions">pyfolio::positions</innernamespace>
+    <innernamespace refid="de/d69/namespacepyfolio_1_1positions_1_1utils">pyfolio::positions::utils</innernamespace>
+    <briefdescription>
+<para>Portfolio positions types and utilities. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="version"><para>1.0.0 </para>
+</simplesect>
+<simplesect kind="date"><para>2024</para>
+</simplesect>
+This file provides a unified interface for all position-related functionality, combining holdings, allocation, and position analysis. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/d11/error__handling_8h" kindref="compound">../core/error_handling.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d8/d51/time__series_8h" kindref="compound">../core/time_series.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d9/d49/types_8h" kindref="compound">../core/types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d0/db7/allocation_8h" kindref="compound">allocation.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d7/d0c/holdings_8h" kindref="compound">holdings.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="df/d8b/namespacepyfolio_1_1positions" kindref="compound">pyfolio::positions</ref><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="d0/dae/classpyfolio_1_1positions_1_1PositionAnalyzer" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d0/dae/classpyfolio_1_1positions_1_1PositionAnalyzer" kindref="compound">PositionAnalyzer</ref><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="29" refid="d0/dae/classpyfolio_1_1positions_1_1PositionAnalyzer_1af5a4ea0fbd055859a71de2a7b5d622b8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;double&gt;</ref><sp/><ref refid="d0/dae/classpyfolio_1_1positions_1_1PositionAnalyzer_1af5a4ea0fbd055859a71de2a7b5d622b8" kindref="member">calculate_total_value</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::unordered_map&lt;std::string,<sp/>Position&gt;&amp;<sp/><ref refid="df/d8b/namespacepyfolio_1_1positions" kindref="compound">positions</ref>);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="d0/dae/classpyfolio_1_1positions_1_1PositionAnalyzer_1a1856203bcfb0cf1ea6aaab2003369056" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;std::pair&lt;double, double&gt;</ref>&gt;<sp/><ref refid="d0/dae/classpyfolio_1_1positions_1_1PositionAnalyzer_1a1856203bcfb0cf1ea6aaab2003369056" kindref="member">calculate_exposures</ref>(</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::unordered_map&lt;std::string,<sp/>Position&gt;&amp;<sp/><ref refid="df/d8b/namespacepyfolio_1_1positions" kindref="compound">positions</ref>);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="d0/dae/classpyfolio_1_1positions_1_1PositionAnalyzer_1afddd94f488fc55a46472ee6981a5f2b8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;double&gt;</ref><sp/><ref refid="d0/dae/classpyfolio_1_1positions_1_1PositionAnalyzer_1afddd94f488fc55a46472ee6981a5f2b8" kindref="member">calculate_leverage</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::unordered_map&lt;std::string,<sp/>Position&gt;&amp;<sp/><ref refid="df/d8b/namespacepyfolio_1_1positions" kindref="compound">positions</ref>);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="d0/dae/classpyfolio_1_1positions_1_1PositionAnalyzer_1a482ffb50288fbf81895adeb28e5aeb46" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;std::vector&lt;std::pair&lt;std::string, Position&gt;</ref>&gt;&gt;<sp/><ref refid="d0/dae/classpyfolio_1_1positions_1_1PositionAnalyzer_1a482ffb50288fbf81895adeb28e5aeb46" kindref="member">get_top_positions</ref>(</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::unordered_map&lt;std::string,<sp/>Position&gt;&amp;<sp/><ref refid="df/d8b/namespacepyfolio_1_1positions" kindref="compound">positions</ref>,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>n<sp/>=<sp/>10);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="d0/dae/classpyfolio_1_1positions_1_1PositionAnalyzer_1a68c4c5bdb9b38b5ec86322a4b9b093b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="d0/dae/classpyfolio_1_1positions_1_1PositionAnalyzer_1a68c4c5bdb9b38b5ec86322a4b9b093b6" kindref="member">count_holdings</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::unordered_map&lt;std::string,<sp/>Position&gt;&amp;<sp/><ref refid="df/d8b/namespacepyfolio_1_1positions" kindref="compound">positions</ref>);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="de/d69/namespacepyfolio_1_1positions_1_1utils" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="de/d69/namespacepyfolio_1_1positions_1_1utils" kindref="compound">utils</ref><sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="de/d69/namespacepyfolio_1_1positions_1_1utils_1a457c53c59a88377cd335965d115bd0e6" refkind="member"><highlight class="normal"><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;TimeSeries&lt;std::pair&lt;double, double&gt;</ref>&gt;&gt;<sp/><ref refid="de/d69/namespacepyfolio_1_1positions_1_1utils_1a457c53c59a88377cd335965d115bd0e6" kindref="member">positions_to_exposures</ref>(</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt;std::unordered_map&lt;std::string,<sp/>Position&gt;&gt;&amp;<sp/>position_series);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="de/d69/namespacepyfolio_1_1positions_1_1utils_1abc91a6e713e1da7ec8f4825ec2fa1a40" refkind="member"><highlight class="normal"><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;TimeSeries&lt;double&gt;</ref>&gt;<sp/><ref refid="de/d69/namespacepyfolio_1_1positions_1_1utils_1abc91a6e713e1da7ec8f4825ec2fa1a40" kindref="member">positions_to_leverage</ref>(</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt;std::unordered_map&lt;std::string,<sp/>Position&gt;&gt;&amp;<sp/>position_series);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="de/d69/namespacepyfolio_1_1positions_1_1utils_1aa03cdd025206bdfd1cac84f30d280dcf" refkind="member"><highlight class="normal"><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;TimeSeries&lt;int&gt;</ref>&gt;<sp/><ref refid="de/d69/namespacepyfolio_1_1positions_1_1utils_1aa03cdd025206bdfd1cac84f30d280dcf" kindref="member">positions_to_holding_counts</ref>(</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt;std::unordered_map&lt;std::string,<sp/>Position&gt;&gt;&amp;<sp/>position_series);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>utils</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Type<sp/>aliases<sp/>for<sp/>convenience</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="df/d8b/namespacepyfolio_1_1positions_1a9626d2caeabcbd29d4b483b173fc2733" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="df/d8b/namespacepyfolio_1_1positions_1a9626d2caeabcbd29d4b483b173fc2733" kindref="member">PositionSeries</ref><sp/>=<sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;std::unordered_map&lt;std::string, Position&gt;</ref>&gt;;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>pyfolio::positions</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/positions.h"/>
+  </compounddef>
+</doxygen>

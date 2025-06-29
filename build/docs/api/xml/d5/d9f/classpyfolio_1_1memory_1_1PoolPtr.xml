@@ -1,0 +1,257 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="d5/d9f/classpyfolio_1_1memory_1_1PoolPtr" kind="class" language="C++" prot="public">
+    <compoundname>pyfolio::memory::PoolPtr</compoundname>
+    <includes refid="df/d9d/pool__allocator_8h" local="no">pool_allocator.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d5/d9f/classpyfolio_1_1memory_1_1PoolPtr_1a4319d8395e704f271671bd928cc4ca22" prot="private" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* pyfolio::memory::PoolPtr&lt; T &gt;::ptr_</definition>
+        <argsstring></argsstring>
+        <name>ptr_</name>
+        <qualifiedname>pyfolio::memory::PoolPtr::ptr_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="532" column="7" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" bodystart="532" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d5/d9f/classpyfolio_1_1memory_1_1PoolPtr_1af2861f740e11b4bb357eae4e6f77c965" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>pyfolio::memory::PoolPtr&lt; T &gt;::PoolPtr</definition>
+        <argsstring>(T *ptr=nullptr)</argsstring>
+        <name>PoolPtr</name>
+        <qualifiedname>pyfolio::memory::PoolPtr::PoolPtr</qualifiedname>
+        <param>
+          <type>T *</type>
+          <declname>ptr</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="535" column="14" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" bodystart="535" bodyend="535"/>
+        <referencedby refid="d5/d9f/classpyfolio_1_1memory_1_1PoolPtr_1a8dd88b3a8347e4a4e2b9ddf8cd97b4c4">pyfolio::memory::PoolPtr&lt; T &gt;::operator=</referencedby>
+        <referencedby refid="d5/d9f/classpyfolio_1_1memory_1_1PoolPtr_1abdc68ce49d8b8c890ee5f71ae71f0afd" compoundref="df/d9d/pool__allocator_8h" startline="550" endline="560">pyfolio::memory::PoolPtr&lt; T &gt;::operator=</referencedby>
+        <referencedby refid="d5/d9f/classpyfolio_1_1memory_1_1PoolPtr_1a1fdc960752134adf3516b2f954842b82">pyfolio::memory::PoolPtr&lt; T &gt;::PoolPtr</referencedby>
+        <referencedby refid="d5/d9f/classpyfolio_1_1memory_1_1PoolPtr_1abad666a69759a8c541a5b50844e43f92" compoundref="df/d9d/pool__allocator_8h" startline="548" endline="548">pyfolio::memory::PoolPtr&lt; T &gt;::PoolPtr</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d5/d9f/classpyfolio_1_1memory_1_1PoolPtr_1a4d1cc9eab9de7fa11fcd14874ab99d28" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>pyfolio::memory::PoolPtr&lt; T &gt;::~PoolPtr</definition>
+        <argsstring>()</argsstring>
+        <name>~PoolPtr</name>
+        <qualifiedname>pyfolio::memory::PoolPtr::~PoolPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="537" column="5" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" bodystart="537" bodyend="542"/>
+        <references refid="dc/d0b/classpyfolio_1_1memory_1_1MemoryPoolManager_1a518dcdea43306207e23136e4a43ef800" compoundref="df/d9d/pool__allocator_8h" startline="513" endline="513">pyfolio::memory::MemoryPoolManager::deallocate</references>
+        <references refid="dc/d0b/classpyfolio_1_1memory_1_1MemoryPoolManager_1a780380ccd601c87f61c0bd4293fa6379" compoundref="df/d9d/pool__allocator_8h" startline="506" endline="509">pyfolio::memory::MemoryPoolManager::instance</references>
+      </memberdef>
+      <memberdef kind="function" id="d5/d9f/classpyfolio_1_1memory_1_1PoolPtr_1a1fdc960752134adf3516b2f954842b82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>pyfolio::memory::PoolPtr&lt; T &gt;::PoolPtr</definition>
+        <argsstring>(const PoolPtr &amp;)=delete</argsstring>
+        <name>PoolPtr</name>
+        <qualifiedname>pyfolio::memory::PoolPtr::PoolPtr</qualifiedname>
+        <param>
+          <type>const <ref refid="d5/d9f/classpyfolio_1_1memory_1_1PoolPtr" kindref="compound">PoolPtr</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="545" column="5"/>
+        <references refid="d5/d9f/classpyfolio_1_1memory_1_1PoolPtr_1af2861f740e11b4bb357eae4e6f77c965" compoundref="df/d9d/pool__allocator_8h" startline="535" endline="535">pyfolio::memory::PoolPtr&lt; T &gt;::PoolPtr</references>
+      </memberdef>
+      <memberdef kind="function" id="d5/d9f/classpyfolio_1_1memory_1_1PoolPtr_1a8dd88b3a8347e4a4e2b9ddf8cd97b4c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d5/d9f/classpyfolio_1_1memory_1_1PoolPtr" kindref="compound">PoolPtr</ref> &amp;</type>
+        <definition>PoolPtr &amp; pyfolio::memory::PoolPtr&lt; T &gt;::operator=</definition>
+        <argsstring>(const PoolPtr &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>pyfolio::memory::PoolPtr::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="d5/d9f/classpyfolio_1_1memory_1_1PoolPtr" kindref="compound">PoolPtr</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="546" column="13"/>
+        <references refid="d5/d9f/classpyfolio_1_1memory_1_1PoolPtr_1af2861f740e11b4bb357eae4e6f77c965" compoundref="df/d9d/pool__allocator_8h" startline="535" endline="535">pyfolio::memory::PoolPtr&lt; T &gt;::PoolPtr</references>
+      </memberdef>
+      <memberdef kind="function" id="d5/d9f/classpyfolio_1_1memory_1_1PoolPtr_1abad666a69759a8c541a5b50844e43f92" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>pyfolio::memory::PoolPtr&lt; T &gt;::PoolPtr</definition>
+        <argsstring>(PoolPtr &amp;&amp;other) noexcept</argsstring>
+        <name>PoolPtr</name>
+        <qualifiedname>pyfolio::memory::PoolPtr::PoolPtr</qualifiedname>
+        <param>
+          <type><ref refid="d5/d9f/classpyfolio_1_1memory_1_1PoolPtr" kindref="compound">PoolPtr</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="548" column="5" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" bodystart="548" bodyend="548"/>
+        <references refid="d5/d9f/classpyfolio_1_1memory_1_1PoolPtr_1af2861f740e11b4bb357eae4e6f77c965" compoundref="df/d9d/pool__allocator_8h" startline="535" endline="535">pyfolio::memory::PoolPtr&lt; T &gt;::PoolPtr</references>
+      </memberdef>
+      <memberdef kind="function" id="d5/d9f/classpyfolio_1_1memory_1_1PoolPtr_1abdc68ce49d8b8c890ee5f71ae71f0afd" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="d5/d9f/classpyfolio_1_1memory_1_1PoolPtr" kindref="compound">PoolPtr</ref> &amp;</type>
+        <definition>PoolPtr &amp; pyfolio::memory::PoolPtr&lt; T &gt;::operator=</definition>
+        <argsstring>(PoolPtr &amp;&amp;other) noexcept</argsstring>
+        <name>operator=</name>
+        <qualifiedname>pyfolio::memory::PoolPtr::operator=</qualifiedname>
+        <param>
+          <type><ref refid="d5/d9f/classpyfolio_1_1memory_1_1PoolPtr" kindref="compound">PoolPtr</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="550" column="13" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" bodystart="550" bodyend="560"/>
+        <references refid="dc/d0b/classpyfolio_1_1memory_1_1MemoryPoolManager_1a518dcdea43306207e23136e4a43ef800" compoundref="df/d9d/pool__allocator_8h" startline="513" endline="513">pyfolio::memory::MemoryPoolManager::deallocate</references>
+        <references refid="dc/d0b/classpyfolio_1_1memory_1_1MemoryPoolManager_1a780380ccd601c87f61c0bd4293fa6379" compoundref="df/d9d/pool__allocator_8h" startline="506" endline="509">pyfolio::memory::MemoryPoolManager::instance</references>
+        <references refid="d5/d9f/classpyfolio_1_1memory_1_1PoolPtr_1af2861f740e11b4bb357eae4e6f77c965" compoundref="df/d9d/pool__allocator_8h" startline="535" endline="535">pyfolio::memory::PoolPtr&lt; T &gt;::PoolPtr</references>
+      </memberdef>
+      <memberdef kind="function" id="d5/d9f/classpyfolio_1_1memory_1_1PoolPtr_1ac8ae346f9855105f76207847b78f9b0a" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T * pyfolio::memory::PoolPtr&lt; T &gt;::get</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>get</name>
+        <qualifiedname>pyfolio::memory::PoolPtr::get</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="562" column="7" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" bodystart="562" bodyend="562"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d9f/classpyfolio_1_1memory_1_1PoolPtr_1a4cc5e3279ab6e53955ce969593f1cbbd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T &amp; pyfolio::memory::PoolPtr&lt; T &gt;::operator*</definition>
+        <argsstring>() const</argsstring>
+        <name>operator*</name>
+        <qualifiedname>pyfolio::memory::PoolPtr::operator*</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="563" column="7" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" bodystart="563" bodyend="563"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d9f/classpyfolio_1_1memory_1_1PoolPtr_1a7042a6a1d0791a549278515ee41e37c8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T * pyfolio::memory::PoolPtr&lt; T &gt;::operator-&gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator-&gt;</name>
+        <qualifiedname>pyfolio::memory::PoolPtr::operator-&gt;</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="564" column="7" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" bodystart="564" bodyend="564"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d9f/classpyfolio_1_1memory_1_1PoolPtr_1a3008d2ef3de3a2a60a9954434cb4a3fe" prot="public" static="no" const="yes" explicit="yes" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>pyfolio::memory::PoolPtr&lt; T &gt;::operator bool</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>operator bool</name>
+        <qualifiedname>pyfolio::memory::PoolPtr::operator bool</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="566" column="14" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" bodystart="566" bodyend="566"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d9f/classpyfolio_1_1memory_1_1PoolPtr_1a529d5bd4e9d03a84b917ec8ab1edc7c1" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T * pyfolio::memory::PoolPtr&lt; T &gt;::release</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>release</name>
+        <qualifiedname>pyfolio::memory::PoolPtr::release</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="568" column="7" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" bodystart="568" bodyend="572"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d9f/classpyfolio_1_1memory_1_1PoolPtr_1a1fc571c0b1d565f00c401d342bc42441" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void pyfolio::memory::PoolPtr&lt; T &gt;::reset</definition>
+        <argsstring>(T *ptr=nullptr)</argsstring>
+        <name>reset</name>
+        <qualifiedname>pyfolio::memory::PoolPtr::reset</qualifiedname>
+        <param>
+          <type>T *</type>
+          <declname>ptr</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="574" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" bodystart="574" bodyend="580"/>
+        <references refid="dc/d0b/classpyfolio_1_1memory_1_1MemoryPoolManager_1a518dcdea43306207e23136e4a43ef800" compoundref="df/d9d/pool__allocator_8h" startline="513" endline="513">pyfolio::memory::MemoryPoolManager::deallocate</references>
+        <references refid="dc/d0b/classpyfolio_1_1memory_1_1MemoryPoolManager_1a780380ccd601c87f61c0bd4293fa6379" compoundref="df/d9d/pool__allocator_8h" startline="506" endline="509">pyfolio::memory::MemoryPoolManager::instance</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>RAII memory management utilities. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="530" column="1" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" bodystart="530" bodyend="581"/>
+    <listofallmembers>
+      <member refid="d5/d9f/classpyfolio_1_1memory_1_1PoolPtr_1ac8ae346f9855105f76207847b78f9b0a" prot="public" virt="non-virtual"><scope>pyfolio::memory::PoolPtr</scope><name>get</name></member>
+      <member refid="d5/d9f/classpyfolio_1_1memory_1_1PoolPtr_1a3008d2ef3de3a2a60a9954434cb4a3fe" prot="public" virt="non-virtual"><scope>pyfolio::memory::PoolPtr</scope><name>operator bool</name></member>
+      <member refid="d5/d9f/classpyfolio_1_1memory_1_1PoolPtr_1a4cc5e3279ab6e53955ce969593f1cbbd" prot="public" virt="non-virtual"><scope>pyfolio::memory::PoolPtr</scope><name>operator*</name></member>
+      <member refid="d5/d9f/classpyfolio_1_1memory_1_1PoolPtr_1a7042a6a1d0791a549278515ee41e37c8" prot="public" virt="non-virtual"><scope>pyfolio::memory::PoolPtr</scope><name>operator-&gt;</name></member>
+      <member refid="d5/d9f/classpyfolio_1_1memory_1_1PoolPtr_1a8dd88b3a8347e4a4e2b9ddf8cd97b4c4" prot="public" virt="non-virtual"><scope>pyfolio::memory::PoolPtr</scope><name>operator=</name></member>
+      <member refid="d5/d9f/classpyfolio_1_1memory_1_1PoolPtr_1abdc68ce49d8b8c890ee5f71ae71f0afd" prot="public" virt="non-virtual"><scope>pyfolio::memory::PoolPtr</scope><name>operator=</name></member>
+      <member refid="d5/d9f/classpyfolio_1_1memory_1_1PoolPtr_1af2861f740e11b4bb357eae4e6f77c965" prot="public" virt="non-virtual"><scope>pyfolio::memory::PoolPtr</scope><name>PoolPtr</name></member>
+      <member refid="d5/d9f/classpyfolio_1_1memory_1_1PoolPtr_1a1fdc960752134adf3516b2f954842b82" prot="public" virt="non-virtual"><scope>pyfolio::memory::PoolPtr</scope><name>PoolPtr</name></member>
+      <member refid="d5/d9f/classpyfolio_1_1memory_1_1PoolPtr_1abad666a69759a8c541a5b50844e43f92" prot="public" virt="non-virtual"><scope>pyfolio::memory::PoolPtr</scope><name>PoolPtr</name></member>
+      <member refid="d5/d9f/classpyfolio_1_1memory_1_1PoolPtr_1a4319d8395e704f271671bd928cc4ca22" prot="private" virt="non-virtual"><scope>pyfolio::memory::PoolPtr</scope><name>ptr_</name></member>
+      <member refid="d5/d9f/classpyfolio_1_1memory_1_1PoolPtr_1a529d5bd4e9d03a84b917ec8ab1edc7c1" prot="public" virt="non-virtual"><scope>pyfolio::memory::PoolPtr</scope><name>release</name></member>
+      <member refid="d5/d9f/classpyfolio_1_1memory_1_1PoolPtr_1a1fc571c0b1d565f00c401d342bc42441" prot="public" virt="non-virtual"><scope>pyfolio::memory::PoolPtr</scope><name>reset</name></member>
+      <member refid="d5/d9f/classpyfolio_1_1memory_1_1PoolPtr_1a4d1cc9eab9de7fa11fcd14874ab99d28" prot="public" virt="non-virtual"><scope>pyfolio::memory::PoolPtr</scope><name>~PoolPtr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

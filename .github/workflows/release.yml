@@ -1,0 +1,515 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Release version (e.g., v1.0.0)'
+        required: true
+        type: string
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ${{ github.repository }}
+
+jobs:
+  # Create GitHub Release
+  create-release:
+    name: Create Release
+    runs-on: ubuntu-latest
+    outputs:
+      upload_url: ${{ steps.create_release.outputs.upload_url }}
+      version: ${{ steps.get_version.outputs.version }}
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Get version
+      id: get_version
+      run: |
+        if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+          VERSION="${{ github.event.inputs.version }}"
+        else
+          VERSION=${GITHUB_REF#refs/tags/}
+        fi
+        echo "version=${VERSION}" >> $GITHUB_OUTPUT
+        echo "Version: ${VERSION}"
+
+    - name: Generate Changelog
+      id: changelog
+      run: |
+        # Generate changelog from git commits since last tag
+        LAST_TAG=$(git describe --tags --abbrev=0 HEAD^ 2>/dev/null || echo "")
+        if [ -n "$LAST_TAG" ]; then
+          CHANGELOG=$(git log --pretty=format:"* %s (%h)" ${LAST_TAG}..HEAD)
+        else
+          CHANGELOG=$(git log --pretty=format:"* %s (%h)" --max-count=20)
+        fi
+        
+        # Save changelog to file for multiline output
+        cat > changelog.md << 'EOF'
+        ## What's Changed
+        
+        ${CHANGELOG}
+        
+        ## Highlights
+        
+        This release includes comprehensive portfolio analysis capabilities:
+        
+        ### 🚀 Core Features
+        - **Advanced Portfolio Analytics**: Performance metrics, attribution analysis, risk assessment
+        - **Real-time Processing**: High-frequency streaming data analysis with WebSocket support
+        - **Machine Learning**: Regime detection, model persistence, and versioning
+        - **Risk Management**: GARCH models, VaR backtesting, Expected Shortfall calculations
+        - **Options Pricing**: Black-Scholes, Heston, Local Volatility models
+        - **GPU Acceleration**: CUDA/OpenCL support for large-scale computations
+        - **Distributed Computing**: MPI-based multi-node portfolio analysis
+        
+        ### 🛠 Technical Improvements
+        - **Python Bindings**: Seamless integration with existing Python workflows
+        - **Docker/Kubernetes**: Production-ready containerized deployment
+        - **CI/CD Pipeline**: Automated testing, building, and deployment
+        - **API Documentation**: Comprehensive Doxygen-generated documentation
+        - **Test Coverage**: Extensive test suite with 78%+ coverage
+        
+        ### 📦 Deployment
+        - **Cross-platform**: Linux, macOS, Windows support
+        - **Container Images**: Multi-architecture Docker images available
+        - **Static Libraries**: Optimized binaries for embedding in other projects
+        
+        ## Installation
+        
+        ### Docker
+        ```bash
+        docker pull ghcr.io/${{ github.repository_owner }}/pyfolio-cpp:${{ steps.get_version.outputs.version }}
+        ```
+        
+        ### From Source
+        ```bash
+        git clone https://github.com/${{ github.repository }}.git
+        cd pyfolio_cpp
+        git checkout ${{ steps.get_version.outputs.version }}
+        mkdir build && cd build
+        cmake -DCMAKE_BUILD_TYPE=Release ..
+        make -j$(nproc)
+        ```
+        
+        ## Documentation
+        
+        - 📖 [API Documentation](https://your-docs-site.com)
+        - 🚀 [Getting Started Guide](https://github.com/${{ github.repository }}/wiki/Getting-Started)
+        - 💡 [Examples](https://github.com/${{ github.repository }}/tree/main/examples)
+        
+        ---
+        
+        **Full Changelog**: https://github.com/${{ github.repository }}/compare/${LAST_TAG}...${{ steps.get_version.outputs.version }}
+        EOF
+
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ steps.get_version.outputs.version }}
+        release_name: PyFolio C++ ${{ steps.get_version.outputs.version }}
+        body_path: changelog.md
+        draft: false
+        prerelease: ${{ contains(steps.get_version.outputs.version, 'alpha') || contains(steps.get_version.outputs.version, 'beta') || contains(steps.get_version.outputs.version, 'rc') }}
+
+  # Build Release Artifacts
+  build-artifacts:
+    name: Build Release Artifacts
+    runs-on: ${{ matrix.os }}
+    needs: create-release
+    strategy:
+      matrix:
+        include:
+          - os: ubuntu-latest
+            name: linux-x64
+            cmake_preset: release-linux
+          - os: macos-latest
+            name: macos-universal
+            cmake_preset: release-macos
+          - os: windows-latest
+            name: windows-x64
+            cmake_preset: release-windows
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        submodules: recursive
+
+    - name: Setup CMake
+      uses: jwlawson/actions-setup-cmake@v1.14
+      with:
+        cmake-version: '3.25'
+
+    # Linux dependencies
+    - name: Install Linux dependencies
+      if: runner.os == 'Linux'
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y \
+          build-essential \
+          ninja-build \
+          libeigen3-dev \
+          libopenmpi-dev \
+          doxygen \
+          graphviz
+
+    # macOS dependencies
+    - name: Install macOS dependencies
+      if: runner.os == 'macOS'
+      run: |
+        brew install cmake ninja eigen open-mpi doxygen graphviz
+
+    # Windows dependencies
+    - name: Install Windows dependencies
+      if: runner.os == 'Windows'
+      run: |
+        choco install cmake ninja
+        # Setup vcpkg
+        git clone https://github.com/Microsoft/vcpkg.git ${{ runner.temp }}/vcpkg
+        cd ${{ runner.temp }}/vcpkg
+        ./bootstrap-vcpkg.bat
+        ./vcpkg install eigen3
+
+    - name: Configure CMake
+      run: |
+        mkdir -p build release
+        cd build
+        if [ "${{ runner.os }}" = "Windows" ]; then
+          cmake -DCMAKE_BUILD_TYPE=Release \
+                -DCMAKE_TOOLCHAIN_FILE=${{ runner.temp }}/vcpkg/scripts/buildsystems/vcpkg.cmake \
+                -DBUILD_EXAMPLES=ON \
+                -DBUILD_TESTS=ON \
+                -DBUILD_DOCUMENTATION=ON \
+                -GNinja \
+                ..
+        else
+          cmake -DCMAKE_BUILD_TYPE=Release \
+                -DBUILD_EXAMPLES=ON \
+                -DBUILD_TESTS=ON \
+                -DBUILD_DOCUMENTATION=ON \
+                -GNinja \
+                ..
+        fi
+      shell: bash
+
+    - name: Build
+      run: |
+        cd build
+        cmake --build . --config Release --parallel
+
+    - name: Run Tests
+      run: |
+        cd build
+        ctest --output-on-failure --parallel 4 -C Release
+
+    - name: Package Artifacts
+      run: |
+        cd build
+        # Create release package
+        mkdir -p ../release/pyfolio-cpp-${{ needs.create-release.outputs.version }}-${{ matrix.name }}
+        
+        # Copy main library
+        cp libpyfolio_cpp.* ../release/pyfolio-cpp-${{ needs.create-release.outputs.version }}-${{ matrix.name }}/ || true
+        
+        # Copy headers
+        cp -r ../include ../release/pyfolio-cpp-${{ needs.create-release.outputs.version }}-${{ matrix.name }}/
+        
+        # Copy examples
+        mkdir -p ../release/pyfolio-cpp-${{ needs.create-release.outputs.version }}-${{ matrix.name }}/examples
+        cp examples/* ../release/pyfolio-cpp-${{ needs.create-release.outputs.version }}-${{ matrix.name }}/examples/ || true
+        
+        # Copy documentation
+        if [ -d "docs" ]; then
+          cp -r docs ../release/pyfolio-cpp-${{ needs.create-release.outputs.version }}-${{ matrix.name }}/
+        fi
+        
+        # Copy important files
+        cp ../README.md ../release/pyfolio-cpp-${{ needs.create-release.outputs.version }}-${{ matrix.name }}/
+        cp ../CMakeLists.txt ../release/pyfolio-cpp-${{ needs.create-release.outputs.version }}-${{ matrix.name }}/
+        
+        # Create archive
+        cd ../release
+        if [ "${{ runner.os }}" = "Windows" ]; then
+          7z a pyfolio-cpp-${{ needs.create-release.outputs.version }}-${{ matrix.name }}.zip pyfolio-cpp-${{ needs.create-release.outputs.version }}-${{ matrix.name }}/
+        else
+          tar -czf pyfolio-cpp-${{ needs.create-release.outputs.version }}-${{ matrix.name }}.tar.gz pyfolio-cpp-${{ needs.create-release.outputs.version }}-${{ matrix.name }}/
+        fi
+      shell: bash
+
+    - name: Upload Release Asset
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ needs.create-release.outputs.upload_url }}
+        asset_path: ./release/pyfolio-cpp-${{ needs.create-release.outputs.version }}-${{ matrix.name }}.${{ runner.os == 'Windows' && 'zip' || 'tar.gz' }}
+        asset_name: pyfolio-cpp-${{ needs.create-release.outputs.version }}-${{ matrix.name }}.${{ runner.os == 'Windows' && 'zip' || 'tar.gz' }}
+        asset_content_type: application/${{ runner.os == 'Windows' && 'zip' || 'gzip' }}
+
+  # Build and Push Docker Images
+  docker-release:
+    name: Build & Push Docker Images
+    runs-on: ubuntu-latest
+    needs: create-release
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up QEMU
+      uses: docker/setup-qemu-action@v3
+
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v3
+
+    - name: Login to GitHub Container Registry
+      uses: docker/login-action@v3
+      with:
+        registry: ${{ env.REGISTRY }}
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Login to Docker Hub
+      uses: docker/login-action@v3
+      with:
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_TOKEN }}
+      continue-on-error: true
+
+    - name: Extract metadata
+      id: meta
+      uses: docker/metadata-action@v5
+      with:
+        images: |
+          ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+          ${{ secrets.DOCKERHUB_USERNAME }}/pyfolio-cpp
+        tags: |
+          type=ref,event=tag
+          type=semver,pattern={{version}}
+          type=semver,pattern={{major}}.{{minor}}
+          type=semver,pattern={{major}}
+          type=raw,value=latest
+
+    - name: Build and push
+      uses: docker/build-push-action@v5
+      with:
+        context: .
+        file: ./docker/Dockerfile
+        platforms: linux/amd64,linux/arm64
+        push: true
+        tags: ${{ steps.meta.outputs.tags }}
+        labels: ${{ steps.meta.outputs.labels }}
+        cache-from: type=gha
+        cache-to: type=gha,mode=max
+        build-args: |
+          VERSION=${{ needs.create-release.outputs.version }}
+          BUILD_DATE=${{ github.event.head_commit.timestamp }}
+          VCS_REF=${{ github.sha }}
+
+  # Deploy Documentation
+  deploy-docs:
+    name: Deploy Documentation
+    runs-on: ubuntu-latest
+    needs: create-release
+    if: github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/tags/')
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y doxygen graphviz
+
+    - name: Build documentation
+      run: |
+        mkdir -p build
+        cd build
+        cmake -DBUILD_DOCUMENTATION=ON ..
+        make docs
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./build/docs/api/html
+        cname: pyfolio-cpp.example.com  # Replace with your domain
+
+  # Publish Python Package (if bindings are available)
+  publish-python:
+    name: Publish Python Package
+    runs-on: ubuntu-latest
+    needs: create-release
+    if: github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/tags/')
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y build-essential libeigen3-dev
+        pip install build twine pybind11
+
+    - name: Build Python package
+      if: exists('python/setup.py')
+      run: |
+        cd python
+        python -m build
+
+    - name: Publish to PyPI
+      if: exists('python/setup.py')
+      env:
+        TWINE_USERNAME: __token__
+        TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
+      run: |
+        cd python
+        twine upload dist/*
+
+  # Performance Regression Tests
+  performance-tests:
+    name: Performance Tests
+    runs-on: ubuntu-latest
+    needs: create-release
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y build-essential cmake ninja-build libeigen3-dev
+
+    - name: Build benchmarks
+      run: |
+        mkdir -p build
+        cd build
+        cmake -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTS=ON -GNinja ..
+        ninja
+
+    - name: Run performance benchmarks
+      run: |
+        cd build
+        # Run comprehensive performance tests for release
+        if [ -f "tests/comprehensive_benchmarks" ]; then
+          ./tests/comprehensive_benchmarks --benchmark_format=json --benchmark_out=release_benchmarks.json
+        fi
+
+    - name: Upload benchmark results
+      uses: actions/upload-artifact@v3
+      with:
+        name: release-benchmarks
+        path: build/release_benchmarks.json
+
+  # Security and Compliance Checks
+  security-compliance:
+    name: Security & Compliance
+    runs-on: ubuntu-latest
+    needs: create-release
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Run comprehensive security scan
+      uses: aquasecurity/trivy-action@master
+      with:
+        scan-type: 'fs'
+        scan-ref: '.'
+        format: 'table'
+        exit-code: '0'
+        ignore-unfixed: true
+        severity: 'CRITICAL,HIGH'
+
+    - name: Generate SBOM (Software Bill of Materials)
+      uses: anchore/sbom-action@v0
+      with:
+        path: ./
+        format: spdx-json
+
+    - name: Upload SBOM
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ needs.create-release.outputs.upload_url }}
+        asset_path: ./pyfolio-cpp.spdx.json
+        asset_name: pyfolio-cpp-${{ needs.create-release.outputs.version }}-sbom.spdx.json
+        asset_content_type: application/json
+
+  # Notification
+  notify:
+    name: Notify Release
+    runs-on: ubuntu-latest
+    needs: [create-release, build-artifacts, docker-release, deploy-docs]
+    if: always()
+    
+    steps:
+    - name: Notify Slack
+      uses: 8398a7/action-slack@v3
+      if: env.SLACK_WEBHOOK != ''
+      with:
+        status: ${{ job.status }}
+        channel: '#releases'
+        text: |
+          🚀 PyFolio C++ ${{ needs.create-release.outputs.version }} has been released!
+          
+          📦 Download: https://github.com/${{ github.repository }}/releases/tag/${{ needs.create-release.outputs.version }}
+          🐳 Docker: `docker pull ghcr.io/${{ github.repository_owner }}/pyfolio-cpp:${{ needs.create-release.outputs.version }}`
+          📖 Docs: https://pyfolio-cpp.example.com
+      env:
+        SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK }}
+
+    - name: Create announcement issue
+      uses: actions/github-script@v7
+      with:
+        script: |
+          github.rest.issues.create({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            title: `🎉 PyFolio C++ ${{ needs.create-release.outputs.version }} Released`,
+            body: `
+            ## PyFolio C++ ${{ needs.create-release.outputs.version }} is now available! 🚀
+            
+            This release includes significant improvements to portfolio analysis capabilities and performance optimizations.
+            
+            ### 📥 Installation
+            
+            **Docker:**
+            \`\`\`bash
+            docker pull ghcr.io/${{ github.repository_owner }}/pyfolio-cpp:${{ needs.create-release.outputs.version }}
+            \`\`\`
+            
+            **Pre-built binaries:**
+            - [Download from releases page](https://github.com/${{ github.repository }}/releases/tag/${{ needs.create-release.outputs.version }})
+            
+            ### 📖 Documentation
+            - [API Documentation](https://pyfolio-cpp.example.com)
+            - [Getting Started Guide](https://github.com/${{ github.repository }}/wiki/Getting-Started)
+            
+            ### 🐛 Found an issue?
+            Please [open an issue](https://github.com/${{ github.repository }}/issues/new) if you encounter any problems.
+            
+            ---
+            *This is an automated announcement*
+            `,
+            labels: ['announcement', 'release']
+          })

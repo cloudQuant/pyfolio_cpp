@@ -1,0 +1,594 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dd/d45/trading__costs_8h" kind="file" language="C++">
+    <compoundname>trading_costs.h</compoundname>
+    <includes refid="d2/d99/dataframe_8h" local="yes">../core/dataframe.h</includes>
+    <includes refid="d3/d11/error__handling_8h" local="yes">../core/error_handling.h</includes>
+    <includes refid="d8/d51/time__series_8h" local="yes">../core/time_series.h</includes>
+    <includes refid="d9/d49/types_8h" local="yes">../core/types.h</includes>
+    <includes refid="d0/db6/transaction_8h" local="yes">transaction.h</includes>
+    <includes local="no">cmath</includes>
+    <includedby refid="d7/d56/transaction__analysis__example_8cpp" local="no">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/examples/transaction_analysis_example.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>../core/dataframe.h</label>
+        <link refid="d2/d99/dataframe_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>datetime.h</label>
+        <link refid="de/d1b/datetime_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>error_handling.h</label>
+        <link refid="d3/d11/error__handling_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>time_series.h</label>
+        <link refid="d8/d51/time__series_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>types.h</label>
+        <link refid="d9/d49/types_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>../math/simd_math.h</label>
+        <link refid="d6/d99/simd__math_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/trading_costs.h</label>
+        <link refid="dd/d45/trading__costs_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>transaction.h</label>
+        <link refid="d0/db6/transaction_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>algorithm</label>
+      </node>
+      <node id="27">
+        <label>any</label>
+      </node>
+      <node id="12">
+        <label>chrono</label>
+      </node>
+      <node id="22">
+        <label>cmath</label>
+      </node>
+      <node id="13">
+        <label>concepts</label>
+      </node>
+      <node id="14">
+        <label>cstddef</label>
+      </node>
+      <node id="15">
+        <label>cstdint</label>
+      </node>
+      <node id="23">
+        <label>deque</label>
+      </node>
+      <node id="5">
+        <label>exception</label>
+      </node>
+      <node id="6">
+        <label>functional</label>
+      </node>
+      <node id="24">
+        <label>limits</label>
+      </node>
+      <node id="25">
+        <label>map</label>
+      </node>
+      <node id="26">
+        <label>numeric</label>
+      </node>
+      <node id="7">
+        <label>optional</label>
+      </node>
+      <node id="18">
+        <label>set</label>
+      </node>
+      <node id="8">
+        <label>source_location</label>
+      </node>
+      <node id="21">
+        <label>span</label>
+      </node>
+      <node id="9">
+        <label>string</label>
+      </node>
+      <node id="28">
+        <label>typeindex</label>
+      </node>
+      <node id="10">
+        <label>variant</label>
+      </node>
+      <node id="16">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/examples/transaction_analysis_example.cpp</label>
+        <link refid="d7/d56/transaction__analysis__example_8cpp"/>
+      </node>
+      <node id="1">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/trading_costs.h</label>
+        <link refid="dd/d45/trading__costs_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="df/d98/structpyfolio_1_1transactions_1_1TradingCostBreakdown" prot="public">pyfolio::transactions::TradingCostBreakdown</innerclass>
+    <innerclass refid="d7/d7e/classpyfolio_1_1transactions_1_1MarketImpactModel" prot="public">pyfolio::transactions::MarketImpactModel</innerclass>
+    <innerclass refid="d3/dfe/classpyfolio_1_1transactions_1_1LinearImpactModel" prot="public">pyfolio::transactions::LinearImpactModel</innerclass>
+    <innerclass refid="db/d6c/classpyfolio_1_1transactions_1_1SquareRootImpactModel" prot="public">pyfolio::transactions::SquareRootImpactModel</innerclass>
+    <innerclass refid="d2/d7a/classpyfolio_1_1transactions_1_1TradingCostAnalyzer" prot="public">pyfolio::transactions::TradingCostAnalyzer</innerclass>
+    <innernamespace refid="d7/df8/namespacepyfolio">pyfolio</innernamespace>
+    <innernamespace refid="dc/d4e/namespacepyfolio_1_1transactions">pyfolio::transactions</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d2/d99/dataframe_8h" kindref="compound">../core/dataframe.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/d11/error__handling_8h" kindref="compound">../core/error_handling.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d8/d51/time__series_8h" kindref="compound">../core/time_series.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d9/d49/types_8h" kindref="compound">../core/types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d0/db6/transaction_8h" kindref="compound">transaction.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="dc/d4e/namespacepyfolio_1_1transactions" kindref="compound">pyfolio::transactions</ref><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="df/d98/structpyfolio_1_1transactions_1_1TradingCostBreakdown" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="df/d98/structpyfolio_1_1transactions_1_1TradingCostBreakdown_1ad5d17416a4e8ecb4d0c3743dc169f4a2" kindref="member">TradingCostBreakdown</ref><sp/>{</highlight></codeline>
+<codeline lineno="16" refid="df/d98/structpyfolio_1_1transactions_1_1TradingCostBreakdown_1a418daeb5d9dcc57e6b72c0decaaedc41" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="df/d98/structpyfolio_1_1transactions_1_1TradingCostBreakdown_1a418daeb5d9dcc57e6b72c0decaaedc41" kindref="member">commission</ref>;</highlight></codeline>
+<codeline lineno="17" refid="df/d98/structpyfolio_1_1transactions_1_1TradingCostBreakdown_1a0c48a11b74d179221be5c6532b804e0e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="df/d98/structpyfolio_1_1transactions_1_1TradingCostBreakdown_1a0c48a11b74d179221be5c6532b804e0e" kindref="member">slippage</ref>;</highlight></codeline>
+<codeline lineno="18" refid="df/d98/structpyfolio_1_1transactions_1_1TradingCostBreakdown_1addd1d9e9f181034b2d0b3e016365b9c2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="df/d98/structpyfolio_1_1transactions_1_1TradingCostBreakdown_1addd1d9e9f181034b2d0b3e016365b9c2" kindref="member">market_impact</ref>;</highlight></codeline>
+<codeline lineno="19" refid="df/d98/structpyfolio_1_1transactions_1_1TradingCostBreakdown_1a2d6551215de6032afb965c5a0160b369" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="df/d98/structpyfolio_1_1transactions_1_1TradingCostBreakdown_1a2d6551215de6032afb965c5a0160b369" kindref="member">opportunity_cost</ref>;</highlight></codeline>
+<codeline lineno="20" refid="df/d98/structpyfolio_1_1transactions_1_1TradingCostBreakdown_1a0b6285ee4c8b0369e1fd6d44840a5aad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="df/d98/structpyfolio_1_1transactions_1_1TradingCostBreakdown_1a0b6285ee4c8b0369e1fd6d44840a5aad" kindref="member">total_cost</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="df/d98/structpyfolio_1_1transactions_1_1TradingCostBreakdown_1ad5d17416a4e8ecb4d0c3743dc169f4a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/d98/structpyfolio_1_1transactions_1_1TradingCostBreakdown_1ad5d17416a4e8ecb4d0c3743dc169f4a2" kindref="member">TradingCostBreakdown</ref>()</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="df/d98/structpyfolio_1_1transactions_1_1TradingCostBreakdown_1a418daeb5d9dcc57e6b72c0decaaedc41" kindref="member">commission</ref>(0.0),<sp/><ref refid="df/d98/structpyfolio_1_1transactions_1_1TradingCostBreakdown_1a0c48a11b74d179221be5c6532b804e0e" kindref="member">slippage</ref>(0.0),<sp/><ref refid="df/d98/structpyfolio_1_1transactions_1_1TradingCostBreakdown_1addd1d9e9f181034b2d0b3e016365b9c2" kindref="member">market_impact</ref>(0.0),<sp/><ref refid="df/d98/structpyfolio_1_1transactions_1_1TradingCostBreakdown_1a2d6551215de6032afb965c5a0160b369" kindref="member">opportunity_cost</ref>(0.0),<sp/><ref refid="df/d98/structpyfolio_1_1transactions_1_1TradingCostBreakdown_1a0b6285ee4c8b0369e1fd6d44840a5aad" kindref="member">total_cost</ref>(0.0)<sp/>{}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="df/d98/structpyfolio_1_1transactions_1_1TradingCostBreakdown_1a4e9925961246976df62984da4749cd1e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d98/structpyfolio_1_1transactions_1_1TradingCostBreakdown_1a4e9925961246976df62984da4749cd1e" kindref="member">calculate_total</ref>()<sp/>{<sp/><ref refid="df/d98/structpyfolio_1_1transactions_1_1TradingCostBreakdown_1a0b6285ee4c8b0369e1fd6d44840a5aad" kindref="member">total_cost</ref><sp/>=<sp/><ref refid="df/d98/structpyfolio_1_1transactions_1_1TradingCostBreakdown_1a418daeb5d9dcc57e6b72c0decaaedc41" kindref="member">commission</ref><sp/>+<sp/><ref refid="df/d98/structpyfolio_1_1transactions_1_1TradingCostBreakdown_1a0c48a11b74d179221be5c6532b804e0e" kindref="member">slippage</ref><sp/>+<sp/><ref refid="df/d98/structpyfolio_1_1transactions_1_1TradingCostBreakdown_1addd1d9e9f181034b2d0b3e016365b9c2" kindref="member">market_impact</ref><sp/>+<sp/><ref refid="df/d98/structpyfolio_1_1transactions_1_1TradingCostBreakdown_1a2d6551215de6032afb965c5a0160b369" kindref="member">opportunity_cost</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="d7/d7e/classpyfolio_1_1transactions_1_1MarketImpactModel" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d7/d7e/classpyfolio_1_1transactions_1_1MarketImpactModel" kindref="compound">MarketImpactModel</ref><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="33" refid="d7/d7e/classpyfolio_1_1transactions_1_1MarketImpactModel_1a7ec87980cbc5949bf03fb228eed1a119" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="d7/d7e/classpyfolio_1_1transactions_1_1MarketImpactModel_1a7ec87980cbc5949bf03fb228eed1a119" kindref="member">~MarketImpactModel</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="d7/d7e/classpyfolio_1_1transactions_1_1MarketImpactModel_1a8f0433f6a155466928c8483b64509d12" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d7/d7e/classpyfolio_1_1transactions_1_1MarketImpactModel_1a8f0433f6a155466928c8483b64509d12" kindref="member">calculate_impact</ref>(<ref refid="d7/df8/namespacepyfolio_1ae1b4389f0d1a53d3ebd7d2aec59e0360" kindref="member">Shares</ref><sp/>shares,<sp/><ref refid="d7/df8/namespacepyfolio_1a8585524138273c4f4b446ce83ef01994" kindref="member">Volume</ref><sp/>adv,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>volatility,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>spread)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="d3/dfe/classpyfolio_1_1transactions_1_1LinearImpactModel" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d3/dfe/classpyfolio_1_1transactions_1_1LinearImpactModel_1a1c4a04fbcc3f8d6cd78c1a8062943f9f" kindref="member">LinearImpactModel</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="d7/d7e/classpyfolio_1_1transactions_1_1MarketImpactModel" kindref="compound">MarketImpactModel</ref><sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>impact_coefficient_;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="54" refid="d3/dfe/classpyfolio_1_1transactions_1_1LinearImpactModel_1a1c4a04fbcc3f8d6cd78c1a8062943f9f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="d3/dfe/classpyfolio_1_1transactions_1_1LinearImpactModel_1a1c4a04fbcc3f8d6cd78c1a8062943f9f" kindref="member">LinearImpactModel</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>impact_coefficient<sp/>=<sp/>10.0)<sp/>:<sp/>impact_coefficient_(impact_coefficient)<sp/>{}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="d3/dfe/classpyfolio_1_1transactions_1_1LinearImpactModel_1a0ae2c615c8dbcb621f4f4fc28e71caf6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d3/dfe/classpyfolio_1_1transactions_1_1LinearImpactModel_1a0ae2c615c8dbcb621f4f4fc28e71caf6" kindref="member">calculate_impact</ref>(<ref refid="d7/df8/namespacepyfolio_1ae1b4389f0d1a53d3ebd7d2aec59e0360" kindref="member">Shares</ref><sp/>shares,<sp/><ref refid="d7/df8/namespacepyfolio_1a8585524138273c4f4b446ce83ef01994" kindref="member">Volume</ref><sp/>adv,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>volatility,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>spread)</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(adv<sp/>&lt;=<sp/>0)</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0.0;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>participation_rate<sp/>=<sp/>std::abs(shares)<sp/>/<sp/>adv;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>impact_coefficient_<sp/>*<sp/>participation_rate<sp/>*<sp/>10000.0;<sp/><sp/></highlight><highlight class="comment">//<sp/>basis<sp/>points</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="db/d6c/classpyfolio_1_1transactions_1_1SquareRootImpactModel" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="db/d6c/classpyfolio_1_1transactions_1_1SquareRootImpactModel_1a6f0d6ce48920e3473d508438b03d2ac9" kindref="member">SquareRootImpactModel</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="d7/d7e/classpyfolio_1_1transactions_1_1MarketImpactModel" kindref="compound">MarketImpactModel</ref><sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>temporary_impact_coefficient_;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>permanent_impact_coefficient_;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="74" refid="db/d6c/classpyfolio_1_1transactions_1_1SquareRootImpactModel_1a6f0d6ce48920e3473d508438b03d2ac9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="db/d6c/classpyfolio_1_1transactions_1_1SquareRootImpactModel_1a6f0d6ce48920e3473d508438b03d2ac9" kindref="member">SquareRootImpactModel</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>temp_coeff<sp/>=<sp/>0.1,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>perm_coeff<sp/>=<sp/>0.1)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>temporary_impact_coefficient_(temp_coeff),<sp/>permanent_impact_coefficient_(perm_coeff)<sp/>{}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="db/d6c/classpyfolio_1_1transactions_1_1SquareRootImpactModel_1afcefffea14605e3d1798648ad29cecd9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="db/d6c/classpyfolio_1_1transactions_1_1SquareRootImpactModel_1afcefffea14605e3d1798648ad29cecd9" kindref="member">calculate_impact</ref>(<ref refid="d7/df8/namespacepyfolio_1ae1b4389f0d1a53d3ebd7d2aec59e0360" kindref="member">Shares</ref><sp/>shares,<sp/><ref refid="d7/df8/namespacepyfolio_1a8585524138273c4f4b446ce83ef01994" kindref="member">Volume</ref><sp/>adv,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>volatility,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>spread)</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(adv<sp/>&lt;=<sp/>0)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0.0;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>participation_rate<sp/>=<sp/>std::abs(shares)<sp/>/<sp/>adv;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sigma_over_v<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>volatility<sp/>/<sp/>std::pow(adv,<sp/>0.5);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Temporary<sp/>impact</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>temp_impact<sp/>=<sp/>temporary_impact_coefficient_<sp/>*<sp/>spread<sp/>*<sp/>std::sqrt(participation_rate);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Permanent<sp/>impact</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>perm_impact<sp/>=<sp/>permanent_impact_coefficient_<sp/>*<sp/>sigma_over_v<sp/>*<sp/>participation_rate;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(temp_impact<sp/>+<sp/>perm_impact)<sp/>*<sp/>10000.0;<sp/><sp/></highlight><highlight class="comment">//<sp/>basis<sp/>points</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="d2/d7a/classpyfolio_1_1transactions_1_1TradingCostAnalyzer" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d2/d7a/classpyfolio_1_1transactions_1_1TradingCostAnalyzer_1a5276bf07253a115f25660817a383ba1a" kindref="member">TradingCostAnalyzer</ref><sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>std::unique_ptr&lt;MarketImpactModel&gt;<sp/>impact_model_;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>commission_rate_;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>default_spread_;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="104" refid="d2/d7a/classpyfolio_1_1transactions_1_1TradingCostAnalyzer_1a5276bf07253a115f25660817a383ba1a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d2/d7a/classpyfolio_1_1transactions_1_1TradingCostAnalyzer_1a5276bf07253a115f25660817a383ba1a" kindref="member">TradingCostAnalyzer</ref>(std::unique_ptr&lt;MarketImpactModel&gt;<sp/>impact_model<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>commission_rate<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0.001,<sp/><sp/></highlight><highlight class="comment">//<sp/>10<sp/>bps</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>default_spread<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0.0002)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>2<sp/>bps</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>impact_model_(impact_model<sp/>?<sp/>std::move(impact_model)<sp/>:<sp/>std::make_unique&lt;<ref refid="db/d6c/classpyfolio_1_1transactions_1_1SquareRootImpactModel" kindref="compound">SquareRootImpactModel</ref>&gt;()),</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>commission_rate_(commission_rate),<sp/>default_spread_(default_spread)<sp/>{}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="d2/d7a/classpyfolio_1_1transactions_1_1TradingCostAnalyzer_1a454a305e75cc2d0555e8e27a1ab216d6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;DataFrame&gt;</ref><sp/><ref refid="d2/d7a/classpyfolio_1_1transactions_1_1TradingCostAnalyzer_1a454a305e75cc2d0555e8e27a1ab216d6" kindref="member">analyze_costs</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/d6e/classpyfolio_1_1transactions_1_1TransactionSeries" kindref="compound">TransactionSeries</ref>&amp;<sp/><ref refid="dc/d4e/namespacepyfolio_1_1transactions" kindref="compound">transactions</ref>,</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::map&lt;Symbol,<sp/>MarketData&gt;&amp;<sp/>market_data)<sp/>{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="dc/d4e/namespacepyfolio_1_1transactions" kindref="compound">transactions</ref>.empty())<sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" kindref="member">Result&lt;DataFrame&gt;::error</ref>(<ref refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9a9e32e294e8358345f2b9b52b7f8b41fa" kindref="member">ErrorCode::InsufficientData</ref>,<sp/></highlight><highlight class="stringliteral">&quot;No<sp/>transactions<sp/>to<sp/>analyze&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;DateTime&gt;<sp/>timestamps;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>symbols;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>commissions;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>slippages;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>market_impacts;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>total_costs;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>txn<sp/>:<sp/><ref refid="dc/d4e/namespacepyfolio_1_1transactions" kindref="compound">transactions</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>timestamps.push_back(txn.timestamp());</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>symbols.push_back(txn.symbol());</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Direct<sp/>costs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>commissions.push_back(txn.commission());</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>slippage_cost<sp/>=<sp/>std::abs(txn.shares()<sp/>*<sp/>txn.slippage());</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>slippages.push_back(slippage_cost);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Market<sp/>impact<sp/>estimation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>impact<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>market_data.find(txn.symbol());</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(it<sp/>!=<sp/>market_data.end())<sp/>{</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>impact<sp/>=<sp/>estimate_market_impact(txn,<sp/>it-&gt;second);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>market_impacts.push_back(impact);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Total<sp/>cost</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>total_costs.push_back(txn.commission()<sp/>+<sp/>slippage_cost<sp/>+<sp/>impact);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/deb/classpyfolio_1_1DataFrame" kindref="compound">DataFrame</ref><sp/>df{timestamps};</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>df.<ref refid="da/deb/classpyfolio_1_1DataFrame_1ae16ceddcf917845c49128783794c109e" kindref="member">add_column</ref>(</highlight><highlight class="stringliteral">&quot;symbol&quot;</highlight><highlight class="normal">,<sp/>symbols);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>df.add_column(</highlight><highlight class="stringliteral">&quot;commission&quot;</highlight><highlight class="normal">,<sp/>commissions);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>df.add_column(</highlight><highlight class="stringliteral">&quot;slippage&quot;</highlight><highlight class="normal">,<sp/>slippages);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>df.add_column(</highlight><highlight class="stringliteral">&quot;market_impact&quot;</highlight><highlight class="normal">,<sp/>market_impacts);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>df.add_column(</highlight><highlight class="stringliteral">&quot;total_cost&quot;</highlight><highlight class="normal">,<sp/>total_costs);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" kindref="member">Result&lt;DataFrame&gt;::success</ref>(std::move(df));</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160" refid="d2/d7a/classpyfolio_1_1transactions_1_1TradingCostAnalyzer_1a01685999c930baff8b7925a2a42b752a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;double&gt;</ref><sp/><ref refid="d2/d7a/classpyfolio_1_1transactions_1_1TradingCostAnalyzer_1a01685999c930baff8b7925a2a42b752a" kindref="member">calculate_implementation_shortfall</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/d6e/classpyfolio_1_1transactions_1_1TransactionSeries" kindref="compound">TransactionSeries</ref>&amp;<sp/><ref refid="dc/d4e/namespacepyfolio_1_1transactions" kindref="compound">transactions</ref>,</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::map&lt;Symbol,<sp/>PriceSeries&gt;&amp;<sp/>benchmark_prices)<sp/>{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="dc/d4e/namespacepyfolio_1_1transactions" kindref="compound">transactions</ref>.empty())<sp/>{</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" kindref="member">Result&lt;double&gt;::error</ref>(<ref refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9a9e32e294e8358345f2b9b52b7f8b41fa" kindref="member">ErrorCode::InsufficientData</ref>,<sp/></highlight><highlight class="stringliteral">&quot;No<sp/>transactions<sp/>to<sp/>analyze&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>total_shortfall<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>txn<sp/>:<sp/><ref refid="dc/d4e/namespacepyfolio_1_1transactions" kindref="compound">transactions</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it<sp/>=<sp/>benchmark_prices.find(txn.symbol());</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(it<sp/>==<sp/>benchmark_prices.end())<sp/>{</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Find<sp/>benchmark<sp/>price<sp/>at<sp/>decision<sp/>time</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>benchmark_result<sp/>=<sp/>it-&gt;second.at_time(txn.timestamp());</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(benchmark_result.is_error())<sp/>{</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>benchmark_price<sp/>=<sp/>benchmark_result.value();</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>execution_price<sp/>=<sp/>txn.price();</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Shortfall<sp/>=<sp/>(execution_price<sp/>-<sp/>benchmark_price)<sp/>*<sp/>shares<sp/>(for<sp/>buys)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Shortfall<sp/>=<sp/>(benchmark_price<sp/>-<sp/>execution_price)<sp/>*<sp/>shares<sp/>(for<sp/>sells)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>price_diff<sp/>=</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>txn.is_buy()<sp/>?<sp/>(execution_price<sp/>-<sp/>benchmark_price)<sp/>:<sp/>(benchmark_price<sp/>-<sp/>execution_price);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>shortfall<sp/>=<sp/>price_diff<sp/>*<sp/>std::abs(txn.shares());</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>total_shortfall<sp/>+=<sp/>shortfall;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" kindref="member">Result&lt;double&gt;::success</ref>(total_shortfall);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198" refid="d2/d7a/classpyfolio_1_1transactions_1_1TradingCostAnalyzer_1a4d13d4b5eb0f58d8a8bb4de796cc4200" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;double&gt;</ref><sp/><ref refid="d2/d7a/classpyfolio_1_1transactions_1_1TradingCostAnalyzer_1a4d13d4b5eb0f58d8a8bb4de796cc4200" kindref="member">calculate_effective_spread</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="de/d25/classpyfolio_1_1transactions_1_1TransactionRecord" kindref="compound">TransactionRecord</ref>&amp;<sp/>transaction,<sp/><ref refid="d7/df8/namespacepyfolio_1a7801b507a1c22f3c1a83bdef81846fc6" kindref="member">Price</ref><sp/>midpoint_price)<sp/>{</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(midpoint_price<sp/>&lt;=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" kindref="member">Result&lt;double&gt;::error</ref>(<ref refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9ad8f78ca9a692a9411afbc7584b69d043" kindref="member">ErrorCode::InvalidInput</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Midpoint<sp/>price<sp/>must<sp/>be<sp/>positive&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Effective<sp/>spread<sp/>=<sp/>2<sp/>*<sp/>|execution_price<sp/>-<sp/>midpoint_price|<sp/>/<sp/>midpoint_price</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>spread<sp/>=<sp/>2.0<sp/>*<sp/>std::abs(transaction.<ref refid="de/d25/classpyfolio_1_1transactions_1_1TransactionRecord_1a7151515d54d7ffa33f422324be4978c8" kindref="member">price</ref>()<sp/>-<sp/>midpoint_price)<sp/>/<sp/>midpoint_price;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" kindref="member">Result&lt;double&gt;::success</ref>(spread);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212" refid="d2/d7a/classpyfolio_1_1transactions_1_1TradingCostAnalyzer_1a59a3674c586b6114719f5b426ca46a21" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;DataFrame&gt;</ref><sp/><ref refid="d2/d7a/classpyfolio_1_1transactions_1_1TradingCostAnalyzer_1a59a3674c586b6114719f5b426ca46a21" kindref="member">cost_breakdown_by_period</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/d6e/classpyfolio_1_1transactions_1_1TransactionSeries" kindref="compound">TransactionSeries</ref>&amp;<sp/><ref refid="dc/d4e/namespacepyfolio_1_1transactions" kindref="compound">transactions</ref>,<sp/><ref refid="d7/df8/namespacepyfolio_1ad4beb384aab829428a007308f1d0c92e" kindref="member">Frequency</ref><sp/><ref refid="d9/d9c/namespacepyfolio_1_1frequency" kindref="compound">frequency</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="dc/d4e/namespacepyfolio_1_1transactions" kindref="compound">transactions</ref>.empty())<sp/>{</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" kindref="member">Result&lt;DataFrame&gt;::error</ref>(<ref refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9a9e32e294e8358345f2b9b52b7f8b41fa" kindref="member">ErrorCode::InsufficientData</ref>,<sp/></highlight><highlight class="stringliteral">&quot;No<sp/>transactions<sp/>to<sp/>analyze&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Group<sp/>transactions<sp/>by<sp/>period</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::map&lt;DateTime,<sp/>TradingCostBreakdown&gt;<sp/>period_costs;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>txn<sp/>:<sp/><ref refid="dc/d4e/namespacepyfolio_1_1transactions" kindref="compound">transactions</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref><sp/>period_start<sp/>=<sp/>get_period_start(txn.timestamp(),<sp/><ref refid="d9/d9c/namespacepyfolio_1_1frequency" kindref="compound">frequency</ref>);</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>costs<sp/>=<sp/>period_costs[period_start];</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>costs.commission<sp/>+=<sp/>txn.commission();</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>costs.slippage<sp/>+=<sp/>std::abs(txn.shares()<sp/>*<sp/>txn.slippage());</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Market<sp/>impact<sp/>would<sp/>need<sp/>market<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>DataFrame</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;DateTime&gt;<sp/>periods;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>commissions;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>slippages;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>total_costs;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>[period,<sp/>costs]<sp/>:<sp/>period_costs)<sp/>{</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>costs.calculate_total();</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>periods.push_back(period);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>commissions.push_back(costs.commission);</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>slippages.push_back(costs.slippage);</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>total_costs.push_back(costs.total_cost);</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/deb/classpyfolio_1_1DataFrame" kindref="compound">DataFrame</ref><sp/>df{periods};</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>df.<ref refid="da/deb/classpyfolio_1_1DataFrame_1ae16ceddcf917845c49128783794c109e" kindref="member">add_column</ref>(</highlight><highlight class="stringliteral">&quot;commission&quot;</highlight><highlight class="normal">,<sp/>commissions);</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>df.add_column(</highlight><highlight class="stringliteral">&quot;slippage&quot;</highlight><highlight class="normal">,<sp/>slippages);</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>df.add_column(</highlight><highlight class="stringliteral">&quot;total_cost&quot;</highlight><highlight class="normal">,<sp/>total_costs);</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" kindref="member">Result&lt;DataFrame&gt;::success</ref>(std::move(df));</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254" refid="d2/d7a/classpyfolio_1_1transactions_1_1TradingCostAnalyzer_1ab1eabb16efcab66bc24ea2fc4834093f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;Shares&gt;</ref><sp/><ref refid="d2/d7a/classpyfolio_1_1transactions_1_1TradingCostAnalyzer_1ab1eabb16efcab66bc24ea2fc4834093f" kindref="member">estimate_optimal_trade_size</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1a66e3e2ebe494a9dccbeb419408aaf7ea" kindref="member">Symbol</ref>&amp;<sp/>symbol,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="de/d03/structpyfolio_1_1MarketData" kindref="compound">MarketData</ref>&amp;<sp/>market_data,</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>max_cost_bps<sp/>=<sp/>50.0)<sp/>{</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(market_data.<ref refid="de/d03/structpyfolio_1_1MarketData_1a2a7074ad7546205839db4e7ec9a168e3" kindref="member">volumes</ref>.empty()<sp/>||<sp/>market_data.<ref refid="de/d03/structpyfolio_1_1MarketData_1a4d23eba647782cb3ad3afe55a8b89143" kindref="member">prices</ref>.empty())<sp/>{</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" kindref="member">Result&lt;Shares&gt;::error</ref>(<ref refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9a9e32e294e8358345f2b9b52b7f8b41fa" kindref="member">ErrorCode::InsufficientData</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Insufficient<sp/>market<sp/>data&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Calculate<sp/>average<sp/>daily<sp/>volume</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>avg_volume<sp/>=</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::accumulate(market_data.<ref refid="de/d03/structpyfolio_1_1MarketData_1a2a7074ad7546205839db4e7ec9a168e3" kindref="member">volumes</ref>.begin(),<sp/>market_data.<ref refid="de/d03/structpyfolio_1_1MarketData_1a2a7074ad7546205839db4e7ec9a168e3" kindref="member">volumes</ref>.end(),<sp/>0.0)<sp/>/<sp/>market_data.<ref refid="de/d03/structpyfolio_1_1MarketData_1a2a7074ad7546205839db4e7ec9a168e3" kindref="member">volumes</ref>.size();</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(avg_volume<sp/>&lt;=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" kindref="member">Result&lt;Shares&gt;::error</ref>(<ref refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9ad8f78ca9a692a9411afbc7584b69d043" kindref="member">ErrorCode::InvalidInput</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Average<sp/>volume<sp/>must<sp/>be<sp/>positive&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Binary<sp/>search<sp/>for<sp/>optimal<sp/>size</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>low<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>high<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>avg_volume<sp/>*<sp/>0.2;<sp/><sp/></highlight><highlight class="comment">//<sp/>Max<sp/>20%<sp/>of<sp/>ADV</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>tolerance<sp/>=<sp/>1.0;</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(high<sp/>-<sp/>low<sp/>&gt;<sp/>tolerance)<sp/>{</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mid<sp/>=<sp/>(low<sp/>+<sp/>high)<sp/>/<sp/>2.0;</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Estimate<sp/>cost<sp/>for<sp/>this<sp/>size</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>volatility<sp/>=<sp/>estimate_volatility(market_data.<ref refid="de/d03/structpyfolio_1_1MarketData_1a4d23eba647782cb3ad3afe55a8b89143" kindref="member">prices</ref>);</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>impact_bps<sp/>=<sp/>impact_model_-&gt;calculate_impact(mid,<sp/>avg_volume,<sp/>volatility,<sp/>default_spread_);</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>total_cost_bps<sp/>=<sp/>commission_rate_<sp/>*<sp/>10000.0<sp/>+<sp/>impact_bps;</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(total_cost_bps<sp/>&lt;=<sp/>max_cost_bps)<sp/>{</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>low<sp/>=<sp/>mid;</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>high<sp/>=<sp/>mid;</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" kindref="member">Result&lt;Shares&gt;::success</ref>(low);</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>estimate_market_impact(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="de/d25/classpyfolio_1_1transactions_1_1TransactionRecord" kindref="compound">TransactionRecord</ref>&amp;<sp/>txn,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="de/d03/structpyfolio_1_1MarketData" kindref="compound">MarketData</ref>&amp;<sp/>market_data)<sp/>{</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(market_data.<ref refid="de/d03/structpyfolio_1_1MarketData_1a2a7074ad7546205839db4e7ec9a168e3" kindref="member">volumes</ref>.empty()<sp/>||<sp/>market_data.<ref refid="de/d03/structpyfolio_1_1MarketData_1a4d23eba647782cb3ad3afe55a8b89143" kindref="member">prices</ref>.empty())<sp/>{</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0.0;</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Calculate<sp/>average<sp/>daily<sp/>volume</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>avg_volume<sp/>=</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::accumulate(market_data.<ref refid="de/d03/structpyfolio_1_1MarketData_1a2a7074ad7546205839db4e7ec9a168e3" kindref="member">volumes</ref>.begin(),<sp/>market_data.<ref refid="de/d03/structpyfolio_1_1MarketData_1a2a7074ad7546205839db4e7ec9a168e3" kindref="member">volumes</ref>.end(),<sp/>0.0)<sp/>/<sp/>market_data.<ref refid="de/d03/structpyfolio_1_1MarketData_1a2a7074ad7546205839db4e7ec9a168e3" kindref="member">volumes</ref>.size();</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Estimate<sp/>volatility</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>volatility<sp/>=<sp/>estimate_volatility(market_data.<ref refid="de/d03/structpyfolio_1_1MarketData_1a4d23eba647782cb3ad3afe55a8b89143" kindref="member">prices</ref>);</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Calculate<sp/>impact<sp/>in<sp/>basis<sp/>points</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>impact_bps<sp/>=<sp/>impact_model_-&gt;calculate_impact(txn.<ref refid="de/d25/classpyfolio_1_1transactions_1_1TransactionRecord_1a3f7b867b26e9bfa9dc1f68d04adf7cd6" kindref="member">shares</ref>(),<sp/>avg_volume,<sp/>volatility,<sp/>default_spread_);</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Convert<sp/>to<sp/>dollar<sp/>impact</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::abs(txn.<ref refid="de/d25/classpyfolio_1_1transactions_1_1TransactionRecord_1a3f7b867b26e9bfa9dc1f68d04adf7cd6" kindref="member">shares</ref>()<sp/>*<sp/>txn.<ref refid="de/d25/classpyfolio_1_1transactions_1_1TransactionRecord_1a7151515d54d7ffa33f422324be4978c8" kindref="member">price</ref>()<sp/>*<sp/>impact_bps<sp/>/<sp/>10000.0);</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>estimate_volatility(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;Price&gt;&amp;<sp/>prices)<sp/>{</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(prices.size()<sp/>&lt;<sp/>2)</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0.02;<sp/><sp/></highlight><highlight class="comment">//<sp/>Default<sp/>2%<sp/>volatility</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>returns;</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>1;<sp/>i<sp/>&lt;<sp/>prices.size();<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>returns.push_back(std::log(prices[i]<sp/>/<sp/>prices[i<sp/>-<sp/>1]));</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d1/d32/namespacepyfolio_1_1analytics_1_1cached_1af806e5aece2fa569d3cec8ba37a4b31a" kindref="member">mean</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>std::accumulate(returns.begin(),<sp/>returns.end(),<sp/>0.0)<sp/>/<sp/>returns.size();</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d6/ddc/namespacepyfolio_1_1stats_1afae76bfc655b39b929869957f17e2406" kindref="member">variance</ref><sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>ret<sp/>:<sp/>returns)<sp/>{</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/ddc/namespacepyfolio_1_1stats_1afae76bfc655b39b929869957f17e2406" kindref="member">variance</ref><sp/>+=<sp/>(ret<sp/>-<sp/><ref refid="d1/d32/namespacepyfolio_1_1analytics_1_1cached_1af806e5aece2fa569d3cec8ba37a4b31a" kindref="member">mean</ref>)<sp/>*<sp/>(ret<sp/>-<sp/>mean);</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/ddc/namespacepyfolio_1_1stats_1afae76bfc655b39b929869957f17e2406" kindref="member">variance</ref><sp/>/=<sp/>(returns.size()<sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::sqrt(variance<sp/>*<sp/><ref refid="db/d9c/namespacepyfolio_1_1constants_1accf4b9e8a1c9179437b61a3f9a0e2e53" kindref="member">constants::TRADING_DAYS_PER_YEAR</ref>);</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/>DateTime<sp/>get_period_start(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DateTime&amp;<sp/>timestamp,<sp/><ref refid="d7/df8/namespacepyfolio_1ad4beb384aab829428a007308f1d0c92e" kindref="member">Frequency</ref><sp/>freq)<sp/>{</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>date<sp/>=<sp/>timestamp.to_date();</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(freq)<sp/>{</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1ad4beb384aab829428a007308f1d0c92ea9030e39f00132d583da4122532e509e9" kindref="member">Frequency::Monthly</ref>:</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>DateTime{date.year()<sp/>/<sp/>date.month()<sp/>/<sp/>std::chrono::day{1}};</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1ad4beb384aab829428a007308f1d0c92eabe92c62702dcec6751c101b5adb0ce3b" kindref="member">Frequency::Quarterly</ref>:<sp/>{</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>month<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>date.month();</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>quarter_start_month<sp/>=<sp/>((</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(month)<sp/>-<sp/>1)<sp/>/<sp/>3)<sp/>*<sp/>3<sp/>+<sp/>1;</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>DateTime{date.year()<sp/>/<sp/>std::chrono::month{quarter_start_month}<sp/>/<sp/>std::chrono::day{1}};</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1ad4beb384aab829428a007308f1d0c92eacf5ea7953dc47105e0eb179dbefaaf46" kindref="member">Frequency::Yearly</ref>:</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>DateTime{date.year()<sp/>/<sp/>std::chrono::January<sp/>/<sp/>std::chrono::day{1}};</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>timestamp;</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="349"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"></highlight></codeline>
+<codeline lineno="354" refid="dc/d4e/namespacepyfolio_1_1transactions_1aaae9b89dee86559c4a7107df21cb26b0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;double&gt;</ref><sp/><ref refid="dc/d4e/namespacepyfolio_1_1transactions_1aaae9b89dee86559c4a7107df21cb26b0" kindref="member">calculate_cost_ratio</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/d6e/classpyfolio_1_1transactions_1_1TransactionSeries" kindref="compound">TransactionSeries</ref>&amp;<sp/><ref refid="dc/d4e/namespacepyfolio_1_1transactions" kindref="compound">transactions</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>portfolio_value)<sp/>{</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(portfolio_value<sp/>&lt;=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" kindref="member">Result&lt;double&gt;::error</ref>(<ref refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9ad8f78ca9a692a9411afbc7584b69d043" kindref="member">ErrorCode::InvalidInput</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Portfolio<sp/>value<sp/>must<sp/>be<sp/>positive&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>total_costs<sp/>=<sp/><ref refid="dc/d4e/namespacepyfolio_1_1transactions" kindref="compound">transactions</ref>.total_commissions()<sp/>+<sp/><ref refid="dc/d4e/namespacepyfolio_1_1transactions" kindref="compound">transactions</ref>.total_slippage();</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>cost_ratio<sp/><sp/>=<sp/>total_costs<sp/>/<sp/>portfolio_value;</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"></highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" kindref="member">Result&lt;double&gt;::success</ref>(cost_ratio);</highlight></codeline>
+<codeline lineno="363"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"></highlight></codeline>
+<codeline lineno="368" refid="dc/d4e/namespacepyfolio_1_1transactions_1ad2681dde1f3e784de967a383a5cfe8cf" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;std::map&lt;Symbol, TradingCostBreakdown&gt;</ref>&gt;<sp/><ref refid="dc/d4e/namespacepyfolio_1_1transactions_1ad2681dde1f3e784de967a383a5cfe8cf" kindref="member">analyze_costs_by_symbol</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/d6e/classpyfolio_1_1transactions_1_1TransactionSeries" kindref="compound">TransactionSeries</ref>&amp;<sp/><ref refid="dc/d4e/namespacepyfolio_1_1transactions" kindref="compound">transactions</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>grouped<sp/>=<sp/><ref refid="dc/d4e/namespacepyfolio_1_1transactions" kindref="compound">transactions</ref>.group_by_symbol();</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;Symbol,<sp/>TradingCostBreakdown&gt;<sp/>symbol_costs;</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"></highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>[symbol,<sp/>symbol_txns]<sp/>:<sp/>grouped)<sp/>{</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/d98/structpyfolio_1_1transactions_1_1TradingCostBreakdown" kindref="compound">TradingCostBreakdown</ref><sp/>costs;</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>costs.<ref refid="df/d98/structpyfolio_1_1transactions_1_1TradingCostBreakdown_1a418daeb5d9dcc57e6b72c0decaaedc41" kindref="member">commission</ref><sp/>=<sp/>symbol_txns.total_commissions();</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>costs.<ref refid="df/d98/structpyfolio_1_1transactions_1_1TradingCostBreakdown_1a0c48a11b74d179221be5c6532b804e0e" kindref="member">slippage</ref><sp/><sp/><sp/>=<sp/>symbol_txns.total_slippage();</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>costs.<ref refid="df/d98/structpyfolio_1_1transactions_1_1TradingCostBreakdown_1a4e9925961246976df62984da4749cd1e" kindref="member">calculate_total</ref>();</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"></highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>symbol_costs[symbol]<sp/>=<sp/>costs;</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"></highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;std::map&lt;Symbol, TradingCostBreakdown&gt;</ref>&gt;::success(symbol_costs);</highlight></codeline>
+<codeline lineno="382"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"></highlight></codeline>
+<codeline lineno="384"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>pyfolio::transactions</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/trading_costs.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="d9/d9c/namespacepyfolio_1_1frequency" kind="namespace" language="C++">
+    <compoundname>pyfolio::frequency</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="d9/d9c/namespacepyfolio_1_1frequency_1a0a35acb976bf6cfc2db863e29db9616b" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int pyfolio::frequency::to_days</definition>
+        <argsstring>(Frequency freq)</argsstring>
+        <name>to_days</name>
+        <qualifiedname>pyfolio::frequency::to_days</qualifiedname>
+        <param>
+          <type><ref refid="d7/df8/namespacepyfolio_1ad4beb384aab829428a007308f1d0c92e" kindref="member">Frequency</ref></type>
+          <declname>freq</declname>
+        </param>
+        <briefdescription>
+<para>Convert frequency to days. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" line="424" column="15" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" bodystart="424" bodyend="439"/>
+        <references refid="d7/df8/namespacepyfolio_1ad4beb384aab829428a007308f1d0c92eac512b685438f41daa7386329a3b8f8d3" compoundref="d9/d49/types_8h" startline="74">pyfolio::Daily</references>
+        <references refid="d7/df8/namespacepyfolio_1ad4beb384aab829428a007308f1d0c92ea9030e39f00132d583da4122532e509e9" compoundref="d9/d49/types_8h" startline="74">pyfolio::Monthly</references>
+        <references refid="d7/df8/namespacepyfolio_1ad4beb384aab829428a007308f1d0c92eabe92c62702dcec6751c101b5adb0ce3b" compoundref="d9/d49/types_8h" startline="74">pyfolio::Quarterly</references>
+        <references refid="d7/df8/namespacepyfolio_1ad4beb384aab829428a007308f1d0c92ea6c25e6a6da95b3d583c6ec4c3f82ed4d" compoundref="d9/d49/types_8h" startline="74">pyfolio::Weekly</references>
+        <references refid="d7/df8/namespacepyfolio_1ad4beb384aab829428a007308f1d0c92eacf5ea7953dc47105e0eb179dbefaaf46" compoundref="d9/d49/types_8h" startline="74">pyfolio::Yearly</references>
+      </memberdef>
+      <memberdef kind="function" id="d9/d9c/namespacepyfolio_1_1frequency_1a74fa147efbd62bd66d74854830c8a124" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double pyfolio::frequency::to_annual_factor</definition>
+        <argsstring>(Frequency freq)</argsstring>
+        <name>to_annual_factor</name>
+        <qualifiedname>pyfolio::frequency::to_annual_factor</qualifiedname>
+        <param>
+          <type><ref refid="d7/df8/namespacepyfolio_1ad4beb384aab829428a007308f1d0c92e" kindref="member">Frequency</ref></type>
+          <declname>freq</declname>
+        </param>
+        <briefdescription>
+<para>Convert frequency to annualization factor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" line="444" column="18" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" bodystart="444" bodyend="459"/>
+        <references refid="d7/df8/namespacepyfolio_1ad4beb384aab829428a007308f1d0c92eac512b685438f41daa7386329a3b8f8d3" compoundref="d9/d49/types_8h" startline="74">pyfolio::Daily</references>
+        <references refid="d7/df8/namespacepyfolio_1ad4beb384aab829428a007308f1d0c92ea9030e39f00132d583da4122532e509e9" compoundref="d9/d49/types_8h" startline="74">pyfolio::Monthly</references>
+        <references refid="db/d9c/namespacepyfolio_1_1constants_1aaf02ba4a6fdbff6c4d053915aef4c583" compoundref="d9/d49/types_8h" startline="62">pyfolio::constants::MONTHS_PER_YEAR</references>
+        <references refid="d7/df8/namespacepyfolio_1ad4beb384aab829428a007308f1d0c92eabe92c62702dcec6751c101b5adb0ce3b" compoundref="d9/d49/types_8h" startline="74">pyfolio::Quarterly</references>
+        <references refid="db/d9c/namespacepyfolio_1_1constants_1accf4b9e8a1c9179437b61a3f9a0e2e53" compoundref="d9/d49/types_8h" startline="59">pyfolio::constants::TRADING_DAYS_PER_YEAR</references>
+        <references refid="d7/df8/namespacepyfolio_1ad4beb384aab829428a007308f1d0c92ea6c25e6a6da95b3d583c6ec4c3f82ed4d" compoundref="d9/d49/types_8h" startline="74">pyfolio::Weekly</references>
+        <references refid="db/d9c/namespacepyfolio_1_1constants_1a72bad45b01d55a713757d670c72152d5" compoundref="d9/d49/types_8h" startline="63">pyfolio::constants::WEEKS_PER_YEAR</references>
+        <references refid="d7/df8/namespacepyfolio_1ad4beb384aab829428a007308f1d0c92eacf5ea7953dc47105e0eb179dbefaaf46" compoundref="d9/d49/types_8h" startline="74">pyfolio::Yearly</references>
+        <referencedby refid="d8/dd9/namespacepyfolio_1_1performance_1a570a25f1233fa82e4d5c237cca260e59" compoundref="d4/d73/returns_8h" startline="125" endline="142">pyfolio::performance::annualize_returns</referencedby>
+        <referencedby refid="d8/dd9/namespacepyfolio_1_1performance_1aee9b783d9de6756d4fd9c98c86274b05" compoundref="d4/d73/returns_8h" startline="275" endline="296">pyfolio::performance::calculate_cagr</referencedby>
+        <referencedby refid="d8/dd9/namespacepyfolio_1_1performance_1a187ff948556631bd1ebbe0c3c87bdb76" compoundref="d4/d73/returns_8h" startline="202" endline="220">pyfolio::performance::calculate_volatility</referencedby>
+        <referencedby refid="d8/dd9/namespacepyfolio_1_1performance_1a72a6639531f459b9963884e4d4ac571e" compoundref="d7/d06/ratios_8h" startline="164" endline="212">pyfolio::performance::information_ratio</referencedby>
+        <referencedby refid="d8/dd9/namespacepyfolio_1_1performance_1a376eed0b5df19f13f64b76230fdf6718" compoundref="d7/d06/ratios_8h" startline="217" endline="251">pyfolio::performance::omega_ratio</referencedby>
+        <referencedby refid="d8/dd9/namespacepyfolio_1_1performance_1a8a0797d8f8603e3757181fb825c960b8" compoundref="d4/d73/returns_8h" startline="225" endline="254">pyfolio::performance::rolling_volatility</referencedby>
+        <referencedby refid="d8/dd9/namespacepyfolio_1_1performance_1aa8dd6ffc556adc3f76dc32645ec6b57c" compoundref="d7/d06/ratios_8h" startline="15" endline="57">pyfolio::performance::sharpe_ratio</referencedby>
+        <referencedby refid="d8/dd9/namespacepyfolio_1_1performance_1a2b9a9772352ff85db5af94511638114f" compoundref="d7/d06/ratios_8h" startline="62" endline="111">pyfolio::performance::sortino_ratio</referencedby>
+        <referencedby refid="d8/dd9/namespacepyfolio_1_1performance_1ae0eb073ae0b6cba1b6f6ed684179da8c" compoundref="d7/d06/ratios_8h" startline="256" endline="325">pyfolio::performance::treynor_ratio</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para><ref refid="d7/df8/namespacepyfolio_1ad4beb384aab829428a007308f1d0c92e" kindref="member">Frequency</ref> conversion utilities. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" line="419" column="1"/>
+  </compounddef>
+</doxygen>

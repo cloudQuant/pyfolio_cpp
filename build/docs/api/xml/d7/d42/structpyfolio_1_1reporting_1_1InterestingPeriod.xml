@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="d7/d42/structpyfolio_1_1reporting_1_1InterestingPeriod" kind="struct" language="C++" prot="public">
+    <compoundname>pyfolio::reporting::InterestingPeriod</compoundname>
+    <includes refid="d2/d26/interesting__periods_8h" local="no">interesting_periods.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d7/d42/structpyfolio_1_1reporting_1_1InterestingPeriod_1a936e50a47f502dd0536bc38eb14fd72b" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string pyfolio::reporting::InterestingPeriod::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>pyfolio::reporting::InterestingPeriod::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/interesting_periods.h" line="15" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/interesting_periods.h" bodystart="15" bodyend="-1"/>
+        <referencedby refid="d7/d42/structpyfolio_1_1reporting_1_1InterestingPeriod_1a649f3550c954a7869c9b15a41750b9e9" compoundref="d2/d26/interesting__periods_8h" startline="20" endline="22">InterestingPeriod</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d42/structpyfolio_1_1reporting_1_1InterestingPeriod_1ae437993dc31fa487027578e44a79b1ad" prot="public" static="no" mutable="no">
+        <type><ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref></type>
+        <definition>DateTime pyfolio::reporting::InterestingPeriod::start</definition>
+        <argsstring></argsstring>
+        <name>start</name>
+        <qualifiedname>pyfolio::reporting::InterestingPeriod::start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/interesting_periods.h" line="16" column="14" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/interesting_periods.h" bodystart="16" bodyend="-1"/>
+        <referencedby refid="d7/d42/structpyfolio_1_1reporting_1_1InterestingPeriod_1a649f3550c954a7869c9b15a41750b9e9" compoundref="d2/d26/interesting__periods_8h" startline="20" endline="22">InterestingPeriod</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d42/structpyfolio_1_1reporting_1_1InterestingPeriod_1a96e28c244bfea009580c3815ce4b96d0" prot="public" static="no" mutable="no">
+        <type><ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref></type>
+        <definition>DateTime pyfolio::reporting::InterestingPeriod::end</definition>
+        <argsstring></argsstring>
+        <name>end</name>
+        <qualifiedname>pyfolio::reporting::InterestingPeriod::end</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/interesting_periods.h" line="17" column="14" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/interesting_periods.h" bodystart="17" bodyend="-1"/>
+        <referencedby refid="d7/d42/structpyfolio_1_1reporting_1_1InterestingPeriod_1a649f3550c954a7869c9b15a41750b9e9" compoundref="d2/d26/interesting__periods_8h" startline="20" endline="22">InterestingPeriod</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d42/structpyfolio_1_1reporting_1_1InterestingPeriod_1ad080072965ae64113b9038accb059c72" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string pyfolio::reporting::InterestingPeriod::description</definition>
+        <argsstring></argsstring>
+        <name>description</name>
+        <qualifiedname>pyfolio::reporting::InterestingPeriod::description</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/interesting_periods.h" line="18" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/interesting_periods.h" bodystart="18" bodyend="-1"/>
+        <referencedby refid="d7/d42/structpyfolio_1_1reporting_1_1InterestingPeriod_1a649f3550c954a7869c9b15a41750b9e9" compoundref="d2/d26/interesting__periods_8h" startline="20" endline="22">InterestingPeriod</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d7/d42/structpyfolio_1_1reporting_1_1InterestingPeriod_1a649f3550c954a7869c9b15a41750b9e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>pyfolio::reporting::InterestingPeriod::InterestingPeriod</definition>
+        <argsstring>(const std::string &amp;name, const DateTime &amp;start, const DateTime &amp;end, const std::string &amp;description=&quot;&quot;)</argsstring>
+        <name>InterestingPeriod</name>
+        <qualifiedname>pyfolio::reporting::InterestingPeriod::InterestingPeriod</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref> &amp;</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref> &amp;</type>
+          <declname>end</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>description</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/interesting_periods.h" line="20" column="5" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/interesting_periods.h" bodystart="20" bodyend="22"/>
+        <references refid="d7/d42/structpyfolio_1_1reporting_1_1InterestingPeriod_1ad080072965ae64113b9038accb059c72" compoundref="d2/d26/interesting__periods_8h" startline="18">description</references>
+        <references refid="d7/d42/structpyfolio_1_1reporting_1_1InterestingPeriod_1a96e28c244bfea009580c3815ce4b96d0" compoundref="d2/d26/interesting__periods_8h" startline="17">end</references>
+        <references refid="d7/d42/structpyfolio_1_1reporting_1_1InterestingPeriod_1a936e50a47f502dd0536bc38eb14fd72b" compoundref="d2/d26/interesting__periods_8h" startline="15">name</references>
+        <references refid="d7/d42/structpyfolio_1_1reporting_1_1InterestingPeriod_1ae437993dc31fa487027578e44a79b1ad" compoundref="d2/d26/interesting__periods_8h" startline="16">start</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Represents a significant time period for analysis. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="5">
+        <label>pyfolio::BusinessCalendar</label>
+        <link refid="dc/ddd/classpyfolio_1_1BusinessCalendar"/>
+      </node>
+      <node id="4">
+        <label>pyfolio::DateTime</label>
+        <link refid="d6/d4f/classpyfolio_1_1DateTime"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>default_calendar_</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>pyfolio::reporting::InterestingPeriod</label>
+        <link refid="d7/d42/structpyfolio_1_1reporting_1_1InterestingPeriod"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>description</edgelabel>
+          <edgelabel>name</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>end</edgelabel>
+          <edgelabel>start</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="2">
+        <label>std::string</label>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/interesting_periods.h" line="14" column="1" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/interesting_periods.h" bodystart="14" bodyend="23"/>
+    <listofallmembers>
+      <member refid="d7/d42/structpyfolio_1_1reporting_1_1InterestingPeriod_1ad080072965ae64113b9038accb059c72" prot="public" virt="non-virtual"><scope>pyfolio::reporting::InterestingPeriod</scope><name>description</name></member>
+      <member refid="d7/d42/structpyfolio_1_1reporting_1_1InterestingPeriod_1a96e28c244bfea009580c3815ce4b96d0" prot="public" virt="non-virtual"><scope>pyfolio::reporting::InterestingPeriod</scope><name>end</name></member>
+      <member refid="d7/d42/structpyfolio_1_1reporting_1_1InterestingPeriod_1a649f3550c954a7869c9b15a41750b9e9" prot="public" virt="non-virtual"><scope>pyfolio::reporting::InterestingPeriod</scope><name>InterestingPeriod</name></member>
+      <member refid="d7/d42/structpyfolio_1_1reporting_1_1InterestingPeriod_1a936e50a47f502dd0536bc38eb14fd72b" prot="public" virt="non-virtual"><scope>pyfolio::reporting::InterestingPeriod</scope><name>name</name></member>
+      <member refid="d7/d42/structpyfolio_1_1reporting_1_1InterestingPeriod_1ae437993dc31fa487027578e44a79b1ad" prot="public" virt="non-virtual"><scope>pyfolio::reporting::InterestingPeriod</scope><name>start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

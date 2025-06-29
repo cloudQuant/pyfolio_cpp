@@ -1,0 +1,257 @@
+# PyFolio C++ RBAC Configuration
+# Service Account
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: pyfolio-service-account
+  namespace: pyfolio
+  labels:
+    app.kubernetes.io/name: pyfolio
+    app.kubernetes.io/component: rbac
+automountServiceAccountToken: true
+
+---
+# Cluster Role for PyFolio
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: pyfolio-cluster-role
+  labels:
+    app.kubernetes.io/name: pyfolio
+    app.kubernetes.io/component: rbac
+rules:
+  # Read access to nodes for system monitoring
+  - apiGroups: [""]
+    resources: ["nodes"]
+    verbs: ["get", "list", "watch"]
+  
+  # Read access to pods for discovery
+  - apiGroups: [""]
+    resources: ["pods"]
+    verbs: ["get", "list", "watch"]
+  
+  # Read access to services for service discovery
+  - apiGroups: [""]
+    resources: ["services"]
+    verbs: ["get", "list", "watch"]
+  
+  # Read access to endpoints
+  - apiGroups: [""]
+    resources: ["endpoints"]
+    verbs: ["get", "list", "watch"]
+  
+  # Read access to namespaces
+  - apiGroups: [""]
+    resources: ["namespaces"]
+    verbs: ["get", "list", "watch"]
+
+---
+# Role for namespace-specific operations
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: pyfolio-role
+  namespace: pyfolio
+  labels:
+    app.kubernetes.io/name: pyfolio
+    app.kubernetes.io/component: rbac
+rules:
+  # ConfigMap access
+  - apiGroups: [""]
+    resources: ["configmaps"]
+    verbs: ["get", "list", "watch", "create", "update", "patch"]
+  
+  # Secret access (limited)
+  - apiGroups: [""]
+    resources: ["secrets"]
+    verbs: ["get", "list", "watch"]
+  
+  # Pod access for debugging
+  - apiGroups: [""]
+    resources: ["pods"]
+    verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]
+  
+  # Pod logs access
+  - apiGroups: [""]
+    resources: ["pods/log"]
+    verbs: ["get", "list"]
+  
+  # Pod exec access (for debugging)
+  - apiGroups: [""]
+    resources: ["pods/exec"]
+    verbs: ["create"]
+  
+  # Service access
+  - apiGroups: [""]
+    resources: ["services"]
+    verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]
+  
+  # PersistentVolumeClaim access
+  - apiGroups: [""]
+    resources: ["persistentvolumeclaims"]
+    verbs: ["get", "list", "watch", "create", "update", "patch"]
+  
+  # Event access
+  - apiGroups: [""]
+    resources: ["events"]
+    verbs: ["get", "list", "watch", "create"]
+  
+  # Deployment access
+  - apiGroups: ["apps"]
+    resources: ["deployments"]
+    verbs: ["get", "list", "watch", "create", "update", "patch"]
+  
+  # ReplicaSet access
+  - apiGroups: ["apps"]
+    resources: ["replicasets"]
+    verbs: ["get", "list", "watch"]
+  
+  # HorizontalPodAutoscaler access
+  - apiGroups: ["autoscaling"]
+    resources: ["horizontalpodautoscalers"]
+    verbs: ["get", "list", "watch", "create", "update", "patch"]
+
+---
+# Cluster Role Binding
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: pyfolio-cluster-role-binding
+  labels:
+    app.kubernetes.io/name: pyfolio
+    app.kubernetes.io/component: rbac
+subjects:
+  - kind: ServiceAccount
+    name: pyfolio-service-account
+    namespace: pyfolio
+roleRef:
+  kind: ClusterRole
+  name: pyfolio-cluster-role
+  apiGroup: rbac.authorization.k8s.io
+
+---
+# Role Binding
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: pyfolio-role-binding
+  namespace: pyfolio
+  labels:
+    app.kubernetes.io/name: pyfolio
+    app.kubernetes.io/component: rbac
+subjects:
+  - kind: ServiceAccount
+    name: pyfolio-service-account
+    namespace: pyfolio
+roleRef:
+  kind: Role
+  name: pyfolio-role
+  apiGroup: rbac.authorization.k8s.io
+
+---
+# Additional Role for Monitoring
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: pyfolio-monitoring-role
+  labels:
+    app.kubernetes.io/name: pyfolio
+    app.kubernetes.io/component: monitoring
+rules:
+  # Metrics access
+  - apiGroups: [""]
+    resources: ["nodes/metrics", "pods/metrics", "services/metrics"]
+    verbs: ["get", "list"]
+  
+  # Prometheus metrics
+  - apiGroups: ["metrics.k8s.io"]
+    resources: ["nodes", "pods"]
+    verbs: ["get", "list"]
+  
+  # Custom metrics
+  - apiGroups: ["custom.metrics.k8s.io"]
+    resources: ["*"]
+    verbs: ["get", "list"]
+
+---
+# Monitoring Role Binding
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: pyfolio-monitoring-binding
+  labels:
+    app.kubernetes.io/name: pyfolio
+    app.kubernetes.io/component: monitoring
+subjects:
+  - kind: ServiceAccount
+    name: pyfolio-service-account
+    namespace: pyfolio
+roleRef:
+  kind: ClusterRole
+  name: pyfolio-monitoring-role
+  apiGroup: rbac.authorization.k8s.io
+
+---
+# Pod Security Policy (if enabled)
+apiVersion: policy/v1beta1
+kind: PodSecurityPolicy
+metadata:
+  name: pyfolio-psp
+  labels:
+    app.kubernetes.io/name: pyfolio
+    app.kubernetes.io/component: security
+spec:
+  privileged: false
+  allowPrivilegeEscalation: false
+  requiredDropCapabilities:
+    - ALL
+  volumes:
+    - 'configMap'
+    - 'emptyDir'
+    - 'projected'
+    - 'secret'
+    - 'downwardAPI'
+    - 'persistentVolumeClaim'
+  runAsUser:
+    rule: 'MustRunAsNonRoot'
+  seLinux:
+    rule: 'RunAsAny'
+  fsGroup:
+    rule: 'RunAsAny'
+  readOnlyRootFilesystem: true
+
+---
+# PSP Role
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: pyfolio-psp-role
+  namespace: pyfolio
+  labels:
+    app.kubernetes.io/name: pyfolio
+    app.kubernetes.io/component: security
+rules:
+  - apiGroups: ['policy']
+    resources: ['podsecuritypolicies']
+    verbs: ['use']
+    resourceNames:
+      - pyfolio-psp
+
+---
+# PSP Role Binding
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: pyfolio-psp-binding
+  namespace: pyfolio
+  labels:
+    app.kubernetes.io/name: pyfolio
+    app.kubernetes.io/component: security
+subjects:
+  - kind: ServiceAccount
+    name: pyfolio-service-account
+    namespace: pyfolio
+roleRef:
+  kind: Role
+  name: pyfolio-psp-role
+  apiGroup: rbac.authorization.k8s.io

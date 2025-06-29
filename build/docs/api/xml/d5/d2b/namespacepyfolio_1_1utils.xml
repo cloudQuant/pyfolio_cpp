@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="d5/d2b/namespacepyfolio_1_1utils" kind="namespace" language="C++">
+    <compoundname>pyfolio::utils</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="d5/d2b/namespacepyfolio_1_1utils_1afea61375d6757436d1f01bed259c58a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; void &gt;</type>
+        <definition>Result&lt; void &gt; pyfolio::utils::validate_returns</definition>
+        <argsstring>(const ReturnSeries &amp;returns)</argsstring>
+        <name>validate_returns</name>
+        <qualifiedname>pyfolio::utils::validate_returns</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/df8/namespacepyfolio_1a3376bad8167ed5bb04f22ab12dda9446" kindref="member">ReturnSeries</ref> &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <briefdescription>
+<para>Validate return series. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/utils/validation.h" line="11" column="8" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/utils/validation.h" bodystart="11" bodyend="17"/>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1a7401475da2acefda00385214b27e7c59" compoundref="d8/d51/time__series_8h" startline="103" endline="103">pyfolio::TimeSeries&lt; T &gt;::empty</references>
+        <references refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" compoundref="d3/d11/error__handling_8h" startline="111" endline="116">pyfolio::Result&lt; T &gt;::error</references>
+        <references refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9a9e32e294e8358345f2b9b52b7f8b41fa" compoundref="d3/d11/error__handling_8h" startline="18">pyfolio::InsufficientData</references>
+        <references refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" compoundref="d3/d11/error__handling_8h" startline="74" endline="74">pyfolio::Result&lt; T &gt;::success</references>
+      </memberdef>
+      <memberdef kind="function" id="d5/d2b/namespacepyfolio_1_1utils_1a370230a288b281c76873fb0472d69841" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; void &gt;</type>
+        <definition>Result&lt; void &gt; pyfolio::utils::validate_prices</definition>
+        <argsstring>(const PriceSeries &amp;prices)</argsstring>
+        <name>validate_prices</name>
+        <qualifiedname>pyfolio::utils::validate_prices</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/df8/namespacepyfolio_1ae16d3b363148718e3144bbe31e9d4a83" kindref="member">PriceSeries</ref> &amp;</type>
+          <declname>prices</declname>
+        </param>
+        <briefdescription>
+<para>Validate price series. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/utils/validation.h" line="22" column="8" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/utils/validation.h" bodystart="22" bodyend="34"/>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1a7401475da2acefda00385214b27e7c59" compoundref="d8/d51/time__series_8h" startline="103" endline="103">pyfolio::TimeSeries&lt; T &gt;::empty</references>
+        <references refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" compoundref="d3/d11/error__handling_8h" startline="111" endline="116">pyfolio::Result&lt; T &gt;::error</references>
+        <references refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9a9e32e294e8358345f2b9b52b7f8b41fa" compoundref="d3/d11/error__handling_8h" startline="18">pyfolio::InsufficientData</references>
+        <references refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9ad8f78ca9a692a9411afbc7584b69d043" compoundref="d3/d11/error__handling_8h" startline="17">pyfolio::InvalidInput</references>
+        <references refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" compoundref="d3/d11/error__handling_8h" startline="74" endline="74">pyfolio::Result&lt; T &gt;::success</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/utils/validation.h" line="6" column="1"/>
+  </compounddef>
+</doxygen>

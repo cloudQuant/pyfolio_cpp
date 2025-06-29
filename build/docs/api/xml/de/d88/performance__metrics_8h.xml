@@ -1,0 +1,592 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="de/d88/performance__metrics_8h" kind="file" language="C++">
+    <compoundname>performance_metrics.h</compoundname>
+    <includes refid="d3/d11/error__handling_8h" local="yes">../core/error_handling.h</includes>
+    <includes refid="d8/d51/time__series_8h" local="yes">../core/time_series.h</includes>
+    <includes refid="d9/d49/types_8h" local="yes">../core/types.h</includes>
+    <includes refid="d8/de8/drawdown_8h" local="yes">../performance/drawdown.h</includes>
+    <includes refid="d7/d06/ratios_8h" local="yes">../performance/ratios.h</includes>
+    <includes refid="d4/d73/returns_8h" local="yes">../performance/returns.h</includes>
+    <includes refid="d5/db2/analytics_2statistics_8h" local="yes">statistics.h</includes>
+    <includedby refid="d7/d5f/plotly__enhanced__example_8cpp" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/examples/plotly_enhanced_example.cpp</includedby>
+    <includedby refid="d4/dc1/cached__performance__metrics_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/cached_performance_metrics.h</includedby>
+    <includedby refid="df/de7/performance__analysis__suite_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_analysis_suite.h</includedby>
+    <includedby refid="dc/d16/matplotlib__integration_8h" local="no">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h</includedby>
+    <includedby refid="d1/dcd/plotly__enhanced_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotly_enhanced.h</includedby>
+    <includedby refid="d4/d45/json__serializer_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/json_serializer.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h</label>
+        <link refid="de/d88/performance__metrics_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>statistics.h</label>
+        <link refid="d5/db2/analytics_2statistics_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>datetime.h</label>
+        <link refid="de/d1b/datetime_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>../core/error_handling.h</label>
+        <link refid="d3/d11/error__handling_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>../core/time_series.h</label>
+        <link refid="d8/d51/time__series_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>../core/types.h</label>
+        <link refid="d9/d49/types_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>../math/simd_math.h</label>
+        <link refid="d6/d99/simd__math_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>../math/statistics.h</label>
+        <link refid="d3/dbe/math_2statistics_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>../performance/drawdown.h</label>
+        <link refid="d8/de8/drawdown_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>../performance/ratios.h</label>
+        <link refid="d7/d06/ratios_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>returns.h</label>
+        <link refid="d4/d73/returns_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>algorithm</label>
+      </node>
+      <node id="12">
+        <label>chrono</label>
+      </node>
+      <node id="21">
+        <label>cmath</label>
+      </node>
+      <node id="13">
+        <label>concepts</label>
+      </node>
+      <node id="14">
+        <label>cstddef</label>
+      </node>
+      <node id="15">
+        <label>cstdint</label>
+      </node>
+      <node id="22">
+        <label>deque</label>
+      </node>
+      <node id="3">
+        <label>exception</label>
+      </node>
+      <node id="4">
+        <label>functional</label>
+      </node>
+      <node id="23">
+        <label>limits</label>
+      </node>
+      <node id="24">
+        <label>map</label>
+      </node>
+      <node id="25">
+        <label>numeric</label>
+      </node>
+      <node id="5">
+        <label>optional</label>
+      </node>
+      <node id="20">
+        <label>set</label>
+      </node>
+      <node id="6">
+        <label>source_location</label>
+      </node>
+      <node id="18">
+        <label>span</label>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="8">
+        <label>variant</label>
+      </node>
+      <node id="16">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/examples/plotly_enhanced_example.cpp</label>
+        <link refid="d7/d5f/plotly__enhanced__example_8cpp"/>
+      </node>
+      <node id="7">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/examples/rest_api_example.cpp</label>
+        <link refid="d1/d43/rest__api__example_8cpp"/>
+      </node>
+      <node id="3">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/cached_performance_metrics.h</label>
+        <link refid="d4/dc1/cached__performance__metrics_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/parallel_performance_suite.h</label>
+        <link refid="dd/d71/parallel__performance__suite_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_analysis_suite.h</label>
+        <link refid="df/de7/performance__analysis__suite_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h</label>
+        <link refid="de/d88/performance__metrics_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h</label>
+        <link refid="dc/d16/matplotlib__integration_8h"/>
+      </node>
+      <node id="9">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotly_enhanced.h</label>
+        <link refid="d1/dcd/plotly__enhanced_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/json_serializer.h</label>
+        <link refid="d4/d45/json__serializer_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/rest_api_server.h</label>
+        <link refid="de/de7/rest__api__server_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp</label>
+        <link refid="d2/dd1/plotly__enhanced_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics" prot="public">pyfolio::analytics::PerformanceMetrics</innerclass>
+    <innerclass refid="d6/d42/structpyfolio_1_1analytics_1_1AttributionResult" prot="public">pyfolio::analytics::AttributionResult</innerclass>
+    <innerclass refid="d7/d98/classpyfolio_1_1PerformanceMetrics" prot="public">pyfolio::PerformanceMetrics</innerclass>
+    <innerclass refid="d9/d17/structpyfolio_1_1PerformanceMetrics_1_1CaptureRatioResult" prot="public">pyfolio::PerformanceMetrics::CaptureRatioResult</innerclass>
+    <innernamespace refid="d7/df8/namespacepyfolio">pyfolio</innernamespace>
+    <innernamespace refid="d2/d10/namespacepyfolio_1_1analytics">pyfolio::analytics</innernamespace>
+    <briefdescription>
+<para>Comprehensive portfolio performance metrics and analytics. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="version"><para>1.0.0 </para>
+</simplesect>
+<simplesect kind="date"><para>2024 </para>
+</simplesect>
+<simplesect kind="author"><para>Pyfolio C++ Team</para>
+</simplesect>
+</para>
+<sect1 id="de/d88/performance__metrics_8h_1overview">
+<title>Overview</title><para>This module provides state-of-the-art performance metric calculations for quantitative portfolio analysis. All calculations are optimized for institutional-grade performance and support both single-threaded and parallel execution modes.</para>
+</sect1>
+<sect1 id="de/d88/performance__metrics_8h_1features">
+<title>Key Features</title><para><itemizedlist>
+<listitem><para><bold>Risk-Adjusted Returns</bold>: Sharpe, Sortino, Calmar, Information ratios</para>
+</listitem><listitem><para><bold>Risk Metrics</bold>: VaR, CVaR, Maximum Drawdown, Tracking Error</para>
+</listitem><listitem><para><bold>Distribution Analysis</bold>: Skewness, Kurtosis, Tail Analysis</para>
+</listitem><listitem><para><bold>Attribution Analysis</bold>: Brinson-style performance attribution</para>
+</listitem><listitem><para><bold>Rolling Metrics</bold>: Time-varying performance analysis</para>
+</listitem><listitem><para><bold>SIMD Optimization</bold>: Vectorized calculations for large datasets</para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+<sect1 id="de/d88/performance__metrics_8h_1usage">
+<title>Usage Example</title><para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="de/d88/performance__metrics_8h" kindref="compound">pyfolio/analytics/performance_metrics.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="d2/d10/namespacepyfolio_1_1analytics" kindref="compound">pyfolio::analytics</ref>;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Calculate<sp/>comprehensive<sp/>metrics</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>metrics<sp/>=<sp/><ref refid="d2/d10/namespacepyfolio_1_1analytics_1a0562de05a212709b5e0fe358e30c90d0" kindref="member">calculate_performance_metrics</ref>(returns,<sp/>benchmark);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(metrics.is_ok())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Sharpe<sp/>Ratio:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>metrics.value().sharpe_ratio<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Max<sp/>Drawdown:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>metrics.value().max_drawdown<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Rolling<sp/>analysis</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>rolling<sp/>=<sp/><ref refid="d2/d10/namespacepyfolio_1_1analytics_1a6767fe5fe2707ba7d41dcc60be71fc15" kindref="member">calculate_rolling_performance_metrics</ref>(returns,<sp/>252);</highlight></codeline>
+</programlisting></para>
+</sect1>
+<sect1 id="de/d88/performance__metrics_8h_1performance">
+<title>Performance</title><para>All metrics are calculated using optimized algorithms:<itemizedlist>
+<listitem><para>O(n) complexity for most metrics</para>
+</listitem><listitem><para>SIMD vectorization for statistical calculations</para>
+</listitem><listitem><para>Memory-efficient rolling window computations</para>
+</listitem><listitem><para>Parallel execution support for large datasets </para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/d11/error__handling_8h" kindref="compound">../core/error_handling.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d8/d51/time__series_8h" kindref="compound">../core/time_series.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d9/d49/types_8h" kindref="compound">../core/types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d8/de8/drawdown_8h" kindref="compound">../performance/drawdown.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d7/d06/ratios_8h" kindref="compound">../performance/ratios.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d4/d73/returns_8h" kindref="compound">../performance/returns.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d5/db2/analytics_2statistics_8h" kindref="compound">statistics.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d2/d10/namespacepyfolio_1_1analytics" kindref="compound">pyfolio::analytics</ref><sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics" kindref="compound">PerformanceMetrics</ref><sp/>{</highlight></codeline>
+<codeline lineno="71" refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a3e502eb4760ff637704b95fc0cf4add1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a3e502eb4760ff637704b95fc0cf4add1" kindref="member">total_return</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="72" refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a2d32e78155a9e0434d5beffda4fb2bec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a2d32e78155a9e0434d5beffda4fb2bec" kindref="member">annual_return</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="73" refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a0f0a580e22b9f38fee7222d2d3f1f646" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a0f0a580e22b9f38fee7222d2d3f1f646" kindref="member">annual_volatility</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="74" refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a2252369fd5a1d4f13476e6f68bec085e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a2252369fd5a1d4f13476e6f68bec085e" kindref="member">sharpe_ratio</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="75" refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1aee0f94a36cb88d38dcc2d8f755bd359c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1aee0f94a36cb88d38dcc2d8f755bd359c" kindref="member">sortino_ratio</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="76" refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a7f7e2b17c39585f1a5869ca5ef8c8724" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a7f7e2b17c39585f1a5869ca5ef8c8724" kindref="member">max_drawdown</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="77" refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a714269105c1cacb42e4170fdbae4918e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a714269105c1cacb42e4170fdbae4918e" kindref="member">calmar_ratio</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="78" refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a0c337f6982ecd7f7c790a12893ee77b5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a0c337f6982ecd7f7c790a12893ee77b5" kindref="member">skewness</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="79" refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a2a26804a2b0f39cfe38af3f7d9d4fca1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a2a26804a2b0f39cfe38af3f7d9d4fca1" kindref="member">kurtosis</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="80" refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a0b08a5e0348465a0a66cc54f95580373" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a0b08a5e0348465a0a66cc54f95580373" kindref="member">var_95</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="81" refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a96cea1b61c0d9b29916d53409d3c612c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a96cea1b61c0d9b29916d53409d3c612c" kindref="member">var_99</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="82" refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1ab50d8bd93cdab494c0971c3503b4dcef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1ab50d8bd93cdab494c0971c3503b4dcef" kindref="member">beta</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="83" refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a8ae8364d4a6c1b763174571da30b46a6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a8ae8364d4a6c1b763174571da30b46a6" kindref="member">alpha</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="84" refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a37817089e17da1751be43cf33bdd0dc7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a37817089e17da1751be43cf33bdd0dc7" kindref="member">information_ratio</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Advanced<sp/>metrics</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a9ba502d1c94fa9c7a2d6102871e66882" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a9ba502d1c94fa9c7a2d6102871e66882" kindref="member">omega_ratio</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="88" refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1ab26014d4fe883ea438f4b82f936d6684" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1ab26014d4fe883ea438f4b82f936d6684" kindref="member">tail_ratio</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="89" refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a0ec8fa97f4c65bacbafaafcdeab43927" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a0ec8fa97f4c65bacbafaafcdeab43927" kindref="member">common_sense_ratio</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="90" refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1af7be3b9d9bfe9171e7e0fb2f709226e7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1af7be3b9d9bfe9171e7e0fb2f709226e7" kindref="member">stability</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="91" refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a504222caaea5e4cd84f461b490c1401d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a504222caaea5e4cd84f461b490c1401d" kindref="member">downside_deviation</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="92" refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1ae60da18336ca95f60db5d1b5392cb916" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1ae60da18336ca95f60db5d1b5392cb916" kindref="member">tracking_error</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="93"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135" refid="d2/d10/namespacepyfolio_1_1analytics_1a0562de05a212709b5e0fe358e30c90d0" refkind="member"><highlight class="normal"><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;PerformanceMetrics&gt;</ref><sp/><ref refid="d2/d10/namespacepyfolio_1_1analytics_1a0562de05a212709b5e0fe358e30c90d0" kindref="member">calculate_performance_metrics</ref>(</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;Return&gt;</ref>&amp;<sp/>returns,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::optional&lt;<ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;Return&gt;</ref>&gt;&amp;<sp/>benchmark<sp/>=<sp/>std::nullopt,</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>risk_free_rate<sp/>=<sp/>0.02,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>periods_per_year<sp/>=<sp/>252);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142" refid="d2/d10/namespacepyfolio_1_1analytics_1a6767fe5fe2707ba7d41dcc60be71fc15" refkind="member"><highlight class="normal"><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;TimeSeries&lt;PerformanceMetrics&gt;</ref>&gt;<sp/><ref refid="d2/d10/namespacepyfolio_1_1analytics_1a6767fe5fe2707ba7d41dcc60be71fc15" kindref="member">calculate_rolling_performance_metrics</ref>(</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;Return&gt;</ref>&amp;<sp/>returns,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>window<sp/>=<sp/>252,</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::optional&lt;<ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;Return&gt;</ref>&gt;&amp;<sp/>benchmark<sp/>=<sp/>std::nullopt,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>risk_free_rate<sp/>=<sp/>0.02);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149" refid="d6/d42/structpyfolio_1_1analytics_1_1AttributionResult" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d6/d42/structpyfolio_1_1analytics_1_1AttributionResult" kindref="compound">AttributionResult</ref><sp/>{</highlight></codeline>
+<codeline lineno="150" refid="d6/d42/structpyfolio_1_1analytics_1_1AttributionResult_1a406ebd9dbb3508ef5dcd94a7e7ada984" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d6/d42/structpyfolio_1_1analytics_1_1AttributionResult_1a406ebd9dbb3508ef5dcd94a7e7ada984" kindref="member">allocation_effect</ref>;</highlight></codeline>
+<codeline lineno="151" refid="d6/d42/structpyfolio_1_1analytics_1_1AttributionResult_1a61d1adf53566894e12a069c32c93d41d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d6/d42/structpyfolio_1_1analytics_1_1AttributionResult_1a61d1adf53566894e12a069c32c93d41d" kindref="member">selection_effect</ref>;</highlight></codeline>
+<codeline lineno="152" refid="d6/d42/structpyfolio_1_1analytics_1_1AttributionResult_1a981bd2841ae39e6b43d2797da8652af6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d6/d42/structpyfolio_1_1analytics_1_1AttributionResult_1a981bd2841ae39e6b43d2797da8652af6" kindref="member">interaction_effect</ref>;</highlight></codeline>
+<codeline lineno="153" refid="d6/d42/structpyfolio_1_1analytics_1_1AttributionResult_1ae1e8f679ad18fcff6f70eb3890b04bc0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d6/d42/structpyfolio_1_1analytics_1_1AttributionResult_1ae1e8f679ad18fcff6f70eb3890b04bc0" kindref="member">total_active_return</ref>;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159" refid="d2/d10/namespacepyfolio_1_1analytics_1ac955ed8431f05a15c70173afce43e083" refkind="member"><highlight class="normal"><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;AttributionResult&gt;</ref><sp/><ref refid="d2/d10/namespacepyfolio_1_1analytics_1ac955ed8431f05a15c70173afce43e083" kindref="member">calculate_attribution</ref>(</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;Return&gt;</ref>&amp;<sp/>portfolio_returns,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;Return&gt;</ref>&amp;<sp/>benchmark_returns,</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt;std::unordered_map&lt;std::string,<sp/>double&gt;&gt;&amp;<sp/>weights,</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt;std::unordered_map&lt;std::string,<sp/>Return&gt;&gt;&amp;<sp/>sector_returns);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>pyfolio::analytics</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Static<sp/>wrapper<sp/>class<sp/>for<sp/>test<sp/>compatibility</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d7/df8/namespacepyfolio" kindref="compound">pyfolio</ref><sp/>{</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172" refid="d7/d98/classpyfolio_1_1PerformanceMetrics" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d7/d98/classpyfolio_1_1PerformanceMetrics" kindref="compound">PerformanceMetrics</ref><sp/>{</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="175" refid="d7/d98/classpyfolio_1_1PerformanceMetrics_1a98139e1c2481720f61ac7a7f2959d9af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;double&gt;</ref><sp/><ref refid="d7/d98/classpyfolio_1_1PerformanceMetrics_1a98139e1c2481720f61ac7a7f2959d9af" kindref="member">annual_return</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;T&gt;</ref>&amp;<sp/>returns)<sp/>{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>mean_result<sp/>=<sp/>returns.<ref refid="d7/ddc/classpyfolio_1_1TimeSeries_1aad798a4da69bff9c8bb9d335eaba6ec6" kindref="member">mean</ref>();</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mean_result.is_error())<sp/>{</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>mean_result;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Annualize<sp/>assuming<sp/>daily<sp/>returns</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>annual<sp/>=<sp/>mean_result.value()<sp/>*<sp/><ref refid="db/d9c/namespacepyfolio_1_1constants_1accf4b9e8a1c9179437b61a3f9a0e2e53" kindref="member">constants::TRADING_DAYS_PER_YEAR</ref>;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" kindref="member">Result&lt;double&gt;::success</ref>(annual);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="186" refid="d7/d98/classpyfolio_1_1PerformanceMetrics_1a6f7e64c2f975ec5facdf779b6d27533a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;double&gt;</ref><sp/><ref refid="d7/d98/classpyfolio_1_1PerformanceMetrics_1a6f7e64c2f975ec5facdf779b6d27533a" kindref="member">annual_volatility</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;T&gt;</ref>&amp;<sp/>returns)<sp/>{</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>std_result<sp/>=<sp/>returns.<ref refid="d7/ddc/classpyfolio_1_1TimeSeries_1a82439ade72c213e3ffd477dd6a2058e5" kindref="member">std</ref>();</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(std_result.is_error())<sp/>{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std_result;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Annualize<sp/>assuming<sp/>daily<sp/>returns</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>annual_vol<sp/>=<sp/>std_result.value()<sp/>*<sp/>std::sqrt(<ref refid="db/d9c/namespacepyfolio_1_1constants_1accf4b9e8a1c9179437b61a3f9a0e2e53" kindref="member">constants::TRADING_DAYS_PER_YEAR</ref>);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" kindref="member">Result&lt;double&gt;::success</ref>(annual_vol);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="197" refid="d7/d98/classpyfolio_1_1PerformanceMetrics_1a5b09b3706a11359c2364d3d6149eba17" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;double&gt;</ref><sp/><ref refid="d7/d98/classpyfolio_1_1PerformanceMetrics_1a5b09b3706a11359c2364d3d6149eba17" kindref="member">sharpe_ratio</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;T&gt;</ref>&amp;<sp/>returns,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>risk_free_rate<sp/>=<sp/>0.0)<sp/>{</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="da/d0a/classpyfolio_1_1Statistics_1add05d2ec066eecbb3feb17b3ecab1fe8" kindref="member">Statistics::sharpe_ratio</ref>(returns,<sp/>risk_free_rate);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="202" refid="d7/d98/classpyfolio_1_1PerformanceMetrics_1a904b5c53def9cd48ffb1be5fb776480e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;double&gt;</ref><sp/><ref refid="d7/d98/classpyfolio_1_1PerformanceMetrics_1a904b5c53def9cd48ffb1be5fb776480e" kindref="member">sortino_ratio</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;T&gt;</ref>&amp;<sp/>returns,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>risk_free_rate<sp/>=<sp/>0.0)<sp/>{</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="da/d0a/classpyfolio_1_1Statistics_1ae3abd35508b1c2c76a918a8d58338e41" kindref="member">Statistics::sortino_ratio</ref>(returns,<sp/>risk_free_rate);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="207" refid="d7/d98/classpyfolio_1_1PerformanceMetrics_1a205605b4205561b43b0b8e052999ec55" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;double&gt;</ref><sp/><ref refid="d7/d98/classpyfolio_1_1PerformanceMetrics_1a205605b4205561b43b0b8e052999ec55" kindref="member">calmar_ratio</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;T&gt;</ref>&amp;<sp/>returns)<sp/>{</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="da/d0a/classpyfolio_1_1Statistics_1ad65c7ac81b945bde674200d8ca6b389b" kindref="member">Statistics::calmar_ratio</ref>(returns);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="212" refid="d7/d98/classpyfolio_1_1PerformanceMetrics_1a74e8559b754a6682d584e5083a97742e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;Statistics::SimpleDrawdownInfo&gt;</ref><sp/><ref refid="d7/d98/classpyfolio_1_1PerformanceMetrics_1a74e8559b754a6682d584e5083a97742e" kindref="member">max_drawdown</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;T&gt;</ref>&amp;<sp/>returns)<sp/>{</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="da/d0a/classpyfolio_1_1Statistics_1a6950e63814c3d0f2985058afa6d045de" kindref="member">Statistics::max_drawdown</ref>(returns);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="217" refid="d7/d98/classpyfolio_1_1PerformanceMetrics_1a992b93ae03ec1d0da0fb55c985b70465" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;Statistics::AlphaBetaResult&gt;</ref><sp/><ref refid="d7/d98/classpyfolio_1_1PerformanceMetrics_1a992b93ae03ec1d0da0fb55c985b70465" kindref="member">alpha_beta</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;T&gt;</ref>&amp;<sp/>returns,</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;T&gt;</ref>&amp;<sp/>benchmark_returns,</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>risk_free_rate<sp/>=<sp/>0.0)<sp/>{</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="da/d0a/classpyfolio_1_1Statistics_1af30bc2537515dd9bf004768149ace4a4" kindref="member">Statistics::alpha_beta</ref>(returns,<sp/>benchmark_returns,<sp/>risk_free_rate);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="224" refid="d7/d98/classpyfolio_1_1PerformanceMetrics_1ab87361fe59e60bb0b0de03856beb1ed5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;double&gt;</ref><sp/><ref refid="d7/d98/classpyfolio_1_1PerformanceMetrics_1ab87361fe59e60bb0b0de03856beb1ed5" kindref="member">information_ratio</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;T&gt;</ref>&amp;<sp/>returns,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;T&gt;</ref>&amp;<sp/>benchmark_returns)<sp/>{</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="da/d0a/classpyfolio_1_1Statistics_1a0fd32c54eb1fea5a675633d5f85b7fc0" kindref="member">Statistics::information_ratio</ref>(returns,<sp/>benchmark_returns);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="229" refid="d7/d98/classpyfolio_1_1PerformanceMetrics_1a9fdc757f9aed9be60ee1beb1bc1d0e6f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;double&gt;</ref><sp/><ref refid="d7/d98/classpyfolio_1_1PerformanceMetrics_1a9fdc757f9aed9be60ee1beb1bc1d0e6f" kindref="member">tracking_error</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;T&gt;</ref>&amp;<sp/>returns,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;T&gt;</ref>&amp;<sp/>benchmark_returns)<sp/>{</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="da/d0a/classpyfolio_1_1Statistics_1a2e0bb5b9b5052088b4ec146150811489" kindref="member">Statistics::tracking_error</ref>(returns,<sp/>benchmark_returns);</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Capture<sp/>ratio<sp/>result<sp/>struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234" refid="d9/d17/structpyfolio_1_1PerformanceMetrics_1_1CaptureRatioResult" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d9/d17/structpyfolio_1_1PerformanceMetrics_1_1CaptureRatioResult" kindref="compound">CaptureRatioResult</ref><sp/>{</highlight></codeline>
+<codeline lineno="235" refid="d9/d17/structpyfolio_1_1PerformanceMetrics_1_1CaptureRatioResult_1a1ab7bc92a3c7d720df2b4b0964e8bdb0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d9/d17/structpyfolio_1_1PerformanceMetrics_1_1CaptureRatioResult_1a1ab7bc92a3c7d720df2b4b0964e8bdb0" kindref="member">up_capture</ref>;</highlight></codeline>
+<codeline lineno="236" refid="d9/d17/structpyfolio_1_1PerformanceMetrics_1_1CaptureRatioResult_1ac54d2dd45243b8be558a5cee6e96ddc6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d9/d17/structpyfolio_1_1PerformanceMetrics_1_1CaptureRatioResult_1ac54d2dd45243b8be558a5cee6e96ddc6" kindref="member">down_capture</ref>;</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Additional<sp/>methods<sp/>expected<sp/>by<sp/>tests</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="241" refid="d7/d98/classpyfolio_1_1PerformanceMetrics_1a73f78d1e5ebebe459b1e9b8c2f5c695f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;CaptureRatioResult&gt;</ref><sp/><ref refid="d7/d98/classpyfolio_1_1PerformanceMetrics_1a73f78d1e5ebebe459b1e9b8c2f5c695f" kindref="member">up_down_capture_ratio</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;T&gt;</ref>&amp;<sp/>returns,</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;T&gt;</ref>&amp;<sp/>benchmark_returns)<sp/>{</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Simplified<sp/>implementation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d17/structpyfolio_1_1PerformanceMetrics_1_1CaptureRatioResult" kindref="compound">CaptureRatioResult</ref><sp/>result;</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.<ref refid="d9/d17/structpyfolio_1_1PerformanceMetrics_1_1CaptureRatioResult_1a1ab7bc92a3c7d720df2b4b0964e8bdb0" kindref="member">up_capture</ref><sp/><sp/><sp/>=<sp/>1.0;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.<ref refid="d9/d17/structpyfolio_1_1PerformanceMetrics_1_1CaptureRatioResult_1ac54d2dd45243b8be558a5cee6e96ddc6" kindref="member">down_capture</ref><sp/>=<sp/>1.0;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" kindref="member">Result&lt;CaptureRatioResult&gt;::success</ref>(result);</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="251" refid="d7/d98/classpyfolio_1_1PerformanceMetrics_1ac6c146bcc32eea3eca50844ceb910a9b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;double&gt;</ref><sp/><ref refid="d7/d98/classpyfolio_1_1PerformanceMetrics_1ac6c146bcc32eea3eca50844ceb910a9b" kindref="member">tail_ratio</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;T&gt;</ref>&amp;<sp/>returns,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>confidence_level<sp/>=<sp/>0.05)<sp/>{</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Simplified<sp/>implementation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" kindref="member">Result&lt;double&gt;::success</ref>(1.0);</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="257" refid="d7/d98/classpyfolio_1_1PerformanceMetrics_1a411a637e64ea20e90ff6ad18248fbc4d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;double&gt;</ref><sp/><ref refid="d7/d98/classpyfolio_1_1PerformanceMetrics_1a411a637e64ea20e90ff6ad18248fbc4d" kindref="member">common_sense_ratio</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;T&gt;</ref>&amp;<sp/>returns)<sp/>{</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Simplified<sp/>implementation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" kindref="member">Result&lt;double&gt;::success</ref>(1.0);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="263" refid="d7/d98/classpyfolio_1_1PerformanceMetrics_1a5784ddc0d8e243ae533e21f2f9b5054a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;double&gt;</ref><sp/><ref refid="d7/d98/classpyfolio_1_1PerformanceMetrics_1a5784ddc0d8e243ae533e21f2f9b5054a" kindref="member">stability_of_timeseries</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;T&gt;</ref>&amp;<sp/>returns)<sp/>{</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Simplified<sp/>implementation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" kindref="member">Result&lt;double&gt;::success</ref>(0.5);</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="269" refid="d7/d98/classpyfolio_1_1PerformanceMetrics_1af08f7acfb54afc6584e949d822c895ce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;pyfolio::analytics::PerformanceMetrics&gt;</ref><sp/><ref refid="d7/d98/classpyfolio_1_1PerformanceMetrics_1af08f7acfb54afc6584e949d822c895ce" kindref="member">calculate_comprehensive_metrics</ref>(</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;T&gt;</ref>&amp;<sp/>returns,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;T&gt;</ref>&amp;<sp/>benchmark_returns,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>risk_free_rate<sp/>=<sp/>0.0)<sp/>{</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Simplified<sp/>implementation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics" kindref="compound">pyfolio::analytics::PerformanceMetrics</ref><sp/>metrics{};</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>metrics.<ref refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a3e502eb4760ff637704b95fc0cf4add1" kindref="member">total_return</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0.1;</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>metrics.annual_return<sp/><sp/><sp/><sp/><sp/>=<sp/>0.1;</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>metrics.annual_volatility<sp/>=<sp/>0.2;</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>metrics.tracking_error<sp/><sp/><sp/><sp/>=<sp/>0.05;</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" kindref="member">Result&lt;pyfolio::analytics::PerformanceMetrics&gt;::success</ref>(metrics);</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="281" refid="d7/d98/classpyfolio_1_1PerformanceMetrics_1a535ca9f451f9d1ab1a2b96bb77a9b717" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;TimeSeries&lt;T&gt;</ref>&gt;<sp/><ref refid="d7/d98/classpyfolio_1_1PerformanceMetrics_1a535ca9f451f9d1ab1a2b96bb77a9b717" kindref="member">cumulative_returns</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;T&gt;</ref>&amp;<sp/>returns)<sp/>{</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>returns.<ref refid="d7/ddc/classpyfolio_1_1TimeSeries_1a5cae2e774b3eeab9c87e2e2a44ee532a" kindref="member">cumulative_returns</ref>();</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="286" refid="d7/d98/classpyfolio_1_1PerformanceMetrics_1ac8fe98c7b6ddff19757e5d534aa15844" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;TimeSeries&lt;T&gt;</ref>&gt;<sp/><ref refid="d7/d98/classpyfolio_1_1PerformanceMetrics_1ac8fe98c7b6ddff19757e5d534aa15844" kindref="member">drawdown_series</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;T&gt;</ref>&amp;<sp/>returns)<sp/>{</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Simplified<sp/>implementation<sp/>-<sp/>return<sp/>zeros</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>timestamps<sp/>=<sp/>returns.<ref refid="d7/ddc/classpyfolio_1_1TimeSeries_1a0374bbc62bd808749ac476b3af4b0ead" kindref="member">timestamps</ref>();</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;T&gt;<sp/>zeros(timestamps.size(),<sp/>T{0});</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;TimeSeries&lt;T&gt;</ref>&gt;::success(<ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;T&gt;</ref>(timestamps,<sp/>zeros,<sp/></highlight><highlight class="stringliteral">&quot;drawdown&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="294" refid="d7/d98/classpyfolio_1_1PerformanceMetrics_1ad2969f9a4fbc7c5670a4916854ed97b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;TimeSeries&lt;T&gt;</ref>&gt;<sp/><ref refid="d7/d98/classpyfolio_1_1PerformanceMetrics_1ad2969f9a4fbc7c5670a4916854ed97b0" kindref="member">rolling_sharpe</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;T&gt;</ref>&amp;<sp/>returns,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>window,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>risk_free_rate<sp/>=<sp/>0.0)<sp/>{</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Simplified<sp/>implementation<sp/>using<sp/>rolling<sp/>mean</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>rolling_result<sp/>=<sp/>returns.<ref refid="d7/ddc/classpyfolio_1_1TimeSeries_1a09b5e0db91c49c4ef4b768f34e838a6e" kindref="member">rolling_mean</ref>(window);</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>rolling_result;</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="299"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>pyfolio</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h"/>
+  </compounddef>
+</doxygen>

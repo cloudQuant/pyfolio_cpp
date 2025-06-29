@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="d8/d8b/structpyfolio_1_1visualization_1_1PlotData" kind="struct" language="C++" prot="public">
+    <compoundname>pyfolio::visualization::PlotData</compoundname>
+    <includes refid="d3/df8/plotting_8h" local="no">plotting.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d8/d8b/structpyfolio_1_1visualization_1_1PlotData_1a5e2010a240ef83490301d4066ae046ed" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref> &gt;</type>
+        <definition>std::vector&lt;DateTime&gt; pyfolio::visualization::PlotData::timestamps</definition>
+        <argsstring></argsstring>
+        <name>timestamps</name>
+        <qualifiedname>pyfolio::visualization::PlotData::timestamps</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" line="40" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" bodystart="40" bodyend="-1"/>
+        <referencedby refid="df/da3/namespacepyfolio_1_1visualization_1_1utils_1addf5f76ba7cac9175e083d48d7bce498" compoundref="d3/df8/plotting_8h" startline="213" endline="221">pyfolio::visualization::utils::timeseries_to_plotdata</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d8b/structpyfolio_1_1visualization_1_1PlotData_1a23b96cef40eacdf7d2a91443cebd37b4" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; pyfolio::visualization::PlotData::values</definition>
+        <argsstring></argsstring>
+        <name>values</name>
+        <qualifiedname>pyfolio::visualization::PlotData::values</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" line="41" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" bodystart="41" bodyend="-1"/>
+        <referencedby refid="df/da3/namespacepyfolio_1_1visualization_1_1utils_1addf5f76ba7cac9175e083d48d7bce498" compoundref="d3/df8/plotting_8h" startline="213" endline="221">pyfolio::visualization::utils::timeseries_to_plotdata</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d8b/structpyfolio_1_1visualization_1_1PlotData_1afa8a89392828441a337028a4b1f13fac" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string pyfolio::visualization::PlotData::label</definition>
+        <argsstring></argsstring>
+        <name>label</name>
+        <qualifiedname>pyfolio::visualization::PlotData::label</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" line="42" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" bodystart="42" bodyend="-1"/>
+        <referencedby refid="df/da3/namespacepyfolio_1_1visualization_1_1utils_1addf5f76ba7cac9175e083d48d7bce498" compoundref="d3/df8/plotting_8h" startline="213" endline="221">pyfolio::visualization::utils::timeseries_to_plotdata</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d8b/structpyfolio_1_1visualization_1_1PlotData_1a645c7b31e09995d482914d274dc25958" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string pyfolio::visualization::PlotData::color</definition>
+        <argsstring></argsstring>
+        <name>color</name>
+        <qualifiedname>pyfolio::visualization::PlotData::color</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" line="43" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" bodystart="43" bodyend="-1"/>
+        <referencedby refid="df/da3/namespacepyfolio_1_1visualization_1_1utils_1addf5f76ba7cac9175e083d48d7bce498" compoundref="d3/df8/plotting_8h" startline="213" endline="221">pyfolio::visualization::utils::timeseries_to_plotdata</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d8b/structpyfolio_1_1visualization_1_1PlotData_1aa30be95d00e251fe62bf4a9703fd3363" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string pyfolio::visualization::PlotData::style</definition>
+        <argsstring></argsstring>
+        <name>style</name>
+        <qualifiedname>pyfolio::visualization::PlotData::style</qualifiedname>
+        <initializer>= &quot;line&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" line="44" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Data structure for plot data. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>pyfolio::BusinessCalendar</label>
+        <link refid="dc/ddd/classpyfolio_1_1BusinessCalendar"/>
+      </node>
+      <node id="3">
+        <label>pyfolio::DateTime</label>
+        <link refid="d6/d4f/classpyfolio_1_1DateTime"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>default_calendar_</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>pyfolio::visualization::PlotData</label>
+        <link refid="d8/d8b/structpyfolio_1_1visualization_1_1PlotData"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>timestamps</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>values</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>color</edgelabel>
+          <edgelabel>label</edgelabel>
+          <edgelabel>style</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="6">
+        <label>std::string</label>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>std::vector&lt; double &gt;</label>
+      </node>
+      <node id="2">
+        <label>std::vector&lt; pyfolio::DateTime &gt;</label>
+        <childnode refid="3" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" line="39" column="1" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" bodystart="39" bodyend="45"/>
+    <listofallmembers>
+      <member refid="d8/d8b/structpyfolio_1_1visualization_1_1PlotData_1a645c7b31e09995d482914d274dc25958" prot="public" virt="non-virtual"><scope>pyfolio::visualization::PlotData</scope><name>color</name></member>
+      <member refid="d8/d8b/structpyfolio_1_1visualization_1_1PlotData_1afa8a89392828441a337028a4b1f13fac" prot="public" virt="non-virtual"><scope>pyfolio::visualization::PlotData</scope><name>label</name></member>
+      <member refid="d8/d8b/structpyfolio_1_1visualization_1_1PlotData_1aa30be95d00e251fe62bf4a9703fd3363" prot="public" virt="non-virtual"><scope>pyfolio::visualization::PlotData</scope><name>style</name></member>
+      <member refid="d8/d8b/structpyfolio_1_1visualization_1_1PlotData_1a5e2010a240ef83490301d4066ae046ed" prot="public" virt="non-virtual"><scope>pyfolio::visualization::PlotData</scope><name>timestamps</name></member>
+      <member refid="d8/d8b/structpyfolio_1_1visualization_1_1PlotData_1a23b96cef40eacdf7d2a91443cebd37b4" prot="public" virt="non-virtual"><scope>pyfolio::visualization::PlotData</scope><name>values</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

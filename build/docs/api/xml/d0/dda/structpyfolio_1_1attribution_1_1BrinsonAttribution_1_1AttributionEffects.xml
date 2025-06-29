@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="d0/dda/structpyfolio_1_1attribution_1_1BrinsonAttribution_1_1AttributionEffects" kind="struct" language="C++" prot="private">
+    <compoundname>pyfolio::attribution::BrinsonAttribution::AttributionEffects</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d0/dda/structpyfolio_1_1attribution_1_1BrinsonAttribution_1_1AttributionEffects_1aeb77ebb6a7adb723fa87347d50197081" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::attribution::BrinsonAttribution::AttributionEffects::allocation_effect</definition>
+        <argsstring></argsstring>
+        <name>allocation_effect</name>
+        <qualifiedname>pyfolio::attribution::BrinsonAttribution::AttributionEffects::allocation_effect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" line="347" column="16" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" bodystart="347" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/dda/structpyfolio_1_1attribution_1_1BrinsonAttribution_1_1AttributionEffects_1aaa265c6437fee7b515b818b43068bf9d" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::attribution::BrinsonAttribution::AttributionEffects::selection_effect</definition>
+        <argsstring></argsstring>
+        <name>selection_effect</name>
+        <qualifiedname>pyfolio::attribution::BrinsonAttribution::AttributionEffects::selection_effect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" line="348" column="16" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" bodystart="348" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/dda/structpyfolio_1_1attribution_1_1BrinsonAttribution_1_1AttributionEffects_1ac1f3365ad450cd97b31095cceb82984f" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::attribution::BrinsonAttribution::AttributionEffects::interaction_effect</definition>
+        <argsstring></argsstring>
+        <name>interaction_effect</name>
+        <qualifiedname>pyfolio::attribution::BrinsonAttribution::AttributionEffects::interaction_effect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" line="349" column="16" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" bodystart="349" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" line="346" column="5" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" bodystart="346" bodyend="350"/>
+    <listofallmembers>
+      <member refid="d0/dda/structpyfolio_1_1attribution_1_1BrinsonAttribution_1_1AttributionEffects_1aeb77ebb6a7adb723fa87347d50197081" prot="public" virt="non-virtual"><scope>pyfolio::attribution::BrinsonAttribution::AttributionEffects</scope><name>allocation_effect</name></member>
+      <member refid="d0/dda/structpyfolio_1_1attribution_1_1BrinsonAttribution_1_1AttributionEffects_1ac1f3365ad450cd97b31095cceb82984f" prot="public" virt="non-virtual"><scope>pyfolio::attribution::BrinsonAttribution::AttributionEffects</scope><name>interaction_effect</name></member>
+      <member refid="d0/dda/structpyfolio_1_1attribution_1_1BrinsonAttribution_1_1AttributionEffects_1aaa265c6437fee7b515b818b43068bf9d" prot="public" virt="non-virtual"><scope>pyfolio::attribution::BrinsonAttribution::AttributionEffects</scope><name>selection_effect</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

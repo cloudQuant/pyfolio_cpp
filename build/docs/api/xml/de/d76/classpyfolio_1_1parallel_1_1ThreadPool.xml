@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="de/d76/classpyfolio_1_1parallel_1_1ThreadPool" kind="class" language="C++" prot="public">
+    <compoundname>pyfolio::parallel::ThreadPool</compoundname>
+    <includes refid="d9/d36/parallel__algorithms_8h" local="no">parallel_algorithms.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="de/d76/classpyfolio_1_1parallel_1_1ThreadPool_1a4e9eac9ef025e70f625cf59b61f607dc" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::thread &gt;</type>
+        <definition>std::vector&lt;std::thread&gt; pyfolio::parallel::ThreadPool::workers_</definition>
+        <argsstring></argsstring>
+        <name>workers_</name>
+        <qualifiedname>pyfolio::parallel::ThreadPool::workers_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/parallel/parallel_algorithms.h" line="50" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/parallel/parallel_algorithms.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d76/classpyfolio_1_1parallel_1_1ThreadPool_1a8f9c49bd306780136b650dfdb0b1d510" prot="private" static="no" mutable="no">
+        <type>std::queue&lt; std::function&lt; void()&gt; &gt;</type>
+        <definition>std::queue&lt;std::function&lt;void()&gt; &gt; pyfolio::parallel::ThreadPool::tasks_</definition>
+        <argsstring></argsstring>
+        <name>tasks_</name>
+        <qualifiedname>pyfolio::parallel::ThreadPool::tasks_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/parallel/parallel_algorithms.h" line="51" column="16" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/parallel/parallel_algorithms.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d76/classpyfolio_1_1parallel_1_1ThreadPool_1a2b5acc86a4fb5af646bf241f5de00c76" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex pyfolio::parallel::ThreadPool::queue_mutex_</definition>
+        <argsstring></argsstring>
+        <name>queue_mutex_</name>
+        <qualifiedname>pyfolio::parallel::ThreadPool::queue_mutex_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/parallel/parallel_algorithms.h" line="52" column="16" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/parallel/parallel_algorithms.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d76/classpyfolio_1_1parallel_1_1ThreadPool_1ad888544b3e91be2f73f8fb36c462635b" prot="private" static="no" mutable="no">
+        <type>std::condition_variable</type>
+        <definition>std::condition_variable pyfolio::parallel::ThreadPool::condition_</definition>
+        <argsstring></argsstring>
+        <name>condition_</name>
+        <qualifiedname>pyfolio::parallel::ThreadPool::condition_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/parallel/parallel_algorithms.h" line="53" column="29" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/parallel/parallel_algorithms.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d76/classpyfolio_1_1parallel_1_1ThreadPool_1a85b7da3ba713b23a09b5ecc4a4966d2c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool pyfolio::parallel::ThreadPool::stop_</definition>
+        <argsstring></argsstring>
+        <name>stop_</name>
+        <qualifiedname>pyfolio::parallel::ThreadPool::stop_</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/parallel/parallel_algorithms.h" line="54" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/parallel/parallel_algorithms.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="de/d76/classpyfolio_1_1parallel_1_1ThreadPool_1a39fea9bf1590121f85ddaafc9cdfc737" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>pyfolio::parallel::ThreadPool::ThreadPool</definition>
+        <argsstring>(size_t num_threads=std::thread::hardware_concurrency())</argsstring>
+        <name>ThreadPool</name>
+        <qualifiedname>pyfolio::parallel::ThreadPool::ThreadPool</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>num_threads</declname>
+          <defval>std::thread::hardware_concurrency()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/parallel/parallel_algorithms.h" line="57" column="14" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/parallel/parallel_algorithms.h" bodystart="57" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d76/classpyfolio_1_1parallel_1_1ThreadPool_1a0310625347ae8ef53d0c8d8dc0fd7c8f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>pyfolio::parallel::ThreadPool::~ThreadPool</definition>
+        <argsstring>()</argsstring>
+        <name>~ThreadPool</name>
+        <qualifiedname>pyfolio::parallel::ThreadPool::~ThreadPool</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/parallel/parallel_algorithms.h" line="80" column="5" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/parallel/parallel_algorithms.h" bodystart="80" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d76/classpyfolio_1_1parallel_1_1ThreadPool_1a4ed37b156779dce55274acc0423a8fd3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename F</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>std::future&lt; typename std::invoke_result&lt; F, Args... &gt;::type &gt;</type>
+        <definition>std::future&lt; typename std::invoke_result&lt; F, Args... &gt;::type &gt; pyfolio::parallel::ThreadPool::enqueue</definition>
+        <argsstring>(F &amp;&amp;f, Args &amp;&amp;... args)</argsstring>
+        <name>enqueue</name>
+        <qualifiedname>pyfolio::parallel::ThreadPool::enqueue</qualifiedname>
+        <param>
+          <type>F &amp;&amp;</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/parallel/parallel_algorithms.h" line="94" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/parallel/parallel_algorithms.h" bodystart="94" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d76/classpyfolio_1_1parallel_1_1ThreadPool_1a01387c28e35cdb1b189340dfe0add663" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t pyfolio::parallel::ThreadPool::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <qualifiedname>pyfolio::parallel::ThreadPool::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/parallel/parallel_algorithms.h" line="116" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/parallel/parallel_algorithms.h" bodystart="116" bodyend="116"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Thread pool for reusable worker threads. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/parallel/parallel_algorithms.h" line="48" column="1" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/parallel/parallel_algorithms.h" bodystart="48" bodyend="117"/>
+    <listofallmembers>
+      <member refid="de/d76/classpyfolio_1_1parallel_1_1ThreadPool_1ad888544b3e91be2f73f8fb36c462635b" prot="private" virt="non-virtual"><scope>pyfolio::parallel::ThreadPool</scope><name>condition_</name></member>
+      <member refid="de/d76/classpyfolio_1_1parallel_1_1ThreadPool_1a4ed37b156779dce55274acc0423a8fd3" prot="public" virt="non-virtual"><scope>pyfolio::parallel::ThreadPool</scope><name>enqueue</name></member>
+      <member refid="de/d76/classpyfolio_1_1parallel_1_1ThreadPool_1a2b5acc86a4fb5af646bf241f5de00c76" prot="private" virt="non-virtual"><scope>pyfolio::parallel::ThreadPool</scope><name>queue_mutex_</name></member>
+      <member refid="de/d76/classpyfolio_1_1parallel_1_1ThreadPool_1a01387c28e35cdb1b189340dfe0add663" prot="public" virt="non-virtual"><scope>pyfolio::parallel::ThreadPool</scope><name>size</name></member>
+      <member refid="de/d76/classpyfolio_1_1parallel_1_1ThreadPool_1a85b7da3ba713b23a09b5ecc4a4966d2c" prot="private" virt="non-virtual"><scope>pyfolio::parallel::ThreadPool</scope><name>stop_</name></member>
+      <member refid="de/d76/classpyfolio_1_1parallel_1_1ThreadPool_1a8f9c49bd306780136b650dfdb0b1d510" prot="private" virt="non-virtual"><scope>pyfolio::parallel::ThreadPool</scope><name>tasks_</name></member>
+      <member refid="de/d76/classpyfolio_1_1parallel_1_1ThreadPool_1a39fea9bf1590121f85ddaafc9cdfc737" prot="public" virt="non-virtual"><scope>pyfolio::parallel::ThreadPool</scope><name>ThreadPool</name></member>
+      <member refid="de/d76/classpyfolio_1_1parallel_1_1ThreadPool_1a4e9eac9ef025e70f625cf59b61f607dc" prot="private" virt="non-virtual"><scope>pyfolio::parallel::ThreadPool</scope><name>workers_</name></member>
+      <member refid="de/d76/classpyfolio_1_1parallel_1_1ThreadPool_1a0310625347ae8ef53d0c8d8dc0fd7c8f" prot="public" virt="non-virtual"><scope>pyfolio::parallel::ThreadPool</scope><name>~ThreadPool</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

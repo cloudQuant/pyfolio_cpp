@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dir_6b815546ea83a706da6c236f0df0a206" kind="dir">
+    <compoundname>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk</compoundname>
+    <innerfile refid="d4/da5/factor__exposure_8h">factor_exposure.h</innerfile>
+    <innerfile refid="df/d46/var_8h">var.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/"/>
+  </compounddef>
+</doxygen>

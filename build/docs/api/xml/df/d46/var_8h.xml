@@ -1,0 +1,822 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="df/d46/var_8h" kind="file" language="C++">
+    <compoundname>var.h</compoundname>
+    <includes refid="de/d1b/datetime_8h" local="yes">../core/datetime.h</includes>
+    <includes refid="d3/d11/error__handling_8h" local="yes">../core/error_handling.h</includes>
+    <includes refid="d8/d51/time__series_8h" local="yes">../core/time_series.h</includes>
+    <includes refid="d9/d49/types_8h" local="yes">../core/types.h</includes>
+    <includes refid="d3/dbe/math_2statistics_8h" local="yes">../math/statistics.h</includes>
+    <includes local="no">algorithm</includes>
+    <includes local="no">cmath</includes>
+    <includes local="no">map</includes>
+    <includes local="no">numeric</includes>
+    <includes local="no">random</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="db/dc6/risk__analysis__example_8cpp" local="no">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/examples/risk_analysis_example.cpp</includedby>
+    <includedby refid="d3/d30/pyfolio_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/pyfolio.h</includedby>
+    <includedby refid="d3/d66/tears_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>../core/datetime.h</label>
+        <link refid="de/d1b/datetime_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>error_handling.h</label>
+        <link refid="d3/d11/error__handling_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>../core/time_series.h</label>
+        <link refid="d8/d51/time__series_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>types.h</label>
+        <link refid="d9/d49/types_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>../math/simd_math.h</label>
+        <link refid="d6/d99/simd__math_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>../math/statistics.h</label>
+        <link refid="d3/dbe/math_2statistics_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/var.h</label>
+        <link refid="df/d46/var_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>algorithm</label>
+      </node>
+      <node id="11">
+        <label>chrono</label>
+      </node>
+      <node id="21">
+        <label>cmath</label>
+      </node>
+      <node id="12">
+        <label>concepts</label>
+      </node>
+      <node id="13">
+        <label>cstddef</label>
+      </node>
+      <node id="14">
+        <label>cstdint</label>
+      </node>
+      <node id="22">
+        <label>deque</label>
+      </node>
+      <node id="4">
+        <label>exception</label>
+      </node>
+      <node id="5">
+        <label>functional</label>
+      </node>
+      <node id="23">
+        <label>limits</label>
+      </node>
+      <node id="24">
+        <label>map</label>
+      </node>
+      <node id="25">
+        <label>numeric</label>
+      </node>
+      <node id="6">
+        <label>optional</label>
+      </node>
+      <node id="27">
+        <label>random</label>
+      </node>
+      <node id="17">
+        <label>set</label>
+      </node>
+      <node id="7">
+        <label>source_location</label>
+      </node>
+      <node id="20">
+        <label>span</label>
+      </node>
+      <node id="8">
+        <label>string</label>
+      </node>
+      <node id="9">
+        <label>variant</label>
+      </node>
+      <node id="15">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/examples/attribution_example.cpp</label>
+        <link refid="d8/d00/attribution__example_8cpp"/>
+      </node>
+      <node id="5">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/examples/basic_example.cpp</label>
+        <link refid="d3/d6a/basic__example_8cpp"/>
+      </node>
+      <node id="6">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/examples/bayesian_analysis_example.cpp</label>
+        <link refid="da/d7c/bayesian__analysis__example_8cpp"/>
+      </node>
+      <node id="7">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/examples/capacity_analysis_example.cpp</label>
+        <link refid="d1/db6/capacity__analysis__example_8cpp"/>
+      </node>
+      <node id="2">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/examples/risk_analysis_example.cpp</label>
+        <link refid="db/dc6/risk__analysis__example_8cpp"/>
+      </node>
+      <node id="8">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/examples/transaction_analysis_example.cpp</label>
+        <link refid="d7/d56/transaction__analysis__example_8cpp"/>
+      </node>
+      <node id="3">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/pyfolio.h</label>
+        <link refid="d3/d30/pyfolio_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h</label>
+        <link refid="d3/d66/tears_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/var.h</label>
+        <link refid="df/d46/var_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult" prot="public">pyfolio::risk::VaRResult</innerclass>
+    <innerclass refid="d0/dda/structpyfolio_1_1risk_1_1MarginalVaRResult" prot="public">pyfolio::risk::MarginalVaRResult</innerclass>
+    <innerclass refid="d3/dbb/structpyfolio_1_1risk_1_1StressTestScenario" prot="public">pyfolio::risk::StressTestScenario</innerclass>
+    <innerclass refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator" prot="public">pyfolio::risk::VaRCalculator</innerclass>
+    <innernamespace refid="d7/df8/namespacepyfolio">pyfolio</innernamespace>
+    <innernamespace refid="d2/da5/namespacepyfolio_1_1risk">pyfolio::risk</innernamespace>
+    <innernamespace refid="d0/de6/namespacepyfolio_1_1risk_1_1stress__scenarios">pyfolio::risk::stress_scenarios</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="de/d1b/datetime_8h" kindref="compound">../core/datetime.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/d11/error__handling_8h" kindref="compound">../core/error_handling.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d8/d51/time__series_8h" kindref="compound">../core/time_series.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d9/d49/types_8h" kindref="compound">../core/types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/dbe/math_2statistics_8h" kindref="compound">../math/statistics.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;numeric&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;random&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d2/da5/namespacepyfolio_1_1risk" kindref="compound">pyfolio::risk</ref><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="d2/da5/namespacepyfolio_1_1risk_1a15c267eaee47bf99d3a714b595a27206a88913bb4473f1077ae65934f3a8cf05a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="d2/da5/namespacepyfolio_1_1risk_1a15c267eaee47bf99d3a714b595a27206" kindref="member">VaRMethod</ref><sp/>{<sp/><ref refid="d2/da5/namespacepyfolio_1_1risk_1a15c267eaee47bf99d3a714b595a27206a1df940294e43cce1f43fe5cd4e103b94" kindref="member">Historical</ref>,<sp/><ref refid="d2/da5/namespacepyfolio_1_1risk_1a15c267eaee47bf99d3a714b595a27206a23706d68d0c7d89a0010b5cc242084f0" kindref="member">Parametric</ref>,<sp/><ref refid="d2/da5/namespacepyfolio_1_1risk_1a15c267eaee47bf99d3a714b595a27206aedd652c19d7dbbfb3d242aa14b2fec8c" kindref="member">MonteCarlo</ref>,<sp/><ref refid="d2/da5/namespacepyfolio_1_1risk_1a15c267eaee47bf99d3a714b595a27206a88913bb4473f1077ae65934f3a8cf05a" kindref="member">CornishFisher</ref>,<sp/><ref refid="d2/da5/namespacepyfolio_1_1risk_1a15c267eaee47bf99d3a714b595a27206abdbaf8bb2d87ab72ee2ee021b43f0f2d" kindref="member">ExtremeValue</ref><sp/>};</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="d2/da5/namespacepyfolio_1_1risk_1ae2f599e79ba540086280c5e7e34f29d6ac4c696d78d97d24ce69ebe19fd7f8483" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="d2/da5/namespacepyfolio_1_1risk_1ae2f599e79ba540086280c5e7e34f29d6" kindref="member">VaRHorizon</ref><sp/>{<sp/><ref refid="d2/da5/namespacepyfolio_1_1risk_1ae2f599e79ba540086280c5e7e34f29d6ac512b685438f41daa7386329a3b8f8d3" kindref="member">Daily</ref><sp/>=<sp/>1,<sp/><ref refid="d2/da5/namespacepyfolio_1_1risk_1ae2f599e79ba540086280c5e7e34f29d6a6c25e6a6da95b3d583c6ec4c3f82ed4d" kindref="member">Weekly</ref><sp/>=<sp/>7,<sp/><ref refid="d2/da5/namespacepyfolio_1_1risk_1ae2f599e79ba540086280c5e7e34f29d6a9030e39f00132d583da4122532e509e9" kindref="member">Monthly</ref><sp/>=<sp/>30,<sp/><ref refid="d2/da5/namespacepyfolio_1_1risk_1ae2f599e79ba540086280c5e7e34f29d6abe92c62702dcec6751c101b5adb0ce3b" kindref="member">Quarterly</ref><sp/>=<sp/>90,<sp/><ref refid="d2/da5/namespacepyfolio_1_1risk_1ae2f599e79ba540086280c5e7e34f29d6ac4c696d78d97d24ce69ebe19fd7f8483" kindref="member">Annual</ref><sp/>=<sp/>252<sp/>};</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult" kindref="compound">VaRResult</ref><sp/>{</highlight></codeline>
+<codeline lineno="31" refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1afbe9f3ac7570139975bfd46c3e08dd1e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1afbe9f3ac7570139975bfd46c3e08dd1e" kindref="member">var_estimate</ref>;</highlight></codeline>
+<codeline lineno="32" refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a9dc508a2b39cf9b17ce0d5ab261c20fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a9dc508a2b39cf9b17ce0d5ab261c20fc" kindref="member">cvar_estimate</ref>;<sp/><sp/></highlight><highlight class="comment">//<sp/>Conditional<sp/>VaR<sp/>(Expected<sp/>Shortfall)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1af66b52b45bc8ce4cc9323f813b311eeb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1af66b52b45bc8ce4cc9323f813b311eeb" kindref="member">confidence_level</ref>;</highlight></codeline>
+<codeline lineno="34" refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a174524439ead5e3ad13c376339b54327" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d2/da5/namespacepyfolio_1_1risk_1a15c267eaee47bf99d3a714b595a27206" kindref="member">VaRMethod</ref><sp/><ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a174524439ead5e3ad13c376339b54327" kindref="member">method</ref>;</highlight></codeline>
+<codeline lineno="35" refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1ab66b4f5694c0e6e5677663263c4b389c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d2/da5/namespacepyfolio_1_1risk_1ae2f599e79ba540086280c5e7e34f29d6" kindref="member">VaRHorizon</ref><sp/><ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1ab66b4f5694c0e6e5677663263c4b389c" kindref="member">horizon</ref>;</highlight></codeline>
+<codeline lineno="36" refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a2e63028e44ae11de8cfa9ceaab5e48b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a2e63028e44ae11de8cfa9ceaab5e48b6" kindref="member">sample_size</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Additional<sp/>statistics</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a3ddf7fbf5487c82832934ff163d44b41" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a3ddf7fbf5487c82832934ff163d44b41" kindref="member">portfolio_volatility</ref>;</highlight></codeline>
+<codeline lineno="40" refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a36fb14e1f2899fdcf0c69ac0642771cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a36fb14e1f2899fdcf0c69ac0642771cd" kindref="member">skewness</ref>;</highlight></codeline>
+<codeline lineno="41" refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1acb00eb69ee4161449485712e1203f781" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1acb00eb69ee4161449485712e1203f781" kindref="member">kurtosis</ref>;</highlight></codeline>
+<codeline lineno="42" refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1adf5722af9723b11f5f8864a17d837e2d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1adf5722af9723b11f5f8864a17d837e2d" kindref="member">max_drawdown</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1ac6e66b7e8addad63da3b5494abcb94f9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult" kindref="compound">VaRResult</ref><sp/><ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1ac6e66b7e8addad63da3b5494abcb94f9" kindref="member">scale_to_horizon</ref>(<ref refid="d2/da5/namespacepyfolio_1_1risk_1ae2f599e79ba540086280c5e7e34f29d6" kindref="member">VaRHorizon</ref><sp/>new_horizon)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult" kindref="compound">VaRResult</ref><sp/>scaled<sp/><sp/><sp/><sp/>=<sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scale_factor<sp/>=<sp/>std::sqrt(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">double</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(new_horizon)<sp/>/<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">double</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1ab66b4f5694c0e6e5677663263c4b389c" kindref="member">horizon</ref>));</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scaled.<ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1afbe9f3ac7570139975bfd46c3e08dd1e" kindref="member">var_estimate</ref><sp/>*=<sp/>scale_factor;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scaled.<ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a9dc508a2b39cf9b17ce0d5ab261c20fc" kindref="member">cvar_estimate</ref><sp/>*=<sp/>scale_factor;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scaled.<ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a3ddf7fbf5487c82832934ff163d44b41" kindref="member">portfolio_volatility</ref><sp/>*=<sp/>scale_factor;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scaled.<ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1ab66b4f5694c0e6e5677663263c4b389c" kindref="member">horizon</ref><sp/>=<sp/>new_horizon;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>scaled;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a35e37b3d5f5d124d9fa29a3e10dcbae3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a35e37b3d5f5d124d9fa29a3e10dcbae3" kindref="member">var_percentage</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::abs(<ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1afbe9f3ac7570139975bfd46c3e08dd1e" kindref="member">var_estimate</ref>)<sp/>*<sp/>100.0;<sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a6fd146f36b6e34077eb19ede018e94c2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a6fd146f36b6e34077eb19ede018e94c2" kindref="member">cvar_percentage</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::abs(<ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a9dc508a2b39cf9b17ce0d5ab261c20fc" kindref="member">cvar_estimate</ref>)<sp/>*<sp/>100.0;<sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="d0/dda/structpyfolio_1_1risk_1_1MarginalVaRResult" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d0/dda/structpyfolio_1_1risk_1_1MarginalVaRResult" kindref="compound">MarginalVaRResult</ref><sp/>{</highlight></codeline>
+<codeline lineno="72" refid="d0/dda/structpyfolio_1_1risk_1_1MarginalVaRResult_1a74801c08776f661a20bbd11a01df5f00" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;Symbol,<sp/>double&gt;<sp/><ref refid="d0/dda/structpyfolio_1_1risk_1_1MarginalVaRResult_1a74801c08776f661a20bbd11a01df5f00" kindref="member">marginal_var</ref>;</highlight></codeline>
+<codeline lineno="73" refid="d0/dda/structpyfolio_1_1risk_1_1MarginalVaRResult_1abf7b12ae9287b14b07499e7d5e28fc85" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;Symbol,<sp/>double&gt;<sp/><ref refid="d0/dda/structpyfolio_1_1risk_1_1MarginalVaRResult_1abf7b12ae9287b14b07499e7d5e28fc85" kindref="member">component_var</ref>;</highlight></codeline>
+<codeline lineno="74" refid="d0/dda/structpyfolio_1_1risk_1_1MarginalVaRResult_1aad0cf9052ae97ce29ff2b3656809de8f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;Symbol,<sp/>double&gt;<sp/><ref refid="d0/dda/structpyfolio_1_1risk_1_1MarginalVaRResult_1aad0cf9052ae97ce29ff2b3656809de8f" kindref="member">percentage_contribution</ref>;</highlight></codeline>
+<codeline lineno="75" refid="d0/dda/structpyfolio_1_1risk_1_1MarginalVaRResult_1a41d79dec711c21363bd752baa2084967" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d0/dda/structpyfolio_1_1risk_1_1MarginalVaRResult_1a41d79dec711c21363bd752baa2084967" kindref="member">total_var</ref>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="d0/dda/structpyfolio_1_1risk_1_1MarginalVaRResult_1ac192d1b07ee9e830d37bf329b0958145" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d0/dda/structpyfolio_1_1risk_1_1MarginalVaRResult_1ac192d1b07ee9e830d37bf329b0958145" kindref="member">get_marginal_var</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1a66e3e2ebe494a9dccbeb419408aaf7ea" kindref="member">Symbol</ref>&amp;<sp/>symbol)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it<sp/>=<sp/><ref refid="d0/dda/structpyfolio_1_1risk_1_1MarginalVaRResult_1a74801c08776f661a20bbd11a01df5f00" kindref="member">marginal_var</ref>.find(symbol);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(it<sp/>!=<sp/><ref refid="d0/dda/structpyfolio_1_1risk_1_1MarginalVaRResult_1a74801c08776f661a20bbd11a01df5f00" kindref="member">marginal_var</ref>.end())<sp/>?<sp/>it-&gt;second<sp/>:<sp/>0.0;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="d0/dda/structpyfolio_1_1risk_1_1MarginalVaRResult_1a12b4645d3c60694450b2e7e4990befeb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d0/dda/structpyfolio_1_1risk_1_1MarginalVaRResult_1a12b4645d3c60694450b2e7e4990befeb" kindref="member">get_component_var</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1a66e3e2ebe494a9dccbeb419408aaf7ea" kindref="member">Symbol</ref>&amp;<sp/>symbol)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it<sp/>=<sp/><ref refid="d0/dda/structpyfolio_1_1risk_1_1MarginalVaRResult_1abf7b12ae9287b14b07499e7d5e28fc85" kindref="member">component_var</ref>.find(symbol);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(it<sp/>!=<sp/><ref refid="d0/dda/structpyfolio_1_1risk_1_1MarginalVaRResult_1abf7b12ae9287b14b07499e7d5e28fc85" kindref="member">component_var</ref>.end())<sp/>?<sp/>it-&gt;second<sp/>:<sp/>0.0;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="d0/dda/structpyfolio_1_1risk_1_1MarginalVaRResult_1a17cefb35424c1a8c2e1fbd88ac2bfb31" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d0/dda/structpyfolio_1_1risk_1_1MarginalVaRResult_1a17cefb35424c1a8c2e1fbd88ac2bfb31" kindref="member">get_percentage_contribution</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1a66e3e2ebe494a9dccbeb419408aaf7ea" kindref="member">Symbol</ref>&amp;<sp/>symbol)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it<sp/>=<sp/><ref refid="d0/dda/structpyfolio_1_1risk_1_1MarginalVaRResult_1aad0cf9052ae97ce29ff2b3656809de8f" kindref="member">percentage_contribution</ref>.find(symbol);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(it<sp/>!=<sp/><ref refid="d0/dda/structpyfolio_1_1risk_1_1MarginalVaRResult_1aad0cf9052ae97ce29ff2b3656809de8f" kindref="member">percentage_contribution</ref>.end())<sp/>?<sp/>it-&gt;second<sp/>:<sp/>0.0;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="d3/dbb/structpyfolio_1_1risk_1_1StressTestScenario" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d3/dbb/structpyfolio_1_1risk_1_1StressTestScenario" kindref="compound">StressTestScenario</ref><sp/>{</highlight></codeline>
+<codeline lineno="106" refid="d3/dbb/structpyfolio_1_1risk_1_1StressTestScenario_1ae74619f5772f9ca1fcbb8b82ac795e2b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="d3/dbb/structpyfolio_1_1risk_1_1StressTestScenario_1ae74619f5772f9ca1fcbb8b82ac795e2b" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="107" refid="d3/dbb/structpyfolio_1_1risk_1_1StressTestScenario_1a394080a4b8ed7f08b265d6086700b3f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;Symbol,<sp/>double&gt;<sp/><ref refid="d3/dbb/structpyfolio_1_1risk_1_1StressTestScenario_1a394080a4b8ed7f08b265d6086700b3f6" kindref="member">shock_factors</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Multiplicative<sp/>shocks</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="d3/dbb/structpyfolio_1_1risk_1_1StressTestScenario_1a801de7716d060f8c607b21aadc471d35" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;std::string,<sp/>double&gt;<sp/><ref refid="d3/dbb/structpyfolio_1_1risk_1_1StressTestScenario_1a801de7716d060f8c607b21aadc471d35" kindref="member">market_shocks</ref>;<sp/><sp/></highlight><highlight class="comment">//<sp/>Factor<sp/>shocks</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="d3/dbb/structpyfolio_1_1risk_1_1StressTestScenario_1a83aa51748230e0ee9e5f1c8aa7285fc7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d3/dbb/structpyfolio_1_1risk_1_1StressTestScenario_1a83aa51748230e0ee9e5f1c8aa7285fc7" kindref="member">probability</ref>;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="d3/dbb/structpyfolio_1_1risk_1_1StressTestScenario_1a984bc598c5167125a2eaecb5bb1e066c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/><ref refid="d3/dbb/structpyfolio_1_1risk_1_1StressTestScenario_1a984bc598c5167125a2eaecb5bb1e066c" kindref="member">apply_to_returns</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;&amp;<sp/>base_returns,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1a66e3e2ebe494a9dccbeb419408aaf7ea" kindref="member">Symbol</ref>&amp;<sp/>symbol)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>shock_it<sp/>=<sp/><ref refid="d3/dbb/structpyfolio_1_1risk_1_1StressTestScenario_1a394080a4b8ed7f08b265d6086700b3f6" kindref="member">shock_factors</ref>.find(symbol);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>shock<sp/><sp/>=<sp/>(shock_it<sp/>!=<sp/><ref refid="d3/dbb/structpyfolio_1_1risk_1_1StressTestScenario_1a394080a4b8ed7f08b265d6086700b3f6" kindref="member">shock_factors</ref>.end())<sp/>?<sp/>shock_it-&gt;second<sp/>:<sp/>1.0;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>shocked_returns;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>shocked_returns.reserve(base_returns.size());</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>ret<sp/>:<sp/>base_returns)<sp/>{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>shocked_returns.push_back(ret<sp/>*<sp/>shock);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>shocked_returns;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1aead18711633ad81349274d45c0be810b" kindref="member">VaRCalculator</ref><sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">mutable</highlight><highlight class="normal"><sp/>std::mt19937<sp/>rng_;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="137" refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1aead18711633ad81349274d45c0be810b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1aead18711633ad81349274d45c0be810b" kindref="member">VaRCalculator</ref>()<sp/>:<sp/>rng_(std::random_device{}())<sp/>{}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1a2d80d770ea186618cba27ffbf4bef62c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1a2d80d770ea186618cba27ffbf4bef62c" kindref="member">VaRCalculator</ref>(uint32_t<sp/>seed)<sp/>:<sp/>rng_(seed)<sp/>{}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144" refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1a5355f08aadc5dc96a9bc0443d70eb93b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;VaRResult&gt;</ref><sp/><ref refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1a5355f08aadc5dc96a9bc0443d70eb93b" kindref="member">calculate_historical_var</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1a3376bad8167ed5bb04f22ab12dda9446" kindref="member">ReturnSeries</ref>&amp;<sp/>returns,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>confidence_level<sp/>=<sp/>0.95,</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d2/da5/namespacepyfolio_1_1risk_1ae2f599e79ba540086280c5e7e34f29d6" kindref="member">VaRHorizon</ref><sp/>horizon<sp/>=<sp/><ref refid="d2/da5/namespacepyfolio_1_1risk_1ae2f599e79ba540086280c5e7e34f29d6ac512b685438f41daa7386329a3b8f8d3" kindref="member">VaRHorizon::Daily</ref>)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(returns.<ref refid="d7/ddc/classpyfolio_1_1TimeSeries_1a7401475da2acefda00385214b27e7c59" kindref="member">empty</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" kindref="member">Result&lt;VaRResult&gt;::error</ref>(<ref refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9a9e32e294e8358345f2b9b52b7f8b41fa" kindref="member">ErrorCode::InsufficientData</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Return<sp/>series<sp/>cannot<sp/>be<sp/>empty&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(confidence_level<sp/>&lt;=<sp/>0.0<sp/>||<sp/>confidence_level<sp/>&gt;=<sp/>1.0)<sp/>{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" kindref="member">Result&lt;VaRResult&gt;::error</ref>(<ref refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9ad8f78ca9a692a9411afbc7584b69d043" kindref="member">ErrorCode::InvalidInput</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Confidence<sp/>level<sp/>must<sp/>be<sp/>between<sp/>0<sp/>and<sp/>1&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>values<sp/>=<sp/>returns.<ref refid="d7/ddc/classpyfolio_1_1TimeSeries_1ab0b20c4945cdde977885888f384256c3" kindref="member">values</ref>();</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Calculate<sp/>basic<sp/>statistics</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>mean_result<sp/>=<sp/><ref refid="d6/ddc/namespacepyfolio_1_1stats_1a0ded7b265023215831bffb8b799ba59a" kindref="member">stats::mean</ref>(std::span&lt;const<sp/>double&gt;{values});</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>std_result<sp/><sp/>=<sp/><ref refid="d6/ddc/namespacepyfolio_1_1stats_1ae9a69383818faf0de2b2e0a99d4179d9" kindref="member">stats::standard_deviation</ref>(std::span&lt;const<sp/>double&gt;{values});</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>skew_result<sp/>=<sp/><ref refid="d6/ddc/namespacepyfolio_1_1stats_1a5df7d33f99e4ea05ccf659ac88173b4e" kindref="member">stats::skewness</ref>(std::span&lt;const<sp/>double&gt;{values});</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>kurt_result<sp/>=<sp/><ref refid="d6/ddc/namespacepyfolio_1_1stats_1ae51a470f87ae34ae1f58305531f9dcf8" kindref="member">stats::kurtosis</ref>(std::span&lt;const<sp/>double&gt;{values});</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mean_result.is_error()<sp/>||<sp/>std_result.is_error())<sp/>{</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" kindref="member">Result&lt;VaRResult&gt;::error</ref>(<ref refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9aacbb30bd92a04a43bc1ea560dac5c241" kindref="member">ErrorCode::CalculationError</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>calculate<sp/>basic<sp/>statistics&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Calculate<sp/>VaR<sp/>and<sp/>CVaR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>var_result<sp/><sp/>=<sp/><ref refid="d6/ddc/namespacepyfolio_1_1stats_1a1f80321b9a21528dec7e6978131ee2e7" kindref="member">stats::value_at_risk</ref>(std::span&lt;const<sp/>double&gt;{values},<sp/>confidence_level);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>cvar_result<sp/>=<sp/><ref refid="d6/ddc/namespacepyfolio_1_1stats_1a1aca034860dac7ddacbac6f9dd0b930c" kindref="member">stats::conditional_value_at_risk</ref>(std::span&lt;const<sp/>double&gt;{values},<sp/>confidence_level);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(var_result.is_error()<sp/>||<sp/>cvar_result.is_error())<sp/>{</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" kindref="member">Result&lt;VaRResult&gt;::error</ref>(<ref refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9aacbb30bd92a04a43bc1ea560dac5c241" kindref="member">ErrorCode::CalculationError</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>calculate<sp/>VaR<sp/>or<sp/>CVaR&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Calculate<sp/>maximum<sp/>drawdown</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>max_dd<sp/><sp/><sp/><sp/><sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>peak<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>cumulative<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>ret<sp/>:<sp/>values)<sp/>{</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cumulative<sp/>+=<sp/>ret;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>peak<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>std::max(peak,<sp/>cumulative);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>drawdown<sp/>=<sp/>peak<sp/>-<sp/>cumulative;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>max_dd<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>std::max(max_dd,<sp/>drawdown);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult" kindref="compound">VaRResult</ref><sp/>result;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.<ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1afbe9f3ac7570139975bfd46c3e08dd1e" kindref="member">var_estimate</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>var_result.value();</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.<ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a9dc508a2b39cf9b17ce0d5ab261c20fc" kindref="member">cvar_estimate</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>cvar_result.value();</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.<ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1af66b52b45bc8ce4cc9323f813b311eeb" kindref="member">confidence_level</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>confidence_level;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.<ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a174524439ead5e3ad13c376339b54327" kindref="member">method</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="d2/da5/namespacepyfolio_1_1risk_1a15c267eaee47bf99d3a714b595a27206a1df940294e43cce1f43fe5cd4e103b94" kindref="member">VaRMethod::Historical</ref>;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.<ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1ab66b4f5694c0e6e5677663263c4b389c" kindref="member">horizon</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>horizon;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.<ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a2e63028e44ae11de8cfa9ceaab5e48b6" kindref="member">sample_size</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>values.size();</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.<ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a3ddf7fbf5487c82832934ff163d44b41" kindref="member">portfolio_volatility</ref><sp/>=<sp/>std_result.value();</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.<ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a36fb14e1f2899fdcf0c69ac0642771cd" kindref="member">skewness</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>skew_result.is_ok()<sp/>?<sp/>skew_result.value()<sp/>:<sp/>0.0;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.<ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1acb00eb69ee4161449485712e1203f781" kindref="member">kurtosis</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>kurt_result.is_ok()<sp/>?<sp/>kurt_result.value()<sp/>:<sp/>3.0;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.<ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1adf5722af9723b11f5f8864a17d837e2d" kindref="member">max_drawdown</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>max_dd;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" kindref="member">Result&lt;VaRResult&gt;::success</ref>(result);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204" refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1a1c475db5eee0c7ae9a7472688f7bb8fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;VaRResult&gt;</ref><sp/><ref refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1a1c475db5eee0c7ae9a7472688f7bb8fc" kindref="member">calculate_parametric_var</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1a3376bad8167ed5bb04f22ab12dda9446" kindref="member">ReturnSeries</ref>&amp;<sp/>returns,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>confidence_level<sp/>=<sp/>0.95,</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d2/da5/namespacepyfolio_1_1risk_1ae2f599e79ba540086280c5e7e34f29d6" kindref="member">VaRHorizon</ref><sp/>horizon<sp/>=<sp/><ref refid="d2/da5/namespacepyfolio_1_1risk_1ae2f599e79ba540086280c5e7e34f29d6ac512b685438f41daa7386329a3b8f8d3" kindref="member">VaRHorizon::Daily</ref>)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(returns.<ref refid="d7/ddc/classpyfolio_1_1TimeSeries_1a7401475da2acefda00385214b27e7c59" kindref="member">empty</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" kindref="member">Result&lt;VaRResult&gt;::error</ref>(<ref refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9a9e32e294e8358345f2b9b52b7f8b41fa" kindref="member">ErrorCode::InsufficientData</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Return<sp/>series<sp/>cannot<sp/>be<sp/>empty&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>values<sp/>=<sp/>returns.<ref refid="d7/ddc/classpyfolio_1_1TimeSeries_1ab0b20c4945cdde977885888f384256c3" kindref="member">values</ref>();</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>mean_result<sp/>=<sp/><ref refid="d6/ddc/namespacepyfolio_1_1stats_1a0ded7b265023215831bffb8b799ba59a" kindref="member">stats::mean</ref>(std::span&lt;const<sp/>double&gt;{values});</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>std_result<sp/><sp/>=<sp/><ref refid="d6/ddc/namespacepyfolio_1_1stats_1ae9a69383818faf0de2b2e0a99d4179d9" kindref="member">stats::standard_deviation</ref>(std::span&lt;const<sp/>double&gt;{values});</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mean_result.is_error()<sp/>||<sp/>std_result.is_error())<sp/>{</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" kindref="member">Result&lt;VaRResult&gt;::error</ref>(<ref refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9aacbb30bd92a04a43bc1ea560dac5c241" kindref="member">ErrorCode::CalculationError</ref>,</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>calculate<sp/>mean<sp/>or<sp/>standard<sp/>deviation&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mean<sp/><sp/><sp/><sp/>=<sp/>mean_result.value();</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>std_dev<sp/>=<sp/>std_result.value();</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Normal<sp/>distribution<sp/>VaR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>z_score<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="d6/ddc/namespacepyfolio_1_1stats_1a2cc3b474187a9bd3989c41a8d88c79dc" kindref="member">stats::normal_ppf</ref>(1.0<sp/>-<sp/>confidence_level);</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>var_estimate<sp/>=<sp/>mean<sp/>+<sp/>z_score<sp/>*<sp/>std_dev;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>For<sp/>parametric<sp/>CVaR<sp/>(normal<sp/>distribution)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>phi_z<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="d6/ddc/namespacepyfolio_1_1stats_1a9877731394f7a80eba2f0e97a5d2a9a9" kindref="member">stats::normal_pdf</ref>(z_score);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>cvar_estimate<sp/>=<sp/>mean<sp/>-<sp/>std_dev<sp/>*<sp/>phi_z<sp/>/<sp/>(1.0<sp/>-<sp/>confidence_level);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult" kindref="compound">VaRResult</ref><sp/>result;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.<ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1afbe9f3ac7570139975bfd46c3e08dd1e" kindref="member">var_estimate</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>var_estimate;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.<ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a9dc508a2b39cf9b17ce0d5ab261c20fc" kindref="member">cvar_estimate</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>cvar_estimate;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.<ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1af66b52b45bc8ce4cc9323f813b311eeb" kindref="member">confidence_level</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>confidence_level;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.<ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a174524439ead5e3ad13c376339b54327" kindref="member">method</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="d2/da5/namespacepyfolio_1_1risk_1a15c267eaee47bf99d3a714b595a27206a23706d68d0c7d89a0010b5cc242084f0" kindref="member">VaRMethod::Parametric</ref>;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.<ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1ab66b4f5694c0e6e5677663263c4b389c" kindref="member">horizon</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>horizon;</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.<ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a2e63028e44ae11de8cfa9ceaab5e48b6" kindref="member">sample_size</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>values.size();</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.<ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a3ddf7fbf5487c82832934ff163d44b41" kindref="member">portfolio_volatility</ref><sp/>=<sp/>std_dev;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Calculate<sp/>skewness<sp/>and<sp/>kurtosis<sp/>for<sp/>diagnostics</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>skew_result<sp/>=<sp/><ref refid="d6/ddc/namespacepyfolio_1_1stats_1a5df7d33f99e4ea05ccf659ac88173b4e" kindref="member">stats::skewness</ref>(std::span&lt;const<sp/>double&gt;{values});</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>kurt_result<sp/>=<sp/><ref refid="d6/ddc/namespacepyfolio_1_1stats_1ae51a470f87ae34ae1f58305531f9dcf8" kindref="member">stats::kurtosis</ref>(std::span&lt;const<sp/>double&gt;{values});</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.<ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a36fb14e1f2899fdcf0c69ac0642771cd" kindref="member">skewness</ref><sp/><sp/>=<sp/>skew_result.is_ok()<sp/>?<sp/>skew_result.value()<sp/>:<sp/>0.0;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.<ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1acb00eb69ee4161449485712e1203f781" kindref="member">kurtosis</ref><sp/><sp/>=<sp/>kurt_result.is_ok()<sp/>?<sp/>kurt_result.value()<sp/>:<sp/>3.0;</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" kindref="member">Result&lt;VaRResult&gt;::success</ref>(result);</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252" refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1ac3157a75ae2536e6e77a7561917be03e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;VaRResult&gt;</ref><sp/><ref refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1ac3157a75ae2536e6e77a7561917be03e" kindref="member">calculate_cornish_fisher_var</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1a3376bad8167ed5bb04f22ab12dda9446" kindref="member">ReturnSeries</ref>&amp;<sp/>returns,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>confidence_level<sp/>=<sp/>0.95,</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d2/da5/namespacepyfolio_1_1risk_1ae2f599e79ba540086280c5e7e34f29d6" kindref="member">VaRHorizon</ref><sp/>horizon<sp/>=<sp/><ref refid="d2/da5/namespacepyfolio_1_1risk_1ae2f599e79ba540086280c5e7e34f29d6ac512b685438f41daa7386329a3b8f8d3" kindref="member">VaRHorizon::Daily</ref>)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(returns.<ref refid="d7/ddc/classpyfolio_1_1TimeSeries_1a7401475da2acefda00385214b27e7c59" kindref="member">empty</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" kindref="member">Result&lt;VaRResult&gt;::error</ref>(<ref refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9a9e32e294e8358345f2b9b52b7f8b41fa" kindref="member">ErrorCode::InsufficientData</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Return<sp/>series<sp/>cannot<sp/>be<sp/>empty&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>values<sp/>=<sp/>returns.<ref refid="d7/ddc/classpyfolio_1_1TimeSeries_1ab0b20c4945cdde977885888f384256c3" kindref="member">values</ref>();</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>mean_result<sp/>=<sp/><ref refid="d6/ddc/namespacepyfolio_1_1stats_1a0ded7b265023215831bffb8b799ba59a" kindref="member">stats::mean</ref>(std::span&lt;const<sp/>double&gt;{values});</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>std_result<sp/><sp/>=<sp/><ref refid="d6/ddc/namespacepyfolio_1_1stats_1ae9a69383818faf0de2b2e0a99d4179d9" kindref="member">stats::standard_deviation</ref>(std::span&lt;const<sp/>double&gt;{values});</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>skew_result<sp/>=<sp/><ref refid="d6/ddc/namespacepyfolio_1_1stats_1a5df7d33f99e4ea05ccf659ac88173b4e" kindref="member">stats::skewness</ref>(std::span&lt;const<sp/>double&gt;{values});</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>kurt_result<sp/>=<sp/><ref refid="d6/ddc/namespacepyfolio_1_1stats_1ae51a470f87ae34ae1f58305531f9dcf8" kindref="member">stats::kurtosis</ref>(std::span&lt;const<sp/>double&gt;{values});</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mean_result.is_error()<sp/>||<sp/>std_result.is_error()<sp/>||<sp/>skew_result.is_error()<sp/>||<sp/>kurt_result.is_error())<sp/>{</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" kindref="member">Result&lt;VaRResult&gt;::error</ref>(<ref refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9aacbb30bd92a04a43bc1ea560dac5c241" kindref="member">ErrorCode::CalculationError</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>calculate<sp/>required<sp/>statistics&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mean<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>mean_result.value();</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>std_dev<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>std_result.value();</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>skewness<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>skew_result.value();</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>kurtosis<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>kurt_result.value();</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>excess_kurtosis<sp/>=<sp/>kurtosis<sp/>-<sp/>3.0;</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Normal<sp/>quantile</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>z<sp/>=<sp/><ref refid="d6/ddc/namespacepyfolio_1_1stats_1a2cc3b474187a9bd3989c41a8d88c79dc" kindref="member">stats::normal_ppf</ref>(1.0<sp/>-<sp/>confidence_level);</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Cornish-Fisher<sp/>expansion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>cf_adjustment<sp/>=<sp/>(1.0<sp/>/<sp/>6.0)<sp/>*<sp/>skewness<sp/>*<sp/>(z<sp/>*<sp/>z<sp/>-<sp/>1.0)<sp/>+</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1.0<sp/>/<sp/>24.0)<sp/>*<sp/>excess_kurtosis<sp/>*<sp/>(z<sp/>*<sp/>z<sp/>*<sp/>z<sp/>-<sp/>3.0<sp/>*<sp/>z)<sp/>-</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1.0<sp/>/<sp/>36.0)<sp/>*<sp/>skewness<sp/>*<sp/>skewness<sp/>*<sp/>(2.0<sp/>*<sp/>z<sp/>*<sp/>z<sp/>*<sp/>z<sp/>-<sp/>5.0<sp/>*<sp/>z);</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>z_cf<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>z<sp/>+<sp/>cf_adjustment;</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>var_estimate<sp/>=<sp/>mean<sp/>+<sp/>z_cf<sp/>*<sp/>std_dev;</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Approximate<sp/>CVaR<sp/>using<sp/>adjusted<sp/>quantile</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>phi_z_cf<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="d6/ddc/namespacepyfolio_1_1stats_1a9877731394f7a80eba2f0e97a5d2a9a9" kindref="member">stats::normal_pdf</ref>(z_cf);</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>cvar_estimate<sp/>=<sp/>mean<sp/>-<sp/>std_dev<sp/>*<sp/>phi_z_cf<sp/>/<sp/>(1.0<sp/>-<sp/>confidence_level);</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult" kindref="compound">VaRResult</ref><sp/>result;</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.<ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1afbe9f3ac7570139975bfd46c3e08dd1e" kindref="member">var_estimate</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>var_estimate;</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.<ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a9dc508a2b39cf9b17ce0d5ab261c20fc" kindref="member">cvar_estimate</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>cvar_estimate;</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.<ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1af66b52b45bc8ce4cc9323f813b311eeb" kindref="member">confidence_level</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>confidence_level;</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.<ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a174524439ead5e3ad13c376339b54327" kindref="member">method</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="d2/da5/namespacepyfolio_1_1risk_1a15c267eaee47bf99d3a714b595a27206a88913bb4473f1077ae65934f3a8cf05a" kindref="member">VaRMethod::CornishFisher</ref>;</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.<ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1ab66b4f5694c0e6e5677663263c4b389c" kindref="member">horizon</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>horizon;</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.<ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a2e63028e44ae11de8cfa9ceaab5e48b6" kindref="member">sample_size</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>values.size();</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.<ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a3ddf7fbf5487c82832934ff163d44b41" kindref="member">portfolio_volatility</ref><sp/>=<sp/>std_dev;</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.<ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a36fb14e1f2899fdcf0c69ac0642771cd" kindref="member">skewness</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>skewness;</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.<ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1acb00eb69ee4161449485712e1203f781" kindref="member">kurtosis</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>kurtosis;</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" kindref="member">Result&lt;VaRResult&gt;::success</ref>(result);</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight></codeline>
+<codeline lineno="307" refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1a297d2eb32efafc48a09197a2cd0dd2ab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;VaRResult&gt;</ref><sp/><ref refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1a297d2eb32efafc48a09197a2cd0dd2ab" kindref="member">calculate_monte_carlo_var</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1a3376bad8167ed5bb04f22ab12dda9446" kindref="member">ReturnSeries</ref>&amp;<sp/>returns,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>confidence_level<sp/>=<sp/>0.95,</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d2/da5/namespacepyfolio_1_1risk_1ae2f599e79ba540086280c5e7e34f29d6" kindref="member">VaRHorizon</ref><sp/>horizon<sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="d2/da5/namespacepyfolio_1_1risk_1ae2f599e79ba540086280c5e7e34f29d6ac512b685438f41daa7386329a3b8f8d3" kindref="member">VaRHorizon::Daily</ref>,</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>num_simulations<sp/>=<sp/>10000)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(returns.<ref refid="d7/ddc/classpyfolio_1_1TimeSeries_1a7401475da2acefda00385214b27e7c59" kindref="member">empty</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" kindref="member">Result&lt;VaRResult&gt;::error</ref>(<ref refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9a9e32e294e8358345f2b9b52b7f8b41fa" kindref="member">ErrorCode::InsufficientData</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Return<sp/>series<sp/>cannot<sp/>be<sp/>empty&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>values<sp/>=<sp/>returns.<ref refid="d7/ddc/classpyfolio_1_1TimeSeries_1ab0b20c4945cdde977885888f384256c3" kindref="member">values</ref>();</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>mean_result<sp/>=<sp/><ref refid="d6/ddc/namespacepyfolio_1_1stats_1a0ded7b265023215831bffb8b799ba59a" kindref="member">stats::mean</ref>(std::span&lt;const<sp/>double&gt;{values});</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>std_result<sp/><sp/>=<sp/><ref refid="d6/ddc/namespacepyfolio_1_1stats_1ae9a69383818faf0de2b2e0a99d4179d9" kindref="member">stats::standard_deviation</ref>(std::span&lt;const<sp/>double&gt;{values});</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mean_result.is_error()<sp/>||<sp/>std_result.is_error())<sp/>{</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" kindref="member">Result&lt;VaRResult&gt;::error</ref>(<ref refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9aacbb30bd92a04a43bc1ea560dac5c241" kindref="member">ErrorCode::CalculationError</ref>,</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>calculate<sp/>mean<sp/>or<sp/>standard<sp/>deviation&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mean<sp/><sp/><sp/><sp/>=<sp/>mean_result.value();</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>std_dev<sp/>=<sp/>std_result.value();</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Generate<sp/>Monte<sp/>Carlo<sp/>simulations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>simulated_returns;</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>simulated_returns.reserve(num_simulations);</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::normal_distribution&lt;double&gt;<sp/>normal_dist(mean,<sp/>std_dev);</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"></highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>num_simulations;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>simulated_returns.push_back(normal_dist(rng_));</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"></highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Calculate<sp/>VaR<sp/>and<sp/>CVaR<sp/>from<sp/>simulated<sp/>returns</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>var_result<sp/>=<sp/><ref refid="d6/ddc/namespacepyfolio_1_1stats_1a1f80321b9a21528dec7e6978131ee2e7" kindref="member">stats::value_at_risk</ref>(std::span&lt;const<sp/>double&gt;{simulated_returns},<sp/>confidence_level);</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>cvar_result<sp/>=</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/ddc/namespacepyfolio_1_1stats_1a1aca034860dac7ddacbac6f9dd0b930c" kindref="member">stats::conditional_value_at_risk</ref>(std::span&lt;const<sp/>double&gt;{simulated_returns},<sp/>confidence_level);</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"></highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(var_result.is_error()<sp/>||<sp/>cvar_result.is_error())<sp/>{</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" kindref="member">Result&lt;VaRResult&gt;::error</ref>(<ref refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9aacbb30bd92a04a43bc1ea560dac5c241" kindref="member">ErrorCode::CalculationError</ref>,</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>calculate<sp/>VaR<sp/>from<sp/>Monte<sp/>Carlo<sp/>simulation&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult" kindref="compound">VaRResult</ref><sp/>result;</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.<ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1afbe9f3ac7570139975bfd46c3e08dd1e" kindref="member">var_estimate</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>var_result.value();</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.<ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a9dc508a2b39cf9b17ce0d5ab261c20fc" kindref="member">cvar_estimate</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>cvar_result.value();</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.<ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1af66b52b45bc8ce4cc9323f813b311eeb" kindref="member">confidence_level</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>confidence_level;</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.<ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a174524439ead5e3ad13c376339b54327" kindref="member">method</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="d2/da5/namespacepyfolio_1_1risk_1a15c267eaee47bf99d3a714b595a27206aedd652c19d7dbbfb3d242aa14b2fec8c" kindref="member">VaRMethod::MonteCarlo</ref>;</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.<ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1ab66b4f5694c0e6e5677663263c4b389c" kindref="member">horizon</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>horizon;</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.<ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a2e63028e44ae11de8cfa9ceaab5e48b6" kindref="member">sample_size</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>num_simulations;</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.<ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a3ddf7fbf5487c82832934ff163d44b41" kindref="member">portfolio_volatility</ref><sp/>=<sp/>std_dev;</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Calculate<sp/>skewness<sp/>and<sp/>kurtosis<sp/>from<sp/>original<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>skew_result<sp/>=<sp/><ref refid="d6/ddc/namespacepyfolio_1_1stats_1a5df7d33f99e4ea05ccf659ac88173b4e" kindref="member">stats::skewness</ref>(std::span&lt;const<sp/>double&gt;{values});</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>kurt_result<sp/>=<sp/><ref refid="d6/ddc/namespacepyfolio_1_1stats_1ae51a470f87ae34ae1f58305531f9dcf8" kindref="member">stats::kurtosis</ref>(std::span&lt;const<sp/>double&gt;{values});</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.<ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a36fb14e1f2899fdcf0c69ac0642771cd" kindref="member">skewness</ref><sp/><sp/>=<sp/>skew_result.is_ok()<sp/>?<sp/>skew_result.value()<sp/>:<sp/>0.0;</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.<ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1acb00eb69ee4161449485712e1203f781" kindref="member">kurtosis</ref><sp/><sp/>=<sp/>kurt_result.is_ok()<sp/>?<sp/>kurt_result.value()<sp/>:<sp/>3.0;</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"></highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" kindref="member">Result&lt;VaRResult&gt;::success</ref>(result);</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"></highlight></codeline>
+<codeline lineno="368" refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1a5b07dc41d33ed83488dff2bcc50dd777" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;MarginalVaRResult&gt;</ref><sp/><ref refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1a5b07dc41d33ed83488dff2bcc50dd777" kindref="member">calculate_marginal_var</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::map&lt;Symbol,<sp/>ReturnSeries&gt;&amp;<sp/>asset_returns,</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::map&lt;Symbol,<sp/>double&gt;&amp;<sp/>portfolio_weights,</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>confidence_level<sp/>=<sp/>0.95)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(asset_returns.empty()<sp/>||<sp/>portfolio_weights.empty())<sp/>{</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" kindref="member">Result&lt;MarginalVaRResult&gt;::error</ref>(<ref refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9ad8f78ca9a692a9411afbc7584b69d043" kindref="member">ErrorCode::InvalidInput</ref>,</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Asset<sp/>returns<sp/>and<sp/>portfolio<sp/>weights<sp/>cannot<sp/>be<sp/>empty&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"></highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>portfolio<sp/>return<sp/>series</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>portfolio_returns_result<sp/>=<sp/>create_portfolio_return_series(asset_returns,<sp/>portfolio_weights);</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(portfolio_returns_result.is_error())<sp/>{</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" kindref="member">Result&lt;MarginalVaRResult&gt;::error</ref>(portfolio_returns_result.error().code,</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>portfolio_returns_result.error().message);</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"></highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>portfolio_returns<sp/>=<sp/>portfolio_returns_result.value();</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"></highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Calculate<sp/>portfolio<sp/>VaR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>portfolio_var_result<sp/>=<sp/><ref refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1a5355f08aadc5dc96a9bc0443d70eb93b" kindref="member">calculate_historical_var</ref>(portfolio_returns,<sp/>confidence_level);</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(portfolio_var_result.is_error())<sp/>{</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" kindref="member">Result&lt;MarginalVaRResult&gt;::error</ref>(portfolio_var_result.error().code,</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>portfolio_var_result.error().message);</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"></highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>portfolio_var<sp/>=<sp/>portfolio_var_result.value().var_estimate;</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"></highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/dda/structpyfolio_1_1risk_1_1MarginalVaRResult" kindref="compound">MarginalVaRResult</ref><sp/>result;</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.<ref refid="d0/dda/structpyfolio_1_1risk_1_1MarginalVaRResult_1a41d79dec711c21363bd752baa2084967" kindref="member">total_var</ref><sp/>=<sp/>portfolio_var;</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"></highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Calculate<sp/>marginal<sp/>VaR<sp/>for<sp/>each<sp/>asset</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>[symbol,<sp/>weight]<sp/>:<sp/>portfolio_weights)<sp/>{</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>modified<sp/>portfolio<sp/>with<sp/>small<sp/>weight<sp/>change</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="400"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>delta<sp/><sp/><sp/><sp/>=<sp/>0.001;<sp/><sp/></highlight><highlight class="comment">//<sp/>0.1%<sp/>weight<sp/>change</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="401"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>modified_weights<sp/>=<sp/>portfolio_weights;</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>modified_weights[symbol]<sp/>+=<sp/>delta;</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"></highlight></codeline>
+<codeline lineno="404"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Renormalize<sp/>weights</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="405"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>total_weight<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="406"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>[sym,<sp/>w]<sp/>:<sp/>modified_weights)<sp/>{</highlight></codeline>
+<codeline lineno="407"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>total_weight<sp/>+=<sp/>w;</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="409"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>[sym,<sp/>w]<sp/>:<sp/>modified_weights)<sp/>{</highlight></codeline>
+<codeline lineno="410"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>w<sp/>/=<sp/>total_weight;</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"></highlight></codeline>
+<codeline lineno="413"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Calculate<sp/>VaR<sp/>for<sp/>modified<sp/>portfolio</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="414"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>modified_returns_result<sp/>=<sp/>create_portfolio_return_series(asset_returns,<sp/>modified_weights);</highlight></codeline>
+<codeline lineno="415"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(modified_returns_result.is_ok())<sp/>{</highlight></codeline>
+<codeline lineno="416"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>modified_var_result<sp/>=<sp/><ref refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1a5355f08aadc5dc96a9bc0443d70eb93b" kindref="member">calculate_historical_var</ref>(modified_returns_result.value(),<sp/>confidence_level);</highlight></codeline>
+<codeline lineno="417"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(modified_var_result.is_ok())<sp/>{</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>modified_var<sp/>=<sp/>modified_var_result.value().var_estimate;</highlight></codeline>
+<codeline lineno="419"><highlight class="normal"></highlight></codeline>
+<codeline lineno="420"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Marginal<sp/>VaR<sp/>=<sp/>(VaR_new<sp/>-<sp/>VaR_old)<sp/>/<sp/>delta_weight</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="421"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>marginal_var<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(modified_var<sp/>-<sp/>portfolio_var)<sp/>/<sp/>delta;</highlight></codeline>
+<codeline lineno="422"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.<ref refid="d0/dda/structpyfolio_1_1risk_1_1MarginalVaRResult_1a74801c08776f661a20bbd11a01df5f00" kindref="member">marginal_var</ref>[symbol]<sp/>=<sp/>marginal_var;</highlight></codeline>
+<codeline lineno="423"><highlight class="normal"></highlight></codeline>
+<codeline lineno="424"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Component<sp/>VaR<sp/>=<sp/>weight<sp/>*<sp/>marginal<sp/>VaR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="425"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>component_var<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>weight<sp/>*<sp/>marginal_var;</highlight></codeline>
+<codeline lineno="426"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.<ref refid="d0/dda/structpyfolio_1_1risk_1_1MarginalVaRResult_1abf7b12ae9287b14b07499e7d5e28fc85" kindref="member">component_var</ref>[symbol]<sp/>=<sp/>component_var;</highlight></codeline>
+<codeline lineno="427"><highlight class="normal"></highlight></codeline>
+<codeline lineno="428"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Percentage<sp/>contribution</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="429"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(portfolio_var<sp/>!=<sp/>0.0)<sp/>{</highlight></codeline>
+<codeline lineno="430"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.<ref refid="d0/dda/structpyfolio_1_1risk_1_1MarginalVaRResult_1aad0cf9052ae97ce29ff2b3656809de8f" kindref="member">percentage_contribution</ref>[symbol]<sp/>=<sp/>(component_var<sp/>/<sp/>portfolio_var)<sp/>*<sp/>100.0;</highlight></codeline>
+<codeline lineno="431"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="432"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="433"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="434"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="435"><highlight class="normal"></highlight></codeline>
+<codeline lineno="436"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" kindref="member">Result&lt;MarginalVaRResult&gt;::success</ref>(std::move(result));</highlight></codeline>
+<codeline lineno="437"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="438"><highlight class="normal"></highlight></codeline>
+<codeline lineno="442" refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1a30b7bf0d874752888e5c079b53296f18" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;std::map&lt;std::string, VaRResult&gt;</ref>&gt;<sp/><ref refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1a30b7bf0d874752888e5c079b53296f18" kindref="member">stress_test</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::map&lt;Symbol,<sp/>ReturnSeries&gt;&amp;<sp/>asset_returns,</highlight></codeline>
+<codeline lineno="443"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::map&lt;Symbol,<sp/>double&gt;&amp;<sp/>portfolio_weights,</highlight></codeline>
+<codeline lineno="444"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;StressTestScenario&gt;&amp;<sp/>scenarios,</highlight></codeline>
+<codeline lineno="445"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>confidence_level<sp/>=<sp/>0.95)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="446"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::map&lt;std::string,<sp/>VaRResult&gt;<sp/>stress_results;</highlight></codeline>
+<codeline lineno="447"><highlight class="normal"></highlight></codeline>
+<codeline lineno="448"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>scenario<sp/>:<sp/>scenarios)<sp/>{</highlight></codeline>
+<codeline lineno="449"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Apply<sp/>scenario<sp/>shocks<sp/>to<sp/>each<sp/>asset</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="450"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::map&lt;Symbol,<sp/>ReturnSeries&gt;<sp/>shocked_returns;</highlight></codeline>
+<codeline lineno="451"><highlight class="normal"></highlight></codeline>
+<codeline lineno="452"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>[symbol,<sp/>returns]<sp/>:<sp/>asset_returns)<sp/>{</highlight></codeline>
+<codeline lineno="453"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>shocked_values<sp/><sp/><sp/><sp/><sp/>=<sp/>scenario.apply_to_returns(returns.values(),<sp/>symbol);</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>shocked_returns[symbol]<sp/>=<sp/><ref refid="d7/df8/namespacepyfolio_1a3376bad8167ed5bb04f22ab12dda9446" kindref="member">ReturnSeries</ref>{returns.timestamps(),<sp/>shocked_values,<sp/>symbol};</highlight></codeline>
+<codeline lineno="455"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="456"><highlight class="normal"></highlight></codeline>
+<codeline lineno="457"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>stressed<sp/>portfolio<sp/>returns</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="458"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>stressed_portfolio_result<sp/>=<sp/>create_portfolio_return_series(shocked_returns,<sp/>portfolio_weights);</highlight></codeline>
+<codeline lineno="459"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(stressed_portfolio_result.is_ok())<sp/>{</highlight></codeline>
+<codeline lineno="460"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>stressed_var_result<sp/>=</highlight></codeline>
+<codeline lineno="461"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1a5355f08aadc5dc96a9bc0443d70eb93b" kindref="member">calculate_historical_var</ref>(stressed_portfolio_result.value(),<sp/>confidence_level);</highlight></codeline>
+<codeline lineno="462"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(stressed_var_result.is_ok())<sp/>{</highlight></codeline>
+<codeline lineno="463"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stress_results[scenario.name]<sp/>=<sp/>stressed_var_result.value();</highlight></codeline>
+<codeline lineno="464"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="465"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="466"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="467"><highlight class="normal"></highlight></codeline>
+<codeline lineno="468"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;std::map&lt;std::string, VaRResult&gt;</ref>&gt;::success(std::move(stress_results));</highlight></codeline>
+<codeline lineno="469"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="470"><highlight class="normal"></highlight></codeline>
+<codeline lineno="471"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="475"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;ReturnSeries&gt;</ref><sp/>create_portfolio_return_series(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::map&lt;Symbol,<sp/>ReturnSeries&gt;&amp;<sp/>asset_returns,</highlight></codeline>
+<codeline lineno="476"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::map&lt;Symbol,<sp/>double&gt;&amp;<sp/>portfolio_weights)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="477"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(asset_returns.empty())<sp/>{</highlight></codeline>
+<codeline lineno="478"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" kindref="member">Result&lt;ReturnSeries&gt;::error</ref>(<ref refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9ad8f78ca9a692a9411afbc7584b69d043" kindref="member">ErrorCode::InvalidInput</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Asset<sp/>returns<sp/>cannot<sp/>be<sp/>empty&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="479"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="480"><highlight class="normal"></highlight></codeline>
+<codeline lineno="481"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Find<sp/>common<sp/>time<sp/>period</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="482"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>min_size<sp/>=<sp/>std::numeric_limits&lt;size_t&gt;::max();</highlight></codeline>
+<codeline lineno="483"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>[symbol,<sp/>returns]<sp/>:<sp/>asset_returns)<sp/>{</highlight></codeline>
+<codeline lineno="484"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>min_size<sp/>=<sp/>std::min(min_size,<sp/>returns.size());</highlight></codeline>
+<codeline lineno="485"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="486"><highlight class="normal"></highlight></codeline>
+<codeline lineno="487"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(min_size<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="488"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" kindref="member">Result&lt;ReturnSeries&gt;::error</ref>(<ref refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9a9e32e294e8358345f2b9b52b7f8b41fa" kindref="member">ErrorCode::InsufficientData</ref>,<sp/></highlight><highlight class="stringliteral">&quot;No<sp/>common<sp/>return<sp/>data<sp/>available&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="489"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="490"><highlight class="normal"></highlight></codeline>
+<codeline lineno="491"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>timestamps<sp/>from<sp/>first<sp/>series</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="492"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>first_series<sp/>=<sp/>asset_returns.begin()-&gt;second;</highlight></codeline>
+<codeline lineno="493"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;DateTime&gt;<sp/>timestamps(first_series.timestamps().end()<sp/>-<sp/>min_size,<sp/>first_series.timestamps().end());</highlight></codeline>
+<codeline lineno="494"><highlight class="normal"></highlight></codeline>
+<codeline lineno="495"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Calculate<sp/>portfolio<sp/>returns</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="496"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>portfolio_returns;</highlight></codeline>
+<codeline lineno="497"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>portfolio_returns.reserve(min_size);</highlight></codeline>
+<codeline lineno="498"><highlight class="normal"></highlight></codeline>
+<codeline lineno="499"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>min_size;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="500"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>portfolio_return<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="501"><highlight class="normal"></highlight></codeline>
+<codeline lineno="502"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>[symbol,<sp/>weight]<sp/>:<sp/>portfolio_weights)<sp/>{</highlight></codeline>
+<codeline lineno="503"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>asset_it<sp/>=<sp/>asset_returns.find(symbol);</highlight></codeline>
+<codeline lineno="504"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(asset_it<sp/>!=<sp/>asset_returns.end())<sp/>{</highlight></codeline>
+<codeline lineno="505"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>asset_values<sp/>=<sp/>asset_it-&gt;second.values();</highlight></codeline>
+<codeline lineno="506"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>asset_size<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>asset_values.size();</highlight></codeline>
+<codeline lineno="507"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i<sp/>&lt;<sp/>asset_size)<sp/>{</highlight></codeline>
+<codeline lineno="508"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>index<sp/>=<sp/>asset_size<sp/>-<sp/>min_size<sp/>+<sp/>i;</highlight></codeline>
+<codeline lineno="509"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>portfolio_return<sp/>+=<sp/>weight<sp/>*<sp/>asset_values[index];</highlight></codeline>
+<codeline lineno="510"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="511"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="512"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="513"><highlight class="normal"></highlight></codeline>
+<codeline lineno="514"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>portfolio_returns.push_back(portfolio_return);</highlight></codeline>
+<codeline lineno="515"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="516"><highlight class="normal"></highlight></codeline>
+<codeline lineno="517"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" kindref="member">Result&lt;ReturnSeries&gt;::success</ref>(<ref refid="d7/df8/namespacepyfolio_1a3376bad8167ed5bb04f22ab12dda9446" kindref="member">ReturnSeries</ref>{timestamps,<sp/>portfolio_returns,<sp/></highlight><highlight class="stringliteral">&quot;Portfolio&quot;</highlight><highlight class="normal">});</highlight></codeline>
+<codeline lineno="518"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="519"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="520"><highlight class="normal"></highlight></codeline>
+<codeline lineno="524" refid="d0/de6/namespacepyfolio_1_1risk_1_1stress__scenarios" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d0/de6/namespacepyfolio_1_1risk_1_1stress__scenarios" kindref="compound">stress_scenarios</ref><sp/>{</highlight></codeline>
+<codeline lineno="525"><highlight class="normal"></highlight></codeline>
+<codeline lineno="529" refid="d0/de6/namespacepyfolio_1_1risk_1_1stress__scenarios_1a49443a3336c200146a808fe5de6b3719" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="d3/dbb/structpyfolio_1_1risk_1_1StressTestScenario" kindref="compound">StressTestScenario</ref><sp/><ref refid="d0/de6/namespacepyfolio_1_1risk_1_1stress__scenarios_1a49443a3336c200146a808fe5de6b3719" kindref="member">financial_crisis_2008</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="530"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/dbb/structpyfolio_1_1risk_1_1StressTestScenario" kindref="compound">StressTestScenario</ref><sp/>scenario;</highlight></codeline>
+<codeline lineno="531"><highlight class="normal"><sp/><sp/><sp/><sp/>scenario.<ref refid="d3/dbb/structpyfolio_1_1risk_1_1StressTestScenario_1ae74619f5772f9ca1fcbb8b82ac795e2b" kindref="member">name</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Financial<sp/>Crisis<sp/>2008&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="532"><highlight class="normal"><sp/><sp/><sp/><sp/>scenario.<ref refid="d3/dbb/structpyfolio_1_1risk_1_1StressTestScenario_1a394080a4b8ed7f08b265d6086700b3f6" kindref="member">shock_factors</ref><sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="533"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;SPY&quot;</highlight><highlight class="normal">,<sp/>0.63},<sp/></highlight><highlight class="comment">//<sp/>S&amp;P<sp/>500<sp/>down<sp/>37%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="534"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;IWM&quot;</highlight><highlight class="normal">,<sp/>0.66},<sp/></highlight><highlight class="comment">//<sp/>Russell<sp/>2000<sp/>down<sp/>34%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="535"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;EFA&quot;</highlight><highlight class="normal">,<sp/>0.57},<sp/></highlight><highlight class="comment">//<sp/>EAFE<sp/>down<sp/>43%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="536"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;TLT&quot;</highlight><highlight class="normal">,<sp/>1.20},<sp/></highlight><highlight class="comment">//<sp/>Long<sp/>bonds<sp/>up<sp/>20%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="537"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;GLD&quot;</highlight><highlight class="normal">,<sp/>1.05},<sp/></highlight><highlight class="comment">//<sp/>Gold<sp/>up<sp/>5%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="538"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="539"><highlight class="normal"><sp/><sp/><sp/><sp/>scenario.<ref refid="d3/dbb/structpyfolio_1_1risk_1_1StressTestScenario_1a83aa51748230e0ee9e5f1c8aa7285fc7" kindref="member">probability</ref><sp/>=<sp/>0.01;<sp/><sp/></highlight><highlight class="comment">//<sp/>1%<sp/>annual<sp/>probability</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="540"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>scenario;</highlight></codeline>
+<codeline lineno="541"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="542"><highlight class="normal"></highlight></codeline>
+<codeline lineno="546" refid="d0/de6/namespacepyfolio_1_1risk_1_1stress__scenarios_1af0dbe00fbbe6d087eb9dd43e9bfb092b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="d3/dbb/structpyfolio_1_1risk_1_1StressTestScenario" kindref="compound">StressTestScenario</ref><sp/><ref refid="d0/de6/namespacepyfolio_1_1risk_1_1stress__scenarios_1af0dbe00fbbe6d087eb9dd43e9bfb092b" kindref="member">covid_crash_2020</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="547"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/dbb/structpyfolio_1_1risk_1_1StressTestScenario" kindref="compound">StressTestScenario</ref><sp/>scenario;</highlight></codeline>
+<codeline lineno="548"><highlight class="normal"><sp/><sp/><sp/><sp/>scenario.<ref refid="d3/dbb/structpyfolio_1_1risk_1_1StressTestScenario_1ae74619f5772f9ca1fcbb8b82ac795e2b" kindref="member">name</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;COVID-19<sp/>Crash<sp/>2020&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="549"><highlight class="normal"><sp/><sp/><sp/><sp/>scenario.<ref refid="d3/dbb/structpyfolio_1_1risk_1_1StressTestScenario_1a394080a4b8ed7f08b265d6086700b3f6" kindref="member">shock_factors</ref><sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="550"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;SPY&quot;</highlight><highlight class="normal">,<sp/>0.66},<sp/></highlight><highlight class="comment">//<sp/>S&amp;P<sp/>500<sp/>down<sp/>34%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="551"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;IWM&quot;</highlight><highlight class="normal">,<sp/>0.59},<sp/></highlight><highlight class="comment">//<sp/>Russell<sp/>2000<sp/>down<sp/>41%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="552"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;EFA&quot;</highlight><highlight class="normal">,<sp/>0.68},<sp/></highlight><highlight class="comment">//<sp/>EAFE<sp/>down<sp/>32%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="553"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;TLT&quot;</highlight><highlight class="normal">,<sp/>1.11},<sp/></highlight><highlight class="comment">//<sp/>Long<sp/>bonds<sp/>up<sp/>11%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="554"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;GLD&quot;</highlight><highlight class="normal">,<sp/>1.00},<sp/></highlight><highlight class="comment">//<sp/>Gold<sp/>flat</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="555"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="556"><highlight class="normal"><sp/><sp/><sp/><sp/>scenario.<ref refid="d3/dbb/structpyfolio_1_1risk_1_1StressTestScenario_1a83aa51748230e0ee9e5f1c8aa7285fc7" kindref="member">probability</ref><sp/>=<sp/>0.005;<sp/><sp/></highlight><highlight class="comment">//<sp/>0.5%<sp/>annual<sp/>probability</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="557"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>scenario;</highlight></codeline>
+<codeline lineno="558"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="559"><highlight class="normal"></highlight></codeline>
+<codeline lineno="563" refid="d0/de6/namespacepyfolio_1_1risk_1_1stress__scenarios_1a553d72e4f6842b9d60622161f7d59b03" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="d3/dbb/structpyfolio_1_1risk_1_1StressTestScenario" kindref="compound">StressTestScenario</ref><sp/><ref refid="d0/de6/namespacepyfolio_1_1risk_1_1stress__scenarios_1a553d72e4f6842b9d60622161f7d59b03" kindref="member">interest_rate_shock</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="564"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/dbb/structpyfolio_1_1risk_1_1StressTestScenario" kindref="compound">StressTestScenario</ref><sp/>scenario;</highlight></codeline>
+<codeline lineno="565"><highlight class="normal"><sp/><sp/><sp/><sp/>scenario.<ref refid="d3/dbb/structpyfolio_1_1risk_1_1StressTestScenario_1ae74619f5772f9ca1fcbb8b82ac795e2b" kindref="member">name</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Interest<sp/>Rate<sp/>Shock<sp/>+300bp&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="566"><highlight class="normal"><sp/><sp/><sp/><sp/>scenario.<ref refid="d3/dbb/structpyfolio_1_1risk_1_1StressTestScenario_1a801de7716d060f8c607b21aadc471d35" kindref="member">market_shocks</ref><sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="567"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;10Y_YIELD&quot;</highlight><highlight class="normal">,<sp/>3.0}<sp/><sp/></highlight><highlight class="comment">//<sp/>300<sp/>basis<sp/>points</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="568"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="569"><highlight class="normal"><sp/><sp/><sp/><sp/>scenario.<ref refid="d3/dbb/structpyfolio_1_1risk_1_1StressTestScenario_1a394080a4b8ed7f08b265d6086700b3f6" kindref="member">shock_factors</ref><sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="570"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;TLT&quot;</highlight><highlight class="normal">,<sp/>0.85},<sp/></highlight><highlight class="comment">//<sp/>Long<sp/>bonds<sp/>down<sp/>15%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="571"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;REITs&quot;</highlight><highlight class="normal">,<sp/>0.90},<sp/></highlight><highlight class="comment">//<sp/>REITs<sp/>down<sp/>10%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="572"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;Utilities&quot;</highlight><highlight class="normal">,<sp/>0.95}<sp/><sp/></highlight><highlight class="comment">//<sp/>Utilities<sp/>down<sp/>5%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="573"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="574"><highlight class="normal"><sp/><sp/><sp/><sp/>scenario.<ref refid="d3/dbb/structpyfolio_1_1risk_1_1StressTestScenario_1a83aa51748230e0ee9e5f1c8aa7285fc7" kindref="member">probability</ref><sp/>=<sp/>0.02;<sp/><sp/></highlight><highlight class="comment">//<sp/>2%<sp/>annual<sp/>probability</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="575"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>scenario;</highlight></codeline>
+<codeline lineno="576"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="577"><highlight class="normal"></highlight></codeline>
+<codeline lineno="581" refid="d0/de6/namespacepyfolio_1_1risk_1_1stress__scenarios_1aa4f919c9fc048665084015e3c3b0deb3" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::vector&lt;StressTestScenario&gt;<sp/><ref refid="d0/de6/namespacepyfolio_1_1risk_1_1stress__scenarios_1aa4f919c9fc048665084015e3c3b0deb3" kindref="member">get_common_scenarios</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="582"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{<ref refid="d0/de6/namespacepyfolio_1_1risk_1_1stress__scenarios_1a49443a3336c200146a808fe5de6b3719" kindref="member">financial_crisis_2008</ref>(),<sp/><ref refid="d0/de6/namespacepyfolio_1_1risk_1_1stress__scenarios_1af0dbe00fbbe6d087eb9dd43e9bfb092b" kindref="member">covid_crash_2020</ref>(),<sp/><ref refid="d0/de6/namespacepyfolio_1_1risk_1_1stress__scenarios_1a553d72e4f6842b9d60622161f7d59b03" kindref="member">interest_rate_shock</ref>()};</highlight></codeline>
+<codeline lineno="583"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="584"><highlight class="normal"></highlight></codeline>
+<codeline lineno="585"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>stress_scenarios</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="586"><highlight class="normal"></highlight></codeline>
+<codeline lineno="590" refid="d2/da5/namespacepyfolio_1_1risk_1ac7c4871092a6b879c5ce42bfefcbce07" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;double&gt;</ref><sp/><ref refid="d2/da5/namespacepyfolio_1_1risk_1ac7c4871092a6b879c5ce42bfefcbce07" kindref="member">historical_var</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1a3376bad8167ed5bb04f22ab12dda9446" kindref="member">ReturnSeries</ref>&amp;<sp/>returns,</highlight></codeline>
+<codeline lineno="591"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>confidence_level<sp/>=<sp/><ref refid="db/d9c/namespacepyfolio_1_1constants_1a73eeb10def941e165c021f17d8d35a93" kindref="member">constants::DEFAULT_CONFIDENCE_LEVEL</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="592"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator" kindref="compound">VaRCalculator</ref><sp/>calculator;</highlight></codeline>
+<codeline lineno="593"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>result<sp/>=<sp/>calculator.<ref refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1a5355f08aadc5dc96a9bc0443d70eb93b" kindref="member">calculate_historical_var</ref>(returns,<sp/>confidence_level);</highlight></codeline>
+<codeline lineno="594"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(result.is_ok())<sp/>{</highlight></codeline>
+<codeline lineno="595"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" kindref="member">Result&lt;double&gt;::success</ref>(result.value().var_estimate);</highlight></codeline>
+<codeline lineno="596"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="597"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" kindref="member">Result&lt;double&gt;::error</ref>(result.error().code,<sp/>result.error().message);</highlight></codeline>
+<codeline lineno="598"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="599"><highlight class="normal"></highlight></codeline>
+<codeline lineno="603" refid="d2/da5/namespacepyfolio_1_1risk_1ac091b780b885e60eb245538dd9ec1910" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;double&gt;</ref><sp/><ref refid="d2/da5/namespacepyfolio_1_1risk_1ac091b780b885e60eb245538dd9ec1910" kindref="member">conditional_var</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1a3376bad8167ed5bb04f22ab12dda9446" kindref="member">ReturnSeries</ref>&amp;<sp/>returns,</highlight></codeline>
+<codeline lineno="604"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>confidence_level<sp/>=<sp/><ref refid="db/d9c/namespacepyfolio_1_1constants_1a73eeb10def941e165c021f17d8d35a93" kindref="member">constants::DEFAULT_CONFIDENCE_LEVEL</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="605"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator" kindref="compound">VaRCalculator</ref><sp/>calculator;</highlight></codeline>
+<codeline lineno="606"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>result<sp/>=<sp/>calculator.<ref refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1a5355f08aadc5dc96a9bc0443d70eb93b" kindref="member">calculate_historical_var</ref>(returns,<sp/>confidence_level);</highlight></codeline>
+<codeline lineno="607"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(result.is_ok())<sp/>{</highlight></codeline>
+<codeline lineno="608"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" kindref="member">Result&lt;double&gt;::success</ref>(result.value().cvar_estimate);</highlight></codeline>
+<codeline lineno="609"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="610"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" kindref="member">Result&lt;double&gt;::error</ref>(result.error().code,<sp/>result.error().message);</highlight></codeline>
+<codeline lineno="611"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="612"><highlight class="normal"></highlight></codeline>
+<codeline lineno="613"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>pyfolio::risk</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/var.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,28 @@
+# JSON Patch for deployment resource adjustments
+- op: replace
+  path: /spec/template/spec/containers/0/resources/requests/memory
+  value: "2Gi"
+
+- op: replace
+  path: /spec/template/spec/containers/0/resources/requests/cpu
+  value: "1"
+
+- op: replace
+  path: /spec/template/spec/containers/0/resources/limits/memory
+  value: "8Gi"
+
+- op: replace
+  path: /spec/template/spec/containers/0/resources/limits/cpu
+  value: "4"
+
+- op: add
+  path: /spec/template/spec/containers/0/env/-
+  value:
+    name: PRODUCTION_MODE
+    value: "true"
+
+- op: add
+  path: /spec/template/spec/containers/0/env/-
+  value:
+    name: PERFORMANCE_OPTIMIZED
+    value: "true"

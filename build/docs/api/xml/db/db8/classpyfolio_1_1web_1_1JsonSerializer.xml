@@ -1,0 +1,364 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="db/db8/classpyfolio_1_1web_1_1JsonSerializer" kind="class" language="C++" prot="public">
+    <compoundname>pyfolio::web::JsonSerializer</compoundname>
+    <includes refid="d4/d45/json__serializer_8h" local="no">json_serializer.h</includes>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1a2af72b0ed0ffccd71321216cd4133df6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="df/d1a/namespacepyfolio_1_1web_1add50778298e0a694ecefdd6b06d6fb6e" kindref="member">json</ref></type>
+        <definition>static json pyfolio::web::JsonSerializer::serialize_datetime</definition>
+        <argsstring>(const DateTime &amp;dt)</argsstring>
+        <name>serialize_datetime</name>
+        <qualifiedname>pyfolio::web::JsonSerializer::serialize_datetime</qualifiedname>
+        <param>
+          <type>const <ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref> &amp;</type>
+          <declname>dt</declname>
+        </param>
+        <briefdescription>
+<para>Serialize <ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref> to ISO 8601 string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/json_serializer.h" line="35" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/json_serializer.h" bodystart="35" bodyend="35"/>
+        <references refid="d6/d4f/classpyfolio_1_1DateTime_1a0c77abf0a6d6acefcec468e8cf061d5c" compoundref="de/d1b/datetime_8h" startline="195" endline="209">pyfolio::DateTime::to_string</references>
+        <referencedby refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1add2a42fe9dcd980105be0a758134a10a" compoundref="d4/d45/json__serializer_8h" startline="110" endline="125">serialize_portfolio_holdings</referencedby>
+        <referencedby refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1a7adc5b913cadb3d0cc93d5ad7b2b93fd" compoundref="d4/d45/json__serializer_8h" startline="41" endline="56">serialize_time_series</referencedby>
+        <referencedby refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1a9f33a35a5b19824c6d91fe007c43453c" compoundref="d4/d45/json__serializer_8h" startline="130" endline="146">serialize_transaction_record</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1a7adc5b913cadb3d0cc93d5ad7b2b93fd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="df/d1a/namespacepyfolio_1_1web_1add50778298e0a694ecefdd6b06d6fb6e" kindref="member">json</ref></type>
+        <definition>static json pyfolio::web::JsonSerializer::serialize_time_series</definition>
+        <argsstring>(const TimeSeries&lt; T &gt; &amp;series)</argsstring>
+        <name>serialize_time_series</name>
+        <qualifiedname>pyfolio::web::JsonSerializer::serialize_time_series</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; T &gt; &amp;</type>
+          <declname>series</declname>
+        </param>
+        <briefdescription>
+<para>Serialize <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref> to JSON. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/json_serializer.h" line="41" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/json_serializer.h" bodystart="41" bodyend="56"/>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1a14dc0c14e60203348e7a7a474f086a49" compoundref="d8/d51/time__series_8h" startline="137" endline="137">pyfolio::TimeSeries&lt; T &gt;::name</references>
+        <references refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1a2af72b0ed0ffccd71321216cd4133df6" compoundref="d4/d45/json__serializer_8h" startline="35" endline="35">serialize_datetime</references>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1a82aad601509b554d6968521b8461f50e" compoundref="d8/d51/time__series_8h" startline="102" endline="102">pyfolio::TimeSeries&lt; T &gt;::size</references>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1a0374bbc62bd808749ac476b3af4b0ead" compoundref="d8/d51/time__series_8h" startline="124" endline="124">pyfolio::TimeSeries&lt; T &gt;::timestamps</references>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1ab0b20c4945cdde977885888f384256c3" compoundref="d8/d51/time__series_8h" startline="125" endline="125">pyfolio::TimeSeries&lt; T &gt;::values</references>
+      </memberdef>
+      <memberdef kind="function" id="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1afcf41eac95ec7e179f6ab359e458141b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="df/d1a/namespacepyfolio_1_1web_1add50778298e0a694ecefdd6b06d6fb6e" kindref="member">json</ref></type>
+        <definition>static json pyfolio::web::JsonSerializer::serialize_performance_metrics</definition>
+        <argsstring>(const analytics::PerformanceMetrics &amp;metrics)</argsstring>
+        <name>serialize_performance_metrics</name>
+        <qualifiedname>pyfolio::web::JsonSerializer::serialize_performance_metrics</qualifiedname>
+        <param>
+          <type>const <ref refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics" kindref="compound">analytics::PerformanceMetrics</ref> &amp;</type>
+          <declname>metrics</declname>
+        </param>
+        <briefdescription>
+<para>Serialize <ref refid="d7/d98/classpyfolio_1_1PerformanceMetrics" kindref="compound">PerformanceMetrics</ref> to JSON. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/json_serializer.h" line="61" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/json_serializer.h" bodystart="61" bodyend="86"/>
+        <references refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a8ae8364d4a6c1b763174571da30b46a6" compoundref="de/d88/performance__metrics_8h" startline="83">pyfolio::analytics::PerformanceMetrics::alpha</references>
+        <references refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a2d32e78155a9e0434d5beffda4fb2bec" compoundref="de/d88/performance__metrics_8h" startline="72">pyfolio::analytics::PerformanceMetrics::annual_return</references>
+        <references refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a0f0a580e22b9f38fee7222d2d3f1f646" compoundref="de/d88/performance__metrics_8h" startline="73">pyfolio::analytics::PerformanceMetrics::annual_volatility</references>
+        <references refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1ab50d8bd93cdab494c0971c3503b4dcef" compoundref="de/d88/performance__metrics_8h" startline="82">pyfolio::analytics::PerformanceMetrics::beta</references>
+        <references refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a714269105c1cacb42e4170fdbae4918e" compoundref="de/d88/performance__metrics_8h" startline="77">pyfolio::analytics::PerformanceMetrics::calmar_ratio</references>
+        <references refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a0ec8fa97f4c65bacbafaafcdeab43927" compoundref="de/d88/performance__metrics_8h" startline="89">pyfolio::analytics::PerformanceMetrics::common_sense_ratio</references>
+        <references refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a504222caaea5e4cd84f461b490c1401d" compoundref="de/d88/performance__metrics_8h" startline="91">pyfolio::analytics::PerformanceMetrics::downside_deviation</references>
+        <references refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a37817089e17da1751be43cf33bdd0dc7" compoundref="de/d88/performance__metrics_8h" startline="84">pyfolio::analytics::PerformanceMetrics::information_ratio</references>
+        <references refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a2a26804a2b0f39cfe38af3f7d9d4fca1" compoundref="de/d88/performance__metrics_8h" startline="79">pyfolio::analytics::PerformanceMetrics::kurtosis</references>
+        <references refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a7f7e2b17c39585f1a5869ca5ef8c8724" compoundref="de/d88/performance__metrics_8h" startline="76">pyfolio::analytics::PerformanceMetrics::max_drawdown</references>
+        <references refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a9ba502d1c94fa9c7a2d6102871e66882" compoundref="de/d88/performance__metrics_8h" startline="87">pyfolio::analytics::PerformanceMetrics::omega_ratio</references>
+        <references refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a2252369fd5a1d4f13476e6f68bec085e" compoundref="de/d88/performance__metrics_8h" startline="74">pyfolio::analytics::PerformanceMetrics::sharpe_ratio</references>
+        <references refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a0c337f6982ecd7f7c790a12893ee77b5" compoundref="de/d88/performance__metrics_8h" startline="78">pyfolio::analytics::PerformanceMetrics::skewness</references>
+        <references refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1aee0f94a36cb88d38dcc2d8f755bd359c" compoundref="de/d88/performance__metrics_8h" startline="75">pyfolio::analytics::PerformanceMetrics::sortino_ratio</references>
+        <references refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1af7be3b9d9bfe9171e7e0fb2f709226e7" compoundref="de/d88/performance__metrics_8h" startline="90">pyfolio::analytics::PerformanceMetrics::stability</references>
+        <references refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1ab26014d4fe883ea438f4b82f936d6684" compoundref="de/d88/performance__metrics_8h" startline="88">pyfolio::analytics::PerformanceMetrics::tail_ratio</references>
+        <references refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a3e502eb4760ff637704b95fc0cf4add1" compoundref="de/d88/performance__metrics_8h" startline="71">pyfolio::analytics::PerformanceMetrics::total_return</references>
+        <references refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1ae60da18336ca95f60db5d1b5392cb916" compoundref="de/d88/performance__metrics_8h" startline="92">pyfolio::analytics::PerformanceMetrics::tracking_error</references>
+        <references refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a0b08a5e0348465a0a66cc54f95580373" compoundref="de/d88/performance__metrics_8h" startline="80">pyfolio::analytics::PerformanceMetrics::var_95</references>
+        <references refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a96cea1b61c0d9b29916d53409d3c612c" compoundref="de/d88/performance__metrics_8h" startline="81">pyfolio::analytics::PerformanceMetrics::var_99</references>
+      </memberdef>
+      <memberdef kind="function" id="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1a8cd9c946ef3693eea5d52e9cf56b8485" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="df/d1a/namespacepyfolio_1_1web_1add50778298e0a694ecefdd6b06d6fb6e" kindref="member">json</ref></type>
+        <definition>static json pyfolio::web::JsonSerializer::serialize_holding</definition>
+        <argsstring>(const positions::Holding &amp;holding)</argsstring>
+        <name>serialize_holding</name>
+        <qualifiedname>pyfolio::web::JsonSerializer::serialize_holding</qualifiedname>
+        <param>
+          <type>const <ref refid="d9/d1a/structpyfolio_1_1positions_1_1Holding" kindref="compound">positions::Holding</ref> &amp;</type>
+          <declname>holding</declname>
+        </param>
+        <briefdescription>
+<para>Serialize Holding to JSON. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/json_serializer.h" line="91" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/json_serializer.h" bodystart="91" bodyend="105"/>
+        <references refid="d9/d1a/structpyfolio_1_1positions_1_1Holding_1afca6e9d9e4a225a935ab809bfddf0b8a" compoundref="d7/d0c/holdings_8h" startline="19">pyfolio::positions::Holding::average_cost</references>
+        <references refid="d9/d1a/structpyfolio_1_1positions_1_1Holding_1a2ffc9a1035916ed4b82ad8ad67d42a42" compoundref="d7/d0c/holdings_8h" startline="22">pyfolio::positions::Holding::cost_basis</references>
+        <references refid="d9/d1a/structpyfolio_1_1positions_1_1Holding_1a01a3464efdc74a64e3ea3f9f9569052d" compoundref="d7/d0c/holdings_8h" startline="20">pyfolio::positions::Holding::current_price</references>
+        <references refid="d9/d1a/structpyfolio_1_1positions_1_1Holding_1adf0e54d1d9c3320543a9d2f11a0319ca" compoundref="d7/d0c/holdings_8h" startline="21">pyfolio::positions::Holding::market_value</references>
+        <references refid="d9/d1a/structpyfolio_1_1positions_1_1Holding_1ae77c2a03f87915a68d5b3bccd5c85256" compoundref="d7/d0c/holdings_8h" startline="39" endline="39">pyfolio::positions::Holding::return_pct</references>
+        <references refid="d9/d1a/structpyfolio_1_1positions_1_1Holding_1afb91f4863892053ef84d3c025d01d94e" compoundref="d7/d0c/holdings_8h" startline="18">pyfolio::positions::Holding::shares</references>
+        <references refid="d9/d1a/structpyfolio_1_1positions_1_1Holding_1a8609bad54aebda965cde6d257d925f00" compoundref="d7/d0c/holdings_8h" startline="17">pyfolio::positions::Holding::symbol</references>
+        <references refid="d9/d1a/structpyfolio_1_1positions_1_1Holding_1af2a4a0537013f5e5a57838af3a84dcc0" compoundref="d7/d0c/holdings_8h" startline="23">pyfolio::positions::Holding::unrealized_pnl</references>
+        <references refid="d9/d1a/structpyfolio_1_1positions_1_1Holding_1aef668dc4cf670308c18e00462f5751b7" compoundref="d7/d0c/holdings_8h" startline="24">pyfolio::positions::Holding::weight</references>
+        <referencedby refid="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1ab8b8f36af787039a4748bdc6e4c48530" compoundref="de/de7/rest__api__server_8h" startline="235" endline="302">pyfolio::web::RestApiServer::handle_portfolio_analysis</referencedby>
+        <referencedby refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1add2a42fe9dcd980105be0a758134a10a" compoundref="d4/d45/json__serializer_8h" startline="110" endline="125">serialize_portfolio_holdings</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1add2a42fe9dcd980105be0a758134a10a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="df/d1a/namespacepyfolio_1_1web_1add50778298e0a694ecefdd6b06d6fb6e" kindref="member">json</ref></type>
+        <definition>static json pyfolio::web::JsonSerializer::serialize_portfolio_holdings</definition>
+        <argsstring>(const positions::PortfolioHoldings &amp;holdings)</argsstring>
+        <name>serialize_portfolio_holdings</name>
+        <qualifiedname>pyfolio::web::JsonSerializer::serialize_portfolio_holdings</qualifiedname>
+        <param>
+          <type>const <ref refid="dc/dbf/classpyfolio_1_1positions_1_1PortfolioHoldings" kindref="compound">positions::PortfolioHoldings</ref> &amp;</type>
+          <declname>holdings</declname>
+        </param>
+        <briefdescription>
+<para>Serialize PortfolioHoldings to JSON. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/json_serializer.h" line="110" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/json_serializer.h" bodystart="110" bodyend="125"/>
+        <references refid="dc/dbf/classpyfolio_1_1positions_1_1PortfolioHoldings_1a66d1c0d19b6584c4232972da8fe0a44e" compoundref="d7/d0c/holdings_8h" startline="65" endline="65">pyfolio::positions::PortfolioHoldings::cash_balance</references>
+        <references refid="dc/dbf/classpyfolio_1_1positions_1_1PortfolioHoldings_1a315a3a6f55a4101a289ab1bf2003762a" compoundref="d7/d0c/holdings_8h" startline="67" endline="67">pyfolio::positions::PortfolioHoldings::holdings</references>
+        <references refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1a2af72b0ed0ffccd71321216cd4133df6" compoundref="d4/d45/json__serializer_8h" startline="35" endline="35">serialize_datetime</references>
+        <references refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1a8cd9c946ef3693eea5d52e9cf56b8485" compoundref="d4/d45/json__serializer_8h" startline="91" endline="105">serialize_holding</references>
+        <references refid="dc/dbf/classpyfolio_1_1positions_1_1PortfolioHoldings_1ae6d65bfe733f0302cd61c10f4b5bd75f" compoundref="d7/d0c/holdings_8h" startline="64" endline="64">pyfolio::positions::PortfolioHoldings::timestamp</references>
+        <references refid="dc/dbf/classpyfolio_1_1positions_1_1PortfolioHoldings_1a024425899ff9486a38f8a209c4369924" compoundref="d7/d0c/holdings_8h" startline="66" endline="66">pyfolio::positions::PortfolioHoldings::total_value</references>
+      </memberdef>
+      <memberdef kind="function" id="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1a9f33a35a5b19824c6d91fe007c43453c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="df/d1a/namespacepyfolio_1_1web_1add50778298e0a694ecefdd6b06d6fb6e" kindref="member">json</ref></type>
+        <definition>static json pyfolio::web::JsonSerializer::serialize_transaction_record</definition>
+        <argsstring>(const transactions::TransactionRecord &amp;txn)</argsstring>
+        <name>serialize_transaction_record</name>
+        <qualifiedname>pyfolio::web::JsonSerializer::serialize_transaction_record</qualifiedname>
+        <param>
+          <type>const <ref refid="de/d25/classpyfolio_1_1transactions_1_1TransactionRecord" kindref="compound">transactions::TransactionRecord</ref> &amp;</type>
+          <declname>txn</declname>
+        </param>
+        <briefdescription>
+<para>Serialize TransactionRecord to JSON. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/json_serializer.h" line="130" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/json_serializer.h" bodystart="130" bodyend="146"/>
+        <references refid="de/d25/classpyfolio_1_1transactions_1_1TransactionRecord_1a4aad9d278d99a6ea902df97607a37e92" compoundref="d0/db6/transaction_8h" startline="57" endline="57">pyfolio::transactions::TransactionRecord::commission</references>
+        <references refid="de/d25/classpyfolio_1_1transactions_1_1TransactionRecord_1a66cd86a887732ad4edeab23b4a84d6b9" compoundref="d0/db6/transaction_8h" startline="59" endline="59">pyfolio::transactions::TransactionRecord::exchange</references>
+        <references refid="de/d25/classpyfolio_1_1transactions_1_1TransactionRecord_1a3df396e26103be078c6a0b7930b120bf" compoundref="d0/db6/transaction_8h" startline="106" endline="106">pyfolio::transactions::TransactionRecord::is_buy</references>
+        <references refid="de/d25/classpyfolio_1_1transactions_1_1TransactionRecord_1a00a9205c8733a32c7627e23e8000f32b" compoundref="d0/db6/transaction_8h" startline="93" endline="96">pyfolio::transactions::TransactionRecord::net_cash_flow</references>
+        <references refid="de/d25/classpyfolio_1_1transactions_1_1TransactionRecord_1ae04f14d17f1c8788910820d8f1394cc5" compoundref="d0/db6/transaction_8h" startline="60" endline="60">pyfolio::transactions::TransactionRecord::order_id</references>
+        <references refid="de/d25/classpyfolio_1_1transactions_1_1TransactionRecord_1a7151515d54d7ffa33f422324be4978c8" compoundref="d0/db6/transaction_8h" startline="53" endline="53">pyfolio::transactions::TransactionRecord::price</references>
+        <references refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1a2af72b0ed0ffccd71321216cd4133df6" compoundref="d4/d45/json__serializer_8h" startline="35" endline="35">serialize_datetime</references>
+        <references refid="de/d25/classpyfolio_1_1transactions_1_1TransactionRecord_1a3f7b867b26e9bfa9dc1f68d04adf7cd6" compoundref="d0/db6/transaction_8h" startline="52" endline="52">pyfolio::transactions::TransactionRecord::shares</references>
+        <references refid="de/d25/classpyfolio_1_1transactions_1_1TransactionRecord_1a0e638d5d35ac200e4c4c6dca89d87d09" compoundref="d0/db6/transaction_8h" startline="58" endline="58">pyfolio::transactions::TransactionRecord::slippage</references>
+        <references refid="de/d25/classpyfolio_1_1transactions_1_1TransactionRecord_1a23d1be68fe932ae0a837e91900832d27" compoundref="d0/db6/transaction_8h" startline="51" endline="51">pyfolio::transactions::TransactionRecord::symbol</references>
+        <references refid="de/d25/classpyfolio_1_1transactions_1_1TransactionRecord_1a6fd1a872bd04059ded648869a386e2f4" compoundref="d0/db6/transaction_8h" startline="54" endline="54">pyfolio::transactions::TransactionRecord::timestamp</references>
+        <references refid="de/d25/classpyfolio_1_1transactions_1_1TransactionRecord_1aeed8a515d5b9e104f00010c1c818d41a" compoundref="d0/db6/transaction_8h" startline="88" endline="88">pyfolio::transactions::TransactionRecord::value</references>
+      </memberdef>
+      <memberdef kind="function" id="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1ae12c7f18031cb7d03ec2756e85b2bb6d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="df/d1a/namespacepyfolio_1_1web_1add50778298e0a694ecefdd6b06d6fb6e" kindref="member">json</ref></type>
+        <definition>static json pyfolio::web::JsonSerializer::serialize_result</definition>
+        <argsstring>(const Result&lt; T &gt; &amp;result, std::function&lt; json(const T &amp;)&gt; value_serializer)</argsstring>
+        <name>serialize_result</name>
+        <qualifiedname>pyfolio::web::JsonSerializer::serialize_result</qualifiedname>
+        <param>
+          <type>const <ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; T &gt; &amp;</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>std::function&lt; <ref refid="df/d1a/namespacepyfolio_1_1web_1add50778298e0a694ecefdd6b06d6fb6e" kindref="member">json</ref>(const T &amp;)&gt;</type>
+          <declname>value_serializer</declname>
+        </param>
+        <briefdescription>
+<para>Serialize <ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;T&gt;</ref> to JSON with error handling. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/json_serializer.h" line="152" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/json_serializer.h" bodystart="152" bodyend="167"/>
+        <references refid="de/dfa/classpyfolio_1_1Result_1a283b3c95dbf4bfbe61d4fac4da7073bc" compoundref="d3/d11/error__handling_8h" startline="79" endline="84">pyfolio::Result&lt; T &gt;::error</references>
+        <references refid="de/dfa/classpyfolio_1_1Result_1a09c05ae8d4f48da687ab95eeb91a1440" compoundref="d3/d11/error__handling_8h" startline="87" endline="87">pyfolio::Result&lt; T &gt;::is_ok</references>
+        <references refid="de/dfa/classpyfolio_1_1Result_1a563d8e0024bb6b067dc3ca00ac1b241b" compoundref="d3/d11/error__handling_8h" startline="95" endline="101">pyfolio::Result&lt; T &gt;::value</references>
+      </memberdef>
+      <memberdef kind="function" id="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1a8fdf4769c763923ab88120b69bfa04b1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="df/d1a/namespacepyfolio_1_1web_1add50778298e0a694ecefdd6b06d6fb6e" kindref="member">json</ref></type>
+        <definition>static json pyfolio::web::JsonSerializer::create_api_response</definition>
+        <argsstring>(bool success, const json &amp;data=json{}, const std::string &amp;message=&quot;&quot;)</argsstring>
+        <name>create_api_response</name>
+        <qualifiedname>pyfolio::web::JsonSerializer::create_api_response</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>success</declname>
+        </param>
+        <param>
+          <type>const <ref refid="df/d1a/namespacepyfolio_1_1web_1add50778298e0a694ecefdd6b06d6fb6e" kindref="member">json</ref> &amp;</type>
+          <declname>data</declname>
+          <defval><ref refid="df/d1a/namespacepyfolio_1_1web_1add50778298e0a694ecefdd6b06d6fb6e" kindref="member">json</ref>{}</defval>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>message</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Create a standard API response. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/json_serializer.h" line="172" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/json_serializer.h" bodystart="172" bodyend="186"/>
+        <referencedby refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1a06f9602cb83b6063ee0f7fa8baae7e49" compoundref="d4/d45/json__serializer_8h" startline="191" endline="193">create_error_response</referencedby>
+        <referencedby refid="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1a88e05ed9ca22e2db58d2c23670f8bda4" compoundref="de/de7/rest__api__server_8h" startline="506" endline="570">pyfolio::web::RestApiServer::handle_batch_analysis</referencedby>
+        <referencedby refid="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1a9c15c099bbd974a26e4ae9c945b839f0" compoundref="de/de7/rest__api__server_8h" startline="419" endline="457">pyfolio::web::RestApiServer::handle_drawdown_calculation</referencedby>
+        <referencedby refid="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1a65e85df3ae60130213a4d2444ed8dc31" compoundref="de/de7/rest__api__server_8h" startline="150" endline="230">pyfolio::web::RestApiServer::handle_performance_analysis</referencedby>
+        <referencedby refid="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1ab8b8f36af787039a4748bdc6e4c48530" compoundref="de/de7/rest__api__server_8h" startline="235" endline="302">pyfolio::web::RestApiServer::handle_portfolio_analysis</referencedby>
+        <referencedby refid="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1a9f68e2ebdce6df241a8530773503cd69" compoundref="de/de7/rest__api__server_8h" startline="374" endline="414">pyfolio::web::RestApiServer::handle_sharpe_calculation</referencedby>
+        <referencedby refid="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1a84fbbb0329da81e8a4e9718be438dfb0" compoundref="de/de7/rest__api__server_8h" startline="307" endline="369">pyfolio::web::RestApiServer::handle_transaction_analysis</referencedby>
+        <referencedby refid="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1a301fdf51eddfb64d7213e0547c74b7c9" compoundref="de/de7/rest__api__server_8h" startline="462" endline="501">pyfolio::web::RestApiServer::handle_volatility_calculation</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1a06f9602cb83b6063ee0f7fa8baae7e49" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="df/d1a/namespacepyfolio_1_1web_1add50778298e0a694ecefdd6b06d6fb6e" kindref="member">json</ref></type>
+        <definition>static json pyfolio::web::JsonSerializer::create_error_response</definition>
+        <argsstring>(ErrorCode code, const std::string &amp;message)</argsstring>
+        <name>create_error_response</name>
+        <qualifiedname>pyfolio::web::JsonSerializer::create_error_response</qualifiedname>
+        <param>
+          <type><ref refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9" kindref="member">ErrorCode</ref></type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>Create error response. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/json_serializer.h" line="191" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/json_serializer.h" bodystart="191" bodyend="193"/>
+        <references refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1a8fdf4769c763923ab88120b69bfa04b1" compoundref="d4/d45/json__serializer_8h" startline="172" endline="186">create_api_response</references>
+        <referencedby refid="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1a88e05ed9ca22e2db58d2c23670f8bda4" compoundref="de/de7/rest__api__server_8h" startline="506" endline="570">pyfolio::web::RestApiServer::handle_batch_analysis</referencedby>
+        <referencedby refid="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1a9c15c099bbd974a26e4ae9c945b839f0" compoundref="de/de7/rest__api__server_8h" startline="419" endline="457">pyfolio::web::RestApiServer::handle_drawdown_calculation</referencedby>
+        <referencedby refid="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1a65e85df3ae60130213a4d2444ed8dc31" compoundref="de/de7/rest__api__server_8h" startline="150" endline="230">pyfolio::web::RestApiServer::handle_performance_analysis</referencedby>
+        <referencedby refid="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1ab8b8f36af787039a4748bdc6e4c48530" compoundref="de/de7/rest__api__server_8h" startline="235" endline="302">pyfolio::web::RestApiServer::handle_portfolio_analysis</referencedby>
+        <referencedby refid="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1a9f68e2ebdce6df241a8530773503cd69" compoundref="de/de7/rest__api__server_8h" startline="374" endline="414">pyfolio::web::RestApiServer::handle_sharpe_calculation</referencedby>
+        <referencedby refid="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1a84fbbb0329da81e8a4e9718be438dfb0" compoundref="de/de7/rest__api__server_8h" startline="307" endline="369">pyfolio::web::RestApiServer::handle_transaction_analysis</referencedby>
+        <referencedby refid="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1a301fdf51eddfb64d7213e0547c74b7c9" compoundref="de/de7/rest__api__server_8h" startline="462" endline="501">pyfolio::web::RestApiServer::handle_volatility_calculation</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1a939bc654f97aca0244439bf4b2e6ec47" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; T &gt; &gt;</type>
+        <definition>static Result&lt; TimeSeries&lt; T &gt; &gt; pyfolio::web::JsonSerializer::parse_time_series</definition>
+        <argsstring>(const json &amp;data)</argsstring>
+        <name>parse_time_series</name>
+        <qualifiedname>pyfolio::web::JsonSerializer::parse_time_series</qualifiedname>
+        <param>
+          <type>const <ref refid="df/d1a/namespacepyfolio_1_1web_1add50778298e0a694ecefdd6b06d6fb6e" kindref="member">json</ref> &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Parse <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref> from JSON. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/json_serializer.h" line="199" column="19" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/json_serializer.h" bodystart="199" bodyend="231"/>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1a729141cccb1544762ac2069d734929d0" compoundref="d8/d51/time__series_8h" startline="68" endline="83">pyfolio::TimeSeries&lt; T &gt;::create</references>
+        <references refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9ad8f78ca9a692a9411afbc7584b69d043" compoundref="d3/d11/error__handling_8h" startline="17">pyfolio::InvalidInput</references>
+        <references refid="d6/d4f/classpyfolio_1_1DateTime_1adfc972d8ea84c03f9a6d9eb9e661b6cd" compoundref="de/d1b/datetime_8h" startline="150" endline="173">pyfolio::DateTime::parse</references>
+        <referencedby refid="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1a88e05ed9ca22e2db58d2c23670f8bda4" compoundref="de/de7/rest__api__server_8h" startline="506" endline="570">pyfolio::web::RestApiServer::handle_batch_analysis</referencedby>
+        <referencedby refid="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1a9c15c099bbd974a26e4ae9c945b839f0" compoundref="de/de7/rest__api__server_8h" startline="419" endline="457">pyfolio::web::RestApiServer::handle_drawdown_calculation</referencedby>
+        <referencedby refid="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1a65e85df3ae60130213a4d2444ed8dc31" compoundref="de/de7/rest__api__server_8h" startline="150" endline="230">pyfolio::web::RestApiServer::handle_performance_analysis</referencedby>
+        <referencedby refid="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1a9f68e2ebdce6df241a8530773503cd69" compoundref="de/de7/rest__api__server_8h" startline="374" endline="414">pyfolio::web::RestApiServer::handle_sharpe_calculation</referencedby>
+        <referencedby refid="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1a301fdf51eddfb64d7213e0547c74b7c9" compoundref="de/de7/rest__api__server_8h" startline="462" endline="501">pyfolio::web::RestApiServer::handle_volatility_calculation</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1af5ccaefdc7c758341967765eae7e199b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; <ref refid="de/d25/classpyfolio_1_1transactions_1_1TransactionRecord" kindref="compound">transactions::TransactionRecord</ref> &gt;</type>
+        <definition>static Result&lt; transactions::TransactionRecord &gt; pyfolio::web::JsonSerializer::parse_transaction_record</definition>
+        <argsstring>(const json &amp;data)</argsstring>
+        <name>parse_transaction_record</name>
+        <qualifiedname>pyfolio::web::JsonSerializer::parse_transaction_record</qualifiedname>
+        <param>
+          <type>const <ref refid="df/d1a/namespacepyfolio_1_1web_1add50778298e0a694ecefdd6b06d6fb6e" kindref="member">json</ref> &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Parse TransactionRecord from JSON. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/json_serializer.h" line="236" column="19" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/json_serializer.h" bodystart="236" bodyend="290"/>
+        <references refid="dc/d4e/namespacepyfolio_1_1transactions_1a307beb383aa487c8f0d53f274f895c6fa831a28f1e8df07c553fcd59546465d13" compoundref="d0/db6/transaction_8h" startline="18">pyfolio::transactions::Buy</references>
+        <references refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" compoundref="d3/d11/error__handling_8h" startline="111" endline="116">pyfolio::Result&lt; T &gt;::error</references>
+        <references refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9ad8f78ca9a692a9411afbc7584b69d043" compoundref="d3/d11/error__handling_8h" startline="17">pyfolio::InvalidInput</references>
+        <references refid="d6/d4f/classpyfolio_1_1DateTime_1adfc972d8ea84c03f9a6d9eb9e661b6cd" compoundref="de/d1b/datetime_8h" startline="150" endline="173">pyfolio::DateTime::parse</references>
+        <references refid="dc/d4e/namespacepyfolio_1_1transactions_1a307beb383aa487c8f0d53f274f895c6fa3068c5a98c003498f1fec0c489212e8b" compoundref="d0/db6/transaction_8h" startline="18">pyfolio::transactions::Sell</references>
+        <references refid="de/d25/classpyfolio_1_1transactions_1_1TransactionRecord_1abff8f45c13a638ca8ffd31bb0c0daf96" compoundref="d0/db6/transaction_8h" startline="82" endline="82">pyfolio::transactions::TransactionRecord::set_exchange</references>
+        <references refid="de/d25/classpyfolio_1_1transactions_1_1TransactionRecord_1a889c2adb037688ff9c7926f88c638150" compoundref="d0/db6/transaction_8h" startline="83" endline="83">pyfolio::transactions::TransactionRecord::set_order_id</references>
+        <references refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" compoundref="d3/d11/error__handling_8h" startline="74" endline="74">pyfolio::Result&lt; T &gt;::success</references>
+        <referencedby refid="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1a84fbbb0329da81e8a4e9718be438dfb0" compoundref="de/de7/rest__api__server_8h" startline="307" endline="369">pyfolio::web::RestApiServer::handle_transaction_analysis</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>JSON serialization helpers for pyfolio types. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/json_serializer.h" line="30" column="1" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/json_serializer.h" bodystart="30" bodyend="291"/>
+    <listofallmembers>
+      <member refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1a8fdf4769c763923ab88120b69bfa04b1" prot="public" virt="non-virtual"><scope>pyfolio::web::JsonSerializer</scope><name>create_api_response</name></member>
+      <member refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1a06f9602cb83b6063ee0f7fa8baae7e49" prot="public" virt="non-virtual"><scope>pyfolio::web::JsonSerializer</scope><name>create_error_response</name></member>
+      <member refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1a939bc654f97aca0244439bf4b2e6ec47" prot="public" virt="non-virtual"><scope>pyfolio::web::JsonSerializer</scope><name>parse_time_series</name></member>
+      <member refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1af5ccaefdc7c758341967765eae7e199b" prot="public" virt="non-virtual"><scope>pyfolio::web::JsonSerializer</scope><name>parse_transaction_record</name></member>
+      <member refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1a2af72b0ed0ffccd71321216cd4133df6" prot="public" virt="non-virtual"><scope>pyfolio::web::JsonSerializer</scope><name>serialize_datetime</name></member>
+      <member refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1a8cd9c946ef3693eea5d52e9cf56b8485" prot="public" virt="non-virtual"><scope>pyfolio::web::JsonSerializer</scope><name>serialize_holding</name></member>
+      <member refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1afcf41eac95ec7e179f6ab359e458141b" prot="public" virt="non-virtual"><scope>pyfolio::web::JsonSerializer</scope><name>serialize_performance_metrics</name></member>
+      <member refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1add2a42fe9dcd980105be0a758134a10a" prot="public" virt="non-virtual"><scope>pyfolio::web::JsonSerializer</scope><name>serialize_portfolio_holdings</name></member>
+      <member refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1ae12c7f18031cb7d03ec2756e85b2bb6d" prot="public" virt="non-virtual"><scope>pyfolio::web::JsonSerializer</scope><name>serialize_result</name></member>
+      <member refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1a7adc5b913cadb3d0cc93d5ad7b2b93fd" prot="public" virt="non-virtual"><scope>pyfolio::web::JsonSerializer</scope><name>serialize_time_series</name></member>
+      <member refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1a9f33a35a5b19824c6d91fe007c43453c" prot="public" virt="non-virtual"><scope>pyfolio::web::JsonSerializer</scope><name>serialize_transaction_record</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

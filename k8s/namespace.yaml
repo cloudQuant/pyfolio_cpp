@@ -1,0 +1,13 @@
+# PyFolio C++ Kubernetes Namespace
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: pyfolio
+  labels:
+    name: pyfolio
+    app.kubernetes.io/name: pyfolio
+    app.kubernetes.io/version: "1.0.0"
+    app.kubernetes.io/component: namespace
+    app.kubernetes.io/part-of: pyfolio-platform
+  annotations:
+    description: "Production namespace for PyFolio C++ financial analytics platform"

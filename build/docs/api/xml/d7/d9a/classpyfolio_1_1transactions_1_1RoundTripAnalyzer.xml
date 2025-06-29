@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="d7/d9a/classpyfolio_1_1transactions_1_1RoundTripAnalyzer" kind="class" language="C++" prot="public">
+    <compoundname>pyfolio::transactions::RoundTripAnalyzer</compoundname>
+    <includes refid="d7/d00/round__trips_8h" local="no">round_trips.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d7/d9a/classpyfolio_1_1transactions_1_1RoundTripAnalyzer_1ae42c47e5bf2da8e7e8d4ec2c54263433" prot="private" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="d7/df8/namespacepyfolio_1a66e3e2ebe494a9dccbeb419408aaf7ea" kindref="member">Symbol</ref>, std::queue&lt; <ref refid="d4/d46/structpyfolio_1_1transactions_1_1OpenPosition" kindref="compound">OpenPosition</ref> &gt; &gt;</type>
+        <definition>std::map&lt;Symbol, std::queue&lt;OpenPosition&gt; &gt; pyfolio::transactions::RoundTripAnalyzer::open_positions_</definition>
+        <argsstring></argsstring>
+        <name>open_positions_</name>
+        <qualifiedname>pyfolio::transactions::RoundTripAnalyzer::open_positions_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/round_trips.h" line="78" column="14" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/round_trips.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d9a/classpyfolio_1_1transactions_1_1RoundTripAnalyzer_1a591bfc755af64e5c2486b2a3c6532b3a" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="d7/d9d/structpyfolio_1_1transactions_1_1RoundTrip" kindref="compound">RoundTrip</ref> &gt;</type>
+        <definition>std::vector&lt;RoundTrip&gt; pyfolio::transactions::RoundTripAnalyzer::completed_trips_</definition>
+        <argsstring></argsstring>
+        <name>completed_trips_</name>
+        <qualifiedname>pyfolio::transactions::RoundTripAnalyzer::completed_trips_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/round_trips.h" line="79" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/round_trips.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="d7/d9a/classpyfolio_1_1transactions_1_1RoundTripAnalyzer_1a33e1d8cd095e11def52351aefaa3531a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void pyfolio::transactions::RoundTripAnalyzer::process_transaction</definition>
+        <argsstring>(const TransactionRecord &amp;txn)</argsstring>
+        <name>process_transaction</name>
+        <qualifiedname>pyfolio::transactions::RoundTripAnalyzer::process_transaction</qualifiedname>
+        <param>
+          <type>const <ref refid="de/d25/classpyfolio_1_1transactions_1_1TransactionRecord" kindref="compound">TransactionRecord</ref> &amp;</type>
+          <declname>txn</declname>
+        </param>
+        <briefdescription>
+<para>Process a single transaction. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/round_trips.h" line="84" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/round_trips.h" bodystart="84" bodyend="137"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d7/d9a/classpyfolio_1_1transactions_1_1RoundTripAnalyzer_1a37bcd2764fc38e2c3c0b84b403e5f3c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; std::vector&lt; <ref refid="d7/d9d/structpyfolio_1_1transactions_1_1RoundTrip" kindref="compound">RoundTrip</ref> &gt; &gt;</type>
+        <definition>Result&lt; std::vector&lt; RoundTrip &gt; &gt; pyfolio::transactions::RoundTripAnalyzer::analyze</definition>
+        <argsstring>(const TransactionSeries &amp;transactions)</argsstring>
+        <name>analyze</name>
+        <qualifiedname>pyfolio::transactions::RoundTripAnalyzer::analyze</qualifiedname>
+        <param>
+          <type>const <ref refid="d6/d6e/classpyfolio_1_1transactions_1_1TransactionSeries" kindref="compound">TransactionSeries</ref> &amp;</type>
+          <declname>transactions</declname>
+        </param>
+        <briefdescription>
+<para>Analyze transactions to find round trips. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/round_trips.h" line="143" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/round_trips.h" bodystart="143" bodyend="154"/>
+        <referencedby refid="d7/d56/transaction__analysis__example_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="d7/d56/transaction__analysis__example_8cpp" startline="10" endline="196">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/d9a/classpyfolio_1_1transactions_1_1RoundTripAnalyzer_1a03dffad0aa5b2f105828ecfe0f759c9b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::map&lt; <ref refid="d7/df8/namespacepyfolio_1a66e3e2ebe494a9dccbeb419408aaf7ea" kindref="member">Symbol</ref>, std::vector&lt; <ref refid="d4/d46/structpyfolio_1_1transactions_1_1OpenPosition" kindref="compound">OpenPosition</ref> &gt; &gt;</type>
+        <definition>std::map&lt; Symbol, std::vector&lt; OpenPosition &gt; &gt; pyfolio::transactions::RoundTripAnalyzer::get_open_positions</definition>
+        <argsstring>() const</argsstring>
+        <name>get_open_positions</name>
+        <qualifiedname>pyfolio::transactions::RoundTripAnalyzer::get_open_positions</qualifiedname>
+        <briefdescription>
+<para>Get remaining open positions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/round_trips.h" line="159" column="14" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/round_trips.h" bodystart="159" bodyend="171"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Round trip analyzer using FIFO methodology. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/round_trips.h" line="76" column="1" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/round_trips.h" bodystart="76" bodyend="172"/>
+    <listofallmembers>
+      <member refid="d7/d9a/classpyfolio_1_1transactions_1_1RoundTripAnalyzer_1a37bcd2764fc38e2c3c0b84b403e5f3c3" prot="public" virt="non-virtual"><scope>pyfolio::transactions::RoundTripAnalyzer</scope><name>analyze</name></member>
+      <member refid="d7/d9a/classpyfolio_1_1transactions_1_1RoundTripAnalyzer_1a591bfc755af64e5c2486b2a3c6532b3a" prot="private" virt="non-virtual"><scope>pyfolio::transactions::RoundTripAnalyzer</scope><name>completed_trips_</name></member>
+      <member refid="d7/d9a/classpyfolio_1_1transactions_1_1RoundTripAnalyzer_1a03dffad0aa5b2f105828ecfe0f759c9b" prot="public" virt="non-virtual"><scope>pyfolio::transactions::RoundTripAnalyzer</scope><name>get_open_positions</name></member>
+      <member refid="d7/d9a/classpyfolio_1_1transactions_1_1RoundTripAnalyzer_1ae42c47e5bf2da8e7e8d4ec2c54263433" prot="private" virt="non-virtual"><scope>pyfolio::transactions::RoundTripAnalyzer</scope><name>open_positions_</name></member>
+      <member refid="d7/d9a/classpyfolio_1_1transactions_1_1RoundTripAnalyzer_1a33e1d8cd095e11def52351aefaa3531a" prot="private" virt="non-virtual"><scope>pyfolio::transactions::RoundTripAnalyzer</scope><name>process_transaction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

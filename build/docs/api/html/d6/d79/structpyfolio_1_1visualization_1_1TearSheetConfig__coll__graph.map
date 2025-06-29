@@ -1,0 +1,9 @@
+<map id="pyfolio::visualization::TearSheetConfig" name="pyfolio::visualization::TearSheetConfig">
+<area shape="rect" id="Node000001" title=" " alt="" coords="36,184,175,225"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,95,134,121"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,135,100,182,95,184,77,136"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="158,95,237,121"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="177,134,127,185,123,182,173,130"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="135,5,260,46"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="200,61,200,95,195,95,195,61"/>
+</map>

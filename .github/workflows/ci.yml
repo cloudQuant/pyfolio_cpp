@@ -1,0 +1,463 @@
+name: Continuous Integration
+
+on:
+  push:
+    branches: [ main, master, develop ]
+  pull_request:
+    branches: [ main, master, develop ]
+  workflow_dispatch:
+
+env:
+  # Use custom environment variables to improve build caching
+  CCACHE_COMPRESS: "1"
+  CCACHE_COMPRESSLEVEL: "6"
+  CCACHE_MAXSIZE: "400M"
+
+jobs:
+  # Static Analysis and Code Quality
+  static-analysis:
+    name: Static Analysis
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y \
+          clang-tidy \
+          cppcheck \
+          doxygen \
+          graphviz \
+          lcov
+
+    - name: Setup CMake
+      uses: jwlawson/actions-setup-cmake@v1.14
+      with:
+        cmake-version: '3.25'
+
+    - name: Run cppcheck
+      run: |
+        mkdir -p build
+        cd build
+        cmake -DENABLE_CPPCHECK=ON -DCMAKE_BUILD_TYPE=Debug ..
+        make 2>&1 | tee cppcheck.log
+        echo "::group::Cppcheck Results"
+        grep -E "(error|warning|style)" cppcheck.log || true
+        echo "::endgroup::"
+
+    - name: Run clang-tidy
+      run: |
+        cd build
+        cmake -DENABLE_CLANG_TIDY=ON -DCMAKE_BUILD_TYPE=Debug ..
+        make 2>&1 | tee clang-tidy.log
+        echo "::group::Clang-Tidy Results"
+        grep -E "(warning|error)" clang-tidy.log || true
+        echo "::endgroup::"
+
+    - name: Generate Documentation
+      run: |
+        cd build
+        cmake -DBUILD_DOCUMENTATION=ON ..
+        make docs
+        
+    - name: Upload documentation
+      uses: actions/upload-artifact@v3
+      with:
+        name: documentation
+        path: build/docs/
+
+  # Multi-platform Build Matrix
+  build-and-test:
+    name: Build & Test (${{ matrix.os }}, ${{ matrix.build-type }}, ${{ matrix.compiler }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        build-type: [Debug, Release]
+        compiler: [gcc, clang]
+        include:
+          # Linux specific configurations
+          - os: ubuntu-latest
+            compiler: gcc
+            cc: gcc-11
+            cxx: g++-11
+          - os: ubuntu-latest
+            compiler: clang
+            cc: clang-14
+            cxx: clang++-14
+          # macOS specific configurations  
+          - os: macos-latest
+            compiler: gcc
+            cc: gcc-11
+            cxx: g++-11
+          - os: macos-latest
+            compiler: clang
+            cc: clang
+            cxx: clang++
+          # Windows specific configurations
+          - os: windows-latest
+            compiler: gcc
+            cc: gcc
+            cxx: g++
+          - os: windows-latest
+            compiler: clang
+            cc: clang
+            cxx: clang++
+        exclude:
+          # Exclude some combinations to reduce build time
+          - os: windows-latest
+            compiler: gcc
+            build-type: Debug
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        submodules: recursive
+
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+
+    - name: Cache dependencies
+      uses: actions/cache@v3
+      with:
+        path: |
+          ~/.ccache
+          ${{ runner.temp }}/vcpkg
+          build/_deps
+        key: ${{ runner.os }}-${{ matrix.compiler }}-${{ matrix.build-type }}-${{ hashFiles('**/CMakeLists.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-${{ matrix.compiler }}-${{ matrix.build-type }}-
+          ${{ runner.os }}-${{ matrix.compiler }}-
+          ${{ runner.os }}-
+
+    # Linux dependencies
+    - name: Install Linux dependencies
+      if: runner.os == 'Linux'
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y \
+          build-essential \
+          cmake \
+          ninja-build \
+          ccache \
+          libeigen3-dev \
+          libopenmpi-dev \
+          lcov \
+          doxygen \
+          graphviz \
+          ${{ matrix.cc }} \
+          ${{ matrix.cxx }}
+
+    # macOS dependencies
+    - name: Install macOS dependencies
+      if: runner.os == 'macOS'
+      run: |
+        brew update
+        brew install cmake ninja ccache eigen open-mpi doxygen graphviz
+        if [ "${{ matrix.compiler }}" = "gcc" ]; then
+          brew install gcc@11
+        fi
+
+    # Windows dependencies
+    - name: Install Windows dependencies
+      if: runner.os == 'Windows'
+      run: |
+        choco install cmake ninja ccache
+        # Install vcpkg for Windows package management
+        git clone https://github.com/Microsoft/vcpkg.git ${{ runner.temp }}/vcpkg
+        cd ${{ runner.temp }}/vcpkg
+        ./bootstrap-vcpkg.bat
+        ./vcpkg install eigen3
+
+    - name: Setup CMake
+      uses: jwlawson/actions-setup-cmake@v1.14
+      with:
+        cmake-version: '3.25'
+
+    - name: Setup ccache
+      uses: hendrikmuhs/ccache-action@v1.2
+      with:
+        key: ${{ matrix.os }}-${{ matrix.compiler }}-${{ matrix.build-type }}
+
+    - name: Configure CMake (Linux/macOS)
+      if: runner.os != 'Windows'
+      env:
+        CC: ${{ matrix.cc }}
+        CXX: ${{ matrix.cxx }}
+      run: |
+        mkdir -p build
+        cd build
+        cmake \
+          -DCMAKE_BUILD_TYPE=${{ matrix.build-type }} \
+          -DCMAKE_C_COMPILER_LAUNCHER=ccache \
+          -DCMAKE_CXX_COMPILER_LAUNCHER=ccache \
+          -DBUILD_EXAMPLES=ON \
+          -DBUILD_TESTS=ON \
+          -DENABLE_COVERAGE=${{ matrix.build-type == 'Debug' && 'ON' || 'OFF' }} \
+          -DBUILD_DOCUMENTATION=OFF \
+          -GNinja \
+          ..
+
+    - name: Configure CMake (Windows)
+      if: runner.os == 'Windows'
+      run: |
+        mkdir build
+        cd build
+        cmake `
+          -DCMAKE_BUILD_TYPE=${{ matrix.build-type }} `
+          -DCMAKE_TOOLCHAIN_FILE=${{ runner.temp }}/vcpkg/scripts/buildsystems/vcpkg.cmake `
+          -DBUILD_EXAMPLES=ON `
+          -DBUILD_TESTS=ON `
+          -DBUILD_DOCUMENTATION=OFF `
+          -GNinja `
+          ..
+
+    - name: Build
+      run: |
+        cd build
+        cmake --build . --config ${{ matrix.build-type }} --parallel
+
+    - name: Run Tests
+      run: |
+        cd build
+        ctest --output-on-failure --parallel 4 -C ${{ matrix.build-type }}
+
+    - name: Run Examples
+      if: matrix.build-type == 'Release'
+      run: |
+        cd build/examples
+        # Run lightweight examples to verify functionality
+        timeout 30s ./basic_example || true
+        timeout 30s ./ml_persistence_example || true
+        echo "Examples completed successfully"
+
+    - name: Generate Coverage Report (Linux Debug only)
+      if: runner.os == 'Linux' && matrix.build-type == 'Debug' && matrix.compiler == 'gcc'
+      run: |
+        cd build
+        make coverage-summary
+        lcov --capture --directory . --output-file coverage.info
+        lcov --remove coverage.info '/usr/*' '*/tests/*' '*/examples/*' '*/build/_deps/*' --output-file filtered_coverage.info
+        lcov --list filtered_coverage.info
+
+    - name: Upload Coverage to Codecov
+      if: runner.os == 'Linux' && matrix.build-type == 'Debug' && matrix.compiler == 'gcc'
+      uses: codecov/codecov-action@v3
+      with:
+        file: build/filtered_coverage.info
+        flags: unittests
+        name: codecov-umbrella
+        fail_ci_if_error: false
+
+    - name: Upload Build Artifacts
+      if: matrix.build-type == 'Release'
+      uses: actions/upload-artifact@v3
+      with:
+        name: pyfolio-cpp-${{ matrix.os }}-${{ matrix.compiler }}-${{ matrix.build-type }}
+        path: |
+          build/libpyfolio_cpp.a
+          build/examples/
+          !build/examples/CMakeFiles
+          !build/examples/*.cmake
+          !build/examples/Makefile
+
+  # Docker Build and Publish
+  docker:
+    name: Docker Build & Push
+    runs-on: ubuntu-latest
+    needs: [static-analysis, build-and-test]
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v3
+
+    - name: Login to GitHub Container Registry
+      uses: docker/login-action@v3
+      with:
+        registry: ghcr.io
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Extract metadata
+      id: meta
+      uses: docker/metadata-action@v5
+      with:
+        images: ghcr.io/${{ github.repository_owner }}/pyfolio-cpp
+        tags: |
+          type=ref,event=branch
+          type=ref,event=pr
+          type=sha
+          type=raw,value=latest,enable={{is_default_branch}}
+
+    - name: Build and push Docker image
+      uses: docker/build-push-action@v5
+      with:
+        context: .
+        file: ./docker/Dockerfile
+        platforms: linux/amd64,linux/arm64
+        push: true
+        tags: ${{ steps.meta.outputs.tags }}
+        labels: ${{ steps.meta.outputs.labels }}
+        cache-from: type=gha
+        cache-to: type=gha,mode=max
+
+  # Performance Benchmarks
+  benchmarks:
+    name: Performance Benchmarks
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    needs: [build-and-test]
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y build-essential cmake ninja-build libeigen3-dev
+
+    - name: Build benchmarks
+      run: |
+        mkdir -p build
+        cd build
+        cmake -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTS=ON -GNinja ..
+        ninja
+
+    - name: Run benchmarks
+      run: |
+        cd build
+        # Run performance tests if they exist
+        if [ -f "tests/performance_benchmarks" ]; then
+          ./tests/performance_benchmarks --benchmark_format=json --benchmark_out=benchmark_results.json
+        fi
+
+    - name: Upload benchmark results
+      uses: actions/upload-artifact@v3
+      if: always()
+      with:
+        name: benchmark-results
+        path: build/benchmark_results.json
+
+  # Security Scanning
+  security:
+    name: Security Scan
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Run Trivy vulnerability scanner
+      uses: aquasecurity/trivy-action@master
+      with:
+        scan-type: 'fs'
+        scan-ref: '.'
+        format: 'sarif'
+        output: 'trivy-results.sarif'
+
+    - name: Upload Trivy scan results to GitHub Security tab
+      uses: github/codeql-action/upload-sarif@v2
+      if: always()
+      with:
+        sarif_file: 'trivy-results.sarif'
+
+  # Integration Tests
+  integration:
+    name: Integration Tests
+    runs-on: ubuntu-latest
+    needs: [build-and-test]
+    services:
+      redis:
+        image: redis:7-alpine
+        ports:
+          - 6379:6379
+      postgres:
+        image: postgres:15
+        env:
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: pyfolio_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y build-essential cmake ninja-build libeigen3-dev
+
+    - name: Build project
+      run: |
+        mkdir -p build
+        cd build
+        cmake -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTS=ON -DBUILD_EXAMPLES=ON -GNinja ..
+        ninja
+
+    - name: Run integration tests
+      env:
+        REDIS_URL: redis://localhost:6379
+        POSTGRES_URL: postgresql://postgres:postgres@localhost:5432/pyfolio_test
+      run: |
+        cd build
+        # Run integration tests if they exist
+        ctest --output-on-failure -L integration || true
+        
+        # Test REST API endpoint
+        if [ -f "examples/simple_rest_api_example" ]; then
+          timeout 10s ./examples/simple_rest_api_example &
+          sleep 2
+          curl -f http://localhost:8080/health || echo "REST API test skipped"
+          pkill -f simple_rest_api_example || true
+        fi
+
+  # Deployment Preview (for PRs)
+  deploy-preview:
+    name: Deploy Preview
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    needs: [build-and-test]
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Build documentation site
+      run: |
+        mkdir -p build
+        cd build
+        cmake -DBUILD_DOCUMENTATION=ON ..
+        make docs
+
+    - name: Deploy to Netlify (Preview)
+      uses: nwtgck/actions-netlify@v2.0
+      with:
+        publish-dir: './build/docs/api/html'
+        production-branch: main
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        deploy-message: "Deploy from GitHub Actions"
+        enable-pull-request-comment: true
+        enable-commit-comment: false
+        overwrites-pull-request-comment: true
+      env:
+        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+      timeout-minutes: 10

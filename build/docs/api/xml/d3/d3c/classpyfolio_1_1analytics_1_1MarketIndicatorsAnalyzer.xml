@@ -1,0 +1,291 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="d3/d3c/classpyfolio_1_1analytics_1_1MarketIndicatorsAnalyzer" kind="class" language="C++" prot="public">
+    <compoundname>pyfolio::analytics::MarketIndicatorsAnalyzer</compoundname>
+    <includes refid="d4/d7b/market__indicators_8h" local="no">market_indicators.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d3/d3c/classpyfolio_1_1analytics_1_1MarketIndicatorsAnalyzer_1ae53baae6a9a58aa8de48d7ccc305aace" prot="private" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="d2/d10/namespacepyfolio_1_1analytics_1a51254d1fe289c5c99cc418aa26e0d5d2" kindref="member">IndicatorType</ref>, std::vector&lt; double &gt; &gt;</type>
+        <definition>std::map&lt;IndicatorType, std::vector&lt;double&gt; &gt; pyfolio::analytics::MarketIndicatorsAnalyzer::historical_data_</definition>
+        <argsstring></argsstring>
+        <name>historical_data_</name>
+        <qualifiedname>pyfolio::analytics::MarketIndicatorsAnalyzer::historical_data_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" line="141" column="14" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d3c/classpyfolio_1_1analytics_1_1MarketIndicatorsAnalyzer_1af82076d2f5c99a5521fe978cb8721076" prot="private" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="d2/d10/namespacepyfolio_1_1analytics_1a51254d1fe289c5c99cc418aa26e0d5d2" kindref="member">IndicatorType</ref>, std::pair&lt; double, double &gt; &gt;</type>
+        <definition>std::map&lt;IndicatorType, std::pair&lt;double, double&gt; &gt; pyfolio::analytics::MarketIndicatorsAnalyzer::percentile_bounds_</definition>
+        <argsstring></argsstring>
+        <name>percentile_bounds_</name>
+        <qualifiedname>pyfolio::analytics::MarketIndicatorsAnalyzer::percentile_bounds_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" line="142" column="14" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d3/d3c/classpyfolio_1_1analytics_1_1MarketIndicatorsAnalyzer_1a9f785143f2c1c52c746ed3e8b4214d59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>pyfolio::analytics::MarketIndicatorsAnalyzer::MarketIndicatorsAnalyzer</definition>
+        <argsstring>()=default</argsstring>
+        <name>MarketIndicatorsAnalyzer</name>
+        <qualifiedname>pyfolio::analytics::MarketIndicatorsAnalyzer::MarketIndicatorsAnalyzer</qualifiedname>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" line="148" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d3c/classpyfolio_1_1analytics_1_1MarketIndicatorsAnalyzer_1ae004675f51aba00cec17917cb7386fb1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void pyfolio::analytics::MarketIndicatorsAnalyzer::set_historical_data</definition>
+        <argsstring>(IndicatorType type, const std::vector&lt; double &gt; &amp;data)</argsstring>
+        <name>set_historical_data</name>
+        <qualifiedname>pyfolio::analytics::MarketIndicatorsAnalyzer::set_historical_data</qualifiedname>
+        <param>
+          <type><ref refid="d2/d10/namespacepyfolio_1_1analytics_1a51254d1fe289c5c99cc418aa26e0d5d2" kindref="member">IndicatorType</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Set historical data for percentile calculations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" line="153" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" bodystart="153" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d3c/classpyfolio_1_1analytics_1_1MarketIndicatorsAnalyzer_1a360e26609fdcd35ddfb586b19864b435" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; double &gt; &gt;</type>
+        <definition>Result&lt; TimeSeries&lt; double &gt; &gt; pyfolio::analytics::MarketIndicatorsAnalyzer::calculate_vix_regime</definition>
+        <argsstring>(const TimeSeries&lt; double &gt; &amp;vix_data) const</argsstring>
+        <name>calculate_vix_regime</name>
+        <qualifiedname>pyfolio::analytics::MarketIndicatorsAnalyzer::calculate_vix_regime</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; double &gt; &amp;</type>
+          <declname>vix_data</declname>
+        </param>
+        <briefdescription>
+<para>Calculate VIX regime indicator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" line="161" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" bodystart="161" bodyend="196"/>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1a7401475da2acefda00385214b27e7c59" compoundref="d8/d51/time__series_8h" startline="103" endline="103">pyfolio::TimeSeries&lt; T &gt;::empty</references>
+        <references refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9a9e32e294e8358345f2b9b52b7f8b41fa" compoundref="d3/d11/error__handling_8h" startline="18">pyfolio::InsufficientData</references>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1a82aad601509b554d6968521b8461f50e" compoundref="d8/d51/time__series_8h" startline="102" endline="102">pyfolio::TimeSeries&lt; T &gt;::size</references>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1a0374bbc62bd808749ac476b3af4b0ead" compoundref="d8/d51/time__series_8h" startline="124" endline="124">pyfolio::TimeSeries&lt; T &gt;::timestamps</references>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1ab0b20c4945cdde977885888f384256c3" compoundref="d8/d51/time__series_8h" startline="125" endline="125">pyfolio::TimeSeries&lt; T &gt;::values</references>
+      </memberdef>
+      <memberdef kind="function" id="d3/d3c/classpyfolio_1_1analytics_1_1MarketIndicatorsAnalyzer_1a53249535e8c8f38e79c77105fb7e5728" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; double &gt; &gt;</type>
+        <definition>Result&lt; TimeSeries&lt; double &gt; &gt; pyfolio::analytics::MarketIndicatorsAnalyzer::calculate_yield_curve_slope</definition>
+        <argsstring>(const TimeSeries&lt; double &gt; &amp;slope_data) const</argsstring>
+        <name>calculate_yield_curve_slope</name>
+        <qualifiedname>pyfolio::analytics::MarketIndicatorsAnalyzer::calculate_yield_curve_slope</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; double &gt; &amp;</type>
+          <declname>slope_data</declname>
+        </param>
+        <briefdescription>
+<para>Calculate yield curve slope regime indicator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" line="201" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" bodystart="201" bodyend="239"/>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1a7401475da2acefda00385214b27e7c59" compoundref="d8/d51/time__series_8h" startline="103" endline="103">pyfolio::TimeSeries&lt; T &gt;::empty</references>
+        <references refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9a9e32e294e8358345f2b9b52b7f8b41fa" compoundref="d3/d11/error__handling_8h" startline="18">pyfolio::InsufficientData</references>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1a82aad601509b554d6968521b8461f50e" compoundref="d8/d51/time__series_8h" startline="102" endline="102">pyfolio::TimeSeries&lt; T &gt;::size</references>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1a0374bbc62bd808749ac476b3af4b0ead" compoundref="d8/d51/time__series_8h" startline="124" endline="124">pyfolio::TimeSeries&lt; T &gt;::timestamps</references>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1ab0b20c4945cdde977885888f384256c3" compoundref="d8/d51/time__series_8h" startline="125" endline="125">pyfolio::TimeSeries&lt; T &gt;::values</references>
+      </memberdef>
+      <memberdef kind="function" id="d3/d3c/classpyfolio_1_1analytics_1_1MarketIndicatorsAnalyzer_1a48fd089e90d09096a868303d8223348d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; double &gt; &gt;</type>
+        <definition>Result&lt; TimeSeries&lt; double &gt; &gt; pyfolio::analytics::MarketIndicatorsAnalyzer::calculate_credit_spreads</definition>
+        <argsstring>(const TimeSeries&lt; double &gt; &amp;spread_data) const</argsstring>
+        <name>calculate_credit_spreads</name>
+        <qualifiedname>pyfolio::analytics::MarketIndicatorsAnalyzer::calculate_credit_spreads</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; double &gt; &amp;</type>
+          <declname>spread_data</declname>
+        </param>
+        <briefdescription>
+<para>Calculate credit spreads regime indicator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" line="244" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" bodystart="244" bodyend="286"/>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1a7401475da2acefda00385214b27e7c59" compoundref="d8/d51/time__series_8h" startline="103" endline="103">pyfolio::TimeSeries&lt; T &gt;::empty</references>
+        <references refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9a9e32e294e8358345f2b9b52b7f8b41fa" compoundref="d3/d11/error__handling_8h" startline="18">pyfolio::InsufficientData</references>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1a0374bbc62bd808749ac476b3af4b0ead" compoundref="d8/d51/time__series_8h" startline="124" endline="124">pyfolio::TimeSeries&lt; T &gt;::timestamps</references>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1ab0b20c4945cdde977885888f384256c3" compoundref="d8/d51/time__series_8h" startline="125" endline="125">pyfolio::TimeSeries&lt; T &gt;::values</references>
+      </memberdef>
+      <memberdef kind="function" id="d3/d3c/classpyfolio_1_1analytics_1_1MarketIndicatorsAnalyzer_1aced12b9d93e86d925c9259daeb0d65fc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="df/dcf/structpyfolio_1_1analytics_1_1IndicatorValue" kindref="compound">IndicatorValue</ref> &gt; &gt;</type>
+        <definition>Result&lt; TimeSeries&lt; IndicatorValue &gt; &gt; pyfolio::analytics::MarketIndicatorsAnalyzer::analyze_regime_indicators</definition>
+        <argsstring>(const MarketIndicatorSeries &amp;indicators) const</argsstring>
+        <name>analyze_regime_indicators</name>
+        <qualifiedname>pyfolio::analytics::MarketIndicatorsAnalyzer::analyze_regime_indicators</qualifiedname>
+        <param>
+          <type>const <ref refid="d2/d10/namespacepyfolio_1_1analytics_1a08341e7b284ebb74da19938348b86a28" kindref="member">MarketIndicatorSeries</ref> &amp;</type>
+          <declname>indicators</declname>
+        </param>
+        <briefdescription>
+<para>Analyze multiple indicators for regime classification. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" line="291" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" bodystart="291" bodyend="359"/>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1a7401475da2acefda00385214b27e7c59" compoundref="d8/d51/time__series_8h" startline="103" endline="103">pyfolio::TimeSeries&lt; T &gt;::empty</references>
+        <references refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9a9e32e294e8358345f2b9b52b7f8b41fa" compoundref="d3/d11/error__handling_8h" startline="18">pyfolio::InsufficientData</references>
+        <references refid="df/dcf/structpyfolio_1_1analytics_1_1IndicatorValue_1a2470207f73b77442caab50b2bc6a217e" compoundref="d4/d7b/market__indicators_8h" startline="35">pyfolio::analytics::IndicatorValue::percentile</references>
+        <references refid="df/dcf/structpyfolio_1_1analytics_1_1IndicatorValue_1ab6c1d94ffc616abbe6614a2765c7b120" compoundref="d4/d7b/market__indicators_8h" startline="36">pyfolio::analytics::IndicatorValue::regime</references>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1a82aad601509b554d6968521b8461f50e" compoundref="d8/d51/time__series_8h" startline="102" endline="102">pyfolio::TimeSeries&lt; T &gt;::size</references>
+        <references refid="df/dcf/structpyfolio_1_1analytics_1_1IndicatorValue_1ab4bf3bdfae41bcfbc0112511b12d7e65" compoundref="d4/d7b/market__indicators_8h" startline="33">pyfolio::analytics::IndicatorValue::timestamp</references>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1a0374bbc62bd808749ac476b3af4b0ead" compoundref="d8/d51/time__series_8h" startline="124" endline="124">pyfolio::TimeSeries&lt; T &gt;::timestamps</references>
+        <references refid="df/dcf/structpyfolio_1_1analytics_1_1IndicatorValue_1a33cd9e8f14762fb44a7673af82a47113" compoundref="d4/d7b/market__indicators_8h" startline="34">pyfolio::analytics::IndicatorValue::type</references>
+        <references refid="df/dcf/structpyfolio_1_1analytics_1_1IndicatorValue_1a14deb59b91ecf924c081974fdcfdd6e2" compoundref="d4/d7b/market__indicators_8h" startline="32">pyfolio::analytics::IndicatorValue::value</references>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1ab0b20c4945cdde977885888f384256c3" compoundref="d8/d51/time__series_8h" startline="125" endline="125">pyfolio::TimeSeries&lt; T &gt;::values</references>
+        <references refid="d2/d10/namespacepyfolio_1_1analytics_1a51254d1fe289c5c99cc418aa26e0d5d2af96d73e8fd3a87ab4e2fea235d3d79b0" compoundref="d4/d7b/market__indicators_8h" startline="18">pyfolio::analytics::VIX</references>
+      </memberdef>
+      <memberdef kind="function" id="d3/d3c/classpyfolio_1_1analytics_1_1MarketIndicatorsAnalyzer_1acaab80ec9422b4295fa59061cfba1f9e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; std::map&lt; std::pair&lt; <ref refid="d2/d10/namespacepyfolio_1_1analytics_1a51254d1fe289c5c99cc418aa26e0d5d2" kindref="member">IndicatorType</ref>, <ref refid="d2/d10/namespacepyfolio_1_1analytics_1a51254d1fe289c5c99cc418aa26e0d5d2" kindref="member">IndicatorType</ref> &gt;, double &gt; &gt;</type>
+        <definition>Result&lt; std::map&lt; std::pair&lt; IndicatorType, IndicatorType &gt;, double &gt; &gt; pyfolio::analytics::MarketIndicatorsAnalyzer::calculate_indicator_correlations</definition>
+        <argsstring>(const MarketIndicatorSeries &amp;indicators) const</argsstring>
+        <name>calculate_indicator_correlations</name>
+        <qualifiedname>pyfolio::analytics::MarketIndicatorsAnalyzer::calculate_indicator_correlations</qualifiedname>
+        <param>
+          <type>const <ref refid="d2/d10/namespacepyfolio_1_1analytics_1a08341e7b284ebb74da19938348b86a28" kindref="member">MarketIndicatorSeries</ref> &amp;</type>
+          <declname>indicators</declname>
+        </param>
+        <briefdescription>
+<para>Calculate indicator correlation matrix. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" line="364" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" bodystart="364" bodyend="408"/>
+        <references refid="d6/ddc/namespacepyfolio_1_1stats_1ae62df134ebe0d79d73c16894c3dc364d" compoundref="d3/dbe/math_2statistics_8h" startline="236" endline="278">pyfolio::stats::correlation</references>
+        <references refid="d2/d10/namespacepyfolio_1_1analytics_1a51254d1fe289c5c99cc418aa26e0d5d2a903f63be23b981f3d5c89a42ebc86cc2" compoundref="d4/d7b/market__indicators_8h" startline="20">pyfolio::analytics::CreditSpread</references>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1a7401475da2acefda00385214b27e7c59" compoundref="d8/d51/time__series_8h" startline="103" endline="103">pyfolio::TimeSeries&lt; T &gt;::empty</references>
+        <references refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9a9e32e294e8358345f2b9b52b7f8b41fa" compoundref="d3/d11/error__handling_8h" startline="18">pyfolio::InsufficientData</references>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1ab0b20c4945cdde977885888f384256c3" compoundref="d8/d51/time__series_8h" startline="125" endline="125">pyfolio::TimeSeries&lt; T &gt;::values</references>
+        <references refid="d2/d10/namespacepyfolio_1_1analytics_1a51254d1fe289c5c99cc418aa26e0d5d2af96d73e8fd3a87ab4e2fea235d3d79b0" compoundref="d4/d7b/market__indicators_8h" startline="18">pyfolio::analytics::VIX</references>
+      </memberdef>
+      <memberdef kind="function" id="d3/d3c/classpyfolio_1_1analytics_1_1MarketIndicatorsAnalyzer_1a4901a40e67d8b042f343095819150e40" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; std::pair&lt; double, std::string &gt; &gt;</type>
+        <definition>Result&lt; std::pair&lt; double, std::string &gt; &gt; pyfolio::analytics::MarketIndicatorsAnalyzer::get_current_stress_level</definition>
+        <argsstring>(const MarketIndicators &amp;current_indicators) const</argsstring>
+        <name>get_current_stress_level</name>
+        <qualifiedname>pyfolio::analytics::MarketIndicatorsAnalyzer::get_current_stress_level</qualifiedname>
+        <param>
+          <type>const <ref refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators" kindref="compound">MarketIndicators</ref> &amp;</type>
+          <declname>current_indicators</declname>
+        </param>
+        <briefdescription>
+<para>Get current market stress level. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" line="413" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" bodystart="413" bodyend="464"/>
+        <references refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a063db98c2729ff651b0b25063152549e" compoundref="d4/d7b/market__indicators_8h" startline="69">pyfolio::analytics::MarketIndicators::credit_spreads</references>
+        <references refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a2a9400a6dbb4863539776335a1338e13" compoundref="d4/d7b/market__indicators_8h" startline="84" endline="84">pyfolio::analytics::MarketIndicators::empty</references>
+        <references refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9a9e32e294e8358345f2b9b52b7f8b41fa" compoundref="d3/d11/error__handling_8h" startline="18">pyfolio::InsufficientData</references>
+        <references refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a93a3e415aebbd0725c082e4133bdd2be" compoundref="d4/d7b/market__indicators_8h" startline="68">pyfolio::analytics::MarketIndicators::term_spreads</references>
+        <references refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a81e6347dc2afa96074c9ab46c8e0e669" compoundref="d4/d7b/market__indicators_8h" startline="67">pyfolio::analytics::MarketIndicators::vix_levels</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="d3/d3c/classpyfolio_1_1analytics_1_1MarketIndicatorsAnalyzer_1a017079d84faed9b9eb1e2893900be5b3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void pyfolio::analytics::MarketIndicatorsAnalyzer::calculate_percentile_bounds</definition>
+        <argsstring>(IndicatorType type)</argsstring>
+        <name>calculate_percentile_bounds</name>
+        <qualifiedname>pyfolio::analytics::MarketIndicatorsAnalyzer::calculate_percentile_bounds</qualifiedname>
+        <param>
+          <type><ref refid="d2/d10/namespacepyfolio_1_1analytics_1a51254d1fe289c5c99cc418aa26e0d5d2" kindref="member">IndicatorType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Calculate percentile bounds for an indicator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" line="470" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" bodystart="470" bodyend="484"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d3c/classpyfolio_1_1analytics_1_1MarketIndicatorsAnalyzer_1a49dfe477880a827942c032610def5b3d" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double pyfolio::analytics::MarketIndicatorsAnalyzer::calculate_percentile</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;sorted_data, double value) const</argsstring>
+        <name>calculate_percentile</name>
+        <qualifiedname>pyfolio::analytics::MarketIndicatorsAnalyzer::calculate_percentile</qualifiedname>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>sorted_data</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Calculate percentile of value in dataset. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" line="489" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" bodystart="489" bodyend="497"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Market indicators analyzer. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" line="139" column="1" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" bodystart="139" bodyend="498"/>
+    <listofallmembers>
+      <member refid="d3/d3c/classpyfolio_1_1analytics_1_1MarketIndicatorsAnalyzer_1aced12b9d93e86d925c9259daeb0d65fc" prot="public" virt="non-virtual"><scope>pyfolio::analytics::MarketIndicatorsAnalyzer</scope><name>analyze_regime_indicators</name></member>
+      <member refid="d3/d3c/classpyfolio_1_1analytics_1_1MarketIndicatorsAnalyzer_1a48fd089e90d09096a868303d8223348d" prot="public" virt="non-virtual"><scope>pyfolio::analytics::MarketIndicatorsAnalyzer</scope><name>calculate_credit_spreads</name></member>
+      <member refid="d3/d3c/classpyfolio_1_1analytics_1_1MarketIndicatorsAnalyzer_1acaab80ec9422b4295fa59061cfba1f9e" prot="public" virt="non-virtual"><scope>pyfolio::analytics::MarketIndicatorsAnalyzer</scope><name>calculate_indicator_correlations</name></member>
+      <member refid="d3/d3c/classpyfolio_1_1analytics_1_1MarketIndicatorsAnalyzer_1a49dfe477880a827942c032610def5b3d" prot="private" virt="non-virtual"><scope>pyfolio::analytics::MarketIndicatorsAnalyzer</scope><name>calculate_percentile</name></member>
+      <member refid="d3/d3c/classpyfolio_1_1analytics_1_1MarketIndicatorsAnalyzer_1a017079d84faed9b9eb1e2893900be5b3" prot="private" virt="non-virtual"><scope>pyfolio::analytics::MarketIndicatorsAnalyzer</scope><name>calculate_percentile_bounds</name></member>
+      <member refid="d3/d3c/classpyfolio_1_1analytics_1_1MarketIndicatorsAnalyzer_1a360e26609fdcd35ddfb586b19864b435" prot="public" virt="non-virtual"><scope>pyfolio::analytics::MarketIndicatorsAnalyzer</scope><name>calculate_vix_regime</name></member>
+      <member refid="d3/d3c/classpyfolio_1_1analytics_1_1MarketIndicatorsAnalyzer_1a53249535e8c8f38e79c77105fb7e5728" prot="public" virt="non-virtual"><scope>pyfolio::analytics::MarketIndicatorsAnalyzer</scope><name>calculate_yield_curve_slope</name></member>
+      <member refid="d3/d3c/classpyfolio_1_1analytics_1_1MarketIndicatorsAnalyzer_1a4901a40e67d8b042f343095819150e40" prot="public" virt="non-virtual"><scope>pyfolio::analytics::MarketIndicatorsAnalyzer</scope><name>get_current_stress_level</name></member>
+      <member refid="d3/d3c/classpyfolio_1_1analytics_1_1MarketIndicatorsAnalyzer_1ae53baae6a9a58aa8de48d7ccc305aace" prot="private" virt="non-virtual"><scope>pyfolio::analytics::MarketIndicatorsAnalyzer</scope><name>historical_data_</name></member>
+      <member refid="d3/d3c/classpyfolio_1_1analytics_1_1MarketIndicatorsAnalyzer_1a9f785143f2c1c52c746ed3e8b4214d59" prot="public" virt="non-virtual"><scope>pyfolio::analytics::MarketIndicatorsAnalyzer</scope><name>MarketIndicatorsAnalyzer</name></member>
+      <member refid="d3/d3c/classpyfolio_1_1analytics_1_1MarketIndicatorsAnalyzer_1af82076d2f5c99a5521fe978cb8721076" prot="private" virt="non-virtual"><scope>pyfolio::analytics::MarketIndicatorsAnalyzer</scope><name>percentile_bounds_</name></member>
+      <member refid="d3/d3c/classpyfolio_1_1analytics_1_1MarketIndicatorsAnalyzer_1ae004675f51aba00cec17917cb7386fb1" prot="public" virt="non-virtual"><scope>pyfolio::analytics::MarketIndicatorsAnalyzer</scope><name>set_historical_data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

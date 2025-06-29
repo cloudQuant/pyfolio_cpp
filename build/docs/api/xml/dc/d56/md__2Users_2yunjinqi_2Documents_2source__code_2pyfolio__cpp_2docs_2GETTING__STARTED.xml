@@ -1,0 +1,340 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dc/d56/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2GETTING__STARTED" kind="page">
+    <compoundname>md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2GETTING__STARTED</compoundname>
+    <title>Getting Started with Pyfolio C++</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><anchor id="dc/d56/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2GETTING__STARTED_1autotoc_md39"/></para>
+<para>This guide will help you get up and running with Pyfolio C++, a high-performance financial portfolio analysis library.</para>
+<sect1 id="dc/d56/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2GETTING__STARTED_1autotoc_md40">
+<title>Table of Contents</title><para><orderedlist>
+<listitem><para>Installation</para>
+</listitem><listitem><para>Basic Usage</para>
+</listitem><listitem><para>Core Concepts</para>
+</listitem><listitem><para>Performance Tips</para>
+</listitem><listitem><para>Common Patterns</para>
+</listitem><listitem><para>Troubleshooting</para>
+</listitem></orderedlist>
+</para>
+</sect1>
+<sect1 id="dc/d56/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2GETTING__STARTED_1autotoc_md41">
+<title>Installation</title><sect2 id="dc/d56/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2GETTING__STARTED_1autotoc_md42">
+<title>Prerequisites</title><para><itemizedlist>
+<listitem><para><bold>C++20 Compiler</bold>: GCC 11+, Clang 13+, or MSVC 2022+</para>
+</listitem><listitem><para><bold>CMake</bold>: Version 3.25 or newer</para>
+</listitem><listitem><para><bold>Dependencies</bold>: Automatically fetched via CMake</para>
+</listitem></itemizedlist>
+</para>
+</sect2>
+<sect2 id="dc/d56/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2GETTING__STARTED_1autotoc_md43">
+<title>Quick Build</title><para><programlisting filename=".bash"><codeline><highlight class="normal">git<sp/>clone<sp/>https://github.com/your-org/pyfolio_cpp.git</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>pyfolio_cpp</highlight></codeline>
+<codeline><highlight class="normal">mkdir<sp/>build<sp/>&amp;&amp;<sp/>cd<sp/>build</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>-DCMAKE_BUILD_TYPE=Release<sp/>..</highlight></codeline>
+<codeline><highlight class="normal">make<sp/>-j$(nproc)</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="dc/d56/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2GETTING__STARTED_1autotoc_md44">
+<title>Advanced Build Options</title><para><programlisting filename=".bash"><codeline><highlight class="normal">#<sp/>Debug<sp/>build<sp/>with<sp/>coverage</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>-DCMAKE_BUILD_TYPE=Debug<sp/>-DENABLE_COVERAGE=ON<sp/>..</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Release<sp/>with<sp/>documentation</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>-DCMAKE_BUILD_TYPE=Release<sp/>-DBUILD_DOCUMENTATION=ON<sp/>..</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>With<sp/>static<sp/>analysis</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>-DENABLE_CPPCHECK=ON<sp/>-DENABLE_CLANG_TIDY=ON<sp/>..</highlight></codeline>
+</programlisting></para>
+</sect2>
+</sect1>
+<sect1 id="dc/d56/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2GETTING__STARTED_1autotoc_md45">
+<title>Basic Usage</title><sect2 id="dc/d56/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2GETTING__STARTED_1autotoc_md46">
+<title>Your First Analysis</title><para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="d3/d30/pyfolio_8h" kindref="compound">pyfolio/pyfolio.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d8/d00/attribution__example_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kindref="member">main</ref>()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="d7/df8/namespacepyfolio" kindref="compound">pyfolio</ref>;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>sample<sp/>return<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;DateTime&gt;<sp/>dates<sp/>=<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1adfc972d8ea84c03f9a6d9eb9e661b6cd" kindref="member">DateTime::parse</ref>(</highlight><highlight class="stringliteral">&quot;2024-01-01&quot;</highlight><highlight class="normal">).value(),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1adfc972d8ea84c03f9a6d9eb9e661b6cd" kindref="member">DateTime::parse</ref>(</highlight><highlight class="stringliteral">&quot;2024-01-02&quot;</highlight><highlight class="normal">).value(),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1adfc972d8ea84c03f9a6d9eb9e661b6cd" kindref="member">DateTime::parse</ref>(</highlight><highlight class="stringliteral">&quot;2024-01-03&quot;</highlight><highlight class="normal">).value(),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1adfc972d8ea84c03f9a6d9eb9e661b6cd" kindref="member">DateTime::parse</ref>(</highlight><highlight class="stringliteral">&quot;2024-01-04&quot;</highlight><highlight class="normal">).value(),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1adfc972d8ea84c03f9a6d9eb9e661b6cd" kindref="member">DateTime::parse</ref>(</highlight><highlight class="stringliteral">&quot;2024-01-05&quot;</highlight><highlight class="normal">).value()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Return&gt;<sp/>returns<sp/>=<sp/>{0.01,<sp/>-0.02,<sp/>0.015,<sp/>-0.005,<sp/>0.008};</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>time<sp/>series</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;Return&gt;</ref><sp/>portfolio_returns(dates,<sp/>returns);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Calculate<sp/>basic<sp/>metrics</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>sharpe<sp/>=<sp/><ref refid="d8/dd9/namespacepyfolio_1_1performance_1aa8dd6ffc556adc3f76dc32645ec6b57c" kindref="member">performance::sharpe_ratio</ref>(portfolio_returns);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>max_dd<sp/>=<sp/><ref refid="d8/dd9/namespacepyfolio_1_1performance_1a919af12e2600a7e77163a20bf6f98609" kindref="member">performance::max_drawdown</ref>(portfolio_returns);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>volatility<sp/>=<sp/>performance::volatility(portfolio_returns);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sharpe.is_ok()<sp/>&amp;&amp;<sp/>max_dd.is_ok()<sp/>&amp;&amp;<sp/>volatility.is_ok())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Sharpe<sp/>Ratio:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>sharpe.value()<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Max<sp/>Drawdown:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>max_dd.value()<sp/>*<sp/>100<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;%&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Volatility:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>volatility.value()<sp/>*<sp/>100<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;%&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="dc/d56/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2GETTING__STARTED_1autotoc_md47">
+<title>Loading Data from Files</title><para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="d2/db9/data__loader_8h" kindref="compound">pyfolio/io/data_loader.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Load<sp/>returns<sp/>from<sp/>CSV</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>returns_result<sp/>=<sp/>pyfolio::io::load_returns_csv(</highlight><highlight class="stringliteral">&quot;portfolio_returns.csv&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(returns_result.is_ok())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>returns<sp/>=<sp/>returns_result.value();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Calculate<sp/>comprehensive<sp/>metrics</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>metrics<sp/>=<sp/><ref refid="d2/d10/namespacepyfolio_1_1analytics_1a0562de05a212709b5e0fe358e30c90d0" kindref="member">pyfolio::analytics::calculate_performance_metrics</ref>(returns);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(metrics.is_ok())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>m<sp/>=<sp/>metrics.value();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Annual<sp/>Return:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>m.annual_return<sp/>*<sp/>100<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;%&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Sharpe<sp/>Ratio:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>m.sharpe_ratio<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+</sect2>
+</sect1>
+<sect1 id="dc/d56/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2GETTING__STARTED_1autotoc_md48">
+<title>Core Concepts</title><sect2 id="dc/d56/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2GETTING__STARTED_1autotoc_md49">
+<title>1. Result&lt;T&gt; Error Handling</title><para>Pyfolio C++ uses the <computeroutput>Result&lt;T&gt;</computeroutput> monad for robust error handling:</para>
+<para><programlisting filename=".cpp"><codeline><highlight class="comment">//<sp/>Always<sp/>check<sp/>for<sp/>errors</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>result<sp/>=<sp/>calculate_something();</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(result.is_error())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>std::cerr<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Error:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>result.error().message<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Use<sp/>the<sp/>value<sp/>safely</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>value<sp/>=<sp/>result.value();</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="dc/d56/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2GETTING__STARTED_1autotoc_md50">
+<title>2. TimeSeries Container</title><para>The <computeroutput>TimeSeries&lt;T&gt;</computeroutput> class is the foundation for all time-based analysis:</para>
+<para><programlisting filename=".cpp"><codeline><highlight class="normal"><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;Return&gt;</ref><sp/>returns;</highlight></codeline>
+<codeline><highlight class="normal">returns.<ref refid="d7/ddc/classpyfolio_1_1TimeSeries_1a0299648a8469a9a82dfa15f9f035a704" kindref="member">reserve</ref>(10000);<sp/><sp/></highlight><highlight class="comment">//<sp/>Pre-allocate<sp/>for<sp/>performance</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Add<sp/>data<sp/>efficiently</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>[date,<sp/>ret]<sp/>:<sp/>data)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>returns.<ref refid="d7/ddc/classpyfolio_1_1TimeSeries_1a165f6a4758d61017bdcfb78f2457ba24" kindref="member">push_back</ref>(date,<sp/>ret);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Automatic<sp/>sorting<sp/>and<sp/>validation</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">returns.<ref refid="d7/ddc/classpyfolio_1_1TimeSeries_1a6aef72caa37febb0f72b802ef26d15dd" kindref="member">sort_by_time</ref>();<sp/><sp/></highlight><highlight class="comment">//<sp/>O(n<sp/>log<sp/>n)<sp/>worst<sp/>case,<sp/>O(n)<sp/>if<sp/>already<sp/>sorted</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="dc/d56/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2GETTING__STARTED_1autotoc_md51">
+<title>3. SIMD Optimization</title><para>Operations automatically use SIMD when available:</para>
+<para><programlisting filename=".cpp"><codeline><highlight class="comment">//<sp/>This<sp/>automatically<sp/>uses<sp/>AVX2/SSE2<sp/>if<sp/>available</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="d1/d32/namespacepyfolio_1_1analytics_1_1cached_1adf282fb835cd51a3c8e1258b2137f0bf" kindref="member">correlation</ref><sp/>=<sp/>series1.correlation(series2);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="d0/d60/namespacepyfolio_1_1simd_1a148485211f2ca558de4424412a78f0a0" kindref="member">dot_product</ref><sp/>=<sp/>series1.dot(series2);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Explicit<sp/>SIMD<sp/>control</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>PYFOLIO_HAS_AVX2</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>AVX2-specific<sp/>optimizations<sp/>available</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="dc/d56/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2GETTING__STARTED_1autotoc_md52">
+<title>4. Parallel Processing</title><para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;pyfolio/core/parallel_algorithms.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Parallel<sp/>metric<sp/>calculation</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>metrics<sp/>=<sp/>pyfolio::parallel::calculate_metrics(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>large_portfolio,<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>std::thread::hardware_concurrency()</highlight></codeline>
+<codeline><highlight class="normal">);</highlight></codeline>
+</programlisting></para>
+</sect2>
+</sect1>
+<sect1 id="dc/d56/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2GETTING__STARTED_1autotoc_md53">
+<title>Performance Tips</title><sect2 id="dc/d56/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2GETTING__STARTED_1autotoc_md54">
+<title>1. Memory Management</title><para><programlisting filename=".cpp"><codeline><highlight class="comment">//<sp/>Pre-allocate<sp/>containers</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;Return&gt;</ref><sp/>returns;</highlight></codeline>
+<codeline><highlight class="normal">returns.<ref refid="d7/ddc/classpyfolio_1_1TimeSeries_1a0299648a8469a9a82dfa15f9f035a704" kindref="member">reserve</ref>(expected_size);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Use<sp/>move<sp/>semantics</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>processed<sp/>=<sp/>std::move(raw_data).process_returns();</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Memory<sp/>pools<sp/>for<sp/>high-frequency<sp/>trading</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">pyfolio::PoolAllocator&lt;Transaction&gt;<sp/>allocator(1000000);</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="dc/d56/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2GETTING__STARTED_1autotoc_md55">
+<title>2. Efficient Data Access</title><para><programlisting filename=".cpp"><codeline><highlight class="comment">//<sp/>Use<sp/>spans<sp/>for<sp/>zero-copy<sp/>operations</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">std::span&lt;const<sp/>double&gt;<sp/>data_view<sp/>=<sp/>returns.<ref refid="d7/ddc/classpyfolio_1_1TimeSeries_1ab0b20c4945cdde977885888f384256c3" kindref="member">values</ref>();</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Batch<sp/>operations<sp/>when<sp/>possible</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>[<ref refid="d1/d32/namespacepyfolio_1_1analytics_1_1cached_1af806e5aece2fa569d3cec8ba37a4b31a" kindref="member">mean</ref>,<sp/>std_dev]<sp/>=<sp/>calculate_mean_and_std(returns);</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="dc/d56/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2GETTING__STARTED_1autotoc_md56">
+<title>3. Rolling Calculations</title><para><programlisting filename=".cpp"><codeline><highlight class="comment">//<sp/>Optimized<sp/>O(n)<sp/>rolling<sp/>calculations</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>rolling_sharpe<sp/>=<sp/>returns.<ref refid="d7/ddc/classpyfolio_1_1TimeSeries_1a4d4c9d331becbed701eacccc2b29ae15" kindref="member">rolling</ref>(252,<sp/>[](</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>window)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>calculate_sharpe_ratio(window);</highlight></codeline>
+<codeline><highlight class="normal">});</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Built-in<sp/>optimized<sp/>versions</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="d1/d32/namespacepyfolio_1_1analytics_1_1cached_1a19154f9f47ac8dd299519471406bd12f" kindref="member">rolling_mean</ref><sp/>=<sp/>returns.<ref refid="d7/ddc/classpyfolio_1_1TimeSeries_1a09b5e0db91c49c4ef4b768f34e838a6e" kindref="member">rolling_mean</ref>(30);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="d1/d32/namespacepyfolio_1_1analytics_1_1cached_1ac72f648587fe1171805532226a3cbb5f" kindref="member">rolling_std</ref><sp/>=<sp/>returns.<ref refid="d7/ddc/classpyfolio_1_1TimeSeries_1aa7bb9fb26a605ffa13f550d8597c968d" kindref="member">rolling_std</ref>(30);</highlight></codeline>
+</programlisting></para>
+</sect2>
+</sect1>
+<sect1 id="dc/d56/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2GETTING__STARTED_1autotoc_md57">
+<title>Common Patterns</title><sect2 id="dc/d56/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2GETTING__STARTED_1autotoc_md58">
+<title>1. Comprehensive Analysis</title><para><programlisting filename=".cpp"><codeline><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>analyze_portfolio(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;Return&gt;</ref>&amp;<sp/>returns,<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;Return&gt;</ref>&amp;<sp/>benchmark)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Basic<sp/>metrics</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>metrics<sp/>=<sp/><ref refid="d2/d10/namespacepyfolio_1_1analytics_1a0562de05a212709b5e0fe358e30c90d0" kindref="member">pyfolio::analytics::calculate_performance_metrics</ref>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>returns,<sp/>benchmark,<sp/>0.02,<sp/>252);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(metrics.is_error())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cerr<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Analysis<sp/>failed:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>metrics.error().message<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>m<sp/>=<sp/>metrics.value();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Print<sp/>results</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;===<sp/>Portfolio<sp/>Analysis<sp/>===&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Annual<sp/>Return:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>m.annual_return<sp/>*<sp/>100<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;%&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Volatility:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>m.annual_volatility<sp/>*<sp/>100<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;%&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Sharpe<sp/>Ratio:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>m.sharpe_ratio<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Max<sp/>Drawdown:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>m.max_drawdown<sp/>*<sp/>100<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;%&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Beta:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>m.beta<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Alpha:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>m.alpha<sp/>*<sp/>100<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;%&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="dc/d56/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2GETTING__STARTED_1autotoc_md59">
+<title>2. Risk Analysis</title><para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="df/d46/var_8h" kindref="compound">pyfolio/risk/var.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>risk_analysis(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;Return&gt;</ref>&amp;<sp/>returns)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Value<sp/>at<sp/>Risk</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>var_95<sp/>=<sp/>pyfolio::risk::value_at_risk(returns,<sp/>0.95);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>var_99<sp/>=<sp/>pyfolio::risk::value_at_risk(returns,<sp/>0.99);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Conditional<sp/>VaR</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>cvar_95<sp/>=<sp/><ref refid="d2/da5/namespacepyfolio_1_1risk_1ac091b780b885e60eb245538dd9ec1910" kindref="member">pyfolio::risk::conditional_var</ref>(returns,<sp/>0.95);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;VaR<sp/>(95%):<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>var_95.value()<sp/>*<sp/>100<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;%&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;VaR<sp/>(99%):<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>var_99.value()<sp/>*<sp/>100<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;%&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;CVaR<sp/>(95%):<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>cvar_95.value()<sp/>*<sp/>100<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;%&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="dc/d56/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2GETTING__STARTED_1autotoc_md60">
+<title>3. Performance Attribution</title><para><programlisting filename=".cpp"><codeline><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>attribution_analysis(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;Return&gt;</ref>&amp;<sp/>portfolio,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;Return&gt;</ref>&amp;<sp/>benchmark,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1a8b225a867ab95979be89a7d9e8519eb1" kindref="member">PositionSeries</ref>&amp;<sp/><ref refid="df/d8b/namespacepyfolio_1_1positions" kindref="compound">positions</ref>)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="dc/dc6/namespacepyfolio_1_1attribution" kindref="compound">attribution</ref><sp/>=<sp/>pyfolio::attribution::brinson_attribution(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>portfolio,<sp/>benchmark,<sp/><ref refid="df/d8b/namespacepyfolio_1_1positions" kindref="compound">positions</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="dc/dc6/namespacepyfolio_1_1attribution" kindref="compound">attribution</ref>.is_ok())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>attr<sp/>=<sp/><ref refid="dc/dc6/namespacepyfolio_1_1attribution" kindref="compound">attribution</ref>.value();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Selection<sp/>Effect:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>attr.selection_effect<sp/>*<sp/>100<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;%&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Allocation<sp/>Effect:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>attr.allocation_effect<sp/>*<sp/>100<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;%&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="dc/d56/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2GETTING__STARTED_1autotoc_md61">
+<title>4. Visualization</title><para><programlisting filename=".cpp"><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="d1/dcd/plotly__enhanced_8h" kindref="compound">pyfolio/visualization/plotly_enhanced.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>create_tear_sheet(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;Return&gt;</ref>&amp;<sp/>returns)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pyfolio::visualization::PlotlyEnhanced<sp/>plotter;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>interactive<sp/>charts</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>equity_curve<sp/>=<sp/>plotter.plot_cumulative_returns(returns);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>drawdown_plot<sp/>=<sp/>plotter.plot_drawdown(returns);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>monthly_heatmap<sp/>=<sp/>plotter.plot_monthly_returns_heatmap(returns);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Save<sp/>to<sp/>HTML</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>plotter.save_tear_sheet(</highlight><highlight class="stringliteral">&quot;portfolio_analysis.html&quot;</highlight><highlight class="normal">,<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>equity_curve,<sp/>drawdown_plot,<sp/>monthly_heatmap</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+</sect2>
+</sect1>
+<sect1 id="dc/d56/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2GETTING__STARTED_1autotoc_md62">
+<title>Troubleshooting</title><sect2 id="dc/d56/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2GETTING__STARTED_1autotoc_md63">
+<title>Common Issues</title><para><orderedlist>
+<listitem><para><bold>Compilation Errors</bold> <programlisting filename=".bash"><codeline><highlight class="normal">#<sp/>Ensure<sp/>C++20<sp/>support</highlight></codeline>
+<codeline><highlight class="normal">g++<sp/>--version<sp/><sp/>#<sp/>Should<sp/>be<sp/>11+<sp/>for<sp/>GCC</highlight></codeline>
+<codeline><highlight class="normal">clang++<sp/>--version<sp/><sp/>#<sp/>Should<sp/>be<sp/>13+<sp/>for<sp/>Clang</highlight></codeline>
+</programlisting></para>
+</listitem><listitem><para><bold>Missing Dependencies</bold> <programlisting filename=".bash"><codeline><highlight class="normal">#<sp/>Dependencies<sp/>are<sp/>auto-fetched,<sp/>but<sp/>check<sp/>network<sp/>access</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>--build<sp/>.<sp/>--target<sp/>all<sp/><sp/>#<sp/>Re-run<sp/>if<sp/>network<sp/>issues</highlight></codeline>
+</programlisting></para>
+</listitem><listitem><para><bold>Performance Issues</bold> <programlisting filename=".cpp"><codeline><highlight class="comment">//<sp/>Enable<sp/>compiler<sp/>optimizations</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>-DCMAKE_BUILD_TYPE=Release<sp/>-DCMAKE_CXX_FLAGS=</highlight><highlight class="stringliteral">&quot;-march=native&quot;</highlight><highlight class="normal"><sp/>..</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Check<sp/>SIMD<sp/>availability</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>PYFOLIO_HAS_AVX2</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;AVX2<sp/>available&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+</programlisting></para>
+</listitem><listitem><para><bold>Memory Issues</bold> <programlisting filename=".cpp"><codeline><highlight class="comment">//<sp/>Use<sp/>memory<sp/>profiling</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>-DCMAKE_BUILD_TYPE=Debug<sp/>-DENABLE_SANITIZER=ON<sp/>..</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Or<sp/>use<sp/>memory<sp/>pools</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">pyfolio::PoolAllocator&lt;Position&gt;<sp/>allocator(100000);</highlight></codeline>
+</programlisting></para>
+</listitem></orderedlist>
+</para>
+</sect2>
+<sect2 id="dc/d56/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2GETTING__STARTED_1autotoc_md64">
+<title>Debug Mode</title><para><programlisting filename=".bash"><codeline><highlight class="normal">#<sp/>Build<sp/>with<sp/>debug<sp/>information</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>-DCMAKE_BUILD_TYPE=Debug<sp/>-DENABLE_COVERAGE=ON<sp/>..</highlight></codeline>
+<codeline><highlight class="normal">make</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Run<sp/>with<sp/>detailed<sp/>error<sp/>messages</highlight></codeline>
+<codeline><highlight class="normal">export<sp/>PYFOLIO_DEBUG=1</highlight></codeline>
+<codeline><highlight class="normal">./your_program</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="dc/d56/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2GETTING__STARTED_1autotoc_md65">
+<title>Performance Profiling</title><para><programlisting filename=".bash"><codeline><highlight class="normal">#<sp/>Build<sp/>with<sp/>profiling</highlight></codeline>
+<codeline><highlight class="normal">cmake<sp/>-DCMAKE_BUILD_TYPE=RelWithDebInfo<sp/>..</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Profile<sp/>with<sp/>perf<sp/>(Linux)</highlight></codeline>
+<codeline><highlight class="normal">perf<sp/>record<sp/>-g<sp/>./your_program</highlight></codeline>
+<codeline><highlight class="normal">perf<sp/>report</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Or<sp/>use<sp/>built-in<sp/>benchmarks</highlight></codeline>
+<codeline><highlight class="normal">./tests/performance_benchmarks</highlight></codeline>
+</programlisting></para>
+</sect2>
+</sect1>
+<sect1 id="dc/d56/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2GETTING__STARTED_1autotoc_md66">
+<title>Next Steps</title><para><orderedlist>
+<listitem><para><bold>Explore Examples</bold>: Check the <computeroutput>examples/</computeroutput> directory for more complex use cases</para>
+</listitem><listitem><para><bold>Read API Documentation</bold>: Browse the generated Doxygen docs at <computeroutput>build/docs/api/html/index.html</computeroutput></para>
+</listitem><listitem><para><bold>Performance Tuning</bold>: See the optimization guide in <computeroutput>docs/PERFORMANCE.md</computeroutput></para>
+</listitem><listitem><para><bold>Contributing</bold>: Read <computeroutput>CONTRIBUTING.md</computeroutput> for development guidelines</para>
+</listitem></orderedlist>
+</para>
+</sect1>
+<sect1 id="dc/d56/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2GETTING__STARTED_1autotoc_md67">
+<title>Getting Help</title><para><itemizedlist>
+<listitem><para><bold>Documentation</bold>: Generated API docs in <computeroutput>build/docs/api/html/</computeroutput></para>
+</listitem><listitem><para><bold>Examples</bold>: Complete examples in <computeroutput>examples/</computeroutput> directory</para>
+</listitem><listitem><para><bold>Issues</bold>: Report bugs on GitHub Issues</para>
+</listitem><listitem><para><bold>Discussions</bold>: Join the GitHub Discussions for questions</para>
+</listitem></itemizedlist>
+</para>
+<para>Welcome to high-performance financial analysis with Pyfolio C++! </para>
+</sect1>
+    </detaileddescription>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/docs/GETTING_STARTED.md"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="d4/d65/structpyfolio_1_1performance_1_1DrawdownInfo" kind="struct" language="C++" prot="public">
+    <compoundname>pyfolio::performance::DrawdownInfo</compoundname>
+    <includes refid="d8/de8/drawdown_8h" local="no">drawdown.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d4/d65/structpyfolio_1_1performance_1_1DrawdownInfo_1a4acd89d9458206e5bda7a029df0a502b" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::performance::DrawdownInfo::max_drawdown</definition>
+        <argsstring></argsstring>
+        <name>max_drawdown</name>
+        <qualifiedname>pyfolio::performance::DrawdownInfo::max_drawdown</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/drawdown.h" line="16" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/drawdown.h" bodystart="16" bodyend="-1"/>
+        <referencedby refid="d8/dd9/namespacepyfolio_1_1performance_1ae62f81fa57da6d511eea88d11e4128ae" compoundref="d8/de8/drawdown_8h" startline="205" endline="281">pyfolio::performance::find_drawdown_periods</referencedby>
+        <referencedby refid="d8/dd9/namespacepyfolio_1_1performance_1aff3558ae3dd3ed4381a805f730d47b53" compoundref="d8/de8/drawdown_8h" startline="86" endline="161">pyfolio::performance::max_drawdown_info</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d65/structpyfolio_1_1performance_1_1DrawdownInfo_1abee8991659c8de98cbad0d8ee5059f7f" prot="public" static="no" mutable="no">
+        <type><ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref></type>
+        <definition>DateTime pyfolio::performance::DrawdownInfo::start_date</definition>
+        <argsstring></argsstring>
+        <name>start_date</name>
+        <qualifiedname>pyfolio::performance::DrawdownInfo::start_date</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/drawdown.h" line="17" column="14" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/drawdown.h" bodystart="17" bodyend="-1"/>
+        <referencedby refid="d8/dd9/namespacepyfolio_1_1performance_1ae62f81fa57da6d511eea88d11e4128ae" compoundref="d8/de8/drawdown_8h" startline="205" endline="281">pyfolio::performance::find_drawdown_periods</referencedby>
+        <referencedby refid="d8/dd9/namespacepyfolio_1_1performance_1aff3558ae3dd3ed4381a805f730d47b53" compoundref="d8/de8/drawdown_8h" startline="86" endline="161">pyfolio::performance::max_drawdown_info</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d65/structpyfolio_1_1performance_1_1DrawdownInfo_1a171131dddfae58f164b513435ddf2c26" prot="public" static="no" mutable="no">
+        <type><ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref></type>
+        <definition>DateTime pyfolio::performance::DrawdownInfo::end_date</definition>
+        <argsstring></argsstring>
+        <name>end_date</name>
+        <qualifiedname>pyfolio::performance::DrawdownInfo::end_date</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/drawdown.h" line="18" column="14" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/drawdown.h" bodystart="18" bodyend="-1"/>
+        <referencedby refid="d8/dd9/namespacepyfolio_1_1performance_1ae62f81fa57da6d511eea88d11e4128ae" compoundref="d8/de8/drawdown_8h" startline="205" endline="281">pyfolio::performance::find_drawdown_periods</referencedby>
+        <referencedby refid="d8/dd9/namespacepyfolio_1_1performance_1aff3558ae3dd3ed4381a805f730d47b53" compoundref="d8/de8/drawdown_8h" startline="86" endline="161">pyfolio::performance::max_drawdown_info</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d65/structpyfolio_1_1performance_1_1DrawdownInfo_1a8e8670f62f7852e69238e2e6e3e312dc" prot="public" static="no" mutable="no">
+        <type><ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref></type>
+        <definition>DateTime pyfolio::performance::DrawdownInfo::recovery_date</definition>
+        <argsstring></argsstring>
+        <name>recovery_date</name>
+        <qualifiedname>pyfolio::performance::DrawdownInfo::recovery_date</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/drawdown.h" line="19" column="14" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/drawdown.h" bodystart="19" bodyend="-1"/>
+        <referencedby refid="d8/dd9/namespacepyfolio_1_1performance_1ae62f81fa57da6d511eea88d11e4128ae" compoundref="d8/de8/drawdown_8h" startline="205" endline="281">pyfolio::performance::find_drawdown_periods</referencedby>
+        <referencedby refid="d8/dd9/namespacepyfolio_1_1performance_1aff3558ae3dd3ed4381a805f730d47b53" compoundref="d8/de8/drawdown_8h" startline="86" endline="161">pyfolio::performance::max_drawdown_info</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d65/structpyfolio_1_1performance_1_1DrawdownInfo_1a510999b336c0c1be5780517eb1fc96ca" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int pyfolio::performance::DrawdownInfo::duration_days</definition>
+        <argsstring></argsstring>
+        <name>duration_days</name>
+        <qualifiedname>pyfolio::performance::DrawdownInfo::duration_days</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/drawdown.h" line="20" column="9" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/drawdown.h" bodystart="20" bodyend="-1"/>
+        <referencedby refid="d8/dd9/namespacepyfolio_1_1performance_1ae62f81fa57da6d511eea88d11e4128ae" compoundref="d8/de8/drawdown_8h" startline="205" endline="281">pyfolio::performance::find_drawdown_periods</referencedby>
+        <referencedby refid="d8/dd9/namespacepyfolio_1_1performance_1aff3558ae3dd3ed4381a805f730d47b53" compoundref="d8/de8/drawdown_8h" startline="86" endline="161">pyfolio::performance::max_drawdown_info</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d65/structpyfolio_1_1performance_1_1DrawdownInfo_1a0dff274bb20dfb1c3b4b35dccf2c02bd" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int pyfolio::performance::DrawdownInfo::recovery_days</definition>
+        <argsstring></argsstring>
+        <name>recovery_days</name>
+        <qualifiedname>pyfolio::performance::DrawdownInfo::recovery_days</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/drawdown.h" line="21" column="9" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/drawdown.h" bodystart="21" bodyend="-1"/>
+        <referencedby refid="d8/dd9/namespacepyfolio_1_1performance_1ae62f81fa57da6d511eea88d11e4128ae" compoundref="d8/de8/drawdown_8h" startline="205" endline="281">pyfolio::performance::find_drawdown_periods</referencedby>
+        <referencedby refid="d8/dd9/namespacepyfolio_1_1performance_1aff3558ae3dd3ed4381a805f730d47b53" compoundref="d8/de8/drawdown_8h" startline="86" endline="161">pyfolio::performance::max_drawdown_info</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d65/structpyfolio_1_1performance_1_1DrawdownInfo_1a6da3d2f51f2a7c4a9622944f341f8d7f" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool pyfolio::performance::DrawdownInfo::recovered</definition>
+        <argsstring></argsstring>
+        <name>recovered</name>
+        <qualifiedname>pyfolio::performance::DrawdownInfo::recovered</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/drawdown.h" line="22" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/drawdown.h" bodystart="22" bodyend="-1"/>
+        <referencedby refid="d8/dd9/namespacepyfolio_1_1performance_1ae62f81fa57da6d511eea88d11e4128ae" compoundref="d8/de8/drawdown_8h" startline="205" endline="281">pyfolio::performance::find_drawdown_periods</referencedby>
+        <referencedby refid="d8/dd9/namespacepyfolio_1_1performance_1aff3558ae3dd3ed4381a805f730d47b53" compoundref="d8/de8/drawdown_8h" startline="86" endline="161">pyfolio::performance::max_drawdown_info</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Drawdown analysis result. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>pyfolio::BusinessCalendar</label>
+        <link refid="dc/ddd/classpyfolio_1_1BusinessCalendar"/>
+      </node>
+      <node id="2">
+        <label>pyfolio::DateTime</label>
+        <link refid="d6/d4f/classpyfolio_1_1DateTime"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>default_calendar_</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>pyfolio::performance::DrawdownInfo</label>
+        <link refid="d4/d65/structpyfolio_1_1performance_1_1DrawdownInfo"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>end_date</edgelabel>
+          <edgelabel>recovery_date</edgelabel>
+          <edgelabel>start_date</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/drawdown.h" line="15" column="1" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/drawdown.h" bodystart="15" bodyend="23"/>
+    <listofallmembers>
+      <member refid="d4/d65/structpyfolio_1_1performance_1_1DrawdownInfo_1a510999b336c0c1be5780517eb1fc96ca" prot="public" virt="non-virtual"><scope>pyfolio::performance::DrawdownInfo</scope><name>duration_days</name></member>
+      <member refid="d4/d65/structpyfolio_1_1performance_1_1DrawdownInfo_1a171131dddfae58f164b513435ddf2c26" prot="public" virt="non-virtual"><scope>pyfolio::performance::DrawdownInfo</scope><name>end_date</name></member>
+      <member refid="d4/d65/structpyfolio_1_1performance_1_1DrawdownInfo_1a4acd89d9458206e5bda7a029df0a502b" prot="public" virt="non-virtual"><scope>pyfolio::performance::DrawdownInfo</scope><name>max_drawdown</name></member>
+      <member refid="d4/d65/structpyfolio_1_1performance_1_1DrawdownInfo_1a6da3d2f51f2a7c4a9622944f341f8d7f" prot="public" virt="non-virtual"><scope>pyfolio::performance::DrawdownInfo</scope><name>recovered</name></member>
+      <member refid="d4/d65/structpyfolio_1_1performance_1_1DrawdownInfo_1a8e8670f62f7852e69238e2e6e3e312dc" prot="public" virt="non-virtual"><scope>pyfolio::performance::DrawdownInfo</scope><name>recovery_date</name></member>
+      <member refid="d4/d65/structpyfolio_1_1performance_1_1DrawdownInfo_1a0dff274bb20dfb1c3b4b35dccf2c02bd" prot="public" virt="non-virtual"><scope>pyfolio::performance::DrawdownInfo</scope><name>recovery_days</name></member>
+      <member refid="d4/d65/structpyfolio_1_1performance_1_1DrawdownInfo_1abee8991659c8de98cbad0d8ee5059f7f" prot="public" virt="non-virtual"><scope>pyfolio::performance::DrawdownInfo</scope><name>start_date</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

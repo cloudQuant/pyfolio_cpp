@@ -1,0 +1,256 @@
+# Enhanced CMakeLists.txt for PyFolio_cpp with complete feature set
+cmake_minimum_required(VERSION 3.25)
+project(pyfolio_cpp VERSION 1.1.0 LANGUAGES CXX)
+
+# Set C++20 standard
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
+# Build options
+option(PYFOLIO_BUILD_TESTS "Build tests" ON)
+option(PYFOLIO_BUILD_EXAMPLES "Build examples" ON)
+option(PYFOLIO_ENABLE_MATPLOTLIB "Enable matplotlib-cpp visualization" OFF)
+option(PYFOLIO_ENABLE_EIGEN "Enable Eigen3 for linear algebra" OFF)
+option(PYFOLIO_BUILD_PYTHON_BINDINGS "Build Python bindings" OFF)
+option(PYFOLIO_ENABLE_SIMD "Enable SIMD optimizations" ON)
+
+# Compiler-specific options
+if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU" OR CMAKE_CXX_COMPILER_ID STREQUAL "Clang")
+    add_compile_options(-Wall -Wextra -Wpedantic -O3)
+    if(PYFOLIO_ENABLE_SIMD)
+        add_compile_options(-march=native -mavx2)
+    endif()
+elseif(CMAKE_CXX_COMPILER_ID STREQUAL "MSVC")
+    add_compile_options(/W4 /O2)
+    if(PYFOLIO_ENABLE_SIMD)
+        add_compile_options(/arch:AVX2)
+    endif()
+endif()
+
+# Find required packages
+find_package(Threads REQUIRED)
+
+# Optional packages
+if(PYFOLIO_ENABLE_EIGEN)
+    find_package(Eigen3 QUIET)
+    if(Eigen3_FOUND)
+        add_compile_definitions(PYFOLIO_HAS_EIGEN)
+    endif()
+endif()
+
+if(PYFOLIO_ENABLE_MATPLOTLIB)
+    # Try to find Python and matplotlib
+    find_package(Python3 COMPONENTS Interpreter Development NumPy QUIET)
+    if(Python3_FOUND)
+        add_compile_definitions(PYFOLIO_ENABLE_MATPLOTLIB)
+        # Add matplotlib-cpp include path if available
+        if(EXISTS "${CMAKE_SOURCE_DIR}/third_party/matplotlib-cpp")
+            include_directories("${CMAKE_SOURCE_DIR}/third_party/matplotlib-cpp")
+        endif()
+    endif()
+endif()
+
+# Include directories
+include_directories(${CMAKE_SOURCE_DIR}/include)
+
+# Create main library
+set(PYFOLIO_SOURCES
+    # Core sources
+    src/core/datetime.cpp
+    src/core/time_series.cpp
+    
+    # Analytics sources
+    src/analytics/statistics.cpp
+    src/analytics/performance_metrics.cpp
+    
+    # Transaction sources
+    src/transactions/transaction.cpp
+    src/transactions/round_trips.cpp
+    
+    # Position sources
+    src/positions/positions.cpp
+    src/positions/allocation.cpp
+    
+    # Attribution sources
+    src/attribution/attribution.cpp
+    
+    # Risk sources
+    src/risk/var.cpp
+    src/risk/risk_metrics.cpp
+    
+    # Capacity sources
+    src/capacity/capacity.cpp
+    
+    # Bayesian sources
+    src/analytics/bayesian.cpp
+    
+    # Regime detection sources
+    src/analytics/regime_detection.cpp
+    
+    # Enhanced features (new)
+    src/utils/intraday.cpp
+    src/analytics/turnover_enhanced.cpp
+    src/utils/benchmark.cpp
+    src/sectors/classification.cpp
+)
+
+# Add visualization sources if matplotlib is enabled
+if(PYFOLIO_ENABLE_MATPLOTLIB)
+    list(APPEND PYFOLIO_SOURCES
+        src/visualization/matplotlib_integration.cpp
+        src/visualization/tear_sheets.cpp
+    )
+endif()
+
+# Create header-only library (default)
+add_library(pyfolio_cpp INTERFACE)
+target_include_directories(pyfolio_cpp INTERFACE
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+    $<INSTALL_INTERFACE:include>
+)
+target_compile_features(pyfolio_cpp INTERFACE cxx_std_20)
+
+# Create compiled library if sources exist
+if(EXISTS "${CMAKE_SOURCE_DIR}/src")
+    add_library(pyfolio_cpp_compiled ${PYFOLIO_SOURCES})
+    target_include_directories(pyfolio_cpp_compiled PUBLIC
+        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+        $<INSTALL_INTERFACE:include>
+    )
+    target_compile_features(pyfolio_cpp_compiled PUBLIC cxx_std_20)
+    target_link_libraries(pyfolio_cpp_compiled PUBLIC Threads::Threads)
+    
+    # Link optional dependencies
+    if(PYFOLIO_ENABLE_EIGEN AND Eigen3_FOUND)
+        target_link_libraries(pyfolio_cpp_compiled PUBLIC Eigen3::Eigen)
+    endif()
+    
+    if(PYFOLIO_ENABLE_MATPLOTLIB AND Python3_FOUND)
+        target_link_libraries(pyfolio_cpp_compiled PUBLIC 
+            Python3::Python 
+            Python3::NumPy
+        )
+    endif()
+    
+    # Set alias for consistency
+    add_library(pyfolio_cpp::compiled ALIAS pyfolio_cpp_compiled)
+endif()
+
+# Examples
+if(PYFOLIO_BUILD_EXAMPLES)
+    add_subdirectory(examples)
+endif()
+
+# Tests
+if(PYFOLIO_BUILD_TESTS)
+    enable_testing()
+    add_subdirectory(tests)
+endif()
+
+# Python bindings
+if(PYFOLIO_BUILD_PYTHON_BINDINGS)
+    add_subdirectory(python_bindings)
+endif()
+
+# Installation
+include(GNUInstallDirs)
+include(CMakePackageConfigHelpers)
+
+# Install header-only library
+install(TARGETS pyfolio_cpp
+    EXPORT pyfolio_cpp_targets
+    INCLUDES DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
+)
+
+# Install compiled library if it exists
+if(TARGET pyfolio_cpp_compiled)
+    install(TARGETS pyfolio_cpp_compiled
+        EXPORT pyfolio_cpp_targets
+        RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+        LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
+        ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
+        INCLUDES DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
+    )
+endif()
+
+# Install headers
+install(DIRECTORY include/pyfolio
+    DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
+    FILES_MATCHING PATTERN "*.h"
+)
+
+# Install documentation
+install(DIRECTORY docs/
+    DESTINATION ${CMAKE_INSTALL_DOCDIR}
+    FILES_MATCHING PATTERN "*.md"
+)
+
+# Export configuration
+install(EXPORT pyfolio_cpp_targets
+    FILE pyfolio_cpp_targets.cmake
+    NAMESPACE pyfolio_cpp::
+    DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/pyfolio_cpp
+)
+
+configure_package_config_file(
+    "${CMAKE_CURRENT_SOURCE_DIR}/cmake/pyfolio_cpp_config.cmake.in"
+    "${CMAKE_CURRENT_BINARY_DIR}/pyfolio_cpp_config.cmake"
+    INSTALL_DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/pyfolio_cpp
+)
+
+write_basic_package_version_file(
+    "${CMAKE_CURRENT_BINARY_DIR}/pyfolio_cpp_config_version.cmake"
+    VERSION ${PROJECT_VERSION}
+    COMPATIBILITY AnyNewerVersion
+)
+
+install(FILES
+    "${CMAKE_CURRENT_BINARY_DIR}/pyfolio_cpp_config.cmake"
+    "${CMAKE_CURRENT_BINARY_DIR}/pyfolio_cpp_config_version.cmake"
+    DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/pyfolio_cpp
+)
+
+# Package information
+set(CPACK_PACKAGE_NAME "pyfolio_cpp")
+set(CPACK_PACKAGE_VERSION ${PROJECT_VERSION})
+set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "High-performance C++20 portfolio analysis library")
+set(CPACK_PACKAGE_VENDOR "PyFolio_cpp Team")
+set(CPACK_PACKAGE_CONTACT "pyfolio_cpp@example.com")
+set(CPACK_RESOURCE_FILE_LICENSE "${CMAKE_CURRENT_SOURCE_DIR}/LICENSE")
+set(CPACK_RESOURCE_FILE_README "${CMAKE_CURRENT_SOURCE_DIR}/README.md")
+
+include(CPack)
+
+# Print configuration summary
+message(STATUS "")
+message(STATUS "PyFolio_cpp Configuration Summary:")
+message(STATUS "  Version: ${PROJECT_VERSION}")
+message(STATUS "  C++ Standard: ${CMAKE_CXX_STANDARD}")
+message(STATUS "  Build Type: ${CMAKE_BUILD_TYPE}")
+message(STATUS "  Compiler: ${CMAKE_CXX_COMPILER_ID} ${CMAKE_CXX_COMPILER_VERSION}")
+message(STATUS "")
+message(STATUS "Features:")
+message(STATUS "  Tests: ${PYFOLIO_BUILD_TESTS}")
+message(STATUS "  Examples: ${PYFOLIO_BUILD_EXAMPLES}")
+message(STATUS "  Matplotlib visualization: ${PYFOLIO_ENABLE_MATPLOTLIB}")
+message(STATUS "  Eigen3 support: ${PYFOLIO_ENABLE_EIGEN}")
+message(STATUS "  Python bindings: ${PYFOLIO_BUILD_PYTHON_BINDINGS}")
+message(STATUS "  SIMD optimizations: ${PYFOLIO_ENABLE_SIMD}")
+message(STATUS "")
+if(PYFOLIO_ENABLE_MATPLOTLIB)
+    if(Python3_FOUND)
+        message(STATUS "Python: ${Python3_VERSION} (${Python3_EXECUTABLE})")
+        message(STATUS "NumPy: Found")
+    else()
+        message(STATUS "Python: Not found - matplotlib features will be disabled")
+    endif()
+endif()
+if(PYFOLIO_ENABLE_EIGEN)
+    if(Eigen3_FOUND)
+        message(STATUS "Eigen3: ${Eigen3_VERSION}")
+    else()
+        message(STATUS "Eigen3: Not found - linear algebra features will be limited")
+    endif()
+endif()
+message(STATUS "")

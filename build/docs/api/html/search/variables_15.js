@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['valley_5fdate_0',['valley_date',['../d5/dff/structpyfolio_1_1Statistics_1_1SimpleDrawdownInfo.html#aba27036b4dbeaa61f539dcef4703a4e3',1,'pyfolio::Statistics::SimpleDrawdownInfo']]],
+  ['value_1',['value',['../da/dd9/structpyfolio_1_1analytics_1_1CacheEntry.html#a723803947e5e3923a5f8992bc2dc091f',1,'pyfolio::analytics::CacheEntry::value'],['../df/dcf/structpyfolio_1_1analytics_1_1IndicatorValue.html#a14deb59b91ecf924c081974fdcfdd6e2',1,'pyfolio::analytics::IndicatorValue::value']]],
+  ['value_5fat_5frisk_2',['value_at_risk',['../d5/d01/structpyfolio_1_1reporting_1_1TearSheetResult_1_1PerformanceSummary.html#a12860d372ce266b2bb06ea53c0efd631',1,'pyfolio::reporting::TearSheetResult::PerformanceSummary']]],
+  ['value_5ffactor_3',['value_factor',['../df/da4/structpyfolio_1_1attribution_1_1FactorExposures.html#abf25d702c370cb2b14834d493d88bdd3',1,'pyfolio::attribution::FactorExposures']]],
+  ['value_5freturn_4',['value_return',['../d2/d09/structpyfolio_1_1attribution_1_1FactorReturns.html#af01832d5d63e7186c7155ed7b18620f2',1,'pyfolio::attribution::FactorReturns']]],
+  ['values_5',['values',['../d8/d8b/structpyfolio_1_1visualization_1_1PlotData.html#a23b96cef40eacdf7d2a91443cebd37b4',1,'pyfolio::visualization::PlotData']]],
+  ['var_5f95_6',['var_95',['../d4/dd2/structpyfolio_1_1analytics_1_1AnalysisReport.html#ad81e96558450ef6a4f533552adda9481',1,'pyfolio::analytics::AnalysisReport::var_95'],['../de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics.html#a0b08a5e0348465a0a66cc54f95580373',1,'pyfolio::analytics::PerformanceMetrics::var_95']]],
+  ['var_5f95_5fpercentile_7',['var_95_percentile',['../dd/d79/namespacepyfolio_1_1stats_1_1constants.html#a7acdf69e48f4a122e1f9d68a1b8f2705',1,'pyfolio::stats::constants']]],
+  ['var_5f99_8',['var_99',['../de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics.html#a96cea1b61c0d9b29916d53409d3c612c',1,'pyfolio::analytics::PerformanceMetrics']]],
+  ['var_5f99_5fpercentile_9',['var_99_percentile',['../dd/d79/namespacepyfolio_1_1stats_1_1constants.html#abbf7d7d4b16e6fe8d6dd48183c353b06',1,'pyfolio::stats::constants']]],
+  ['var_5fconfidence_5flevel_10',['var_confidence_level',['../dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig.html#add8d4ba42a36897c089424be090a0129',1,'pyfolio::reporting::TearSheetConfig']]],
+  ['var_5festimate_11',['var_estimate',['../d8/dbf/structpyfolio_1_1risk_1_1VaRResult.html#afbe9f3ac7570139975bfd46c3e08dd1e',1,'pyfolio::risk::VaRResult']]],
+  ['variance_12',['variance',['../da/d0f/structpyfolio_1_1analytics_1_1PriorDistribution.html#acede57bf5f0c40f07021aa25fcb97b50',1,'pyfolio::analytics::PriorDistribution::variance'],['../d7/d8f/structpyfolio_1_1analytics_1_1statistics_1_1StatisticalSummary.html#a3c3aefbef971393744f6d2e9061f80ba',1,'pyfolio::analytics::statistics::StatisticalSummary::variance']]],
+  ['verbose_13',['verbose',['../dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig.html#adcd648e0bcda9ab74265124382baa8e0',1,'pyfolio::reporting::TearSheetConfig']]],
+  ['version_5fmajor_14',['VERSION_MAJOR',['../d7/df8/namespacepyfolio.html#adc873ffa2082c1b104e7ed9003d94071',1,'pyfolio']]],
+  ['version_5fminor_15',['VERSION_MINOR',['../d7/df8/namespacepyfolio.html#aaaf74701f30973dc7f1c757f366ba9fa',1,'pyfolio']]],
+  ['version_5fpatch_16',['VERSION_PATCH',['../d7/df8/namespacepyfolio.html#a298004bd75a259b53450796d8b9a5416',1,'pyfolio']]],
+  ['version_5fstring_17',['VERSION_STRING',['../d7/df8/namespacepyfolio.html#a0c3d1ac0a4830cde073714012f01a9cb',1,'pyfolio']]],
+  ['vix_5flevels_18',['vix_levels',['../d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators.html#a81e6347dc2afa96074c9ab46c8e0e669',1,'pyfolio::analytics::MarketIndicators']]],
+  ['volatility_19',['volatility',['../d1/d57/structpyfolio_1_1analytics_1_1RegimeCharacteristics.html#a001bb9cbf652aa442ad8ddc0b62f7922',1,'pyfolio::analytics::RegimeCharacteristics::volatility'],['../dc/d43/structpyfolio_1_1capacity_1_1MarketMicrostructure.html#ad00faced83e001841adf0d58c788109d',1,'pyfolio::capacity::MarketMicrostructure::volatility']]],
+  ['volatility_5fsamples_20',['volatility_samples',['../de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult.html#ad89afadf6dae3ceb2aa5a7496b4f06b0',1,'pyfolio::analytics::BayesianPerformanceResult']]],
+  ['volume_21',['volume',['../d4/d3e/structpyfolio_1_1OHLCVData.html#a0f63ae681c7824d79deee446f7caa87e',1,'pyfolio::OHLCVData::volume'],['../d4/d9e/structpyfolio_1_1visualization_1_1OHLCData.html#a612322c0495b27685c623a04e9b978a5',1,'pyfolio::visualization::OHLCData::volume']]],
+  ['volumes_22',['volumes',['../de/d03/structpyfolio_1_1MarketData.html#a2a7074ad7546205839db4e7ec9a168e3',1,'pyfolio::MarketData']]]
+];

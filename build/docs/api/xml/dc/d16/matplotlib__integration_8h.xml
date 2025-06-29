@@ -1,0 +1,632 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dc/d16/matplotlib__integration_8h" kind="file" language="C++">
+    <compoundname>matplotlib_integration.h</compoundname>
+    <includes refid="d3/df8/plotting_8h" local="yes">../visualization/plotting.h</includes>
+    <includes refid="de/d88/performance__metrics_8h" local="no">pyfolio/analytics/performance_metrics.h</includes>
+    <includes refid="d5/db2/analytics_2statistics_8h" local="no">pyfolio/analytics/statistics.h</includes>
+    <includes refid="d3/d11/error__handling_8h" local="no">pyfolio/core/error_handling.h</includes>
+    <includes refid="d8/d51/time__series_8h" local="no">pyfolio/core/time_series.h</includes>
+    <includes refid="d9/d49/types_8h" local="no">pyfolio/core/types.h</includes>
+    <includes refid="d0/d04/positions_8h" local="no">pyfolio/positions/positions.h</includes>
+    <includes refid="d0/db6/transaction_8h" local="no">pyfolio/transactions/transaction.h</includes>
+    <includes local="no">map</includes>
+    <includes local="no">optional</includes>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <incdepgraph>
+      <node id="35">
+        <label>pyfolio/analytics/performance_metrics.h</label>
+        <link refid="de/d88/performance__metrics_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>statistics.h</label>
+        <link refid="d5/db2/analytics_2statistics_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>../core/dataframe.h</label>
+        <link refid="d2/d99/dataframe_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>datetime.h</label>
+        <link refid="de/d1b/datetime_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>../core/error_handling.h</label>
+        <link refid="d3/d11/error__handling_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>../core/time_series.h</label>
+        <link refid="d8/d51/time__series_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>../core/types.h</label>
+        <link refid="d9/d49/types_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>../math/simd_math.h</label>
+        <link refid="d6/d99/simd__math_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>../math/statistics.h</label>
+        <link refid="d3/dbe/math_2statistics_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>../performance/drawdown.h</label>
+        <link refid="d8/de8/drawdown_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>../performance/ratios.h</label>
+        <link refid="d7/d06/ratios_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>returns.h</label>
+        <link refid="d4/d73/returns_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>../performance/rolling_metrics.h</label>
+        <link refid="d3/d7e/rolling__metrics_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>allocation.h</label>
+        <link refid="d0/db7/allocation_8h"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>holdings.h</label>
+        <link refid="d7/d0c/holdings_8h"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>pyfolio/positions/positions.h</label>
+        <link refid="d0/d04/positions_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>../transactions/transaction.h</label>
+        <link refid="d0/db6/transaction_8h"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h</label>
+        <link refid="dc/d16/matplotlib__integration_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>../visualization/plotting.h</label>
+        <link refid="d3/df8/plotting_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>algorithm</label>
+      </node>
+      <node id="40">
+        <label>any</label>
+      </node>
+      <node id="13">
+        <label>chrono</label>
+      </node>
+      <node id="22">
+        <label>cmath</label>
+      </node>
+      <node id="14">
+        <label>concepts</label>
+      </node>
+      <node id="15">
+        <label>cstddef</label>
+      </node>
+      <node id="16">
+        <label>cstdint</label>
+      </node>
+      <node id="23">
+        <label>deque</label>
+      </node>
+      <node id="4">
+        <label>exception</label>
+      </node>
+      <node id="32">
+        <label>fstream</label>
+      </node>
+      <node id="5">
+        <label>functional</label>
+      </node>
+      <node id="24">
+        <label>limits</label>
+      </node>
+      <node id="25">
+        <label>map</label>
+      </node>
+      <node id="26">
+        <label>numeric</label>
+      </node>
+      <node id="6">
+        <label>optional</label>
+      </node>
+      <node id="21">
+        <label>set</label>
+      </node>
+      <node id="7">
+        <label>source_location</label>
+      </node>
+      <node id="19">
+        <label>span</label>
+      </node>
+      <node id="33">
+        <label>sstream</label>
+      </node>
+      <node id="8">
+        <label>string</label>
+      </node>
+      <node id="41">
+        <label>typeindex</label>
+      </node>
+      <node id="34">
+        <label>unordered_map</label>
+      </node>
+      <node id="9">
+        <label>variant</label>
+      </node>
+      <node id="17">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="dd/dd8/structpyfolio_1_1visualization_1_1TearSheetConfig" prot="public">pyfolio::visualization::TearSheetConfig</innerclass>
+    <innerclass refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter" prot="public">pyfolio::visualization::PyfolioPlotter</innerclass>
+    <innernamespace refid="d7/df8/namespacepyfolio">pyfolio</innernamespace>
+    <innernamespace refid="da/d6c/namespacepyfolio_1_1visualization">pyfolio::visualization</innernamespace>
+    <innernamespace refid="df/d7c/namespacepyfolio_1_1visualization_1_1plot__utils">pyfolio::visualization::plot_utils</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Matplotlib-cpp<sp/>integration<sp/>for<sp/>pyfolio_cpp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Requires:<sp/>pip<sp/>install<sp/>matplotlib-cpp<sp/>or<sp/>equivalent<sp/>C++<sp/>matplotlib<sp/>binding</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/df8/plotting_8h" kindref="compound">../visualization/plotting.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="de/d88/performance__metrics_8h" kindref="compound">pyfolio/analytics/performance_metrics.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="d5/db2/analytics_2statistics_8h" kindref="compound">pyfolio/analytics/statistics.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="d3/d11/error__handling_8h" kindref="compound">pyfolio/core/error_handling.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="d8/d51/time__series_8h" kindref="compound">pyfolio/core/time_series.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="d9/d49/types_8h" kindref="compound">pyfolio/core/types.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="d0/d04/positions_8h" kindref="compound">pyfolio/positions/positions.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="d0/db6/transaction_8h" kindref="compound">pyfolio/transactions/transaction.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Conditional<sp/>compilation<sp/>based<sp/>on<sp/>matplotlib<sp/>availability</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>PYFOLIO_ENABLE_MATPLOTLIB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;matplotlibcpp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">plt<sp/>=<sp/>matplotlibcpp;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;optional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="da/d6c/namespacepyfolio_1_1visualization" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="da/d6c/namespacepyfolio_1_1visualization" kindref="compound">pyfolio::visualization</ref><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/>PlotConfig<sp/>is<sp/>defined<sp/>in<sp/>visualization/plotting.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="dd/dd8/structpyfolio_1_1visualization_1_1TearSheetConfig" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="dd/dd8/structpyfolio_1_1visualization_1_1TearSheetConfig" kindref="compound">TearSheetConfig</ref><sp/>{</highlight></codeline>
+<codeline lineno="31" refid="dd/dd8/structpyfolio_1_1visualization_1_1TearSheetConfig_1a5b1290e87514d623414d21ed15dccda9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="dd/dd8/structpyfolio_1_1visualization_1_1TearSheetConfig_1a5b1290e87514d623414d21ed15dccda9" kindref="member">include_benchmark</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32" refid="dd/dd8/structpyfolio_1_1visualization_1_1TearSheetConfig_1a070fc3702bed498ca0ea63d56d69cd5b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="dd/dd8/structpyfolio_1_1visualization_1_1TearSheetConfig_1a070fc3702bed498ca0ea63d56d69cd5b" kindref="member">include_drawdown</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33" refid="dd/dd8/structpyfolio_1_1visualization_1_1TearSheetConfig_1ae25a8d05a71cdd79483a09a2a13e1d2e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="dd/dd8/structpyfolio_1_1visualization_1_1TearSheetConfig_1ae25a8d05a71cdd79483a09a2a13e1d2e" kindref="member">include_rolling_metrics</ref><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34" refid="dd/dd8/structpyfolio_1_1visualization_1_1TearSheetConfig_1a4be43ae8dadb36adfcc1b7199fe62249" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="dd/dd8/structpyfolio_1_1visualization_1_1TearSheetConfig_1a4be43ae8dadb36adfcc1b7199fe62249" kindref="member">include_monthly_heatmap</ref><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="35" refid="dd/dd8/structpyfolio_1_1visualization_1_1TearSheetConfig_1a687ef1cbf9248aaa4c0ded21cf4f12b3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="dd/dd8/structpyfolio_1_1visualization_1_1TearSheetConfig_1a687ef1cbf9248aaa4c0ded21cf4f12b3" kindref="member">include_return_distribution</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36" refid="dd/dd8/structpyfolio_1_1visualization_1_1TearSheetConfig_1a1e781e537409ba9404af1efe8b29ebc2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="dd/dd8/structpyfolio_1_1visualization_1_1TearSheetConfig_1a1e781e537409ba9404af1efe8b29ebc2" kindref="member">include_top_holdings</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37" refid="dd/dd8/structpyfolio_1_1visualization_1_1TearSheetConfig_1ab3318e7ac3cd2153ce618ef10af3f7b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="dd/dd8/structpyfolio_1_1visualization_1_1TearSheetConfig_1ab3318e7ac3cd2153ce618ef10af3f7b1" kindref="member">include_turnover</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38" refid="dd/dd8/structpyfolio_1_1visualization_1_1TearSheetConfig_1a3075efe0470613fe6d5d8ad3c2758c64" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::pair&lt;int,<sp/>int&gt;<sp/><ref refid="dd/dd8/structpyfolio_1_1visualization_1_1TearSheetConfig_1a3075efe0470613fe6d5d8ad3c2758c64" kindref="member">figsize</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>{15,<sp/>20};</highlight></codeline>
+<codeline lineno="39" refid="dd/dd8/structpyfolio_1_1visualization_1_1TearSheetConfig_1a930a38846dd87fcdf539301c4c562ee2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="dd/dd8/structpyfolio_1_1visualization_1_1TearSheetConfig_1a930a38846dd87fcdf539301c4c562ee2" kindref="member">save_path</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1ab8ec3f2cb4a638852a31a9346aea7a5d" kindref="member">PyfolioPlotter</ref><sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="48" refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1ab8ec3f2cb4a638852a31a9346aea7a5d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1ab8ec3f2cb4a638852a31a9346aea7a5d" kindref="member">PyfolioPlotter</ref>();</highlight></codeline>
+<codeline lineno="49" refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a601cca68c08361555397f432c231b1b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a601cca68c08361555397f432c231b1b9" kindref="member">~PyfolioPlotter</ref>();</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>========================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Core<sp/>Time<sp/>Series<sp/>Plots<sp/>(equivalent<sp/>to<sp/>plotting.py<sp/>functions)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>========================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a8758ac61c4a842308792b63b9857f0f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;void&gt;</ref><sp/><ref refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a8758ac61c4a842308792b63b9857f0f1" kindref="member">plot_cumulative_returns</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;Return&gt;</ref>&amp;<sp/>returns,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;Return&gt;</ref>&amp;<sp/>benchmark<sp/>=<sp/>{},</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref>&amp;<sp/>config<sp/>=<sp/>{});</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1ab82abf9b86f95be5a637c7885e7a94ed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;void&gt;</ref><sp/><ref refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1ab82abf9b86f95be5a637c7885e7a94ed" kindref="member">plot_drawdown_underwater</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;Return&gt;</ref>&amp;<sp/>returns,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref>&amp;<sp/>config<sp/>=<sp/>{});</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a917e3ea51acad4567732740848626bff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;void&gt;</ref><sp/><ref refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a917e3ea51acad4567732740848626bff" kindref="member">plot_monthly_returns_heatmap</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;Return&gt;</ref>&amp;<sp/>returns,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref>&amp;<sp/>config<sp/>=<sp/>{});</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a31ad398d6730a3c02fb35d679ec66986" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;void&gt;</ref><sp/><ref refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a31ad398d6730a3c02fb35d679ec66986" kindref="member">plot_annual_returns</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;Return&gt;</ref>&amp;<sp/>returns,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;Return&gt;</ref>&amp;<sp/>benchmark<sp/>=<sp/>{},</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref>&amp;<sp/>config<sp/>=<sp/>{});</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>========================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Rolling<sp/>Metrics<sp/>Plots</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>========================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a8f4dbd5480c2e068870d3a07615d1eb2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;void&gt;</ref><sp/><ref refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a8f4dbd5480c2e068870d3a07615d1eb2" kindref="member">plot_rolling_sharpe</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;Return&gt;</ref>&amp;<sp/>returns,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>window<sp/>=<sp/>63,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>risk_free_rate<sp/>=<sp/>0.02,</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref>&amp;<sp/>config<sp/>=<sp/>{});</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a9b2a95c219321f8b657e47a106e3493c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;void&gt;</ref><sp/><ref refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a9b2a95c219321f8b657e47a106e3493c" kindref="member">plot_rolling_volatility</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;Return&gt;</ref>&amp;<sp/>returns,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>window<sp/>=<sp/>63,</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref>&amp;<sp/>config<sp/>=<sp/>{});</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a5e544a07e3cbd610e476878dd06dfa74" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;void&gt;</ref><sp/><ref refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a5e544a07e3cbd610e476878dd06dfa74" kindref="member">plot_rolling_beta</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;Return&gt;</ref>&amp;<sp/>returns,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;Return&gt;</ref>&amp;<sp/>benchmark,</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>window<sp/>=<sp/>126,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref>&amp;<sp/>config<sp/>=<sp/>{});</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>========================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Distribution<sp/>and<sp/>Risk<sp/>Plots</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>========================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1ade2701a753a2768cbe52dea98542c260" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;void&gt;</ref><sp/><ref refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1ade2701a753a2768cbe52dea98542c260" kindref="member">plot_return_distribution</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;Return&gt;</ref>&amp;<sp/>returns,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref>&amp;<sp/>config<sp/>=<sp/>{});</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a7f1fe5094fa89bf68418dd3d2f8e47df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;void&gt;</ref><sp/><ref refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a7f1fe5094fa89bf68418dd3d2f8e47df" kindref="member">plot_return_quantiles</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;Return&gt;</ref>&amp;<sp/>returns,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref>&amp;<sp/>config<sp/>=<sp/>{});</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>========================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Position<sp/>and<sp/>Holdings<sp/>Plots</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>========================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a7766b1e4efae79e3f3bf043745f8402c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;void&gt;</ref><sp/><ref refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a7766b1e4efae79e3f3bf043745f8402c" kindref="member">plot_exposures</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1a8b225a867ab95979be89a7d9e8519eb1" kindref="member">PositionSeries</ref>&amp;<sp/><ref refid="df/d8b/namespacepyfolio_1_1positions" kindref="compound">positions</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref>&amp;<sp/>config<sp/>=<sp/>{});</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136" refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a90478512cccde322c29598162f91a289" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;void&gt;</ref><sp/><ref refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a90478512cccde322c29598162f91a289" kindref="member">plot_holdings</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1a8b225a867ab95979be89a7d9e8519eb1" kindref="member">PositionSeries</ref>&amp;<sp/><ref refid="df/d8b/namespacepyfolio_1_1positions" kindref="compound">positions</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref>&amp;<sp/>config<sp/>=<sp/>{});</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142" refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1afe69a7dcf15011cd2140426c89ae2244" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;void&gt;</ref><sp/><ref refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1afe69a7dcf15011cd2140426c89ae2244" kindref="member">plot_top_holdings</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1a8b225a867ab95979be89a7d9e8519eb1" kindref="member">PositionSeries</ref>&amp;<sp/><ref refid="df/d8b/namespacepyfolio_1_1positions" kindref="compound">positions</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>top_n<sp/>=<sp/>10,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref>&amp;<sp/>config<sp/>=<sp/>{});</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>========================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Transaction<sp/>and<sp/>Turnover<sp/>Plots</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>========================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152" refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a36379ad7618d30c35676cb6d9a1227bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;void&gt;</ref><sp/><ref refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a36379ad7618d30c35676cb6d9a1227bc" kindref="member">plot_turnover</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1a8b225a867ab95979be89a7d9e8519eb1" kindref="member">PositionSeries</ref>&amp;<sp/><ref refid="df/d8b/namespacepyfolio_1_1positions" kindref="compound">positions</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1a4b722d754217aac2549ef3ef5fa23fff" kindref="member">TransactionSeries</ref>&amp;<sp/><ref refid="dc/d4e/namespacepyfolio_1_1transactions" kindref="compound">transactions</ref><sp/>=<sp/>{},</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref>&amp;<sp/>config<sp/>=<sp/>{});</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159" refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a21751ad032c2ca559d299c7815cf2f24" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;void&gt;</ref><sp/><ref refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a21751ad032c2ca559d299c7815cf2f24" kindref="member">plot_round_trip_lifetimes</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1a4b722d754217aac2549ef3ef5fa23fff" kindref="member">TransactionSeries</ref>&amp;<sp/><ref refid="dc/d4e/namespacepyfolio_1_1transactions" kindref="compound">transactions</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref>&amp;<sp/>config<sp/>=<sp/>{});</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>========================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Complete<sp/>Tear<sp/>Sheets</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>========================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169" refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a6e3a3bc4fab416276857f111f186ee17" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;void&gt;</ref><sp/><ref refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a6e3a3bc4fab416276857f111f186ee17" kindref="member">create_full_tear_sheet</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;Return&gt;</ref>&amp;<sp/>returns,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;Return&gt;</ref>&amp;<sp/>benchmark<sp/>=<sp/>{},</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1a8b225a867ab95979be89a7d9e8519eb1" kindref="member">PositionSeries</ref>&amp;<sp/><ref refid="df/d8b/namespacepyfolio_1_1positions" kindref="compound">positions</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>{},</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1a4b722d754217aac2549ef3ef5fa23fff" kindref="member">TransactionSeries</ref>&amp;<sp/><ref refid="dc/d4e/namespacepyfolio_1_1transactions" kindref="compound">transactions</ref><sp/>=<sp/>{},<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TearSheetConfig&amp;<sp/>config<sp/>=<sp/>{});</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177" refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a580038f0ac7ec9f51d863fcdaa8cd0a8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;void&gt;</ref><sp/><ref refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a580038f0ac7ec9f51d863fcdaa8cd0a8" kindref="member">create_simple_tear_sheet</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;Return&gt;</ref>&amp;<sp/>returns,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;Return&gt;</ref>&amp;<sp/>benchmark<sp/>=<sp/>{},</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dd/dd8/structpyfolio_1_1visualization_1_1TearSheetConfig" kindref="compound">TearSheetConfig</ref>&amp;<sp/>config<sp/>=<sp/>{});</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184" refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a1ef302990a3836dc27bd8f67173c77c9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;void&gt;</ref><sp/><ref refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a1ef302990a3836dc27bd8f67173c77c9" kindref="member">create_returns_tear_sheet</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;Return&gt;</ref>&amp;<sp/>returns,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;Return&gt;</ref>&amp;<sp/>benchmark<sp/>=<sp/>{},</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dd/dd8/structpyfolio_1_1visualization_1_1TearSheetConfig" kindref="compound">TearSheetConfig</ref>&amp;<sp/>config<sp/>=<sp/>{});</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>========================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Internal<sp/>Helper<sp/>Methods</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>========================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initialize_matplotlib();</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>datetime_to_numeric(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;DateTime&gt;&amp;<sp/>dates);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setup_plot(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>PlotConfig&amp;<sp/>config);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;void&gt;</ref><sp/>save_plot_if_requested(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>PlotConfig&amp;<sp/>config);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::vector&lt;double&gt;&gt;<sp/>calculate_monthly_returns_matrix(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;Return&gt;</ref>&amp;<sp/>returns);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>calculate_drawdown_series(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;Return&gt;</ref>&amp;<sp/>returns);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/>std::pair&lt;std::vector&lt;double&gt;,<sp/>std::vector&lt;double&gt;&gt;<sp/>calculate_exposures(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1a8b225a867ab95979be89a7d9e8519eb1" kindref="member">PositionSeries</ref>&amp;<sp/><ref refid="df/d8b/namespacepyfolio_1_1positions" kindref="compound">positions</ref>);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>std::pair&lt;std::vector&lt;std::string&gt;,<sp/>std::vector&lt;int&gt;&gt;<sp/>get_monthly_labels(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;DateTime&gt;&amp;<sp/>dates);</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>create_subplot_layout(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rows,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cols);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>add_performance_table(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;Return&gt;</ref>&amp;<sp/>returns,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;Return&gt;</ref>&amp;<sp/>benchmark,</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::pair&lt;double,<sp/>double&gt;&amp;<sp/>position<sp/>=<sp/>{0.02,<sp/>0.7});</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>format_axes(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>PlotConfig&amp;<sp/>config);</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>add_recession_shading(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;DateTime&gt;&amp;<sp/>dates);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_matplotlib_available()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>========================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Member<sp/>Variables</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>========================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>matplotlib_initialized_;</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/>PlotConfig<sp/>default_config_;</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;std::string,<sp/>std::string&gt;<sp/>style_settings_;</highlight></codeline>
+<codeline lineno="265"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270" refid="df/d7c/namespacepyfolio_1_1visualization_1_1plot__utils" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="df/d7c/namespacepyfolio_1_1visualization_1_1plot__utils" kindref="compound">plot_utils</ref><sp/>{</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275" refid="df/d7c/namespacepyfolio_1_1visualization_1_1plot__utils_1a0659042e0ecea832ed6655650793d8ec" refkind="member"><highlight class="normal">std::vector&lt;double&gt;<sp/><ref refid="df/d7c/namespacepyfolio_1_1visualization_1_1plot__utils_1a0659042e0ecea832ed6655650793d8ec" kindref="member">returns_to_cumulative</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;Return&gt;&amp;<sp/>returns);</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280" refid="df/d7c/namespacepyfolio_1_1visualization_1_1plot__utils_1a9d706c009e41c75606af690bb8a04402" refkind="member"><highlight class="normal">std::vector&lt;std::string&gt;<sp/><ref refid="df/d7c/namespacepyfolio_1_1visualization_1_1plot__utils_1a9d706c009e41c75606af690bb8a04402" kindref="member">create_color_palette</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_colors);</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="285" refid="df/d7c/namespacepyfolio_1_1visualization_1_1plot__utils_1a3772233bf5a782774218332dfd00c6e4" refkind="member"><highlight class="normal">std::string<sp/><ref refid="df/d7c/namespacepyfolio_1_1visualization_1_1plot__utils_1a3772233bf5a782774218332dfd00c6e4" kindref="member">format_percentage</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>value,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>decimals<sp/>=<sp/>1);</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290" refid="df/d7c/namespacepyfolio_1_1visualization_1_1plot__utils_1ab2e071d40e0bebeed6003745d9e99954" refkind="member"><highlight class="normal">std::vector&lt;std::string&gt;<sp/><ref refid="df/d7c/namespacepyfolio_1_1visualization_1_1plot__utils_1ab2e071d40e0bebeed6003745d9e99954" kindref="member">create_date_labels</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;DateTime&gt;&amp;<sp/>dates,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>format<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;%Y-%m&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295" refid="df/d7c/namespacepyfolio_1_1visualization_1_1plot__utils_1a334e3db0e1fd407756910cf8ce22f689" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="df/d7c/namespacepyfolio_1_1visualization_1_1plot__utils_1a334e3db0e1fd407756910cf8ce22f689" kindref="member">calculate_optimal_bins</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;&amp;<sp/>data);</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300" refid="df/d7c/namespacepyfolio_1_1visualization_1_1plot__utils_1a98854b3ad95aee6522e82ceed15d9d7e" refkind="member"><highlight class="normal">std::vector&lt;double&gt;<sp/><ref refid="df/d7c/namespacepyfolio_1_1visualization_1_1plot__utils_1a98854b3ad95aee6522e82ceed15d9d7e" kindref="member">smooth_data</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;&amp;<sp/>data,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>window<sp/>=<sp/>5);</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>plot_utils</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>pyfolio::visualization</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h"/>
+  </compounddef>
+</doxygen>

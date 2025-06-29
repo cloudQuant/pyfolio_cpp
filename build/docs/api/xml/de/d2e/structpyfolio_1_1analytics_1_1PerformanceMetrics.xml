@@ -1,0 +1,366 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics" kind="struct" language="C++" prot="public">
+    <compoundname>pyfolio::analytics::PerformanceMetrics</compoundname>
+    <includes refid="de/d88/performance__metrics_8h" local="no">performance_metrics.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a3e502eb4760ff637704b95fc0cf4add1" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::PerformanceMetrics::total_return</definition>
+        <argsstring></argsstring>
+        <name>total_return</name>
+        <qualifiedname>pyfolio::analytics::PerformanceMetrics::total_return</qualifiedname>
+        <briefdescription>
+<para>Cumulative return over the entire period. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" line="71" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" bodystart="71" bodyend="-1"/>
+        <referencedby refid="d7/d98/classpyfolio_1_1PerformanceMetrics_1af08f7acfb54afc6584e949d822c895ce" compoundref="de/d88/performance__metrics_8h" startline="269" endline="278">pyfolio::PerformanceMetrics::calculate_comprehensive_metrics</referencedby>
+        <referencedby refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1afcf41eac95ec7e179f6ab359e458141b" compoundref="d4/d45/json__serializer_8h" startline="61" endline="86">pyfolio::web::JsonSerializer::serialize_performance_metrics</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a2d32e78155a9e0434d5beffda4fb2bec" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::PerformanceMetrics::annual_return</definition>
+        <argsstring></argsstring>
+        <name>annual_return</name>
+        <qualifiedname>pyfolio::analytics::PerformanceMetrics::annual_return</qualifiedname>
+        <briefdescription>
+<para>Annualized return (geometric mean) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" line="72" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" bodystart="72" bodyend="-1"/>
+        <referencedby refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1afcf41eac95ec7e179f6ab359e458141b" compoundref="d4/d45/json__serializer_8h" startline="61" endline="86">pyfolio::web::JsonSerializer::serialize_performance_metrics</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a0f0a580e22b9f38fee7222d2d3f1f646" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::PerformanceMetrics::annual_volatility</definition>
+        <argsstring></argsstring>
+        <name>annual_volatility</name>
+        <qualifiedname>pyfolio::analytics::PerformanceMetrics::annual_volatility</qualifiedname>
+        <briefdescription>
+<para>Annualized standard deviation of returns. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" line="73" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" bodystart="73" bodyend="-1"/>
+        <referencedby refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1afcf41eac95ec7e179f6ab359e458141b" compoundref="d4/d45/json__serializer_8h" startline="61" endline="86">pyfolio::web::JsonSerializer::serialize_performance_metrics</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a2252369fd5a1d4f13476e6f68bec085e" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::PerformanceMetrics::sharpe_ratio</definition>
+        <argsstring></argsstring>
+        <name>sharpe_ratio</name>
+        <qualifiedname>pyfolio::analytics::PerformanceMetrics::sharpe_ratio</qualifiedname>
+        <briefdescription>
+<para>Risk-adjusted return: (return - rf) / volatility. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" line="74" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" bodystart="74" bodyend="-1"/>
+        <referencedby refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1afcf41eac95ec7e179f6ab359e458141b" compoundref="d4/d45/json__serializer_8h" startline="61" endline="86">pyfolio::web::JsonSerializer::serialize_performance_metrics</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1aee0f94a36cb88d38dcc2d8f755bd359c" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::PerformanceMetrics::sortino_ratio</definition>
+        <argsstring></argsstring>
+        <name>sortino_ratio</name>
+        <qualifiedname>pyfolio::analytics::PerformanceMetrics::sortino_ratio</qualifiedname>
+        <briefdescription>
+<para>Downside risk-adjusted return. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" line="75" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" bodystart="75" bodyend="-1"/>
+        <referencedby refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1afcf41eac95ec7e179f6ab359e458141b" compoundref="d4/d45/json__serializer_8h" startline="61" endline="86">pyfolio::web::JsonSerializer::serialize_performance_metrics</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a7f7e2b17c39585f1a5869ca5ef8c8724" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::PerformanceMetrics::max_drawdown</definition>
+        <argsstring></argsstring>
+        <name>max_drawdown</name>
+        <qualifiedname>pyfolio::analytics::PerformanceMetrics::max_drawdown</qualifiedname>
+        <briefdescription>
+<para>Maximum peak-to-trough decline. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" line="76" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" bodystart="76" bodyend="-1"/>
+        <referencedby refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1afcf41eac95ec7e179f6ab359e458141b" compoundref="d4/d45/json__serializer_8h" startline="61" endline="86">pyfolio::web::JsonSerializer::serialize_performance_metrics</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a714269105c1cacb42e4170fdbae4918e" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::PerformanceMetrics::calmar_ratio</definition>
+        <argsstring></argsstring>
+        <name>calmar_ratio</name>
+        <qualifiedname>pyfolio::analytics::PerformanceMetrics::calmar_ratio</qualifiedname>
+        <briefdescription>
+<para>Annual return / Maximum drawdown. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" line="77" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" bodystart="77" bodyend="-1"/>
+        <referencedby refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1afcf41eac95ec7e179f6ab359e458141b" compoundref="d4/d45/json__serializer_8h" startline="61" endline="86">pyfolio::web::JsonSerializer::serialize_performance_metrics</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a0c337f6982ecd7f7c790a12893ee77b5" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::PerformanceMetrics::skewness</definition>
+        <argsstring></argsstring>
+        <name>skewness</name>
+        <qualifiedname>pyfolio::analytics::PerformanceMetrics::skewness</qualifiedname>
+        <briefdescription>
+<para>Third moment - asymmetry of return distribution. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" line="78" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" bodystart="78" bodyend="-1"/>
+        <referencedby refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1afcf41eac95ec7e179f6ab359e458141b" compoundref="d4/d45/json__serializer_8h" startline="61" endline="86">pyfolio::web::JsonSerializer::serialize_performance_metrics</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a2a26804a2b0f39cfe38af3f7d9d4fca1" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::PerformanceMetrics::kurtosis</definition>
+        <argsstring></argsstring>
+        <name>kurtosis</name>
+        <qualifiedname>pyfolio::analytics::PerformanceMetrics::kurtosis</qualifiedname>
+        <briefdescription>
+<para>Fourth moment - tail heaviness. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" line="79" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" bodystart="79" bodyend="-1"/>
+        <referencedby refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1afcf41eac95ec7e179f6ab359e458141b" compoundref="d4/d45/json__serializer_8h" startline="61" endline="86">pyfolio::web::JsonSerializer::serialize_performance_metrics</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a0b08a5e0348465a0a66cc54f95580373" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::PerformanceMetrics::var_95</definition>
+        <argsstring></argsstring>
+        <name>var_95</name>
+        <qualifiedname>pyfolio::analytics::PerformanceMetrics::var_95</qualifiedname>
+        <briefdescription>
+<para>Value at Risk at 95% confidence level. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" line="80" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" bodystart="80" bodyend="-1"/>
+        <referencedby refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1afcf41eac95ec7e179f6ab359e458141b" compoundref="d4/d45/json__serializer_8h" startline="61" endline="86">pyfolio::web::JsonSerializer::serialize_performance_metrics</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a96cea1b61c0d9b29916d53409d3c612c" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::PerformanceMetrics::var_99</definition>
+        <argsstring></argsstring>
+        <name>var_99</name>
+        <qualifiedname>pyfolio::analytics::PerformanceMetrics::var_99</qualifiedname>
+        <briefdescription>
+<para>Value at Risk at 99% confidence level. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" line="81" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" bodystart="81" bodyend="-1"/>
+        <referencedby refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1afcf41eac95ec7e179f6ab359e458141b" compoundref="d4/d45/json__serializer_8h" startline="61" endline="86">pyfolio::web::JsonSerializer::serialize_performance_metrics</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1ab50d8bd93cdab494c0971c3503b4dcef" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::PerformanceMetrics::beta</definition>
+        <argsstring></argsstring>
+        <name>beta</name>
+        <qualifiedname>pyfolio::analytics::PerformanceMetrics::beta</qualifiedname>
+        <briefdescription>
+<para>Systematic risk relative to benchmark. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" line="82" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" bodystart="82" bodyend="-1"/>
+        <referencedby refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1afcf41eac95ec7e179f6ab359e458141b" compoundref="d4/d45/json__serializer_8h" startline="61" endline="86">pyfolio::web::JsonSerializer::serialize_performance_metrics</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a8ae8364d4a6c1b763174571da30b46a6" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::PerformanceMetrics::alpha</definition>
+        <argsstring></argsstring>
+        <name>alpha</name>
+        <qualifiedname>pyfolio::analytics::PerformanceMetrics::alpha</qualifiedname>
+        <briefdescription>
+<para>Excess return after adjusting for beta. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" line="83" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" bodystart="83" bodyend="-1"/>
+        <referencedby refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1afcf41eac95ec7e179f6ab359e458141b" compoundref="d4/d45/json__serializer_8h" startline="61" endline="86">pyfolio::web::JsonSerializer::serialize_performance_metrics</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a37817089e17da1751be43cf33bdd0dc7" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::PerformanceMetrics::information_ratio</definition>
+        <argsstring></argsstring>
+        <name>information_ratio</name>
+        <qualifiedname>pyfolio::analytics::PerformanceMetrics::information_ratio</qualifiedname>
+        <briefdescription>
+<para>Active return / Tracking error. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" line="84" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" bodystart="84" bodyend="-1"/>
+        <referencedby refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1afcf41eac95ec7e179f6ab359e458141b" compoundref="d4/d45/json__serializer_8h" startline="61" endline="86">pyfolio::web::JsonSerializer::serialize_performance_metrics</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a9ba502d1c94fa9c7a2d6102871e66882" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::PerformanceMetrics::omega_ratio</definition>
+        <argsstring></argsstring>
+        <name>omega_ratio</name>
+        <qualifiedname>pyfolio::analytics::PerformanceMetrics::omega_ratio</qualifiedname>
+        <briefdescription>
+<para>Probability-weighted ratio of gains vs losses. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" line="87" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" bodystart="87" bodyend="-1"/>
+        <referencedby refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1afcf41eac95ec7e179f6ab359e458141b" compoundref="d4/d45/json__serializer_8h" startline="61" endline="86">pyfolio::web::JsonSerializer::serialize_performance_metrics</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1ab26014d4fe883ea438f4b82f936d6684" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::PerformanceMetrics::tail_ratio</definition>
+        <argsstring></argsstring>
+        <name>tail_ratio</name>
+        <qualifiedname>pyfolio::analytics::PerformanceMetrics::tail_ratio</qualifiedname>
+        <briefdescription>
+<para>95th percentile / 5th percentile of returns </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" line="88" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" bodystart="88" bodyend="-1"/>
+        <referencedby refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1afcf41eac95ec7e179f6ab359e458141b" compoundref="d4/d45/json__serializer_8h" startline="61" endline="86">pyfolio::web::JsonSerializer::serialize_performance_metrics</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a0ec8fa97f4c65bacbafaafcdeab43927" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::PerformanceMetrics::common_sense_ratio</definition>
+        <argsstring></argsstring>
+        <name>common_sense_ratio</name>
+        <qualifiedname>pyfolio::analytics::PerformanceMetrics::common_sense_ratio</qualifiedname>
+        <briefdescription>
+<para>Tail ratio adjusted for volatility. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" line="89" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" bodystart="89" bodyend="-1"/>
+        <referencedby refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1afcf41eac95ec7e179f6ab359e458141b" compoundref="d4/d45/json__serializer_8h" startline="61" endline="86">pyfolio::web::JsonSerializer::serialize_performance_metrics</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1af7be3b9d9bfe9171e7e0fb2f709226e7" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::PerformanceMetrics::stability</definition>
+        <argsstring></argsstring>
+        <name>stability</name>
+        <qualifiedname>pyfolio::analytics::PerformanceMetrics::stability</qualifiedname>
+        <briefdescription>
+<para>R-squared of equity curve regression. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" line="90" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" bodystart="90" bodyend="-1"/>
+        <referencedby refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1afcf41eac95ec7e179f6ab359e458141b" compoundref="d4/d45/json__serializer_8h" startline="61" endline="86">pyfolio::web::JsonSerializer::serialize_performance_metrics</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a504222caaea5e4cd84f461b490c1401d" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::PerformanceMetrics::downside_deviation</definition>
+        <argsstring></argsstring>
+        <name>downside_deviation</name>
+        <qualifiedname>pyfolio::analytics::PerformanceMetrics::downside_deviation</qualifiedname>
+        <briefdescription>
+<para>Standard deviation of negative returns only. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" line="91" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" bodystart="91" bodyend="-1"/>
+        <referencedby refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1afcf41eac95ec7e179f6ab359e458141b" compoundref="d4/d45/json__serializer_8h" startline="61" endline="86">pyfolio::web::JsonSerializer::serialize_performance_metrics</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1ae60da18336ca95f60db5d1b5392cb916" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::PerformanceMetrics::tracking_error</definition>
+        <argsstring></argsstring>
+        <name>tracking_error</name>
+        <qualifiedname>pyfolio::analytics::PerformanceMetrics::tracking_error</qualifiedname>
+        <briefdescription>
+<para>Standard deviation of active returns. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" line="92" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" bodystart="92" bodyend="-1"/>
+        <referencedby refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1afcf41eac95ec7e179f6ab359e458141b" compoundref="d4/d45/json__serializer_8h" startline="61" endline="86">pyfolio::web::JsonSerializer::serialize_performance_metrics</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Comprehensive portfolio performance metrics. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure contains all standard and advanced performance metrics used in institutional portfolio analysis. All values are calculated using industry-standard methodologies and are suitable for regulatory reporting and risk management.</para>
+<para><simplesect kind="note"><para>All ratio-based metrics (Sharpe, Sortino, etc.) are annualized </para>
+</simplesect>
+<simplesect kind="note"><para>VaR metrics are expressed as positive values (loss magnitude) </para>
+</simplesect>
+<simplesect kind="note"><para>Beta and Alpha are calculated relative to the provided benchmark </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" line="70" column="1" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" bodystart="70" bodyend="93"/>
+    <listofallmembers>
+      <member refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a8ae8364d4a6c1b763174571da30b46a6" prot="public" virt="non-virtual"><scope>pyfolio::analytics::PerformanceMetrics</scope><name>alpha</name></member>
+      <member refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a2d32e78155a9e0434d5beffda4fb2bec" prot="public" virt="non-virtual"><scope>pyfolio::analytics::PerformanceMetrics</scope><name>annual_return</name></member>
+      <member refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a0f0a580e22b9f38fee7222d2d3f1f646" prot="public" virt="non-virtual"><scope>pyfolio::analytics::PerformanceMetrics</scope><name>annual_volatility</name></member>
+      <member refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1ab50d8bd93cdab494c0971c3503b4dcef" prot="public" virt="non-virtual"><scope>pyfolio::analytics::PerformanceMetrics</scope><name>beta</name></member>
+      <member refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a714269105c1cacb42e4170fdbae4918e" prot="public" virt="non-virtual"><scope>pyfolio::analytics::PerformanceMetrics</scope><name>calmar_ratio</name></member>
+      <member refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a0ec8fa97f4c65bacbafaafcdeab43927" prot="public" virt="non-virtual"><scope>pyfolio::analytics::PerformanceMetrics</scope><name>common_sense_ratio</name></member>
+      <member refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a504222caaea5e4cd84f461b490c1401d" prot="public" virt="non-virtual"><scope>pyfolio::analytics::PerformanceMetrics</scope><name>downside_deviation</name></member>
+      <member refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a37817089e17da1751be43cf33bdd0dc7" prot="public" virt="non-virtual"><scope>pyfolio::analytics::PerformanceMetrics</scope><name>information_ratio</name></member>
+      <member refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a2a26804a2b0f39cfe38af3f7d9d4fca1" prot="public" virt="non-virtual"><scope>pyfolio::analytics::PerformanceMetrics</scope><name>kurtosis</name></member>
+      <member refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a7f7e2b17c39585f1a5869ca5ef8c8724" prot="public" virt="non-virtual"><scope>pyfolio::analytics::PerformanceMetrics</scope><name>max_drawdown</name></member>
+      <member refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a9ba502d1c94fa9c7a2d6102871e66882" prot="public" virt="non-virtual"><scope>pyfolio::analytics::PerformanceMetrics</scope><name>omega_ratio</name></member>
+      <member refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a2252369fd5a1d4f13476e6f68bec085e" prot="public" virt="non-virtual"><scope>pyfolio::analytics::PerformanceMetrics</scope><name>sharpe_ratio</name></member>
+      <member refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a0c337f6982ecd7f7c790a12893ee77b5" prot="public" virt="non-virtual"><scope>pyfolio::analytics::PerformanceMetrics</scope><name>skewness</name></member>
+      <member refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1aee0f94a36cb88d38dcc2d8f755bd359c" prot="public" virt="non-virtual"><scope>pyfolio::analytics::PerformanceMetrics</scope><name>sortino_ratio</name></member>
+      <member refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1af7be3b9d9bfe9171e7e0fb2f709226e7" prot="public" virt="non-virtual"><scope>pyfolio::analytics::PerformanceMetrics</scope><name>stability</name></member>
+      <member refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1ab26014d4fe883ea438f4b82f936d6684" prot="public" virt="non-virtual"><scope>pyfolio::analytics::PerformanceMetrics</scope><name>tail_ratio</name></member>
+      <member refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a3e502eb4760ff637704b95fc0cf4add1" prot="public" virt="non-virtual"><scope>pyfolio::analytics::PerformanceMetrics</scope><name>total_return</name></member>
+      <member refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1ae60da18336ca95f60db5d1b5392cb916" prot="public" virt="non-virtual"><scope>pyfolio::analytics::PerformanceMetrics</scope><name>tracking_error</name></member>
+      <member refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a0b08a5e0348465a0a66cc54f95580373" prot="public" virt="non-virtual"><scope>pyfolio::analytics::PerformanceMetrics</scope><name>var_95</name></member>
+      <member refid="de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics_1a96cea1b61c0d9b29916d53409d3c612c" prot="public" virt="non-virtual"><scope>pyfolio::analytics::PerformanceMetrics</scope><name>var_99</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

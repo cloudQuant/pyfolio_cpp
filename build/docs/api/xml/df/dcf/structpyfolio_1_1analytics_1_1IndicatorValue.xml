@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="df/dcf/structpyfolio_1_1analytics_1_1IndicatorValue" kind="struct" language="C++" prot="public">
+    <compoundname>pyfolio::analytics::IndicatorValue</compoundname>
+    <includes refid="d4/d7b/market__indicators_8h" local="no">market_indicators.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="df/dcf/structpyfolio_1_1analytics_1_1IndicatorValue_1a14deb59b91ecf924c081974fdcfdd6e2" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::IndicatorValue::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <qualifiedname>pyfolio::analytics::IndicatorValue::value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" line="32" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" bodystart="32" bodyend="-1"/>
+        <referencedby refid="d3/d3c/classpyfolio_1_1analytics_1_1MarketIndicatorsAnalyzer_1aced12b9d93e86d925c9259daeb0d65fc" compoundref="d4/d7b/market__indicators_8h" startline="291" endline="359">pyfolio::analytics::MarketIndicatorsAnalyzer::analyze_regime_indicators</referencedby>
+        <referencedby refid="df/dcf/structpyfolio_1_1analytics_1_1IndicatorValue_1a5c8ab185a7789dbd1a1cdc885b3d754f" compoundref="d4/d7b/market__indicators_8h" startline="41" endline="55">indicates_stress</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="df/dcf/structpyfolio_1_1analytics_1_1IndicatorValue_1ab4bf3bdfae41bcfbc0112511b12d7e65" prot="public" static="no" mutable="no">
+        <type><ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref></type>
+        <definition>DateTime pyfolio::analytics::IndicatorValue::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <qualifiedname>pyfolio::analytics::IndicatorValue::timestamp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" line="33" column="14" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" bodystart="33" bodyend="-1"/>
+        <referencedby refid="d3/d3c/classpyfolio_1_1analytics_1_1MarketIndicatorsAnalyzer_1aced12b9d93e86d925c9259daeb0d65fc" compoundref="d4/d7b/market__indicators_8h" startline="291" endline="359">pyfolio::analytics::MarketIndicatorsAnalyzer::analyze_regime_indicators</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="df/dcf/structpyfolio_1_1analytics_1_1IndicatorValue_1a33cd9e8f14762fb44a7673af82a47113" prot="public" static="no" mutable="no">
+        <type><ref refid="d2/d10/namespacepyfolio_1_1analytics_1a51254d1fe289c5c99cc418aa26e0d5d2" kindref="member">IndicatorType</ref></type>
+        <definition>IndicatorType pyfolio::analytics::IndicatorValue::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>pyfolio::analytics::IndicatorValue::type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" line="34" column="19" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" bodystart="34" bodyend="-1"/>
+        <referencedby refid="d3/d3c/classpyfolio_1_1analytics_1_1MarketIndicatorsAnalyzer_1aced12b9d93e86d925c9259daeb0d65fc" compoundref="d4/d7b/market__indicators_8h" startline="291" endline="359">pyfolio::analytics::MarketIndicatorsAnalyzer::analyze_regime_indicators</referencedby>
+        <referencedby refid="df/dcf/structpyfolio_1_1analytics_1_1IndicatorValue_1a5c8ab185a7789dbd1a1cdc885b3d754f" compoundref="d4/d7b/market__indicators_8h" startline="41" endline="55">indicates_stress</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="df/dcf/structpyfolio_1_1analytics_1_1IndicatorValue_1a2470207f73b77442caab50b2bc6a217e" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::IndicatorValue::percentile</definition>
+        <argsstring></argsstring>
+        <name>percentile</name>
+        <qualifiedname>pyfolio::analytics::IndicatorValue::percentile</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" line="35" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" bodystart="35" bodyend="-1"/>
+        <referencedby refid="d3/d3c/classpyfolio_1_1analytics_1_1MarketIndicatorsAnalyzer_1aced12b9d93e86d925c9259daeb0d65fc" compoundref="d4/d7b/market__indicators_8h" startline="291" endline="359">pyfolio::analytics::MarketIndicatorsAnalyzer::analyze_regime_indicators</referencedby>
+        <referencedby refid="df/dcf/structpyfolio_1_1analytics_1_1IndicatorValue_1a5c8ab185a7789dbd1a1cdc885b3d754f" compoundref="d4/d7b/market__indicators_8h" startline="41" endline="55">indicates_stress</referencedby>
+        <referencedby refid="df/dcf/structpyfolio_1_1analytics_1_1IndicatorValue_1a79a8ae469bab53fe4aedd211b49d9a5a" compoundref="d4/d7b/market__indicators_8h" startline="60" endline="60">signal_strength</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="df/dcf/structpyfolio_1_1analytics_1_1IndicatorValue_1ab6c1d94ffc616abbe6614a2765c7b120" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string pyfolio::analytics::IndicatorValue::regime</definition>
+        <argsstring></argsstring>
+        <name>regime</name>
+        <qualifiedname>pyfolio::analytics::IndicatorValue::regime</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" line="36" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" bodystart="36" bodyend="-1"/>
+        <referencedby refid="d3/d3c/classpyfolio_1_1analytics_1_1MarketIndicatorsAnalyzer_1aced12b9d93e86d925c9259daeb0d65fc" compoundref="d4/d7b/market__indicators_8h" startline="291" endline="359">pyfolio::analytics::MarketIndicatorsAnalyzer::analyze_regime_indicators</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="df/dcf/structpyfolio_1_1analytics_1_1IndicatorValue_1a5c8ab185a7789dbd1a1cdc885b3d754f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool pyfolio::analytics::IndicatorValue::indicates_stress</definition>
+        <argsstring>() const</argsstring>
+        <name>indicates_stress</name>
+        <qualifiedname>pyfolio::analytics::IndicatorValue::indicates_stress</qualifiedname>
+        <briefdescription>
+<para>Check if indicator suggests stress. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" line="41" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" bodystart="41" bodyend="55"/>
+        <references refid="d2/d10/namespacepyfolio_1_1analytics_1a51254d1fe289c5c99cc418aa26e0d5d2a903f63be23b981f3d5c89a42ebc86cc2" compoundref="d4/d7b/market__indicators_8h" startline="20">pyfolio::analytics::CreditSpread</references>
+        <references refid="d2/d10/namespacepyfolio_1_1analytics_1a51254d1fe289c5c99cc418aa26e0d5d2ad148ee84ecc40a0e4b4840b09ea1f5b9" compoundref="d4/d7b/market__indicators_8h" startline="23">pyfolio::analytics::HighYieldSpread</references>
+        <references refid="df/dcf/structpyfolio_1_1analytics_1_1IndicatorValue_1a2470207f73b77442caab50b2bc6a217e" compoundref="d4/d7b/market__indicators_8h" startline="35">percentile</references>
+        <references refid="d2/d10/namespacepyfolio_1_1analytics_1a51254d1fe289c5c99cc418aa26e0d5d2ad65864e8b09bc7c70dd77861c6c96421" compoundref="d4/d7b/market__indicators_8h" startline="22">pyfolio::analytics::PutCallRatio</references>
+        <references refid="d2/d10/namespacepyfolio_1_1analytics_1a51254d1fe289c5c99cc418aa26e0d5d2a65b8db9bf515cc37584c5bbc865298c4" compoundref="d4/d7b/market__indicators_8h" startline="19">pyfolio::analytics::TermSpread</references>
+        <references refid="df/dcf/structpyfolio_1_1analytics_1_1IndicatorValue_1a33cd9e8f14762fb44a7673af82a47113" compoundref="d4/d7b/market__indicators_8h" startline="34">type</references>
+        <references refid="df/dcf/structpyfolio_1_1analytics_1_1IndicatorValue_1a14deb59b91ecf924c081974fdcfdd6e2" compoundref="d4/d7b/market__indicators_8h" startline="32">value</references>
+        <references refid="d2/d10/namespacepyfolio_1_1analytics_1a51254d1fe289c5c99cc418aa26e0d5d2af96d73e8fd3a87ab4e2fea235d3d79b0" compoundref="d4/d7b/market__indicators_8h" startline="18">pyfolio::analytics::VIX</references>
+      </memberdef>
+      <memberdef kind="function" id="df/dcf/structpyfolio_1_1analytics_1_1IndicatorValue_1a79a8ae469bab53fe4aedd211b49d9a5a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double pyfolio::analytics::IndicatorValue::signal_strength</definition>
+        <argsstring>() const</argsstring>
+        <name>signal_strength</name>
+        <qualifiedname>pyfolio::analytics::IndicatorValue::signal_strength</qualifiedname>
+        <briefdescription>
+<para>Get signal strength (0-1) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" line="60" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" bodystart="60" bodyend="60"/>
+        <references refid="df/dcf/structpyfolio_1_1analytics_1_1IndicatorValue_1a2470207f73b77442caab50b2bc6a217e" compoundref="d4/d7b/market__indicators_8h" startline="35">percentile</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Market indicator value with metadata. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>pyfolio::BusinessCalendar</label>
+        <link refid="dc/ddd/classpyfolio_1_1BusinessCalendar"/>
+      </node>
+      <node id="2">
+        <label>pyfolio::DateTime</label>
+        <link refid="d6/d4f/classpyfolio_1_1DateTime"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>default_calendar_</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>pyfolio::analytics::IndicatorValue</label>
+        <link refid="df/dcf/structpyfolio_1_1analytics_1_1IndicatorValue"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>timestamp</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>regime</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="4">
+        <label>std::string</label>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" line="31" column="1" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" bodystart="31" bodyend="61"/>
+    <listofallmembers>
+      <member refid="df/dcf/structpyfolio_1_1analytics_1_1IndicatorValue_1a5c8ab185a7789dbd1a1cdc885b3d754f" prot="public" virt="non-virtual"><scope>pyfolio::analytics::IndicatorValue</scope><name>indicates_stress</name></member>
+      <member refid="df/dcf/structpyfolio_1_1analytics_1_1IndicatorValue_1a2470207f73b77442caab50b2bc6a217e" prot="public" virt="non-virtual"><scope>pyfolio::analytics::IndicatorValue</scope><name>percentile</name></member>
+      <member refid="df/dcf/structpyfolio_1_1analytics_1_1IndicatorValue_1ab6c1d94ffc616abbe6614a2765c7b120" prot="public" virt="non-virtual"><scope>pyfolio::analytics::IndicatorValue</scope><name>regime</name></member>
+      <member refid="df/dcf/structpyfolio_1_1analytics_1_1IndicatorValue_1a79a8ae469bab53fe4aedd211b49d9a5a" prot="public" virt="non-virtual"><scope>pyfolio::analytics::IndicatorValue</scope><name>signal_strength</name></member>
+      <member refid="df/dcf/structpyfolio_1_1analytics_1_1IndicatorValue_1ab4bf3bdfae41bcfbc0112511b12d7e65" prot="public" virt="non-virtual"><scope>pyfolio::analytics::IndicatorValue</scope><name>timestamp</name></member>
+      <member refid="df/dcf/structpyfolio_1_1analytics_1_1IndicatorValue_1a33cd9e8f14762fb44a7673af82a47113" prot="public" virt="non-virtual"><scope>pyfolio::analytics::IndicatorValue</scope><name>type</name></member>
+      <member refid="df/dcf/structpyfolio_1_1analytics_1_1IndicatorValue_1a14deb59b91ecf924c081974fdcfdd6e2" prot="public" virt="non-virtual"><scope>pyfolio::analytics::IndicatorValue</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

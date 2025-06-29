@@ -8,7 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/yunjinqi/Documents/pyfolio_cpp/main.cpp" "CMakeFiles/pyfolio_cpp.dir/main.cpp.o" "gcc" "CMakeFiles/pyfolio_cpp.dir/main.cpp.o.d"
+  "/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/backtesting/advanced_backtester.cpp" "CMakeFiles/pyfolio_cpp.dir/src/backtesting/advanced_backtester.cpp.o" "gcc" "CMakeFiles/pyfolio_cpp.dir/src/backtesting/advanced_backtester.cpp.o.d"
+  "/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/math/simd_math.cpp" "CMakeFiles/pyfolio_cpp.dir/src/math/simd_math.cpp.o" "gcc" "CMakeFiles/pyfolio_cpp.dir/src/math/simd_math.cpp.o.d"
+  "/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/ml/model_persistence.cpp" "CMakeFiles/pyfolio_cpp.dir/src/ml/model_persistence.cpp.o" "gcc" "CMakeFiles/pyfolio_cpp.dir/src/ml/model_persistence.cpp.o.d"
+  "/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/ml/serializable_models.cpp" "CMakeFiles/pyfolio_cpp.dir/src/ml/serializable_models.cpp.o" "gcc" "CMakeFiles/pyfolio_cpp.dir/src/ml/serializable_models.cpp.o.d"
+  "/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/risk/advanced_risk_models.cpp" "CMakeFiles/pyfolio_cpp.dir/src/risk/advanced_risk_models.cpp.o" "gcc" "CMakeFiles/pyfolio_cpp.dir/src/risk/advanced_risk_models.cpp.o.d"
+  "/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp" "CMakeFiles/pyfolio_cpp.dir/src/visualization/plotly_enhanced.cpp.o" "gcc" "CMakeFiles/pyfolio_cpp.dir/src/visualization/plotly_enhanced.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

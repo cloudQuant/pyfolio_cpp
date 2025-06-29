@@ -1,0 +1,159 @@
+name: ✨ Feature Request
+description: Suggest a new feature or enhancement for PyFolio C++
+title: "[Feature]: "
+labels: ["enhancement", "triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a new feature! 
+        
+        Please provide as much detail as possible to help us understand your needs.
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Feature Category
+      description: What category does this feature belong to?
+      options:
+        - Core Analytics
+        - Performance Metrics
+        - Risk Analysis
+        - Portfolio Optimization
+        - Data Processing
+        - Visualization
+        - API/Integration
+        - Machine Learning
+        - Real-time Processing
+        - Documentation
+        - Testing
+        - Build System
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority Level
+      description: How important is this feature to you?
+      options:
+        - Low - Nice to have
+        - Medium - Would be helpful
+        - High - Important for my use case
+        - Critical - Blocking my work
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: What problem does this feature solve? What's the current limitation?
+      placeholder: Describe the problem or limitation you're facing...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: How would you like this feature to work?
+      placeholder: Describe your ideal solution...
+    validations:
+      required: true
+
+  - type: textarea
+    id: api
+    attributes:
+      label: Proposed API Design
+      description: If applicable, show how you'd like the API to look
+      render: cpp
+      placeholder: |
+        // Example API design
+        Portfolio portfolio;
+        auto result = portfolio.calculate_new_metric();
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternative Solutions
+      description: Have you considered any alternative approaches?
+      placeholder: Describe any alternative solutions you've considered...
+
+  - type: textarea
+    id: use_cases
+    attributes:
+      label: Use Cases
+      description: Provide specific examples of how this feature would be used
+      placeholder: |
+        1. Use case 1: ...
+        2. Use case 2: ...
+        3. Use case 3: ...
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: Code Examples
+      description: Provide code examples showing how the feature would be used
+      render: cpp
+      placeholder: |
+        // Example usage
+        #include <pyfolio/new_feature.h>
+        
+        int main() {
+            // How the feature would be used
+            return 0;
+        }
+
+  - type: checkboxes
+    id: implementation
+    attributes:
+      label: Implementation Considerations
+      options:
+        - label: This feature should be backward compatible
+        - label: This feature may require breaking changes
+        - label: This feature should be optional/configurable
+        - label: This feature requires new dependencies
+        - label: This feature affects performance-critical code
+        - label: This feature requires extensive testing
+
+  - type: dropdown
+    id: complexity
+    attributes:
+      label: Estimated Complexity
+      description: How complex do you think implementing this feature would be?
+      options:
+        - Low - Simple addition or modification
+        - Medium - Moderate implementation effort
+        - High - Significant design and implementation work
+        - Very High - Major architectural changes required
+
+  - type: textarea
+    id: resources
+    attributes:
+      label: Research/References
+      description: Provide any relevant research, papers, or reference implementations
+      placeholder: |
+        - Research paper: [Title](URL)
+        - Reference implementation: [Project](URL)
+        - Documentation: [Source](URL)
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Contribution
+      options:
+        - label: I would be willing to implement this feature
+        - label: I would be willing to help with testing
+        - label: I would be willing to help with documentation
+        - label: I can provide domain expertise/review
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Any other information that would be helpful
+      placeholder: Any additional context, mockups, diagrams, etc.

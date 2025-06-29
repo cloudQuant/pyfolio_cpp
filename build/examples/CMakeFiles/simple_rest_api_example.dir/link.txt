@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names --coverage CMakeFiles/simple_rest_api_example.dir/simple_rest_api_example.cpp.o -o simple_rest_api_example

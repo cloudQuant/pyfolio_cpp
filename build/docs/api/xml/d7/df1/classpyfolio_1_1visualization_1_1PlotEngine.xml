@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="d7/df1/classpyfolio_1_1visualization_1_1PlotEngine" kind="class" language="C++" prot="public">
+    <compoundname>pyfolio::visualization::PlotEngine</compoundname>
+    <includes refid="d3/df8/plotting_8h" local="no">plotting.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d7/df1/classpyfolio_1_1visualization_1_1PlotEngine_1afdbb9f782272250e36fc8e0c26edb49b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>pyfolio::visualization::PlotEngine::PlotEngine</definition>
+        <argsstring>()=default</argsstring>
+        <name>PlotEngine</name>
+        <qualifiedname>pyfolio::visualization::PlotEngine::PlotEngine</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" line="59" column="5"/>
+        <referencedby refid="d7/df1/classpyfolio_1_1visualization_1_1PlotEngine_1a0dbfab3657a16b5f369fe49f9cd296ec" compoundref="d3/df8/plotting_8h" startline="476" endline="481">datetime_to_string</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/df1/classpyfolio_1_1visualization_1_1PlotEngine_1a71f235e929ec020e2ec5ca172d3fe965" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>pyfolio::visualization::PlotEngine::~PlotEngine</definition>
+        <argsstring>()=default</argsstring>
+        <name>~PlotEngine</name>
+        <qualifiedname>pyfolio::visualization::PlotEngine::~PlotEngine</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" line="60" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/df1/classpyfolio_1_1visualization_1_1PlotEngine_1a0332e0e3176fd46028097be8b096fcb8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; std::string &gt;</type>
+        <definition>Result&lt; std::string &gt; pyfolio::visualization::PlotEngine::create_line_plot</definition>
+        <argsstring>(const std::vector&lt; PlotData &gt; &amp;series, const PlotConfig &amp;config=PlotConfig{})</argsstring>
+        <name>create_line_plot</name>
+        <qualifiedname>pyfolio::visualization::PlotEngine::create_line_plot</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="d8/d8b/structpyfolio_1_1visualization_1_1PlotData" kindref="compound">PlotData</ref> &gt; &amp;</type>
+          <declname>series</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval><ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref>{}</defval>
+        </param>
+        <briefdescription>
+<para>Create a line plot. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" line="65" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" bodystart="315" bodyend="338"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/df1/classpyfolio_1_1visualization_1_1PlotEngine_1aa90f63aca35a0e5683aab907e8ad752c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; std::string &gt;</type>
+        <definition>Result&lt; std::string &gt; pyfolio::visualization::PlotEngine::create_bar_plot</definition>
+        <argsstring>(const std::vector&lt; std::string &gt; &amp;labels, const std::vector&lt; double &gt; &amp;values, const PlotConfig &amp;config=PlotConfig{})</argsstring>
+        <name>create_bar_plot</name>
+        <qualifiedname>pyfolio::visualization::PlotEngine::create_bar_plot</qualifiedname>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>labels</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval><ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref>{}</defval>
+        </param>
+        <briefdescription>
+<para>Create a bar plot. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" line="70" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/df1/classpyfolio_1_1visualization_1_1PlotEngine_1a626fccf04da191851c05b860be864f28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; std::string &gt;</type>
+        <definition>Result&lt; std::string &gt; pyfolio::visualization::PlotEngine::create_heatmap</definition>
+        <argsstring>(const std::vector&lt; std::string &gt; &amp;row_labels, const std::vector&lt; std::string &gt; &amp;col_labels, const std::vector&lt; std::vector&lt; double &gt; &gt; &amp;data, const PlotConfig &amp;config=PlotConfig{})</argsstring>
+        <name>create_heatmap</name>
+        <qualifiedname>pyfolio::visualization::PlotEngine::create_heatmap</qualifiedname>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>row_labels</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>col_labels</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::vector&lt; double &gt; &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval><ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref>{}</defval>
+        </param>
+        <briefdescription>
+<para>Create a heatmap. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" line="76" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/df1/classpyfolio_1_1visualization_1_1PlotEngine_1a32df876314171a1f3510ee9775d6da52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; std::string &gt;</type>
+        <definition>Result&lt; std::string &gt; pyfolio::visualization::PlotEngine::create_histogram</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;data, int bins=50, const PlotConfig &amp;config=PlotConfig{})</argsstring>
+        <name>create_histogram</name>
+        <qualifiedname>pyfolio::visualization::PlotEngine::create_histogram</qualifiedname>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bins</declname>
+          <defval>50</defval>
+        </param>
+        <param>
+          <type>const <ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval><ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref>{}</defval>
+        </param>
+        <briefdescription>
+<para>Create a histogram. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" line="84" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/df1/classpyfolio_1_1visualization_1_1PlotEngine_1a0dbfab3657a16b5f369fe49f9cd296ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string pyfolio::visualization::PlotEngine::datetime_to_string</definition>
+        <argsstring>(const DateTime &amp;dt)</argsstring>
+        <name>datetime_to_string</name>
+        <qualifiedname>pyfolio::visualization::PlotEngine::datetime_to_string</qualifiedname>
+        <param>
+          <type>const <ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref> &amp;</type>
+          <declname>dt</declname>
+        </param>
+        <briefdescription>
+<para>Convert <ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref> to string for plotting. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" line="108" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" bodystart="476" bodyend="481"/>
+        <references refid="d7/df1/classpyfolio_1_1visualization_1_1PlotEngine_1afdbb9f782272250e36fc8e0c26edb49b">PlotEngine</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="d7/df1/classpyfolio_1_1visualization_1_1PlotEngine_1a4dc10919be02fcdbfdc6d8dab809876e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string pyfolio::visualization::PlotEngine::generate_html_plot</definition>
+        <argsstring>(const std::vector&lt; PlotData &gt; &amp;series, const PlotConfig &amp;config, const std::string &amp;plot_type=&quot;line&quot;)</argsstring>
+        <name>generate_html_plot</name>
+        <qualifiedname>pyfolio::visualization::PlotEngine::generate_html_plot</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="d8/d8b/structpyfolio_1_1visualization_1_1PlotData" kindref="compound">PlotData</ref> &gt; &amp;</type>
+          <declname>series</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref> &amp;</type>
+          <declname>config</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>plot_type</declname>
+          <defval>&quot;line&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Generate HTML plot using plotly.js. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" line="91" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" bodystart="265" bodyend="311"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/df1/classpyfolio_1_1visualization_1_1PlotEngine_1ad78ebb6367da17a371c2cc671e266259" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string pyfolio::visualization::PlotEngine::generate_svg_plot</definition>
+        <argsstring>(const std::vector&lt; PlotData &gt; &amp;series, const PlotConfig &amp;config)</argsstring>
+        <name>generate_svg_plot</name>
+        <qualifiedname>pyfolio::visualization::PlotEngine::generate_svg_plot</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="d8/d8b/structpyfolio_1_1visualization_1_1PlotData" kindref="compound">PlotData</ref> &gt; &amp;</type>
+          <declname>series</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref> &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+<para>Generate SVG plot. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" line="97" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" bodystart="483" bodyend="533"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/df1/classpyfolio_1_1visualization_1_1PlotEngine_1a257e834933beec615bacf1e105260795" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; void &gt;</type>
+        <definition>Result&lt; void &gt; pyfolio::visualization::PlotEngine::save_plot</definition>
+        <argsstring>(const std::string &amp;content, const std::string &amp;path)</argsstring>
+        <name>save_plot</name>
+        <qualifiedname>pyfolio::visualization::PlotEngine::save_plot</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>content</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Save plot to file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" line="102" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" bodystart="340" bodyend="350"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Simple plotting interface that can generate multiple output formats. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class provides plotting functionality without requiring matplotlib. It can generate:<itemizedlist>
+<listitem><para>HTML plots using embedded JavaScript (plotly.js/d3.js)</para>
+</listitem><listitem><para>SVG plots</para>
+</listitem><listitem><para>CSV data for external plotting</para>
+</listitem><listitem><para>Simple ASCII plots for console output </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" line="57" column="1" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" bodystart="57" bodyend="111"/>
+    <listofallmembers>
+      <member refid="d7/df1/classpyfolio_1_1visualization_1_1PlotEngine_1aa90f63aca35a0e5683aab907e8ad752c" prot="public" virt="non-virtual"><scope>pyfolio::visualization::PlotEngine</scope><name>create_bar_plot</name></member>
+      <member refid="d7/df1/classpyfolio_1_1visualization_1_1PlotEngine_1a626fccf04da191851c05b860be864f28" prot="public" virt="non-virtual"><scope>pyfolio::visualization::PlotEngine</scope><name>create_heatmap</name></member>
+      <member refid="d7/df1/classpyfolio_1_1visualization_1_1PlotEngine_1a32df876314171a1f3510ee9775d6da52" prot="public" virt="non-virtual"><scope>pyfolio::visualization::PlotEngine</scope><name>create_histogram</name></member>
+      <member refid="d7/df1/classpyfolio_1_1visualization_1_1PlotEngine_1a0332e0e3176fd46028097be8b096fcb8" prot="public" virt="non-virtual"><scope>pyfolio::visualization::PlotEngine</scope><name>create_line_plot</name></member>
+      <member refid="d7/df1/classpyfolio_1_1visualization_1_1PlotEngine_1a0dbfab3657a16b5f369fe49f9cd296ec" prot="public" virt="non-virtual"><scope>pyfolio::visualization::PlotEngine</scope><name>datetime_to_string</name></member>
+      <member refid="d7/df1/classpyfolio_1_1visualization_1_1PlotEngine_1a4dc10919be02fcdbfdc6d8dab809876e" prot="private" virt="non-virtual"><scope>pyfolio::visualization::PlotEngine</scope><name>generate_html_plot</name></member>
+      <member refid="d7/df1/classpyfolio_1_1visualization_1_1PlotEngine_1ad78ebb6367da17a371c2cc671e266259" prot="private" virt="non-virtual"><scope>pyfolio::visualization::PlotEngine</scope><name>generate_svg_plot</name></member>
+      <member refid="d7/df1/classpyfolio_1_1visualization_1_1PlotEngine_1afdbb9f782272250e36fc8e0c26edb49b" prot="public" virt="non-virtual"><scope>pyfolio::visualization::PlotEngine</scope><name>PlotEngine</name></member>
+      <member refid="d7/df1/classpyfolio_1_1visualization_1_1PlotEngine_1a257e834933beec615bacf1e105260795" prot="private" virt="non-virtual"><scope>pyfolio::visualization::PlotEngine</scope><name>save_plot</name></member>
+      <member refid="d7/df1/classpyfolio_1_1visualization_1_1PlotEngine_1a71f235e929ec020e2ec5ca172d3fe965" prot="public" virt="non-virtual"><scope>pyfolio::visualization::PlotEngine</scope><name>~PlotEngine</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

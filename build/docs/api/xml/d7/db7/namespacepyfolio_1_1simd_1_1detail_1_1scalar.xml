@@ -1,0 +1,188 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="d7/db7/namespacepyfolio_1_1simd_1_1detail_1_1scalar" kind="namespace" language="C++">
+    <compoundname>pyfolio::simd::detail::scalar</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="d7/db7/namespacepyfolio_1_1simd_1_1detail_1_1scalar_1ab58555677e96819f47635fcb6cb98d80" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void pyfolio::simd::detail::scalar::vector_add_scalar</definition>
+        <argsstring>(const double *a, const double *b, double *result, size_t n) noexcept</argsstring>
+        <name>vector_add_scalar</name>
+        <qualifiedname>pyfolio::simd::detail::scalar::vector_add_scalar</qualifiedname>
+        <param>
+          <type>const double *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/math/simd_math.cpp" line="358" column="6" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/math/simd_math.cpp" bodystart="358" bodyend="362" declfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/simd_math.h" declline="166" declcolumn="6"/>
+        <referencedby refid="d0/d60/namespacepyfolio_1_1simd_1a8db69e97761680ae769598b3ea85485d" compoundref="df/d95/simd__math_8cpp" startline="46" endline="76">pyfolio::simd::vector_add</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/db7/namespacepyfolio_1_1simd_1_1detail_1_1scalar_1a04c8ebd0f050bd6f3bed345233491cf7" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void pyfolio::simd::detail::scalar::vector_subtract_scalar</definition>
+        <argsstring>(const double *a, const double *b, double *result, size_t n) noexcept</argsstring>
+        <name>vector_subtract_scalar</name>
+        <qualifiedname>pyfolio::simd::detail::scalar::vector_subtract_scalar</qualifiedname>
+        <param>
+          <type>const double *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/math/simd_math.cpp" line="364" column="6" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/math/simd_math.cpp" bodystart="364" bodyend="368" declfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/simd_math.h" declline="167" declcolumn="6"/>
+        <referencedby refid="d0/d60/namespacepyfolio_1_1simd_1a0eb32889b1c6598cb6d836322b1fd4e7" compoundref="df/d95/simd__math_8cpp" startline="78" endline="107">pyfolio::simd::vector_subtract</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/db7/namespacepyfolio_1_1simd_1_1detail_1_1scalar_1a7fc9e59a61325bcb4ac9050b5e3058f9" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void pyfolio::simd::detail::scalar::vector_multiply_scalar</definition>
+        <argsstring>(const double *a, const double *b, double *result, size_t n) noexcept</argsstring>
+        <name>vector_multiply_scalar</name>
+        <qualifiedname>pyfolio::simd::detail::scalar::vector_multiply_scalar</qualifiedname>
+        <param>
+          <type>const double *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/math/simd_math.cpp" line="370" column="6" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/math/simd_math.cpp" bodystart="370" bodyend="374" declfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/simd_math.h" declline="168" declcolumn="6"/>
+        <referencedby refid="d0/d60/namespacepyfolio_1_1simd_1ad7801140ceb50d53111dc0137b1c093c" compoundref="df/d95/simd__math_8cpp" startline="109" endline="138">pyfolio::simd::vector_multiply</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/db7/namespacepyfolio_1_1simd_1_1detail_1_1scalar_1af2154fdba8e0cfeb0a76bf24cfb45d23" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void pyfolio::simd::detail::scalar::vector_scale_scalar</definition>
+        <argsstring>(const double *a, double scalar, double *result, size_t n) noexcept</argsstring>
+        <name>vector_scale_scalar</name>
+        <qualifiedname>pyfolio::simd::detail::scalar::vector_scale_scalar</qualifiedname>
+        <param>
+          <type>const double *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>scalar</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/math/simd_math.cpp" line="376" column="6" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/math/simd_math.cpp" bodystart="376" bodyend="380" declfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/simd_math.h" declline="169" declcolumn="6"/>
+        <referencedby refid="d0/d60/namespacepyfolio_1_1simd_1a6efc96d7ab5019459131e97046cca0a2" compoundref="df/d95/simd__math_8cpp" startline="140" endline="169">pyfolio::simd::vector_scale</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/db7/namespacepyfolio_1_1simd_1_1detail_1_1scalar_1a24687892584d07748c1d6e718a71e88f" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double pyfolio::simd::detail::scalar::dot_product_scalar</definition>
+        <argsstring>(const double *a, const double *b, size_t n) noexcept</argsstring>
+        <name>dot_product_scalar</name>
+        <qualifiedname>pyfolio::simd::detail::scalar::dot_product_scalar</qualifiedname>
+        <param>
+          <type>const double *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/math/simd_math.cpp" line="382" column="8" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/math/simd_math.cpp" bodystart="382" bodyend="388" declfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/simd_math.h" declline="170" declcolumn="8"/>
+        <referencedby refid="d0/d60/namespacepyfolio_1_1simd_1a148485211f2ca558de4424412a78f0a0" compoundref="df/d95/simd__math_8cpp" startline="171" endline="197">pyfolio::simd::dot_product</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/db7/namespacepyfolio_1_1simd_1_1detail_1_1scalar_1a4fc93986da5a9f89f845fcf6f697f40d" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double pyfolio::simd::detail::scalar::vector_sum_scalar</definition>
+        <argsstring>(const double *data, size_t n) noexcept</argsstring>
+        <name>vector_sum_scalar</name>
+        <qualifiedname>pyfolio::simd::detail::scalar::vector_sum_scalar</qualifiedname>
+        <param>
+          <type>const double *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/math/simd_math.cpp" line="390" column="8" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/math/simd_math.cpp" bodystart="390" bodyend="396" declfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/simd_math.h" declline="171" declcolumn="8"/>
+        <referencedby refid="d0/d60/namespacepyfolio_1_1simd_1a60235417cf246196aeb42e6211a07046" compoundref="df/d95/simd__math_8cpp" startline="199" endline="224">pyfolio::simd::vector_sum</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Scalar fallback implementations. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/simd_math.h" line="165" column="1"/>
+  </compounddef>
+</doxygen>

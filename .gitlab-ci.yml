@@ -1,0 +1,447 @@
+# GitLab CI/CD Pipeline for PyFolio C++
+# Comprehensive CI/CD with multi-platform builds, testing, and deployment
+
+image: ubuntu:22.04
+
+variables:
+  CMAKE_BUILD_TYPE: Release
+  BUILD_PARALLEL_JOBS: 4
+  DOCKER_DRIVER: overlay2
+  DOCKER_TLS_CERTDIR: "/certs"
+  GIT_SUBMODULE_STRATEGY: recursive
+
+stages:
+  - prepare
+  - build
+  - test
+  - analysis
+  - package
+  - deploy
+  - cleanup
+
+# Cache configuration
+cache:
+  key: "$CI_COMMIT_REF_SLUG"
+  paths:
+    - build/
+    - _deps/
+    - .cache/
+
+# Prepare stage
+prepare:dependencies:
+  stage: prepare
+  before_script:
+    - apt-get update -qq
+    - apt-get install -y cmake build-essential ninja-build pkg-config
+    - apt-get install -y libeigen3-dev libopenmpi-dev libhdf5-dev
+    - apt-get install -y python3 python3-pip git curl
+  script:
+    - mkdir -p build
+    - cd build
+    - cmake -GNinja -DCMAKE_BUILD_TYPE=$CMAKE_BUILD_TYPE ..
+  artifacts:
+    paths:
+      - build/
+    expire_in: 1 hour
+
+# Build stage
+.build_template: &build_template
+  stage: build
+  dependencies:
+    - prepare:dependencies
+  script:
+    - cd build
+    - ninja -j$BUILD_PARALLEL_JOBS
+  artifacts:
+    paths:
+      - build/
+    expire_in: 1 day
+
+build:linux:gcc:
+  <<: *build_template
+  variables:
+    CC: gcc
+    CXX: g++
+
+build:linux:clang:
+  <<: *build_template
+  image: ubuntu:22.04
+  before_script:
+    - apt-get update -qq
+    - apt-get install -y clang cmake ninja-build
+  variables:
+    CC: clang
+    CXX: clang++
+
+build:debug:
+  <<: *build_template
+  variables:
+    CMAKE_BUILD_TYPE: Debug
+    CC: gcc
+    CXX: g++
+
+# Test stage
+.test_template: &test_template
+  stage: test
+  dependencies:
+    - build:linux:gcc
+  script:
+    - cd build
+    - ctest --output-on-failure --parallel $BUILD_PARALLEL_JOBS
+
+test:unit:
+  <<: *test_template
+  script:
+    - cd build
+    - ctest -L "unit" --output-on-failure --parallel $BUILD_PARALLEL_JOBS
+  artifacts:
+    reports:
+      junit: build/test_results.xml
+    paths:
+      - build/Testing/
+    expire_in: 1 week
+
+test:integration:
+  <<: *test_template
+  script:
+    - cd build
+    - ctest -L "integration" --output-on-failure --parallel $BUILD_PARALLEL_JOBS
+  artifacts:
+    reports:
+      junit: build/integration_results.xml
+    expire_in: 1 week
+
+test:performance:
+  <<: *test_template
+  script:
+    - cd build
+    - ./tests/performance_benchmarks --benchmark_format=json > ../performance_results.json
+  artifacts:
+    paths:
+      - performance_results.json
+    expire_in: 1 month
+  only:
+    - main
+    - develop
+
+test:memory:
+  stage: test
+  dependencies:
+    - build:debug
+  before_script:
+    - apt-get update -qq
+    - apt-get install -y valgrind
+  script:
+    - cd build
+    - valgrind --leak-check=full --error-exitcode=1 ./tests/memory_tests
+  artifacts:
+    paths:
+      - valgrind_output.log
+    expire_in: 1 week
+
+# Analysis stage
+coverage:
+  stage: analysis
+  dependencies:
+    - build:debug
+  before_script:
+    - apt-get update -qq
+    - apt-get install -y lcov
+  script:
+    - cd build
+    - make coverage
+    - lcov --capture --directory . --output-file coverage.info
+    - lcov --remove coverage.info '/usr/*' --output-file coverage.info
+    - lcov --list coverage.info
+  artifacts:
+    paths:
+      - build/coverage.info
+      - build/coverage_html/
+    reports:
+      coverage_report:
+        coverage_format: cobertura
+        path: build/coverage.xml
+    expire_in: 1 month
+  coverage: '/lines......: \d+\.\d+\%/'
+
+static_analysis:
+  stage: analysis
+  dependencies:
+    - prepare:dependencies
+  before_script:
+    - apt-get update -qq
+    - apt-get install -y cppcheck clang-tidy
+  script:
+    - cppcheck --xml --xml-version=2 --enable=all --suppress=missingIncludeSystem src/ 2> cppcheck_report.xml
+    - find src/ -name "*.cpp" -exec clang-tidy {} -- -Iinclude \; > clang_tidy_report.txt 2>&1 || true
+  artifacts:
+    paths:
+      - cppcheck_report.xml
+      - clang_tidy_report.txt
+    expire_in: 1 month
+
+security_scan:
+  stage: analysis
+  image: securecodewarrior/docker-cppcheck:latest
+  script:
+    - cppcheck --xml --xml-version=2 --enable=warning,style,performance,portability --suppress=missingIncludeSystem src/ 2> security_report.xml
+  artifacts:
+    paths:
+      - security_report.xml
+    expire_in: 1 month
+
+# Package stage
+package:docker:
+  stage: package
+  image: docker:latest
+  services:
+    - docker:dind
+  dependencies:
+    - build:linux:gcc
+  before_script:
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+  script:
+    - docker build -t $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA .
+    - docker build -t $CI_REGISTRY_IMAGE:latest .
+    - docker push $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA
+    - docker push $CI_REGISTRY_IMAGE:latest
+  only:
+    - main
+    - develop
+
+package:release:
+  stage: package
+  dependencies:
+    - build:linux:gcc
+  script:
+    - cd build
+    - make package
+    - mkdir -p ../artifacts
+    - cp *.tar.gz *.deb *.rpm ../artifacts/ 2>/dev/null || true
+  artifacts:
+    paths:
+      - artifacts/
+    expire_in: 1 month
+  only:
+    - tags
+
+# Deploy stage
+deploy:staging:
+  stage: deploy
+  image: bitnami/kubectl:latest
+  dependencies:
+    - package:docker
+  before_script:
+    - kubectl config use-context $KUBE_CONTEXT_STAGING
+  script:
+    - kubectl set image deployment/pyfolio-cpp pyfolio-cpp=$CI_REGISTRY_IMAGE:$CI_COMMIT_SHA -n pyfolio-staging
+    - kubectl rollout status deployment/pyfolio-cpp -n pyfolio-staging
+  environment:
+    name: staging
+    url: https://staging.pyfolio-cpp.com
+  only:
+    - develop
+
+deploy:production:
+  stage: deploy
+  image: bitnami/kubectl:latest
+  dependencies:
+    - package:docker
+  before_script:
+    - kubectl config use-context $KUBE_CONTEXT_PRODUCTION
+  script:
+    - kubectl set image deployment/pyfolio-cpp pyfolio-cpp=$CI_REGISTRY_IMAGE:$CI_COMMIT_SHA -n pyfolio-production
+    - kubectl rollout status deployment/pyfolio-cpp -n pyfolio-production
+  environment:
+    name: production
+    url: https://pyfolio-cpp.com
+  when: manual
+  only:
+    - main
+    - tags
+
+deploy:helm:
+  stage: deploy
+  image: alpine/helm:latest
+  dependencies:
+    - package:docker
+  before_script:
+    - helm repo add pyfolio-cpp https://charts.pyfolio-cpp.com
+    - helm repo update
+  script:
+    - helm upgrade --install pyfolio-cpp pyfolio-cpp/pyfolio-cpp 
+      --set image.tag=$CI_COMMIT_SHA 
+      --set environment=$DEPLOY_ENVIRONMENT
+      --namespace pyfolio-$DEPLOY_ENVIRONMENT
+  parallel:
+    matrix:
+      - DEPLOY_ENVIRONMENT: [staging, production]
+  when: manual
+  only:
+    - main
+    - develop
+
+# Documentation deployment
+pages:
+  stage: deploy
+  dependencies:
+    - build:linux:gcc
+  before_script:
+    - apt-get update -qq
+    - apt-get install -y doxygen graphviz
+  script:
+    - cd build
+    - make docs
+    - mkdir -p ../public
+    - cp -r docs/html/* ../public/
+    - cp ../performance_results.json ../public/ 2>/dev/null || true
+  artifacts:
+    paths:
+      - public
+    expire_in: 1 month
+  only:
+    - main
+
+# Cleanup stage
+cleanup:docker:
+  stage: cleanup
+  image: docker:latest
+  services:
+    - docker:dind
+  before_script:
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+  script:
+    - docker system prune -f
+    - |
+      # Keep only the last 5 tags
+      IMAGES=$(docker images $CI_REGISTRY_IMAGE --format "{{.Tag}}" | grep -v latest | head -n -5)
+      for img in $IMAGES; do
+        docker rmi $CI_REGISTRY_IMAGE:$img || true
+      done
+  when: manual
+  only:
+    - main
+
+# Performance regression testing
+performance_regression:
+  stage: test
+  dependencies:
+    - build:linux:gcc
+  script:
+    - cd build
+    - ./tests/performance_benchmarks --benchmark_format=json > current_performance.json
+    - |
+      if [ -f baseline_performance.json ]; then
+        python3 ../scripts/compare_performance.py baseline_performance.json current_performance.json
+      else
+        echo "No baseline found, saving current as baseline"
+        cp current_performance.json baseline_performance.json
+      fi
+  artifacts:
+    paths:
+      - build/current_performance.json
+      - build/baseline_performance.json
+    expire_in: 1 month
+  cache:
+    key: performance-baseline
+    paths:
+      - build/baseline_performance.json
+  only:
+    - main
+    - develop
+
+# Multi-platform builds
+build:macos:
+  stage: build
+  tags:
+    - macos
+  before_script:
+    - brew install cmake ninja eigen openmpi hdf5
+  script:
+    - mkdir -p build
+    - cd build
+    - cmake -GNinja -DCMAKE_BUILD_TYPE=$CMAKE_BUILD_TYPE ..
+    - ninja -j$BUILD_PARALLEL_JOBS
+  artifacts:
+    paths:
+      - build/
+    expire_in: 1 day
+  only:
+    - main
+    - develop
+
+build:windows:
+  stage: build
+  tags:
+    - windows
+  before_script:
+    - choco install cmake ninja
+  script:
+    - mkdir build
+    - cd build
+    - cmake -GNinja -DCMAKE_BUILD_TYPE=%CMAKE_BUILD_TYPE% ..
+    - ninja
+  artifacts:
+    paths:
+      - build/
+    expire_in: 1 day
+  only:
+    - main
+    - develop
+
+# Scheduled jobs
+nightly_build:
+  extends: build:linux:gcc
+  only:
+    - schedules
+  variables:
+    CMAKE_BUILD_TYPE: Debug
+    BUILD_PARALLEL_JOBS: 8
+
+weekly_full_test:
+  stage: test
+  dependencies:
+    - nightly_build
+  script:
+    - cd build
+    - ctest --output-on-failure --parallel $BUILD_PARALLEL_JOBS
+    - ./tests/comprehensive_benchmarks
+    - make coverage
+  artifacts:
+    paths:
+      - build/Testing/
+      - build/coverage_html/
+    expire_in: 1 month
+  only:
+    - schedules
+
+# Webhook notifications
+notify_success:
+  stage: cleanup
+  image: alpine:latest
+  before_script:
+    - apk add --no-cache curl
+  script:
+    - |
+      curl -X POST $WEBHOOK_URL \
+        -H "Content-Type: application/json" \
+        -d "{\"text\":\"✅ PyFolio C++ pipeline succeeded for $CI_COMMIT_REF_NAME\"}"
+  when: on_success
+  only:
+    - main
+    - develop
+
+notify_failure:
+  stage: cleanup
+  image: alpine:latest
+  before_script:
+    - apk add --no-cache curl
+  script:
+    - |
+      curl -X POST $WEBHOOK_URL \
+        -H "Content-Type: application/json" \
+        -d "{\"text\":\"❌ PyFolio C++ pipeline failed for $CI_COMMIT_REF_NAME\"}"
+  when: on_failure
+  only:
+    - main
+    - develop

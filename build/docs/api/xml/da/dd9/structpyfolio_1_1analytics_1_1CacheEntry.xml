@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="da/dd9/structpyfolio_1_1analytics_1_1CacheEntry" kind="struct" language="C++" prot="public">
+    <compoundname>pyfolio::analytics::CacheEntry</compoundname>
+    <includes refid="d4/dc1/cached__performance__metrics_8h" local="no">cached_performance_metrics.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="da/dd9/structpyfolio_1_1analytics_1_1CacheEntry_1a723803947e5e3923a5f8992bc2dc091f" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T pyfolio::analytics::CacheEntry&lt; T &gt;::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <qualifiedname>pyfolio::analytics::CacheEntry::value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/cached_performance_metrics.h" line="31" column="7" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/cached_performance_metrics.h" bodystart="31" bodyend="-1"/>
+        <referencedby refid="da/dd9/structpyfolio_1_1analytics_1_1CacheEntry_1a7ccd8d72c5d69c4560922e02f4a76f96" compoundref="d4/dc1/cached__performance__metrics_8h" startline="37" endline="38">pyfolio::analytics::CacheEntry&lt; T &gt;::CacheEntry</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="da/dd9/structpyfolio_1_1analytics_1_1CacheEntry_1a1c3e85e7d42af43906d975b76b8f469f" prot="public" static="no" mutable="no">
+        <type>std::chrono::steady_clock::time_point</type>
+        <definition>std::chrono::steady_clock::time_point pyfolio::analytics::CacheEntry&lt; T &gt;::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <qualifiedname>pyfolio::analytics::CacheEntry::timestamp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/cached_performance_metrics.h" line="32" column="43" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/cached_performance_metrics.h" bodystart="32" bodyend="-1"/>
+        <referencedby refid="da/dd9/structpyfolio_1_1analytics_1_1CacheEntry_1a7ccd8d72c5d69c4560922e02f4a76f96" compoundref="d4/dc1/cached__performance__metrics_8h" startline="37" endline="38">pyfolio::analytics::CacheEntry&lt; T &gt;::CacheEntry</referencedby>
+        <referencedby refid="da/dd9/structpyfolio_1_1analytics_1_1CacheEntry_1aa5f1861137121a3e82b5a10816b7e14f" compoundref="d4/dc1/cached__performance__metrics_8h" startline="40" endline="48">pyfolio::analytics::CacheEntry&lt; T &gt;::is_valid</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="da/dd9/structpyfolio_1_1analytics_1_1CacheEntry_1a6816238a9c7af74d1394fdeaf1242cbe" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t pyfolio::analytics::CacheEntry&lt; T &gt;::data_hash</definition>
+        <argsstring></argsstring>
+        <name>data_hash</name>
+        <qualifiedname>pyfolio::analytics::CacheEntry::data_hash</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/cached_performance_metrics.h" line="33" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/cached_performance_metrics.h" bodystart="33" bodyend="-1"/>
+        <referencedby refid="da/dd9/structpyfolio_1_1analytics_1_1CacheEntry_1a7ccd8d72c5d69c4560922e02f4a76f96" compoundref="d4/dc1/cached__performance__metrics_8h" startline="37" endline="38">pyfolio::analytics::CacheEntry&lt; T &gt;::CacheEntry</referencedby>
+        <referencedby refid="da/dd9/structpyfolio_1_1analytics_1_1CacheEntry_1aa5f1861137121a3e82b5a10816b7e14f" compoundref="d4/dc1/cached__performance__metrics_8h" startline="40" endline="48">pyfolio::analytics::CacheEntry&lt; T &gt;::is_valid</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="da/dd9/structpyfolio_1_1analytics_1_1CacheEntry_1a2238428097caad990acb3d72cb5045b2" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t pyfolio::analytics::CacheEntry&lt; T &gt;::data_size</definition>
+        <argsstring></argsstring>
+        <name>data_size</name>
+        <qualifiedname>pyfolio::analytics::CacheEntry::data_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/cached_performance_metrics.h" line="34" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/cached_performance_metrics.h" bodystart="34" bodyend="-1"/>
+        <referencedby refid="da/dd9/structpyfolio_1_1analytics_1_1CacheEntry_1a7ccd8d72c5d69c4560922e02f4a76f96" compoundref="d4/dc1/cached__performance__metrics_8h" startline="37" endline="38">pyfolio::analytics::CacheEntry&lt; T &gt;::CacheEntry</referencedby>
+        <referencedby refid="da/dd9/structpyfolio_1_1analytics_1_1CacheEntry_1aa5f1861137121a3e82b5a10816b7e14f" compoundref="d4/dc1/cached__performance__metrics_8h" startline="40" endline="48">pyfolio::analytics::CacheEntry&lt; T &gt;::is_valid</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="da/dd9/structpyfolio_1_1analytics_1_1CacheEntry_1ae9d9e2767164eff8eeb8f66985b1bf8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>pyfolio::analytics::CacheEntry&lt; T &gt;::CacheEntry</definition>
+        <argsstring>()=default</argsstring>
+        <name>CacheEntry</name>
+        <qualifiedname>pyfolio::analytics::CacheEntry::CacheEntry</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/cached_performance_metrics.h" line="36" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="da/dd9/structpyfolio_1_1analytics_1_1CacheEntry_1a7ccd8d72c5d69c4560922e02f4a76f96" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>pyfolio::analytics::CacheEntry&lt; T &gt;::CacheEntry</definition>
+        <argsstring>(T val, size_t hash, size_t size)</argsstring>
+        <name>CacheEntry</name>
+        <qualifiedname>pyfolio::analytics::CacheEntry::CacheEntry</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>hash</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/cached_performance_metrics.h" line="37" column="5" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/cached_performance_metrics.h" bodystart="37" bodyend="38"/>
+        <references refid="da/dd9/structpyfolio_1_1analytics_1_1CacheEntry_1a6816238a9c7af74d1394fdeaf1242cbe" compoundref="d4/dc1/cached__performance__metrics_8h" startline="33">pyfolio::analytics::CacheEntry&lt; T &gt;::data_hash</references>
+        <references refid="da/dd9/structpyfolio_1_1analytics_1_1CacheEntry_1a2238428097caad990acb3d72cb5045b2" compoundref="d4/dc1/cached__performance__metrics_8h" startline="34">pyfolio::analytics::CacheEntry&lt; T &gt;::data_size</references>
+        <references refid="da/dd9/structpyfolio_1_1analytics_1_1CacheEntry_1a1c3e85e7d42af43906d975b76b8f469f" compoundref="d4/dc1/cached__performance__metrics_8h" startline="32">pyfolio::analytics::CacheEntry&lt; T &gt;::timestamp</references>
+        <references refid="da/dd9/structpyfolio_1_1analytics_1_1CacheEntry_1a723803947e5e3923a5f8992bc2dc091f" compoundref="d4/dc1/cached__performance__metrics_8h" startline="31">pyfolio::analytics::CacheEntry&lt; T &gt;::value</references>
+      </memberdef>
+      <memberdef kind="function" id="da/dd9/structpyfolio_1_1analytics_1_1CacheEntry_1aa5f1861137121a3e82b5a10816b7e14f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool pyfolio::analytics::CacheEntry&lt; T &gt;::is_valid</definition>
+        <argsstring>(size_t current_hash, size_t current_size, std::chrono::milliseconds max_age=std::chrono::milliseconds(5000)) const</argsstring>
+        <name>is_valid</name>
+        <qualifiedname>pyfolio::analytics::CacheEntry::is_valid</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>current_hash</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>current_size</declname>
+        </param>
+        <param>
+          <type>std::chrono::milliseconds</type>
+          <declname>max_age</declname>
+          <defval>std::chrono::milliseconds(5000)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/cached_performance_metrics.h" line="40" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/cached_performance_metrics.h" bodystart="40" bodyend="48"/>
+        <references refid="da/dd9/structpyfolio_1_1analytics_1_1CacheEntry_1a6816238a9c7af74d1394fdeaf1242cbe" compoundref="d4/dc1/cached__performance__metrics_8h" startline="33">pyfolio::analytics::CacheEntry&lt; T &gt;::data_hash</references>
+        <references refid="da/dd9/structpyfolio_1_1analytics_1_1CacheEntry_1a2238428097caad990acb3d72cb5045b2" compoundref="d4/dc1/cached__performance__metrics_8h" startline="34">pyfolio::analytics::CacheEntry&lt; T &gt;::data_size</references>
+        <references refid="da/dd9/structpyfolio_1_1analytics_1_1CacheEntry_1a1c3e85e7d42af43906d975b76b8f469f" compoundref="d4/dc1/cached__performance__metrics_8h" startline="32">pyfolio::analytics::CacheEntry&lt; T &gt;::timestamp</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Cache entry for performance metrics. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/cached_performance_metrics.h" line="30" column="1" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/cached_performance_metrics.h" bodystart="30" bodyend="49"/>
+    <listofallmembers>
+      <member refid="da/dd9/structpyfolio_1_1analytics_1_1CacheEntry_1ae9d9e2767164eff8eeb8f66985b1bf8d" prot="public" virt="non-virtual"><scope>pyfolio::analytics::CacheEntry</scope><name>CacheEntry</name></member>
+      <member refid="da/dd9/structpyfolio_1_1analytics_1_1CacheEntry_1a7ccd8d72c5d69c4560922e02f4a76f96" prot="public" virt="non-virtual"><scope>pyfolio::analytics::CacheEntry</scope><name>CacheEntry</name></member>
+      <member refid="da/dd9/structpyfolio_1_1analytics_1_1CacheEntry_1a6816238a9c7af74d1394fdeaf1242cbe" prot="public" virt="non-virtual"><scope>pyfolio::analytics::CacheEntry</scope><name>data_hash</name></member>
+      <member refid="da/dd9/structpyfolio_1_1analytics_1_1CacheEntry_1a2238428097caad990acb3d72cb5045b2" prot="public" virt="non-virtual"><scope>pyfolio::analytics::CacheEntry</scope><name>data_size</name></member>
+      <member refid="da/dd9/structpyfolio_1_1analytics_1_1CacheEntry_1aa5f1861137121a3e82b5a10816b7e14f" prot="public" virt="non-virtual"><scope>pyfolio::analytics::CacheEntry</scope><name>is_valid</name></member>
+      <member refid="da/dd9/structpyfolio_1_1analytics_1_1CacheEntry_1a1c3e85e7d42af43906d975b76b8f469f" prot="public" virt="non-virtual"><scope>pyfolio::analytics::CacheEntry</scope><name>timestamp</name></member>
+      <member refid="da/dd9/structpyfolio_1_1analytics_1_1CacheEntry_1a723803947e5e3923a5f8992bc2dc091f" prot="public" virt="non-virtual"><scope>pyfolio::analytics::CacheEntry</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

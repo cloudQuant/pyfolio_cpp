@@ -1,0 +1,395 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator" kind="class" language="C++" prot="public">
+    <compoundname>pyfolio::memory::FixedBlockAllocator</compoundname>
+    <includes refid="df/d9d/pool__allocator_8h" local="no">pool_allocator.h</includes>
+    <innerclass refid="dd/dc5/structpyfolio_1_1memory_1_1FixedBlockAllocator_1_1Block" prot="private">pyfolio::memory::FixedBlockAllocator::Block</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type>size_t</type>
+        <declname>BlockCount</declname>
+        <defname>BlockCount</defname>
+        <defval>1024</defval>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1af480ab4a60322ee90d98d07f1bed1bf9" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>size_t</type>
+        <definition>size_t pyfolio::memory::FixedBlockAllocator&lt; T, BlockCount &gt;::block_size</definition>
+        <argsstring></argsstring>
+        <name>block_size</name>
+        <qualifiedname>pyfolio::memory::FixedBlockAllocator::block_size</qualifiedname>
+        <initializer>= sizeof(T)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="63" column="29" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" bodystart="63" bodyend="-1"/>
+        <referencedby refid="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1afa2e77d5ecac76ac373620dee3818fe0" compoundref="df/d9d/pool__allocator_8h" startline="143" endline="155">pyfolio::memory::FixedBlockAllocator&lt; T, BlockCount &gt;::get_stats</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1acbab66c49566794dfda6bd0b5cbd730e" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>size_t</type>
+        <definition>size_t pyfolio::memory::FixedBlockAllocator&lt; T, BlockCount &gt;::alignment</definition>
+        <argsstring></argsstring>
+        <name>alignment</name>
+        <qualifiedname>pyfolio::memory::FixedBlockAllocator::alignment</qualifiedname>
+        <initializer>= alignof(T)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="64" column="29" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1a1891fbe2bf64f6813d19ebfbce26dc2d" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>size_t</type>
+        <definition>size_t pyfolio::memory::FixedBlockAllocator&lt; T, BlockCount &gt;::pool_size</definition>
+        <argsstring></argsstring>
+        <name>pool_size</name>
+        <qualifiedname>pyfolio::memory::FixedBlockAllocator::pool_size</qualifiedname>
+        <initializer>= BlockCount * <ref refid="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1af480ab4a60322ee90d98d07f1bed1bf9" kindref="member">block_size</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="65" column="29" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" bodystart="65" bodyend="-1"/>
+        <referencedby refid="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1a6412162b949de97a0f85c4bfe278e49c" compoundref="df/d9d/pool__allocator_8h" startline="80" endline="84">pyfolio::memory::FixedBlockAllocator&lt; T, BlockCount &gt;::FixedBlockAllocator</referencedby>
+        <referencedby refid="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1afa2e77d5ecac76ac373620dee3818fe0" compoundref="df/d9d/pool__allocator_8h" startline="143" endline="155">pyfolio::memory::FixedBlockAllocator&lt; T, BlockCount &gt;::get_stats</referencedby>
+        <referencedby refid="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1ae6b661cfac6f86cef0c27d3a0acd0010" compoundref="df/d9d/pool__allocator_8h" startline="132" endline="138">pyfolio::memory::FixedBlockAllocator&lt; T, BlockCount &gt;::owns</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1a75d212ea3422ceac3b0f3657948a3661" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; char[]&gt;</type>
+        <definition>std::unique_ptr&lt;char[]&gt; pyfolio::memory::FixedBlockAllocator&lt; T, BlockCount &gt;::memory_pool_</definition>
+        <argsstring></argsstring>
+        <name>memory_pool_</name>
+        <qualifiedname>pyfolio::memory::FixedBlockAllocator::memory_pool_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="73" column="21" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1a192d5203bedd9fab31a8854232093790" prot="private" static="no" mutable="no">
+        <type>Block *</type>
+        <definition>Block* pyfolio::memory::FixedBlockAllocator&lt; T, BlockCount &gt;::free_list_</definition>
+        <argsstring></argsstring>
+        <name>free_list_</name>
+        <qualifiedname>pyfolio::memory::FixedBlockAllocator::free_list_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="74" column="11" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1a13ab3f69ff3b71829b277b9d83a70550" prot="private" static="no" mutable="no">
+        <type>std::atomic&lt; size_t &gt;</type>
+        <definition>std::atomic&lt;size_t&gt; pyfolio::memory::FixedBlockAllocator&lt; T, BlockCount &gt;::allocated_count_</definition>
+        <argsstring></argsstring>
+        <name>allocated_count_</name>
+        <qualifiedname>pyfolio::memory::FixedBlockAllocator::allocated_count_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="75" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1a04ac150e3667638c7497c0b67fe9c8ba" prot="private" static="no" mutable="no">
+        <type>std::atomic&lt; size_t &gt;</type>
+        <definition>std::atomic&lt;size_t&gt; pyfolio::memory::FixedBlockAllocator&lt; T, BlockCount &gt;::total_allocations_</definition>
+        <argsstring></argsstring>
+        <name>total_allocations_</name>
+        <qualifiedname>pyfolio::memory::FixedBlockAllocator::total_allocations_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="76" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1ab107d016cd2e0e85a50a6ec658e94811" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex pyfolio::memory::FixedBlockAllocator&lt; T, BlockCount &gt;::mutex_</definition>
+        <argsstring></argsstring>
+        <name>mutex_</name>
+        <qualifiedname>pyfolio::memory::FixedBlockAllocator::mutex_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="77" column="16" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1a6412162b949de97a0f85c4bfe278e49c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>pyfolio::memory::FixedBlockAllocator&lt; T, BlockCount &gt;::FixedBlockAllocator</definition>
+        <argsstring>()</argsstring>
+        <name>FixedBlockAllocator</name>
+        <qualifiedname>pyfolio::memory::FixedBlockAllocator::FixedBlockAllocator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="80" column="5" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" bodystart="80" bodyend="84"/>
+        <references refid="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1a1891fbe2bf64f6813d19ebfbce26dc2d" compoundref="df/d9d/pool__allocator_8h" startline="65">pyfolio::memory::FixedBlockAllocator&lt; T, BlockCount &gt;::pool_size</references>
+        <referencedby refid="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1a7f07fb55cf880a9ed817753d1214a3d8">pyfolio::memory::FixedBlockAllocator&lt; T, BlockCount &gt;::FixedBlockAllocator</referencedby>
+        <referencedby refid="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1a6ce9b3915d947672d24b562cfc98012d">pyfolio::memory::FixedBlockAllocator&lt; T, BlockCount &gt;::FixedBlockAllocator</referencedby>
+        <referencedby refid="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1a109407ef3247fa16e47bbde830f54b88">pyfolio::memory::FixedBlockAllocator&lt; T, BlockCount &gt;::operator=</referencedby>
+        <referencedby refid="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1a03565ceecf81b3f4d599d5f055327f64">pyfolio::memory::FixedBlockAllocator&lt; T, BlockCount &gt;::operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1a343e1eff335829ac597b4b98e8f074a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>pyfolio::memory::FixedBlockAllocator&lt; T, BlockCount &gt;::~FixedBlockAllocator</definition>
+        <argsstring>()=default</argsstring>
+        <name>~FixedBlockAllocator</name>
+        <qualifiedname>pyfolio::memory::FixedBlockAllocator::~FixedBlockAllocator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="86" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1a7f07fb55cf880a9ed817753d1214a3d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>pyfolio::memory::FixedBlockAllocator&lt; T, BlockCount &gt;::FixedBlockAllocator</definition>
+        <argsstring>(const FixedBlockAllocator &amp;)=delete</argsstring>
+        <name>FixedBlockAllocator</name>
+        <qualifiedname>pyfolio::memory::FixedBlockAllocator::FixedBlockAllocator</qualifiedname>
+        <param>
+          <type>const <ref refid="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator" kindref="compound">FixedBlockAllocator</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="89" column="5"/>
+        <references refid="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1a6412162b949de97a0f85c4bfe278e49c" compoundref="df/d9d/pool__allocator_8h" startline="80" endline="84">pyfolio::memory::FixedBlockAllocator&lt; T, BlockCount &gt;::FixedBlockAllocator</references>
+      </memberdef>
+      <memberdef kind="function" id="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1a109407ef3247fa16e47bbde830f54b88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator" kindref="compound">FixedBlockAllocator</ref> &amp;</type>
+        <definition>FixedBlockAllocator &amp; pyfolio::memory::FixedBlockAllocator&lt; T, BlockCount &gt;::operator=</definition>
+        <argsstring>(const FixedBlockAllocator &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>pyfolio::memory::FixedBlockAllocator::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator" kindref="compound">FixedBlockAllocator</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="90" column="25"/>
+        <references refid="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1a6412162b949de97a0f85c4bfe278e49c" compoundref="df/d9d/pool__allocator_8h" startline="80" endline="84">pyfolio::memory::FixedBlockAllocator&lt; T, BlockCount &gt;::FixedBlockAllocator</references>
+      </memberdef>
+      <memberdef kind="function" id="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1a6ce9b3915d947672d24b562cfc98012d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>pyfolio::memory::FixedBlockAllocator&lt; T, BlockCount &gt;::FixedBlockAllocator</definition>
+        <argsstring>(FixedBlockAllocator &amp;&amp;)=delete</argsstring>
+        <name>FixedBlockAllocator</name>
+        <qualifiedname>pyfolio::memory::FixedBlockAllocator::FixedBlockAllocator</qualifiedname>
+        <param>
+          <type><ref refid="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator" kindref="compound">FixedBlockAllocator</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="91" column="5"/>
+        <references refid="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1a6412162b949de97a0f85c4bfe278e49c" compoundref="df/d9d/pool__allocator_8h" startline="80" endline="84">pyfolio::memory::FixedBlockAllocator&lt; T, BlockCount &gt;::FixedBlockAllocator</references>
+      </memberdef>
+      <memberdef kind="function" id="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1a03565ceecf81b3f4d599d5f055327f64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator" kindref="compound">FixedBlockAllocator</ref> &amp;</type>
+        <definition>FixedBlockAllocator &amp; pyfolio::memory::FixedBlockAllocator&lt; T, BlockCount &gt;::operator=</definition>
+        <argsstring>(FixedBlockAllocator &amp;&amp;)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>pyfolio::memory::FixedBlockAllocator::operator=</qualifiedname>
+        <param>
+          <type><ref refid="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator" kindref="compound">FixedBlockAllocator</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="92" column="25"/>
+        <references refid="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1a6412162b949de97a0f85c4bfe278e49c" compoundref="df/d9d/pool__allocator_8h" startline="80" endline="84">pyfolio::memory::FixedBlockAllocator&lt; T, BlockCount &gt;::FixedBlockAllocator</references>
+      </memberdef>
+      <memberdef kind="function" id="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1afd537f2de03df9a9385a5accb3ef1ff1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T * pyfolio::memory::FixedBlockAllocator&lt; T, BlockCount &gt;::allocate</definition>
+        <argsstring>()</argsstring>
+        <name>allocate</name>
+        <qualifiedname>pyfolio::memory::FixedBlockAllocator::allocate</qualifiedname>
+        <briefdescription>
+<para>Allocate a block for type T. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="97" column="7" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" bodystart="97" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1a42123e2ef7b51a74ce614d0fcbaf8454" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void pyfolio::memory::FixedBlockAllocator&lt; T, BlockCount &gt;::deallocate</definition>
+        <argsstring>(T *ptr)</argsstring>
+        <name>deallocate</name>
+        <qualifiedname>pyfolio::memory::FixedBlockAllocator::deallocate</qualifiedname>
+        <param>
+          <type>T *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+<para>Deallocate a block. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="116" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" bodystart="116" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1ae6b661cfac6f86cef0c27d3a0acd0010" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool pyfolio::memory::FixedBlockAllocator&lt; T, BlockCount &gt;::owns</definition>
+        <argsstring>(const T *ptr) const noexcept</argsstring>
+        <name>owns</name>
+        <qualifiedname>pyfolio::memory::FixedBlockAllocator::owns</qualifiedname>
+        <param>
+          <type>const T *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+<para>Check if pointer belongs to this pool. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="132" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" bodystart="132" bodyend="138"/>
+        <references refid="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1a1891fbe2bf64f6813d19ebfbce26dc2d" compoundref="df/d9d/pool__allocator_8h" startline="65">pyfolio::memory::FixedBlockAllocator&lt; T, BlockCount &gt;::pool_size</references>
+      </memberdef>
+      <memberdef kind="function" id="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1afa2e77d5ecac76ac373620dee3818fe0" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="d9/d8e/structpyfolio_1_1memory_1_1PoolStats" kindref="compound">PoolStats</ref></type>
+        <definition>PoolStats pyfolio::memory::FixedBlockAllocator&lt; T, BlockCount &gt;::get_stats</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>get_stats</name>
+        <qualifiedname>pyfolio::memory::FixedBlockAllocator::get_stats</qualifiedname>
+        <briefdescription>
+<para>Get allocation statistics. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="143" column="15" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" bodystart="143" bodyend="155"/>
+        <references refid="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1af480ab4a60322ee90d98d07f1bed1bf9" compoundref="df/d9d/pool__allocator_8h" startline="63">pyfolio::memory::FixedBlockAllocator&lt; T, BlockCount &gt;::block_size</references>
+        <references refid="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1a1891fbe2bf64f6813d19ebfbce26dc2d" compoundref="df/d9d/pool__allocator_8h" startline="65">pyfolio::memory::FixedBlockAllocator&lt; T, BlockCount &gt;::pool_size</references>
+      </memberdef>
+      <memberdef kind="function" id="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1ac620ad08d96340f5a9d763f1bad4b844" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t pyfolio::memory::FixedBlockAllocator&lt; T, BlockCount &gt;::available_blocks</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>available_blocks</name>
+        <qualifiedname>pyfolio::memory::FixedBlockAllocator::available_blocks</qualifiedname>
+        <briefdescription>
+<para>Get available blocks count. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="160" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" bodystart="160" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1a042c2d5c6927a8a6e395a904a77fee3e" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool pyfolio::memory::FixedBlockAllocator&lt; T, BlockCount &gt;::is_full</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>is_full</name>
+        <qualifiedname>pyfolio::memory::FixedBlockAllocator::is_full</qualifiedname>
+        <briefdescription>
+<para>Check if pool is full. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="165" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" bodystart="165" bodyend="165"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1ac920fc5421b5a0271f8f24c2a306f71f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void pyfolio::memory::FixedBlockAllocator&lt; T, BlockCount &gt;::initialize_free_list</definition>
+        <argsstring>()</argsstring>
+        <name>initialize_free_list</name>
+        <qualifiedname>pyfolio::memory::FixedBlockAllocator::initialize_free_list</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="168" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" bodystart="168" bodyend="177"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Fixed-size block allocator for specific types. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="61" column="1" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" bodystart="61" bodyend="178"/>
+    <listofallmembers>
+      <member refid="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1acbab66c49566794dfda6bd0b5cbd730e" prot="public" virt="non-virtual"><scope>pyfolio::memory::FixedBlockAllocator</scope><name>alignment</name></member>
+      <member refid="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1afd537f2de03df9a9385a5accb3ef1ff1" prot="public" virt="non-virtual"><scope>pyfolio::memory::FixedBlockAllocator</scope><name>allocate</name></member>
+      <member refid="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1a13ab3f69ff3b71829b277b9d83a70550" prot="private" virt="non-virtual"><scope>pyfolio::memory::FixedBlockAllocator</scope><name>allocated_count_</name></member>
+      <member refid="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1ac620ad08d96340f5a9d763f1bad4b844" prot="public" virt="non-virtual"><scope>pyfolio::memory::FixedBlockAllocator</scope><name>available_blocks</name></member>
+      <member refid="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1af480ab4a60322ee90d98d07f1bed1bf9" prot="public" virt="non-virtual"><scope>pyfolio::memory::FixedBlockAllocator</scope><name>block_size</name></member>
+      <member refid="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1a42123e2ef7b51a74ce614d0fcbaf8454" prot="public" virt="non-virtual"><scope>pyfolio::memory::FixedBlockAllocator</scope><name>deallocate</name></member>
+      <member refid="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1a6412162b949de97a0f85c4bfe278e49c" prot="public" virt="non-virtual"><scope>pyfolio::memory::FixedBlockAllocator</scope><name>FixedBlockAllocator</name></member>
+      <member refid="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1a7f07fb55cf880a9ed817753d1214a3d8" prot="public" virt="non-virtual"><scope>pyfolio::memory::FixedBlockAllocator</scope><name>FixedBlockAllocator</name></member>
+      <member refid="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1a6ce9b3915d947672d24b562cfc98012d" prot="public" virt="non-virtual"><scope>pyfolio::memory::FixedBlockAllocator</scope><name>FixedBlockAllocator</name></member>
+      <member refid="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1a192d5203bedd9fab31a8854232093790" prot="private" virt="non-virtual"><scope>pyfolio::memory::FixedBlockAllocator</scope><name>free_list_</name></member>
+      <member refid="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1afa2e77d5ecac76ac373620dee3818fe0" prot="public" virt="non-virtual"><scope>pyfolio::memory::FixedBlockAllocator</scope><name>get_stats</name></member>
+      <member refid="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1ac920fc5421b5a0271f8f24c2a306f71f" prot="private" virt="non-virtual"><scope>pyfolio::memory::FixedBlockAllocator</scope><name>initialize_free_list</name></member>
+      <member refid="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1a042c2d5c6927a8a6e395a904a77fee3e" prot="public" virt="non-virtual"><scope>pyfolio::memory::FixedBlockAllocator</scope><name>is_full</name></member>
+      <member refid="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1a75d212ea3422ceac3b0f3657948a3661" prot="private" virt="non-virtual"><scope>pyfolio::memory::FixedBlockAllocator</scope><name>memory_pool_</name></member>
+      <member refid="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1ab107d016cd2e0e85a50a6ec658e94811" prot="private" virt="non-virtual"><scope>pyfolio::memory::FixedBlockAllocator</scope><name>mutex_</name></member>
+      <member refid="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1a109407ef3247fa16e47bbde830f54b88" prot="public" virt="non-virtual"><scope>pyfolio::memory::FixedBlockAllocator</scope><name>operator=</name></member>
+      <member refid="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1a03565ceecf81b3f4d599d5f055327f64" prot="public" virt="non-virtual"><scope>pyfolio::memory::FixedBlockAllocator</scope><name>operator=</name></member>
+      <member refid="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1ae6b661cfac6f86cef0c27d3a0acd0010" prot="public" virt="non-virtual"><scope>pyfolio::memory::FixedBlockAllocator</scope><name>owns</name></member>
+      <member refid="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1a1891fbe2bf64f6813d19ebfbce26dc2d" prot="public" virt="non-virtual"><scope>pyfolio::memory::FixedBlockAllocator</scope><name>pool_size</name></member>
+      <member refid="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1a04ac150e3667638c7497c0b67fe9c8ba" prot="private" virt="non-virtual"><scope>pyfolio::memory::FixedBlockAllocator</scope><name>total_allocations_</name></member>
+      <member refid="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator_1a343e1eff335829ac597b4b98e8f074a3" prot="public" virt="non-virtual"><scope>pyfolio::memory::FixedBlockAllocator</scope><name>~FixedBlockAllocator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

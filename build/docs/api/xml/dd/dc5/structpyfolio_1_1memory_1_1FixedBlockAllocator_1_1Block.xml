@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dd/dc5/structpyfolio_1_1memory_1_1FixedBlockAllocator_1_1Block" kind="struct" language="C++" prot="private">
+    <compoundname>pyfolio::memory::FixedBlockAllocator::Block</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="dd/dc5/structpyfolio_1_1memory_1_1FixedBlockAllocator_1_1Block_1a401cf0198900a2e7579c59e513034b59" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char pyfolio::memory::FixedBlockAllocator&lt; T, BlockCount &gt;::Block::data[block_size]</definition>
+        <argsstring>[block_size]</argsstring>
+        <name>data</name>
+        <qualifiedname>pyfolio::memory::FixedBlockAllocator::Block::data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="69" column="22" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/dc5/structpyfolio_1_1memory_1_1FixedBlockAllocator_1_1Block_1ae0847443807bb2f9b6601a43c73d316d" prot="public" static="no" mutable="no">
+        <type>Block *</type>
+        <definition>Block* pyfolio::memory::FixedBlockAllocator&lt; T, BlockCount &gt;::Block::next</definition>
+        <argsstring></argsstring>
+        <name>next</name>
+        <qualifiedname>pyfolio::memory::FixedBlockAllocator::Block::next</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="70" column="15" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>pyfolio::memory::FixedBlockAllocator&lt; T, BlockCount &gt;::Block</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>pyfolio::memory::FixedBlockAllocator&lt; T, BlockCount &gt;::Block</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="68" column="5" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" bodystart="68" bodyend="71"/>
+    <listofallmembers>
+      <member refid="dd/dc5/structpyfolio_1_1memory_1_1FixedBlockAllocator_1_1Block_1a401cf0198900a2e7579c59e513034b59" prot="public" virt="non-virtual"><scope>pyfolio::memory::FixedBlockAllocator::Block</scope><name>data</name></member>
+      <member refid="dd/dc5/structpyfolio_1_1memory_1_1FixedBlockAllocator_1_1Block_1ae0847443807bb2f9b6601a43c73d316d" prot="public" virt="non-virtual"><scope>pyfolio::memory::FixedBlockAllocator::Block</scope><name>next</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

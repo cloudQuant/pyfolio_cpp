@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="da/db2/namespacepyfolio_1_1memory" kind="namespace" language="C++">
+    <compoundname>pyfolio::memory</compoundname>
+    <innerclass refid="d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator" prot="public">pyfolio::memory::FixedBlockAllocator</innerclass>
+    <innerclass refid="dc/d0b/classpyfolio_1_1memory_1_1MemoryPoolManager" prot="public">pyfolio::memory::MemoryPoolManager</innerclass>
+    <innerclass refid="da/ddf/classpyfolio_1_1memory_1_1PoolAllocator" prot="public">pyfolio::memory::PoolAllocator</innerclass>
+    <innerclass refid="d5/d9f/classpyfolio_1_1memory_1_1PoolPtr" prot="public">pyfolio::memory::PoolPtr</innerclass>
+    <innerclass refid="d9/d8e/structpyfolio_1_1memory_1_1PoolStats" prot="public">pyfolio::memory::PoolStats</innerclass>
+    <innerclass refid="d2/d77/classpyfolio_1_1memory_1_1VariablePoolAllocator" prot="public">pyfolio::memory::VariablePoolAllocator</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="da/db2/namespacepyfolio_1_1memory_1af2f060e4f613c6dffd7c1acf71021ca7" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::vector&lt; T, <ref refid="da/ddf/classpyfolio_1_1memory_1_1PoolAllocator" kindref="compound">PoolAllocator</ref>&lt; T &gt; &gt;</type>
+        <definition>using pyfolio::memory::pool_vector =  std::vector&lt;T, PoolAllocator&lt;T&gt;&gt;</definition>
+        <argsstring></argsstring>
+        <name>pool_vector</name>
+        <qualifiedname>pyfolio::memory::pool_vector</qualifiedname>
+        <briefdescription>
+<para>Type aliases for pool-allocated containers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="492" column="1" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" bodystart="492" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="da/db2/namespacepyfolio_1_1memory_1a52422571367170332d4f86bfdc5502f3" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename Key</type>
+          </param>
+          <param>
+            <type>typename Value</type>
+          </param>
+        </templateparamlist>
+        <type>std::map&lt; Key, Value, std::less&lt; Key &gt;, <ref refid="da/ddf/classpyfolio_1_1memory_1_1PoolAllocator" kindref="compound">PoolAllocator</ref>&lt; std::pair&lt; const Key, Value &gt; &gt; &gt;</type>
+        <definition>using pyfolio::memory::pool_map =  std::map&lt;Key, Value, std::less&lt;Key&gt;, PoolAllocator&lt;std::pair&lt;const Key, Value&gt;&gt;&gt;</definition>
+        <argsstring></argsstring>
+        <name>pool_map</name>
+        <qualifiedname>pyfolio::memory::pool_map</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="495" column="1" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" bodystart="495" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="da/db2/namespacepyfolio_1_1memory_1acbc710ba8b76e9f364f776a36f41775b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="d5/d9f/classpyfolio_1_1memory_1_1PoolPtr" kindref="compound">PoolPtr</ref>&lt; T &gt;</type>
+        <definition>PoolPtr&lt; T &gt; pyfolio::memory::make_pool_ptr</definition>
+        <argsstring>(Args &amp;&amp;... args)</argsstring>
+        <name>make_pool_ptr</name>
+        <qualifiedname>pyfolio::memory::make_pool_ptr</qualifiedname>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Factory function for pool-allocated objects. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="587" column="9" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" bodystart="587" bodyend="600"/>
+        <references refid="dc/d0b/classpyfolio_1_1memory_1_1MemoryPoolManager_1a2ccfb65150228589dd78cbab12404d63" compoundref="df/d9d/pool__allocator_8h" startline="511" endline="511">pyfolio::memory::MemoryPoolManager::allocate</references>
+        <references refid="dc/d0b/classpyfolio_1_1memory_1_1MemoryPoolManager_1a518dcdea43306207e23136e4a43ef800" compoundref="df/d9d/pool__allocator_8h" startline="513" endline="513">pyfolio::memory::MemoryPoolManager::deallocate</references>
+        <references refid="dc/d0b/classpyfolio_1_1memory_1_1MemoryPoolManager_1a780380ccd601c87f61c0bd4293fa6379" compoundref="df/d9d/pool__allocator_8h" startline="506" endline="509">pyfolio::memory::MemoryPoolManager::instance</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="12" column="1"/>
+  </compounddef>
+</doxygen>

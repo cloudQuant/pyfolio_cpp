@@ -1,0 +1,1238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.17.1"/>
+    <errors>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Position::shares&apos; is not initialized in the constructor." verbose="Member variable &apos;Position::shares&apos; is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/math/simd_math.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/types.h" line="174" column="5"/>
+            <symbol>Position::shares</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Position::price&apos; is not initialized in the constructor." verbose="Member variable &apos;Position::price&apos; is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/math/simd_math.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/types.h" line="174" column="5"/>
+            <symbol>Position::price</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Position::weight&apos; is not initialized in the constructor." verbose="Member variable &apos;Position::weight&apos; is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/math/simd_math.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/types.h" line="174" column="5"/>
+            <symbol>Position::weight</symbol>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::count_if algorithm instead of a raw loop." verbose="Consider using std::count_if algorithm instead of a raw loop." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/utils/intraday.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/utils/intraday.cpp" line="307" column="13"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::accumulate algorithm instead of a raw loop." verbose="Consider using std::accumulate algorithm instead of a raw loop." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/utils/intraday.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/utils/intraday.cpp" line="343" column="16"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::transform algorithm instead of a raw loop." verbose="Consider using std::transform algorithm instead of a raw loop." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/utils/intraday.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/utils/intraday.cpp" line="356" column="20"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::accumulate algorithm instead of a raw loop." verbose="Consider using std::accumulate algorithm instead of a raw loop." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/utils/intraday.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/utils/intraday.cpp" line="374" column="17"/>
+        </error>
+        <error id="normalCheckLevelMaxBranches" severity="information" msg="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." verbose="Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches." file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp" line="0" column="0"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;Error&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;Error&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="49" column="5"/>
+            <symbol>Error</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; void &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; void &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="173" column="5"/>
+            <symbol>Result &lt; void &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; void &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; void &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="174" column="5"/>
+            <symbol>Result &lt; void &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;PortfolioHoldings&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;PortfolioHoldings&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/holdings.h" line="60" column="5"/>
+            <symbol>PortfolioHoldings</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;LiveDashboard&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;LiveDashboard&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotly_enhanced.h" line="312" column="5"/>
+            <symbol>LiveDashboard</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; DateTime &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; DateTime &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="68" column="5"/>
+            <symbol>Result &lt; DateTime &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; DateTime &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; DateTime &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="69" column="5"/>
+            <symbol>Result &lt; DateTime &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; DateTime &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; DateTime &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="70" column="5"/>
+            <symbol>Result &lt; DateTime &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; DateTime &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; DateTime &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="71" column="5"/>
+            <symbol>Result &lt; DateTime &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; TimeSeries &lt; double &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; TimeSeries &lt; double &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="68" column="5"/>
+            <symbol>Result &lt; TimeSeries &lt; double &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; TimeSeries &lt; double &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; TimeSeries &lt; double &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="69" column="5"/>
+            <symbol>Result &lt; TimeSeries &lt; double &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; TimeSeries &lt; double &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; TimeSeries &lt; double &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="70" column="5"/>
+            <symbol>Result &lt; TimeSeries &lt; double &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; TimeSeries &lt; double &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; TimeSeries &lt; double &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="71" column="5"/>
+            <symbol>Result &lt; TimeSeries &lt; double &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; ReturnSeries &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; ReturnSeries &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="68" column="5"/>
+            <symbol>Result &lt; ReturnSeries &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; ReturnSeries &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; ReturnSeries &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="69" column="5"/>
+            <symbol>Result &lt; ReturnSeries &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; ReturnSeries &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; ReturnSeries &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="70" column="5"/>
+            <symbol>Result &lt; ReturnSeries &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; ReturnSeries &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; ReturnSeries &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="71" column="5"/>
+            <symbol>Result &lt; ReturnSeries &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; double &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; double &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="68" column="5"/>
+            <symbol>Result &lt; double &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; double &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; double &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="69" column="5"/>
+            <symbol>Result &lt; double &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; double &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; double &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="70" column="5"/>
+            <symbol>Result &lt; double &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; double &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; double &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="71" column="5"/>
+            <symbol>Result &lt; double &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; DrawdownInfo &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; DrawdownInfo &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="68" column="5"/>
+            <symbol>Result &lt; DrawdownInfo &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; DrawdownInfo &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; DrawdownInfo &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="69" column="5"/>
+            <symbol>Result &lt; DrawdownInfo &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; DrawdownInfo &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; DrawdownInfo &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="70" column="5"/>
+            <symbol>Result &lt; DrawdownInfo &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; DrawdownInfo &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; DrawdownInfo &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="71" column="5"/>
+            <symbol>Result &lt; DrawdownInfo &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: vector &lt; DrawdownInfo &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: vector &lt; DrawdownInfo &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="68" column="5"/>
+            <symbol>Result &lt; std :: vector &lt; DrawdownInfo &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: vector &lt; DrawdownInfo &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: vector &lt; DrawdownInfo &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="69" column="5"/>
+            <symbol>Result &lt; std :: vector &lt; DrawdownInfo &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: vector &lt; DrawdownInfo &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: vector &lt; DrawdownInfo &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="70" column="5"/>
+            <symbol>Result &lt; std :: vector &lt; DrawdownInfo &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: vector &lt; DrawdownInfo &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: vector &lt; DrawdownInfo &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="71" column="5"/>
+            <symbol>Result &lt; std :: vector &lt; DrawdownInfo &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; PerformanceMetrics &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; PerformanceMetrics &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="68" column="5"/>
+            <symbol>Result &lt; PerformanceMetrics &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; PerformanceMetrics &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; PerformanceMetrics &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="69" column="5"/>
+            <symbol>Result &lt; PerformanceMetrics &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; PerformanceMetrics &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; PerformanceMetrics &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="70" column="5"/>
+            <symbol>Result &lt; PerformanceMetrics &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; PerformanceMetrics &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; PerformanceMetrics &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="71" column="5"/>
+            <symbol>Result &lt; PerformanceMetrics &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; TimeSeries &lt; PerformanceMetrics &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; TimeSeries &lt; PerformanceMetrics &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="68" column="5"/>
+            <symbol>Result &lt; TimeSeries &lt; PerformanceMetrics &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; TimeSeries &lt; PerformanceMetrics &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; TimeSeries &lt; PerformanceMetrics &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="69" column="5"/>
+            <symbol>Result &lt; TimeSeries &lt; PerformanceMetrics &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; TimeSeries &lt; PerformanceMetrics &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; TimeSeries &lt; PerformanceMetrics &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="70" column="5"/>
+            <symbol>Result &lt; TimeSeries &lt; PerformanceMetrics &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; TimeSeries &lt; PerformanceMetrics &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; TimeSeries &lt; PerformanceMetrics &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="71" column="5"/>
+            <symbol>Result &lt; TimeSeries &lt; PerformanceMetrics &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; AttributionResult &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; AttributionResult &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="68" column="5"/>
+            <symbol>Result &lt; AttributionResult &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; AttributionResult &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; AttributionResult &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="69" column="5"/>
+            <symbol>Result &lt; AttributionResult &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; AttributionResult &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; AttributionResult &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="70" column="5"/>
+            <symbol>Result &lt; AttributionResult &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; AttributionResult &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; AttributionResult &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="71" column="5"/>
+            <symbol>Result &lt; AttributionResult &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; DataFrame &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; DataFrame &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="68" column="5"/>
+            <symbol>Result &lt; DataFrame &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; DataFrame &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; DataFrame &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="69" column="5"/>
+            <symbol>Result &lt; DataFrame &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; DataFrame &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; DataFrame &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="70" column="5"/>
+            <symbol>Result &lt; DataFrame &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; DataFrame &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; DataFrame &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="71" column="5"/>
+            <symbol>Result &lt; DataFrame &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: map &lt; DateTime , DataFrame &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: map &lt; DateTime , DataFrame &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="68" column="5"/>
+            <symbol>Result &lt; std :: map &lt; DateTime , DataFrame &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: map &lt; DateTime , DataFrame &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: map &lt; DateTime , DataFrame &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="69" column="5"/>
+            <symbol>Result &lt; std :: map &lt; DateTime , DataFrame &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: map &lt; DateTime , DataFrame &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: map &lt; DateTime , DataFrame &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="70" column="5"/>
+            <symbol>Result &lt; std :: map &lt; DateTime , DataFrame &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: map &lt; DateTime , DataFrame &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: map &lt; DateTime , DataFrame &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="71" column="5"/>
+            <symbol>Result &lt; std :: map &lt; DateTime , DataFrame &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; TransactionRecord &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; TransactionRecord &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="68" column="5"/>
+            <symbol>Result &lt; TransactionRecord &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; TransactionRecord &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; TransactionRecord &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="69" column="5"/>
+            <symbol>Result &lt; TransactionRecord &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; TransactionRecord &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; TransactionRecord &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="70" column="5"/>
+            <symbol>Result &lt; TransactionRecord &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; TransactionRecord &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; TransactionRecord &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="71" column="5"/>
+            <symbol>Result &lt; TransactionRecord &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: vector &lt; Transaction &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: vector &lt; Transaction &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="68" column="5"/>
+            <symbol>Result &lt; std :: vector &lt; Transaction &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: vector &lt; Transaction &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: vector &lt; Transaction &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="69" column="5"/>
+            <symbol>Result &lt; std :: vector &lt; Transaction &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: vector &lt; Transaction &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: vector &lt; Transaction &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="70" column="5"/>
+            <symbol>Result &lt; std :: vector &lt; Transaction &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: vector &lt; Transaction &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: vector &lt; Transaction &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="71" column="5"/>
+            <symbol>Result &lt; std :: vector &lt; Transaction &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: map &lt; DateTime , std :: vector &lt; TransactionRecord &gt; &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: map &lt; DateTime , std :: vector &lt; TransactionRecord &gt; &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="68" column="5"/>
+            <symbol>Result &lt; std :: map &lt; DateTime , std :: vector &lt; TransactionRecord &gt; &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: map &lt; DateTime , std :: vector &lt; TransactionRecord &gt; &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: map &lt; DateTime , std :: vector &lt; TransactionRecord &gt; &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="69" column="5"/>
+            <symbol>Result &lt; std :: map &lt; DateTime , std :: vector &lt; TransactionRecord &gt; &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: map &lt; DateTime , std :: vector &lt; TransactionRecord &gt; &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: map &lt; DateTime , std :: vector &lt; TransactionRecord &gt; &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="70" column="5"/>
+            <symbol>Result &lt; std :: map &lt; DateTime , std :: vector &lt; TransactionRecord &gt; &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: map &lt; DateTime , std :: vector &lt; TransactionRecord &gt; &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: map &lt; DateTime , std :: vector &lt; TransactionRecord &gt; &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="71" column="5"/>
+            <symbol>Result &lt; std :: map &lt; DateTime , std :: vector &lt; TransactionRecord &gt; &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: map &lt; std :: string , std :: vector &lt; TransactionRecord &gt; &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: map &lt; std :: string , std :: vector &lt; TransactionRecord &gt; &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="68" column="5"/>
+            <symbol>Result &lt; std :: map &lt; std :: string , std :: vector &lt; TransactionRecord &gt; &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: map &lt; std :: string , std :: vector &lt; TransactionRecord &gt; &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: map &lt; std :: string , std :: vector &lt; TransactionRecord &gt; &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="69" column="5"/>
+            <symbol>Result &lt; std :: map &lt; std :: string , std :: vector &lt; TransactionRecord &gt; &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: map &lt; std :: string , std :: vector &lt; TransactionRecord &gt; &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: map &lt; std :: string , std :: vector &lt; TransactionRecord &gt; &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="70" column="5"/>
+            <symbol>Result &lt; std :: map &lt; std :: string , std :: vector &lt; TransactionRecord &gt; &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: map &lt; std :: string , std :: vector &lt; TransactionRecord &gt; &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: map &lt; std :: string , std :: vector &lt; TransactionRecord &gt; &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="71" column="5"/>
+            <symbol>Result &lt; std :: map &lt; std :: string , std :: vector &lt; TransactionRecord &gt; &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: map &lt; Symbol , std :: vector &lt; TransactionRecord &gt; &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: map &lt; Symbol , std :: vector &lt; TransactionRecord &gt; &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="68" column="5"/>
+            <symbol>Result &lt; std :: map &lt; Symbol , std :: vector &lt; TransactionRecord &gt; &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: map &lt; Symbol , std :: vector &lt; TransactionRecord &gt; &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: map &lt; Symbol , std :: vector &lt; TransactionRecord &gt; &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="69" column="5"/>
+            <symbol>Result &lt; std :: map &lt; Symbol , std :: vector &lt; TransactionRecord &gt; &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: map &lt; Symbol , std :: vector &lt; TransactionRecord &gt; &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: map &lt; Symbol , std :: vector &lt; TransactionRecord &gt; &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="70" column="5"/>
+            <symbol>Result &lt; std :: map &lt; Symbol , std :: vector &lt; TransactionRecord &gt; &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: map &lt; Symbol , std :: vector &lt; TransactionRecord &gt; &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: map &lt; Symbol , std :: vector &lt; TransactionRecord &gt; &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="71" column="5"/>
+            <symbol>Result &lt; std :: map &lt; Symbol , std :: vector &lt; TransactionRecord &gt; &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: map &lt; std :: string , double &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: map &lt; std :: string , double &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="68" column="5"/>
+            <symbol>Result &lt; std :: map &lt; std :: string , double &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: map &lt; std :: string , double &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: map &lt; std :: string , double &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="69" column="5"/>
+            <symbol>Result &lt; std :: map &lt; std :: string , double &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: map &lt; std :: string , double &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: map &lt; std :: string , double &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="70" column="5"/>
+            <symbol>Result &lt; std :: map &lt; std :: string , double &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: map &lt; std :: string , double &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: map &lt; std :: string , double &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="71" column="5"/>
+            <symbol>Result &lt; std :: map &lt; std :: string , double &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: map &lt; Symbol , double &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: map &lt; Symbol , double &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="68" column="5"/>
+            <symbol>Result &lt; std :: map &lt; Symbol , double &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: map &lt; Symbol , double &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: map &lt; Symbol , double &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="69" column="5"/>
+            <symbol>Result &lt; std :: map &lt; Symbol , double &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: map &lt; Symbol , double &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: map &lt; Symbol , double &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="70" column="5"/>
+            <symbol>Result &lt; std :: map &lt; Symbol , double &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: map &lt; Symbol , double &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: map &lt; Symbol , double &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="71" column="5"/>
+            <symbol>Result &lt; std :: map &lt; Symbol , double &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; TransactionStatistics &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; TransactionStatistics &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="68" column="5"/>
+            <symbol>Result &lt; TransactionStatistics &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; TransactionStatistics &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; TransactionStatistics &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="69" column="5"/>
+            <symbol>Result &lt; TransactionStatistics &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; TransactionStatistics &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; TransactionStatistics &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="70" column="5"/>
+            <symbol>Result &lt; TransactionStatistics &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; TransactionStatistics &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; TransactionStatistics &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="71" column="5"/>
+            <symbol>Result &lt; TransactionStatistics &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; Holding &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; Holding &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="68" column="5"/>
+            <symbol>Result &lt; Holding &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; Holding &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; Holding &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="69" column="5"/>
+            <symbol>Result &lt; Holding &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; Holding &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; Holding &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="70" column="5"/>
+            <symbol>Result &lt; Holding &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; Holding &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; Holding &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="71" column="5"/>
+            <symbol>Result &lt; Holding &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; PortfolioHoldings &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; PortfolioHoldings &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="68" column="5"/>
+            <symbol>Result &lt; PortfolioHoldings &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; PortfolioHoldings &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; PortfolioHoldings &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="69" column="5"/>
+            <symbol>Result &lt; PortfolioHoldings &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; PortfolioHoldings &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; PortfolioHoldings &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="70" column="5"/>
+            <symbol>Result &lt; PortfolioHoldings &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; PortfolioHoldings &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; PortfolioHoldings &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="71" column="5"/>
+            <symbol>Result &lt; PortfolioHoldings &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; HoldingsSeries &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; HoldingsSeries &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="68" column="5"/>
+            <symbol>Result &lt; HoldingsSeries &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; HoldingsSeries &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; HoldingsSeries &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="69" column="5"/>
+            <symbol>Result &lt; HoldingsSeries &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; HoldingsSeries &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; HoldingsSeries &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="70" column="5"/>
+            <symbol>Result &lt; HoldingsSeries &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; HoldingsSeries &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; HoldingsSeries &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="71" column="5"/>
+            <symbol>Result &lt; HoldingsSeries &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; ExposureSeries &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; ExposureSeries &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="68" column="5"/>
+            <symbol>Result &lt; ExposureSeries &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; ExposureSeries &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; ExposureSeries &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="69" column="5"/>
+            <symbol>Result &lt; ExposureSeries &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; ExposureSeries &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; ExposureSeries &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="70" column="5"/>
+            <symbol>Result &lt; ExposureSeries &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; ExposureSeries &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; ExposureSeries &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="71" column="5"/>
+            <symbol>Result &lt; ExposureSeries &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: vector &lt; SectorAllocation &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: vector &lt; SectorAllocation &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="68" column="5"/>
+            <symbol>Result &lt; std :: vector &lt; SectorAllocation &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: vector &lt; SectorAllocation &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: vector &lt; SectorAllocation &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="69" column="5"/>
+            <symbol>Result &lt; std :: vector &lt; SectorAllocation &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: vector &lt; SectorAllocation &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: vector &lt; SectorAllocation &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="70" column="5"/>
+            <symbol>Result &lt; std :: vector &lt; SectorAllocation &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: vector &lt; SectorAllocation &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: vector &lt; SectorAllocation &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="71" column="5"/>
+            <symbol>Result &lt; std :: vector &lt; SectorAllocation &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; ConcentrationMetrics &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; ConcentrationMetrics &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="68" column="5"/>
+            <symbol>Result &lt; ConcentrationMetrics &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; ConcentrationMetrics &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; ConcentrationMetrics &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="69" column="5"/>
+            <symbol>Result &lt; ConcentrationMetrics &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; ConcentrationMetrics &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; ConcentrationMetrics &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="70" column="5"/>
+            <symbol>Result &lt; ConcentrationMetrics &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; ConcentrationMetrics &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; ConcentrationMetrics &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="71" column="5"/>
+            <symbol>Result &lt; ConcentrationMetrics &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: vector &lt; AllocationDrift &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: vector &lt; AllocationDrift &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="68" column="5"/>
+            <symbol>Result &lt; std :: vector &lt; AllocationDrift &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: vector &lt; AllocationDrift &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: vector &lt; AllocationDrift &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="69" column="5"/>
+            <symbol>Result &lt; std :: vector &lt; AllocationDrift &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: vector &lt; AllocationDrift &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: vector &lt; AllocationDrift &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="70" column="5"/>
+            <symbol>Result &lt; std :: vector &lt; AllocationDrift &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: vector &lt; AllocationDrift &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: vector &lt; AllocationDrift &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="71" column="5"/>
+            <symbol>Result &lt; std :: vector &lt; AllocationDrift &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: pair &lt; double , double &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: pair &lt; double , double &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="68" column="5"/>
+            <symbol>Result &lt; std :: pair &lt; double , double &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: pair &lt; double , double &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: pair &lt; double , double &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="69" column="5"/>
+            <symbol>Result &lt; std :: pair &lt; double , double &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: pair &lt; double , double &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: pair &lt; double , double &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="70" column="5"/>
+            <symbol>Result &lt; std :: pair &lt; double , double &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: pair &lt; double , double &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: pair &lt; double , double &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="71" column="5"/>
+            <symbol>Result &lt; std :: pair &lt; double , double &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: vector &lt; std :: pair &lt; std :: string , Position &gt; &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: vector &lt; std :: pair &lt; std :: string , Position &gt; &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="68" column="5"/>
+            <symbol>Result &lt; std :: vector &lt; std :: pair &lt; std :: string , Position &gt; &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: vector &lt; std :: pair &lt; std :: string , Position &gt; &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: vector &lt; std :: pair &lt; std :: string , Position &gt; &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="69" column="5"/>
+            <symbol>Result &lt; std :: vector &lt; std :: pair &lt; std :: string , Position &gt; &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: vector &lt; std :: pair &lt; std :: string , Position &gt; &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: vector &lt; std :: pair &lt; std :: string , Position &gt; &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="70" column="5"/>
+            <symbol>Result &lt; std :: vector &lt; std :: pair &lt; std :: string , Position &gt; &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: vector &lt; std :: pair &lt; std :: string , Position &gt; &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: vector &lt; std :: pair &lt; std :: string , Position &gt; &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="71" column="5"/>
+            <symbol>Result &lt; std :: vector &lt; std :: pair &lt; std :: string , Position &gt; &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; TimeSeries &lt; std :: pair &lt; double , double &gt; &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; TimeSeries &lt; std :: pair &lt; double , double &gt; &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="68" column="5"/>
+            <symbol>Result &lt; TimeSeries &lt; std :: pair &lt; double , double &gt; &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; TimeSeries &lt; std :: pair &lt; double , double &gt; &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; TimeSeries &lt; std :: pair &lt; double , double &gt; &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="69" column="5"/>
+            <symbol>Result &lt; TimeSeries &lt; std :: pair &lt; double , double &gt; &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; TimeSeries &lt; std :: pair &lt; double , double &gt; &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; TimeSeries &lt; std :: pair &lt; double , double &gt; &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="70" column="5"/>
+            <symbol>Result &lt; TimeSeries &lt; std :: pair &lt; double , double &gt; &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; TimeSeries &lt; std :: pair &lt; double , double &gt; &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; TimeSeries &lt; std :: pair &lt; double , double &gt; &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="71" column="5"/>
+            <symbol>Result &lt; TimeSeries &lt; std :: pair &lt; double , double &gt; &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; TimeSeries &lt; int &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; TimeSeries &lt; int &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="68" column="5"/>
+            <symbol>Result &lt; TimeSeries &lt; int &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; TimeSeries &lt; int &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; TimeSeries &lt; int &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="69" column="5"/>
+            <symbol>Result &lt; TimeSeries &lt; int &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; TimeSeries &lt; int &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; TimeSeries &lt; int &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="70" column="5"/>
+            <symbol>Result &lt; TimeSeries &lt; int &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; TimeSeries &lt; int &gt; &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; TimeSeries &lt; int &gt; &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="71" column="5"/>
+            <symbol>Result &lt; TimeSeries &lt; int &gt; &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: string &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: string &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="68" column="5"/>
+            <symbol>Result &lt; std :: string &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: string &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: string &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="69" column="5"/>
+            <symbol>Result &lt; std :: string &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: string &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: string &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="70" column="5"/>
+            <symbol>Result &lt; std :: string &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Result &lt; std :: string &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Result &lt; std :: string &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="71" column="5"/>
+            <symbol>Result &lt; std :: string &gt;</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;r&apos; can be reduced." verbose="The scope of the variable &apos;r&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" line="544" column="15"/>
+            <symbol>r</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;excess_return&apos; can be reduced." verbose="The scope of the variable &apos;excess_return&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/rolling_metrics.h" line="360" column="20"/>
+            <symbol>excess_return</symbol>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &apos;max_drawdown&apos; shadows outer function" verbose="Local variable &apos;max_drawdown&apos; shadows outer function" cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/ratios.h" line="138" column="12" info="Shadow variable"/>
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/drawdown.h" line="66" column="23" info="Shadowed declaration"/>
+            <symbol>max_drawdown</symbol>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &apos;net_shares&apos; shadows outer function" verbose="Local variable &apos;net_shares&apos; shadows outer function" cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/transaction.h" line="397" column="34" info="Shadow variable"/>
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/transaction.h" line="262" column="12" info="Shadowed declaration"/>
+            <symbol>net_shares</symbol>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::transform algorithm instead of a raw loop." verbose="Consider using std::transform algorithm instead of a raw loop." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/returns.h" line="92" column="24"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::accumulate algorithm instead of a raw loop." verbose="Consider using std::accumulate algorithm instead of a raw loop." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/returns.h" line="157" column="24"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::accumulate algorithm instead of a raw loop." verbose="Consider using std::accumulate algorithm instead of a raw loop." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/returns.h" line="184" column="24"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::transform algorithm instead of a raw loop." verbose="Consider using std::transform algorithm instead of a raw loop." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/returns.h" line="241" column="33"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::accumulate algorithm instead of a raw loop." verbose="Consider using std::accumulate algorithm instead of a raw loop." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/returns.h" line="266" column="15"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::transform algorithm instead of a raw loop." verbose="Consider using std::transform algorithm instead of a raw loop." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/returns.h" line="306" column="27"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::copy_if algorithm instead of a raw loop." verbose="Consider using std::copy_if algorithm instead of a raw loop." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/drawdown.h" line="302" column="31"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::accumulate algorithm instead of a raw loop." verbose="Consider using std::accumulate algorithm instead of a raw loop." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" line="540" column="17"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::accumulate algorithm instead of a raw loop." verbose="Consider using std::accumulate algorithm instead of a raw loop." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" line="582" column="17"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::transform algorithm instead of a raw loop." verbose="Consider using std::transform algorithm instead of a raw loop." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/dataframe.h" line="224" column="39"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::transform algorithm instead of a raw loop." verbose="Consider using std::transform algorithm instead of a raw loop." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/dataframe.h" line="278" column="30"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::transform algorithm instead of a raw loop." verbose="Consider using std::transform algorithm instead of a raw loop." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/dataframe.h" line="291" column="41"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::transform algorithm instead of a raw loop." verbose="Consider using std::transform algorithm instead of a raw loop." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/dataframe.h" line="324" column="29"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::transform algorithm instead of a raw loop." verbose="Consider using std::transform algorithm instead of a raw loop." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/dataframe.h" line="337" column="40"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::transform algorithm instead of a raw loop." verbose="Consider using std::transform algorithm instead of a raw loop." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/dataframe.h" line="358" column="25"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::accumulate algorithm instead of a raw loop." verbose="Consider using std::accumulate algorithm instead of a raw loop." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/transaction.h" line="382" column="19"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::accumulate algorithm instead of a raw loop." verbose="Consider using std::accumulate algorithm instead of a raw loop." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" line="257" column="24"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::accumulate algorithm instead of a raw loop." verbose="Consider using std::accumulate algorithm instead of a raw loop." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" line="633" column="27"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::copy algorithm instead of a raw loop." verbose="Consider using std::copy algorithm instead of a raw loop." cwe="398" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp" line="823" column="22"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variables: analysis.anderson_darling_statistic, analysis.kolmogorov_smirnov_statistic" verbose="Uninitialized variables: analysis.anderson_darling_statistic, analysis.kolmogorov_smirnov_statistic" cwe="457" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" line="168" column="12"/>
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" line="160" column="30" info="Assuming container is not empty"/>
+            <symbol>analysis</symbol>
+        </error>
+        <error id="uninitStructMember" severity="error" msg="Uninitialized struct member: analysis.anderson_darling_statistic" verbose="Uninitialized struct member: analysis.anderson_darling_statistic" cwe="457" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" line="168" column="12"/>
+            <symbol>analysis.anderson_darling_statistic</symbol>
+        </error>
+        <error id="uninitStructMember" severity="error" msg="Uninitialized struct member: analysis.kolmogorov_smirnov_statistic" verbose="Uninitialized struct member: analysis.kolmogorov_smirnov_statistic" cwe="457" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" line="168" column="12"/>
+            <symbol>analysis.kolmogorov_smirnov_statistic</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;config.theme&apos; is assigned a value that is never used." verbose="Variable &apos;config.theme&apos; is assigned a value that is never used." cwe="563" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp" line="24" column="33"/>
+            <symbol>config.theme</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;config.enable_rangeslider&apos; is assigned a value that is never used." verbose="Variable &apos;config.enable_rangeslider&apos; is assigned a value that is never used." cwe="563" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp" line="25" column="33"/>
+            <symbol>config.enable_rangeslider</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;config.enable_rangeselector&apos; is assigned a value that is never used." verbose="Variable &apos;config.enable_rangeselector&apos; is assigned a value that is never used." cwe="563" file0="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp" line="26" column="33"/>
+            <symbol>config.enable_rangeselector</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;annual_return&apos; is never used." verbose="The function &apos;annual_return&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" line="94" column="0"/>
+            <symbol>annual_return</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;annual_volatility&apos; is never used." verbose="The function &apos;annual_volatility&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" line="105" column="0"/>
+            <symbol>annual_volatility</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;up_down_capture_ratio&apos; is never used." verbose="The function &apos;up_down_capture_ratio&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" line="160" column="0"/>
+            <symbol>up_down_capture_ratio</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;tail_ratio&apos; is never used." verbose="The function &apos;tail_ratio&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" line="170" column="0"/>
+            <symbol>tail_ratio</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;common_sense_ratio&apos; is never used." verbose="The function &apos;common_sense_ratio&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" line="176" column="0"/>
+            <symbol>common_sense_ratio</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;stability_of_timeseries&apos; is never used." verbose="The function &apos;stability_of_timeseries&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" line="182" column="0"/>
+            <symbol>stability_of_timeseries</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;calculate_comprehensive_metrics&apos; is never used." verbose="The function &apos;calculate_comprehensive_metrics&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" line="188" column="0"/>
+            <symbol>calculate_comprehensive_metrics</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;drawdown_series&apos; is never used." verbose="The function &apos;drawdown_series&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" line="205" column="0"/>
+            <symbol>drawdown_series</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;rolling_sharpe&apos; is never used." verbose="The function &apos;rolling_sharpe&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" line="213" column="0"/>
+            <symbol>rolling_sharpe</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;analyze_distribution&apos; is never used." verbose="The function &apos;analyze_distribution&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" line="123" column="0"/>
+            <symbol>analyze_distribution</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;analyze_correlation&apos; is never used." verbose="The function &apos;analyze_correlation&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" line="187" column="0"/>
+            <symbol>analyze_correlation</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;calculate_basic_stats&apos; is never used." verbose="The function &apos;calculate_basic_stats&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" line="277" column="0"/>
+            <symbol>calculate_basic_stats</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;volatility&apos; is never used." verbose="The function &apos;volatility&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" line="449" column="0"/>
+            <symbol>volatility</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;downside_deviation&apos; is never used." verbose="The function &apos;downside_deviation&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" line="455" column="0"/>
+            <symbol>downside_deviation</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;value_at_risk_historical&apos; is never used." verbose="The function &apos;value_at_risk_historical&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" line="613" column="0"/>
+            <symbol>value_at_risk_historical</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;rows&apos; is never used." verbose="The function &apos;rows&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/dataframe.h" line="76" column="0"/>
+            <symbol>rows</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;cols&apos; is never used." verbose="The function &apos;cols&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/dataframe.h" line="77" column="0"/>
+            <symbol>cols</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;index&apos; is never used." verbose="The function &apos;index&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/dataframe.h" line="81" column="0"/>
+            <symbol>index</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;columns&apos; is never used." verbose="The function &apos;columns&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/dataframe.h" line="82" column="0"/>
+            <symbol>columns</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;remove_column&apos; is never used." verbose="The function &apos;remove_column&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/dataframe.h" line="106" column="0"/>
+            <symbol>remove_column</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;get_column&apos; is never used." verbose="The function &apos;get_column&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/dataframe.h" line="122" column="0"/>
+            <symbol>get_column</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;set_column&apos; is never used." verbose="The function &apos;set_column&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/dataframe.h" line="135" column="0"/>
+            <symbol>set_column</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;has_column&apos; is never used." verbose="The function &apos;has_column&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/dataframe.h" line="154" column="0"/>
+            <symbol>has_column</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;set_at&apos; is never used." verbose="The function &apos;set_at&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/dataframe.h" line="177" column="0"/>
+            <symbol>set_at</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;loc&apos; is never used." verbose="The function &apos;loc&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/dataframe.h" line="194" column="0"/>
+            <symbol>loc</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;select&apos; is never used." verbose="The function &apos;select&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/dataframe.h" line="238" column="0"/>
+            <symbol>select</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;sort_by&apos; is never used." verbose="The function &apos;sort_by&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/dataframe.h" line="258" column="0"/>
+            <symbol>sort_by</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;groupby_period&apos; is never used." verbose="The function &apos;groupby_period&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/dataframe.h" line="309" column="0"/>
+            <symbol>groupby_period</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;describe&apos; is never used." verbose="The function &apos;describe&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/dataframe.h" line="354" column="0"/>
+            <symbol>describe</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;corr&apos; is never used." verbose="The function &apos;corr&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/dataframe.h" line="403" column="0"/>
+            <symbol>corr</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;remove_holiday&apos; is never used." verbose="The function &apos;remove_holiday&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" line="95" column="0"/>
+            <symbol>remove_holiday</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;from_time_point&apos; is never used." verbose="The function &apos;from_time_point&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" line="183" column="0"/>
+            <symbol>from_time_point</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;add_days&apos; is never used." verbose="The function &apos;add_days&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" line="244" column="0"/>
+            <symbol>add_days</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;add_months&apos; is never used." verbose="The function &apos;add_months&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" line="249" column="0"/>
+            <symbol>add_months</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;add_years&apos; is never used." verbose="The function &apos;add_years&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" line="278" column="0"/>
+            <symbol>add_years</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;day_of_week&apos; is never used." verbose="The function &apos;day_of_week&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" line="304" column="0"/>
+            <symbol>day_of_week</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;days_since&apos; is never used." verbose="The function &apos;days_since&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" line="314" column="0"/>
+            <symbol>days_since</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;add_business_days&apos; is never used." verbose="The function &apos;add_business_days&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" line="323" column="0"/>
+            <symbol>add_business_days</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;to_days&apos; is never used." verbose="The function &apos;to_days&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" line="424" column="0"/>
+            <symbol>to_days</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;and_then&apos; is never used." verbose="The function &apos;and_then&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="205" column="0"/>
+            <symbol>and_then</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;or_else&apos; is never used." verbose="The function &apos;or_else&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="220" column="0"/>
+            <symbol>or_else</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;error_code_to_string&apos; is never used." verbose="The function &apos;error_code_to_string&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="248" column="0"/>
+            <symbol>error_code_to_string</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;try_push_back&apos; is never used." verbose="The function &apos;try_push_back&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/time_series.h" line="156" column="0"/>
+            <symbol>try_push_back</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;bulk_insert&apos; is never used." verbose="The function &apos;bulk_insert&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/time_series.h" line="176" column="0"/>
+            <symbol>bulk_insert</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;slice&apos; is never used." verbose="The function &apos;slice&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/time_series.h" line="324" column="0"/>
+            <symbol>slice</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;cumsum&apos; is never used." verbose="The function &apos;cumsum&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/time_series.h" line="499" column="0"/>
+            <symbol>cumsum</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;cumprod&apos; is never used." verbose="The function &apos;cumprod&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/time_series.h" line="515" column="0"/>
+            <symbol>cumprod</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;rolling_min&apos; is never used." verbose="The function &apos;rolling_min&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/time_series.h" line="678" column="0"/>
+            <symbol>rolling_min</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;rolling_max&apos; is never used." verbose="The function &apos;rolling_max&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/time_series.h" line="728" column="0"/>
+            <symbol>rolling_max</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;align&apos; is never used." verbose="The function &apos;align&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/time_series.h" line="892" column="0"/>
+            <symbol>align</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;fill_missing&apos; is never used." verbose="The function &apos;fill_missing&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/time_series.h" line="927" column="0"/>
+            <symbol>fill_missing</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;is_aligned&apos; is never used." verbose="The function &apos;is_aligned&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/simd_math.h" line="38" column="0"/>
+            <symbol>is_aligned</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;add_series&apos; is never used." verbose="The function &apos;add_series&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/simd_math.h" line="200" column="0"/>
+            <symbol>add_series</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;rolling_mean_simd&apos; is never used." verbose="The function &apos;rolling_mean_simd&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/simd_math.h" line="217" column="0"/>
+            <symbol>rolling_mean_simd</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;correlation_fast&apos; is never used." verbose="The function &apos;correlation_fast&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/simd_math.h" line="238" column="0"/>
+            <symbol>correlation_fast</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;power&apos; is never used." verbose="The function &apos;power&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" line="47" column="0"/>
+            <symbol>power</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;annualization_factor&apos; is never used." verbose="The function &apos;annualization_factor&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" line="90" column="0"/>
+            <symbol>annualization_factor</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;median&apos; is never used." verbose="The function &apos;median&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" line="356" column="0"/>
+            <symbol>median</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;quantile&apos; is never used." verbose="The function &apos;quantile&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" line="364" column="0"/>
+            <symbol>quantile</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;rolling_correlation&apos; is never used." verbose="The function &apos;rolling_correlation&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" line="474" column="0"/>
+            <symbol>rolling_correlation</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;normal_cdf&apos; is never used." verbose="The function &apos;normal_cdf&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" line="506" column="0"/>
+            <symbol>normal_cdf</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;normal_pdf&apos; is never used." verbose="The function &apos;normal_pdf&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" line="513" column="0"/>
+            <symbol>normal_pdf</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;normal_ppf&apos; is never used." verbose="The function &apos;normal_ppf&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" line="522" column="0"/>
+            <symbol>normal_ppf</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;max_drawdown_info&apos; is never used." verbose="The function &apos;max_drawdown_info&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/drawdown.h" line="86" column="0"/>
+            <symbol>max_drawdown_info</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;drawdown_duration&apos; is never used." verbose="The function &apos;drawdown_duration&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/drawdown.h" line="166" column="0"/>
+            <symbol>drawdown_duration</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;average_drawdown&apos; is never used." verbose="The function &apos;average_drawdown&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/drawdown.h" line="286" column="0"/>
+            <symbol>average_drawdown</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;rolling_max_drawdown&apos; is never used." verbose="The function &apos;rolling_max_drawdown&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/drawdown.h" line="319" column="0"/>
+            <symbol>rolling_max_drawdown</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;average_recovery_time&apos; is never used." verbose="The function &apos;average_recovery_time&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/drawdown.h" line="359" column="0"/>
+            <symbol>average_recovery_time</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;omega_ratio&apos; is never used." verbose="The function &apos;omega_ratio&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/ratios.h" line="217" column="0"/>
+            <symbol>omega_ratio</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;treynor_ratio&apos; is never used." verbose="The function &apos;treynor_ratio&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/ratios.h" line="256" column="0"/>
+            <symbol>treynor_ratio</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;rolling_sharpe_ratio&apos; is never used." verbose="The function &apos;rolling_sharpe_ratio&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/ratios.h" line="330" column="0"/>
+            <symbol>rolling_sharpe_ratio</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;calculate_returns&apos; is never used." verbose="The function &apos;calculate_returns&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/returns.h" line="15" column="0"/>
+            <symbol>calculate_returns</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;calculate_log_returns&apos; is never used." verbose="The function &apos;calculate_log_returns&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/returns.h" line="49" column="0"/>
+            <symbol>calculate_log_returns</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;aggregate_returns&apos; is never used." verbose="The function &apos;aggregate_returns&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/returns.h" line="147" column="0"/>
+            <symbol>aggregate_returns</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;rolling_returns&apos; is never used." verbose="The function &apos;rolling_returns&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/returns.h" line="175" column="0"/>
+            <symbol>rolling_returns</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;rolling_volatility&apos; is never used." verbose="The function &apos;rolling_volatility&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/returns.h" line="225" column="0"/>
+            <symbol>rolling_volatility</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;calculate_cagr&apos; is never used." verbose="The function &apos;calculate_cagr&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/returns.h" line="275" column="0"/>
+            <symbol>calculate_cagr</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;convert_returns&apos; is never used." verbose="The function &apos;convert_returns&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/returns.h" line="301" column="0"/>
+            <symbol>convert_returns</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;calculate_rolling_beta&apos; is never used." verbose="The function &apos;calculate_rolling_beta&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/rolling_metrics.h" line="140" column="0"/>
+            <symbol>calculate_rolling_beta</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;calculate_rolling_correlation&apos; is never used." verbose="The function &apos;calculate_rolling_correlation&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/rolling_metrics.h" line="207" column="0"/>
+            <symbol>calculate_rolling_correlation</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;calculate_rolling_max_drawdown&apos; is never used." verbose="The function &apos;calculate_rolling_max_drawdown&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/rolling_metrics.h" line="265" column="0"/>
+            <symbol>calculate_rolling_max_drawdown</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;calculate_rolling_sortino&apos; is never used." verbose="The function &apos;calculate_rolling_sortino&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/rolling_metrics.h" line="322" column="0"/>
+            <symbol>calculate_rolling_sortino</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;calculate_rolling_downside_deviation&apos; is never used." verbose="The function &apos;calculate_rolling_downside_deviation&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/rolling_metrics.h" line="398" column="0"/>
+            <symbol>calculate_rolling_downside_deviation</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;set_sector_mapping&apos; is never used." verbose="The function &apos;set_sector_mapping&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" line="49" column="0"/>
+            <symbol>set_sector_mapping</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;set_industry_mapping&apos; is never used." verbose="The function &apos;set_industry_mapping&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" line="54" column="0"/>
+            <symbol>set_industry_mapping</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;set_country_mapping&apos; is never used." verbose="The function &apos;set_country_mapping&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" line="59" column="0"/>
+            <symbol>set_country_mapping</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;calculate_sector_allocations&apos; is never used." verbose="The function &apos;calculate_sector_allocations&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" line="64" column="0"/>
+            <symbol>calculate_sector_allocations</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;calculate_concentration&apos; is never used." verbose="The function &apos;calculate_concentration&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" line="104" column="0"/>
+            <symbol>calculate_concentration</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;analyze_by_group&apos; is never used." verbose="The function &apos;analyze_by_group&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" line="151" column="0"/>
+            <symbol>analyze_by_group</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;calculate_drift&apos; is never used." verbose="The function &apos;calculate_drift&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" line="210" column="0"/>
+            <symbol>calculate_drift</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;analyze_allocation_stability&apos; is never used." verbose="The function &apos;analyze_allocation_stability&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" line="268" column="0"/>
+            <symbol>analyze_allocation_stability</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;classify_market_cap&apos; is never used." verbose="The function &apos;classify_market_cap&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" line="383" column="0"/>
+            <symbol>classify_market_cap</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;market_cap_bucket_to_string&apos; is never used." verbose="The function &apos;market_cap_bucket_to_string&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" line="400" column="0"/>
+            <symbol>market_cap_bucket_to_string</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;return_pct&apos; is never used." verbose="The function &apos;return_pct&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/holdings.h" line="39" column="0"/>
+            <symbol>return_pct</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;set_cash_balance&apos; is never used." verbose="The function &apos;set_cash_balance&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/holdings.h" line="72" column="0"/>
+            <symbol>set_cash_balance</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;top_holdings&apos; is never used." verbose="The function &apos;top_holdings&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/holdings.h" line="167" column="0"/>
+            <symbol>top_holdings</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;build_from_transactions&apos; is never used." verbose="The function &apos;build_from_transactions&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/holdings.h" line="288" column="0"/>
+            <symbol>build_from_transactions</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;portfolio_value_series&apos; is never used." verbose="The function &apos;portfolio_value_series&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/holdings.h" line="373" column="0"/>
+            <symbol>portfolio_value_series</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;exposure_series&apos; is never used." verbose="The function &apos;exposure_series&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/holdings.h" line="400" column="0"/>
+            <symbol>exposure_series</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;create&apos; is never used." verbose="The function &apos;create&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/transaction.h" line="67" column="0"/>
+            <symbol>create</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;to_dataframe&apos; is never used." verbose="The function &apos;to_dataframe&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/transaction.h" line="483" column="0"/>
+            <symbol>to_dataframe</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;currency&apos; is never used." verbose="The function &apos;currency&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/transaction.h" line="56" column="0"/>
+            <symbol>currency</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;exchange&apos; is never used." verbose="The function &apos;exchange&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/transaction.h" line="59" column="0"/>
+            <symbol>exchange</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;order_id&apos; is never used." verbose="The function &apos;order_id&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/transaction.h" line="60" column="0"/>
+            <symbol>order_id</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;type&apos; is never used." verbose="The function &apos;type&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/transaction.h" line="61" column="0"/>
+            <symbol>type</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;set_exchange&apos; is never used." verbose="The function &apos;set_exchange&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/transaction.h" line="82" column="0"/>
+            <symbol>set_exchange</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;set_order_id&apos; is never used." verbose="The function &apos;set_order_id&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/transaction.h" line="83" column="0"/>
+            <symbol>set_order_id</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;is_buy&apos; is never used." verbose="The function &apos;is_buy&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/transaction.h" line="106" column="0"/>
+            <symbol>is_buy</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;is_sell&apos; is never used." verbose="The function &apos;is_sell&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/transaction.h" line="111" column="0"/>
+            <symbol>is_sell</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;add_transaction&apos; is never used." verbose="The function &apos;add_transaction&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/transaction.h" line="184" column="0"/>
+            <symbol>add_transaction</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;total_commissions&apos; is never used." verbose="The function &apos;total_commissions&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/transaction.h" line="245" column="0"/>
+            <symbol>total_commissions</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;total_slippage&apos; is never used." verbose="The function &apos;total_slippage&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/transaction.h" line="253" column="0"/>
+            <symbol>total_slippage</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;net_shares&apos; is never used." verbose="The function &apos;net_shares&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/transaction.h" line="262" column="0"/>
+            <symbol>net_shares</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;group_by_symbol&apos; is never used." verbose="The function &apos;group_by_symbol&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/transaction.h" line="272" column="0"/>
+            <symbol>group_by_symbol</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;daily_summary&apos; is never used." verbose="The function &apos;daily_summary&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/transaction.h" line="288" column="0"/>
+            <symbol>daily_summary</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;aggregate_daily&apos; is never used." verbose="The function &apos;aggregate_daily&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/transaction.h" line="340" column="0"/>
+            <symbol>aggregate_daily</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;aggregate_by_symbol&apos; is never used." verbose="The function &apos;aggregate_by_symbol&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/transaction.h" line="358" column="0"/>
+            <symbol>aggregate_by_symbol</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;net_shares_by_symbol&apos; is never used." verbose="The function &apos;net_shares_by_symbol&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/transaction.h" line="391" column="0"/>
+            <symbol>net_shares_by_symbol</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;calculate_transaction_costs&apos; is never used." verbose="The function &apos;calculate_transaction_costs&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/transaction.h" line="471" column="0"/>
+            <symbol>calculate_transaction_costs</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;calculate_average_price&apos; is never used." verbose="The function &apos;calculate_average_price&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/transaction.h" line="518" column="0"/>
+            <symbol>calculate_average_price</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;calculate_turnover&apos; is never used." verbose="The function &apos;calculate_turnover&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/transaction.h" line="548" column="0"/>
+            <symbol>calculate_turnover</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;create_time_series_chart&apos; is never used." verbose="The function &apos;create_time_series_chart&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotly_enhanced.h" line="464" column="0"/>
+            <symbol>create_time_series_chart</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;create_candlestick_chart&apos; is never used." verbose="The function &apos;create_candlestick_chart&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotly_enhanced.h" line="517" column="0"/>
+            <symbol>create_candlestick_chart</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;create_correlation_heatmap&apos; is never used." verbose="The function &apos;create_correlation_heatmap&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotly_enhanced.h" line="591" column="0"/>
+            <symbol>create_correlation_heatmap</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;calculate_annual_returns&apos; is never used." verbose="The function &apos;calculate_annual_returns&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" line="236" column="0"/>
+            <symbol>calculate_annual_returns</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;plot_cumulative_returns&apos; is never used." verbose="The function &apos;plot_cumulative_returns&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" line="374" column="0"/>
+            <symbol>plot_cumulative_returns</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;plot_drawdown&apos; is never used." verbose="The function &apos;plot_drawdown&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" line="406" column="0"/>
+            <symbol>plot_drawdown</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;create_performance_dashboard&apos; is never used." verbose="The function &apos;create_performance_dashboard&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" line="443" column="0"/>
+            <symbol>create_performance_dashboard</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;plot_annual_returns&apos; is never used." verbose="The function &apos;plot_annual_returns&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" line="612" column="0"/>
+            <symbol>plot_annual_returns</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;plot_rolling_sharpe&apos; is never used." verbose="The function &apos;plot_rolling_sharpe&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" line="647" column="0"/>
+            <symbol>plot_rolling_sharpe</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;plot_rolling_volatility&apos; is never used." verbose="The function &apos;plot_rolling_volatility&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" line="658" column="0"/>
+            <symbol>plot_rolling_volatility</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;plot_returns_distribution&apos; is never used." verbose="The function &apos;plot_returns_distribution&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" line="669" column="0"/>
+            <symbol>plot_returns_distribution</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;exponential_moving_average_simd&apos; is never used." verbose="The function &apos;exponential_moving_average_simd&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/math/simd_math.cpp" line="276" column="0"/>
+            <symbol>exponential_moving_average_simd</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;calculate_returns_simd&apos; is never used." verbose="The function &apos;calculate_returns_simd&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/math/simd_math.cpp" line="292" column="0"/>
+            <symbol>calculate_returns_simd</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;cumulative_product_simd&apos; is never used." verbose="The function &apos;cumulative_product_simd&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/math/simd_math.cpp" line="308" column="0"/>
+            <symbol>cumulative_product_simd</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;is_trading_hours&apos; is never used." verbose="The function &apos;is_trading_hours&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/utils/intraday.cpp" line="323" column="0"/>
+            <symbol>is_trading_hours</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;normalize_positions&apos; is never used." verbose="The function &apos;normalize_positions&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/utils/intraday.cpp" line="332" column="0"/>
+            <symbol>normalize_positions</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;calculate_average_absolute_deviation&apos; is never used." verbose="The function &apos;calculate_average_absolute_deviation&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/utils/intraday.cpp" line="362" column="0"/>
+            <symbol>calculate_average_absolute_deviation</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;interpolate_missing_positions&apos; is never used." verbose="The function &apos;interpolate_missing_positions&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/utils/intraday.cpp" line="380" column="0"/>
+            <symbol>interpolate_missing_positions</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;create_portfolio_dashboard&apos; is never used." verbose="The function &apos;create_portfolio_dashboard&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp" line="18" column="0"/>
+            <symbol>create_portfolio_dashboard</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;create_risk_dashboard&apos; is never used." verbose="The function &apos;create_risk_dashboard&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp" line="318" column="0"/>
+            <symbol>create_risk_dashboard</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;create_attribution_waterfall&apos; is never used." verbose="The function &apos;create_attribution_waterfall&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp" line="566" column="0"/>
+            <symbol>create_attribution_waterfall</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;create_treemap&apos; is never used." verbose="The function &apos;create_treemap&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp" line="719" column="0"/>
+            <symbol>create_treemap</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;create_waterfall_chart&apos; is never used." verbose="The function &apos;create_waterfall_chart&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp" line="747" column="0"/>
+            <symbol>create_waterfall_chart</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;create_3d_surface&apos; is never used." verbose="The function &apos;create_3d_surface&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp" line="778" column="0"/>
+            <symbol>create_3d_surface</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;create_subplots_dashboard&apos; is never used." verbose="The function &apos;create_subplots_dashboard&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp" line="811" column="0"/>
+            <symbol>create_subplots_dashboard</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;initialize&apos; is never used." verbose="The function &apos;initialize&apos; is never used." cwe="561">
+            <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp" line="623" column="0"/>
+            <symbol>initialize</symbol>
+        </error>
+        <error id="checkersReport" severity="information" msg="Active checkers: 167/856 (use --checkers-report=&lt;filename&gt; to see details)" verbose="Active checkers: 167/856 (use --checkers-report=&lt;filename&gt; to see details)"/>
+    </errors>
+</results>

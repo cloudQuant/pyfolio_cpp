@@ -1,0 +1,11 @@
+<map id="pyfolio::transactions::RoundTrip" name="pyfolio::transactions::RoundTrip">
+<area shape="rect" id="Node000001" title="Round trip trade information." alt="" coords="74,213,212,253"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="40,109,120,135"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,147,134,211,129,214,92,150"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,5,131,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="75,61,81,108,76,109,70,62"/>
+<area shape="rect" id="Node000004" href="$d6/d4f/classpyfolio_1_1DateTime.html" title="DateTime utilities for financial calculations." alt="" coords="167,109,292,135"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="213,148,160,214,156,211,208,145"/>
+<area shape="rect" id="Node000005" href="$dc/ddd/classpyfolio_1_1BusinessCalendar.html" title="Business calendar for handling trading days and holidays." alt="" coords="155,13,328,38"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="241,54,234,109,228,108,235,53"/>
+</map>

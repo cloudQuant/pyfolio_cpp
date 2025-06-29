@@ -1,0 +1,287 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators" kind="struct" language="C++" prot="public">
+    <compoundname>pyfolio::analytics::MarketIndicators</compoundname>
+    <includes refid="d4/d7b/market__indicators_8h" local="no">market_indicators.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a81e6347dc2afa96074c9ab46c8e0e669" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; pyfolio::analytics::MarketIndicators::vix_levels</definition>
+        <argsstring></argsstring>
+        <name>vix_levels</name>
+        <qualifiedname>pyfolio::analytics::MarketIndicators::vix_levels</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" line="67" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" bodystart="67" bodyend="-1"/>
+        <referencedby refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a2a9400a6dbb4863539776335a1338e13" compoundref="d4/d7b/market__indicators_8h" startline="84" endline="84">empty</referencedby>
+        <referencedby refid="d3/d3c/classpyfolio_1_1analytics_1_1MarketIndicatorsAnalyzer_1a4901a40e67d8b042f343095819150e40" compoundref="d4/d7b/market__indicators_8h" startline="413" endline="464">pyfolio::analytics::MarketIndicatorsAnalyzer::get_current_stress_level</referencedby>
+        <referencedby refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a3472ae4a6b393649294553e755691488" compoundref="d4/d7b/market__indicators_8h" startline="103" endline="128">get_indicator</referencedby>
+        <referencedby refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a7b24460ee0e6ded74ee38374827c286e" compoundref="d4/d7b/market__indicators_8h" startline="89" endline="98">resize</referencedby>
+        <referencedby refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a43f40f01d24cda780af90dc04a2a97fa" compoundref="d4/d7b/market__indicators_8h" startline="79" endline="79">size</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a93a3e415aebbd0725c082e4133bdd2be" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; pyfolio::analytics::MarketIndicators::term_spreads</definition>
+        <argsstring></argsstring>
+        <name>term_spreads</name>
+        <qualifiedname>pyfolio::analytics::MarketIndicators::term_spreads</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" line="68" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" bodystart="68" bodyend="-1"/>
+        <referencedby refid="d3/d3c/classpyfolio_1_1analytics_1_1MarketIndicatorsAnalyzer_1a4901a40e67d8b042f343095819150e40" compoundref="d4/d7b/market__indicators_8h" startline="413" endline="464">pyfolio::analytics::MarketIndicatorsAnalyzer::get_current_stress_level</referencedby>
+        <referencedby refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a3472ae4a6b393649294553e755691488" compoundref="d4/d7b/market__indicators_8h" startline="103" endline="128">get_indicator</referencedby>
+        <referencedby refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a7b24460ee0e6ded74ee38374827c286e" compoundref="d4/d7b/market__indicators_8h" startline="89" endline="98">resize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a063db98c2729ff651b0b25063152549e" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; pyfolio::analytics::MarketIndicators::credit_spreads</definition>
+        <argsstring></argsstring>
+        <name>credit_spreads</name>
+        <qualifiedname>pyfolio::analytics::MarketIndicators::credit_spreads</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" line="69" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" bodystart="69" bodyend="-1"/>
+        <referencedby refid="d3/d3c/classpyfolio_1_1analytics_1_1MarketIndicatorsAnalyzer_1a4901a40e67d8b042f343095819150e40" compoundref="d4/d7b/market__indicators_8h" startline="413" endline="464">pyfolio::analytics::MarketIndicatorsAnalyzer::get_current_stress_level</referencedby>
+        <referencedby refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a3472ae4a6b393649294553e755691488" compoundref="d4/d7b/market__indicators_8h" startline="103" endline="128">get_indicator</referencedby>
+        <referencedby refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a7b24460ee0e6ded74ee38374827c286e" compoundref="d4/d7b/market__indicators_8h" startline="89" endline="98">resize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1abb4cbed0913259fc6f437e554ddf0866" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; pyfolio::analytics::MarketIndicators::yield_curve_slopes</definition>
+        <argsstring></argsstring>
+        <name>yield_curve_slopes</name>
+        <qualifiedname>pyfolio::analytics::MarketIndicators::yield_curve_slopes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" line="70" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" bodystart="70" bodyend="-1"/>
+        <referencedby refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a3472ae4a6b393649294553e755691488" compoundref="d4/d7b/market__indicators_8h" startline="103" endline="128">get_indicator</referencedby>
+        <referencedby refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a7b24460ee0e6ded74ee38374827c286e" compoundref="d4/d7b/market__indicators_8h" startline="89" endline="98">resize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a5a757b9d33575e364c9b7b96db5888c8" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; pyfolio::analytics::MarketIndicators::put_call_ratios</definition>
+        <argsstring></argsstring>
+        <name>put_call_ratios</name>
+        <qualifiedname>pyfolio::analytics::MarketIndicators::put_call_ratios</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" line="71" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" bodystart="71" bodyend="-1"/>
+        <referencedby refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a3472ae4a6b393649294553e755691488" compoundref="d4/d7b/market__indicators_8h" startline="103" endline="128">get_indicator</referencedby>
+        <referencedby refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a7b24460ee0e6ded74ee38374827c286e" compoundref="d4/d7b/market__indicators_8h" startline="89" endline="98">resize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a099e754109930343745543edba0bec89" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; pyfolio::analytics::MarketIndicators::high_yield_spreads</definition>
+        <argsstring></argsstring>
+        <name>high_yield_spreads</name>
+        <qualifiedname>pyfolio::analytics::MarketIndicators::high_yield_spreads</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" line="72" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" bodystart="72" bodyend="-1"/>
+        <referencedby refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a3472ae4a6b393649294553e755691488" compoundref="d4/d7b/market__indicators_8h" startline="103" endline="128">get_indicator</referencedby>
+        <referencedby refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a7b24460ee0e6ded74ee38374827c286e" compoundref="d4/d7b/market__indicators_8h" startline="89" endline="98">resize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1aafb884da28ef43edfa79139b10edcdd8" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; pyfolio::analytics::MarketIndicators::dollar_index</definition>
+        <argsstring></argsstring>
+        <name>dollar_index</name>
+        <qualifiedname>pyfolio::analytics::MarketIndicators::dollar_index</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" line="73" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" bodystart="73" bodyend="-1"/>
+        <referencedby refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a3472ae4a6b393649294553e755691488" compoundref="d4/d7b/market__indicators_8h" startline="103" endline="128">get_indicator</referencedby>
+        <referencedby refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a7b24460ee0e6ded74ee38374827c286e" compoundref="d4/d7b/market__indicators_8h" startline="89" endline="98">resize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a16083d9552957805fcc2d50e0358fdd8" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; pyfolio::analytics::MarketIndicators::commodity_index</definition>
+        <argsstring></argsstring>
+        <name>commodity_index</name>
+        <qualifiedname>pyfolio::analytics::MarketIndicators::commodity_index</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" line="74" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" bodystart="74" bodyend="-1"/>
+        <referencedby refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a3472ae4a6b393649294553e755691488" compoundref="d4/d7b/market__indicators_8h" startline="103" endline="128">get_indicator</referencedby>
+        <referencedby refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a7b24460ee0e6ded74ee38374827c286e" compoundref="d4/d7b/market__indicators_8h" startline="89" endline="98">resize</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a43f40f01d24cda780af90dc04a2a97fa" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t pyfolio::analytics::MarketIndicators::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <qualifiedname>pyfolio::analytics::MarketIndicators::size</qualifiedname>
+        <briefdescription>
+<para>Get number of observations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" line="79" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" bodystart="79" bodyend="79"/>
+        <references refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a81e6347dc2afa96074c9ab46c8e0e669" compoundref="d4/d7b/market__indicators_8h" startline="67">vix_levels</references>
+        <referencedby refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a3472ae4a6b393649294553e755691488" compoundref="d4/d7b/market__indicators_8h" startline="103" endline="128">get_indicator</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a2a9400a6dbb4863539776335a1338e13" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool pyfolio::analytics::MarketIndicators::empty</definition>
+        <argsstring>() const</argsstring>
+        <name>empty</name>
+        <qualifiedname>pyfolio::analytics::MarketIndicators::empty</qualifiedname>
+        <briefdescription>
+<para>Check if empty. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" line="84" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" bodystart="84" bodyend="84"/>
+        <references refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a81e6347dc2afa96074c9ab46c8e0e669" compoundref="d4/d7b/market__indicators_8h" startline="67">vix_levels</references>
+        <referencedby refid="d3/d3c/classpyfolio_1_1analytics_1_1MarketIndicatorsAnalyzer_1a4901a40e67d8b042f343095819150e40" compoundref="d4/d7b/market__indicators_8h" startline="413" endline="464">pyfolio::analytics::MarketIndicatorsAnalyzer::get_current_stress_level</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a7b24460ee0e6ded74ee38374827c286e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void pyfolio::analytics::MarketIndicators::resize</definition>
+        <argsstring>(size_t new_size)</argsstring>
+        <name>resize</name>
+        <qualifiedname>pyfolio::analytics::MarketIndicators::resize</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>new_size</declname>
+        </param>
+        <briefdescription>
+<para>Resize all indicators. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" line="89" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" bodystart="89" bodyend="98"/>
+        <references refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a16083d9552957805fcc2d50e0358fdd8" compoundref="d4/d7b/market__indicators_8h" startline="74">commodity_index</references>
+        <references refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a063db98c2729ff651b0b25063152549e" compoundref="d4/d7b/market__indicators_8h" startline="69">credit_spreads</references>
+        <references refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1aafb884da28ef43edfa79139b10edcdd8" compoundref="d4/d7b/market__indicators_8h" startline="73">dollar_index</references>
+        <references refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a099e754109930343745543edba0bec89" compoundref="d4/d7b/market__indicators_8h" startline="72">high_yield_spreads</references>
+        <references refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a5a757b9d33575e364c9b7b96db5888c8" compoundref="d4/d7b/market__indicators_8h" startline="71">put_call_ratios</references>
+        <references refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a93a3e415aebbd0725c082e4133bdd2be" compoundref="d4/d7b/market__indicators_8h" startline="68">term_spreads</references>
+        <references refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a81e6347dc2afa96074c9ab46c8e0e669" compoundref="d4/d7b/market__indicators_8h" startline="67">vix_levels</references>
+        <references refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1abb4cbed0913259fc6f437e554ddf0866" compoundref="d4/d7b/market__indicators_8h" startline="70">yield_curve_slopes</references>
+      </memberdef>
+      <memberdef kind="function" id="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a3472ae4a6b393649294553e755691488" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; double &gt;</type>
+        <definition>Result&lt; double &gt; pyfolio::analytics::MarketIndicators::get_indicator</definition>
+        <argsstring>(IndicatorType type, size_t index) const</argsstring>
+        <name>get_indicator</name>
+        <qualifiedname>pyfolio::analytics::MarketIndicators::get_indicator</qualifiedname>
+        <param>
+          <type><ref refid="d2/d10/namespacepyfolio_1_1analytics_1a51254d1fe289c5c99cc418aa26e0d5d2" kindref="member">IndicatorType</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get indicator by type and index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" line="103" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" bodystart="103" bodyend="128"/>
+        <references refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a16083d9552957805fcc2d50e0358fdd8" compoundref="d4/d7b/market__indicators_8h" startline="74">commodity_index</references>
+        <references refid="d2/d10/namespacepyfolio_1_1analytics_1a51254d1fe289c5c99cc418aa26e0d5d2afdfd0e433864e681026f29ea781ecd77" compoundref="d4/d7b/market__indicators_8h" startline="25">pyfolio::analytics::CommodityIndex</references>
+        <references refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a063db98c2729ff651b0b25063152549e" compoundref="d4/d7b/market__indicators_8h" startline="69">credit_spreads</references>
+        <references refid="d2/d10/namespacepyfolio_1_1analytics_1a51254d1fe289c5c99cc418aa26e0d5d2a903f63be23b981f3d5c89a42ebc86cc2" compoundref="d4/d7b/market__indicators_8h" startline="20">pyfolio::analytics::CreditSpread</references>
+        <references refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1aafb884da28ef43edfa79139b10edcdd8" compoundref="d4/d7b/market__indicators_8h" startline="73">dollar_index</references>
+        <references refid="d2/d10/namespacepyfolio_1_1analytics_1a51254d1fe289c5c99cc418aa26e0d5d2aa500a8ab5a9f6cad5427d40d08d78fa1" compoundref="d4/d7b/market__indicators_8h" startline="24">pyfolio::analytics::DollarIndex</references>
+        <references refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" compoundref="d3/d11/error__handling_8h" startline="111" endline="116">pyfolio::Result&lt; T &gt;::error</references>
+        <references refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a099e754109930343745543edba0bec89" compoundref="d4/d7b/market__indicators_8h" startline="72">high_yield_spreads</references>
+        <references refid="d2/d10/namespacepyfolio_1_1analytics_1a51254d1fe289c5c99cc418aa26e0d5d2ad148ee84ecc40a0e4b4840b09ea1f5b9" compoundref="d4/d7b/market__indicators_8h" startline="23">pyfolio::analytics::HighYieldSpread</references>
+        <references refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9ad8f78ca9a692a9411afbc7584b69d043" compoundref="d3/d11/error__handling_8h" startline="17">pyfolio::InvalidInput</references>
+        <references refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a5a757b9d33575e364c9b7b96db5888c8" compoundref="d4/d7b/market__indicators_8h" startline="71">put_call_ratios</references>
+        <references refid="d2/d10/namespacepyfolio_1_1analytics_1a51254d1fe289c5c99cc418aa26e0d5d2ad65864e8b09bc7c70dd77861c6c96421" compoundref="d4/d7b/market__indicators_8h" startline="22">pyfolio::analytics::PutCallRatio</references>
+        <references refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a43f40f01d24cda780af90dc04a2a97fa" compoundref="d4/d7b/market__indicators_8h" startline="79" endline="79">size</references>
+        <references refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" compoundref="d3/d11/error__handling_8h" startline="74" endline="74">pyfolio::Result&lt; T &gt;::success</references>
+        <references refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a93a3e415aebbd0725c082e4133bdd2be" compoundref="d4/d7b/market__indicators_8h" startline="68">term_spreads</references>
+        <references refid="d2/d10/namespacepyfolio_1_1analytics_1a51254d1fe289c5c99cc418aa26e0d5d2a65b8db9bf515cc37584c5bbc865298c4" compoundref="d4/d7b/market__indicators_8h" startline="19">pyfolio::analytics::TermSpread</references>
+        <references refid="d2/d10/namespacepyfolio_1_1analytics_1a51254d1fe289c5c99cc418aa26e0d5d2af96d73e8fd3a87ab4e2fea235d3d79b0" compoundref="d4/d7b/market__indicators_8h" startline="18">pyfolio::analytics::VIX</references>
+        <references refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a81e6347dc2afa96074c9ab46c8e0e669" compoundref="d4/d7b/market__indicators_8h" startline="67">vix_levels</references>
+        <references refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1abb4cbed0913259fc6f437e554ddf0866" compoundref="d4/d7b/market__indicators_8h" startline="70">yield_curve_slopes</references>
+        <references refid="d2/d10/namespacepyfolio_1_1analytics_1a51254d1fe289c5c99cc418aa26e0d5d2afce7f129c599a1cfc83a0e153a6ecf43" compoundref="d4/d7b/market__indicators_8h" startline="21">pyfolio::analytics::YieldCurveSlope</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Collection of market indicators. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>pyfolio::analytics::MarketIndicators</label>
+        <link refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>commodity_index</edgelabel>
+          <edgelabel>credit_spreads</edgelabel>
+          <edgelabel>dollar_index</edgelabel>
+          <edgelabel>high_yield_spreads</edgelabel>
+          <edgelabel>put_call_ratios</edgelabel>
+          <edgelabel>term_spreads</edgelabel>
+          <edgelabel>vix_levels</edgelabel>
+          <edgelabel>yield_curve_slopes</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::vector&lt; double &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" line="66" column="1" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h" bodystart="66" bodyend="129"/>
+    <listofallmembers>
+      <member refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a16083d9552957805fcc2d50e0358fdd8" prot="public" virt="non-virtual"><scope>pyfolio::analytics::MarketIndicators</scope><name>commodity_index</name></member>
+      <member refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a063db98c2729ff651b0b25063152549e" prot="public" virt="non-virtual"><scope>pyfolio::analytics::MarketIndicators</scope><name>credit_spreads</name></member>
+      <member refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1aafb884da28ef43edfa79139b10edcdd8" prot="public" virt="non-virtual"><scope>pyfolio::analytics::MarketIndicators</scope><name>dollar_index</name></member>
+      <member refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a2a9400a6dbb4863539776335a1338e13" prot="public" virt="non-virtual"><scope>pyfolio::analytics::MarketIndicators</scope><name>empty</name></member>
+      <member refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a3472ae4a6b393649294553e755691488" prot="public" virt="non-virtual"><scope>pyfolio::analytics::MarketIndicators</scope><name>get_indicator</name></member>
+      <member refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a099e754109930343745543edba0bec89" prot="public" virt="non-virtual"><scope>pyfolio::analytics::MarketIndicators</scope><name>high_yield_spreads</name></member>
+      <member refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a5a757b9d33575e364c9b7b96db5888c8" prot="public" virt="non-virtual"><scope>pyfolio::analytics::MarketIndicators</scope><name>put_call_ratios</name></member>
+      <member refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a7b24460ee0e6ded74ee38374827c286e" prot="public" virt="non-virtual"><scope>pyfolio::analytics::MarketIndicators</scope><name>resize</name></member>
+      <member refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a43f40f01d24cda780af90dc04a2a97fa" prot="public" virt="non-virtual"><scope>pyfolio::analytics::MarketIndicators</scope><name>size</name></member>
+      <member refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a93a3e415aebbd0725c082e4133bdd2be" prot="public" virt="non-virtual"><scope>pyfolio::analytics::MarketIndicators</scope><name>term_spreads</name></member>
+      <member refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1a81e6347dc2afa96074c9ab46c8e0e669" prot="public" virt="non-virtual"><scope>pyfolio::analytics::MarketIndicators</scope><name>vix_levels</name></member>
+      <member refid="d0/d6c/structpyfolio_1_1analytics_1_1MarketIndicators_1abb4cbed0913259fc6f437e554ddf0866" prot="public" virt="non-virtual"><scope>pyfolio::analytics::MarketIndicators</scope><name>yield_curve_slopes</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

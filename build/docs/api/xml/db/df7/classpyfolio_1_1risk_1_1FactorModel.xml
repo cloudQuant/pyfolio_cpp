@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="db/df7/classpyfolio_1_1risk_1_1FactorModel" kind="class" language="C++" prot="public">
+    <compoundname>pyfolio::risk::FactorModel</compoundname>
+    <includes refid="d4/da5/factor__exposure_8h" local="no">factor_exposure.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="db/df7/classpyfolio_1_1risk_1_1FactorModel_1aff005fd5594c5741a73248a80c36bbaf" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; double &gt; &gt;</type>
+        <definition>std::map&lt;std::string, TimeSeries&lt;double&gt; &gt; pyfolio::risk::FactorModel::factor_returns_</definition>
+        <argsstring></argsstring>
+        <name>factor_returns_</name>
+        <qualifiedname>pyfolio::risk::FactorModel::factor_returns_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/factor_exposure.h" line="103" column="14" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/factor_exposure.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/df7/classpyfolio_1_1risk_1_1FactorModel_1a8ae285cce917e7501d3ac559e0b9582c" prot="private" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="d7/df8/namespacepyfolio_1a66e3e2ebe494a9dccbeb419408aaf7ea" kindref="member">Symbol</ref>, <ref refid="d0/d2f/structpyfolio_1_1risk_1_1SecurityFactorExposure" kindref="compound">SecurityFactorExposure</ref> &gt;</type>
+        <definition>std::map&lt;Symbol, SecurityFactorExposure&gt; pyfolio::risk::FactorModel::security_exposures_</definition>
+        <argsstring></argsstring>
+        <name>security_exposures_</name>
+        <qualifiedname>pyfolio::risk::FactorModel::security_exposures_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/factor_exposure.h" line="104" column="14" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/factor_exposure.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/df7/classpyfolio_1_1risk_1_1FactorModel_1afe03030c789c2f6f8dffa759be32f283" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, std::map&lt; std::string, double &gt; &gt;</type>
+        <definition>std::map&lt;std::string, std::map&lt;std::string, double&gt; &gt; pyfolio::risk::FactorModel::factor_covariance_</definition>
+        <argsstring></argsstring>
+        <name>factor_covariance_</name>
+        <qualifiedname>pyfolio::risk::FactorModel::factor_covariance_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/factor_exposure.h" line="105" column="14" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/factor_exposure.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="db/df7/classpyfolio_1_1risk_1_1FactorModel_1ab47ec1573cc2eb568c198cbe58f758c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void pyfolio::risk::FactorModel::set_factor_returns</definition>
+        <argsstring>(const std::map&lt; std::string, TimeSeries&lt; double &gt; &gt; &amp;factor_returns)</argsstring>
+        <name>set_factor_returns</name>
+        <qualifiedname>pyfolio::risk::FactorModel::set_factor_returns</qualifiedname>
+        <param>
+          <type>const std::map&lt; std::string, <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; double &gt; &gt; &amp;</type>
+          <declname>factor_returns</declname>
+        </param>
+        <briefdescription>
+<para>Set factor return time series. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/factor_exposure.h" line="111" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/factor_exposure.h" bodystart="111" bodyend="113"/>
+        <referencedby refid="d2/da5/namespacepyfolio_1_1risk_1a0fbdfe0d8229ca14ca8adb34b32f53fd" compoundref="d4/da5/factor__exposure_8h" startline="352" endline="402">pyfolio::risk::create_factor_model_from_returns</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="db/df7/classpyfolio_1_1risk_1_1FactorModel_1a45fa830d20150934e8834d672d02498a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void pyfolio::risk::FactorModel::set_security_exposures</definition>
+        <argsstring>(const std::map&lt; Symbol, SecurityFactorExposure &gt; &amp;exposures)</argsstring>
+        <name>set_security_exposures</name>
+        <qualifiedname>pyfolio::risk::FactorModel::set_security_exposures</qualifiedname>
+        <param>
+          <type>const std::map&lt; <ref refid="d7/df8/namespacepyfolio_1a66e3e2ebe494a9dccbeb419408aaf7ea" kindref="member">Symbol</ref>, <ref refid="d0/d2f/structpyfolio_1_1risk_1_1SecurityFactorExposure" kindref="compound">SecurityFactorExposure</ref> &gt; &amp;</type>
+          <declname>exposures</declname>
+        </param>
+        <briefdescription>
+<para>Set security factor exposures. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/factor_exposure.h" line="118" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/factor_exposure.h" bodystart="118" bodyend="120"/>
+        <referencedby refid="d2/da5/namespacepyfolio_1_1risk_1a0fbdfe0d8229ca14ca8adb34b32f53fd" compoundref="d4/da5/factor__exposure_8h" startline="352" endline="402">pyfolio::risk::create_factor_model_from_returns</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="db/df7/classpyfolio_1_1risk_1_1FactorModel_1a63418904140fddd6168227df6de38b6c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void pyfolio::risk::FactorModel::set_factor_covariance</definition>
+        <argsstring>(const std::map&lt; std::string, std::map&lt; std::string, double &gt; &gt; &amp;covariance)</argsstring>
+        <name>set_factor_covariance</name>
+        <qualifiedname>pyfolio::risk::FactorModel::set_factor_covariance</qualifiedname>
+        <param>
+          <type>const std::map&lt; std::string, std::map&lt; std::string, double &gt; &gt; &amp;</type>
+          <declname>covariance</declname>
+        </param>
+        <briefdescription>
+<para>Set factor covariance matrix. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/factor_exposure.h" line="125" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/factor_exposure.h" bodystart="125" bodyend="127"/>
+        <referencedby refid="d2/da5/namespacepyfolio_1_1risk_1a0fbdfe0d8229ca14ca8adb34b32f53fd" compoundref="d4/da5/factor__exposure_8h" startline="352" endline="402">pyfolio::risk::create_factor_model_from_returns</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="db/df7/classpyfolio_1_1risk_1_1FactorModel_1a09ee4dd1527b8f346c534067c73b1bf8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; <ref refid="de/d0a/structpyfolio_1_1risk_1_1PortfolioFactorExposure" kindref="compound">PortfolioFactorExposure</ref> &gt;</type>
+        <definition>Result&lt; PortfolioFactorExposure &gt; pyfolio::risk::FactorModel::calculate_portfolio_exposures</definition>
+        <argsstring>(const std::map&lt; Symbol, double &gt; &amp;portfolio_weights, const std::map&lt; Symbol, double &gt; &amp;benchmark_weights={}) const</argsstring>
+        <name>calculate_portfolio_exposures</name>
+        <qualifiedname>pyfolio::risk::FactorModel::calculate_portfolio_exposures</qualifiedname>
+        <param>
+          <type>const std::map&lt; <ref refid="d7/df8/namespacepyfolio_1a66e3e2ebe494a9dccbeb419408aaf7ea" kindref="member">Symbol</ref>, double &gt; &amp;</type>
+          <declname>portfolio_weights</declname>
+        </param>
+        <param>
+          <type>const std::map&lt; <ref refid="d7/df8/namespacepyfolio_1a66e3e2ebe494a9dccbeb419408aaf7ea" kindref="member">Symbol</ref>, double &gt; &amp;</type>
+          <declname>benchmark_weights</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+<para>Calculate portfolio factor exposures. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/factor_exposure.h" line="132" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/factor_exposure.h" bodystart="132" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="db/df7/classpyfolio_1_1risk_1_1FactorModel_1a1be5f385fc69e12ffd0bc18517b8a2ca" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; <ref refid="d1/da5/structpyfolio_1_1risk_1_1FactorRiskAttribution" kindref="compound">FactorRiskAttribution</ref> &gt;</type>
+        <definition>Result&lt; FactorRiskAttribution &gt; pyfolio::risk::FactorModel::calculate_risk_attribution</definition>
+        <argsstring>(const std::map&lt; Symbol, double &gt; &amp;portfolio_weights, const std::map&lt; Symbol, double &gt; &amp;specific_risks={}) const</argsstring>
+        <name>calculate_risk_attribution</name>
+        <qualifiedname>pyfolio::risk::FactorModel::calculate_risk_attribution</qualifiedname>
+        <param>
+          <type>const std::map&lt; <ref refid="d7/df8/namespacepyfolio_1a66e3e2ebe494a9dccbeb419408aaf7ea" kindref="member">Symbol</ref>, double &gt; &amp;</type>
+          <declname>portfolio_weights</declname>
+        </param>
+        <param>
+          <type>const std::map&lt; <ref refid="d7/df8/namespacepyfolio_1a66e3e2ebe494a9dccbeb419408aaf7ea" kindref="member">Symbol</ref>, double &gt; &amp;</type>
+          <declname>specific_risks</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+<para>Calculate factor risk attribution. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/factor_exposure.h" line="206" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/factor_exposure.h" bodystart="206" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="db/df7/classpyfolio_1_1risk_1_1FactorModel_1a2037fe5fd8045ce1118e252a1e0e890d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; std::map&lt; <ref refid="d7/df8/namespacepyfolio_1a66e3e2ebe494a9dccbeb419408aaf7ea" kindref="member">Symbol</ref>, double &gt; &gt;</type>
+        <definition>Result&lt; std::map&lt; Symbol, double &gt; &gt; pyfolio::risk::FactorModel::estimate_expected_returns</definition>
+        <argsstring>(const std::map&lt; std::string, double &gt; &amp;factor_expected_returns) const</argsstring>
+        <name>estimate_expected_returns</name>
+        <qualifiedname>pyfolio::risk::FactorModel::estimate_expected_returns</qualifiedname>
+        <param>
+          <type>const std::map&lt; std::string, double &gt; &amp;</type>
+          <declname>factor_expected_returns</declname>
+        </param>
+        <briefdescription>
+<para>Estimate expected returns using factor model. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/factor_exposure.h" line="254" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/factor_exposure.h" bodystart="254" bodyend="277"/>
+        <references refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9ad8f78ca9a692a9411afbc7584b69d043" compoundref="d3/d11/error__handling_8h" startline="17">pyfolio::InvalidInput</references>
+      </memberdef>
+      <memberdef kind="function" id="db/df7/classpyfolio_1_1risk_1_1FactorModel_1aaf71a64adbbb2d03160482b25929baae" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; pyfolio::risk::FactorModel::get_available_factors</definition>
+        <argsstring>() const</argsstring>
+        <name>get_available_factors</name>
+        <qualifiedname>pyfolio::risk::FactorModel::get_available_factors</qualifiedname>
+        <briefdescription>
+<para>Get list of available factors. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/factor_exposure.h" line="282" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/factor_exposure.h" bodystart="282" bodyend="292"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="db/df7/classpyfolio_1_1risk_1_1FactorModel_1a0df8912e583fe6141d76b4a417751f39" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double pyfolio::risk::FactorModel::get_factor_covariance</definition>
+        <argsstring>(const std::string &amp;factor1, const std::string &amp;factor2) const</argsstring>
+        <name>get_factor_covariance</name>
+        <qualifiedname>pyfolio::risk::FactorModel::get_factor_covariance</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>factor1</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>factor2</declname>
+        </param>
+        <briefdescription>
+<para>Get covariance between two factors. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/factor_exposure.h" line="298" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/factor_exposure.h" bodystart="298" bodyend="309"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Multi-factor model for risk and return analysis. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/factor_exposure.h" line="101" column="1" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/factor_exposure.h" bodystart="101" bodyend="310"/>
+    <listofallmembers>
+      <member refid="db/df7/classpyfolio_1_1risk_1_1FactorModel_1a09ee4dd1527b8f346c534067c73b1bf8" prot="public" virt="non-virtual"><scope>pyfolio::risk::FactorModel</scope><name>calculate_portfolio_exposures</name></member>
+      <member refid="db/df7/classpyfolio_1_1risk_1_1FactorModel_1a1be5f385fc69e12ffd0bc18517b8a2ca" prot="public" virt="non-virtual"><scope>pyfolio::risk::FactorModel</scope><name>calculate_risk_attribution</name></member>
+      <member refid="db/df7/classpyfolio_1_1risk_1_1FactorModel_1a2037fe5fd8045ce1118e252a1e0e890d" prot="public" virt="non-virtual"><scope>pyfolio::risk::FactorModel</scope><name>estimate_expected_returns</name></member>
+      <member refid="db/df7/classpyfolio_1_1risk_1_1FactorModel_1afe03030c789c2f6f8dffa759be32f283" prot="private" virt="non-virtual"><scope>pyfolio::risk::FactorModel</scope><name>factor_covariance_</name></member>
+      <member refid="db/df7/classpyfolio_1_1risk_1_1FactorModel_1aff005fd5594c5741a73248a80c36bbaf" prot="private" virt="non-virtual"><scope>pyfolio::risk::FactorModel</scope><name>factor_returns_</name></member>
+      <member refid="db/df7/classpyfolio_1_1risk_1_1FactorModel_1aaf71a64adbbb2d03160482b25929baae" prot="public" virt="non-virtual"><scope>pyfolio::risk::FactorModel</scope><name>get_available_factors</name></member>
+      <member refid="db/df7/classpyfolio_1_1risk_1_1FactorModel_1a0df8912e583fe6141d76b4a417751f39" prot="private" virt="non-virtual"><scope>pyfolio::risk::FactorModel</scope><name>get_factor_covariance</name></member>
+      <member refid="db/df7/classpyfolio_1_1risk_1_1FactorModel_1a8ae285cce917e7501d3ac559e0b9582c" prot="private" virt="non-virtual"><scope>pyfolio::risk::FactorModel</scope><name>security_exposures_</name></member>
+      <member refid="db/df7/classpyfolio_1_1risk_1_1FactorModel_1a63418904140fddd6168227df6de38b6c" prot="public" virt="non-virtual"><scope>pyfolio::risk::FactorModel</scope><name>set_factor_covariance</name></member>
+      <member refid="db/df7/classpyfolio_1_1risk_1_1FactorModel_1ab47ec1573cc2eb568c198cbe58f758c3" prot="public" virt="non-virtual"><scope>pyfolio::risk::FactorModel</scope><name>set_factor_returns</name></member>
+      <member refid="db/df7/classpyfolio_1_1risk_1_1FactorModel_1a45fa830d20150934e8834d672d02498a" prot="public" virt="non-virtual"><scope>pyfolio::risk::FactorModel</scope><name>set_security_exposures</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

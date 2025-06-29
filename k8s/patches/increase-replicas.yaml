@@ -1,0 +1,16 @@
+# Strategic merge patch for production replica count
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pyfolio-app
+spec:
+  replicas: 5
+  template:
+    spec:
+      containers:
+        - name: pyfolio-app
+          env:
+            - name: API_WORKERS
+              value: "16"
+            - name: PRODUCTION_SCALE
+              value: "high"

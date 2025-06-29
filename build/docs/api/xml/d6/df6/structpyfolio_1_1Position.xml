@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="d6/df6/structpyfolio_1_1Position" kind="struct" language="C++" prot="public">
+    <compoundname>pyfolio::Position</compoundname>
+    <includes refid="d9/d49/types_8h" local="no">types.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d6/df6/structpyfolio_1_1Position_1a65c89d1989617ff5a48b7dccc42ade60" prot="public" static="no" mutable="no">
+        <type><ref refid="d7/df8/namespacepyfolio_1a66e3e2ebe494a9dccbeb419408aaf7ea" kindref="member">Symbol</ref></type>
+        <definition>Symbol pyfolio::Position::symbol</definition>
+        <argsstring></argsstring>
+        <name>symbol</name>
+        <qualifiedname>pyfolio::Position::symbol</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/types.h" line="167" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/types.h" bodystart="167" bodyend="-1"/>
+        <referencedby refid="db/d43/namespacepyfolio_1_1io_1_1sample__data_1adc2dc52db801b58b29311cb7c2c6a7f5" compoundref="d2/db9/data__loader_8h" startline="448" endline="466">pyfolio::io::sample_data::generate_sample_positions</referencedby>
+        <referencedby refid="d6/df6/structpyfolio_1_1Position_1ae5dff5091c5f0fb77b4cfd0cc6eabbda" compoundref="d9/d49/types_8h" startline="175" endline="176">Position</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d6/df6/structpyfolio_1_1Position_1ad9d09358cc73817f7bd64e74b642285d" prot="public" static="no" mutable="no">
+        <type><ref refid="d7/df8/namespacepyfolio_1ae1b4389f0d1a53d3ebd7d2aec59e0360" kindref="member">Shares</ref></type>
+        <definition>Shares pyfolio::Position::shares</definition>
+        <argsstring></argsstring>
+        <name>shares</name>
+        <qualifiedname>pyfolio::Position::shares</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/types.h" line="168" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/types.h" bodystart="168" bodyend="-1"/>
+        <referencedby refid="db/d43/namespacepyfolio_1_1io_1_1sample__data_1adc2dc52db801b58b29311cb7c2c6a7f5" compoundref="d2/db9/data__loader_8h" startline="448" endline="466">pyfolio::io::sample_data::generate_sample_positions</referencedby>
+        <referencedby refid="d6/df6/structpyfolio_1_1Position_1a52e1fd704ef203bedab25b64f87aa3f8" compoundref="d9/d49/types_8h" startline="174" endline="174">Position</referencedby>
+        <referencedby refid="d6/df6/structpyfolio_1_1Position_1ae5dff5091c5f0fb77b4cfd0cc6eabbda" compoundref="d9/d49/types_8h" startline="175" endline="176">Position</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d6/df6/structpyfolio_1_1Position_1a00af48d137fbc0bc89ef114232cf829a" prot="public" static="no" mutable="no">
+        <type><ref refid="d7/df8/namespacepyfolio_1a7801b507a1c22f3c1a83bdef81846fc6" kindref="member">Price</ref></type>
+        <definition>Price pyfolio::Position::price</definition>
+        <argsstring></argsstring>
+        <name>price</name>
+        <qualifiedname>pyfolio::Position::price</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/types.h" line="169" column="11" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/types.h" bodystart="169" bodyend="-1"/>
+        <referencedby refid="db/d43/namespacepyfolio_1_1io_1_1sample__data_1adc2dc52db801b58b29311cb7c2c6a7f5" compoundref="d2/db9/data__loader_8h" startline="448" endline="466">pyfolio::io::sample_data::generate_sample_positions</referencedby>
+        <referencedby refid="d6/df6/structpyfolio_1_1Position_1a52e1fd704ef203bedab25b64f87aa3f8" compoundref="d9/d49/types_8h" startline="174" endline="174">Position</referencedby>
+        <referencedby refid="d6/df6/structpyfolio_1_1Position_1ae5dff5091c5f0fb77b4cfd0cc6eabbda" compoundref="d9/d49/types_8h" startline="175" endline="176">Position</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d6/df6/structpyfolio_1_1Position_1ab77b33188ab69c1548adbdaa6496b71e" prot="public" static="no" mutable="no">
+        <type><ref refid="d7/df8/namespacepyfolio_1af989fd50261f45e6abc49511c6dfbdf0" kindref="member">Weight</ref></type>
+        <definition>Weight pyfolio::Position::weight</definition>
+        <argsstring></argsstring>
+        <name>weight</name>
+        <qualifiedname>pyfolio::Position::weight</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/types.h" line="170" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/types.h" bodystart="170" bodyend="-1"/>
+        <referencedby refid="db/d43/namespacepyfolio_1_1io_1_1sample__data_1adc2dc52db801b58b29311cb7c2c6a7f5" compoundref="d2/db9/data__loader_8h" startline="448" endline="466">pyfolio::io::sample_data::generate_sample_positions</referencedby>
+        <referencedby refid="d6/df6/structpyfolio_1_1Position_1a52e1fd704ef203bedab25b64f87aa3f8" compoundref="d9/d49/types_8h" startline="174" endline="174">Position</referencedby>
+        <referencedby refid="d6/df6/structpyfolio_1_1Position_1ae5dff5091c5f0fb77b4cfd0cc6eabbda" compoundref="d9/d49/types_8h" startline="175" endline="176">Position</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d6/df6/structpyfolio_1_1Position_1aa67adcc363a83b5dae028dcfb6e0aea3" prot="public" static="no" mutable="no">
+        <type><ref refid="d7/df8/namespacepyfolio_1ad77d362107c51226c09e896bdf822f9d" kindref="member">TimePoint</ref></type>
+        <definition>TimePoint pyfolio::Position::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <qualifiedname>pyfolio::Position::timestamp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/types.h" line="171" column="15" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/types.h" bodystart="171" bodyend="-1"/>
+        <referencedby refid="db/d43/namespacepyfolio_1_1io_1_1sample__data_1adc2dc52db801b58b29311cb7c2c6a7f5" compoundref="d2/db9/data__loader_8h" startline="448" endline="466">pyfolio::io::sample_data::generate_sample_positions</referencedby>
+        <referencedby refid="d6/df6/structpyfolio_1_1Position_1a52e1fd704ef203bedab25b64f87aa3f8" compoundref="d9/d49/types_8h" startline="174" endline="174">Position</referencedby>
+        <referencedby refid="d6/df6/structpyfolio_1_1Position_1ae5dff5091c5f0fb77b4cfd0cc6eabbda" compoundref="d9/d49/types_8h" startline="175" endline="176">Position</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d6/df6/structpyfolio_1_1Position_1a52e1fd704ef203bedab25b64f87aa3f8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>pyfolio::Position::Position</definition>
+        <argsstring>()</argsstring>
+        <name>Position</name>
+        <qualifiedname>pyfolio::Position::Position</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/types.h" line="174" column="5" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/types.h" bodystart="174" bodyend="174"/>
+        <references refid="d6/df6/structpyfolio_1_1Position_1a00af48d137fbc0bc89ef114232cf829a" compoundref="d9/d49/types_8h" startline="169">price</references>
+        <references refid="d6/df6/structpyfolio_1_1Position_1ad9d09358cc73817f7bd64e74b642285d" compoundref="d9/d49/types_8h" startline="168">shares</references>
+        <references refid="d6/df6/structpyfolio_1_1Position_1aa67adcc363a83b5dae028dcfb6e0aea3" compoundref="d9/d49/types_8h" startline="171">timestamp</references>
+        <references refid="d6/df6/structpyfolio_1_1Position_1ab77b33188ab69c1548adbdaa6496b71e" compoundref="d9/d49/types_8h" startline="170">weight</references>
+      </memberdef>
+      <memberdef kind="function" id="d6/df6/structpyfolio_1_1Position_1ae5dff5091c5f0fb77b4cfd0cc6eabbda" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>pyfolio::Position::Position</definition>
+        <argsstring>(const Symbol &amp;sym, Shares sh, Price pr, Weight wt, const TimePoint &amp;ts)</argsstring>
+        <name>Position</name>
+        <qualifiedname>pyfolio::Position::Position</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/df8/namespacepyfolio_1a66e3e2ebe494a9dccbeb419408aaf7ea" kindref="member">Symbol</ref> &amp;</type>
+          <declname>sym</declname>
+        </param>
+        <param>
+          <type><ref refid="d7/df8/namespacepyfolio_1ae1b4389f0d1a53d3ebd7d2aec59e0360" kindref="member">Shares</ref></type>
+          <declname>sh</declname>
+        </param>
+        <param>
+          <type><ref refid="d7/df8/namespacepyfolio_1a7801b507a1c22f3c1a83bdef81846fc6" kindref="member">Price</ref></type>
+          <declname>pr</declname>
+        </param>
+        <param>
+          <type><ref refid="d7/df8/namespacepyfolio_1af989fd50261f45e6abc49511c6dfbdf0" kindref="member">Weight</ref></type>
+          <declname>wt</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d7/df8/namespacepyfolio_1ad77d362107c51226c09e896bdf822f9d" kindref="member">TimePoint</ref> &amp;</type>
+          <declname>ts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/types.h" line="175" column="5" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/types.h" bodystart="175" bodyend="176"/>
+        <references refid="d6/df6/structpyfolio_1_1Position_1a00af48d137fbc0bc89ef114232cf829a" compoundref="d9/d49/types_8h" startline="169">price</references>
+        <references refid="d6/df6/structpyfolio_1_1Position_1ad9d09358cc73817f7bd64e74b642285d" compoundref="d9/d49/types_8h" startline="168">shares</references>
+        <references refid="d6/df6/structpyfolio_1_1Position_1a65c89d1989617ff5a48b7dccc42ade60" compoundref="d9/d49/types_8h" startline="167">symbol</references>
+        <references refid="d6/df6/structpyfolio_1_1Position_1aa67adcc363a83b5dae028dcfb6e0aea3" compoundref="d9/d49/types_8h" startline="171">timestamp</references>
+        <references refid="d6/df6/structpyfolio_1_1Position_1ab77b33188ab69c1548adbdaa6496b71e" compoundref="d9/d49/types_8h" startline="170">weight</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>pyfolio::Position</label>
+        <link refid="d6/df6/structpyfolio_1_1Position"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>symbol</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="2">
+        <label>std::string</label>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/types.h" line="166" column="1" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/types.h" bodystart="166" bodyend="177"/>
+    <listofallmembers>
+      <member refid="d6/df6/structpyfolio_1_1Position_1a52e1fd704ef203bedab25b64f87aa3f8" prot="public" virt="non-virtual"><scope>pyfolio::Position</scope><name>Position</name></member>
+      <member refid="d6/df6/structpyfolio_1_1Position_1ae5dff5091c5f0fb77b4cfd0cc6eabbda" prot="public" virt="non-virtual"><scope>pyfolio::Position</scope><name>Position</name></member>
+      <member refid="d6/df6/structpyfolio_1_1Position_1a00af48d137fbc0bc89ef114232cf829a" prot="public" virt="non-virtual"><scope>pyfolio::Position</scope><name>price</name></member>
+      <member refid="d6/df6/structpyfolio_1_1Position_1ad9d09358cc73817f7bd64e74b642285d" prot="public" virt="non-virtual"><scope>pyfolio::Position</scope><name>shares</name></member>
+      <member refid="d6/df6/structpyfolio_1_1Position_1a65c89d1989617ff5a48b7dccc42ade60" prot="public" virt="non-virtual"><scope>pyfolio::Position</scope><name>symbol</name></member>
+      <member refid="d6/df6/structpyfolio_1_1Position_1aa67adcc363a83b5dae028dcfb6e0aea3" prot="public" virt="non-virtual"><scope>pyfolio::Position</scope><name>timestamp</name></member>
+      <member refid="d6/df6/structpyfolio_1_1Position_1ab77b33188ab69c1548adbdaa6496b71e" prot="public" virt="non-virtual"><scope>pyfolio::Position</scope><name>weight</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

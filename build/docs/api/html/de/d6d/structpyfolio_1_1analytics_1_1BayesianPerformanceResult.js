@@ -1,0 +1,27 @@
+var structpyfolio_1_1analytics_1_1BayesianPerformanceResult =
+[
+    [ "alpha_percentile", "de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult.html#ab952aeb4c74ee69a6f75e45721ced62b", null ],
+    [ "is_alpha_significant", "de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult.html#abad5a8a5e88da168b94e5ae50a160541", null ],
+    [ "sharpe_percentile", "de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult.html#ac314b93564cfe548ef6b6c9502a8f25b", null ],
+    [ "alpha_credible_lower", "de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult.html#a70967b4a7aa0f41f3dc6f19400075687", null ],
+    [ "alpha_credible_upper", "de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult.html#a81de8754c613fca918c8611176fedc74", null ],
+    [ "alpha_mean", "de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult.html#aa5bf47943be52d3bdb5e83bb042ad134", null ],
+    [ "alpha_samples", "de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult.html#a6d2a1b01e691d748325800171dc04ca4", null ],
+    [ "alpha_std", "de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult.html#a153e642e7990696963902a9b6b3995d8", null ],
+    [ "beta_credible_lower", "de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult.html#a72293ffec4415df7413d4b4ecadec3ab", null ],
+    [ "beta_credible_upper", "de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult.html#af81a24d1f8603751f169c725dcc460ff", null ],
+    [ "beta_mean", "de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult.html#a572a1e7f9d2444a8f5915f8f2ce2bbf0", null ],
+    [ "beta_samples", "de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult.html#a2f3c2875b4014030847e47ec777a4eba", null ],
+    [ "beta_std", "de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult.html#a62db5b835ed4127acf8eb3f5f3cf4928", null ],
+    [ "dic", "de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult.html#ae03c0526fc8ce2b5dc618e337351a689", null ],
+    [ "marginal_likelihood", "de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult.html#a8361921db645de294cdd18002113bf67", null ],
+    [ "prob_alpha_positive", "de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult.html#a63a24620616cba12777b4f8e652178ab", null ],
+    [ "prob_beta_greater_one", "de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult.html#ad5b3df4b29e94efa13b5501d2f9d2fda", null ],
+    [ "prob_outperformance", "de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult.html#a5a64e31e57d4bcb4c7625424886d69f3", null ],
+    [ "sharpe_credible_lower", "de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult.html#ad93699eb34266cc1ae7c1d84315441cd", null ],
+    [ "sharpe_credible_upper", "de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult.html#a2dc40b802ca4dd88f3f1d02b90e589f6", null ],
+    [ "sharpe_mean", "de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult.html#a3302667904a06fb33cc6dcda76deb539", null ],
+    [ "sharpe_samples", "de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult.html#a0ef07e65c4a890e81168d48a337c323e", null ],
+    [ "sharpe_std", "de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult.html#ab572cb490d1212d5355d7881c58f5234", null ],
+    [ "volatility_samples", "de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult.html#ad89afadf6dae3ceb2aa5a7496b4f06b0", null ]
+];

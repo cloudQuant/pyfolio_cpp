@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dc/d21/namespacepyfolio_1_1analytics_1_1statistics" kind="namespace" language="C++">
+    <compoundname>pyfolio::analytics::statistics</compoundname>
+    <innerclass refid="d9/d9e/structpyfolio_1_1analytics_1_1statistics_1_1CorrelationAnalysis" prot="public">pyfolio::analytics::statistics::CorrelationAnalysis</innerclass>
+    <innerclass refid="d5/de0/structpyfolio_1_1analytics_1_1statistics_1_1DistributionAnalysis" prot="public">pyfolio::analytics::statistics::DistributionAnalysis</innerclass>
+    <innerclass refid="d7/d8f/structpyfolio_1_1analytics_1_1statistics_1_1StatisticalSummary" prot="public">pyfolio::analytics::statistics::StatisticalSummary</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="dc/d21/namespacepyfolio_1_1analytics_1_1statistics_1a03d3ac2bfd1691d61e27da8e7d951c22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; <ref refid="d7/d8f/structpyfolio_1_1analytics_1_1statistics_1_1StatisticalSummary" kindref="compound">StatisticalSummary</ref> &gt;</type>
+        <definition>Result&lt; StatisticalSummary &gt; pyfolio::analytics::statistics::calculate_summary</definition>
+        <argsstring>(const TimeSeries&lt; T &gt; &amp;series)</argsstring>
+        <name>calculate_summary</name>
+        <qualifiedname>pyfolio::analytics::statistics::calculate_summary</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; T &gt; &amp;</type>
+          <declname>series</declname>
+        </param>
+        <briefdescription>
+<para>Calculate comprehensive statistical summary. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" line="42" column="8" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" bodystart="42" bodyend="104"/>
+        <references refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9aacbb30bd92a04a43bc1ea560dac5c241" compoundref="d3/d11/error__handling_8h" startline="26">pyfolio::CalculationError</references>
+        <references refid="d7/d8f/structpyfolio_1_1analytics_1_1statistics_1_1StatisticalSummary_1afab7ebad63b2eef66800a4a9cdf6ae54" compoundref="d5/db2/analytics_2statistics_8h" startline="34">pyfolio::analytics::statistics::StatisticalSummary::count</references>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1a7401475da2acefda00385214b27e7c59" compoundref="d8/d51/time__series_8h" startline="103" endline="103">pyfolio::TimeSeries&lt; T &gt;::empty</references>
+        <references refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" compoundref="d3/d11/error__handling_8h" startline="111" endline="116">pyfolio::Result&lt; T &gt;::error</references>
+        <references refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9ad8f78ca9a692a9411afbc7584b69d043" compoundref="d3/d11/error__handling_8h" startline="17">pyfolio::InvalidInput</references>
+        <references refid="d7/d8f/structpyfolio_1_1analytics_1_1statistics_1_1StatisticalSummary_1a6c8ba30e75b0bad9c7af2696fe891dd1" compoundref="d5/db2/analytics_2statistics_8h" startline="29">pyfolio::analytics::statistics::StatisticalSummary::kurtosis</references>
+        <references refid="d6/ddc/namespacepyfolio_1_1stats_1ae51a470f87ae34ae1f58305531f9dcf8" compoundref="d3/dbe/math_2statistics_8h" startline="199" endline="230">pyfolio::stats::kurtosis</references>
+        <references refid="d7/d8f/structpyfolio_1_1analytics_1_1statistics_1_1StatisticalSummary_1a1883c524bd3fbeee01b0c3492237234f" compoundref="d5/db2/analytics_2statistics_8h" startline="31">pyfolio::analytics::statistics::StatisticalSummary::max_value</references>
+        <references refid="d7/d8f/structpyfolio_1_1analytics_1_1statistics_1_1StatisticalSummary_1a87379a8c3c1da5f160dda7bb01b65c37" compoundref="d5/db2/analytics_2statistics_8h" startline="24">pyfolio::analytics::statistics::StatisticalSummary::mean</references>
+        <references refid="d6/ddc/namespacepyfolio_1_1stats_1a0ded7b265023215831bffb8b799ba59a" compoundref="d3/dbe/math_2statistics_8h" startline="112" endline="119">pyfolio::stats::mean</references>
+        <references refid="d7/d8f/structpyfolio_1_1analytics_1_1statistics_1_1StatisticalSummary_1a68f8fd7448c4fc00a33f2cf6ad9cae85" compoundref="d5/db2/analytics_2statistics_8h" startline="25">pyfolio::analytics::statistics::StatisticalSummary::median</references>
+        <references refid="d7/d8f/structpyfolio_1_1analytics_1_1statistics_1_1StatisticalSummary_1aac90dfbe9ab39c7dab6be80d7bdcf793" compoundref="d5/db2/analytics_2statistics_8h" startline="30">pyfolio::analytics::statistics::StatisticalSummary::min_value</references>
+        <references refid="d7/d8f/structpyfolio_1_1analytics_1_1statistics_1_1StatisticalSummary_1a4b937cbd0dbbfa26d44e76c2b7db5854" compoundref="d5/db2/analytics_2statistics_8h" startline="35">pyfolio::analytics::statistics::StatisticalSummary::missing_count</references>
+        <references refid="d7/d8f/structpyfolio_1_1analytics_1_1statistics_1_1StatisticalSummary_1a306d451f016550d4b46c2a223ce6b405" compoundref="d5/db2/analytics_2statistics_8h" startline="32">pyfolio::analytics::statistics::StatisticalSummary::q25</references>
+        <references refid="d7/d8f/structpyfolio_1_1analytics_1_1statistics_1_1StatisticalSummary_1a652bff760f4b828847ff897ac5adb646" compoundref="d5/db2/analytics_2statistics_8h" startline="33">pyfolio::analytics::statistics::StatisticalSummary::q75</references>
+        <references refid="d7/d8f/structpyfolio_1_1analytics_1_1statistics_1_1StatisticalSummary_1a9f423b88da0f32202f9394a9a2b94386" compoundref="d5/db2/analytics_2statistics_8h" startline="28">pyfolio::analytics::statistics::StatisticalSummary::skewness</references>
+        <references refid="d6/ddc/namespacepyfolio_1_1stats_1a5df7d33f99e4ea05ccf659ac88173b4e" compoundref="d3/dbe/math_2statistics_8h" startline="164" endline="193">pyfolio::stats::skewness</references>
+        <references refid="d7/d8f/structpyfolio_1_1analytics_1_1statistics_1_1StatisticalSummary_1ac7d14cbc905a968a84cfad71465b5d20" compoundref="d5/db2/analytics_2statistics_8h" startline="26">pyfolio::analytics::statistics::StatisticalSummary::std_dev</references>
+        <references refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" compoundref="d3/d11/error__handling_8h" startline="74" endline="74">pyfolio::Result&lt; T &gt;::success</references>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1ab0b20c4945cdde977885888f384256c3" compoundref="d8/d51/time__series_8h" startline="125" endline="125">pyfolio::TimeSeries&lt; T &gt;::values</references>
+        <references refid="d7/d8f/structpyfolio_1_1analytics_1_1statistics_1_1StatisticalSummary_1a3c3aefbef971393744f6d2e9061f80ba" compoundref="d5/db2/analytics_2statistics_8h" startline="27">pyfolio::analytics::statistics::StatisticalSummary::variance</references>
+        <references refid="d6/ddc/namespacepyfolio_1_1stats_1afae76bfc655b39b929869957f17e2406" compoundref="d3/dbe/math_2statistics_8h" startline="125" endline="145">pyfolio::stats::variance</references>
+        <referencedby refid="dc/d21/namespacepyfolio_1_1analytics_1_1statistics_1a50482d1bd36f2cb5c64daa034eeabbe3" compoundref="d5/db2/analytics_2statistics_8h" startline="123" endline="169">analyze_distribution</referencedby>
+        <referencedby refid="da/d0a/classpyfolio_1_1Statistics_1a9c6b1c2cee5eb1b6d0dd8298557b5f22" compoundref="d5/db2/analytics_2statistics_8h" startline="277" endline="283">pyfolio::Statistics::calculate_basic_stats</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="dc/d21/namespacepyfolio_1_1analytics_1_1statistics_1a50482d1bd36f2cb5c64daa034eeabbe3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; <ref refid="d5/de0/structpyfolio_1_1analytics_1_1statistics_1_1DistributionAnalysis" kindref="compound">DistributionAnalysis</ref> &gt;</type>
+        <definition>Result&lt; DistributionAnalysis &gt; pyfolio::analytics::statistics::analyze_distribution</definition>
+        <argsstring>(const TimeSeries&lt; T &gt; &amp;series)</argsstring>
+        <name>analyze_distribution</name>
+        <qualifiedname>pyfolio::analytics::statistics::analyze_distribution</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; T &gt; &amp;</type>
+          <declname>series</declname>
+        </param>
+        <briefdescription>
+<para>Analyze distribution properties. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" line="123" column="8" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" bodystart="123" bodyend="169"/>
+        <references refid="dc/d21/namespacepyfolio_1_1analytics_1_1statistics_1a03d3ac2bfd1691d61e27da8e7d951c22" compoundref="d5/db2/analytics_2statistics_8h" startline="42" endline="104">calculate_summary</references>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1a7401475da2acefda00385214b27e7c59" compoundref="d8/d51/time__series_8h" startline="103" endline="103">pyfolio::TimeSeries&lt; T &gt;::empty</references>
+        <references refid="d5/de0/structpyfolio_1_1analytics_1_1statistics_1_1DistributionAnalysis_1abb1c93e66e1cacdecf1a108f1e71cbc3" compoundref="d5/db2/analytics_2statistics_8h" startline="115">pyfolio::analytics::statistics::DistributionAnalysis::histogram_bins</references>
+        <references refid="d5/de0/structpyfolio_1_1analytics_1_1statistics_1_1DistributionAnalysis_1a120a6e19201d54ddd777a1ac6fc22a3f" compoundref="d5/db2/analytics_2statistics_8h" startline="116">pyfolio::analytics::statistics::DistributionAnalysis::histogram_counts</references>
+        <references refid="d5/de0/structpyfolio_1_1analytics_1_1statistics_1_1DistributionAnalysis_1a8eedae00048da538d2dbbb9766577d0a" compoundref="d5/db2/analytics_2statistics_8h" startline="112">pyfolio::analytics::statistics::DistributionAnalysis::is_normal</references>
+        <references refid="d5/de0/structpyfolio_1_1analytics_1_1statistics_1_1DistributionAnalysis_1a63871984489bf56c33cb6ac9119beed3" compoundref="d5/db2/analytics_2statistics_8h" startline="111">pyfolio::analytics::statistics::DistributionAnalysis::jarque_bera_p_value</references>
+        <references refid="d5/de0/structpyfolio_1_1analytics_1_1statistics_1_1DistributionAnalysis_1af6bc7353125dc8d0387eb1e6e3a3a752" compoundref="d5/db2/analytics_2statistics_8h" startline="110">pyfolio::analytics::statistics::DistributionAnalysis::jarque_bera_statistic</references>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1ab0b20c4945cdde977885888f384256c3" compoundref="d8/d51/time__series_8h" startline="125" endline="125">pyfolio::TimeSeries&lt; T &gt;::values</references>
+      </memberdef>
+      <memberdef kind="function" id="dc/d21/namespacepyfolio_1_1analytics_1_1statistics_1a8ebe063865d4f8a44de34903ced7fabc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T1</type>
+          </param>
+          <param>
+            <type>typename T2</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; <ref refid="d9/d9e/structpyfolio_1_1analytics_1_1statistics_1_1CorrelationAnalysis" kindref="compound">CorrelationAnalysis</ref> &gt;</type>
+        <definition>Result&lt; CorrelationAnalysis &gt; pyfolio::analytics::statistics::analyze_correlation</definition>
+        <argsstring>(const TimeSeries&lt; T1 &gt; &amp;series1, const TimeSeries&lt; T2 &gt; &amp;series2, size_t rolling_window=252)</argsstring>
+        <name>analyze_correlation</name>
+        <qualifiedname>pyfolio::analytics::statistics::analyze_correlation</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; T1 &gt; &amp;</type>
+          <declname>series1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; T2 &gt; &amp;</type>
+          <declname>series2</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>rolling_window</declname>
+          <defval>252</defval>
+        </param>
+        <briefdescription>
+<para>Calculate correlation analysis between two series. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" line="187" column="8" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" bodystart="187" bodyend="236"/>
+        <references refid="dc/d21/namespacepyfolio_1_1analytics_1_1statistics_1a889089f7fd60c14f22940dd7cc955c3c" compoundref="d5/db2/analytics_2statistics_8h" startline="242" endline="263">align_series</references>
+        <references refid="d6/ddc/namespacepyfolio_1_1stats_1ae62df134ebe0d79d73c16894c3dc364d" compoundref="d3/dbe/math_2statistics_8h" startline="236" endline="278">pyfolio::stats::correlation</references>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1a7401475da2acefda00385214b27e7c59" compoundref="d8/d51/time__series_8h" startline="103" endline="103">pyfolio::TimeSeries&lt; T &gt;::empty</references>
+        <references refid="d9/d9e/structpyfolio_1_1analytics_1_1statistics_1_1CorrelationAnalysis_1a50b136d55cd69d3cd162d29a131dc13a" compoundref="d5/db2/analytics_2statistics_8h" startline="177">pyfolio::analytics::statistics::CorrelationAnalysis::kendall_tau</references>
+        <references refid="d9/d9e/structpyfolio_1_1analytics_1_1statistics_1_1CorrelationAnalysis_1ad8713c48872972ae637ae4374044d3be" compoundref="d5/db2/analytics_2statistics_8h" startline="175">pyfolio::analytics::statistics::CorrelationAnalysis::pearson_correlation</references>
+        <references refid="d9/d9e/structpyfolio_1_1analytics_1_1statistics_1_1CorrelationAnalysis_1ad90ea68b826aa7580a46b1647dc5c888" compoundref="d5/db2/analytics_2statistics_8h" startline="178">pyfolio::analytics::statistics::CorrelationAnalysis::r_squared</references>
+        <references refid="d9/d9e/structpyfolio_1_1analytics_1_1statistics_1_1CorrelationAnalysis_1a2e663c65e53ee6cdea6428a428ebd491" compoundref="d5/db2/analytics_2statistics_8h" startline="179">pyfolio::analytics::statistics::CorrelationAnalysis::rolling_correlations</references>
+        <references refid="d9/d9e/structpyfolio_1_1analytics_1_1statistics_1_1CorrelationAnalysis_1a472cb0941ef9eba1d3d98938feb69823" compoundref="d5/db2/analytics_2statistics_8h" startline="176">pyfolio::analytics::statistics::CorrelationAnalysis::spearman_correlation</references>
+        <references refid="d9/d9e/structpyfolio_1_1analytics_1_1statistics_1_1CorrelationAnalysis_1a5e26dbc8b020940929edf6b5610ea2ca" compoundref="d5/db2/analytics_2statistics_8h" startline="180">pyfolio::analytics::statistics::CorrelationAnalysis::window_size</references>
+      </memberdef>
+      <memberdef kind="function" id="dc/d21/namespacepyfolio_1_1analytics_1_1statistics_1a889089f7fd60c14f22940dd7cc955c3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T1</type>
+          </param>
+          <param>
+            <type>typename T2</type>
+          </param>
+        </templateparamlist>
+        <type>std::pair&lt; <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; T1 &gt;, <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; T2 &gt; &gt;</type>
+        <definition>std::pair&lt; TimeSeries&lt; T1 &gt;, TimeSeries&lt; T2 &gt; &gt; pyfolio::analytics::statistics::align_series</definition>
+        <argsstring>(const TimeSeries&lt; T1 &gt; &amp;series1, const TimeSeries&lt; T2 &gt; &amp;series2)</argsstring>
+        <name>align_series</name>
+        <qualifiedname>pyfolio::analytics::statistics::align_series</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; T1 &gt; &amp;</type>
+          <declname>series1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; T2 &gt; &amp;</type>
+          <declname>series2</declname>
+        </param>
+        <briefdescription>
+<para>Helper function to align two time series by dates. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" line="242" column="11" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" bodystart="242" bodyend="263"/>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1a165f6a4758d61017bdcfb78f2457ba24" compoundref="d8/d51/time__series_8h" startline="143" endline="146">pyfolio::TimeSeries&lt; T &gt;::push_back</references>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1a0374bbc62bd808749ac476b3af4b0ead" compoundref="d8/d51/time__series_8h" startline="124" endline="124">pyfolio::TimeSeries&lt; T &gt;::timestamps</references>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1ab0b20c4945cdde977885888f384256c3" compoundref="d8/d51/time__series_8h" startline="125" endline="125">pyfolio::TimeSeries&lt; T &gt;::values</references>
+        <referencedby refid="dc/d21/namespacepyfolio_1_1analytics_1_1statistics_1a8ebe063865d4f8a44de34903ced7fabc" compoundref="d5/db2/analytics_2statistics_8h" startline="187" endline="236">analyze_correlation</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" line="18" column="1"/>
+  </compounddef>
+</doxygen>

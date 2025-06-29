@@ -1,0 +1,15 @@
+<map id="pyfolio::analytics::AnalysisReport" name="pyfolio::analytics::AnalysisReport">
+<area shape="rect" id="Node000001" title="Comprehensive performance analysis result." alt="" coords="781,93,900,134"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="428,5,616,61"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="632,58,781,96,779,101,631,63"/>
+<area shape="rect" id="Node000003" href="$d7/ddc/classpyfolio_1_1TimeSeries.html" title=" " alt="" coords="180,13,313,54"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="329,30,427,30,427,36,329,36"/>
+<area shape="rect" id="Node000004" href="$da/d79/structpyfolio_1_1analytics_1_1CachedPerformanceCalculator_1_1CacheStats.html" title="Get cache statistics." alt="" coords="418,85,626,141"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="641,110,780,110,780,116,641,116"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="439,166,605,191"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="620,169,687,161,756,146,796,131,798,137,757,151,688,166,620,175"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="207,166,286,191"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="302,176,439,176,439,181,302,181"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="5,158,131,199"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="146,176,207,176,207,181,146,181"/>
+</map>

@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="da/d6c/namespacepyfolio_1_1visualization" kind="namespace" language="C++">
+    <compoundname>pyfolio::visualization</compoundname>
+    <innerclass refid="d3/d59/structpyfolio_1_1visualization_1_1InteractivePlotConfig" prot="public">pyfolio::visualization::InteractivePlotConfig</innerclass>
+    <innerclass refid="d4/d9e/structpyfolio_1_1visualization_1_1OHLCData" prot="public">pyfolio::visualization::OHLCData</innerclass>
+    <innerclass refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" prot="public">pyfolio::visualization::PlotConfig</innerclass>
+    <innerclass refid="d8/d8b/structpyfolio_1_1visualization_1_1PlotData" prot="public">pyfolio::visualization::PlotData</innerclass>
+    <innerclass refid="d7/df1/classpyfolio_1_1visualization_1_1PlotEngine" prot="public">pyfolio::visualization::PlotEngine</innerclass>
+    <innerclass refid="db/d7c/classpyfolio_1_1visualization_1_1PlotlyEngine" prot="public">pyfolio::visualization::PlotlyEngine</innerclass>
+    <innerclass refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter" prot="public">pyfolio::visualization::PyfolioPlotter</innerclass>
+    <innerclass refid="dd/dd8/structpyfolio_1_1visualization_1_1TearSheetConfig" prot="public">pyfolio::visualization::TearSheetConfig</innerclass>
+    <innernamespace refid="de/d6e/namespacepyfolio_1_1visualization_1_1dashboard">pyfolio::visualization::dashboard</innernamespace>
+    <innernamespace refid="d7/d2f/namespacepyfolio_1_1visualization_1_1interactive">pyfolio::visualization::interactive</innernamespace>
+    <innernamespace refid="df/d7c/namespacepyfolio_1_1visualization_1_1plot__utils">pyfolio::visualization::plot_utils</innernamespace>
+    <innernamespace refid="de/d4b/namespacepyfolio_1_1visualization_1_1plots">pyfolio::visualization::plots</innernamespace>
+    <innernamespace refid="df/da3/namespacepyfolio_1_1visualization_1_1utils">pyfolio::visualization::utils</innernamespace>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="da/d6c/namespacepyfolio_1_1visualization_1ae2fe871df81736d3ee1d95c63df9cb46" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>ChartType</name>
+        <qualifiedname>pyfolio::visualization::ChartType</qualifiedname>
+        <enumvalue id="da/d6c/namespacepyfolio_1_1visualization_1ae2fe871df81736d3ee1d95c63df9cb46a4803e6b9e63dabf04de980788d6a13c4" prot="public">
+          <name>Line</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="da/d6c/namespacepyfolio_1_1visualization_1ae2fe871df81736d3ee1d95c63df9cb46a5f13640eb2d9a18296a0662051d41a38" prot="public">
+          <name>Candlestick</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="da/d6c/namespacepyfolio_1_1visualization_1ae2fe871df81736d3ee1d95c63df9cb46a83c6ec55167875da2148de3e866f839e" prot="public">
+          <name>OHLC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="da/d6c/namespacepyfolio_1_1visualization_1ae2fe871df81736d3ee1d95c63df9cb46a933346b3a6c82465498a043b0aa01653" prot="public">
+          <name>Heatmap</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="da/d6c/namespacepyfolio_1_1visualization_1ae2fe871df81736d3ee1d95c63df9cb46a09870720ca8134284e4e305ac6ce5f19" prot="public">
+          <name>Scatter</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="da/d6c/namespacepyfolio_1_1visualization_1ae2fe871df81736d3ee1d95c63df9cb46addc35f88fa71b6ef142ae61f35364653" prot="public">
+          <name>Bar</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="da/d6c/namespacepyfolio_1_1visualization_1ae2fe871df81736d3ee1d95c63df9cb46ac00e3b8460f0592cacf813fd68988ed4" prot="public">
+          <name>Histogram</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="da/d6c/namespacepyfolio_1_1visualization_1ae2fe871df81736d3ee1d95c63df9cb46a3cfce651e667ab85486dd42a8185f98a" prot="public">
+          <name>Box</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="da/d6c/namespacepyfolio_1_1visualization_1ae2fe871df81736d3ee1d95c63df9cb46a038810d0fea91e013692cedfdf517478" prot="public">
+          <name>Violin</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="da/d6c/namespacepyfolio_1_1visualization_1ae2fe871df81736d3ee1d95c63df9cb46aaa0d528ba11ea1485d466dfe1ea40819" prot="public">
+          <name>Surface</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="da/d6c/namespacepyfolio_1_1visualization_1ae2fe871df81736d3ee1d95c63df9cb46a09c9ea004b0c0822b75bdec322b90ff4" prot="public">
+          <name>Waterfall</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="da/d6c/namespacepyfolio_1_1visualization_1ae2fe871df81736d3ee1d95c63df9cb46a43c6fdab079890642567acb3465c5fe1" prot="public">
+          <name>Treemap</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="da/d6c/namespacepyfolio_1_1visualization_1ae2fe871df81736d3ee1d95c63df9cb46a4ed9af94e984eaee7ecce63850795887" prot="public">
+          <name>Sunburst</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enhanced Plotly chart types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotly_enhanced.h" line="61" column="1" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotly_enhanced.h" bodystart="61" bodyend="75"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="da/d6c/namespacepyfolio_1_1visualization_1ac3243554ff443e9614032312e5fb8308" prot="public" static="no">
+        <type>nlohmann::json</type>
+        <definition>using pyfolio::visualization::json =  nlohmann::json</definition>
+        <argsstring></argsstring>
+        <name>json</name>
+        <qualifiedname>pyfolio::visualization::json</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotly_enhanced.h" line="27" column="1" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotly_enhanced.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h" line="26" column="1"/>
+  </compounddef>
+</doxygen>

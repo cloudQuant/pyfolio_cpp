@@ -1,1 +1,2 @@
-/Library/Developer/CommandLineTools/usr/bin/c++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/pyfolio_cpp.dir/main.cpp.o -o pyfolio_cpp
+/usr/bin/ar qc libpyfolio_cpp.a CMakeFiles/pyfolio_cpp.dir/src/math/simd_math.cpp.o CMakeFiles/pyfolio_cpp.dir/src/visualization/plotly_enhanced.cpp.o CMakeFiles/pyfolio_cpp.dir/src/backtesting/advanced_backtester.cpp.o CMakeFiles/pyfolio_cpp.dir/src/risk/advanced_risk_models.cpp.o CMakeFiles/pyfolio_cpp.dir/src/ml/model_persistence.cpp.o CMakeFiles/pyfolio_cpp.dir/src/ml/serializable_models.cpp.o
+/usr/bin/ranlib libpyfolio_cpp.a

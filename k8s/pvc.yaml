@@ -1,0 +1,145 @@
+# PyFolio C++ Persistent Volume Claims
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: pyfolio-data-pvc
+  namespace: pyfolio
+  labels:
+    app.kubernetes.io/name: pyfolio
+    app.kubernetes.io/component: storage
+    app.kubernetes.io/storage-type: data
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 50Gi
+  storageClassName: fast-ssd
+  volumeMode: Filesystem
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: pyfolio-logs-pvc
+  namespace: pyfolio
+  labels:
+    app.kubernetes.io/name: pyfolio
+    app.kubernetes.io/component: storage
+    app.kubernetes.io/storage-type: logs
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 20Gi
+  storageClassName: standard
+  volumeMode: Filesystem
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: pyfolio-redis-pvc
+  namespace: pyfolio
+  labels:
+    app.kubernetes.io/name: pyfolio
+    app.kubernetes.io/component: storage
+    app.kubernetes.io/storage-type: redis
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 10Gi
+  storageClassName: fast-ssd
+  volumeMode: Filesystem
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: pyfolio-postgres-pvc
+  namespace: pyfolio
+  labels:
+    app.kubernetes.io/name: pyfolio
+    app.kubernetes.io/component: storage
+    app.kubernetes.io/storage-type: postgres
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 100Gi
+  storageClassName: fast-ssd
+  volumeMode: Filesystem
+
+---
+# Shared storage for model artifacts and cache
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: pyfolio-shared-pvc
+  namespace: pyfolio
+  labels:
+    app.kubernetes.io/name: pyfolio
+    app.kubernetes.io/component: storage
+    app.kubernetes.io/storage-type: shared
+spec:
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 30Gi
+  storageClassName: nfs
+  volumeMode: Filesystem
+
+---
+# Storage Class definitions (examples)
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: fast-ssd
+  labels:
+    app.kubernetes.io/name: pyfolio
+    app.kubernetes.io/component: storage
+provisioner: kubernetes.io/aws-ebs
+parameters:
+  type: gp3
+  iops: "3000"
+  throughput: "125"
+  encrypted: "true"
+allowVolumeExpansion: true
+volumeBindingMode: WaitForFirstConsumer
+reclaimPolicy: Retain
+
+---
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: standard
+  labels:
+    app.kubernetes.io/name: pyfolio
+    app.kubernetes.io/component: storage
+provisioner: kubernetes.io/aws-ebs
+parameters:
+  type: gp2
+  encrypted: "true"
+allowVolumeExpansion: true
+volumeBindingMode: WaitForFirstConsumer
+reclaimPolicy: Delete
+
+---
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: nfs
+  labels:
+    app.kubernetes.io/name: pyfolio
+    app.kubernetes.io/component: storage
+provisioner: cluster.local/nfs-client-provisioner
+parameters:
+  archiveOnDelete: "false"
+allowVolumeExpansion: true
+volumeBindingMode: Immediate
+reclaimPolicy: Retain

@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="d4/d9e/structpyfolio_1_1visualization_1_1OHLCData" kind="struct" language="C++" prot="public">
+    <compoundname>pyfolio::visualization::OHLCData</compoundname>
+    <includes refid="d1/dcd/plotly__enhanced_8h" local="no">plotly_enhanced.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d4/d9e/structpyfolio_1_1visualization_1_1OHLCData_1af5d5eaa1692536b54470f0affe66e8cd" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref> &gt;</type>
+        <definition>std::vector&lt;DateTime&gt; pyfolio::visualization::OHLCData::timestamps</definition>
+        <argsstring></argsstring>
+        <name>timestamps</name>
+        <qualifiedname>pyfolio::visualization::OHLCData::timestamps</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotly_enhanced.h" line="81" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotly_enhanced.h" bodystart="81" bodyend="-1"/>
+        <referencedby refid="d7/d5f/plotly__enhanced__example_8cpp_1a0790df5197ab4dccf700d2ef54adf47d" compoundref="d7/d5f/plotly__enhanced__example_8cpp" startline="79" endline="111">generate_ohlc_data</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d9e/structpyfolio_1_1visualization_1_1OHLCData_1afefabff710d7cffeeae1659544b4fb10" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; pyfolio::visualization::OHLCData::open</definition>
+        <argsstring></argsstring>
+        <name>open</name>
+        <qualifiedname>pyfolio::visualization::OHLCData::open</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotly_enhanced.h" line="82" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotly_enhanced.h" bodystart="82" bodyend="-1"/>
+        <referencedby refid="d7/d5f/plotly__enhanced__example_8cpp_1a0790df5197ab4dccf700d2ef54adf47d" compoundref="d7/d5f/plotly__enhanced__example_8cpp" startline="79" endline="111">generate_ohlc_data</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d9e/structpyfolio_1_1visualization_1_1OHLCData_1acd227169fd0c2a9bf765ae25bec96b6b" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; pyfolio::visualization::OHLCData::high</definition>
+        <argsstring></argsstring>
+        <name>high</name>
+        <qualifiedname>pyfolio::visualization::OHLCData::high</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotly_enhanced.h" line="83" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotly_enhanced.h" bodystart="83" bodyend="-1"/>
+        <referencedby refid="d7/d5f/plotly__enhanced__example_8cpp_1a0790df5197ab4dccf700d2ef54adf47d" compoundref="d7/d5f/plotly__enhanced__example_8cpp" startline="79" endline="111">generate_ohlc_data</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d9e/structpyfolio_1_1visualization_1_1OHLCData_1a708ac8fd1d5b4fb1ce9da9679c4b2f49" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; pyfolio::visualization::OHLCData::low</definition>
+        <argsstring></argsstring>
+        <name>low</name>
+        <qualifiedname>pyfolio::visualization::OHLCData::low</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotly_enhanced.h" line="84" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotly_enhanced.h" bodystart="84" bodyend="-1"/>
+        <referencedby refid="d7/d5f/plotly__enhanced__example_8cpp_1a0790df5197ab4dccf700d2ef54adf47d" compoundref="d7/d5f/plotly__enhanced__example_8cpp" startline="79" endline="111">generate_ohlc_data</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d9e/structpyfolio_1_1visualization_1_1OHLCData_1a115b2bdfbbd0648a15a707113b324422" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; pyfolio::visualization::OHLCData::close</definition>
+        <argsstring></argsstring>
+        <name>close</name>
+        <qualifiedname>pyfolio::visualization::OHLCData::close</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotly_enhanced.h" line="85" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotly_enhanced.h" bodystart="85" bodyend="-1"/>
+        <referencedby refid="d7/d5f/plotly__enhanced__example_8cpp_1a0790df5197ab4dccf700d2ef54adf47d" compoundref="d7/d5f/plotly__enhanced__example_8cpp" startline="79" endline="111">generate_ohlc_data</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d9e/structpyfolio_1_1visualization_1_1OHLCData_1a612322c0495b27685c623a04e9b978a5" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; pyfolio::visualization::OHLCData::volume</definition>
+        <argsstring></argsstring>
+        <name>volume</name>
+        <qualifiedname>pyfolio::visualization::OHLCData::volume</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotly_enhanced.h" line="86" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotly_enhanced.h" bodystart="86" bodyend="-1"/>
+        <referencedby refid="d7/d5f/plotly__enhanced__example_8cpp_1a0790df5197ab4dccf700d2ef54adf47d" compoundref="d7/d5f/plotly__enhanced__example_8cpp" startline="79" endline="111">generate_ohlc_data</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d9e/structpyfolio_1_1visualization_1_1OHLCData_1a01ef6dae7a8dd38e55c3bb59b2ce2b32" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string pyfolio::visualization::OHLCData::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>pyfolio::visualization::OHLCData::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotly_enhanced.h" line="87" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotly_enhanced.h" bodystart="87" bodyend="-1"/>
+        <referencedby refid="d7/d5f/plotly__enhanced__example_8cpp_1a0790df5197ab4dccf700d2ef54adf47d" compoundref="d7/d5f/plotly__enhanced__example_8cpp" startline="79" endline="111">generate_ohlc_data</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Data structure for OHLC/Candlestick charts. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>pyfolio::BusinessCalendar</label>
+        <link refid="dc/ddd/classpyfolio_1_1BusinessCalendar"/>
+      </node>
+      <node id="3">
+        <label>pyfolio::DateTime</label>
+        <link refid="d6/d4f/classpyfolio_1_1DateTime"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>default_calendar_</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>pyfolio::visualization::OHLCData</label>
+        <link refid="d4/d9e/structpyfolio_1_1visualization_1_1OHLCData"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>timestamps</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>close</edgelabel>
+          <edgelabel>high</edgelabel>
+          <edgelabel>low</edgelabel>
+          <edgelabel>open</edgelabel>
+          <edgelabel>volume</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>name</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="6">
+        <label>std::string</label>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>std::vector&lt; double &gt;</label>
+      </node>
+      <node id="2">
+        <label>std::vector&lt; pyfolio::DateTime &gt;</label>
+        <childnode refid="3" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotly_enhanced.h" line="80" column="1" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotly_enhanced.h" bodystart="80" bodyend="88"/>
+    <listofallmembers>
+      <member refid="d4/d9e/structpyfolio_1_1visualization_1_1OHLCData_1a115b2bdfbbd0648a15a707113b324422" prot="public" virt="non-virtual"><scope>pyfolio::visualization::OHLCData</scope><name>close</name></member>
+      <member refid="d4/d9e/structpyfolio_1_1visualization_1_1OHLCData_1acd227169fd0c2a9bf765ae25bec96b6b" prot="public" virt="non-virtual"><scope>pyfolio::visualization::OHLCData</scope><name>high</name></member>
+      <member refid="d4/d9e/structpyfolio_1_1visualization_1_1OHLCData_1a708ac8fd1d5b4fb1ce9da9679c4b2f49" prot="public" virt="non-virtual"><scope>pyfolio::visualization::OHLCData</scope><name>low</name></member>
+      <member refid="d4/d9e/structpyfolio_1_1visualization_1_1OHLCData_1a01ef6dae7a8dd38e55c3bb59b2ce2b32" prot="public" virt="non-virtual"><scope>pyfolio::visualization::OHLCData</scope><name>name</name></member>
+      <member refid="d4/d9e/structpyfolio_1_1visualization_1_1OHLCData_1afefabff710d7cffeeae1659544b4fb10" prot="public" virt="non-virtual"><scope>pyfolio::visualization::OHLCData</scope><name>open</name></member>
+      <member refid="d4/d9e/structpyfolio_1_1visualization_1_1OHLCData_1af5d5eaa1692536b54470f0affe66e8cd" prot="public" virt="non-virtual"><scope>pyfolio::visualization::OHLCData</scope><name>timestamps</name></member>
+      <member refid="d4/d9e/structpyfolio_1_1visualization_1_1OHLCData_1a612322c0495b27685c623a04e9b978a5" prot="public" virt="non-virtual"><scope>pyfolio::visualization::OHLCData</scope><name>volume</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

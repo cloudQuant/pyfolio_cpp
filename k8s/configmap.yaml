@@ -1,0 +1,211 @@
+# PyFolio C++ Configuration Map
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: pyfolio-config
+  namespace: pyfolio
+  labels:
+    app.kubernetes.io/name: pyfolio
+    app.kubernetes.io/component: config
+data:
+  pyfolio.json: |
+    {
+      "debug": false,
+      "log_level": "INFO",
+      "max_threads": 8,
+      "cache_size": "2GB",
+      "api": {
+        "host": "0.0.0.0",
+        "port": 8000,
+        "workers": 8,
+        "timeout": 60
+      },
+      "database": {
+        "type": "postgresql",
+        "host": "pyfolio-postgres",
+        "port": 5432,
+        "database": "pyfolio",
+        "username": "pyfolio"
+      },
+      "redis": {
+        "host": "pyfolio-redis",
+        "port": 6379,
+        "db": 0
+      },
+      "features": {
+        "enable_gpu": false,
+        "enable_mpi": true,
+        "enable_streaming": true,
+        "enable_caching": true,
+        "enable_distributed": true
+      },
+      "security": {
+        "api_key_required": true,
+        "rate_limit": 10000,
+        "cors_origins": ["https://pyfolio.example.com"]
+      },
+      "performance": {
+        "optimize_for_memory": false,
+        "optimize_for_cpu": true,
+        "simd_acceleration": true,
+        "parallel_processing": true
+      },
+      "monitoring": {
+        "enable_metrics": true,
+        "metrics_port": 9090,
+        "health_check_interval": 30,
+        "log_performance": true
+      }
+    }
+  
+  nginx.conf: |
+    user nginx;
+    worker_processes auto;
+    error_log /var/log/nginx/error.log warn;
+    pid /var/run/nginx.pid;
+    
+    events {
+        worker_connections 1024;
+        use epoll;
+        multi_accept on;
+    }
+    
+    http {
+        include /etc/nginx/mime.types;
+        default_type application/octet-stream;
+        
+        log_format main '$remote_addr - $remote_user [$time_local] "$request" '
+                        '$status $body_bytes_sent "$http_referer" '
+                        '"$http_user_agent" "$http_x_forwarded_for"';
+        
+        access_log /var/log/nginx/access.log main;
+        
+        sendfile on;
+        tcp_nopush on;
+        tcp_nodelay on;
+        keepalive_timeout 65;
+        types_hash_max_size 2048;
+        
+        gzip on;
+        gzip_vary on;
+        gzip_proxied any;
+        gzip_comp_level 6;
+        gzip_types
+            text/plain
+            text/css
+            text/xml
+            text/javascript
+            application/json
+            application/javascript
+            application/xml+rss
+            application/atom+xml
+            image/svg+xml;
+        
+        upstream pyfolio_backend {
+            least_conn;
+            server pyfolio-app:8000 max_fails=3 fail_timeout=30s;
+        }
+        
+        server {
+            listen 80;
+            server_name pyfolio.example.com;
+            
+            # Health check endpoint
+            location /health {
+                proxy_pass http://pyfolio_backend/health;
+                proxy_set_header Host $host;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_connect_timeout 5s;
+                proxy_send_timeout 10s;
+                proxy_read_timeout 10s;
+            }
+            
+            # API endpoints
+            location /api/ {
+                proxy_pass http://pyfolio_backend/;
+                proxy_set_header Host $host;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_set_header X-Forwarded-Proto $scheme;
+                
+                # Rate limiting
+                limit_req zone=api burst=20 nodelay;
+                
+                # Timeouts
+                proxy_connect_timeout 30s;
+                proxy_send_timeout 60s;
+                proxy_read_timeout 60s;
+                
+                # Buffer settings
+                proxy_buffering on;
+                proxy_buffer_size 128k;
+                proxy_buffers 4 256k;
+                proxy_busy_buffers_size 256k;
+            }
+            
+            # Metrics endpoint (restricted)
+            location /metrics {
+                proxy_pass http://pyfolio_backend:9090/metrics;
+                allow 10.0.0.0/8;
+                allow 172.16.0.0/12;
+                allow 192.168.0.0/16;
+                deny all;
+            }
+            
+            # Static files
+            location /static/ {
+                alias /usr/share/nginx/html/static/;
+                expires 1y;
+                add_header Cache-Control "public, immutable";
+            }
+        }
+        
+        # Rate limiting
+        limit_req_zone $binary_remote_addr zone=api:10m rate=100r/m;
+    }
+  
+  prometheus.yml: |
+    global:
+      scrape_interval: 15s
+      evaluation_interval: 15s
+    
+    rule_files:
+      - "rules/*.yml"
+    
+    scrape_configs:
+      - job_name: 'pyfolio-app'
+        static_configs:
+          - targets: ['pyfolio-app:9090']
+        scrape_interval: 10s
+        metrics_path: /metrics
+        
+      - job_name: 'redis'
+        static_configs:
+          - targets: ['pyfolio-redis:6379']
+        scrape_interval: 30s
+        
+      - job_name: 'postgres'
+        static_configs:
+          - targets: ['pyfolio-postgres:5432']
+        scrape_interval: 30s
+        
+      - job_name: 'kubernetes-pods'
+        kubernetes_sd_configs:
+          - role: pod
+            namespaces:
+              names:
+                - pyfolio
+        relabel_configs:
+          - source_labels: [__meta_kubernetes_pod_annotation_prometheus_io_scrape]
+            action: keep
+            regex: true
+          - source_labels: [__meta_kubernetes_pod_annotation_prometheus_io_path]
+            action: replace
+            target_label: __metrics_path__
+            regex: (.+)
+          - source_labels: [__address__, __meta_kubernetes_pod_annotation_prometheus_io_port]
+            action: replace
+            regex: ([^:]+)(?::\d+)?;(\d+)
+            replacement: $1:$2
+            target_label: __address__

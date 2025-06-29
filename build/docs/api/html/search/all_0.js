@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['1_20智能缓存系统_0',['1. 智能缓存系统',['../d1/dcd/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2IMPROVEMENT__TODO__LIST.html#autotoc_md133',1,'']]],
+  ['1_20测试覆盖率提升_1',['5.1 测试覆盖率提升',['../d1/dcd/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2IMPROVEMENT__TODO__LIST.html#autotoc_md106',1,'']]],
+  ['1_20算法复杂度优化_2',['2.1 算法复杂度优化',['../d1/dcd/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2IMPROVEMENT__TODO__LIST.html#autotoc_md83',1,'']]],
+  ['1_20紧急修复_20critical_20立即处理_20strong_3',['🔴 &lt;strong&gt;优先级 1 - 紧急修复 (Critical - 立即处理)&lt;/strong&gt;',['../d1/dcd/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2IMPROVEMENT__TODO__LIST.html#autotoc_md71',1,'']]],
+  ['1_20编译时优化_4',['3.1 编译时优化',['../d1/dcd/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2IMPROVEMENT__TODO__LIST.html#autotoc_md90',1,'']]],
+  ['1_20缺失的_20python_20功能_5',['4.1 缺失的 Python 功能',['../d1/dcd/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2IMPROVEMENT__TODO__LIST.html#autotoc_md98',1,'']]],
+  ['1_201_20api_20兼容性修复_6',['1.1 API 兼容性修复',['../d1/dcd/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2IMPROVEMENT__TODO__LIST.html#autotoc_md72',1,'']]],
+  ['1_202_20周_20_3a_20基础修复_7',['第一阶段 (第 1-2 周): 基础修复',['../d1/dcd/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2IMPROVEMENT__TODO__LIST.html#autotoc_md118',1,'']]],
+  ['1_202_20缺失实现补全_8',['1.2 缺失实现补全',['../d1/dcd/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2IMPROVEMENT__TODO__LIST.html#autotoc_md75',1,'']]],
+  ['1_203_20错误处理一致性_9',['1.3 错误处理一致性',['../d1/dcd/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2IMPROVEMENT__TODO__LIST.html#autotoc_md78',1,'']]],
+  ['1_20api_20兼容性修复_10',['1.1 API 兼容性修复',['../d1/dcd/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2IMPROVEMENT__TODO__LIST.html#autotoc_md72',1,'']]],
+  ['1_20cmake_20integration_20strong_11',['&lt;strong&gt;1. CMake Integration&lt;/strong&gt;',['../d9/df0/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2STATIC__ANALYSIS__REPORT.html#autotoc_md185',1,'']]],
+  ['1_20comprehensive_20analysis_12',['1. Comprehensive Analysis',['../dc/d56/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2GETTING__STARTED.html#autotoc_md58',1,'']]],
+  ['1_20doxygen_20configuration_20strong_13',['&lt;strong&gt;1. Doxygen Configuration&lt;/strong&gt;',['../d6/de2/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2DOCUMENTATION__REPORT.html#autotoc_md31',1,'']]],
+  ['1_20main_20documentation_20page_20strong_20✅_14',['&lt;strong&gt;1. Main Documentation Page&lt;/strong&gt; ✅',['../d6/de2/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2DOCUMENTATION__REPORT.html#autotoc_md35',1,'']]],
+  ['1_20memory_20management_15',['1. Memory Management',['../dc/d56/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2GETTING__STARTED.html#autotoc_md54',1,'']]],
+  ['1_20result_20t_20error_20handling_16',['1. Result&lt;T&gt; Error Handling',['../dc/d56/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2GETTING__STARTED.html#autotoc_md49',1,'']]],
+  ['1_20uninitialized_20member_20variables_20strong_17',['&lt;strong&gt;1. Uninitialized Member Variables&lt;/strong&gt;',['../d9/df0/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2STATIC__ANALYSIS__REPORT.html#autotoc_md190',1,'']]],
+  ['100_20complete_20strong_18',['&lt;strong&gt;Documentation Infrastructure: 100% Complete&lt;/strong&gt;',['../d6/de2/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2DOCUMENTATION__REPORT.html#autotoc_md29',1,'']]],
+  ['12_20周_20_3a_20质量提升_19',['第四阶段 (第 9-12 周): 质量提升',['../d1/dcd/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2IMPROVEMENT__TODO__LIST.html#autotoc_md121',1,'']]],
+  ['19_20status_3a_20strong_20completed_20strong_20',['✅ Task 19 Status: &lt;strong&gt;COMPLETED&lt;/strong&gt;',['../d9/df0/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2STATIC__ANALYSIS__REPORT.html#autotoc_md220',1,'']]],
+  ['198_20total_20strong_21',['&lt;strong&gt;Error Categories (198 total)&lt;/strong&gt;',['../d9/df0/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2STATIC__ANALYSIS__REPORT.html#autotoc_md198',1,'']]],
+  ['19_3a_20strong_22',['&lt;strong&gt;Achieved in Task 19:&lt;/strong&gt;',['../d9/df0/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2STATIC__ANALYSIS__REPORT.html#autotoc_md214',1,'']]],
+  ['1_3a_20critical_20fixes_20high_20priority_20strong_23',['&lt;strong&gt;Phase 1: Critical Fixes (High Priority)&lt;/strong&gt;',['../d9/df0/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2STATIC__ANALYSIS__REPORT.html#autotoc_md203',1,'']]],
+  ['1_3a_20critical_20issues_20strong_24',['&lt;strong&gt;Priority 1: Critical Issues&lt;/strong&gt;',['../d9/df0/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2STATIC__ANALYSIS__REPORT.html#autotoc_md189',1,'']]]
+];

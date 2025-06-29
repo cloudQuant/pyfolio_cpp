@@ -1,0 +1,307 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="d2/d7a/classpyfolio_1_1transactions_1_1TradingCostAnalyzer" kind="class" language="C++" prot="public">
+    <compoundname>pyfolio::transactions::TradingCostAnalyzer</compoundname>
+    <includes refid="dd/d45/trading__costs_8h" local="no">trading_costs.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d2/d7a/classpyfolio_1_1transactions_1_1TradingCostAnalyzer_1afe3b6dea748615e2b657006d3bea4e34" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="d7/d7e/classpyfolio_1_1transactions_1_1MarketImpactModel" kindref="compound">MarketImpactModel</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;MarketImpactModel&gt; pyfolio::transactions::TradingCostAnalyzer::impact_model_</definition>
+        <argsstring></argsstring>
+        <name>impact_model_</name>
+        <qualifiedname>pyfolio::transactions::TradingCostAnalyzer::impact_model_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/trading_costs.h" line="99" column="21" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/trading_costs.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d7a/classpyfolio_1_1transactions_1_1TradingCostAnalyzer_1afa122b3bb5c835daf48f3d46b0eac789" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::transactions::TradingCostAnalyzer::commission_rate_</definition>
+        <argsstring></argsstring>
+        <name>commission_rate_</name>
+        <qualifiedname>pyfolio::transactions::TradingCostAnalyzer::commission_rate_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/trading_costs.h" line="100" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/trading_costs.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d7a/classpyfolio_1_1transactions_1_1TradingCostAnalyzer_1a373dc9e5e03dd79e83432c2aceb2187a" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::transactions::TradingCostAnalyzer::default_spread_</definition>
+        <argsstring></argsstring>
+        <name>default_spread_</name>
+        <qualifiedname>pyfolio::transactions::TradingCostAnalyzer::default_spread_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/trading_costs.h" line="101" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/trading_costs.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d2/d7a/classpyfolio_1_1transactions_1_1TradingCostAnalyzer_1a5276bf07253a115f25660817a383ba1a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>pyfolio::transactions::TradingCostAnalyzer::TradingCostAnalyzer</definition>
+        <argsstring>(std::unique_ptr&lt; MarketImpactModel &gt; impact_model=nullptr, double commission_rate=0.001, double default_spread=0.0002)</argsstring>
+        <name>TradingCostAnalyzer</name>
+        <qualifiedname>pyfolio::transactions::TradingCostAnalyzer::TradingCostAnalyzer</qualifiedname>
+        <param>
+          <type>std::unique_ptr&lt; <ref refid="d7/d7e/classpyfolio_1_1transactions_1_1MarketImpactModel" kindref="compound">MarketImpactModel</ref> &gt;</type>
+          <declname>impact_model</declname>
+          <defval>nullptr</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>commission_rate</declname>
+          <defval>0.001</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>default_spread</declname>
+          <defval>0.0002</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/trading_costs.h" line="104" column="5" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/trading_costs.h" bodystart="104" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d7a/classpyfolio_1_1transactions_1_1TradingCostAnalyzer_1a454a305e75cc2d0555e8e27a1ab216d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; <ref refid="da/deb/classpyfolio_1_1DataFrame" kindref="compound">DataFrame</ref> &gt;</type>
+        <definition>Result&lt; DataFrame &gt; pyfolio::transactions::TradingCostAnalyzer::analyze_costs</definition>
+        <argsstring>(const TransactionSeries &amp;transactions, const std::map&lt; Symbol, MarketData &gt; &amp;market_data)</argsstring>
+        <name>analyze_costs</name>
+        <qualifiedname>pyfolio::transactions::TradingCostAnalyzer::analyze_costs</qualifiedname>
+        <param>
+          <type>const <ref refid="d6/d6e/classpyfolio_1_1transactions_1_1TransactionSeries" kindref="compound">TransactionSeries</ref> &amp;</type>
+          <declname>transactions</declname>
+        </param>
+        <param>
+          <type>const std::map&lt; <ref refid="d7/df8/namespacepyfolio_1a66e3e2ebe494a9dccbeb419408aaf7ea" kindref="member">Symbol</ref>, <ref refid="de/d03/structpyfolio_1_1MarketData" kindref="compound">MarketData</ref> &gt; &amp;</type>
+          <declname>market_data</declname>
+        </param>
+        <briefdescription>
+<para>Analyze trading costs for a transaction series. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/trading_costs.h" line="113" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/trading_costs.h" bodystart="113" bodyend="155"/>
+        <references refid="da/deb/classpyfolio_1_1DataFrame_1ae16ceddcf917845c49128783794c109e" compoundref="d2/d99/dataframe_8h" startline="88" endline="101">pyfolio::DataFrame::add_column</references>
+        <references refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" compoundref="d3/d11/error__handling_8h" startline="111" endline="116">pyfolio::Result&lt; T &gt;::error</references>
+        <references refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9a9e32e294e8358345f2b9b52b7f8b41fa" compoundref="d3/d11/error__handling_8h" startline="18">pyfolio::InsufficientData</references>
+        <references refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" compoundref="d3/d11/error__handling_8h" startline="74" endline="74">pyfolio::Result&lt; T &gt;::success</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/d7a/classpyfolio_1_1transactions_1_1TradingCostAnalyzer_1a01685999c930baff8b7925a2a42b752a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; double &gt;</type>
+        <definition>Result&lt; double &gt; pyfolio::transactions::TradingCostAnalyzer::calculate_implementation_shortfall</definition>
+        <argsstring>(const TransactionSeries &amp;transactions, const std::map&lt; Symbol, PriceSeries &gt; &amp;benchmark_prices)</argsstring>
+        <name>calculate_implementation_shortfall</name>
+        <qualifiedname>pyfolio::transactions::TradingCostAnalyzer::calculate_implementation_shortfall</qualifiedname>
+        <param>
+          <type>const <ref refid="d6/d6e/classpyfolio_1_1transactions_1_1TransactionSeries" kindref="compound">TransactionSeries</ref> &amp;</type>
+          <declname>transactions</declname>
+        </param>
+        <param>
+          <type>const std::map&lt; <ref refid="d7/df8/namespacepyfolio_1a66e3e2ebe494a9dccbeb419408aaf7ea" kindref="member">Symbol</ref>, <ref refid="d7/df8/namespacepyfolio_1ae16d3b363148718e3144bbe31e9d4a83" kindref="member">PriceSeries</ref> &gt; &amp;</type>
+          <declname>benchmark_prices</declname>
+        </param>
+        <briefdescription>
+<para>Calculate implementation shortfall. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/trading_costs.h" line="160" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/trading_costs.h" bodystart="160" bodyend="193"/>
+        <references refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" compoundref="d3/d11/error__handling_8h" startline="111" endline="116">pyfolio::Result&lt; T &gt;::error</references>
+        <references refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9a9e32e294e8358345f2b9b52b7f8b41fa" compoundref="d3/d11/error__handling_8h" startline="18">pyfolio::InsufficientData</references>
+        <references refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" compoundref="d3/d11/error__handling_8h" startline="74" endline="74">pyfolio::Result&lt; T &gt;::success</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/d7a/classpyfolio_1_1transactions_1_1TradingCostAnalyzer_1a4d13d4b5eb0f58d8a8bb4de796cc4200" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; double &gt;</type>
+        <definition>Result&lt; double &gt; pyfolio::transactions::TradingCostAnalyzer::calculate_effective_spread</definition>
+        <argsstring>(const TransactionRecord &amp;transaction, Price midpoint_price)</argsstring>
+        <name>calculate_effective_spread</name>
+        <qualifiedname>pyfolio::transactions::TradingCostAnalyzer::calculate_effective_spread</qualifiedname>
+        <param>
+          <type>const <ref refid="de/d25/classpyfolio_1_1transactions_1_1TransactionRecord" kindref="compound">TransactionRecord</ref> &amp;</type>
+          <declname>transaction</declname>
+        </param>
+        <param>
+          <type><ref refid="d7/df8/namespacepyfolio_1a7801b507a1c22f3c1a83bdef81846fc6" kindref="member">Price</ref></type>
+          <declname>midpoint_price</declname>
+        </param>
+        <briefdescription>
+<para>Calculate effective spread. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/trading_costs.h" line="198" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/trading_costs.h" bodystart="198" bodyend="207"/>
+        <references refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" compoundref="d3/d11/error__handling_8h" startline="111" endline="116">pyfolio::Result&lt; T &gt;::error</references>
+        <references refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9ad8f78ca9a692a9411afbc7584b69d043" compoundref="d3/d11/error__handling_8h" startline="17">pyfolio::InvalidInput</references>
+        <references refid="de/d25/classpyfolio_1_1transactions_1_1TransactionRecord_1a7151515d54d7ffa33f422324be4978c8" compoundref="d0/db6/transaction_8h" startline="53" endline="53">pyfolio::transactions::TransactionRecord::price</references>
+        <references refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" compoundref="d3/d11/error__handling_8h" startline="74" endline="74">pyfolio::Result&lt; T &gt;::success</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/d7a/classpyfolio_1_1transactions_1_1TradingCostAnalyzer_1a59a3674c586b6114719f5b426ca46a21" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; <ref refid="da/deb/classpyfolio_1_1DataFrame" kindref="compound">DataFrame</ref> &gt;</type>
+        <definition>Result&lt; DataFrame &gt; pyfolio::transactions::TradingCostAnalyzer::cost_breakdown_by_period</definition>
+        <argsstring>(const TransactionSeries &amp;transactions, Frequency frequency)</argsstring>
+        <name>cost_breakdown_by_period</name>
+        <qualifiedname>pyfolio::transactions::TradingCostAnalyzer::cost_breakdown_by_period</qualifiedname>
+        <param>
+          <type>const <ref refid="d6/d6e/classpyfolio_1_1transactions_1_1TransactionSeries" kindref="compound">TransactionSeries</ref> &amp;</type>
+          <declname>transactions</declname>
+        </param>
+        <param>
+          <type><ref refid="d7/df8/namespacepyfolio_1ad4beb384aab829428a007308f1d0c92e" kindref="member">Frequency</ref></type>
+          <declname>frequency</declname>
+        </param>
+        <briefdescription>
+<para>Calculate cost breakdown by time period. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/trading_costs.h" line="212" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/trading_costs.h" bodystart="212" bodyend="249"/>
+        <references refid="da/deb/classpyfolio_1_1DataFrame_1ae16ceddcf917845c49128783794c109e" compoundref="d2/d99/dataframe_8h" startline="88" endline="101">pyfolio::DataFrame::add_column</references>
+        <references refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" compoundref="d3/d11/error__handling_8h" startline="111" endline="116">pyfolio::Result&lt; T &gt;::error</references>
+        <references refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9a9e32e294e8358345f2b9b52b7f8b41fa" compoundref="d3/d11/error__handling_8h" startline="18">pyfolio::InsufficientData</references>
+        <references refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" compoundref="d3/d11/error__handling_8h" startline="74" endline="74">pyfolio::Result&lt; T &gt;::success</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/d7a/classpyfolio_1_1transactions_1_1TradingCostAnalyzer_1ab1eabb16efcab66bc24ea2fc4834093f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ae1b4389f0d1a53d3ebd7d2aec59e0360" kindref="member">Shares</ref> &gt;</type>
+        <definition>Result&lt; Shares &gt; pyfolio::transactions::TradingCostAnalyzer::estimate_optimal_trade_size</definition>
+        <argsstring>(const Symbol &amp;symbol, const MarketData &amp;market_data, double max_cost_bps=50.0)</argsstring>
+        <name>estimate_optimal_trade_size</name>
+        <qualifiedname>pyfolio::transactions::TradingCostAnalyzer::estimate_optimal_trade_size</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/df8/namespacepyfolio_1a66e3e2ebe494a9dccbeb419408aaf7ea" kindref="member">Symbol</ref> &amp;</type>
+          <declname>symbol</declname>
+        </param>
+        <param>
+          <type>const <ref refid="de/d03/structpyfolio_1_1MarketData" kindref="compound">MarketData</ref> &amp;</type>
+          <declname>market_data</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>max_cost_bps</declname>
+          <defval>50.0</defval>
+        </param>
+        <briefdescription>
+<para>Estimate optimal trade size given cost constraints. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/trading_costs.h" line="254" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/trading_costs.h" bodystart="254" bodyend="290"/>
+        <references refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" compoundref="d3/d11/error__handling_8h" startline="111" endline="116">pyfolio::Result&lt; T &gt;::error</references>
+        <references refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9a9e32e294e8358345f2b9b52b7f8b41fa" compoundref="d3/d11/error__handling_8h" startline="18">pyfolio::InsufficientData</references>
+        <references refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9ad8f78ca9a692a9411afbc7584b69d043" compoundref="d3/d11/error__handling_8h" startline="17">pyfolio::InvalidInput</references>
+        <references refid="de/d03/structpyfolio_1_1MarketData_1a4d23eba647782cb3ad3afe55a8b89143" compoundref="d9/d49/types_8h" startline="146">pyfolio::MarketData::prices</references>
+        <references refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" compoundref="d3/d11/error__handling_8h" startline="74" endline="74">pyfolio::Result&lt; T &gt;::success</references>
+        <references refid="de/d03/structpyfolio_1_1MarketData_1a2a7074ad7546205839db4e7ec9a168e3" compoundref="d9/d49/types_8h" startline="147">pyfolio::MarketData::volumes</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="d2/d7a/classpyfolio_1_1transactions_1_1TradingCostAnalyzer_1aee7993747304867128e0abe9ffbdb1b2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double pyfolio::transactions::TradingCostAnalyzer::estimate_market_impact</definition>
+        <argsstring>(const TransactionRecord &amp;txn, const MarketData &amp;market_data)</argsstring>
+        <name>estimate_market_impact</name>
+        <qualifiedname>pyfolio::transactions::TradingCostAnalyzer::estimate_market_impact</qualifiedname>
+        <param>
+          <type>const <ref refid="de/d25/classpyfolio_1_1transactions_1_1TransactionRecord" kindref="compound">TransactionRecord</ref> &amp;</type>
+          <declname>txn</declname>
+        </param>
+        <param>
+          <type>const <ref refid="de/d03/structpyfolio_1_1MarketData" kindref="compound">MarketData</ref> &amp;</type>
+          <declname>market_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/trading_costs.h" line="293" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/trading_costs.h" bodystart="293" bodyend="310"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d7a/classpyfolio_1_1transactions_1_1TradingCostAnalyzer_1a3f08161a9dc59c5a6eb8f8a8f76672a9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double pyfolio::transactions::TradingCostAnalyzer::estimate_volatility</definition>
+        <argsstring>(const std::vector&lt; Price &gt; &amp;prices)</argsstring>
+        <name>estimate_volatility</name>
+        <qualifiedname>pyfolio::transactions::TradingCostAnalyzer::estimate_volatility</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="d7/df8/namespacepyfolio_1a7801b507a1c22f3c1a83bdef81846fc6" kindref="member">Price</ref> &gt; &amp;</type>
+          <declname>prices</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/trading_costs.h" line="312" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/trading_costs.h" bodystart="312" bodyend="330"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d7a/classpyfolio_1_1transactions_1_1TradingCostAnalyzer_1a104f3da7e8c708eed6cce6519b71b36a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref></type>
+        <definition>DateTime pyfolio::transactions::TradingCostAnalyzer::get_period_start</definition>
+        <argsstring>(const DateTime &amp;timestamp, Frequency freq)</argsstring>
+        <name>get_period_start</name>
+        <qualifiedname>pyfolio::transactions::TradingCostAnalyzer::get_period_start</qualifiedname>
+        <param>
+          <type>const <ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref> &amp;</type>
+          <declname>timestamp</declname>
+        </param>
+        <param>
+          <type><ref refid="d7/df8/namespacepyfolio_1ad4beb384aab829428a007308f1d0c92e" kindref="member">Frequency</ref></type>
+          <declname>freq</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/trading_costs.h" line="332" column="14" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/trading_costs.h" bodystart="332" bodyend="348"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Trading cost analyzer. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/trading_costs.h" line="97" column="1" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/trading_costs.h" bodystart="97" bodyend="349"/>
+    <listofallmembers>
+      <member refid="d2/d7a/classpyfolio_1_1transactions_1_1TradingCostAnalyzer_1a454a305e75cc2d0555e8e27a1ab216d6" prot="public" virt="non-virtual"><scope>pyfolio::transactions::TradingCostAnalyzer</scope><name>analyze_costs</name></member>
+      <member refid="d2/d7a/classpyfolio_1_1transactions_1_1TradingCostAnalyzer_1a4d13d4b5eb0f58d8a8bb4de796cc4200" prot="public" virt="non-virtual"><scope>pyfolio::transactions::TradingCostAnalyzer</scope><name>calculate_effective_spread</name></member>
+      <member refid="d2/d7a/classpyfolio_1_1transactions_1_1TradingCostAnalyzer_1a01685999c930baff8b7925a2a42b752a" prot="public" virt="non-virtual"><scope>pyfolio::transactions::TradingCostAnalyzer</scope><name>calculate_implementation_shortfall</name></member>
+      <member refid="d2/d7a/classpyfolio_1_1transactions_1_1TradingCostAnalyzer_1afa122b3bb5c835daf48f3d46b0eac789" prot="private" virt="non-virtual"><scope>pyfolio::transactions::TradingCostAnalyzer</scope><name>commission_rate_</name></member>
+      <member refid="d2/d7a/classpyfolio_1_1transactions_1_1TradingCostAnalyzer_1a59a3674c586b6114719f5b426ca46a21" prot="public" virt="non-virtual"><scope>pyfolio::transactions::TradingCostAnalyzer</scope><name>cost_breakdown_by_period</name></member>
+      <member refid="d2/d7a/classpyfolio_1_1transactions_1_1TradingCostAnalyzer_1a373dc9e5e03dd79e83432c2aceb2187a" prot="private" virt="non-virtual"><scope>pyfolio::transactions::TradingCostAnalyzer</scope><name>default_spread_</name></member>
+      <member refid="d2/d7a/classpyfolio_1_1transactions_1_1TradingCostAnalyzer_1aee7993747304867128e0abe9ffbdb1b2" prot="private" virt="non-virtual"><scope>pyfolio::transactions::TradingCostAnalyzer</scope><name>estimate_market_impact</name></member>
+      <member refid="d2/d7a/classpyfolio_1_1transactions_1_1TradingCostAnalyzer_1ab1eabb16efcab66bc24ea2fc4834093f" prot="public" virt="non-virtual"><scope>pyfolio::transactions::TradingCostAnalyzer</scope><name>estimate_optimal_trade_size</name></member>
+      <member refid="d2/d7a/classpyfolio_1_1transactions_1_1TradingCostAnalyzer_1a3f08161a9dc59c5a6eb8f8a8f76672a9" prot="private" virt="non-virtual"><scope>pyfolio::transactions::TradingCostAnalyzer</scope><name>estimate_volatility</name></member>
+      <member refid="d2/d7a/classpyfolio_1_1transactions_1_1TradingCostAnalyzer_1a104f3da7e8c708eed6cce6519b71b36a" prot="private" virt="non-virtual"><scope>pyfolio::transactions::TradingCostAnalyzer</scope><name>get_period_start</name></member>
+      <member refid="d2/d7a/classpyfolio_1_1transactions_1_1TradingCostAnalyzer_1afe3b6dea748615e2b657006d3bea4e34" prot="private" virt="non-virtual"><scope>pyfolio::transactions::TradingCostAnalyzer</scope><name>impact_model_</name></member>
+      <member refid="d2/d7a/classpyfolio_1_1transactions_1_1TradingCostAnalyzer_1a5276bf07253a115f25660817a383ba1a" prot="public" virt="non-virtual"><scope>pyfolio::transactions::TradingCostAnalyzer</scope><name>TradingCostAnalyzer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

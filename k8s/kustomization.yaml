@@ -1,0 +1,111 @@
+# Kustomization for PyFolio C++ Kubernetes Deployment
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+metadata:
+  name: pyfolio-production
+  namespace: pyfolio
+  annotations:
+    config.kubernetes.io/local-config: "true"
+
+# Resources to deploy
+resources:
+  - namespace.yaml
+  - rbac.yaml
+  - configmap.yaml
+  - secrets.yaml
+  - pvc.yaml
+  - deployment.yaml
+  - service.yaml
+  - ingress.yaml
+  - hpa.yaml
+  - monitoring.yaml
+
+# Images to replace
+images:
+  - name: pyfolio
+    newName: pyfolio/pyfolio-cpp
+    newTag: latest
+
+# ConfigMap generators for dynamic configuration
+configMapGenerator:
+  - name: pyfolio-env-config
+    literals:
+      - ENVIRONMENT=production
+      - LOG_LEVEL=INFO
+      - DEBUG=false
+      - METRICS_ENABLED=true
+      - CACHE_ENABLED=true
+      - MPI_ENABLED=true
+      - GPU_ENABLED=false
+
+# Secret generators for sensitive data
+secretGenerator:
+  - name: pyfolio-api-keys
+    literals:
+      - JWT_SECRET=generate-secure-jwt-secret-in-production
+      - API_SECRET=generate-secure-api-secret-in-production
+
+# Common labels applied to all resources
+commonLabels:
+  app.kubernetes.io/name: pyfolio
+  app.kubernetes.io/instance: pyfolio-production
+  app.kubernetes.io/version: "1.0.0"
+  app.kubernetes.io/component: financial-analytics
+  app.kubernetes.io/part-of: pyfolio-platform
+  app.kubernetes.io/managed-by: kustomize
+  environment: production
+
+# Common annotations
+commonAnnotations:
+  contact: "pyfolio-team@example.com"
+  documentation: "https://pyfolio.example.com/docs"
+  repository: "https://github.com/pyfolio/pyfolio-cpp"
+
+# Namespace for all resources
+namespace: pyfolio
+
+# Name prefix for all resources
+namePrefix: prod-
+
+# Name suffix for all resources
+# nameSuffix: -v1
+
+# JSON patches for customization
+patchesJson6902:
+  - target:
+      group: apps
+      version: v1
+      kind: Deployment
+      name: pyfolio-app
+    path: patches/deployment-resources.yaml
+
+# Strategic merge patches
+patchesStrategicMerge:
+  - patches/increase-replicas.yaml
+  - patches/production-config.yaml
+
+# Replacement transformers
+replacements:
+  - source:
+      kind: ConfigMap
+      name: pyfolio-config
+      fieldPath: data.pyfolio\.json
+    targets:
+      - select:
+          kind: Deployment
+          name: pyfolio-app
+        fieldPaths:
+          - spec.template.spec.containers.[name=pyfolio-app].env.[name=PYFOLIO_CONFIG].value
+
+# Resource generation options
+generatorOptions:
+  disableNameSuffixHash: false
+  labels:
+    generated-by: kustomize
+  annotations:
+    generated-at: "2024-01-01T00:00:00Z"
+
+# Validation
+openapi:
+  path: https://raw.githubusercontent.com/kubernetes/kubernetes/master/api/openapi-spec/swagger.json

@@ -1,0 +1,216 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult" kind="struct" language="C++" prot="public">
+    <compoundname>pyfolio::analytics::TurnoverResult</compoundname>
+    <includes refid="d2/d40/turnover__enhanced_8h" local="no">turnover_enhanced.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult_1a5e567df92813531a217787264f62487b" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; pyfolio::analytics::TurnoverResult::daily_turnover</definition>
+        <argsstring></argsstring>
+        <name>daily_turnover</name>
+        <qualifiedname>pyfolio::analytics::TurnoverResult::daily_turnover</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h" line="21" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult_1afd3ab3b427381310ede80fda655faade" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::TurnoverResult::average_turnover</definition>
+        <argsstring></argsstring>
+        <name>average_turnover</name>
+        <qualifiedname>pyfolio::analytics::TurnoverResult::average_turnover</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h" line="22" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult_1aa2dad5c059899778291e2cae5ae996f7" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::TurnoverResult::annualized_turnover</definition>
+        <argsstring></argsstring>
+        <name>annualized_turnover</name>
+        <qualifiedname>pyfolio::analytics::TurnoverResult::annualized_turnover</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h" line="23" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult_1aede12f1971ad10ccaf3f5422f818acc1" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; pyfolio::analytics::TurnoverResult::rolling_agb</definition>
+        <argsstring></argsstring>
+        <name>rolling_agb</name>
+        <qualifiedname>pyfolio::analytics::TurnoverResult::rolling_agb</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h" line="24" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult_1af45437adfadc7f06e5e52c246bca992b" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; pyfolio::analytics::TurnoverResult::position_changes</definition>
+        <argsstring></argsstring>
+        <name>position_changes</name>
+        <qualifiedname>pyfolio::analytics::TurnoverResult::position_changes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h" line="25" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult_1a4145306e89edcd2db62fb86de4fb58ee" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref> &gt;</type>
+        <definition>std::vector&lt;DateTime&gt; pyfolio::analytics::TurnoverResult::dates</definition>
+        <argsstring></argsstring>
+        <name>dates</name>
+        <qualifiedname>pyfolio::analytics::TurnoverResult::dates</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h" line="26" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult_1a8262f2990a474c3273f6848ef7fc1db1" prot="public" static="no" mutable="no">
+        <type><ref refid="d2/d10/namespacepyfolio_1_1analytics_1a2b5238b2314b78cf335d70a61f483623" kindref="member">TurnoverDenominator</ref></type>
+        <definition>TurnoverDenominator pyfolio::analytics::TurnoverResult::denominator_used</definition>
+        <argsstring></argsstring>
+        <name>denominator_used</name>
+        <qualifiedname>pyfolio::analytics::TurnoverResult::denominator_used</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h" line="27" column="25" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult_1a671e6168f8decc62c70ab8ef02661474" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::TurnoverResult::turnover_volatility</definition>
+        <argsstring></argsstring>
+        <name>turnover_volatility</name>
+        <qualifiedname>pyfolio::analytics::TurnoverResult::turnover_volatility</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h" line="30" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult_1ae6412950ae4a8da06af57f1ff9cff823" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::TurnoverResult::max_daily_turnover</definition>
+        <argsstring></argsstring>
+        <name>max_daily_turnover</name>
+        <qualifiedname>pyfolio::analytics::TurnoverResult::max_daily_turnover</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h" line="31" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult_1a1da8072e5f8651d42a1f4cd02fcfd121" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::TurnoverResult::min_daily_turnover</definition>
+        <argsstring></argsstring>
+        <name>min_daily_turnover</name>
+        <qualifiedname>pyfolio::analytics::TurnoverResult::min_daily_turnover</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h" line="32" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult_1ab2f1030d0596a68754edaebce8220d15" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; pyfolio::analytics::TurnoverResult::monthly_turnover</definition>
+        <argsstring></argsstring>
+        <name>monthly_turnover</name>
+        <qualifiedname>pyfolio::analytics::TurnoverResult::monthly_turnover</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h" line="33" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="5">
+        <label>pyfolio::BusinessCalendar</label>
+        <link refid="dc/ddd/classpyfolio_1_1BusinessCalendar"/>
+      </node>
+      <node id="4">
+        <label>pyfolio::DateTime</label>
+        <link refid="d6/d4f/classpyfolio_1_1DateTime"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>default_calendar_</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>pyfolio::analytics::TurnoverResult</label>
+        <link refid="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>daily_turnover</edgelabel>
+          <edgelabel>monthly_turnover</edgelabel>
+          <edgelabel>position_changes</edgelabel>
+          <edgelabel>rolling_agb</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>dates</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::vector&lt; double &gt;</label>
+      </node>
+      <node id="3">
+        <label>std::vector&lt; pyfolio::DateTime &gt;</label>
+        <childnode refid="4" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h" line="20" column="1" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h" bodystart="20" bodyend="34"/>
+    <listofallmembers>
+      <member refid="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult_1aa2dad5c059899778291e2cae5ae996f7" prot="public" virt="non-virtual"><scope>pyfolio::analytics::TurnoverResult</scope><name>annualized_turnover</name></member>
+      <member refid="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult_1afd3ab3b427381310ede80fda655faade" prot="public" virt="non-virtual"><scope>pyfolio::analytics::TurnoverResult</scope><name>average_turnover</name></member>
+      <member refid="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult_1a5e567df92813531a217787264f62487b" prot="public" virt="non-virtual"><scope>pyfolio::analytics::TurnoverResult</scope><name>daily_turnover</name></member>
+      <member refid="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult_1a4145306e89edcd2db62fb86de4fb58ee" prot="public" virt="non-virtual"><scope>pyfolio::analytics::TurnoverResult</scope><name>dates</name></member>
+      <member refid="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult_1a8262f2990a474c3273f6848ef7fc1db1" prot="public" virt="non-virtual"><scope>pyfolio::analytics::TurnoverResult</scope><name>denominator_used</name></member>
+      <member refid="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult_1ae6412950ae4a8da06af57f1ff9cff823" prot="public" virt="non-virtual"><scope>pyfolio::analytics::TurnoverResult</scope><name>max_daily_turnover</name></member>
+      <member refid="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult_1a1da8072e5f8651d42a1f4cd02fcfd121" prot="public" virt="non-virtual"><scope>pyfolio::analytics::TurnoverResult</scope><name>min_daily_turnover</name></member>
+      <member refid="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult_1ab2f1030d0596a68754edaebce8220d15" prot="public" virt="non-virtual"><scope>pyfolio::analytics::TurnoverResult</scope><name>monthly_turnover</name></member>
+      <member refid="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult_1af45437adfadc7f06e5e52c246bca992b" prot="public" virt="non-virtual"><scope>pyfolio::analytics::TurnoverResult</scope><name>position_changes</name></member>
+      <member refid="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult_1aede12f1971ad10ccaf3f5422f818acc1" prot="public" virt="non-virtual"><scope>pyfolio::analytics::TurnoverResult</scope><name>rolling_agb</name></member>
+      <member refid="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult_1a671e6168f8decc62c70ab8ef02661474" prot="public" virt="non-virtual"><scope>pyfolio::analytics::TurnoverResult</scope><name>turnover_volatility</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

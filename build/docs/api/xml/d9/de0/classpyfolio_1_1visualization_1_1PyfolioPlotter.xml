@@ -1,0 +1,855 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter" kind="class" language="C++" prot="public">
+    <compoundname>pyfolio::visualization::PyfolioPlotter</compoundname>
+    <includes refid="dc/d16/matplotlib__integration_8h" local="no">matplotlib_integration.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1ae3503ac47605a016663c1d05e74a4fa4" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool pyfolio::visualization::PyfolioPlotter::matplotlib_initialized_</definition>
+        <argsstring></argsstring>
+        <name>matplotlib_initialized_</name>
+        <qualifiedname>pyfolio::visualization::PyfolioPlotter::matplotlib_initialized_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h" line="262" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a0ae64f2c21b83d2611353198506940f4" prot="private" static="no" mutable="no">
+        <type><ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref></type>
+        <definition>PlotConfig pyfolio::visualization::PyfolioPlotter::default_config_</definition>
+        <argsstring></argsstring>
+        <name>default_config_</name>
+        <qualifiedname>pyfolio::visualization::PyfolioPlotter::default_config_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h" line="263" column="16" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h" bodystart="263" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a1451070a9ec49ac1dfd931ba3e0524d9" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, std::string &gt;</type>
+        <definition>std::map&lt;std::string, std::string&gt; pyfolio::visualization::PyfolioPlotter::style_settings_</definition>
+        <argsstring></argsstring>
+        <name>style_settings_</name>
+        <qualifiedname>pyfolio::visualization::PyfolioPlotter::style_settings_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h" line="264" column="14" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h" bodystart="264" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1ab8ec3f2cb4a638852a31a9346aea7a5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>pyfolio::visualization::PyfolioPlotter::PyfolioPlotter</definition>
+        <argsstring>()</argsstring>
+        <name>PyfolioPlotter</name>
+        <qualifiedname>pyfolio::visualization::PyfolioPlotter::PyfolioPlotter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h" line="48" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a601cca68c08361555397f432c231b1b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>pyfolio::visualization::PyfolioPlotter::~PyfolioPlotter</definition>
+        <argsstring>()</argsstring>
+        <name>~PyfolioPlotter</name>
+        <qualifiedname>pyfolio::visualization::PyfolioPlotter::~PyfolioPlotter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h" line="49" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a8758ac61c4a842308792b63b9857f0f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; void &gt;</type>
+        <definition>Result&lt; void &gt; pyfolio::visualization::PyfolioPlotter::plot_cumulative_returns</definition>
+        <argsstring>(const TimeSeries&lt; Return &gt; &amp;returns, const TimeSeries&lt; Return &gt; &amp;benchmark={}, const PlotConfig &amp;config={})</argsstring>
+        <name>plot_cumulative_returns</name>
+        <qualifiedname>pyfolio::visualization::PyfolioPlotter::plot_cumulative_returns</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &amp;</type>
+          <declname>benchmark</declname>
+          <defval>{}</defval>
+        </param>
+        <param>
+          <type>const <ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Plot cumulative returns over time Equivalent to Python pyfolio.plotting.plot_rolling_returns() </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h" line="59" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1ab82abf9b86f95be5a637c7885e7a94ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; void &gt;</type>
+        <definition>Result&lt; void &gt; pyfolio::visualization::PyfolioPlotter::plot_drawdown_underwater</definition>
+        <argsstring>(const TimeSeries&lt; Return &gt; &amp;returns, const PlotConfig &amp;config={})</argsstring>
+        <name>plot_drawdown_underwater</name>
+        <qualifiedname>pyfolio::visualization::PyfolioPlotter::plot_drawdown_underwater</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Plot underwater drawdown chart Equivalent to Python pyfolio.plotting.plot_drawdown_underwater() </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h" line="66" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a917e3ea51acad4567732740848626bff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; void &gt;</type>
+        <definition>Result&lt; void &gt; pyfolio::visualization::PyfolioPlotter::plot_monthly_returns_heatmap</definition>
+        <argsstring>(const TimeSeries&lt; Return &gt; &amp;returns, const PlotConfig &amp;config={})</argsstring>
+        <name>plot_monthly_returns_heatmap</name>
+        <qualifiedname>pyfolio::visualization::PyfolioPlotter::plot_monthly_returns_heatmap</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Plot monthly returns heatmap Equivalent to Python pyfolio.plotting.plot_monthly_returns_heatmap() </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h" line="72" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a31ad398d6730a3c02fb35d679ec66986" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; void &gt;</type>
+        <definition>Result&lt; void &gt; pyfolio::visualization::PyfolioPlotter::plot_annual_returns</definition>
+        <argsstring>(const TimeSeries&lt; Return &gt; &amp;returns, const TimeSeries&lt; Return &gt; &amp;benchmark={}, const PlotConfig &amp;config={})</argsstring>
+        <name>plot_annual_returns</name>
+        <qualifiedname>pyfolio::visualization::PyfolioPlotter::plot_annual_returns</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &amp;</type>
+          <declname>benchmark</declname>
+          <defval>{}</defval>
+        </param>
+        <param>
+          <type>const <ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Plot annual returns bar chart Equivalent to Python pyfolio.plotting.plot_annual_returns() </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h" line="78" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a8f4dbd5480c2e068870d3a07615d1eb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; void &gt;</type>
+        <definition>Result&lt; void &gt; pyfolio::visualization::PyfolioPlotter::plot_rolling_sharpe</definition>
+        <argsstring>(const TimeSeries&lt; Return &gt; &amp;returns, int window=63, double risk_free_rate=0.02, const PlotConfig &amp;config={})</argsstring>
+        <name>plot_rolling_sharpe</name>
+        <qualifiedname>pyfolio::visualization::PyfolioPlotter::plot_rolling_sharpe</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>window</declname>
+          <defval>63</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>risk_free_rate</declname>
+          <defval>0.02</defval>
+        </param>
+        <param>
+          <type>const <ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Plot rolling Sharpe ratio Equivalent to Python pyfolio.plotting.plot_rolling_sharpe() </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h" line="89" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a9b2a95c219321f8b657e47a106e3493c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; void &gt;</type>
+        <definition>Result&lt; void &gt; pyfolio::visualization::PyfolioPlotter::plot_rolling_volatility</definition>
+        <argsstring>(const TimeSeries&lt; Return &gt; &amp;returns, int window=63, const PlotConfig &amp;config={})</argsstring>
+        <name>plot_rolling_volatility</name>
+        <qualifiedname>pyfolio::visualization::PyfolioPlotter::plot_rolling_volatility</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>window</declname>
+          <defval>63</defval>
+        </param>
+        <param>
+          <type>const <ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Plot rolling volatility Equivalent to Python pyfolio.plotting.plot_rolling_volatility() </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h" line="96" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a5e544a07e3cbd610e476878dd06dfa74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; void &gt;</type>
+        <definition>Result&lt; void &gt; pyfolio::visualization::PyfolioPlotter::plot_rolling_beta</definition>
+        <argsstring>(const TimeSeries&lt; Return &gt; &amp;returns, const TimeSeries&lt; Return &gt; &amp;benchmark, int window=126, const PlotConfig &amp;config={})</argsstring>
+        <name>plot_rolling_beta</name>
+        <qualifiedname>pyfolio::visualization::PyfolioPlotter::plot_rolling_beta</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &amp;</type>
+          <declname>benchmark</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>window</declname>
+          <defval>126</defval>
+        </param>
+        <param>
+          <type>const <ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Plot rolling beta vs benchmark Equivalent to Python pyfolio.plotting.plot_rolling_beta() </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h" line="103" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1ade2701a753a2768cbe52dea98542c260" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; void &gt;</type>
+        <definition>Result&lt; void &gt; pyfolio::visualization::PyfolioPlotter::plot_return_distribution</definition>
+        <argsstring>(const TimeSeries&lt; Return &gt; &amp;returns, const PlotConfig &amp;config={})</argsstring>
+        <name>plot_return_distribution</name>
+        <qualifiedname>pyfolio::visualization::PyfolioPlotter::plot_return_distribution</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Plot return distribution histogram Equivalent to Python pyfolio.plotting.plot_monthly_returns_dist() </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h" line="114" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a7f1fe5094fa89bf68418dd3d2f8e47df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; void &gt;</type>
+        <definition>Result&lt; void &gt; pyfolio::visualization::PyfolioPlotter::plot_return_quantiles</definition>
+        <argsstring>(const TimeSeries&lt; Return &gt; &amp;returns, const PlotConfig &amp;config={})</argsstring>
+        <name>plot_return_quantiles</name>
+        <qualifiedname>pyfolio::visualization::PyfolioPlotter::plot_return_quantiles</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Plot return quantiles box plot Equivalent to Python pyfolio.plotting.plot_return_quantiles() </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h" line="120" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a7766b1e4efae79e3f3bf043745f8402c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; void &gt;</type>
+        <definition>Result&lt; void &gt; pyfolio::visualization::PyfolioPlotter::plot_exposures</definition>
+        <argsstring>(const PositionSeries &amp;positions, const PlotConfig &amp;config={})</argsstring>
+        <name>plot_exposures</name>
+        <qualifiedname>pyfolio::visualization::PyfolioPlotter::plot_exposures</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/df8/namespacepyfolio_1a8b225a867ab95979be89a7d9e8519eb1" kindref="member">PositionSeries</ref> &amp;</type>
+          <declname>positions</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Plot long/short exposure over time Equivalent to Python pyfolio.plotting.plot_exposures() </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h" line="130" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a90478512cccde322c29598162f91a289" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; void &gt;</type>
+        <definition>Result&lt; void &gt; pyfolio::visualization::PyfolioPlotter::plot_holdings</definition>
+        <argsstring>(const PositionSeries &amp;positions, const PlotConfig &amp;config={})</argsstring>
+        <name>plot_holdings</name>
+        <qualifiedname>pyfolio::visualization::PyfolioPlotter::plot_holdings</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/df8/namespacepyfolio_1a8b225a867ab95979be89a7d9e8519eb1" kindref="member">PositionSeries</ref> &amp;</type>
+          <declname>positions</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Plot number of holdings over time Equivalent to Python pyfolio.plotting.plot_holdings() </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h" line="136" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1afe69a7dcf15011cd2140426c89ae2244" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; void &gt;</type>
+        <definition>Result&lt; void &gt; pyfolio::visualization::PyfolioPlotter::plot_top_holdings</definition>
+        <argsstring>(const PositionSeries &amp;positions, int top_n=10, const PlotConfig &amp;config={})</argsstring>
+        <name>plot_top_holdings</name>
+        <qualifiedname>pyfolio::visualization::PyfolioPlotter::plot_top_holdings</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/df8/namespacepyfolio_1a8b225a867ab95979be89a7d9e8519eb1" kindref="member">PositionSeries</ref> &amp;</type>
+          <declname>positions</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>top_n</declname>
+          <defval>10</defval>
+        </param>
+        <param>
+          <type>const <ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Plot top holdings allocation over time Equivalent to Python pyfolio.plotting.show_and_plot_top_positions() </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h" line="142" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a36379ad7618d30c35676cb6d9a1227bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; void &gt;</type>
+        <definition>Result&lt; void &gt; pyfolio::visualization::PyfolioPlotter::plot_turnover</definition>
+        <argsstring>(const PositionSeries &amp;positions, const TransactionSeries &amp;transactions={}, const PlotConfig &amp;config={})</argsstring>
+        <name>plot_turnover</name>
+        <qualifiedname>pyfolio::visualization::PyfolioPlotter::plot_turnover</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/df8/namespacepyfolio_1a8b225a867ab95979be89a7d9e8519eb1" kindref="member">PositionSeries</ref> &amp;</type>
+          <declname>positions</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d7/df8/namespacepyfolio_1a4b722d754217aac2549ef3ef5fa23fff" kindref="member">TransactionSeries</ref> &amp;</type>
+          <declname>transactions</declname>
+          <defval>{}</defval>
+        </param>
+        <param>
+          <type>const <ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Plot portfolio turnover over time Equivalent to Python pyfolio.plotting.plot_turnover() </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h" line="152" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a21751ad032c2ca559d299c7815cf2f24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; void &gt;</type>
+        <definition>Result&lt; void &gt; pyfolio::visualization::PyfolioPlotter::plot_round_trip_lifetimes</definition>
+        <argsstring>(const TransactionSeries &amp;transactions, const PlotConfig &amp;config={})</argsstring>
+        <name>plot_round_trip_lifetimes</name>
+        <qualifiedname>pyfolio::visualization::PyfolioPlotter::plot_round_trip_lifetimes</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/df8/namespacepyfolio_1a4b722d754217aac2549ef3ef5fa23fff" kindref="member">TransactionSeries</ref> &amp;</type>
+          <declname>transactions</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Plot round trip lifetimes Equivalent to Python pyfolio.plotting.plot_round_trip_lifetimes() </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h" line="159" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a6e3a3bc4fab416276857f111f186ee17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; void &gt;</type>
+        <definition>Result&lt; void &gt; pyfolio::visualization::PyfolioPlotter::create_full_tear_sheet</definition>
+        <argsstring>(const TimeSeries&lt; Return &gt; &amp;returns, const TimeSeries&lt; Return &gt; &amp;benchmark={}, const PositionSeries &amp;positions={}, const TransactionSeries &amp;transactions={}, const TearSheetConfig &amp;config={})</argsstring>
+        <name>create_full_tear_sheet</name>
+        <qualifiedname>pyfolio::visualization::PyfolioPlotter::create_full_tear_sheet</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &amp;</type>
+          <declname>benchmark</declname>
+          <defval>{}</defval>
+        </param>
+        <param>
+          <type>const <ref refid="d7/df8/namespacepyfolio_1a8b225a867ab95979be89a7d9e8519eb1" kindref="member">PositionSeries</ref> &amp;</type>
+          <declname>positions</declname>
+          <defval>{}</defval>
+        </param>
+        <param>
+          <type>const <ref refid="d7/df8/namespacepyfolio_1a4b722d754217aac2549ef3ef5fa23fff" kindref="member">TransactionSeries</ref> &amp;</type>
+          <declname>transactions</declname>
+          <defval>{}</defval>
+        </param>
+        <param>
+          <type>const <ref refid="dd/dd8/structpyfolio_1_1visualization_1_1TearSheetConfig" kindref="compound">TearSheetConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create full tear sheet with all major plots Equivalent to Python pyfolio.tears.create_full_tear_sheet() </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h" line="169" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a580038f0ac7ec9f51d863fcdaa8cd0a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; void &gt;</type>
+        <definition>Result&lt; void &gt; pyfolio::visualization::PyfolioPlotter::create_simple_tear_sheet</definition>
+        <argsstring>(const TimeSeries&lt; Return &gt; &amp;returns, const TimeSeries&lt; Return &gt; &amp;benchmark={}, const TearSheetConfig &amp;config={})</argsstring>
+        <name>create_simple_tear_sheet</name>
+        <qualifiedname>pyfolio::visualization::PyfolioPlotter::create_simple_tear_sheet</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &amp;</type>
+          <declname>benchmark</declname>
+          <defval>{}</defval>
+        </param>
+        <param>
+          <type>const <ref refid="dd/dd8/structpyfolio_1_1visualization_1_1TearSheetConfig" kindref="compound">TearSheetConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create simple tear sheet with key plots only Equivalent to Python pyfolio.tears.create_simple_tear_sheet() </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h" line="177" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a1ef302990a3836dc27bd8f67173c77c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; void &gt;</type>
+        <definition>Result&lt; void &gt; pyfolio::visualization::PyfolioPlotter::create_returns_tear_sheet</definition>
+        <argsstring>(const TimeSeries&lt; Return &gt; &amp;returns, const TimeSeries&lt; Return &gt; &amp;benchmark={}, const TearSheetConfig &amp;config={})</argsstring>
+        <name>create_returns_tear_sheet</name>
+        <qualifiedname>pyfolio::visualization::PyfolioPlotter::create_returns_tear_sheet</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &amp;</type>
+          <declname>benchmark</declname>
+          <defval>{}</defval>
+        </param>
+        <param>
+          <type>const <ref refid="dd/dd8/structpyfolio_1_1visualization_1_1TearSheetConfig" kindref="compound">TearSheetConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create returns-focused tear sheet Equivalent to Python pyfolio.tears.create_returns_tear_sheet() </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h" line="184" column="12"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a5f16eeb638ba2c2e8f0db5318e8ab881" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void pyfolio::visualization::PyfolioPlotter::initialize_matplotlib</definition>
+        <argsstring>()</argsstring>
+        <name>initialize_matplotlib</name>
+        <qualifiedname>pyfolio::visualization::PyfolioPlotter::initialize_matplotlib</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize matplotlib settings and style </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h" line="195" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a3f9b67a86307f504272af2c0bcaa9ac4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt; double &gt; pyfolio::visualization::PyfolioPlotter::datetime_to_numeric</definition>
+        <argsstring>(const std::vector&lt; DateTime &gt; &amp;dates)</argsstring>
+        <name>datetime_to_numeric</name>
+        <qualifiedname>pyfolio::visualization::PyfolioPlotter::datetime_to_numeric</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref> &gt; &amp;</type>
+          <declname>dates</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert <ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref> vector to numeric vector for plotting </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h" line="200" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a4b8b2fae079e1768dfd8a0d4f9e88f6f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void pyfolio::visualization::PyfolioPlotter::setup_plot</definition>
+        <argsstring>(const PlotConfig &amp;config)</argsstring>
+        <name>setup_plot</name>
+        <qualifiedname>pyfolio::visualization::PyfolioPlotter::setup_plot</qualifiedname>
+        <param>
+          <type>const <ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref> &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Setup plot with common styling </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h" line="205" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a21fdfa1c6867745ea86262171d1e0a96" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; void &gt;</type>
+        <definition>Result&lt; void &gt; pyfolio::visualization::PyfolioPlotter::save_plot_if_requested</definition>
+        <argsstring>(const PlotConfig &amp;config)</argsstring>
+        <name>save_plot_if_requested</name>
+        <qualifiedname>pyfolio::visualization::PyfolioPlotter::save_plot_if_requested</qualifiedname>
+        <param>
+          <type>const <ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref> &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Save plot if requested </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h" line="210" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a24e4955299c439956e4f6b8bdadb9695" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::vector&lt; double &gt; &gt;</type>
+        <definition>std::vector&lt; std::vector&lt; double &gt; &gt; pyfolio::visualization::PyfolioPlotter::calculate_monthly_returns_matrix</definition>
+        <argsstring>(const TimeSeries&lt; Return &gt; &amp;returns)</argsstring>
+        <name>calculate_monthly_returns_matrix</name>
+        <qualifiedname>pyfolio::visualization::PyfolioPlotter::calculate_monthly_returns_matrix</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate monthly returns for heatmap </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h" line="215" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a186c0b3bfb0e7ebb42946bbf67586929" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt; double &gt; pyfolio::visualization::PyfolioPlotter::calculate_drawdown_series</definition>
+        <argsstring>(const TimeSeries&lt; Return &gt; &amp;returns)</argsstring>
+        <name>calculate_drawdown_series</name>
+        <qualifiedname>pyfolio::visualization::PyfolioPlotter::calculate_drawdown_series</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate drawdown series for underwater plot </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h" line="220" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a0b045c6376fc35b0f8911134a18afc5a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::pair&lt; std::vector&lt; double &gt;, std::vector&lt; double &gt; &gt;</type>
+        <definition>std::pair&lt; std::vector&lt; double &gt;, std::vector&lt; double &gt; &gt; pyfolio::visualization::PyfolioPlotter::calculate_exposures</definition>
+        <argsstring>(const PositionSeries &amp;positions)</argsstring>
+        <name>calculate_exposures</name>
+        <qualifiedname>pyfolio::visualization::PyfolioPlotter::calculate_exposures</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/df8/namespacepyfolio_1a8b225a867ab95979be89a7d9e8519eb1" kindref="member">PositionSeries</ref> &amp;</type>
+          <declname>positions</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate long/short exposures from positions </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h" line="225" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a406960b94d7aee4ac445f3bdc98cb8dc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::pair&lt; std::vector&lt; std::string &gt;, std::vector&lt; int &gt; &gt;</type>
+        <definition>std::pair&lt; std::vector&lt; std::string &gt;, std::vector&lt; int &gt; &gt; pyfolio::visualization::PyfolioPlotter::get_monthly_labels</definition>
+        <argsstring>(const std::vector&lt; DateTime &gt; &amp;dates)</argsstring>
+        <name>get_monthly_labels</name>
+        <qualifiedname>pyfolio::visualization::PyfolioPlotter::get_monthly_labels</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref> &gt; &amp;</type>
+          <declname>dates</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get month and year labels for heatmap </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h" line="230" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1afaa07f21d8fcd58c8df2b344e60b8529" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void pyfolio::visualization::PyfolioPlotter::create_subplot_layout</definition>
+        <argsstring>(int rows, int cols)</argsstring>
+        <name>create_subplot_layout</name>
+        <qualifiedname>pyfolio::visualization::PyfolioPlotter::create_subplot_layout</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>rows</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cols</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create subplot layout for tear sheets </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h" line="235" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a70384635e13fb8bea1bd6440ca017c42" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void pyfolio::visualization::PyfolioPlotter::add_performance_table</definition>
+        <argsstring>(const TimeSeries&lt; Return &gt; &amp;returns, const TimeSeries&lt; Return &gt; &amp;benchmark, const std::pair&lt; double, double &gt; &amp;position={0.02, 0.7})</argsstring>
+        <name>add_performance_table</name>
+        <qualifiedname>pyfolio::visualization::PyfolioPlotter::add_performance_table</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &amp;</type>
+          <declname>benchmark</declname>
+        </param>
+        <param>
+          <type>const std::pair&lt; double, double &gt; &amp;</type>
+          <declname>position</declname>
+          <defval>{0.02, 0.7}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add performance statistics table to plot </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h" line="240" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1aff1270a087d8836541e243f68f7ea04b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void pyfolio::visualization::PyfolioPlotter::format_axes</definition>
+        <argsstring>(const PlotConfig &amp;config)</argsstring>
+        <name>format_axes</name>
+        <qualifiedname>pyfolio::visualization::PyfolioPlotter::format_axes</qualifiedname>
+        <param>
+          <type>const <ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref> &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Format axis labels and ticks </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h" line="246" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1ad24f0a46e275dad0d8de90bbbf938f08" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void pyfolio::visualization::PyfolioPlotter::add_recession_shading</definition>
+        <argsstring>(const std::vector&lt; DateTime &gt; &amp;dates)</argsstring>
+        <name>add_recession_shading</name>
+        <qualifiedname>pyfolio::visualization::PyfolioPlotter::add_recession_shading</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref> &gt; &amp;</type>
+          <declname>dates</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add recession shading (if recession periods are available) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h" line="251" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a012ce1b34b68d8ff3316b9a57d403011" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool pyfolio::visualization::PyfolioPlotter::is_matplotlib_available</definition>
+        <argsstring>() const</argsstring>
+        <name>is_matplotlib_available</name>
+        <qualifiedname>pyfolio::visualization::PyfolioPlotter::is_matplotlib_available</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Validate that matplotlib is available </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h" line="256" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Main plotting class that provides Python pyfolio equivalent visualization Uses matplotlib-cpp for C++ integration with matplotlib </para>
+    </detaileddescription>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h" line="46" column="1" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h" bodystart="46" bodyend="265"/>
+    <listofallmembers>
+      <member refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a70384635e13fb8bea1bd6440ca017c42" prot="private" virt="non-virtual"><scope>pyfolio::visualization::PyfolioPlotter</scope><name>add_performance_table</name></member>
+      <member refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1ad24f0a46e275dad0d8de90bbbf938f08" prot="private" virt="non-virtual"><scope>pyfolio::visualization::PyfolioPlotter</scope><name>add_recession_shading</name></member>
+      <member refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a186c0b3bfb0e7ebb42946bbf67586929" prot="private" virt="non-virtual"><scope>pyfolio::visualization::PyfolioPlotter</scope><name>calculate_drawdown_series</name></member>
+      <member refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a0b045c6376fc35b0f8911134a18afc5a" prot="private" virt="non-virtual"><scope>pyfolio::visualization::PyfolioPlotter</scope><name>calculate_exposures</name></member>
+      <member refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a24e4955299c439956e4f6b8bdadb9695" prot="private" virt="non-virtual"><scope>pyfolio::visualization::PyfolioPlotter</scope><name>calculate_monthly_returns_matrix</name></member>
+      <member refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a6e3a3bc4fab416276857f111f186ee17" prot="public" virt="non-virtual"><scope>pyfolio::visualization::PyfolioPlotter</scope><name>create_full_tear_sheet</name></member>
+      <member refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a1ef302990a3836dc27bd8f67173c77c9" prot="public" virt="non-virtual"><scope>pyfolio::visualization::PyfolioPlotter</scope><name>create_returns_tear_sheet</name></member>
+      <member refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a580038f0ac7ec9f51d863fcdaa8cd0a8" prot="public" virt="non-virtual"><scope>pyfolio::visualization::PyfolioPlotter</scope><name>create_simple_tear_sheet</name></member>
+      <member refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1afaa07f21d8fcd58c8df2b344e60b8529" prot="private" virt="non-virtual"><scope>pyfolio::visualization::PyfolioPlotter</scope><name>create_subplot_layout</name></member>
+      <member refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a3f9b67a86307f504272af2c0bcaa9ac4" prot="private" virt="non-virtual"><scope>pyfolio::visualization::PyfolioPlotter</scope><name>datetime_to_numeric</name></member>
+      <member refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a0ae64f2c21b83d2611353198506940f4" prot="private" virt="non-virtual"><scope>pyfolio::visualization::PyfolioPlotter</scope><name>default_config_</name></member>
+      <member refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1aff1270a087d8836541e243f68f7ea04b" prot="private" virt="non-virtual"><scope>pyfolio::visualization::PyfolioPlotter</scope><name>format_axes</name></member>
+      <member refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a406960b94d7aee4ac445f3bdc98cb8dc" prot="private" virt="non-virtual"><scope>pyfolio::visualization::PyfolioPlotter</scope><name>get_monthly_labels</name></member>
+      <member refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a5f16eeb638ba2c2e8f0db5318e8ab881" prot="private" virt="non-virtual"><scope>pyfolio::visualization::PyfolioPlotter</scope><name>initialize_matplotlib</name></member>
+      <member refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a012ce1b34b68d8ff3316b9a57d403011" prot="private" virt="non-virtual"><scope>pyfolio::visualization::PyfolioPlotter</scope><name>is_matplotlib_available</name></member>
+      <member refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1ae3503ac47605a016663c1d05e74a4fa4" prot="private" virt="non-virtual"><scope>pyfolio::visualization::PyfolioPlotter</scope><name>matplotlib_initialized_</name></member>
+      <member refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a31ad398d6730a3c02fb35d679ec66986" prot="public" virt="non-virtual"><scope>pyfolio::visualization::PyfolioPlotter</scope><name>plot_annual_returns</name></member>
+      <member refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a8758ac61c4a842308792b63b9857f0f1" prot="public" virt="non-virtual"><scope>pyfolio::visualization::PyfolioPlotter</scope><name>plot_cumulative_returns</name></member>
+      <member refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1ab82abf9b86f95be5a637c7885e7a94ed" prot="public" virt="non-virtual"><scope>pyfolio::visualization::PyfolioPlotter</scope><name>plot_drawdown_underwater</name></member>
+      <member refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a7766b1e4efae79e3f3bf043745f8402c" prot="public" virt="non-virtual"><scope>pyfolio::visualization::PyfolioPlotter</scope><name>plot_exposures</name></member>
+      <member refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a90478512cccde322c29598162f91a289" prot="public" virt="non-virtual"><scope>pyfolio::visualization::PyfolioPlotter</scope><name>plot_holdings</name></member>
+      <member refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a917e3ea51acad4567732740848626bff" prot="public" virt="non-virtual"><scope>pyfolio::visualization::PyfolioPlotter</scope><name>plot_monthly_returns_heatmap</name></member>
+      <member refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1ade2701a753a2768cbe52dea98542c260" prot="public" virt="non-virtual"><scope>pyfolio::visualization::PyfolioPlotter</scope><name>plot_return_distribution</name></member>
+      <member refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a7f1fe5094fa89bf68418dd3d2f8e47df" prot="public" virt="non-virtual"><scope>pyfolio::visualization::PyfolioPlotter</scope><name>plot_return_quantiles</name></member>
+      <member refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a5e544a07e3cbd610e476878dd06dfa74" prot="public" virt="non-virtual"><scope>pyfolio::visualization::PyfolioPlotter</scope><name>plot_rolling_beta</name></member>
+      <member refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a8f4dbd5480c2e068870d3a07615d1eb2" prot="public" virt="non-virtual"><scope>pyfolio::visualization::PyfolioPlotter</scope><name>plot_rolling_sharpe</name></member>
+      <member refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a9b2a95c219321f8b657e47a106e3493c" prot="public" virt="non-virtual"><scope>pyfolio::visualization::PyfolioPlotter</scope><name>plot_rolling_volatility</name></member>
+      <member refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a21751ad032c2ca559d299c7815cf2f24" prot="public" virt="non-virtual"><scope>pyfolio::visualization::PyfolioPlotter</scope><name>plot_round_trip_lifetimes</name></member>
+      <member refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1afe69a7dcf15011cd2140426c89ae2244" prot="public" virt="non-virtual"><scope>pyfolio::visualization::PyfolioPlotter</scope><name>plot_top_holdings</name></member>
+      <member refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a36379ad7618d30c35676cb6d9a1227bc" prot="public" virt="non-virtual"><scope>pyfolio::visualization::PyfolioPlotter</scope><name>plot_turnover</name></member>
+      <member refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1ab8ec3f2cb4a638852a31a9346aea7a5d" prot="public" virt="non-virtual"><scope>pyfolio::visualization::PyfolioPlotter</scope><name>PyfolioPlotter</name></member>
+      <member refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a21fdfa1c6867745ea86262171d1e0a96" prot="private" virt="non-virtual"><scope>pyfolio::visualization::PyfolioPlotter</scope><name>save_plot_if_requested</name></member>
+      <member refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a4b8b2fae079e1768dfd8a0d4f9e88f6f" prot="private" virt="non-virtual"><scope>pyfolio::visualization::PyfolioPlotter</scope><name>setup_plot</name></member>
+      <member refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a1451070a9ec49ac1dfd931ba3e0524d9" prot="private" virt="non-virtual"><scope>pyfolio::visualization::PyfolioPlotter</scope><name>style_settings_</name></member>
+      <member refid="d9/de0/classpyfolio_1_1visualization_1_1PyfolioPlotter_1a601cca68c08361555397f432c231b1b9" prot="public" virt="non-virtual"><scope>pyfolio::visualization::PyfolioPlotter</scope><name>~PyfolioPlotter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

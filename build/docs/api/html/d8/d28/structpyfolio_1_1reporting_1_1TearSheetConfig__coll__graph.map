@@ -1,0 +1,9 @@
+<map id="pyfolio::reporting::TearSheetConfig" name="pyfolio::reporting::TearSheetConfig">
+<area shape="rect" id="Node000001" title="Configuration for tear sheet generation." alt="" coords="73,199,199,240"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="28,95,108,121"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="70,136,73,156,80,174,102,197,98,200,75,176,68,157,65,137"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,5,131,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="71,61,71,95,65,95,65,61"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="131,95,277,121"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="197,137,177,176,158,200,154,197,172,174,192,135"/>
+</map>

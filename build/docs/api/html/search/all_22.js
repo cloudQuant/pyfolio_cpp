@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['✅_0',['✅',['../d6/de2/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2DOCUMENTATION__REPORT.html#autotoc_md35',1,'&lt;strong&gt;1. Main Documentation Page&lt;/strong&gt; ✅'],['../d6/de2/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2DOCUMENTATION__REPORT.html#autotoc_md36',1,'&lt;strong&gt;2. Getting Started Guide&lt;/strong&gt; ✅'],['../d6/de2/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2DOCUMENTATION__REPORT.html#autotoc_md37',1,'&lt;strong&gt;3. Comprehensive API Reference&lt;/strong&gt; ✅'],['../d6/de2/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2DOCUMENTATION__REPORT.html#autotoc_md38',1,'&lt;strong&gt;4. Enhanced Header Documentation&lt;/strong&gt; ✅']]],
+  ['✅_20task_2019_20status_3a_20strong_20completed_20strong_1',['✅ Task 19 Status: &lt;strong&gt;COMPLETED&lt;/strong&gt;',['../d9/df0/md__2Users_2yunjinqi_2Documents_2source__code_2pyfolio__cpp_2docs_2STATIC__ANALYSIS__REPORT.html#autotoc_md220',1,'']]]
+];

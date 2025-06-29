@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="d5/d11/structpyfolio_1_1Transaction" kind="struct" language="C++" prot="public">
+    <compoundname>pyfolio::Transaction</compoundname>
+    <includes refid="d9/d49/types_8h" local="no">types.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d5/d11/structpyfolio_1_1Transaction_1a442fd0fce2fd2abb5c0534a39243f3f2" prot="public" static="no" mutable="no">
+        <type><ref refid="d7/df8/namespacepyfolio_1a66e3e2ebe494a9dccbeb419408aaf7ea" kindref="member">Symbol</ref></type>
+        <definition>Symbol pyfolio::Transaction::symbol</definition>
+        <argsstring></argsstring>
+        <name>symbol</name>
+        <qualifiedname>pyfolio::Transaction::symbol</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/types.h" line="184" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/types.h" bodystart="184" bodyend="-1"/>
+        <referencedby refid="db/d43/namespacepyfolio_1_1io_1_1sample__data_1a902e9474b71c67f378dfe3f9ce014521" compoundref="d2/db9/data__loader_8h" startline="468" endline="483">pyfolio::io::sample_data::generate_sample_transactions</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d11/structpyfolio_1_1Transaction_1a6d588dfc84908e293004bab0afca46ff" prot="public" static="no" mutable="no">
+        <type><ref refid="d7/df8/namespacepyfolio_1ae1b4389f0d1a53d3ebd7d2aec59e0360" kindref="member">Shares</ref></type>
+        <definition>Shares pyfolio::Transaction::shares</definition>
+        <argsstring></argsstring>
+        <name>shares</name>
+        <qualifiedname>pyfolio::Transaction::shares</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/types.h" line="185" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/types.h" bodystart="185" bodyend="-1"/>
+        <referencedby refid="db/d43/namespacepyfolio_1_1io_1_1sample__data_1a902e9474b71c67f378dfe3f9ce014521" compoundref="d2/db9/data__loader_8h" startline="468" endline="483">pyfolio::io::sample_data::generate_sample_transactions</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d11/structpyfolio_1_1Transaction_1a7764e932f900f56ca558b181c9bc1cbf" prot="public" static="no" mutable="no">
+        <type><ref refid="d7/df8/namespacepyfolio_1a7801b507a1c22f3c1a83bdef81846fc6" kindref="member">Price</ref></type>
+        <definition>Price pyfolio::Transaction::price</definition>
+        <argsstring></argsstring>
+        <name>price</name>
+        <qualifiedname>pyfolio::Transaction::price</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/types.h" line="186" column="11" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/types.h" bodystart="186" bodyend="-1"/>
+        <referencedby refid="db/d43/namespacepyfolio_1_1io_1_1sample__data_1a902e9474b71c67f378dfe3f9ce014521" compoundref="d2/db9/data__loader_8h" startline="468" endline="483">pyfolio::io::sample_data::generate_sample_transactions</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d11/structpyfolio_1_1Transaction_1a93ffd5908ac831f42cf3e1196d96a377" prot="public" static="no" mutable="no">
+        <type><ref refid="d7/df8/namespacepyfolio_1ad77d362107c51226c09e896bdf822f9d" kindref="member">TimePoint</ref></type>
+        <definition>TimePoint pyfolio::Transaction::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <qualifiedname>pyfolio::Transaction::timestamp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/types.h" line="187" column="15" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/types.h" bodystart="187" bodyend="-1"/>
+        <referencedby refid="db/d43/namespacepyfolio_1_1io_1_1sample__data_1a902e9474b71c67f378dfe3f9ce014521" compoundref="d2/db9/data__loader_8h" startline="468" endline="483">pyfolio::io::sample_data::generate_sample_transactions</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d11/structpyfolio_1_1Transaction_1aeb2a027b02e00bd8ed44767fd81d9dc7" prot="public" static="no" mutable="no">
+        <type><ref refid="d7/df8/namespacepyfolio_1a49f3a0c47eb3421e87ad773e9b97ff2a" kindref="member">Currency</ref></type>
+        <definition>Currency pyfolio::Transaction::currency</definition>
+        <argsstring></argsstring>
+        <name>currency</name>
+        <qualifiedname>pyfolio::Transaction::currency</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/types.h" line="188" column="14" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/types.h" bodystart="188" bodyend="-1"/>
+        <referencedby refid="db/d43/namespacepyfolio_1_1io_1_1sample__data_1a902e9474b71c67f378dfe3f9ce014521" compoundref="d2/db9/data__loader_8h" startline="468" endline="483">pyfolio::io::sample_data::generate_sample_transactions</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d11/structpyfolio_1_1Transaction_1adee32ed06ae858b4d50e48b6471b3a8d" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::Transaction::commission</definition>
+        <argsstring></argsstring>
+        <name>commission</name>
+        <qualifiedname>pyfolio::Transaction::commission</qualifiedname>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/types.h" line="189" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/types.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d11/structpyfolio_1_1Transaction_1abc2ac8f9a1ebfd077b91873d65131e4a" prot="public" static="no" mutable="no">
+        <type><ref refid="d7/df8/namespacepyfolio_1a621f4de5bafda9e6d787a2bfb28e90cf" kindref="member">TransactionSide</ref></type>
+        <definition>TransactionSide pyfolio::Transaction::side</definition>
+        <argsstring></argsstring>
+        <name>side</name>
+        <qualifiedname>pyfolio::Transaction::side</qualifiedname>
+        <initializer>= <ref refid="d7/df8/namespacepyfolio_1a621f4de5bafda9e6d787a2bfb28e90cfa831a28f1e8df07c553fcd59546465d13" kindref="member">TransactionSide::Buy</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/types.h" line="190" column="21" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/types.h" bodystart="190" bodyend="-1"/>
+        <referencedby refid="db/d43/namespacepyfolio_1_1io_1_1sample__data_1a902e9474b71c67f378dfe3f9ce014521" compoundref="d2/db9/data__loader_8h" startline="468" endline="483">pyfolio::io::sample_data::generate_sample_transactions</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>pyfolio::Transaction</label>
+        <link refid="d5/d11/structpyfolio_1_1Transaction"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>currency</edgelabel>
+          <edgelabel>symbol</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="2">
+        <label>std::string</label>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/types.h" line="183" column="1" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/types.h" bodystart="183" bodyend="192"/>
+    <listofallmembers>
+      <member refid="d5/d11/structpyfolio_1_1Transaction_1adee32ed06ae858b4d50e48b6471b3a8d" prot="public" virt="non-virtual"><scope>pyfolio::Transaction</scope><name>commission</name></member>
+      <member refid="d5/d11/structpyfolio_1_1Transaction_1aeb2a027b02e00bd8ed44767fd81d9dc7" prot="public" virt="non-virtual"><scope>pyfolio::Transaction</scope><name>currency</name></member>
+      <member refid="d5/d11/structpyfolio_1_1Transaction_1a7764e932f900f56ca558b181c9bc1cbf" prot="public" virt="non-virtual"><scope>pyfolio::Transaction</scope><name>price</name></member>
+      <member refid="d5/d11/structpyfolio_1_1Transaction_1a6d588dfc84908e293004bab0afca46ff" prot="public" virt="non-virtual"><scope>pyfolio::Transaction</scope><name>shares</name></member>
+      <member refid="d5/d11/structpyfolio_1_1Transaction_1abc2ac8f9a1ebfd077b91873d65131e4a" prot="public" virt="non-virtual"><scope>pyfolio::Transaction</scope><name>side</name></member>
+      <member refid="d5/d11/structpyfolio_1_1Transaction_1a442fd0fce2fd2abb5c0534a39243f3f2" prot="public" virt="non-virtual"><scope>pyfolio::Transaction</scope><name>symbol</name></member>
+      <member refid="d5/d11/structpyfolio_1_1Transaction_1a93ffd5908ac831f42cf3e1196d96a377" prot="public" virt="non-virtual"><scope>pyfolio::Transaction</scope><name>timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,250 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kind="struct" language="C++" prot="public">
+    <compoundname>pyfolio::visualization::PlotConfig</compoundname>
+    <derivedcompoundref refid="d3/d59/structpyfolio_1_1visualization_1_1InteractivePlotConfig" prot="public" virt="non-virtual">pyfolio::visualization::InteractivePlotConfig</derivedcompoundref>
+    <includes refid="d3/df8/plotting_8h" local="no">plotting.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig_1a70ac2fc42d0fc426c0ce00473ca894de" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string pyfolio::visualization::PlotConfig::title</definition>
+        <argsstring></argsstring>
+        <name>title</name>
+        <qualifiedname>pyfolio::visualization::PlotConfig::title</qualifiedname>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" line="23" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" bodystart="23" bodyend="-1"/>
+        <referencedby refid="db/d7c/classpyfolio_1_1visualization_1_1PlotlyEngine_1ab9ceddea46b0adf1cd15fbada715d7c7" compoundref="d2/dd1/plotly__enhanced_8cpp" startline="778" endline="809">pyfolio::visualization::PlotlyEngine::create_3d_surface</referencedby>
+        <referencedby refid="db/d7c/classpyfolio_1_1visualization_1_1PlotlyEngine_1a8eac6556a8862a0eb2cc2463204eec9e" compoundref="d2/dd1/plotly__enhanced_8cpp" startline="811" endline="840">pyfolio::visualization::PlotlyEngine::create_subplots_dashboard</referencedby>
+        <referencedby refid="db/d7c/classpyfolio_1_1visualization_1_1PlotlyEngine_1a12121c2d7a3013e7a3ddce11d1a13976" compoundref="d2/dd1/plotly__enhanced_8cpp" startline="719" endline="745">pyfolio::visualization::PlotlyEngine::create_treemap</referencedby>
+        <referencedby refid="db/d7c/classpyfolio_1_1visualization_1_1PlotlyEngine_1a6f5008f5153cb749751ea01126007de0" compoundref="d2/dd1/plotly__enhanced_8cpp" startline="747" endline="776">pyfolio::visualization::PlotlyEngine::create_waterfall_chart</referencedby>
+        <referencedby refid="d7/d5f/plotly__enhanced__example_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="d7/d5f/plotly__enhanced__example_8cpp" startline="113" endline="340">main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig_1aac6d45d5833db9d5b105f760f0e05a84" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string pyfolio::visualization::PlotConfig::xlabel</definition>
+        <argsstring></argsstring>
+        <name>xlabel</name>
+        <qualifiedname>pyfolio::visualization::PlotConfig::xlabel</qualifiedname>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" line="24" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" bodystart="24" bodyend="-1"/>
+        <referencedby refid="d7/d5f/plotly__enhanced__example_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="d7/d5f/plotly__enhanced__example_8cpp" startline="113" endline="340">main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig_1a42d5d06dbac29ff010c49f24f45b447c" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string pyfolio::visualization::PlotConfig::ylabel</definition>
+        <argsstring></argsstring>
+        <name>ylabel</name>
+        <qualifiedname>pyfolio::visualization::PlotConfig::ylabel</qualifiedname>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" line="25" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" bodystart="25" bodyend="-1"/>
+        <referencedby refid="d7/d5f/plotly__enhanced__example_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="d7/d5f/plotly__enhanced__example_8cpp" startline="113" endline="340">main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig_1a2fce82f644e824bd42057029da3a02ac" prot="public" static="no" mutable="no">
+        <type>std::pair&lt; int, int &gt;</type>
+        <definition>std::pair&lt;int, int&gt; pyfolio::visualization::PlotConfig::figsize</definition>
+        <argsstring></argsstring>
+        <name>figsize</name>
+        <qualifiedname>pyfolio::visualization::PlotConfig::figsize</qualifiedname>
+        <initializer>= {12, 8}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" line="26" column="15" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig_1a537815dac556348f94c1522e113095ba" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool pyfolio::visualization::PlotConfig::grid</definition>
+        <argsstring></argsstring>
+        <name>grid</name>
+        <qualifiedname>pyfolio::visualization::PlotConfig::grid</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" line="27" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig_1a8666fc50641d9c5d727b6d44bf33fba8" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool pyfolio::visualization::PlotConfig::legend</definition>
+        <argsstring></argsstring>
+        <name>legend</name>
+        <qualifiedname>pyfolio::visualization::PlotConfig::legend</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" line="28" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig_1a2fb8dc31ea6abfd04d65dda17311d59d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool pyfolio::visualization::PlotConfig::save_plot</definition>
+        <argsstring></argsstring>
+        <name>save_plot</name>
+        <qualifiedname>pyfolio::visualization::PlotConfig::save_plot</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" line="29" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig_1a129faf65f83eccdf48eaae22cb82f413" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string pyfolio::visualization::PlotConfig::save_path</definition>
+        <argsstring></argsstring>
+        <name>save_path</name>
+        <qualifiedname>pyfolio::visualization::PlotConfig::save_path</qualifiedname>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" line="30" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" bodystart="30" bodyend="-1"/>
+        <referencedby refid="de/d4b/namespacepyfolio_1_1visualization_1_1plots_1a981cbcf53f72481b9b18320b219cc234" compoundref="d3/df8/plotting_8h" startline="352" endline="382">pyfolio::visualization::plots::plot_cumulative_returns</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig_1ab98d29cc7993028b72c9c0cd03a8bf9b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int pyfolio::visualization::PlotConfig::dpi</definition>
+        <argsstring></argsstring>
+        <name>dpi</name>
+        <qualifiedname>pyfolio::visualization::PlotConfig::dpi</qualifiedname>
+        <initializer>= 150</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" line="31" column="9" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig_1a632ce378e5a2070c34e01f1e10d02470" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; pyfolio::visualization::PlotConfig::colors</definition>
+        <argsstring></argsstring>
+        <name>colors</name>
+        <qualifiedname>pyfolio::visualization::PlotConfig::colors</qualifiedname>
+        <initializer>= {&quot;#1f77b4&quot;, &quot;#ff7f0e&quot;, &quot;#2ca02c&quot;, &quot;#d62728&quot;, &quot;#9467bd&quot;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" line="32" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig_1ab3676feee9db68cef97d34f9769bcec3" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string pyfolio::visualization::PlotConfig::format</definition>
+        <argsstring></argsstring>
+        <name>format</name>
+        <qualifiedname>pyfolio::visualization::PlotConfig::format</qualifiedname>
+        <initializer>= &quot;png&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" line="33" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Configuration for plot appearance and output. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>pyfolio::visualization::InteractivePlotConfig</label>
+        <link refid="d3/d59/structpyfolio_1_1visualization_1_1InteractivePlotConfig"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>pyfolio::visualization::PlotConfig</label>
+        <link refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>pyfolio::visualization::PlotConfig</label>
+        <link refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>format</edgelabel>
+          <edgelabel>save_path</edgelabel>
+          <edgelabel>title</edgelabel>
+          <edgelabel>xlabel</edgelabel>
+          <edgelabel>ylabel</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>figsize</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>colors</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="4">
+        <label>std::pair&lt; int, int &gt;</label>
+      </node>
+      <node id="2">
+        <label>std::string</label>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>std::vector&lt; std::string &gt;</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" line="22" column="1" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" bodystart="22" bodyend="34"/>
+    <listofallmembers>
+      <member refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig_1a632ce378e5a2070c34e01f1e10d02470" prot="public" virt="non-virtual"><scope>pyfolio::visualization::PlotConfig</scope><name>colors</name></member>
+      <member refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig_1ab98d29cc7993028b72c9c0cd03a8bf9b" prot="public" virt="non-virtual"><scope>pyfolio::visualization::PlotConfig</scope><name>dpi</name></member>
+      <member refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig_1a2fce82f644e824bd42057029da3a02ac" prot="public" virt="non-virtual"><scope>pyfolio::visualization::PlotConfig</scope><name>figsize</name></member>
+      <member refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig_1ab3676feee9db68cef97d34f9769bcec3" prot="public" virt="non-virtual"><scope>pyfolio::visualization::PlotConfig</scope><name>format</name></member>
+      <member refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig_1a537815dac556348f94c1522e113095ba" prot="public" virt="non-virtual"><scope>pyfolio::visualization::PlotConfig</scope><name>grid</name></member>
+      <member refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig_1a8666fc50641d9c5d727b6d44bf33fba8" prot="public" virt="non-virtual"><scope>pyfolio::visualization::PlotConfig</scope><name>legend</name></member>
+      <member refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig_1a129faf65f83eccdf48eaae22cb82f413" prot="public" virt="non-virtual"><scope>pyfolio::visualization::PlotConfig</scope><name>save_path</name></member>
+      <member refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig_1a2fb8dc31ea6abfd04d65dda17311d59d" prot="public" virt="non-virtual"><scope>pyfolio::visualization::PlotConfig</scope><name>save_plot</name></member>
+      <member refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig_1a70ac2fc42d0fc426c0ce00473ca894de" prot="public" virt="non-virtual"><scope>pyfolio::visualization::PlotConfig</scope><name>title</name></member>
+      <member refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig_1aac6d45d5833db9d5b105f760f0e05a84" prot="public" virt="non-virtual"><scope>pyfolio::visualization::PlotConfig</scope><name>xlabel</name></member>
+      <member refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig_1a42d5d06dbac29ff010c49f24f45b447c" prot="public" virt="non-virtual"><scope>pyfolio::visualization::PlotConfig</scope><name>ylabel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

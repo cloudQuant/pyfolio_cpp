@@ -1,0 +1,270 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="d8/dbf/structpyfolio_1_1risk_1_1VaRResult" kind="struct" language="C++" prot="public">
+    <compoundname>pyfolio::risk::VaRResult</compoundname>
+    <includes refid="df/d46/var_8h" local="no">var.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1afbe9f3ac7570139975bfd46c3e08dd1e" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::risk::VaRResult::var_estimate</definition>
+        <argsstring></argsstring>
+        <name>var_estimate</name>
+        <qualifiedname>pyfolio::risk::VaRResult::var_estimate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/var.h" line="31" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/var.h" bodystart="31" bodyend="-1"/>
+        <referencedby refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1ac3157a75ae2536e6e77a7561917be03e" compoundref="df/d46/var_8h" startline="252" endline="302">pyfolio::risk::VaRCalculator::calculate_cornish_fisher_var</referencedby>
+        <referencedby refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1a5355f08aadc5dc96a9bc0443d70eb93b" compoundref="df/d46/var_8h" startline="144" endline="199">pyfolio::risk::VaRCalculator::calculate_historical_var</referencedby>
+        <referencedby refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1a297d2eb32efafc48a09197a2cd0dd2ab" compoundref="df/d46/var_8h" startline="307" endline="363">pyfolio::risk::VaRCalculator::calculate_monte_carlo_var</referencedby>
+        <referencedby refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1a1c475db5eee0c7ae9a7472688f7bb8fc" compoundref="df/d46/var_8h" startline="204" endline="247">pyfolio::risk::VaRCalculator::calculate_parametric_var</referencedby>
+        <referencedby refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1ac6e66b7e8addad63da3b5494abcb94f9" compoundref="df/d46/var_8h" startline="47" endline="55">scale_to_horizon</referencedby>
+        <referencedby refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a35e37b3d5f5d124d9fa29a3e10dcbae3" compoundref="df/d46/var_8h" startline="60" endline="60">var_percentage</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a9dc508a2b39cf9b17ce0d5ab261c20fc" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::risk::VaRResult::cvar_estimate</definition>
+        <argsstring></argsstring>
+        <name>cvar_estimate</name>
+        <qualifiedname>pyfolio::risk::VaRResult::cvar_estimate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/var.h" line="32" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/var.h" bodystart="32" bodyend="-1"/>
+        <referencedby refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1ac3157a75ae2536e6e77a7561917be03e" compoundref="df/d46/var_8h" startline="252" endline="302">pyfolio::risk::VaRCalculator::calculate_cornish_fisher_var</referencedby>
+        <referencedby refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1a5355f08aadc5dc96a9bc0443d70eb93b" compoundref="df/d46/var_8h" startline="144" endline="199">pyfolio::risk::VaRCalculator::calculate_historical_var</referencedby>
+        <referencedby refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1a297d2eb32efafc48a09197a2cd0dd2ab" compoundref="df/d46/var_8h" startline="307" endline="363">pyfolio::risk::VaRCalculator::calculate_monte_carlo_var</referencedby>
+        <referencedby refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1a1c475db5eee0c7ae9a7472688f7bb8fc" compoundref="df/d46/var_8h" startline="204" endline="247">pyfolio::risk::VaRCalculator::calculate_parametric_var</referencedby>
+        <referencedby refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a6fd146f36b6e34077eb19ede018e94c2" compoundref="df/d46/var_8h" startline="65" endline="65">cvar_percentage</referencedby>
+        <referencedby refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1ac6e66b7e8addad63da3b5494abcb94f9" compoundref="df/d46/var_8h" startline="47" endline="55">scale_to_horizon</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1af66b52b45bc8ce4cc9323f813b311eeb" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::risk::VaRResult::confidence_level</definition>
+        <argsstring></argsstring>
+        <name>confidence_level</name>
+        <qualifiedname>pyfolio::risk::VaRResult::confidence_level</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/var.h" line="33" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/var.h" bodystart="33" bodyend="-1"/>
+        <referencedby refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1ac3157a75ae2536e6e77a7561917be03e" compoundref="df/d46/var_8h" startline="252" endline="302">pyfolio::risk::VaRCalculator::calculate_cornish_fisher_var</referencedby>
+        <referencedby refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1a5355f08aadc5dc96a9bc0443d70eb93b" compoundref="df/d46/var_8h" startline="144" endline="199">pyfolio::risk::VaRCalculator::calculate_historical_var</referencedby>
+        <referencedby refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1a297d2eb32efafc48a09197a2cd0dd2ab" compoundref="df/d46/var_8h" startline="307" endline="363">pyfolio::risk::VaRCalculator::calculate_monte_carlo_var</referencedby>
+        <referencedby refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1a1c475db5eee0c7ae9a7472688f7bb8fc" compoundref="df/d46/var_8h" startline="204" endline="247">pyfolio::risk::VaRCalculator::calculate_parametric_var</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a174524439ead5e3ad13c376339b54327" prot="public" static="no" mutable="no">
+        <type><ref refid="d2/da5/namespacepyfolio_1_1risk_1a15c267eaee47bf99d3a714b595a27206" kindref="member">VaRMethod</ref></type>
+        <definition>VaRMethod pyfolio::risk::VaRResult::method</definition>
+        <argsstring></argsstring>
+        <name>method</name>
+        <qualifiedname>pyfolio::risk::VaRResult::method</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/var.h" line="34" column="15" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/var.h" bodystart="34" bodyend="-1"/>
+        <referencedby refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1ac3157a75ae2536e6e77a7561917be03e" compoundref="df/d46/var_8h" startline="252" endline="302">pyfolio::risk::VaRCalculator::calculate_cornish_fisher_var</referencedby>
+        <referencedby refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1a5355f08aadc5dc96a9bc0443d70eb93b" compoundref="df/d46/var_8h" startline="144" endline="199">pyfolio::risk::VaRCalculator::calculate_historical_var</referencedby>
+        <referencedby refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1a297d2eb32efafc48a09197a2cd0dd2ab" compoundref="df/d46/var_8h" startline="307" endline="363">pyfolio::risk::VaRCalculator::calculate_monte_carlo_var</referencedby>
+        <referencedby refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1a1c475db5eee0c7ae9a7472688f7bb8fc" compoundref="df/d46/var_8h" startline="204" endline="247">pyfolio::risk::VaRCalculator::calculate_parametric_var</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1ab66b4f5694c0e6e5677663263c4b389c" prot="public" static="no" mutable="no">
+        <type><ref refid="d2/da5/namespacepyfolio_1_1risk_1ae2f599e79ba540086280c5e7e34f29d6" kindref="member">VaRHorizon</ref></type>
+        <definition>VaRHorizon pyfolio::risk::VaRResult::horizon</definition>
+        <argsstring></argsstring>
+        <name>horizon</name>
+        <qualifiedname>pyfolio::risk::VaRResult::horizon</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/var.h" line="35" column="16" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/var.h" bodystart="35" bodyend="-1"/>
+        <referencedby refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1ac3157a75ae2536e6e77a7561917be03e" compoundref="df/d46/var_8h" startline="252" endline="302">pyfolio::risk::VaRCalculator::calculate_cornish_fisher_var</referencedby>
+        <referencedby refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1a5355f08aadc5dc96a9bc0443d70eb93b" compoundref="df/d46/var_8h" startline="144" endline="199">pyfolio::risk::VaRCalculator::calculate_historical_var</referencedby>
+        <referencedby refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1a297d2eb32efafc48a09197a2cd0dd2ab" compoundref="df/d46/var_8h" startline="307" endline="363">pyfolio::risk::VaRCalculator::calculate_monte_carlo_var</referencedby>
+        <referencedby refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1a1c475db5eee0c7ae9a7472688f7bb8fc" compoundref="df/d46/var_8h" startline="204" endline="247">pyfolio::risk::VaRCalculator::calculate_parametric_var</referencedby>
+        <referencedby refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1ac6e66b7e8addad63da3b5494abcb94f9" compoundref="df/d46/var_8h" startline="47" endline="55">scale_to_horizon</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a2e63028e44ae11de8cfa9ceaab5e48b6" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t pyfolio::risk::VaRResult::sample_size</definition>
+        <argsstring></argsstring>
+        <name>sample_size</name>
+        <qualifiedname>pyfolio::risk::VaRResult::sample_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/var.h" line="36" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/var.h" bodystart="36" bodyend="-1"/>
+        <referencedby refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1ac3157a75ae2536e6e77a7561917be03e" compoundref="df/d46/var_8h" startline="252" endline="302">pyfolio::risk::VaRCalculator::calculate_cornish_fisher_var</referencedby>
+        <referencedby refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1a5355f08aadc5dc96a9bc0443d70eb93b" compoundref="df/d46/var_8h" startline="144" endline="199">pyfolio::risk::VaRCalculator::calculate_historical_var</referencedby>
+        <referencedby refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1a297d2eb32efafc48a09197a2cd0dd2ab" compoundref="df/d46/var_8h" startline="307" endline="363">pyfolio::risk::VaRCalculator::calculate_monte_carlo_var</referencedby>
+        <referencedby refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1a1c475db5eee0c7ae9a7472688f7bb8fc" compoundref="df/d46/var_8h" startline="204" endline="247">pyfolio::risk::VaRCalculator::calculate_parametric_var</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a3ddf7fbf5487c82832934ff163d44b41" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::risk::VaRResult::portfolio_volatility</definition>
+        <argsstring></argsstring>
+        <name>portfolio_volatility</name>
+        <qualifiedname>pyfolio::risk::VaRResult::portfolio_volatility</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/var.h" line="39" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/var.h" bodystart="39" bodyend="-1"/>
+        <referencedby refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1ac3157a75ae2536e6e77a7561917be03e" compoundref="df/d46/var_8h" startline="252" endline="302">pyfolio::risk::VaRCalculator::calculate_cornish_fisher_var</referencedby>
+        <referencedby refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1a5355f08aadc5dc96a9bc0443d70eb93b" compoundref="df/d46/var_8h" startline="144" endline="199">pyfolio::risk::VaRCalculator::calculate_historical_var</referencedby>
+        <referencedby refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1a297d2eb32efafc48a09197a2cd0dd2ab" compoundref="df/d46/var_8h" startline="307" endline="363">pyfolio::risk::VaRCalculator::calculate_monte_carlo_var</referencedby>
+        <referencedby refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1a1c475db5eee0c7ae9a7472688f7bb8fc" compoundref="df/d46/var_8h" startline="204" endline="247">pyfolio::risk::VaRCalculator::calculate_parametric_var</referencedby>
+        <referencedby refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1ac6e66b7e8addad63da3b5494abcb94f9" compoundref="df/d46/var_8h" startline="47" endline="55">scale_to_horizon</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a36fb14e1f2899fdcf0c69ac0642771cd" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::risk::VaRResult::skewness</definition>
+        <argsstring></argsstring>
+        <name>skewness</name>
+        <qualifiedname>pyfolio::risk::VaRResult::skewness</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/var.h" line="40" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/var.h" bodystart="40" bodyend="-1"/>
+        <referencedby refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1ac3157a75ae2536e6e77a7561917be03e" compoundref="df/d46/var_8h" startline="252" endline="302">pyfolio::risk::VaRCalculator::calculate_cornish_fisher_var</referencedby>
+        <referencedby refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1a5355f08aadc5dc96a9bc0443d70eb93b" compoundref="df/d46/var_8h" startline="144" endline="199">pyfolio::risk::VaRCalculator::calculate_historical_var</referencedby>
+        <referencedby refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1a297d2eb32efafc48a09197a2cd0dd2ab" compoundref="df/d46/var_8h" startline="307" endline="363">pyfolio::risk::VaRCalculator::calculate_monte_carlo_var</referencedby>
+        <referencedby refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1a1c475db5eee0c7ae9a7472688f7bb8fc" compoundref="df/d46/var_8h" startline="204" endline="247">pyfolio::risk::VaRCalculator::calculate_parametric_var</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1acb00eb69ee4161449485712e1203f781" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::risk::VaRResult::kurtosis</definition>
+        <argsstring></argsstring>
+        <name>kurtosis</name>
+        <qualifiedname>pyfolio::risk::VaRResult::kurtosis</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/var.h" line="41" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/var.h" bodystart="41" bodyend="-1"/>
+        <referencedby refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1ac3157a75ae2536e6e77a7561917be03e" compoundref="df/d46/var_8h" startline="252" endline="302">pyfolio::risk::VaRCalculator::calculate_cornish_fisher_var</referencedby>
+        <referencedby refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1a5355f08aadc5dc96a9bc0443d70eb93b" compoundref="df/d46/var_8h" startline="144" endline="199">pyfolio::risk::VaRCalculator::calculate_historical_var</referencedby>
+        <referencedby refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1a297d2eb32efafc48a09197a2cd0dd2ab" compoundref="df/d46/var_8h" startline="307" endline="363">pyfolio::risk::VaRCalculator::calculate_monte_carlo_var</referencedby>
+        <referencedby refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1a1c475db5eee0c7ae9a7472688f7bb8fc" compoundref="df/d46/var_8h" startline="204" endline="247">pyfolio::risk::VaRCalculator::calculate_parametric_var</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1adf5722af9723b11f5f8864a17d837e2d" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::risk::VaRResult::max_drawdown</definition>
+        <argsstring></argsstring>
+        <name>max_drawdown</name>
+        <qualifiedname>pyfolio::risk::VaRResult::max_drawdown</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/var.h" line="42" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/var.h" bodystart="42" bodyend="-1"/>
+        <referencedby refid="da/da9/classpyfolio_1_1risk_1_1VaRCalculator_1a5355f08aadc5dc96a9bc0443d70eb93b" compoundref="df/d46/var_8h" startline="144" endline="199">pyfolio::risk::VaRCalculator::calculate_historical_var</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1ac6e66b7e8addad63da3b5494abcb94f9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult" kindref="compound">VaRResult</ref></type>
+        <definition>VaRResult pyfolio::risk::VaRResult::scale_to_horizon</definition>
+        <argsstring>(VaRHorizon new_horizon) const</argsstring>
+        <name>scale_to_horizon</name>
+        <qualifiedname>pyfolio::risk::VaRResult::scale_to_horizon</qualifiedname>
+        <param>
+          <type><ref refid="d2/da5/namespacepyfolio_1_1risk_1ae2f599e79ba540086280c5e7e34f29d6" kindref="member">VaRHorizon</ref></type>
+          <declname>new_horizon</declname>
+        </param>
+        <briefdescription>
+<para>Scale VaR to different time horizon. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/var.h" line="47" column="15" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/var.h" bodystart="47" bodyend="55"/>
+        <references refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a9dc508a2b39cf9b17ce0d5ab261c20fc" compoundref="df/d46/var_8h" startline="32">cvar_estimate</references>
+        <references refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1ab66b4f5694c0e6e5677663263c4b389c" compoundref="df/d46/var_8h" startline="35">horizon</references>
+        <references refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a3ddf7fbf5487c82832934ff163d44b41" compoundref="df/d46/var_8h" startline="39">portfolio_volatility</references>
+        <references refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1afbe9f3ac7570139975bfd46c3e08dd1e" compoundref="df/d46/var_8h" startline="31">var_estimate</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a35e37b3d5f5d124d9fa29a3e10dcbae3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double pyfolio::risk::VaRResult::var_percentage</definition>
+        <argsstring>() const</argsstring>
+        <name>var_percentage</name>
+        <qualifiedname>pyfolio::risk::VaRResult::var_percentage</qualifiedname>
+        <briefdescription>
+<para>Get VaR as percentage of portfolio value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/var.h" line="60" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/var.h" bodystart="60" bodyend="60"/>
+        <references refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1afbe9f3ac7570139975bfd46c3e08dd1e" compoundref="df/d46/var_8h" startline="31">var_estimate</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a6fd146f36b6e34077eb19ede018e94c2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double pyfolio::risk::VaRResult::cvar_percentage</definition>
+        <argsstring>() const</argsstring>
+        <name>cvar_percentage</name>
+        <qualifiedname>pyfolio::risk::VaRResult::cvar_percentage</qualifiedname>
+        <briefdescription>
+<para>Get CVaR as percentage of portfolio value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/var.h" line="65" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/var.h" bodystart="65" bodyend="65"/>
+        <references refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a9dc508a2b39cf9b17ce0d5ab261c20fc" compoundref="df/d46/var_8h" startline="32">cvar_estimate</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Comprehensive VaR results. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/var.h" line="30" column="1" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/var.h" bodystart="30" bodyend="66"/>
+    <listofallmembers>
+      <member refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1af66b52b45bc8ce4cc9323f813b311eeb" prot="public" virt="non-virtual"><scope>pyfolio::risk::VaRResult</scope><name>confidence_level</name></member>
+      <member refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a9dc508a2b39cf9b17ce0d5ab261c20fc" prot="public" virt="non-virtual"><scope>pyfolio::risk::VaRResult</scope><name>cvar_estimate</name></member>
+      <member refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a6fd146f36b6e34077eb19ede018e94c2" prot="public" virt="non-virtual"><scope>pyfolio::risk::VaRResult</scope><name>cvar_percentage</name></member>
+      <member refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1ab66b4f5694c0e6e5677663263c4b389c" prot="public" virt="non-virtual"><scope>pyfolio::risk::VaRResult</scope><name>horizon</name></member>
+      <member refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1acb00eb69ee4161449485712e1203f781" prot="public" virt="non-virtual"><scope>pyfolio::risk::VaRResult</scope><name>kurtosis</name></member>
+      <member refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1adf5722af9723b11f5f8864a17d837e2d" prot="public" virt="non-virtual"><scope>pyfolio::risk::VaRResult</scope><name>max_drawdown</name></member>
+      <member refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a174524439ead5e3ad13c376339b54327" prot="public" virt="non-virtual"><scope>pyfolio::risk::VaRResult</scope><name>method</name></member>
+      <member refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a3ddf7fbf5487c82832934ff163d44b41" prot="public" virt="non-virtual"><scope>pyfolio::risk::VaRResult</scope><name>portfolio_volatility</name></member>
+      <member refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a2e63028e44ae11de8cfa9ceaab5e48b6" prot="public" virt="non-virtual"><scope>pyfolio::risk::VaRResult</scope><name>sample_size</name></member>
+      <member refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1ac6e66b7e8addad63da3b5494abcb94f9" prot="public" virt="non-virtual"><scope>pyfolio::risk::VaRResult</scope><name>scale_to_horizon</name></member>
+      <member refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a36fb14e1f2899fdcf0c69ac0642771cd" prot="public" virt="non-virtual"><scope>pyfolio::risk::VaRResult</scope><name>skewness</name></member>
+      <member refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1afbe9f3ac7570139975bfd46c3e08dd1e" prot="public" virt="non-virtual"><scope>pyfolio::risk::VaRResult</scope><name>var_estimate</name></member>
+      <member refid="d8/dbf/structpyfolio_1_1risk_1_1VaRResult_1a35e37b3d5f5d124d9fa29a3e10dcbae3" prot="public" virt="non-virtual"><scope>pyfolio::risk::VaRResult</scope><name>var_percentage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

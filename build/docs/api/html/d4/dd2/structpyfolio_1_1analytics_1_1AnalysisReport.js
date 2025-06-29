@@ -1,0 +1,28 @@
+var structpyfolio_1_1analytics_1_1AnalysisReport =
+[
+    [ "alpha", "d4/dd2/structpyfolio_1_1analytics_1_1AnalysisReport.html#a589288c7e12f07f9f3867fa281cd9c20", null ],
+    [ "analysis_timestamp", "d4/dd2/structpyfolio_1_1analytics_1_1AnalysisReport.html#a38e681a3c837376a89f3a7ffa37760f6", null ],
+    [ "annual_return", "d4/dd2/structpyfolio_1_1analytics_1_1AnalysisReport.html#a057108c0f1de79cfc11d1fce00a10bbc", null ],
+    [ "annual_volatility", "d4/dd2/structpyfolio_1_1analytics_1_1AnalysisReport.html#ace446e8c5677012b2678dca187af9063", null ],
+    [ "beta", "d4/dd2/structpyfolio_1_1analytics_1_1AnalysisReport.html#a2fa5e7ed544be1661d558ad1edcd4da5", null ],
+    [ "cache_stats", "d4/dd2/structpyfolio_1_1analytics_1_1AnalysisReport.html#a2048a961d567d59bb0bb091f88036aa1", null ],
+    [ "calmar_ratio", "d4/dd2/structpyfolio_1_1analytics_1_1AnalysisReport.html#a1793e83fd50dd8746042ea5ba00d5080", null ],
+    [ "computation_time", "d4/dd2/structpyfolio_1_1analytics_1_1AnalysisReport.html#aea6e909bb3b3a4eec443c64b9df0efe3", null ],
+    [ "cvar_95", "d4/dd2/structpyfolio_1_1analytics_1_1AnalysisReport.html#a8e67852f42560dd08bca84fb6dbf5c64", null ],
+    [ "downside_deviation", "d4/dd2/structpyfolio_1_1analytics_1_1AnalysisReport.html#a60b8f792068fea150e521f59ae5c2ef4", null ],
+    [ "information_ratio", "d4/dd2/structpyfolio_1_1analytics_1_1AnalysisReport.html#a51e8da4f046598e3a1782461458592fb", null ],
+    [ "kurtosis", "d4/dd2/structpyfolio_1_1analytics_1_1AnalysisReport.html#af034819dd16f0dfa7f6f893a489ae4b6", null ],
+    [ "max_drawdown", "d4/dd2/structpyfolio_1_1analytics_1_1AnalysisReport.html#ac4146ae68810aea2e6cf56ee444065bd", null ],
+    [ "passed_risk_checks", "d4/dd2/structpyfolio_1_1analytics_1_1AnalysisReport.html#a7c0bb233dc9c257f716d991895fe8b1c", null ],
+    [ "recommendations", "d4/dd2/structpyfolio_1_1analytics_1_1AnalysisReport.html#a143d3548c2f364c84274371e2e3c59e9", null ],
+    [ "rolling_returns", "d4/dd2/structpyfolio_1_1analytics_1_1AnalysisReport.html#acc280d04bb38e569904ef187d96e0012", null ],
+    [ "rolling_sharpe", "d4/dd2/structpyfolio_1_1analytics_1_1AnalysisReport.html#a7936990f2fd386f8eb250954b41728fb", null ],
+    [ "rolling_volatility", "d4/dd2/structpyfolio_1_1analytics_1_1AnalysisReport.html#af76c3eff77cf268a4eb5ff59a37fdf2b", null ],
+    [ "sharpe_ratio", "d4/dd2/structpyfolio_1_1analytics_1_1AnalysisReport.html#a2a5d413c1c804eb72b4be7d22c520cbd", null ],
+    [ "skewness", "d4/dd2/structpyfolio_1_1analytics_1_1AnalysisReport.html#a1b30866872455b4c679ec6a363766a60", null ],
+    [ "sortino_ratio", "d4/dd2/structpyfolio_1_1analytics_1_1AnalysisReport.html#a4a5a77ef63033f3419685398489e8b5a", null ],
+    [ "total_return", "d4/dd2/structpyfolio_1_1analytics_1_1AnalysisReport.html#a015c2dffe6e3ed1db704f3115ca1fcd3", null ],
+    [ "tracking_error", "d4/dd2/structpyfolio_1_1analytics_1_1AnalysisReport.html#ac408b3c65b0e589794b742200d5532cb", null ],
+    [ "var_95", "d4/dd2/structpyfolio_1_1analytics_1_1AnalysisReport.html#ad81e96558450ef6a4f533552adda9481", null ],
+    [ "warnings", "d4/dd2/structpyfolio_1_1analytics_1_1AnalysisReport.html#a4db3e468caa293558e70d3e4cd4e5692", null ]
+];

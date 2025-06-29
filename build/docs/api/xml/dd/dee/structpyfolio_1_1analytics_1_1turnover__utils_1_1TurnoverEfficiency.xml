@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dd/dee/structpyfolio_1_1analytics_1_1turnover__utils_1_1TurnoverEfficiency" kind="struct" language="C++" prot="public">
+    <compoundname>pyfolio::analytics::turnover_utils::TurnoverEfficiency</compoundname>
+    <includes refid="d2/d40/turnover__enhanced_8h" local="no">turnover_enhanced.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="dd/dee/structpyfolio_1_1analytics_1_1turnover__utils_1_1TurnoverEfficiency_1a594f4b2ac5b01cbefdda91239d9b43e2" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::turnover_utils::TurnoverEfficiency::information_ratio_per_turnover</definition>
+        <argsstring></argsstring>
+        <name>information_ratio_per_turnover</name>
+        <qualifiedname>pyfolio::analytics::turnover_utils::TurnoverEfficiency::information_ratio_per_turnover</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h" line="193" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/dee/structpyfolio_1_1analytics_1_1turnover__utils_1_1TurnoverEfficiency_1a8d79891f9d98f24889af9a690f2ce81a" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::turnover_utils::TurnoverEfficiency::sharpe_ratio_per_turnover</definition>
+        <argsstring></argsstring>
+        <name>sharpe_ratio_per_turnover</name>
+        <qualifiedname>pyfolio::analytics::turnover_utils::TurnoverEfficiency::sharpe_ratio_per_turnover</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h" line="194" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/dee/structpyfolio_1_1analytics_1_1turnover__utils_1_1TurnoverEfficiency_1a56a35bcf54a82faa76d1afb7422031f3" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::turnover_utils::TurnoverEfficiency::return_per_turnover</definition>
+        <argsstring></argsstring>
+        <name>return_per_turnover</name>
+        <qualifiedname>pyfolio::analytics::turnover_utils::TurnoverEfficiency::return_per_turnover</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h" line="195" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/dee/structpyfolio_1_1analytics_1_1turnover__utils_1_1TurnoverEfficiency_1a4bb70c2ae8d273a3d6272addcae6e8aa" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::turnover_utils::TurnoverEfficiency::alpha_per_turnover</definition>
+        <argsstring></argsstring>
+        <name>alpha_per_turnover</name>
+        <qualifiedname>pyfolio::analytics::turnover_utils::TurnoverEfficiency::alpha_per_turnover</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h" line="196" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Calculate turnover efficiency metrics </para>
+    </detaileddescription>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h" line="192" column="1" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h" bodystart="192" bodyend="197"/>
+    <listofallmembers>
+      <member refid="dd/dee/structpyfolio_1_1analytics_1_1turnover__utils_1_1TurnoverEfficiency_1a4bb70c2ae8d273a3d6272addcae6e8aa" prot="public" virt="non-virtual"><scope>pyfolio::analytics::turnover_utils::TurnoverEfficiency</scope><name>alpha_per_turnover</name></member>
+      <member refid="dd/dee/structpyfolio_1_1analytics_1_1turnover__utils_1_1TurnoverEfficiency_1a594f4b2ac5b01cbefdda91239d9b43e2" prot="public" virt="non-virtual"><scope>pyfolio::analytics::turnover_utils::TurnoverEfficiency</scope><name>information_ratio_per_turnover</name></member>
+      <member refid="dd/dee/structpyfolio_1_1analytics_1_1turnover__utils_1_1TurnoverEfficiency_1a56a35bcf54a82faa76d1afb7422031f3" prot="public" virt="non-virtual"><scope>pyfolio::analytics::turnover_utils::TurnoverEfficiency</scope><name>return_per_turnover</name></member>
+      <member refid="dd/dee/structpyfolio_1_1analytics_1_1turnover__utils_1_1TurnoverEfficiency_1a8d79891f9d98f24889af9a690f2ce81a" prot="public" virt="non-virtual"><scope>pyfolio::analytics::turnover_utils::TurnoverEfficiency</scope><name>sharpe_ratio_per_turnover</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

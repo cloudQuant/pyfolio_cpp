@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="de/d4b/namespacepyfolio_1_1visualization_1_1plots" kind="namespace" language="C++">
+    <compoundname>pyfolio::visualization::plots</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="de/d4b/namespacepyfolio_1_1visualization_1_1plots_1a981cbcf53f72481b9b18320b219cc234" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; std::string &gt;</type>
+        <definition>Result&lt; std::string &gt; pyfolio::visualization::plots::plot_cumulative_returns</definition>
+        <argsstring>(const TimeSeries&lt; Return &gt; &amp;returns, const std::optional&lt; TimeSeries&lt; Return &gt; &gt; &amp;benchmark=std::nullopt, const PlotConfig &amp;config=PlotConfig{})</argsstring>
+        <name>plot_cumulative_returns</name>
+        <qualifiedname>pyfolio::visualization::plots::plot_cumulative_returns</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <param>
+          <type>const std::optional&lt; <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &gt; &amp;</type>
+          <declname>benchmark</declname>
+          <defval>std::nullopt</defval>
+        </param>
+        <param>
+          <type>const <ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval><ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref>{}</defval>
+        </param>
+        <briefdescription>
+<para>Plot cumulative returns. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" line="121" column="8" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" bodystart="352" bodyend="382" declfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" declline="121" declcolumn="8"/>
+        <references refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig_1a129faf65f83eccdf48eaae22cb82f413" compoundref="d3/df8/plotting_8h" startline="30">pyfolio::visualization::PlotConfig::save_path</references>
+      </memberdef>
+      <memberdef kind="function" id="de/d4b/namespacepyfolio_1_1visualization_1_1plots_1ab86160c874bf4c7f967d0559904640f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; std::string &gt;</type>
+        <definition>Result&lt; std::string &gt; pyfolio::visualization::plots::plot_drawdown</definition>
+        <argsstring>(const TimeSeries&lt; Return &gt; &amp;returns, const PlotConfig &amp;config=PlotConfig{})</argsstring>
+        <name>plot_drawdown</name>
+        <qualifiedname>pyfolio::visualization::plots::plot_drawdown</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval><ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref>{}</defval>
+        </param>
+        <briefdescription>
+<para>Plot drawdown chart. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" line="128" column="8" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" bodystart="384" bodyend="419" declfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" declline="128" declcolumn="8"/>
+        <references refid="df/da3/namespacepyfolio_1_1visualization_1_1utils_1aafd4e895a7ae4f6f02efa417bfaf70a7" compoundref="d3/df8/plotting_8h" startline="223" endline="234">pyfolio::visualization::utils::calculate_cumulative_returns</references>
+        <references refid="df/da3/namespacepyfolio_1_1visualization_1_1utils_1addf5f76ba7cac9175e083d48d7bce498" compoundref="d3/df8/plotting_8h" startline="213" endline="221">pyfolio::visualization::utils::timeseries_to_plotdata</references>
+      </memberdef>
+      <memberdef kind="function" id="de/d4b/namespacepyfolio_1_1visualization_1_1plots_1a27b792240fa777dbbf59c015d41da840" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; std::string &gt;</type>
+        <definition>Result&lt; std::string &gt; pyfolio::visualization::plots::plot_rolling_volatility</definition>
+        <argsstring>(const TimeSeries&lt; Return &gt; &amp;returns, size_t window=60, const PlotConfig &amp;config=PlotConfig{})</argsstring>
+        <name>plot_rolling_volatility</name>
+        <qualifiedname>pyfolio::visualization::plots::plot_rolling_volatility</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>window</declname>
+          <defval>60</defval>
+        </param>
+        <param>
+          <type>const <ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval><ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref>{}</defval>
+        </param>
+        <briefdescription>
+<para>Plot rolling volatility. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" line="133" column="8" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" bodystart="583" bodyend="592" declfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" declline="133" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d4b/namespacepyfolio_1_1visualization_1_1plots_1ac8a279b98991ed3ea1b7ac2851f24420" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; std::string &gt;</type>
+        <definition>Result&lt; std::string &gt; pyfolio::visualization::plots::plot_rolling_sharpe</definition>
+        <argsstring>(const TimeSeries&lt; Return &gt; &amp;returns, size_t window=60, double risk_free_rate=0.0, const PlotConfig &amp;config=PlotConfig{})</argsstring>
+        <name>plot_rolling_sharpe</name>
+        <qualifiedname>pyfolio::visualization::plots::plot_rolling_sharpe</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>window</declname>
+          <defval>60</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>risk_free_rate</declname>
+          <defval>0.0</defval>
+        </param>
+        <param>
+          <type>const <ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval><ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref>{}</defval>
+        </param>
+        <briefdescription>
+<para>Plot rolling Sharpe ratio. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" line="139" column="8" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" bodystart="572" bodyend="581" declfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" declline="139" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d4b/namespacepyfolio_1_1visualization_1_1plots_1aade9a6917e3af43e0fc1696ab75a39cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; std::string &gt;</type>
+        <definition>Result&lt; std::string &gt; pyfolio::visualization::plots::plot_returns_distribution</definition>
+        <argsstring>(const TimeSeries&lt; Return &gt; &amp;returns, int bins=50, const PlotConfig &amp;config=PlotConfig{})</argsstring>
+        <name>plot_returns_distribution</name>
+        <qualifiedname>pyfolio::visualization::plots::plot_returns_distribution</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bins</declname>
+          <defval>50</defval>
+        </param>
+        <param>
+          <type>const <ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval><ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref>{}</defval>
+        </param>
+        <briefdescription>
+<para>Plot returns distribution histogram. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" line="145" column="8" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" bodystart="594" bodyend="628" declfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" declline="145" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d4b/namespacepyfolio_1_1visualization_1_1plots_1a3439d8f17883044aeb8d7e12fe34354d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; std::string &gt;</type>
+        <definition>Result&lt; std::string &gt; pyfolio::visualization::plots::plot_monthly_returns_heatmap</definition>
+        <argsstring>(const TimeSeries&lt; Return &gt; &amp;returns, const PlotConfig &amp;config=PlotConfig{})</argsstring>
+        <name>plot_monthly_returns_heatmap</name>
+        <qualifiedname>pyfolio::visualization::plots::plot_monthly_returns_heatmap</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval><ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref>{}</defval>
+        </param>
+        <briefdescription>
+<para>Plot monthly returns heatmap. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" line="151" column="8" declfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" declline="151" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d4b/namespacepyfolio_1_1visualization_1_1plots_1afa46cdadce86408c709a0e13805c3d27" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; std::string &gt;</type>
+        <definition>Result&lt; std::string &gt; pyfolio::visualization::plots::plot_annual_returns</definition>
+        <argsstring>(const TimeSeries&lt; Return &gt; &amp;returns, const std::optional&lt; TimeSeries&lt; Return &gt; &gt; &amp;benchmark=std::nullopt, const PlotConfig &amp;config=PlotConfig{})</argsstring>
+        <name>plot_annual_returns</name>
+        <qualifiedname>pyfolio::visualization::plots::plot_annual_returns</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <param>
+          <type>const std::optional&lt; <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &gt; &amp;</type>
+          <declname>benchmark</declname>
+          <defval>std::nullopt</defval>
+        </param>
+        <param>
+          <type>const <ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval><ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref>{}</defval>
+        </param>
+        <briefdescription>
+<para>Plot annual returns bar chart. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" line="157" column="8" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" bodystart="537" bodyend="570" declfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" declline="157" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d4b/namespacepyfolio_1_1visualization_1_1plots_1a1a18d3d1b56a3a4192d0c44d99188c73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; std::string &gt;</type>
+        <definition>Result&lt; std::string &gt; pyfolio::visualization::plots::plot_correlation_matrix</definition>
+        <argsstring>(const std::vector&lt; TimeSeries&lt; Return &gt; &gt; &amp;return_series, const std::vector&lt; std::string &gt; &amp;labels, const PlotConfig &amp;config=PlotConfig{})</argsstring>
+        <name>plot_correlation_matrix</name>
+        <qualifiedname>pyfolio::visualization::plots::plot_correlation_matrix</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &gt; &amp;</type>
+          <declname>return_series</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>labels</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval><ref refid="d2/d44/structpyfolio_1_1visualization_1_1PlotConfig" kindref="compound">PlotConfig</ref>{}</defval>
+        </param>
+        <briefdescription>
+<para>Plot correlation matrix heatmap. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" line="164" column="8" declfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" declline="164" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d4b/namespacepyfolio_1_1visualization_1_1plots_1a4eb172588d3fd15e7f4c401192478e78" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; std::string &gt;</type>
+        <definition>Result&lt; std::string &gt; pyfolio::visualization::plots::create_performance_dashboard</definition>
+        <argsstring>(const TimeSeries&lt; Return &gt; &amp;returns, const std::optional&lt; TimeSeries&lt; Return &gt; &gt; &amp;benchmark=std::nullopt, const std::string &amp;output_path=&quot;performance_dashboard.html&quot;)</argsstring>
+        <name>create_performance_dashboard</name>
+        <qualifiedname>pyfolio::visualization::plots::create_performance_dashboard</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <param>
+          <type>const std::optional&lt; <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &gt; &amp;</type>
+          <declname>benchmark</declname>
+          <defval>std::nullopt</defval>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>output_path</declname>
+          <defval>&quot;performance_dashboard.html&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Create a comprehensive performance dashboard. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" line="171" column="8" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" bodystart="421" bodyend="470" declfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" declline="171" declcolumn="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>High-level plotting functions for financial data visualization. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h" line="116" column="1"/>
+  </compounddef>
+</doxygen>

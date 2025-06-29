@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['base_5fpath_0',['base_path',['../da/d05/structpyfolio_1_1web_1_1ApiConfig.html#a1ebeecff1f0573029b243ccc72048e7f',1,'pyfolio::web::ApiConfig']]],
+  ['basic_5fturnover_1',['basic_turnover',['../d2/d63/structpyfolio_1_1analytics_1_1AdvancedTurnoverMetrics.html#aa98570da30deaaca3633f2b6e874eb2f',1,'pyfolio::analytics::AdvancedTurnoverMetrics']]],
+  ['benchmark_5freturn_2',['benchmark_return',['../d3/df5/structpyfolio_1_1attribution_1_1AttributionResult.html#a1ae7255be75ff89603de22b45d62d728',1,'pyfolio::attribution::AttributionResult::benchmark_return'],['../d6/dcd/structpyfolio_1_1attribution_1_1SectorAttribution.html#a3e3a02ca2f856f3286bcaf9b8cb2650e',1,'pyfolio::attribution::SectorAttribution::benchmark_return']]],
+  ['benchmark_5fweight_3',['benchmark_weight',['../d6/dcd/structpyfolio_1_1attribution_1_1SectorAttribution.html#a3ff23f7ec30f31ce9d1800097993cc65',1,'pyfolio::attribution::SectorAttribution']]],
+  ['best_5ftrade_5fpnl_4',['best_trade_pnl',['../d0/ddd/structpyfolio_1_1transactions_1_1RoundTripStatistics.html#a6db4a1d9397b9357f6c111a9ecdafee9',1,'pyfolio::transactions::RoundTripStatistics']]],
+  ['beta_5',['beta',['../d4/dd2/structpyfolio_1_1analytics_1_1AnalysisReport.html#a2fa5e7ed544be1661d558ad1edcd4da5',1,'pyfolio::analytics::AnalysisReport::beta'],['../de/d2e/structpyfolio_1_1analytics_1_1PerformanceMetrics.html#ab50d8bd93cdab494c0971c3503b4dcef',1,'pyfolio::analytics::PerformanceMetrics::beta'],['../de/d82/structpyfolio_1_1Statistics_1_1AlphaBetaResult.html#a7c4c51c7d7c06db16acc1c710c5623e9',1,'pyfolio::Statistics::AlphaBetaResult::beta'],['../da/dbd/structpyfolio_1_1attribution_1_1AlphaBetaAnalysis_1_1AlphaBetaResult.html#a8ac9e2b0cb92b5b59f234c4f4271ae1a',1,'pyfolio::attribution::AlphaBetaAnalysis::AlphaBetaResult::beta']]],
+  ['beta_5fcredible_5flower_6',['beta_credible_lower',['../de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult.html#a72293ffec4415df7413d4b4ecadec3ab',1,'pyfolio::analytics::BayesianPerformanceResult']]],
+  ['beta_5fcredible_5fupper_7',['beta_credible_upper',['../de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult.html#af81a24d1f8603751f169c725dcc460ff',1,'pyfolio::analytics::BayesianPerformanceResult']]],
+  ['beta_5fmean_8',['beta_mean',['../de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult.html#a572a1e7f9d2444a8f5915f8f2ce2bbf0',1,'pyfolio::analytics::BayesianPerformanceResult']]],
+  ['beta_5fsamples_9',['beta_samples',['../de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult.html#a2f3c2875b4014030847e47ec777a4eba',1,'pyfolio::analytics::BayesianPerformanceResult']]],
+  ['beta_5fstd_10',['beta_std',['../de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult.html#a62db5b835ed4127acf8eb3f5f3cf4928',1,'pyfolio::analytics::BayesianPerformanceResult']]],
+  ['binding_5fconstraint_11',['binding_constraint',['../d9/d58/structpyfolio_1_1capacity_1_1SecurityCapacityResult.html#a389a3702a53db9eff776beb706deb4d4',1,'pyfolio::capacity::SecurityCapacityResult']]],
+  ['block_5fsize_12',['block_size',['../d6/d0f/classpyfolio_1_1memory_1_1FixedBlockAllocator.html#af480ab4a60322ee90d98d07f1bed1bf9',1,'pyfolio::memory::FixedBlockAllocator']]],
+  ['bootstrap_13',['bootstrap',['../dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig.html#a5e595df60f5ca39ab10957f12a6d9721',1,'pyfolio::reporting::TearSheetConfig']]],
+  ['bootstrap_5fsamples_14',['bootstrap_samples',['../dc/d7e/structpyfolio_1_1reporting_1_1TearSheetConfig.html#a5c68e5168c40f762c13b2a5bb1ae864b',1,'pyfolio::reporting::TearSheetConfig']]],
+  ['business_5fdays_5fper_5fyear_15',['BUSINESS_DAYS_PER_YEAR',['../db/d9c/namespacepyfolio_1_1constants.html#a4b20009daae97408f5f6992d397238df',1,'pyfolio::constants']]],
+  ['buy_5fturnover_16',['buy_turnover',['../d2/d63/structpyfolio_1_1analytics_1_1AdvancedTurnoverMetrics.html#a6d77f467e9b44f3440726566f0f7ade8',1,'pyfolio::analytics::AdvancedTurnoverMetrics']]]
+];

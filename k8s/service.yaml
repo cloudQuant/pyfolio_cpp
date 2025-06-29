@@ -1,0 +1,121 @@
+# PyFolio C++ Services
+apiVersion: v1
+kind: Service
+metadata:
+  name: pyfolio-app
+  namespace: pyfolio
+  labels:
+    app.kubernetes.io/name: pyfolio
+    app.kubernetes.io/component: app
+  annotations:
+    prometheus.io/scrape: "true"
+    prometheus.io/port: "9090"
+    prometheus.io/path: "/metrics"
+spec:
+  type: ClusterIP
+  ports:
+    - name: http
+      port: 8000
+      targetPort: http
+      protocol: TCP
+    - name: metrics
+      port: 9090
+      targetPort: metrics
+      protocol: TCP
+  selector:
+    app.kubernetes.io/name: pyfolio
+    app.kubernetes.io/component: app
+
+---
+# Redis Service
+apiVersion: v1
+kind: Service
+metadata:
+  name: pyfolio-redis
+  namespace: pyfolio
+  labels:
+    app.kubernetes.io/name: pyfolio
+    app.kubernetes.io/component: redis
+spec:
+  type: ClusterIP
+  ports:
+    - name: redis
+      port: 6379
+      targetPort: 6379
+      protocol: TCP
+  selector:
+    app.kubernetes.io/name: pyfolio
+    app.kubernetes.io/component: redis
+
+---
+# PostgreSQL Service
+apiVersion: v1
+kind: Service
+metadata:
+  name: pyfolio-postgres
+  namespace: pyfolio
+  labels:
+    app.kubernetes.io/name: pyfolio
+    app.kubernetes.io/component: postgres
+spec:
+  type: ClusterIP
+  ports:
+    - name: postgres
+      port: 5432
+      targetPort: 5432
+      protocol: TCP
+  selector:
+    app.kubernetes.io/name: pyfolio
+    app.kubernetes.io/component: postgres
+
+---
+# LoadBalancer Service for External Access
+apiVersion: v1
+kind: Service
+metadata:
+  name: pyfolio-external
+  namespace: pyfolio
+  labels:
+    app.kubernetes.io/name: pyfolio
+    app.kubernetes.io/component: external
+  annotations:
+    service.beta.kubernetes.io/aws-load-balancer-type: "nlb"
+    service.beta.kubernetes.io/aws-load-balancer-backend-protocol: "tcp"
+    service.beta.kubernetes.io/aws-load-balancer-connection-idle-timeout: "60"
+spec:
+  type: LoadBalancer
+  ports:
+    - name: http
+      port: 80
+      targetPort: 8000
+      protocol: TCP
+    - name: https
+      port: 443
+      targetPort: 8000
+      protocol: TCP
+  selector:
+    app.kubernetes.io/name: pyfolio
+    app.kubernetes.io/component: app
+  loadBalancerSourceRanges:
+    - 0.0.0.0/0  # Restrict this in production
+
+---
+# Headless Service for StatefulSet (if needed)
+apiVersion: v1
+kind: Service
+metadata:
+  name: pyfolio-headless
+  namespace: pyfolio
+  labels:
+    app.kubernetes.io/name: pyfolio
+    app.kubernetes.io/component: headless
+spec:
+  clusterIP: None
+  ports:
+    - name: http
+      port: 8000
+      targetPort: http
+      protocol: TCP
+  selector:
+    app.kubernetes.io/name: pyfolio
+    app.kubernetes.io/component: app

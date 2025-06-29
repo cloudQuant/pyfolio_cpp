@@ -1,0 +1,425 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="d2/d40/turnover__enhanced_8h" kind="file" language="C++">
+    <compoundname>turnover_enhanced.h</compoundname>
+    <includes local="no">map</includes>
+    <includes refid="d3/d11/error__handling_8h" local="no">pyfolio/core/error_handling.h</includes>
+    <includes refid="d9/d49/types_8h" local="no">pyfolio/core/types.h</includes>
+    <includes refid="d0/d04/positions_8h" local="no">pyfolio/positions/positions.h</includes>
+    <includes refid="d0/db6/transaction_8h" local="no">pyfolio/transactions/transaction.h</includes>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h</label>
+        <link refid="d2/d40/turnover__enhanced_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>../core/dataframe.h</label>
+        <link refid="d2/d99/dataframe_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>datetime.h</label>
+        <link refid="de/d1b/datetime_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>pyfolio/core/error_handling.h</label>
+        <link refid="d3/d11/error__handling_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>../core/time_series.h</label>
+        <link refid="d8/d51/time__series_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>pyfolio/core/types.h</label>
+        <link refid="d9/d49/types_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>../math/simd_math.h</label>
+        <link refid="d6/d99/simd__math_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>allocation.h</label>
+        <link refid="d0/db7/allocation_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>holdings.h</label>
+        <link refid="d7/d0c/holdings_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>pyfolio/positions/positions.h</label>
+        <link refid="d0/d04/positions_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>../transactions/transaction.h</label>
+        <link refid="d0/db6/transaction_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>algorithm</label>
+      </node>
+      <node id="29">
+        <label>any</label>
+      </node>
+      <node id="11">
+        <label>chrono</label>
+      </node>
+      <node id="23">
+        <label>cmath</label>
+      </node>
+      <node id="12">
+        <label>concepts</label>
+      </node>
+      <node id="13">
+        <label>cstddef</label>
+      </node>
+      <node id="14">
+        <label>cstdint</label>
+      </node>
+      <node id="24">
+        <label>deque</label>
+      </node>
+      <node id="4">
+        <label>exception</label>
+      </node>
+      <node id="5">
+        <label>functional</label>
+      </node>
+      <node id="25">
+        <label>limits</label>
+      </node>
+      <node id="2">
+        <label>map</label>
+      </node>
+      <node id="26">
+        <label>numeric</label>
+      </node>
+      <node id="6">
+        <label>optional</label>
+      </node>
+      <node id="22">
+        <label>set</label>
+      </node>
+      <node id="7">
+        <label>source_location</label>
+      </node>
+      <node id="20">
+        <label>span</label>
+      </node>
+      <node id="8">
+        <label>string</label>
+      </node>
+      <node id="30">
+        <label>typeindex</label>
+      </node>
+      <node id="9">
+        <label>variant</label>
+      </node>
+      <node id="15">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult" prot="public">pyfolio::analytics::TurnoverResult</innerclass>
+    <innerclass refid="d2/d63/structpyfolio_1_1analytics_1_1AdvancedTurnoverMetrics" prot="public">pyfolio::analytics::AdvancedTurnoverMetrics</innerclass>
+    <innerclass refid="d8/d97/classpyfolio_1_1analytics_1_1EnhancedTurnoverAnalyzer" prot="public">pyfolio::analytics::EnhancedTurnoverAnalyzer</innerclass>
+    <innerclass refid="d3/d70/structpyfolio_1_1analytics_1_1turnover__utils_1_1TurnoverStatistics" prot="public">pyfolio::analytics::turnover_utils::TurnoverStatistics</innerclass>
+    <innerclass refid="dd/dee/structpyfolio_1_1analytics_1_1turnover__utils_1_1TurnoverEfficiency" prot="public">pyfolio::analytics::turnover_utils::TurnoverEfficiency</innerclass>
+    <innernamespace refid="d7/df8/namespacepyfolio">pyfolio</innernamespace>
+    <innernamespace refid="d2/d10/namespacepyfolio_1_1analytics">pyfolio::analytics</innernamespace>
+    <innernamespace refid="de/d0d/namespacepyfolio_1_1analytics_1_1turnover__utils">pyfolio::analytics::turnover_utils</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="d3/d11/error__handling_8h" kindref="compound">pyfolio/core/error_handling.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="d9/d49/types_8h" kindref="compound">pyfolio/core/types.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="d0/d04/positions_8h" kindref="compound">pyfolio/positions/positions.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="d0/db6/transaction_8h" kindref="compound">pyfolio/transactions/transaction.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d2/d10/namespacepyfolio_1_1analytics" kindref="compound">pyfolio::analytics</ref><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="d2/d10/namespacepyfolio_1_1analytics_1a2b5238b2314b78cf335d70a61f483623" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="d2/d10/namespacepyfolio_1_1analytics_1a2b5238b2314b78cf335d70a61f483623" kindref="member">TurnoverDenominator</ref><sp/>{</highlight></codeline>
+<codeline lineno="14" refid="d2/d10/namespacepyfolio_1_1analytics_1a2b5238b2314b78cf335d70a61f483623ac4ae8cdfc66973e53c8a1970545a3e2b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d2/d10/namespacepyfolio_1_1analytics_1a2b5238b2314b78cf335d70a61f483623ac4ae8cdfc66973e53c8a1970545a3e2b" kindref="member">AGB</ref>,<sp/><sp/></highlight><highlight class="comment">//<sp/>Average<sp/>Gross<sp/>Book<sp/>(default<sp/>in<sp/>Python<sp/>pyfolio)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="d2/d10/namespacepyfolio_1_1analytics_1a2b5238b2314b78cf335d70a61f483623af8fdd76dac43c8fc149d58f5edd42e6b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d2/d10/namespacepyfolio_1_1analytics_1a2b5238b2314b78cf335d70a61f483623af8fdd76dac43c8fc149d58f5edd42e6b" kindref="member">PortfolioValue</ref>,</highlight></codeline>
+<codeline lineno="16" refid="d2/d10/namespacepyfolio_1_1analytics_1a2b5238b2314b78cf335d70a61f483623a1727388a7eb25a127314827031273192" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d2/d10/namespacepyfolio_1_1analytics_1a2b5238b2314b78cf335d70a61f483623a1727388a7eb25a127314827031273192" kindref="member">NetLiquidation</ref>,</highlight></codeline>
+<codeline lineno="17" refid="d2/d10/namespacepyfolio_1_1analytics_1a2b5238b2314b78cf335d70a61f483623ae04f80c67233d95aed971c40d10a0164" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d2/d10/namespacepyfolio_1_1analytics_1a2b5238b2314b78cf335d70a61f483623ae04f80c67233d95aed971c40d10a0164" kindref="member">TotalAssets</ref></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult" kindref="compound">TurnoverResult</ref><sp/>{</highlight></codeline>
+<codeline lineno="21" refid="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult_1a5e567df92813531a217787264f62487b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/><ref refid="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult_1a5e567df92813531a217787264f62487b" kindref="member">daily_turnover</ref>;</highlight></codeline>
+<codeline lineno="22" refid="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult_1afd3ab3b427381310ede80fda655faade" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult_1afd3ab3b427381310ede80fda655faade" kindref="member">average_turnover</ref>;</highlight></codeline>
+<codeline lineno="23" refid="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult_1aa2dad5c059899778291e2cae5ae996f7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult_1aa2dad5c059899778291e2cae5ae996f7" kindref="member">annualized_turnover</ref>;</highlight></codeline>
+<codeline lineno="24" refid="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult_1aede12f1971ad10ccaf3f5422f818acc1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/><ref refid="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult_1aede12f1971ad10ccaf3f5422f818acc1" kindref="member">rolling_agb</ref>;</highlight></codeline>
+<codeline lineno="25" refid="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult_1af45437adfadc7f06e5e52c246bca992b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/><ref refid="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult_1af45437adfadc7f06e5e52c246bca992b" kindref="member">position_changes</ref>;</highlight></codeline>
+<codeline lineno="26" refid="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult_1a4145306e89edcd2db62fb86de4fb58ee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;DateTime&gt;<sp/><ref refid="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult_1a4145306e89edcd2db62fb86de4fb58ee" kindref="member">dates</ref>;</highlight></codeline>
+<codeline lineno="27" refid="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult_1a8262f2990a474c3273f6848ef7fc1db1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d2/d10/namespacepyfolio_1_1analytics_1a2b5238b2314b78cf335d70a61f483623" kindref="member">TurnoverDenominator</ref><sp/><ref refid="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult_1a8262f2990a474c3273f6848ef7fc1db1" kindref="member">denominator_used</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Additional<sp/>statistics</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult_1a671e6168f8decc62c70ab8ef02661474" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult_1a671e6168f8decc62c70ab8ef02661474" kindref="member">turnover_volatility</ref>;</highlight></codeline>
+<codeline lineno="31" refid="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult_1ae6412950ae4a8da06af57f1ff9cff823" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult_1ae6412950ae4a8da06af57f1ff9cff823" kindref="member">max_daily_turnover</ref>;</highlight></codeline>
+<codeline lineno="32" refid="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult_1a1da8072e5f8651d42a1f4cd02fcfd121" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult_1a1da8072e5f8651d42a1f4cd02fcfd121" kindref="member">min_daily_turnover</ref>;</highlight></codeline>
+<codeline lineno="33" refid="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult_1ab2f1030d0596a68754edaebce8220d15" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/><ref refid="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult_1ab2f1030d0596a68754edaebce8220d15" kindref="member">monthly_turnover</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="d2/d63/structpyfolio_1_1analytics_1_1AdvancedTurnoverMetrics" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d2/d63/structpyfolio_1_1analytics_1_1AdvancedTurnoverMetrics" kindref="compound">AdvancedTurnoverMetrics</ref><sp/>{</highlight></codeline>
+<codeline lineno="37" refid="d2/d63/structpyfolio_1_1analytics_1_1AdvancedTurnoverMetrics_1aa98570da30deaaca3633f2b6e874eb2f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult" kindref="compound">TurnoverResult</ref><sp/><ref refid="d2/d63/structpyfolio_1_1analytics_1_1AdvancedTurnoverMetrics_1aa98570da30deaaca3633f2b6e874eb2f" kindref="member">basic_turnover</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Symbol-level<sp/>turnover<sp/>analysis</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="d2/d63/structpyfolio_1_1analytics_1_1AdvancedTurnoverMetrics_1a1030806c185b6c56dc4bb6409a419a7d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;std::string,<sp/>double&gt;<sp/><ref refid="d2/d63/structpyfolio_1_1analytics_1_1AdvancedTurnoverMetrics_1a1030806c185b6c56dc4bb6409a419a7d" kindref="member">symbol_turnover_contribution</ref>;</highlight></codeline>
+<codeline lineno="41" refid="d2/d63/structpyfolio_1_1analytics_1_1AdvancedTurnoverMetrics_1acfe0f6ac2a7e3c293c222a53bd07f8cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;std::string,<sp/>double&gt;<sp/><ref refid="d2/d63/structpyfolio_1_1analytics_1_1AdvancedTurnoverMetrics_1acfe0f6ac2a7e3c293c222a53bd07f8cd" kindref="member">symbol_avg_turnover</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Turnover<sp/>decomposition</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="d2/d63/structpyfolio_1_1analytics_1_1AdvancedTurnoverMetrics_1a6d77f467e9b44f3440726566f0f7ade8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d2/d63/structpyfolio_1_1analytics_1_1AdvancedTurnoverMetrics_1a6d77f467e9b44f3440726566f0f7ade8" kindref="member">buy_turnover</ref>;</highlight></codeline>
+<codeline lineno="45" refid="d2/d63/structpyfolio_1_1analytics_1_1AdvancedTurnoverMetrics_1a4154f7b45c9e59e9fa990337c5bff2bf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d2/d63/structpyfolio_1_1analytics_1_1AdvancedTurnoverMetrics_1a4154f7b45c9e59e9fa990337c5bff2bf" kindref="member">sell_turnover</ref>;</highlight></codeline>
+<codeline lineno="46" refid="d2/d63/structpyfolio_1_1analytics_1_1AdvancedTurnoverMetrics_1a4f6df610ff8040f8241ee59f3deace52" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d2/d63/structpyfolio_1_1analytics_1_1AdvancedTurnoverMetrics_1a4f6df610ff8040f8241ee59f3deace52" kindref="member">rebalancing_turnover</ref>;</highlight></codeline>
+<codeline lineno="47" refid="d2/d63/structpyfolio_1_1analytics_1_1AdvancedTurnoverMetrics_1acc3212514af981b9a419b52feed1c28c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d2/d63/structpyfolio_1_1analytics_1_1AdvancedTurnoverMetrics_1acc3212514af981b9a419b52feed1c28c" kindref="member">cash_flow_turnover</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Rolling<sp/>metrics</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="d2/d63/structpyfolio_1_1analytics_1_1AdvancedTurnoverMetrics_1a1c73747e830c64635ab90f7f4989e525" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/><ref refid="d2/d63/structpyfolio_1_1analytics_1_1AdvancedTurnoverMetrics_1a1c73747e830c64635ab90f7f4989e525" kindref="member">rolling_30d_turnover</ref>;</highlight></codeline>
+<codeline lineno="51" refid="d2/d63/structpyfolio_1_1analytics_1_1AdvancedTurnoverMetrics_1a986eadba1d203d7b5d2d0af0a63ec877" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/><ref refid="d2/d63/structpyfolio_1_1analytics_1_1AdvancedTurnoverMetrics_1a986eadba1d203d7b5d2d0af0a63ec877" kindref="member">rolling_90d_turnover</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Correlation<sp/>with<sp/>returns</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="d2/d63/structpyfolio_1_1analytics_1_1AdvancedTurnoverMetrics_1abdc61c83c7fd59c0090fd6b2378e22f2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d2/d63/structpyfolio_1_1analytics_1_1AdvancedTurnoverMetrics_1abdc61c83c7fd59c0090fd6b2378e22f2" kindref="member">turnover_return_correlation</ref>;</highlight></codeline>
+<codeline lineno="55" refid="d2/d63/structpyfolio_1_1analytics_1_1AdvancedTurnoverMetrics_1a789ec7c8ab848f458a376e4f332c958b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d2/d63/structpyfolio_1_1analytics_1_1AdvancedTurnoverMetrics_1a789ec7c8ab848f458a376e4f332c958b" kindref="member">turnover_volatility_correlation</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="d8/d97/classpyfolio_1_1analytics_1_1EnhancedTurnoverAnalyzer" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d8/d97/classpyfolio_1_1analytics_1_1EnhancedTurnoverAnalyzer" kindref="compound">EnhancedTurnoverAnalyzer</ref><sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="69" refid="d8/d97/classpyfolio_1_1analytics_1_1EnhancedTurnoverAnalyzer_1afdd574756c49ab5f3f55f6a52e77d8b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;TurnoverResult&gt;</ref><sp/><ref refid="d8/d97/classpyfolio_1_1analytics_1_1EnhancedTurnoverAnalyzer_1afdd574756c49ab5f3f55f6a52e77d8b6" kindref="member">calculate_enhanced_turnover</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1a8b225a867ab95979be89a7d9e8519eb1" kindref="member">PositionSeries</ref>&amp;<sp/><ref refid="df/d8b/namespacepyfolio_1_1positions" kindref="compound">positions</ref>,</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1a4b722d754217aac2549ef3ef5fa23fff" kindref="member">TransactionSeries</ref>&amp;<sp/><ref refid="dc/d4e/namespacepyfolio_1_1transactions" kindref="compound">transactions</ref><sp/>=<sp/>{},</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d2/d10/namespacepyfolio_1_1analytics_1a2b5238b2314b78cf335d70a61f483623" kindref="member">TurnoverDenominator</ref><sp/>denominator<sp/>=<sp/><ref refid="d2/d10/namespacepyfolio_1_1analytics_1a2b5238b2314b78cf335d70a61f483623ac4ae8cdfc66973e53c8a1970545a3e2b" kindref="member">TurnoverDenominator::AGB</ref>);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="d8/d97/classpyfolio_1_1analytics_1_1EnhancedTurnoverAnalyzer_1a456bf14aeddaeeff3b9d5624b6ae6210" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;AdvancedTurnoverMetrics&gt;</ref><sp/><ref refid="d8/d97/classpyfolio_1_1analytics_1_1EnhancedTurnoverAnalyzer_1a456bf14aeddaeeff3b9d5624b6ae6210" kindref="member">calculate_comprehensive_turnover_metrics</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1a8b225a867ab95979be89a7d9e8519eb1" kindref="member">PositionSeries</ref>&amp;<sp/><ref refid="df/d8b/namespacepyfolio_1_1positions" kindref="compound">positions</ref>,</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1a4b722d754217aac2549ef3ef5fa23fff" kindref="member">TransactionSeries</ref>&amp;<sp/><ref refid="dc/d4e/namespacepyfolio_1_1transactions" kindref="compound">transactions</ref>,</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;Return&gt;</ref>&amp;<sp/>returns<sp/>=<sp/>{});</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="d8/d97/classpyfolio_1_1analytics_1_1EnhancedTurnoverAnalyzer_1afec255239ef5e1d2e1ef5d3cbbaee3d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;std::vector&lt;double&gt;</ref>&gt;<sp/><ref refid="d8/d97/classpyfolio_1_1analytics_1_1EnhancedTurnoverAnalyzer_1afec255239ef5e1d2e1ef5d3cbbaee3d2" kindref="member">calculate_rolling_agb</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1a8b225a867ab95979be89a7d9e8519eb1" kindref="member">PositionSeries</ref>&amp;<sp/><ref refid="df/d8b/namespacepyfolio_1_1positions" kindref="compound">positions</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>window<sp/>=<sp/>2);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="d8/d97/classpyfolio_1_1analytics_1_1EnhancedTurnoverAnalyzer_1a93470345dde025d280e0a58bb98bba53" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;std::vector&lt;double&gt;</ref>&gt;<sp/><ref refid="d8/d97/classpyfolio_1_1analytics_1_1EnhancedTurnoverAnalyzer_1a93470345dde025d280e0a58bb98bba53" kindref="member">calculate_net_position_changes</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1a8b225a867ab95979be89a7d9e8519eb1" kindref="member">PositionSeries</ref>&amp;<sp/><ref refid="df/d8b/namespacepyfolio_1_1positions" kindref="compound">positions</ref>);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="d8/d97/classpyfolio_1_1analytics_1_1EnhancedTurnoverAnalyzer_1a2698ae3aadc008c809d8ed452e1a5be7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;std::map&lt;std::string, double&gt;</ref>&gt;<sp/><ref refid="d8/d97/classpyfolio_1_1analytics_1_1EnhancedTurnoverAnalyzer_1a2698ae3aadc008c809d8ed452e1a5be7" kindref="member">decompose_turnover</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1a8b225a867ab95979be89a7d9e8519eb1" kindref="member">PositionSeries</ref>&amp;<sp/><ref refid="df/d8b/namespacepyfolio_1_1positions" kindref="compound">positions</ref>,</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1a4b722d754217aac2549ef3ef5fa23fff" kindref="member">TransactionSeries</ref>&amp;<sp/><ref refid="dc/d4e/namespacepyfolio_1_1transactions" kindref="compound">transactions</ref>);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>calculate_agb_for_date(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/df6/structpyfolio_1_1Position" kindref="compound">Position</ref>&amp;<sp/>snapshot);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>rolling_mean(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;&amp;<sp/>values,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>window);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;std::vector&lt;double&gt;</ref>&gt;<sp/>calculate_turnover_with_denominator(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;&amp;<sp/>position_changes,</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;&amp;<sp/>denominator_values);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;std::string,<sp/>std::vector&lt;double&gt;&gt;<sp/>calculate_symbol_position_changes(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1a8b225a867ab95979be89a7d9e8519eb1" kindref="member">PositionSeries</ref>&amp;<sp/><ref refid="df/d8b/namespacepyfolio_1_1positions" kindref="compound">positions</ref>);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>aggregate_monthly_turnover(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;&amp;<sp/>daily_turnover,</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;DateTime&gt;&amp;<sp/>dates);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>calculate_correlation(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;&amp;<sp/>series1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;&amp;<sp/>series2);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>validate_turnover_inputs(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1a8b225a867ab95979be89a7d9e8519eb1" kindref="member">PositionSeries</ref>&amp;<sp/><ref refid="df/d8b/namespacepyfolio_1_1positions" kindref="compound">positions</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1a4b722d754217aac2549ef3ef5fa23fff" kindref="member">TransactionSeries</ref>&amp;<sp/><ref refid="dc/d4e/namespacepyfolio_1_1transactions" kindref="compound">transactions</ref>);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>handle_turnover_edge_cases(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;&amp;<sp/>raw_turnover);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160" refid="de/d0d/namespacepyfolio_1_1analytics_1_1turnover__utils" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="de/d0d/namespacepyfolio_1_1analytics_1_1turnover__utils" kindref="compound">turnover_utils</ref><sp/>{</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165" refid="de/d0d/namespacepyfolio_1_1analytics_1_1turnover__utils_1ac6dc03cda715f6f067b135a47936899f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="de/d0d/namespacepyfolio_1_1analytics_1_1turnover__utils_1ac6dc03cda715f6f067b135a47936899f" kindref="member">annualize_turnover</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>daily_turnover,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trading_days_per_year<sp/>=<sp/>252);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170" refid="d3/d70/structpyfolio_1_1analytics_1_1turnover__utils_1_1TurnoverStatistics" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d3/d70/structpyfolio_1_1analytics_1_1turnover__utils_1_1TurnoverStatistics" kindref="compound">TurnoverStatistics</ref><sp/>{</highlight></codeline>
+<codeline lineno="171" refid="d3/d70/structpyfolio_1_1analytics_1_1turnover__utils_1_1TurnoverStatistics_1af612cc6e57fdfa22edf0651bf914e1f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d3/d70/structpyfolio_1_1analytics_1_1turnover__utils_1_1TurnoverStatistics_1af612cc6e57fdfa22edf0651bf914e1f1" kindref="member">mean</ref>;</highlight></codeline>
+<codeline lineno="172" refid="d3/d70/structpyfolio_1_1analytics_1_1turnover__utils_1_1TurnoverStatistics_1a0a8ecdc981bfb50193ef60ad2d3d47a7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d3/d70/structpyfolio_1_1analytics_1_1turnover__utils_1_1TurnoverStatistics_1a0a8ecdc981bfb50193ef60ad2d3d47a7" kindref="member">median</ref>;</highlight></codeline>
+<codeline lineno="173" refid="d3/d70/structpyfolio_1_1analytics_1_1turnover__utils_1_1TurnoverStatistics_1a5c490218943e3925819fdd32560dde26" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d3/d70/structpyfolio_1_1analytics_1_1turnover__utils_1_1TurnoverStatistics_1a5c490218943e3925819fdd32560dde26" kindref="member">std_dev</ref>;</highlight></codeline>
+<codeline lineno="174" refid="d3/d70/structpyfolio_1_1analytics_1_1turnover__utils_1_1TurnoverStatistics_1a5b1f417dbdc16cae561bd322b057f954" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d3/d70/structpyfolio_1_1analytics_1_1turnover__utils_1_1TurnoverStatistics_1a5b1f417dbdc16cae561bd322b057f954" kindref="member">skewness</ref>;</highlight></codeline>
+<codeline lineno="175" refid="d3/d70/structpyfolio_1_1analytics_1_1turnover__utils_1_1TurnoverStatistics_1ad17d0a87642c72183316e8968176458f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d3/d70/structpyfolio_1_1analytics_1_1turnover__utils_1_1TurnoverStatistics_1ad17d0a87642c72183316e8968176458f" kindref="member">kurtosis</ref>;</highlight></codeline>
+<codeline lineno="176" refid="d3/d70/structpyfolio_1_1analytics_1_1turnover__utils_1_1TurnoverStatistics_1aa1bf7b2140b631f1af92f3191ee3b740" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d3/d70/structpyfolio_1_1analytics_1_1turnover__utils_1_1TurnoverStatistics_1aa1bf7b2140b631f1af92f3191ee3b740" kindref="member">percentile_95</ref>;</highlight></codeline>
+<codeline lineno="177" refid="d3/d70/structpyfolio_1_1analytics_1_1turnover__utils_1_1TurnoverStatistics_1a0ac59fea400792d61cb4a1d39e9a7e99" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d3/d70/structpyfolio_1_1analytics_1_1turnover__utils_1_1TurnoverStatistics_1a0ac59fea400792d61cb4a1d39e9a7e99" kindref="member">percentile_99</ref>;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180" refid="de/d0d/namespacepyfolio_1_1analytics_1_1turnover__utils_1a1dee64df54171e1a03c607503bb07b07" refkind="member"><highlight class="normal"><ref refid="d3/d70/structpyfolio_1_1analytics_1_1turnover__utils_1_1TurnoverStatistics" kindref="compound">TurnoverStatistics</ref><sp/><ref refid="de/d0d/namespacepyfolio_1_1analytics_1_1turnover__utils_1a1dee64df54171e1a03c607503bb07b07" kindref="member">calculate_turnover_statistics</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;&amp;<sp/>turnover);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185" refid="de/d0d/namespacepyfolio_1_1analytics_1_1turnover__utils_1a756dd9364cbeb9160c7ab767f9e3364a" refkind="member"><highlight class="normal">std::vector&lt;std::pair&lt;DateTime,<sp/>DateTime&gt;&gt;<sp/><ref refid="de/d0d/namespacepyfolio_1_1analytics_1_1turnover__utils_1a756dd9364cbeb9160c7ab767f9e3364a" kindref="member">detect_high_turnover_periods</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;&amp;<sp/>turnover,</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;DateTime&gt;&amp;<sp/>dates,</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>threshold_percentile<sp/>=<sp/>0.95);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192" refid="dd/dee/structpyfolio_1_1analytics_1_1turnover__utils_1_1TurnoverEfficiency" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="dd/dee/structpyfolio_1_1analytics_1_1turnover__utils_1_1TurnoverEfficiency" kindref="compound">TurnoverEfficiency</ref><sp/>{</highlight></codeline>
+<codeline lineno="193" refid="dd/dee/structpyfolio_1_1analytics_1_1turnover__utils_1_1TurnoverEfficiency_1a594f4b2ac5b01cbefdda91239d9b43e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="dd/dee/structpyfolio_1_1analytics_1_1turnover__utils_1_1TurnoverEfficiency_1a594f4b2ac5b01cbefdda91239d9b43e2" kindref="member">information_ratio_per_turnover</ref>;</highlight></codeline>
+<codeline lineno="194" refid="dd/dee/structpyfolio_1_1analytics_1_1turnover__utils_1_1TurnoverEfficiency_1a8d79891f9d98f24889af9a690f2ce81a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="dd/dee/structpyfolio_1_1analytics_1_1turnover__utils_1_1TurnoverEfficiency_1a8d79891f9d98f24889af9a690f2ce81a" kindref="member">sharpe_ratio_per_turnover</ref>;</highlight></codeline>
+<codeline lineno="195" refid="dd/dee/structpyfolio_1_1analytics_1_1turnover__utils_1_1TurnoverEfficiency_1a56a35bcf54a82faa76d1afb7422031f3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="dd/dee/structpyfolio_1_1analytics_1_1turnover__utils_1_1TurnoverEfficiency_1a56a35bcf54a82faa76d1afb7422031f3" kindref="member">return_per_turnover</ref>;</highlight></codeline>
+<codeline lineno="196" refid="dd/dee/structpyfolio_1_1analytics_1_1turnover__utils_1_1TurnoverEfficiency_1a4bb70c2ae8d273a3d6272addcae6e8aa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="dd/dee/structpyfolio_1_1analytics_1_1turnover__utils_1_1TurnoverEfficiency_1a4bb70c2ae8d273a3d6272addcae6e8aa" kindref="member">alpha_per_turnover</ref>;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199" refid="de/d0d/namespacepyfolio_1_1analytics_1_1turnover__utils_1a4772b82a62f9b4d4aecee75157f33b0c" refkind="member"><highlight class="normal"><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;TurnoverEfficiency&gt;</ref><sp/><ref refid="de/d0d/namespacepyfolio_1_1analytics_1_1turnover__utils_1a4772b82a62f9b4d4aecee75157f33b0c" kindref="member">calculate_turnover_efficiency</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult" kindref="compound">TurnoverResult</ref>&amp;<sp/>turnover,</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;Return&gt;</ref>&amp;<sp/>returns,</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries&lt;Return&gt;</ref>&amp;<sp/>benchmark<sp/>=<sp/>{});</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>turnover_utils</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>pyfolio::analytics</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h"/>
+  </compounddef>
+</doxygen>

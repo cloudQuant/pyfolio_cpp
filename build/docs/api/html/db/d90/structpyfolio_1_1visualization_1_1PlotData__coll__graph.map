@@ -1,0 +1,15 @@
+<map id="pyfolio::visualization::PlotData" name="pyfolio::visualization::PlotData">
+<area shape="rect" id="Node000001" title="Data structure for plot data." alt="" coords="186,331,326,372"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="25,198,159,238"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,248,148,277,180,305,217,328,214,333,177,309,144,281,116,252"/>
+<area shape="rect" id="Node000003" href="$d6/d4f/classpyfolio_1_1DateTime.html" title="DateTime utilities for financial calculations." alt="" coords="30,102,154,127"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="95,143,95,197,89,197,89,143"/>
+<area shape="rect" id="Node000004" href="$dc/ddd/classpyfolio_1_1BusinessCalendar.html" title="Business calendar for handling trading days and holidays." alt="" coords="5,5,179,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="95,47,95,101,89,101,89,47"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="183,205,329,231"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="259,247,259,331,253,331,253,247"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="352,205,432,231"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="371,244,305,309,279,333,276,329,301,305,368,240"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="329,94,455,135"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="395,150,395,205,389,205,389,150"/>
+</map>

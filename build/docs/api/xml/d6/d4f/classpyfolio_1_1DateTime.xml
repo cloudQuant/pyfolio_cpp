@@ -1,0 +1,687 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="d6/d4f/classpyfolio_1_1DateTime" kind="class" language="C++" prot="public">
+    <compoundname>pyfolio::DateTime</compoundname>
+    <includes refid="de/d1b/datetime_8h" local="no">datetime.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d6/d4f/classpyfolio_1_1DateTime_1accbfc8dcbad27268dffa00d43f3b8292" prot="private" static="no" mutable="no">
+        <type><ref refid="d7/df8/namespacepyfolio_1ad77d362107c51226c09e896bdf822f9d" kindref="member">TimePoint</ref></type>
+        <definition>TimePoint pyfolio::DateTime::time_point_</definition>
+        <argsstring></argsstring>
+        <name>time_point_</name>
+        <qualifiedname>pyfolio::DateTime::time_point_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" line="131" column="15" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="d6/d4f/classpyfolio_1_1DateTime_1a27270e18fd7b3fcba5fcd1ce8533c9e7" prot="public" static="yes" mutable="no">
+        <type><ref refid="dc/ddd/classpyfolio_1_1BusinessCalendar" kindref="compound">BusinessCalendar</ref></type>
+        <definition>BusinessCalendar pyfolio::DateTime::default_calendar_</definition>
+        <argsstring></argsstring>
+        <name>default_calendar_</name>
+        <qualifiedname>pyfolio::DateTime::default_calendar_</qualifiedname>
+        <initializer>{&quot;NYSE&quot;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" line="134" column="29" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" bodystart="134" bodyend="-1"/>
+        <referencedby refid="d6/d4f/classpyfolio_1_1DateTime_1a43b84b1326b0fca9e1f3c8dc41f8a691" compoundref="de/d1b/datetime_8h" startline="323" endline="336">add_business_days</referencedby>
+        <referencedby refid="d6/d4f/classpyfolio_1_1DateTime_1aae730fe2db12407f5eb2af3c11e229e9" compoundref="de/d1b/datetime_8h" startline="237" endline="239">business_days_until</referencedby>
+        <referencedby refid="d6/d4f/classpyfolio_1_1DateTime_1af46c3e8a096b3ec850297dad97f807b5" compoundref="de/d1b/datetime_8h" startline="214" endline="216">is_business_day</referencedby>
+        <referencedby refid="d6/d4f/classpyfolio_1_1DateTime_1adfa008cc517c78cf148ca50a80e81fb1" compoundref="de/d1b/datetime_8h" startline="221" endline="224">next_business_day</referencedby>
+        <referencedby refid="d6/d4f/classpyfolio_1_1DateTime_1afca583e558a8f0d6cdbd1378eaebaaa7" compoundref="de/d1b/datetime_8h" startline="229" endline="232">previous_business_day</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d6/d4f/classpyfolio_1_1DateTime_1a140b23c1840e818f12ef46082e8762ba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>pyfolio::DateTime::DateTime</definition>
+        <argsstring>()</argsstring>
+        <name>DateTime</name>
+        <qualifiedname>pyfolio::DateTime::DateTime</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" line="137" column="5" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" bodystart="137" bodyend="137"/>
+        <references refid="d6/d4f/classpyfolio_1_1DateTime_1af74c490a9d8ce99c6a18bdbe608d1111" compoundref="de/d1b/datetime_8h" startline="178" endline="178">now</references>
+        <referencedby refid="d6/d4f/classpyfolio_1_1DateTime_1a43b84b1326b0fca9e1f3c8dc41f8a691" compoundref="de/d1b/datetime_8h" startline="323" endline="336">add_business_days</referencedby>
+        <referencedby refid="d6/d4f/classpyfolio_1_1DateTime_1a42e5f9cb95823fcd9470be79a65fe8a6" compoundref="de/d1b/datetime_8h" startline="244" endline="244">add_days</referencedby>
+        <referencedby refid="d6/d4f/classpyfolio_1_1DateTime_1a8b63d24df7be661ffdb7226aaa07ff4c" compoundref="de/d1b/datetime_8h" startline="249" endline="273">add_months</referencedby>
+        <referencedby refid="d6/d4f/classpyfolio_1_1DateTime_1ad71c05326b79cd5649136cdb6583a7de" compoundref="de/d1b/datetime_8h" startline="278" endline="289">add_years</referencedby>
+        <referencedby refid="d6/d4f/classpyfolio_1_1DateTime_1aae730fe2db12407f5eb2af3c11e229e9" compoundref="de/d1b/datetime_8h" startline="237" endline="239">business_days_until</referencedby>
+        <referencedby refid="d6/d4f/classpyfolio_1_1DateTime_1a09faae255bfa8251e234441d58e04497" compoundref="de/d1b/datetime_8h" startline="314" endline="318">days_since</referencedby>
+        <referencedby refid="d6/d4f/classpyfolio_1_1DateTime_1a6b980b304349106ebab133e7c947d85b" compoundref="de/d1b/datetime_8h" startline="183" endline="183">from_time_point</referencedby>
+        <referencedby refid="d6/d4f/classpyfolio_1_1DateTime_1adfa008cc517c78cf148ca50a80e81fb1" compoundref="de/d1b/datetime_8h" startline="221" endline="224">next_business_day</referencedby>
+        <referencedby refid="d6/d4f/classpyfolio_1_1DateTime_1af74c490a9d8ce99c6a18bdbe608d1111" compoundref="de/d1b/datetime_8h" startline="178" endline="178">now</referencedby>
+        <referencedby refid="d6/d4f/classpyfolio_1_1DateTime_1a70cc633c238fd3f8ef8a602bee15b069">operator&lt;=&gt;</referencedby>
+        <referencedby refid="d6/d4f/classpyfolio_1_1DateTime_1a57c7e6bb70ab1da2fa61ffeb60b08590">operator==</referencedby>
+        <referencedby refid="d6/d4f/classpyfolio_1_1DateTime_1adfc972d8ea84c03f9a6d9eb9e661b6cd" compoundref="de/d1b/datetime_8h" startline="150" endline="173">parse</referencedby>
+        <referencedby refid="d6/d4f/classpyfolio_1_1DateTime_1afca583e558a8f0d6cdbd1378eaebaaa7" compoundref="de/d1b/datetime_8h" startline="229" endline="232">previous_business_day</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d6/d4f/classpyfolio_1_1DateTime_1a4f902d49791077ebc15187cd0ca44282" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>pyfolio::DateTime::DateTime</definition>
+        <argsstring>(const TimePoint &amp;tp)</argsstring>
+        <name>DateTime</name>
+        <qualifiedname>pyfolio::DateTime::DateTime</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/df8/namespacepyfolio_1ad77d362107c51226c09e896bdf822f9d" kindref="member">TimePoint</ref> &amp;</type>
+          <declname>tp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" line="139" column="14" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" bodystart="139" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d4f/classpyfolio_1_1DateTime_1aff7a3b252e6c50d1927434f629875710" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>pyfolio::DateTime::DateTime</definition>
+        <argsstring>(const std::chrono::year_month_day &amp;date)</argsstring>
+        <name>DateTime</name>
+        <qualifiedname>pyfolio::DateTime::DateTime</qualifiedname>
+        <param>
+          <type>const std::chrono::year_month_day &amp;</type>
+          <declname>date</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" line="141" column="14" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" bodystart="141" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/d4f/classpyfolio_1_1DateTime_1aaecd3e0fe88401b0085fbc88727446cb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>pyfolio::DateTime::DateTime</definition>
+        <argsstring>(int year, int month, int day)</argsstring>
+        <name>DateTime</name>
+        <qualifiedname>pyfolio::DateTime::DateTime</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>year</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>month</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>day</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" line="143" column="5" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" bodystart="143" bodyend="145"/>
+        <references refid="d6/d4f/classpyfolio_1_1DateTime_1ab5864a43c0379f41ed3a2dfc0d9a17f9" compoundref="de/d1b/datetime_8h" startline="358" endline="358">day</references>
+        <references refid="d6/d4f/classpyfolio_1_1DateTime_1ad5a7201c60d0020d7270f24d8d10325e" compoundref="de/d1b/datetime_8h" startline="353" endline="353">month</references>
+        <references refid="d6/d4f/classpyfolio_1_1DateTime_1a98b74d1e113cf1ca215928c0e31ba587" compoundref="de/d1b/datetime_8h" startline="348" endline="348">year</references>
+      </memberdef>
+      <memberdef kind="function" id="d6/d4f/classpyfolio_1_1DateTime_1a14bed41e6c19c2dfd9c0d36a5edcd29f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::chrono::year_month_day</type>
+        <definition>std::chrono::year_month_day pyfolio::DateTime::to_date</definition>
+        <argsstring>() const</argsstring>
+        <name>to_date</name>
+        <qualifiedname>pyfolio::DateTime::to_date</qualifiedname>
+        <briefdescription>
+<para>Convert to date. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" line="188" column="33" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" bodystart="188" bodyend="190"/>
+        <referencedby refid="dc/ddd/classpyfolio_1_1BusinessCalendar_1a0177da4553069a3a716fa7376309debf" compoundref="de/d1b/datetime_8h" startline="373" endline="375">pyfolio::BusinessCalendar::add_holiday</referencedby>
+        <referencedby refid="d6/d4f/classpyfolio_1_1DateTime_1a8b63d24df7be661ffdb7226aaa07ff4c" compoundref="de/d1b/datetime_8h" startline="249" endline="273">add_months</referencedby>
+        <referencedby refid="d6/d4f/classpyfolio_1_1DateTime_1ad71c05326b79cd5649136cdb6583a7de" compoundref="de/d1b/datetime_8h" startline="278" endline="289">add_years</referencedby>
+        <referencedby refid="d0/d02/classpyfolio_1_1positions_1_1HoldingsSeries_1ab1a252e2af660f9a3a5bf71719cd7fde" compoundref="d7/d0c/holdings_8h" startline="288" endline="368">pyfolio::positions::HoldingsSeries::build_from_transactions</referencedby>
+        <referencedby refid="d6/d4f/classpyfolio_1_1DateTime_1aae730fe2db12407f5eb2af3c11e229e9" compoundref="de/d1b/datetime_8h" startline="237" endline="239">business_days_until</referencedby>
+        <referencedby refid="d6/d4f/classpyfolio_1_1DateTime_1ab5864a43c0379f41ed3a2dfc0d9a17f9" compoundref="de/d1b/datetime_8h" startline="358" endline="358">day</referencedby>
+        <referencedby refid="d6/d4f/classpyfolio_1_1DateTime_1a428b9799ba78daaf9caed9e67842b450" compoundref="de/d1b/datetime_8h" startline="304" endline="309">day_of_week</referencedby>
+        <referencedby refid="dc/ddd/classpyfolio_1_1BusinessCalendar_1aefc7d92eb158b3c500a314814700ca5a" compoundref="de/d1b/datetime_8h" startline="369" endline="371">pyfolio::BusinessCalendar::is_business_day</referencedby>
+        <referencedby refid="d6/d4f/classpyfolio_1_1DateTime_1af46c3e8a096b3ec850297dad97f807b5" compoundref="de/d1b/datetime_8h" startline="214" endline="216">is_business_day</referencedby>
+        <referencedby refid="dc/ddd/classpyfolio_1_1BusinessCalendar_1a5711cab9566628674bb976d7d4d71cdf" compoundref="de/d1b/datetime_8h" startline="365" endline="367">pyfolio::BusinessCalendar::is_holiday</referencedby>
+        <referencedby refid="d6/d4f/classpyfolio_1_1DateTime_1a60af93f70c88c8166eb73a6d9be807f0" compoundref="de/d1b/datetime_8h" startline="294" endline="299">is_weekday</referencedby>
+        <referencedby refid="d6/d4f/classpyfolio_1_1DateTime_1ad5a7201c60d0020d7270f24d8d10325e" compoundref="de/d1b/datetime_8h" startline="353" endline="353">month</referencedby>
+        <referencedby refid="d6/d4f/classpyfolio_1_1DateTime_1adfa008cc517c78cf148ca50a80e81fb1" compoundref="de/d1b/datetime_8h" startline="221" endline="224">next_business_day</referencedby>
+        <referencedby refid="d6/d4f/classpyfolio_1_1DateTime_1afca583e558a8f0d6cdbd1378eaebaaa7" compoundref="de/d1b/datetime_8h" startline="229" endline="232">previous_business_day</referencedby>
+        <referencedby refid="dc/d4e/namespacepyfolio_1_1transactions_1aae9dcab036865e9b023c1b9464a65611" compoundref="d7/d00/round__trips_8h" startline="291" endline="348">pyfolio::transactions::round_trip_performance_by_period</referencedby>
+        <referencedby refid="d6/d4f/classpyfolio_1_1DateTime_1a0c77abf0a6d6acefcec468e8cf061d5c" compoundref="de/d1b/datetime_8h" startline="195" endline="209">to_string</referencedby>
+        <referencedby refid="d6/d4f/classpyfolio_1_1DateTime_1a98b74d1e113cf1ca215928c0e31ba587" compoundref="de/d1b/datetime_8h" startline="348" endline="348">year</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d6/d4f/classpyfolio_1_1DateTime_1a0c77abf0a6d6acefcec468e8cf061d5c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string pyfolio::DateTime::to_string</definition>
+        <argsstring>(const std::string &amp;format=&quot;%Y-%m-%d&quot;) const</argsstring>
+        <name>to_string</name>
+        <qualifiedname>pyfolio::DateTime::to_string</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>format</declname>
+          <defval>&quot;%Y-%m-%d&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Convert to string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" line="195" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" bodystart="195" bodyend="209"/>
+        <references refid="d6/d4f/classpyfolio_1_1DateTime_1a14bed41e6c19c2dfd9c0d36a5edcd29f" compoundref="de/d1b/datetime_8h" startline="188" endline="190">to_date</references>
+        <referencedby refid="d7/d2f/namespacepyfolio_1_1visualization_1_1interactive_1a2f6c2c21cc2ef099f9b109d1bb340559" compoundref="d2/dd1/plotly__enhanced_8cpp" startline="18" endline="118">pyfolio::visualization::interactive::create_portfolio_dashboard</referencedby>
+        <referencedby refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1a2af72b0ed0ffccd71321216cd4133df6" compoundref="d4/d45/json__serializer_8h" startline="35" endline="35">pyfolio::web::JsonSerializer::serialize_datetime</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d6/d4f/classpyfolio_1_1DateTime_1af46c3e8a096b3ec850297dad97f807b5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool pyfolio::DateTime::is_business_day</definition>
+        <argsstring>(const BusinessCalendar &amp;calendar=default_calendar_) const</argsstring>
+        <name>is_business_day</name>
+        <qualifiedname>pyfolio::DateTime::is_business_day</qualifiedname>
+        <param>
+          <type>const <ref refid="dc/ddd/classpyfolio_1_1BusinessCalendar" kindref="compound">BusinessCalendar</ref> &amp;</type>
+          <declname>calendar</declname>
+          <defval><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a27270e18fd7b3fcba5fcd1ce8533c9e7" kindref="member">default_calendar_</ref></defval>
+        </param>
+        <briefdescription>
+<para>Check if this is a business day. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" line="214" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" bodystart="214" bodyend="216"/>
+        <references refid="d6/d4f/classpyfolio_1_1DateTime_1a27270e18fd7b3fcba5fcd1ce8533c9e7" compoundref="de/d1b/datetime_8h" startline="134">default_calendar_</references>
+        <references refid="d6/d4f/classpyfolio_1_1DateTime_1a14bed41e6c19c2dfd9c0d36a5edcd29f" compoundref="de/d1b/datetime_8h" startline="188" endline="190">to_date</references>
+      </memberdef>
+      <memberdef kind="function" id="d6/d4f/classpyfolio_1_1DateTime_1adfa008cc517c78cf148ca50a80e81fb1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref></type>
+        <definition>DateTime pyfolio::DateTime::next_business_day</definition>
+        <argsstring>(const BusinessCalendar &amp;calendar=default_calendar_) const</argsstring>
+        <name>next_business_day</name>
+        <qualifiedname>pyfolio::DateTime::next_business_day</qualifiedname>
+        <param>
+          <type>const <ref refid="dc/ddd/classpyfolio_1_1BusinessCalendar" kindref="compound">BusinessCalendar</ref> &amp;</type>
+          <declname>calendar</declname>
+          <defval><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a27270e18fd7b3fcba5fcd1ce8533c9e7" kindref="member">default_calendar_</ref></defval>
+        </param>
+        <briefdescription>
+<para>Get next business day. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" line="221" column="14" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" bodystart="221" bodyend="224"/>
+        <references refid="d6/d4f/classpyfolio_1_1DateTime_1a140b23c1840e818f12ef46082e8762ba" compoundref="de/d1b/datetime_8h" startline="137" endline="137">DateTime</references>
+        <references refid="d6/d4f/classpyfolio_1_1DateTime_1a27270e18fd7b3fcba5fcd1ce8533c9e7" compoundref="de/d1b/datetime_8h" startline="134">default_calendar_</references>
+        <references refid="d6/d4f/classpyfolio_1_1DateTime_1adfa008cc517c78cf148ca50a80e81fb1" compoundref="de/d1b/datetime_8h" startline="221" endline="224">next_business_day</references>
+        <references refid="d6/d4f/classpyfolio_1_1DateTime_1a14bed41e6c19c2dfd9c0d36a5edcd29f" compoundref="de/d1b/datetime_8h" startline="188" endline="190">to_date</references>
+        <referencedby refid="d6/d4f/classpyfolio_1_1DateTime_1adfa008cc517c78cf148ca50a80e81fb1" compoundref="de/d1b/datetime_8h" startline="221" endline="224">next_business_day</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d6/d4f/classpyfolio_1_1DateTime_1afca583e558a8f0d6cdbd1378eaebaaa7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref></type>
+        <definition>DateTime pyfolio::DateTime::previous_business_day</definition>
+        <argsstring>(const BusinessCalendar &amp;calendar=default_calendar_) const</argsstring>
+        <name>previous_business_day</name>
+        <qualifiedname>pyfolio::DateTime::previous_business_day</qualifiedname>
+        <param>
+          <type>const <ref refid="dc/ddd/classpyfolio_1_1BusinessCalendar" kindref="compound">BusinessCalendar</ref> &amp;</type>
+          <declname>calendar</declname>
+          <defval><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a27270e18fd7b3fcba5fcd1ce8533c9e7" kindref="member">default_calendar_</ref></defval>
+        </param>
+        <briefdescription>
+<para>Get previous business day. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" line="229" column="14" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" bodystart="229" bodyend="232"/>
+        <references refid="d6/d4f/classpyfolio_1_1DateTime_1a140b23c1840e818f12ef46082e8762ba" compoundref="de/d1b/datetime_8h" startline="137" endline="137">DateTime</references>
+        <references refid="d6/d4f/classpyfolio_1_1DateTime_1a27270e18fd7b3fcba5fcd1ce8533c9e7" compoundref="de/d1b/datetime_8h" startline="134">default_calendar_</references>
+        <references refid="d6/d4f/classpyfolio_1_1DateTime_1afca583e558a8f0d6cdbd1378eaebaaa7" compoundref="de/d1b/datetime_8h" startline="229" endline="232">previous_business_day</references>
+        <references refid="d6/d4f/classpyfolio_1_1DateTime_1a14bed41e6c19c2dfd9c0d36a5edcd29f" compoundref="de/d1b/datetime_8h" startline="188" endline="190">to_date</references>
+        <referencedby refid="d6/d4f/classpyfolio_1_1DateTime_1afca583e558a8f0d6cdbd1378eaebaaa7" compoundref="de/d1b/datetime_8h" startline="229" endline="232">previous_business_day</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d6/d4f/classpyfolio_1_1DateTime_1aae730fe2db12407f5eb2af3c11e229e9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int pyfolio::DateTime::business_days_until</definition>
+        <argsstring>(const DateTime &amp;other, const BusinessCalendar &amp;calendar=default_calendar_) const</argsstring>
+        <name>business_days_until</name>
+        <qualifiedname>pyfolio::DateTime::business_days_until</qualifiedname>
+        <param>
+          <type>const <ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <param>
+          <type>const <ref refid="dc/ddd/classpyfolio_1_1BusinessCalendar" kindref="compound">BusinessCalendar</ref> &amp;</type>
+          <declname>calendar</declname>
+          <defval><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a27270e18fd7b3fcba5fcd1ce8533c9e7" kindref="member">default_calendar_</ref></defval>
+        </param>
+        <briefdescription>
+<para>Calculate business days between dates. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" line="237" column="9" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" bodystart="237" bodyend="239"/>
+        <references refid="d6/d4f/classpyfolio_1_1DateTime_1a140b23c1840e818f12ef46082e8762ba" compoundref="de/d1b/datetime_8h" startline="137" endline="137">DateTime</references>
+        <references refid="d6/d4f/classpyfolio_1_1DateTime_1a27270e18fd7b3fcba5fcd1ce8533c9e7" compoundref="de/d1b/datetime_8h" startline="134">default_calendar_</references>
+        <references refid="d6/d4f/classpyfolio_1_1DateTime_1a14bed41e6c19c2dfd9c0d36a5edcd29f" compoundref="de/d1b/datetime_8h" startline="188" endline="190">to_date</references>
+        <referencedby refid="dc/d4e/namespacepyfolio_1_1transactions_1a735b0817892b8545a3e238c24561a185" compoundref="d0/db6/transaction_8h" startline="548" endline="578">pyfolio::transactions::calculate_turnover</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d6/d4f/classpyfolio_1_1DateTime_1a42e5f9cb95823fcd9470be79a65fe8a6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref></type>
+        <definition>DateTime pyfolio::DateTime::add_days</definition>
+        <argsstring>(int days) const</argsstring>
+        <name>add_days</name>
+        <qualifiedname>pyfolio::DateTime::add_days</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>days</declname>
+        </param>
+        <briefdescription>
+<para>Add days. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" line="244" column="14" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" bodystart="244" bodyend="244"/>
+        <references refid="d6/d4f/classpyfolio_1_1DateTime_1a140b23c1840e818f12ef46082e8762ba" compoundref="de/d1b/datetime_8h" startline="137" endline="137">DateTime</references>
+        <referencedby refid="dd/dcf/classpyfolio_1_1analytics_1_1BayesianAnalyzer_1a7eceaad081c1c0baebefd3ffa8762459" compoundref="d6/dfe/bayesian_8h" startline="335" endline="378">pyfolio::analytics::BayesianAnalyzer::forecast_returns</referencedby>
+        <referencedby refid="d7/d5f/plotly__enhanced__example_8cpp_1a0790df5197ab4dccf700d2ef54adf47d" compoundref="d7/d5f/plotly__enhanced__example_8cpp" startline="79" endline="111">generate_ohlc_data</referencedby>
+        <referencedby refid="db/d43/namespacepyfolio_1_1io_1_1sample__data_1ab2b9f93e4bdf502964ca4c30adf8354d" compoundref="d2/db9/data__loader_8h" startline="437" endline="446">pyfolio::io::sample_data::generate_random_returns</referencedby>
+        <referencedby refid="d7/d5f/plotly__enhanced__example_8cpp_1a127f4b66b63cd12df905cc57aece66c4" compoundref="d7/d5f/plotly__enhanced__example_8cpp" startline="27" endline="49">generate_sample_data</referencedby>
+        <referencedby refid="db/d43/namespacepyfolio_1_1io_1_1sample__data_1adc2dc52db801b58b29311cb7c2c6a7f5" compoundref="d2/db9/data__loader_8h" startline="448" endline="466">pyfolio::io::sample_data::generate_sample_positions</referencedby>
+        <referencedby refid="db/d43/namespacepyfolio_1_1io_1_1sample__data_1a902e9474b71c67f378dfe3f9ce014521" compoundref="d2/db9/data__loader_8h" startline="468" endline="483">pyfolio::io::sample_data::generate_sample_transactions</referencedby>
+        <referencedby refid="d0/dd1/classpyfolio_1_1reporting_1_1InterestingPeriods_1a9546c510e3396ef958efc7ac420a0193" compoundref="d2/d26/interesting__periods_8h" startline="127" endline="139">pyfolio::reporting::InterestingPeriods::get_recent_periods</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d6/d4f/classpyfolio_1_1DateTime_1a8b63d24df7be661ffdb7226aaa07ff4c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref></type>
+        <definition>DateTime pyfolio::DateTime::add_months</definition>
+        <argsstring>(int months) const</argsstring>
+        <name>add_months</name>
+        <qualifiedname>pyfolio::DateTime::add_months</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>months</declname>
+        </param>
+        <briefdescription>
+<para>Add months (proper date arithmetic) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" line="249" column="14" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" bodystart="249" bodyend="273"/>
+        <references refid="d6/d4f/classpyfolio_1_1DateTime_1a140b23c1840e818f12ef46082e8762ba" compoundref="de/d1b/datetime_8h" startline="137" endline="137">DateTime</references>
+        <references refid="d6/d4f/classpyfolio_1_1DateTime_1a14bed41e6c19c2dfd9c0d36a5edcd29f" compoundref="de/d1b/datetime_8h" startline="188" endline="190">to_date</references>
+      </memberdef>
+      <memberdef kind="function" id="d6/d4f/classpyfolio_1_1DateTime_1ad71c05326b79cd5649136cdb6583a7de" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref></type>
+        <definition>DateTime pyfolio::DateTime::add_years</definition>
+        <argsstring>(int years) const</argsstring>
+        <name>add_years</name>
+        <qualifiedname>pyfolio::DateTime::add_years</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>years</declname>
+        </param>
+        <briefdescription>
+<para>Add years (proper date arithmetic) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" line="278" column="14" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" bodystart="278" bodyend="289"/>
+        <references refid="d6/d4f/classpyfolio_1_1DateTime_1a140b23c1840e818f12ef46082e8762ba" compoundref="de/d1b/datetime_8h" startline="137" endline="137">DateTime</references>
+        <references refid="d6/d4f/classpyfolio_1_1DateTime_1a14bed41e6c19c2dfd9c0d36a5edcd29f" compoundref="de/d1b/datetime_8h" startline="188" endline="190">to_date</references>
+      </memberdef>
+      <memberdef kind="function" id="d6/d4f/classpyfolio_1_1DateTime_1a60af93f70c88c8166eb73a6d9be807f0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool pyfolio::DateTime::is_weekday</definition>
+        <argsstring>() const</argsstring>
+        <name>is_weekday</name>
+        <qualifiedname>pyfolio::DateTime::is_weekday</qualifiedname>
+        <briefdescription>
+<para>Check if this is a weekday (Monday-Friday) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" line="294" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" bodystart="294" bodyend="299"/>
+        <references refid="d6/d4f/classpyfolio_1_1DateTime_1aff6090d26f5c0cd5a74608242c8f3f71" compoundref="de/d1b/datetime_8h" startline="343" endline="343">time_point</references>
+        <references refid="d6/d4f/classpyfolio_1_1DateTime_1a14bed41e6c19c2dfd9c0d36a5edcd29f" compoundref="de/d1b/datetime_8h" startline="188" endline="190">to_date</references>
+        <referencedby refid="d1/d64/namespacepyfolio_1_1intraday_1_1utils_1afff498b520c4dce74192e2d54353c61e" compoundref="dc/d51/intraday_8cpp" startline="323" endline="330">pyfolio::intraday::utils::is_trading_hours</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d6/d4f/classpyfolio_1_1DateTime_1a428b9799ba78daaf9caed9e67842b450" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int pyfolio::DateTime::day_of_week</definition>
+        <argsstring>() const</argsstring>
+        <name>day_of_week</name>
+        <qualifiedname>pyfolio::DateTime::day_of_week</qualifiedname>
+        <briefdescription>
+<para>Get day of week (0=Sunday, 1=Monday, ..., 6=Saturday) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" line="304" column="9" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" bodystart="304" bodyend="309"/>
+        <references refid="d6/d4f/classpyfolio_1_1DateTime_1aff6090d26f5c0cd5a74608242c8f3f71" compoundref="de/d1b/datetime_8h" startline="343" endline="343">time_point</references>
+        <references refid="d6/d4f/classpyfolio_1_1DateTime_1a14bed41e6c19c2dfd9c0d36a5edcd29f" compoundref="de/d1b/datetime_8h" startline="188" endline="190">to_date</references>
+      </memberdef>
+      <memberdef kind="function" id="d6/d4f/classpyfolio_1_1DateTime_1a09faae255bfa8251e234441d58e04497" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int pyfolio::DateTime::days_since</definition>
+        <argsstring>(const DateTime &amp;other) const</argsstring>
+        <name>days_since</name>
+        <qualifiedname>pyfolio::DateTime::days_since</qualifiedname>
+        <param>
+          <type>const <ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Calculate days since another date. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" line="314" column="9" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" bodystart="314" bodyend="318"/>
+        <references refid="d6/d4f/classpyfolio_1_1DateTime_1a140b23c1840e818f12ef46082e8762ba" compoundref="de/d1b/datetime_8h" startline="137" endline="137">DateTime</references>
+      </memberdef>
+      <memberdef kind="function" id="d6/d4f/classpyfolio_1_1DateTime_1a43b84b1326b0fca9e1f3c8dc41f8a691" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref></type>
+        <definition>DateTime pyfolio::DateTime::add_business_days</definition>
+        <argsstring>(int days, const BusinessCalendar &amp;calendar=default_calendar_) const</argsstring>
+        <name>add_business_days</name>
+        <qualifiedname>pyfolio::DateTime::add_business_days</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>days</declname>
+        </param>
+        <param>
+          <type>const <ref refid="dc/ddd/classpyfolio_1_1BusinessCalendar" kindref="compound">BusinessCalendar</ref> &amp;</type>
+          <declname>calendar</declname>
+          <defval><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a27270e18fd7b3fcba5fcd1ce8533c9e7" kindref="member">default_calendar_</ref></defval>
+        </param>
+        <briefdescription>
+<para>Add business days. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" line="323" column="14" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" bodystart="323" bodyend="336"/>
+        <references refid="d6/d4f/classpyfolio_1_1DateTime_1a140b23c1840e818f12ef46082e8762ba" compoundref="de/d1b/datetime_8h" startline="137" endline="137">DateTime</references>
+        <references refid="d6/d4f/classpyfolio_1_1DateTime_1a27270e18fd7b3fcba5fcd1ce8533c9e7" compoundref="de/d1b/datetime_8h" startline="134">default_calendar_</references>
+      </memberdef>
+      <memberdef kind="function" id="d6/d4f/classpyfolio_1_1DateTime_1a57c7e6bb70ab1da2fa61ffeb60b08590" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool pyfolio::DateTime::operator==</definition>
+        <argsstring>(const DateTime &amp;other) const =default</argsstring>
+        <name>operator==</name>
+        <qualifiedname>pyfolio::DateTime::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" line="339" column="10"/>
+        <references refid="d6/d4f/classpyfolio_1_1DateTime_1a140b23c1840e818f12ef46082e8762ba" compoundref="de/d1b/datetime_8h" startline="137" endline="137">DateTime</references>
+      </memberdef>
+      <memberdef kind="function" id="d6/d4f/classpyfolio_1_1DateTime_1a70cc633c238fd3f8ef8a602bee15b069" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto pyfolio::DateTime::operator&lt;=&gt;</definition>
+        <argsstring>(const DateTime &amp;other) const =default</argsstring>
+        <name>operator&lt;=&gt;</name>
+        <qualifiedname>pyfolio::DateTime::operator&lt;=&gt;</qualifiedname>
+        <param>
+          <type>const <ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" line="340" column="5"/>
+        <references refid="d6/d4f/classpyfolio_1_1DateTime_1a140b23c1840e818f12ef46082e8762ba" compoundref="de/d1b/datetime_8h" startline="137" endline="137">DateTime</references>
+      </memberdef>
+      <memberdef kind="function" id="d6/d4f/classpyfolio_1_1DateTime_1aff6090d26f5c0cd5a74608242c8f3f71" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="d7/df8/namespacepyfolio_1ad77d362107c51226c09e896bdf822f9d" kindref="member">TimePoint</ref> &amp;</type>
+        <definition>const TimePoint &amp; pyfolio::DateTime::time_point</definition>
+        <argsstring>() const</argsstring>
+        <name>time_point</name>
+        <qualifiedname>pyfolio::DateTime::time_point</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" line="343" column="21" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" bodystart="343" bodyend="343"/>
+        <referencedby refid="d6/d4f/classpyfolio_1_1DateTime_1a428b9799ba78daaf9caed9e67842b450" compoundref="de/d1b/datetime_8h" startline="304" endline="309">day_of_week</referencedby>
+        <referencedby refid="db/d43/namespacepyfolio_1_1io_1_1sample__data_1adc2dc52db801b58b29311cb7c2c6a7f5" compoundref="d2/db9/data__loader_8h" startline="448" endline="466">pyfolio::io::sample_data::generate_sample_positions</referencedby>
+        <referencedby refid="db/d43/namespacepyfolio_1_1io_1_1sample__data_1a902e9474b71c67f378dfe3f9ce014521" compoundref="d2/db9/data__loader_8h" startline="468" endline="483">pyfolio::io::sample_data::generate_sample_transactions</referencedby>
+        <referencedby refid="d6/d4f/classpyfolio_1_1DateTime_1a60af93f70c88c8166eb73a6d9be807f0" compoundref="de/d1b/datetime_8h" startline="294" endline="299">is_weekday</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d6/d4f/classpyfolio_1_1DateTime_1a98b74d1e113cf1ca215928c0e31ba587" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int pyfolio::DateTime::year</definition>
+        <argsstring>() const</argsstring>
+        <name>year</name>
+        <qualifiedname>pyfolio::DateTime::year</qualifiedname>
+        <briefdescription>
+<para>Get year. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" line="348" column="9" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" bodystart="348" bodyend="348"/>
+        <references refid="d6/d4f/classpyfolio_1_1DateTime_1a14bed41e6c19c2dfd9c0d36a5edcd29f" compoundref="de/d1b/datetime_8h" startline="188" endline="190">to_date</references>
+        <referencedby refid="d6/d4f/classpyfolio_1_1DateTime_1aaecd3e0fe88401b0085fbc88727446cb" compoundref="de/d1b/datetime_8h" startline="143" endline="145">DateTime</referencedby>
+        <referencedby refid="d6/d4f/classpyfolio_1_1DateTime_1adfc972d8ea84c03f9a6d9eb9e661b6cd" compoundref="de/d1b/datetime_8h" startline="150" endline="173">parse</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d6/d4f/classpyfolio_1_1DateTime_1ad5a7201c60d0020d7270f24d8d10325e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int pyfolio::DateTime::month</definition>
+        <argsstring>() const</argsstring>
+        <name>month</name>
+        <qualifiedname>pyfolio::DateTime::month</qualifiedname>
+        <briefdescription>
+<para>Get month (1-12) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" line="353" column="9" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" bodystart="353" bodyend="353"/>
+        <references refid="d6/d4f/classpyfolio_1_1DateTime_1a14bed41e6c19c2dfd9c0d36a5edcd29f" compoundref="de/d1b/datetime_8h" startline="188" endline="190">to_date</references>
+        <referencedby refid="d6/d4f/classpyfolio_1_1DateTime_1aaecd3e0fe88401b0085fbc88727446cb" compoundref="de/d1b/datetime_8h" startline="143" endline="145">DateTime</referencedby>
+        <referencedby refid="d6/d4f/classpyfolio_1_1DateTime_1adfc972d8ea84c03f9a6d9eb9e661b6cd" compoundref="de/d1b/datetime_8h" startline="150" endline="173">parse</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d6/d4f/classpyfolio_1_1DateTime_1ab5864a43c0379f41ed3a2dfc0d9a17f9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int pyfolio::DateTime::day</definition>
+        <argsstring>() const</argsstring>
+        <name>day</name>
+        <qualifiedname>pyfolio::DateTime::day</qualifiedname>
+        <briefdescription>
+<para>Get day (1-31) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" line="358" column="9" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" bodystart="358" bodyend="358"/>
+        <references refid="d6/d4f/classpyfolio_1_1DateTime_1a14bed41e6c19c2dfd9c0d36a5edcd29f" compoundref="de/d1b/datetime_8h" startline="188" endline="190">to_date</references>
+        <referencedby refid="d6/d4f/classpyfolio_1_1DateTime_1aaecd3e0fe88401b0085fbc88727446cb" compoundref="de/d1b/datetime_8h" startline="143" endline="145">DateTime</referencedby>
+        <referencedby refid="d6/d4f/classpyfolio_1_1DateTime_1adfc972d8ea84c03f9a6d9eb9e661b6cd" compoundref="de/d1b/datetime_8h" startline="150" endline="173">parse</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="d6/d4f/classpyfolio_1_1DateTime_1adfc972d8ea84c03f9a6d9eb9e661b6cd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; <ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref> &gt;</type>
+        <definition>static Result&lt; DateTime &gt; pyfolio::DateTime::parse</definition>
+        <argsstring>(const std::string &amp;date_string, const std::string &amp;format=&quot;%Y-%m-%d&quot;)</argsstring>
+        <name>parse</name>
+        <qualifiedname>pyfolio::DateTime::parse</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>date_string</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>format</declname>
+          <defval>&quot;%Y-%m-%d&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Parse datetime from string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" line="150" column="19" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" bodystart="150" bodyend="173"/>
+        <references refid="d6/d4f/classpyfolio_1_1DateTime_1a140b23c1840e818f12ef46082e8762ba" compoundref="de/d1b/datetime_8h" startline="137" endline="137">DateTime</references>
+        <references refid="d6/d4f/classpyfolio_1_1DateTime_1ab5864a43c0379f41ed3a2dfc0d9a17f9" compoundref="de/d1b/datetime_8h" startline="358" endline="358">day</references>
+        <references refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" compoundref="d3/d11/error__handling_8h" startline="111" endline="116">pyfolio::Result&lt; T &gt;::error</references>
+        <references refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9ad8f78ca9a692a9411afbc7584b69d043" compoundref="d3/d11/error__handling_8h" startline="17">pyfolio::InvalidInput</references>
+        <references refid="d6/d4f/classpyfolio_1_1DateTime_1ad5a7201c60d0020d7270f24d8d10325e" compoundref="de/d1b/datetime_8h" startline="353" endline="353">month</references>
+        <references refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9ae41199faa7290c167f70f314c5e6c165" compoundref="d3/d11/error__handling_8h" startline="29">pyfolio::ParseError</references>
+        <references refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" compoundref="d3/d11/error__handling_8h" startline="74" endline="74">pyfolio::Result&lt; T &gt;::success</references>
+        <references refid="d6/d4f/classpyfolio_1_1DateTime_1a98b74d1e113cf1ca215928c0e31ba587" compoundref="de/d1b/datetime_8h" startline="348" endline="348">year</references>
+        <referencedby refid="da/deb/classpyfolio_1_1DataFrame_1a0bf6f736e050db71389e883612335aa4" compoundref="d2/d99/dataframe_8h" startline="354" endline="398">pyfolio::DataFrame::describe</referencedby>
+        <referencedby refid="da/d6e/classpyfolio_1_1intraday_1_1IntradayAnalyzer_1a55e4461ef8ea907d50c4a3e83bee9872" compoundref="dc/d51/intraday_8cpp" startline="10" endline="55">pyfolio::intraday::IntradayAnalyzer::detect_intraday</referencedby>
+        <referencedby refid="d8/d00/attribution__example_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="d8/d00/attribution__example_8cpp" startline="8" endline="236">main</referencedby>
+        <referencedby refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1a939bc654f97aca0244439bf4b2e6ec47" compoundref="d4/d45/json__serializer_8h" startline="199" endline="231">pyfolio::web::JsonSerializer::parse_time_series</referencedby>
+        <referencedby refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1af5ccaefdc7c758341967765eae7e199b" compoundref="d4/d45/json__serializer_8h" startline="236" endline="290">pyfolio::web::JsonSerializer::parse_transaction_record</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d6/d4f/classpyfolio_1_1DateTime_1af74c490a9d8ce99c6a18bdbe608d1111" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref></type>
+        <definition>static DateTime pyfolio::DateTime::now</definition>
+        <argsstring>()</argsstring>
+        <name>now</name>
+        <qualifiedname>pyfolio::DateTime::now</qualifiedname>
+        <briefdescription>
+<para>Get current date/time. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" line="178" column="21" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" bodystart="178" bodyend="178"/>
+        <references refid="d6/d4f/classpyfolio_1_1DateTime_1a140b23c1840e818f12ef46082e8762ba" compoundref="de/d1b/datetime_8h" startline="137" endline="137">DateTime</references>
+        <referencedby refid="da/deb/classpyfolio_1_1DataFrame_1aab195d82ad5f7716bdffe6017cf863a3" compoundref="d2/d99/dataframe_8h" startline="403" endline="443">pyfolio::DataFrame::corr</referencedby>
+        <referencedby refid="d6/d4f/classpyfolio_1_1DateTime_1a140b23c1840e818f12ef46082e8762ba" compoundref="de/d1b/datetime_8h" startline="137" endline="137">DateTime</referencedby>
+        <referencedby refid="da/deb/classpyfolio_1_1DataFrame_1a0bf6f736e050db71389e883612335aa4" compoundref="d2/d99/dataframe_8h" startline="354" endline="398">pyfolio::DataFrame::describe</referencedby>
+        <referencedby refid="d8/dd9/namespacepyfolio_1_1performance_1ae62f81fa57da6d511eea88d11e4128ae" compoundref="d8/de8/drawdown_8h" startline="205" endline="281">pyfolio::performance::find_drawdown_periods</referencedby>
+        <referencedby refid="d0/dd1/classpyfolio_1_1reporting_1_1InterestingPeriods_1a9546c510e3396ef958efc7ac420a0193" compoundref="d2/d26/interesting__periods_8h" startline="127" endline="139">pyfolio::reporting::InterestingPeriods::get_recent_periods</referencedby>
+        <referencedby refid="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1ab8b8f36af787039a4748bdc6e4c48530" compoundref="de/de7/rest__api__server_8h" startline="235" endline="302">pyfolio::web::RestApiServer::handle_portfolio_analysis</referencedby>
+        <referencedby refid="d8/dd9/namespacepyfolio_1_1performance_1aff3558ae3dd3ed4381a805f730d47b53" compoundref="d8/de8/drawdown_8h" startline="86" endline="161">pyfolio::performance::max_drawdown_info</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d6/d4f/classpyfolio_1_1DateTime_1a6b980b304349106ebab133e7c947d85b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref></type>
+        <definition>static DateTime pyfolio::DateTime::from_time_point</definition>
+        <argsstring>(const TimePoint &amp;tp)</argsstring>
+        <name>from_time_point</name>
+        <qualifiedname>pyfolio::DateTime::from_time_point</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/df8/namespacepyfolio_1ad77d362107c51226c09e896bdf822f9d" kindref="member">TimePoint</ref> &amp;</type>
+          <declname>tp</declname>
+        </param>
+        <briefdescription>
+<para>Create <ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref> from <ref refid="d7/df8/namespacepyfolio_1ad77d362107c51226c09e896bdf822f9d" kindref="member">TimePoint</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" line="183" column="21" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" bodystart="183" bodyend="183"/>
+        <references refid="d6/d4f/classpyfolio_1_1DateTime_1a140b23c1840e818f12ef46082e8762ba" compoundref="de/d1b/datetime_8h" startline="137" endline="137">DateTime</references>
+        <referencedby refid="d8/ddb/namespacepyfolio_1_1io_1a2e15bed59889eb6a31375d80d5691b1b" compoundref="d2/db9/data__loader_8h" startline="332" endline="358">pyfolio::io::save_transactions_to_csv</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para><ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref> utilities for financial calculations. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>pyfolio::BusinessCalendar</label>
+        <link refid="dc/ddd/classpyfolio_1_1BusinessCalendar"/>
+      </node>
+      <node id="1">
+        <label>pyfolio::DateTime</label>
+        <link refid="d6/d4f/classpyfolio_1_1DateTime"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>default_calendar_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" line="129" column="1" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h" bodystart="129" bodyend="359"/>
+    <listofallmembers>
+      <member refid="d6/d4f/classpyfolio_1_1DateTime_1a43b84b1326b0fca9e1f3c8dc41f8a691" prot="public" virt="non-virtual"><scope>pyfolio::DateTime</scope><name>add_business_days</name></member>
+      <member refid="d6/d4f/classpyfolio_1_1DateTime_1a42e5f9cb95823fcd9470be79a65fe8a6" prot="public" virt="non-virtual"><scope>pyfolio::DateTime</scope><name>add_days</name></member>
+      <member refid="d6/d4f/classpyfolio_1_1DateTime_1a8b63d24df7be661ffdb7226aaa07ff4c" prot="public" virt="non-virtual"><scope>pyfolio::DateTime</scope><name>add_months</name></member>
+      <member refid="d6/d4f/classpyfolio_1_1DateTime_1ad71c05326b79cd5649136cdb6583a7de" prot="public" virt="non-virtual"><scope>pyfolio::DateTime</scope><name>add_years</name></member>
+      <member refid="d6/d4f/classpyfolio_1_1DateTime_1aae730fe2db12407f5eb2af3c11e229e9" prot="public" virt="non-virtual"><scope>pyfolio::DateTime</scope><name>business_days_until</name></member>
+      <member refid="d6/d4f/classpyfolio_1_1DateTime_1a140b23c1840e818f12ef46082e8762ba" prot="public" virt="non-virtual"><scope>pyfolio::DateTime</scope><name>DateTime</name></member>
+      <member refid="d6/d4f/classpyfolio_1_1DateTime_1a4f902d49791077ebc15187cd0ca44282" prot="public" virt="non-virtual"><scope>pyfolio::DateTime</scope><name>DateTime</name></member>
+      <member refid="d6/d4f/classpyfolio_1_1DateTime_1aff7a3b252e6c50d1927434f629875710" prot="public" virt="non-virtual"><scope>pyfolio::DateTime</scope><name>DateTime</name></member>
+      <member refid="d6/d4f/classpyfolio_1_1DateTime_1aaecd3e0fe88401b0085fbc88727446cb" prot="public" virt="non-virtual"><scope>pyfolio::DateTime</scope><name>DateTime</name></member>
+      <member refid="d6/d4f/classpyfolio_1_1DateTime_1ab5864a43c0379f41ed3a2dfc0d9a17f9" prot="public" virt="non-virtual"><scope>pyfolio::DateTime</scope><name>day</name></member>
+      <member refid="d6/d4f/classpyfolio_1_1DateTime_1a428b9799ba78daaf9caed9e67842b450" prot="public" virt="non-virtual"><scope>pyfolio::DateTime</scope><name>day_of_week</name></member>
+      <member refid="d6/d4f/classpyfolio_1_1DateTime_1a09faae255bfa8251e234441d58e04497" prot="public" virt="non-virtual"><scope>pyfolio::DateTime</scope><name>days_since</name></member>
+      <member refid="d6/d4f/classpyfolio_1_1DateTime_1a27270e18fd7b3fcba5fcd1ce8533c9e7" prot="public" virt="non-virtual"><scope>pyfolio::DateTime</scope><name>default_calendar_</name></member>
+      <member refid="d6/d4f/classpyfolio_1_1DateTime_1a6b980b304349106ebab133e7c947d85b" prot="public" virt="non-virtual"><scope>pyfolio::DateTime</scope><name>from_time_point</name></member>
+      <member refid="d6/d4f/classpyfolio_1_1DateTime_1af46c3e8a096b3ec850297dad97f807b5" prot="public" virt="non-virtual"><scope>pyfolio::DateTime</scope><name>is_business_day</name></member>
+      <member refid="d6/d4f/classpyfolio_1_1DateTime_1a60af93f70c88c8166eb73a6d9be807f0" prot="public" virt="non-virtual"><scope>pyfolio::DateTime</scope><name>is_weekday</name></member>
+      <member refid="d6/d4f/classpyfolio_1_1DateTime_1ad5a7201c60d0020d7270f24d8d10325e" prot="public" virt="non-virtual"><scope>pyfolio::DateTime</scope><name>month</name></member>
+      <member refid="d6/d4f/classpyfolio_1_1DateTime_1adfa008cc517c78cf148ca50a80e81fb1" prot="public" virt="non-virtual"><scope>pyfolio::DateTime</scope><name>next_business_day</name></member>
+      <member refid="d6/d4f/classpyfolio_1_1DateTime_1af74c490a9d8ce99c6a18bdbe608d1111" prot="public" virt="non-virtual"><scope>pyfolio::DateTime</scope><name>now</name></member>
+      <member refid="d6/d4f/classpyfolio_1_1DateTime_1a70cc633c238fd3f8ef8a602bee15b069" prot="public" virt="non-virtual"><scope>pyfolio::DateTime</scope><name>operator&lt;=&gt;</name></member>
+      <member refid="d6/d4f/classpyfolio_1_1DateTime_1a57c7e6bb70ab1da2fa61ffeb60b08590" prot="public" virt="non-virtual"><scope>pyfolio::DateTime</scope><name>operator==</name></member>
+      <member refid="d6/d4f/classpyfolio_1_1DateTime_1adfc972d8ea84c03f9a6d9eb9e661b6cd" prot="public" virt="non-virtual"><scope>pyfolio::DateTime</scope><name>parse</name></member>
+      <member refid="d6/d4f/classpyfolio_1_1DateTime_1afca583e558a8f0d6cdbd1378eaebaaa7" prot="public" virt="non-virtual"><scope>pyfolio::DateTime</scope><name>previous_business_day</name></member>
+      <member refid="d6/d4f/classpyfolio_1_1DateTime_1aff6090d26f5c0cd5a74608242c8f3f71" prot="public" virt="non-virtual"><scope>pyfolio::DateTime</scope><name>time_point</name></member>
+      <member refid="d6/d4f/classpyfolio_1_1DateTime_1accbfc8dcbad27268dffa00d43f3b8292" prot="private" virt="non-virtual"><scope>pyfolio::DateTime</scope><name>time_point_</name></member>
+      <member refid="d6/d4f/classpyfolio_1_1DateTime_1a14bed41e6c19c2dfd9c0d36a5edcd29f" prot="public" virt="non-virtual"><scope>pyfolio::DateTime</scope><name>to_date</name></member>
+      <member refid="d6/d4f/classpyfolio_1_1DateTime_1a0c77abf0a6d6acefcec468e8cf061d5c" prot="public" virt="non-virtual"><scope>pyfolio::DateTime</scope><name>to_string</name></member>
+      <member refid="d6/d4f/classpyfolio_1_1DateTime_1a98b74d1e113cf1ca215928c0e31ba587" prot="public" virt="non-virtual"><scope>pyfolio::DateTime</scope><name>year</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

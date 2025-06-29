@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="d7/d21/classpyfolio_1_1attribution_1_1AttributionAnalyzer" kind="class" language="C++" prot="public">
+    <compoundname>pyfolio::attribution::AttributionAnalyzer</compoundname>
+    <includes refid="da/dd4/attribution_8h" local="no">attribution.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d7/d21/classpyfolio_1_1attribution_1_1AttributionAnalyzer_1aba8060cedc814707e65a74e7f2e0a9f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; double &gt;</type>
+        <definition>Result&lt; double &gt; pyfolio::attribution::AttributionAnalyzer::analyze_factor_attribution</definition>
+        <argsstring>(const FactorExposures &amp;portfolio_exposures, const FactorExposures &amp;benchmark_exposures, const FactorReturns &amp;factor_returns)</argsstring>
+        <name>analyze_factor_attribution</name>
+        <qualifiedname>pyfolio::attribution::AttributionAnalyzer::analyze_factor_attribution</qualifiedname>
+        <param>
+          <type>const <ref refid="df/da4/structpyfolio_1_1attribution_1_1FactorExposures" kindref="compound">FactorExposures</ref> &amp;</type>
+          <declname>portfolio_exposures</declname>
+        </param>
+        <param>
+          <type>const <ref refid="df/da4/structpyfolio_1_1attribution_1_1FactorExposures" kindref="compound">FactorExposures</ref> &amp;</type>
+          <declname>benchmark_exposures</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d2/d09/structpyfolio_1_1attribution_1_1FactorReturns" kindref="compound">FactorReturns</ref> &amp;</type>
+          <declname>factor_returns</declname>
+        </param>
+        <briefdescription>
+<para>Analyze factor-based attribution. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" line="531" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" bodystart="531" bodyend="549"/>
+        <references refid="df/da4/structpyfolio_1_1attribution_1_1FactorExposures_1ade09d65d7207dcd41d6abafebfdb580b" compoundref="da/dd4/attribution_8h" startline="61">pyfolio::attribution::FactorExposures::low_volatility_factor</references>
+        <references refid="d2/d09/structpyfolio_1_1attribution_1_1FactorReturns_1a36a07b2b8c415b9d556611cbbb87dc63" compoundref="da/dd4/attribution_8h" startline="78">pyfolio::attribution::FactorReturns::low_volatility_return</references>
+        <references refid="df/da4/structpyfolio_1_1attribution_1_1FactorExposures_1aca7d631b073b924d7f89efd6d4b9668f" compoundref="da/dd4/attribution_8h" startline="56">pyfolio::attribution::FactorExposures::market_beta</references>
+        <references refid="d2/d09/structpyfolio_1_1attribution_1_1FactorReturns_1a954b8d6f9127b22378224c3913000ffc" compoundref="da/dd4/attribution_8h" startline="73">pyfolio::attribution::FactorReturns::market_return</references>
+        <references refid="df/da4/structpyfolio_1_1attribution_1_1FactorExposures_1a141f158c067e9bfbe3e7fa4edb77423e" compoundref="da/dd4/attribution_8h" startline="59">pyfolio::attribution::FactorExposures::momentum_factor</references>
+        <references refid="d2/d09/structpyfolio_1_1attribution_1_1FactorReturns_1a2e0ef896d33b4c75f7788a29993d195d" compoundref="da/dd4/attribution_8h" startline="76">pyfolio::attribution::FactorReturns::momentum_return</references>
+        <references refid="df/da4/structpyfolio_1_1attribution_1_1FactorExposures_1a8315ff133f67f56909bcca3f0cea639b" compoundref="da/dd4/attribution_8h" startline="60">pyfolio::attribution::FactorExposures::quality_factor</references>
+        <references refid="d2/d09/structpyfolio_1_1attribution_1_1FactorReturns_1ae47ee072b4df916d484e83b929130a37" compoundref="da/dd4/attribution_8h" startline="77">pyfolio::attribution::FactorReturns::quality_return</references>
+        <references refid="df/da4/structpyfolio_1_1attribution_1_1FactorExposures_1a1eca32accfb23f23f3c8cf188d60f5ad" compoundref="da/dd4/attribution_8h" startline="57">pyfolio::attribution::FactorExposures::size_factor</references>
+        <references refid="d2/d09/structpyfolio_1_1attribution_1_1FactorReturns_1a8d871460c8fa735b641fb273061e5a89" compoundref="da/dd4/attribution_8h" startline="74">pyfolio::attribution::FactorReturns::size_return</references>
+        <references refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" compoundref="d3/d11/error__handling_8h" startline="74" endline="74">pyfolio::Result&lt; T &gt;::success</references>
+        <references refid="df/da4/structpyfolio_1_1attribution_1_1FactorExposures_1abf25d702c370cb2b14834d493d88bdd3" compoundref="da/dd4/attribution_8h" startline="58">pyfolio::attribution::FactorExposures::value_factor</references>
+        <references refid="d2/d09/structpyfolio_1_1attribution_1_1FactorReturns_1af01832d5d63e7186c7155ed7b18620f2" compoundref="da/dd4/attribution_8h" startline="75">pyfolio::attribution::FactorReturns::value_return</references>
+      </memberdef>
+      <memberdef kind="function" id="d7/d21/classpyfolio_1_1attribution_1_1AttributionAnalyzer_1a459039ea2bd76a724a7904e72f9cd8be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; std::vector&lt; <ref refid="d6/dcd/structpyfolio_1_1attribution_1_1SectorAttribution" kindref="compound">SectorAttribution</ref> &gt; &gt;</type>
+        <definition>Result&lt; std::vector&lt; SectorAttribution &gt; &gt; pyfolio::attribution::AttributionAnalyzer::analyze_sector_attribution</definition>
+        <argsstring>(const std::map&lt; std::string, double &gt; &amp;portfolio_weights, const std::map&lt; std::string, double &gt; &amp;benchmark_weights, const std::map&lt; std::string, double &gt; &amp;sector_returns)</argsstring>
+        <name>analyze_sector_attribution</name>
+        <qualifiedname>pyfolio::attribution::AttributionAnalyzer::analyze_sector_attribution</qualifiedname>
+        <param>
+          <type>const std::map&lt; std::string, double &gt; &amp;</type>
+          <declname>portfolio_weights</declname>
+        </param>
+        <param>
+          <type>const std::map&lt; std::string, double &gt; &amp;</type>
+          <declname>benchmark_weights</declname>
+        </param>
+        <param>
+          <type>const std::map&lt; std::string, double &gt; &amp;</type>
+          <declname>sector_returns</declname>
+        </param>
+        <briefdescription>
+<para>Analyze sector-based attribution. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" line="554" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" bodystart="554" bodyend="591"/>
+        <references refid="d6/dcd/structpyfolio_1_1attribution_1_1SectorAttribution_1a0ce78d884eca80e9bf40fb0b407494de" compoundref="da/dd4/attribution_8h" startline="46">pyfolio::attribution::SectorAttribution::allocation_effect</references>
+        <references refid="d6/dcd/structpyfolio_1_1attribution_1_1SectorAttribution_1a3e3a02ca2f856f3286bcaf9b8cb2650e" compoundref="da/dd4/attribution_8h" startline="45">pyfolio::attribution::SectorAttribution::benchmark_return</references>
+        <references refid="d6/dcd/structpyfolio_1_1attribution_1_1SectorAttribution_1a3ff23f7ec30f31ce9d1800097993cc65" compoundref="da/dd4/attribution_8h" startline="43">pyfolio::attribution::SectorAttribution::benchmark_weight</references>
+        <references refid="d6/dcd/structpyfolio_1_1attribution_1_1SectorAttribution_1ac50e54bafe801c481c2601c856238872" compoundref="da/dd4/attribution_8h" startline="48">pyfolio::attribution::SectorAttribution::interaction_effect</references>
+        <references refid="d6/dcd/structpyfolio_1_1attribution_1_1SectorAttribution_1a34b70828f7c81195b8cbe94cfbfb3896" compoundref="da/dd4/attribution_8h" startline="44">pyfolio::attribution::SectorAttribution::portfolio_return</references>
+        <references refid="d6/dcd/structpyfolio_1_1attribution_1_1SectorAttribution_1a606a6cedb46d043b756ca9597559c4b4" compoundref="da/dd4/attribution_8h" startline="42">pyfolio::attribution::SectorAttribution::portfolio_weight</references>
+        <references refid="d6/dcd/structpyfolio_1_1attribution_1_1SectorAttribution_1a43b34f11cd5e42310368439b82b7cbec" compoundref="da/dd4/attribution_8h" startline="41">pyfolio::attribution::SectorAttribution::sector</references>
+        <references refid="d6/dcd/structpyfolio_1_1attribution_1_1SectorAttribution_1ac434f3b0290e09dccec73f1af6ba0431" compoundref="da/dd4/attribution_8h" startline="47">pyfolio::attribution::SectorAttribution::selection_effect</references>
+        <references refid="d6/dcd/structpyfolio_1_1attribution_1_1SectorAttribution_1ad5d7458f9910c785d6cd1df8425d492e" compoundref="da/dd4/attribution_8h" startline="49">pyfolio::attribution::SectorAttribution::total_contribution</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>General attribution analyzer. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" line="526" column="1" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" bodystart="526" bodyend="592"/>
+    <listofallmembers>
+      <member refid="d7/d21/classpyfolio_1_1attribution_1_1AttributionAnalyzer_1aba8060cedc814707e65a74e7f2e0a9f9" prot="public" virt="non-virtual"><scope>pyfolio::attribution::AttributionAnalyzer</scope><name>analyze_factor_attribution</name></member>
+      <member refid="d7/d21/classpyfolio_1_1attribution_1_1AttributionAnalyzer_1a459039ea2bd76a724a7904e72f9cd8be" prot="public" virt="non-virtual"><scope>pyfolio::attribution::AttributionAnalyzer</scope><name>analyze_sector_attribution</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dir_4e33d1eb43dcd61f8cc04918f1e0a3ff" kind="dir">
+    <compoundname>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio</compoundname>
+    <innerdir refid="dir_e34c41e9c1266fa77d10bbc7fbf7c5b5">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics</innerdir>
+    <innerdir refid="dir_e2d8eb59473f4fca41812091e7509983">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution</innerdir>
+    <innerdir refid="dir_6d814591c8d7601993b3b77df729f3fe">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/capacity</innerdir>
+    <innerdir refid="dir_bf97ca774b4ebc067669820e709a5f9b">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core</innerdir>
+    <innerdir refid="dir_504f73da4720fc1bf2f3e3557f41faa1">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/io</innerdir>
+    <innerdir refid="dir_9487dc69cf60af18be4d131f45f44673">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math</innerdir>
+    <innerdir refid="dir_bd32e822b09ca332cc7d0d79547ff296">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory</innerdir>
+    <innerdir refid="dir_77ec3743dc797dd203103fb100b607d9">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/parallel</innerdir>
+    <innerdir refid="dir_c8797bfb849775fa90e2003559e1dc74">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance</innerdir>
+    <innerdir refid="dir_775fd81b08cdeb446682e0715289e4dd">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions</innerdir>
+    <innerdir refid="dir_394498176d72399809ac23ab209b0f13">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting</innerdir>
+    <innerdir refid="dir_6b815546ea83a706da6c236f0df0a206">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk</innerdir>
+    <innerdir refid="dir_89d06b7c9a055734b1db89692e3066b7">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions</innerdir>
+    <innerdir refid="dir_77b3f75cd1c38c8722b6becd96a8cfe6">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/utils</innerdir>
+    <innerdir refid="dir_19ecdf3c49fc77657b86c001bb6f1d99">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization</innerdir>
+    <innerdir refid="dir_33df75d5c2270a591109cd9cc85fbc08">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web</innerdir>
+    <innerfile refid="d3/d30/pyfolio_8h">pyfolio.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/"/>
+  </compounddef>
+</doxygen>

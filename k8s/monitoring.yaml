@@ -1,0 +1,381 @@
+# PyFolio C++ Monitoring Stack
+# ServiceMonitor for Prometheus Operator
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: pyfolio-app-monitor
+  namespace: pyfolio
+  labels:
+    app.kubernetes.io/name: pyfolio
+    app.kubernetes.io/component: monitoring
+spec:
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: pyfolio
+      app.kubernetes.io/component: app
+  endpoints:
+    - port: metrics
+      interval: 15s
+      path: /metrics
+      scheme: http
+      honorLabels: true
+      scrapeTimeout: 10s
+
+---
+# Prometheus Rules for Alerting
+apiVersion: monitoring.coreos.com/v1
+kind: PrometheusRule
+metadata:
+  name: pyfolio-alerts
+  namespace: pyfolio
+  labels:
+    app.kubernetes.io/name: pyfolio
+    app.kubernetes.io/component: monitoring
+spec:
+  groups:
+    - name: pyfolio.performance
+      interval: 30s
+      rules:
+        # High CPU usage alert
+        - alert: PyFolioHighCPU
+          expr: |
+            100 * (
+              1 - avg by (instance) (
+                irate(node_cpu_seconds_total{mode="idle"}[5m])
+              )
+            ) > 80
+          for: 2m
+          labels:
+            severity: warning
+            service: pyfolio
+          annotations:
+            summary: "PyFolio high CPU usage"
+            description: "CPU usage is above 80% for more than 2 minutes on {{ $labels.instance }}"
+        
+        # High memory usage alert
+        - alert: PyFolioHighMemory
+          expr: |
+            (
+              node_memory_MemTotal_bytes - node_memory_MemAvailable_bytes
+            ) / node_memory_MemTotal_bytes * 100 > 85
+          for: 2m
+          labels:
+            severity: warning
+            service: pyfolio
+          annotations:
+            summary: "PyFolio high memory usage"
+            description: "Memory usage is above 85% for more than 2 minutes on {{ $labels.instance }}"
+        
+        # API response time alert
+        - alert: PyFolioSlowResponse
+          expr: |
+            histogram_quantile(0.95,
+              sum(rate(http_request_duration_seconds_bucket{service="pyfolio-app"}[5m])) by (le)
+            ) > 1.0
+          for: 1m
+          labels:
+            severity: warning
+            service: pyfolio
+          annotations:
+            summary: "PyFolio API slow response"
+            description: "95th percentile response time is above 1 second"
+        
+        # High error rate alert
+        - alert: PyFolioHighErrorRate
+          expr: |
+            sum(rate(http_requests_total{service="pyfolio-app",status=~"5.."}[5m])) /
+            sum(rate(http_requests_total{service="pyfolio-app"}[5m])) * 100 > 5
+          for: 1m
+          labels:
+            severity: critical
+            service: pyfolio
+          annotations:
+            summary: "PyFolio high error rate"
+            description: "Error rate is above 5% for more than 1 minute"
+        
+        # Pod crash looping
+        - alert: PyFolioPodCrashLooping
+          expr: |
+            rate(kube_pod_container_status_restarts_total{namespace="pyfolio"}[15m]) > 0
+          for: 1m
+          labels:
+            severity: critical
+            service: pyfolio
+          annotations:
+            summary: "PyFolio pod crash looping"
+            description: "Pod {{ $labels.pod }} is crash looping"
+        
+        # Service down
+        - alert: PyFolioServiceDown
+          expr: |
+            up{job="pyfolio-app"} == 0
+          for: 30s
+          labels:
+            severity: critical
+            service: pyfolio
+          annotations:
+            summary: "PyFolio service is down"
+            description: "PyFolio service has been down for more than 30 seconds"
+        
+        # Database connection issues
+        - alert: PyFolioDatabaseIssues
+          expr: |
+            postgresql_up{service="pyfolio-postgres"} == 0
+          for: 30s
+          labels:
+            severity: critical
+            service: pyfolio
+          annotations:
+            summary: "PyFolio database is down"
+            description: "PostgreSQL database is unreachable"
+        
+        # Redis connection issues
+        - alert: PyFolioRedisIssues
+          expr: |
+            redis_up{service="pyfolio-redis"} == 0
+          for: 30s
+          labels:
+            severity: warning
+            service: pyfolio
+          annotations:
+            summary: "PyFolio Redis is down"
+            description: "Redis cache is unreachable"
+        
+        # Disk space alert
+        - alert: PyFolioLowDiskSpace
+          expr: |
+            (
+              node_filesystem_avail_bytes{mountpoint="/app/data"} /
+              node_filesystem_size_bytes{mountpoint="/app/data"}
+            ) * 100 < 10
+          for: 1m
+          labels:
+            severity: warning
+            service: pyfolio
+          annotations:
+            summary: "PyFolio low disk space"
+            description: "Available disk space is below 10%"
+
+---
+# Grafana Dashboard ConfigMap
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: pyfolio-grafana-dashboard
+  namespace: pyfolio
+  labels:
+    app.kubernetes.io/name: pyfolio
+    app.kubernetes.io/component: monitoring
+    grafana_dashboard: "1"
+data:
+  pyfolio-dashboard.json: |
+    {
+      "dashboard": {
+        "id": null,
+        "title": "PyFolio C++ Analytics Dashboard",
+        "tags": ["pyfolio", "cpp", "financial"],
+        "style": "dark",
+        "timezone": "browser",
+        "panels": [
+          {
+            "id": 1,
+            "title": "API Request Rate",
+            "type": "graph",
+            "targets": [
+              {
+                "expr": "sum(rate(http_requests_total{service=\"pyfolio-app\"}[5m]))",
+                "legendFormat": "Requests/sec"
+              }
+            ],
+            "yAxes": [
+              {
+                "label": "requests/sec",
+                "min": 0
+              }
+            ],
+            "gridPos": {
+              "h": 8,
+              "w": 12,
+              "x": 0,
+              "y": 0
+            }
+          },
+          {
+            "id": 2,
+            "title": "API Response Time",
+            "type": "graph",
+            "targets": [
+              {
+                "expr": "histogram_quantile(0.50, sum(rate(http_request_duration_seconds_bucket{service=\"pyfolio-app\"}[5m])) by (le))",
+                "legendFormat": "50th percentile"
+              },
+              {
+                "expr": "histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket{service=\"pyfolio-app\"}[5m])) by (le))",
+                "legendFormat": "95th percentile"
+              }
+            ],
+            "yAxes": [
+              {
+                "label": "seconds",
+                "min": 0
+              }
+            ],
+            "gridPos": {
+              "h": 8,
+              "w": 12,
+              "x": 12,
+              "y": 0
+            }
+          },
+          {
+            "id": 3,
+            "title": "CPU Usage",
+            "type": "graph",
+            "targets": [
+              {
+                "expr": "100 - (avg by (instance) (irate(node_cpu_seconds_total{mode=\"idle\"}[5m])) * 100)",
+                "legendFormat": "{{ instance }}"
+              }
+            ],
+            "yAxes": [
+              {
+                "label": "percent",
+                "min": 0,
+                "max": 100
+              }
+            ],
+            "gridPos": {
+              "h": 8,
+              "w": 12,
+              "x": 0,
+              "y": 8
+            }
+          },
+          {
+            "id": 4,
+            "title": "Memory Usage",
+            "type": "graph",
+            "targets": [
+              {
+                "expr": "(1 - (node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes)) * 100",
+                "legendFormat": "{{ instance }}"
+              }
+            ],
+            "yAxes": [
+              {
+                "label": "percent",
+                "min": 0,
+                "max": 100
+              }
+            ],
+            "gridPos": {
+              "h": 8,
+              "w": 12,
+              "x": 12,
+              "y": 8
+            }
+          },
+          {
+            "id": 5,
+            "title": "Error Rate",
+            "type": "singlestat",
+            "targets": [
+              {
+                "expr": "sum(rate(http_requests_total{service=\"pyfolio-app\",status=~\"5..\"}[5m])) / sum(rate(http_requests_total{service=\"pyfolio-app\"}[5m])) * 100",
+                "legendFormat": "Error Rate %"
+              }
+            ],
+            "valueName": "current",
+            "unit": "percent",
+            "thresholds": "1,5",
+            "gridPos": {
+              "h": 4,
+              "w": 6,
+              "x": 0,
+              "y": 16
+            }
+          },
+          {
+            "id": 6,
+            "title": "Active Connections",
+            "type": "singlestat",
+            "targets": [
+              {
+                "expr": "sum(nginx_connections_active{service=\"pyfolio-nginx\"})",
+                "legendFormat": "Active Connections"
+              }
+            ],
+            "valueName": "current",
+            "unit": "short",
+            "gridPos": {
+              "h": 4,
+              "w": 6,
+              "x": 6,
+              "y": 16
+            }
+          }
+        ],
+        "time": {
+          "from": "now-1h",
+          "to": "now"
+        },
+        "refresh": "5s"
+      }
+    }
+
+---
+# Log aggregation with Fluentd
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: fluentd-pyfolio
+  namespace: pyfolio
+  labels:
+    app.kubernetes.io/name: pyfolio
+    app.kubernetes.io/component: logging
+spec:
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: fluentd
+      app.kubernetes.io/component: logging
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: fluentd
+        app.kubernetes.io/component: logging
+    spec:
+      serviceAccountName: fluentd
+      containers:
+        - name: fluentd
+          image: fluent/fluentd-kubernetes-daemonset:v1-debian-elasticsearch
+          env:
+            - name: FLUENT_ELASTICSEARCH_HOST
+              value: "elasticsearch.logging.svc.cluster.local"
+            - name: FLUENT_ELASTICSEARCH_PORT
+              value: "9200"
+            - name: FLUENT_ELASTICSEARCH_SCHEME
+              value: "http"
+          resources:
+            limits:
+              memory: 200Mi
+            requests:
+              cpu: 100m
+              memory: 200Mi
+          volumeMounts:
+            - name: varlog
+              mountPath: /var/log
+            - name: varlibdockercontainers
+              mountPath: /var/lib/docker/containers
+              readOnly: true
+            - name: fluentd-config
+              mountPath: /fluentd/etc
+      volumes:
+        - name: varlog
+          hostPath:
+            path: /var/log
+        - name: varlibdockercontainers
+          hostPath:
+            path: /var/lib/docker/containers
+        - name: fluentd-config
+          configMap:
+            name: fluentd-config

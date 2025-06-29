@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dc/d0b/classpyfolio_1_1memory_1_1MemoryPoolManager" kind="class" language="C++" prot="public">
+    <compoundname>pyfolio::memory::MemoryPoolManager</compoundname>
+    <includes refid="df/d9d/pool__allocator_8h" local="no">pool_allocator.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="dc/d0b/classpyfolio_1_1memory_1_1MemoryPoolManager_1a71a88e07d1586bf47925d7fd7822b48f" prot="private" static="no" mutable="no">
+        <type><ref refid="d2/d77/classpyfolio_1_1memory_1_1VariablePoolAllocator" kindref="compound">VariablePoolAllocator</ref></type>
+        <definition>VariablePoolAllocator pyfolio::memory::MemoryPoolManager::variable_pool_</definition>
+        <argsstring></argsstring>
+        <name>variable_pool_</name>
+        <qualifiedname>pyfolio::memory::MemoryPoolManager::variable_pool_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="502" column="27" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" bodystart="502" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d0b/classpyfolio_1_1memory_1_1MemoryPoolManager_1a2687d0ad2332966be5fbb351a8db4364" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex pyfolio::memory::MemoryPoolManager::stats_mutex_</definition>
+        <argsstring></argsstring>
+        <name>stats_mutex_</name>
+        <qualifiedname>pyfolio::memory::MemoryPoolManager::stats_mutex_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="503" column="16" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" bodystart="503" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="dc/d0b/classpyfolio_1_1memory_1_1MemoryPoolManager_1a780380ccd601c87f61c0bd4293fa6379" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="dc/d0b/classpyfolio_1_1memory_1_1MemoryPoolManager" kindref="compound">MemoryPoolManager</ref> &amp;</type>
+        <definition>static MemoryPoolManager &amp; pyfolio::memory::MemoryPoolManager::instance</definition>
+        <argsstring>()</argsstring>
+        <name>instance</name>
+        <qualifiedname>pyfolio::memory::MemoryPoolManager::instance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="506" column="30" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" bodystart="506" bodyend="509"/>
+        <referencedby refid="da/db2/namespacepyfolio_1_1memory_1acbc710ba8b76e9f364f776a36f41775b" compoundref="df/d9d/pool__allocator_8h" startline="587" endline="600">pyfolio::memory::make_pool_ptr</referencedby>
+        <referencedby refid="d5/d9f/classpyfolio_1_1memory_1_1PoolPtr_1abdc68ce49d8b8c890ee5f71ae71f0afd" compoundref="df/d9d/pool__allocator_8h" startline="550" endline="560">pyfolio::memory::PoolPtr&lt; T &gt;::operator=</referencedby>
+        <referencedby refid="d5/d9f/classpyfolio_1_1memory_1_1PoolPtr_1a1fc571c0b1d565f00c401d342bc42441" compoundref="df/d9d/pool__allocator_8h" startline="574" endline="580">pyfolio::memory::PoolPtr&lt; T &gt;::reset</referencedby>
+        <referencedby refid="d5/d9f/classpyfolio_1_1memory_1_1PoolPtr_1a4d1cc9eab9de7fa11fcd14874ab99d28" compoundref="df/d9d/pool__allocator_8h" startline="537" endline="542">pyfolio::memory::PoolPtr&lt; T &gt;::~PoolPtr</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="dc/d0b/classpyfolio_1_1memory_1_1MemoryPoolManager_1a2ccfb65150228589dd78cbab12404d63" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * pyfolio::memory::MemoryPoolManager::allocate</definition>
+        <argsstring>(size_t size, size_t alignment=16)</argsstring>
+        <name>allocate</name>
+        <qualifiedname>pyfolio::memory::MemoryPoolManager::allocate</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>alignment</declname>
+          <defval>16</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="511" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" bodystart="511" bodyend="511"/>
+        <referencedby refid="da/db2/namespacepyfolio_1_1memory_1acbc710ba8b76e9f364f776a36f41775b" compoundref="df/d9d/pool__allocator_8h" startline="587" endline="600">pyfolio::memory::make_pool_ptr</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="dc/d0b/classpyfolio_1_1memory_1_1MemoryPoolManager_1a518dcdea43306207e23136e4a43ef800" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void pyfolio::memory::MemoryPoolManager::deallocate</definition>
+        <argsstring>(void *ptr)</argsstring>
+        <name>deallocate</name>
+        <qualifiedname>pyfolio::memory::MemoryPoolManager::deallocate</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="513" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" bodystart="513" bodyend="513"/>
+        <referencedby refid="da/db2/namespacepyfolio_1_1memory_1acbc710ba8b76e9f364f776a36f41775b" compoundref="df/d9d/pool__allocator_8h" startline="587" endline="600">pyfolio::memory::make_pool_ptr</referencedby>
+        <referencedby refid="d5/d9f/classpyfolio_1_1memory_1_1PoolPtr_1abdc68ce49d8b8c890ee5f71ae71f0afd" compoundref="df/d9d/pool__allocator_8h" startline="550" endline="560">pyfolio::memory::PoolPtr&lt; T &gt;::operator=</referencedby>
+        <referencedby refid="d5/d9f/classpyfolio_1_1memory_1_1PoolPtr_1a1fc571c0b1d565f00c401d342bc42441" compoundref="df/d9d/pool__allocator_8h" startline="574" endline="580">pyfolio::memory::PoolPtr&lt; T &gt;::reset</referencedby>
+        <referencedby refid="d5/d9f/classpyfolio_1_1memory_1_1PoolPtr_1a4d1cc9eab9de7fa11fcd14874ab99d28" compoundref="df/d9d/pool__allocator_8h" startline="537" endline="542">pyfolio::memory::PoolPtr&lt; T &gt;::~PoolPtr</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="dc/d0b/classpyfolio_1_1memory_1_1MemoryPoolManager_1a1d936f11f9dc11b3b97940c47f932e59" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d9/d8e/structpyfolio_1_1memory_1_1PoolStats" kindref="compound">PoolStats</ref></type>
+        <definition>PoolStats pyfolio::memory::MemoryPoolManager::get_global_stats</definition>
+        <argsstring>()</argsstring>
+        <name>get_global_stats</name>
+        <qualifiedname>pyfolio::memory::MemoryPoolManager::get_global_stats</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="515" column="15" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" bodystart="515" bodyend="518"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d0b/classpyfolio_1_1memory_1_1MemoryPoolManager_1a7da9c2c88f5eb651b736bbdc4386d2b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void pyfolio::memory::MemoryPoolManager::defragment</definition>
+        <argsstring>()</argsstring>
+        <name>defragment</name>
+        <qualifiedname>pyfolio::memory::MemoryPoolManager::defragment</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="520" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" bodystart="520" bodyend="520"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="dc/d0b/classpyfolio_1_1memory_1_1MemoryPoolManager_1af2492feb881bdb7cd93cc3d51e92b11b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>pyfolio::memory::MemoryPoolManager::MemoryPoolManager</definition>
+        <argsstring>()=default</argsstring>
+        <name>MemoryPoolManager</name>
+        <qualifiedname>pyfolio::memory::MemoryPoolManager::MemoryPoolManager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="523" column="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Global memory pool manager. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" line="500" column="1" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/memory/pool_allocator.h" bodystart="500" bodyend="524"/>
+    <listofallmembers>
+      <member refid="dc/d0b/classpyfolio_1_1memory_1_1MemoryPoolManager_1a2ccfb65150228589dd78cbab12404d63" prot="public" virt="non-virtual"><scope>pyfolio::memory::MemoryPoolManager</scope><name>allocate</name></member>
+      <member refid="dc/d0b/classpyfolio_1_1memory_1_1MemoryPoolManager_1a518dcdea43306207e23136e4a43ef800" prot="public" virt="non-virtual"><scope>pyfolio::memory::MemoryPoolManager</scope><name>deallocate</name></member>
+      <member refid="dc/d0b/classpyfolio_1_1memory_1_1MemoryPoolManager_1a7da9c2c88f5eb651b736bbdc4386d2b0" prot="public" virt="non-virtual"><scope>pyfolio::memory::MemoryPoolManager</scope><name>defragment</name></member>
+      <member refid="dc/d0b/classpyfolio_1_1memory_1_1MemoryPoolManager_1a1d936f11f9dc11b3b97940c47f932e59" prot="public" virt="non-virtual"><scope>pyfolio::memory::MemoryPoolManager</scope><name>get_global_stats</name></member>
+      <member refid="dc/d0b/classpyfolio_1_1memory_1_1MemoryPoolManager_1a780380ccd601c87f61c0bd4293fa6379" prot="public" virt="non-virtual"><scope>pyfolio::memory::MemoryPoolManager</scope><name>instance</name></member>
+      <member refid="dc/d0b/classpyfolio_1_1memory_1_1MemoryPoolManager_1af2492feb881bdb7cd93cc3d51e92b11b" prot="private" virt="non-virtual"><scope>pyfolio::memory::MemoryPoolManager</scope><name>MemoryPoolManager</name></member>
+      <member refid="dc/d0b/classpyfolio_1_1memory_1_1MemoryPoolManager_1a2687d0ad2332966be5fbb351a8db4364" prot="private" virt="non-virtual"><scope>pyfolio::memory::MemoryPoolManager</scope><name>stats_mutex_</name></member>
+      <member refid="dc/d0b/classpyfolio_1_1memory_1_1MemoryPoolManager_1a71a88e07d1586bf47925d7fd7822b48f" prot="private" virt="non-virtual"><scope>pyfolio::memory::MemoryPoolManager</scope><name>variable_pool_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

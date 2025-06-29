@@ -1,0 +1,226 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="de/d10/namespacepyfolio_1_1parallel_1_1par" kind="namespace" language="C++">
+    <compoundname>pyfolio::parallel::par</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="de/d10/namespacepyfolio_1_1parallel_1_1par_1a96d9296e9ddaac96fc78b74481b8b075" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; double &gt;</type>
+        <definition>Result&lt; double &gt; pyfolio::parallel::par::mean</definition>
+        <argsstring>(const TimeSeries&lt; T &gt; &amp;series)</argsstring>
+        <name>mean</name>
+        <qualifiedname>pyfolio::parallel::par::mean</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; T &gt; &amp;</type>
+          <declname>series</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/parallel/parallel_algorithms.h" line="527" column="9" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/parallel/parallel_algorithms.h" bodystart="527" bodyend="529"/>
+        <references refid="d9/d20/namespacepyfolio_1_1parallel_1aefd7c4334f31432b64fa03897d12dd94" compoundref="d9/d36/parallel__algorithms_8h" startline="516" endline="519">pyfolio::parallel::get_global_parallel_algorithms</references>
+        <references refid="de/d10/namespacepyfolio_1_1parallel_1_1par_1a96d9296e9ddaac96fc78b74481b8b075" compoundref="d9/d36/parallel__algorithms_8h" startline="527" endline="529">mean</references>
+        <referencedby refid="de/d10/namespacepyfolio_1_1parallel_1_1par_1a96d9296e9ddaac96fc78b74481b8b075" compoundref="d9/d36/parallel__algorithms_8h" startline="527" endline="529">mean</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="de/d10/namespacepyfolio_1_1parallel_1_1par_1adc17edef879122a29dcadca620deb325" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; double &gt;</type>
+        <definition>Result&lt; double &gt; pyfolio::parallel::par::std_deviation</definition>
+        <argsstring>(const TimeSeries&lt; T &gt; &amp;series)</argsstring>
+        <name>std_deviation</name>
+        <qualifiedname>pyfolio::parallel::par::std_deviation</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; T &gt; &amp;</type>
+          <declname>series</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/parallel/parallel_algorithms.h" line="532" column="9" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/parallel/parallel_algorithms.h" bodystart="532" bodyend="534"/>
+        <references refid="d9/d20/namespacepyfolio_1_1parallel_1aefd7c4334f31432b64fa03897d12dd94" compoundref="d9/d36/parallel__algorithms_8h" startline="516" endline="519">pyfolio::parallel::get_global_parallel_algorithms</references>
+        <references refid="de/d10/namespacepyfolio_1_1parallel_1_1par_1adc17edef879122a29dcadca620deb325" compoundref="d9/d36/parallel__algorithms_8h" startline="532" endline="534">std_deviation</references>
+        <referencedby refid="de/d10/namespacepyfolio_1_1parallel_1_1par_1adc17edef879122a29dcadca620deb325" compoundref="d9/d36/parallel__algorithms_8h" startline="532" endline="534">std_deviation</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="de/d10/namespacepyfolio_1_1parallel_1_1par_1a10aab672183bdacb6c604d4f9934465c" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; double &gt;</type>
+        <definition>Result&lt; double &gt; pyfolio::parallel::par::correlation</definition>
+        <argsstring>(const TimeSeries&lt; T &gt; &amp;series1, const TimeSeries&lt; T &gt; &amp;series2)</argsstring>
+        <name>correlation</name>
+        <qualifiedname>pyfolio::parallel::par::correlation</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; T &gt; &amp;</type>
+          <declname>series1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; T &gt; &amp;</type>
+          <declname>series2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/parallel/parallel_algorithms.h" line="537" column="9" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/parallel/parallel_algorithms.h" bodystart="537" bodyend="539"/>
+        <references refid="de/d10/namespacepyfolio_1_1parallel_1_1par_1a10aab672183bdacb6c604d4f9934465c" compoundref="d9/d36/parallel__algorithms_8h" startline="537" endline="539">correlation</references>
+        <references refid="d9/d20/namespacepyfolio_1_1parallel_1aefd7c4334f31432b64fa03897d12dd94" compoundref="d9/d36/parallel__algorithms_8h" startline="516" endline="519">pyfolio::parallel::get_global_parallel_algorithms</references>
+        <referencedby refid="de/d10/namespacepyfolio_1_1parallel_1_1par_1a10aab672183bdacb6c604d4f9934465c" compoundref="d9/d36/parallel__algorithms_8h" startline="537" endline="539">correlation</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="de/d10/namespacepyfolio_1_1parallel_1_1par_1a3d143d09def894f7b7df272d273522b2" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; T &gt; &gt;</type>
+        <definition>Result&lt; TimeSeries&lt; T &gt; &gt; pyfolio::parallel::par::rolling_mean</definition>
+        <argsstring>(const TimeSeries&lt; T &gt; &amp;series, size_t window_size)</argsstring>
+        <name>rolling_mean</name>
+        <qualifiedname>pyfolio::parallel::par::rolling_mean</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; T &gt; &amp;</type>
+          <declname>series</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>window_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/parallel/parallel_algorithms.h" line="542" column="9" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/parallel/parallel_algorithms.h" bodystart="542" bodyend="544"/>
+        <references refid="d9/d20/namespacepyfolio_1_1parallel_1aefd7c4334f31432b64fa03897d12dd94" compoundref="d9/d36/parallel__algorithms_8h" startline="516" endline="519">pyfolio::parallel::get_global_parallel_algorithms</references>
+        <references refid="de/d10/namespacepyfolio_1_1parallel_1_1par_1a3d143d09def894f7b7df272d273522b2" compoundref="d9/d36/parallel__algorithms_8h" startline="542" endline="544">rolling_mean</references>
+        <referencedby refid="de/d10/namespacepyfolio_1_1parallel_1_1par_1a3d143d09def894f7b7df272d273522b2" compoundref="d9/d36/parallel__algorithms_8h" startline="542" endline="544">rolling_mean</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="de/d10/namespacepyfolio_1_1parallel_1_1par_1ae1175999133f8e9fed5168ea0c0bebd6" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; T &gt; &gt;</type>
+        <definition>Result&lt; TimeSeries&lt; T &gt; &gt; pyfolio::parallel::par::rolling_std</definition>
+        <argsstring>(const TimeSeries&lt; T &gt; &amp;series, size_t window_size)</argsstring>
+        <name>rolling_std</name>
+        <qualifiedname>pyfolio::parallel::par::rolling_std</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; T &gt; &amp;</type>
+          <declname>series</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>window_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/parallel/parallel_algorithms.h" line="547" column="9" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/parallel/parallel_algorithms.h" bodystart="547" bodyend="549"/>
+        <references refid="d9/d20/namespacepyfolio_1_1parallel_1aefd7c4334f31432b64fa03897d12dd94" compoundref="d9/d36/parallel__algorithms_8h" startline="516" endline="519">pyfolio::parallel::get_global_parallel_algorithms</references>
+        <references refid="de/d10/namespacepyfolio_1_1parallel_1_1par_1ae1175999133f8e9fed5168ea0c0bebd6" compoundref="d9/d36/parallel__algorithms_8h" startline="547" endline="549">rolling_std</references>
+        <referencedby refid="de/d10/namespacepyfolio_1_1parallel_1_1par_1ae1175999133f8e9fed5168ea0c0bebd6" compoundref="d9/d36/parallel__algorithms_8h" startline="547" endline="549">rolling_std</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="de/d10/namespacepyfolio_1_1parallel_1_1par_1a0d0d29265c2283734ee6c51a8e300bde" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename UnaryOp</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; std::vector&lt; T &gt; &gt;</type>
+        <definition>Result&lt; std::vector&lt; T &gt; &gt; pyfolio::parallel::par::map</definition>
+        <argsstring>(const std::vector&lt; T &gt; &amp;input, UnaryOp op)</argsstring>
+        <name>map</name>
+        <qualifiedname>pyfolio::parallel::par::map</qualifiedname>
+        <param>
+          <type>const std::vector&lt; T &gt; &amp;</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>UnaryOp</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/parallel/parallel_algorithms.h" line="552" column="9" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/parallel/parallel_algorithms.h" bodystart="552" bodyend="554"/>
+        <references refid="d9/d20/namespacepyfolio_1_1parallel_1aefd7c4334f31432b64fa03897d12dd94" compoundref="d9/d36/parallel__algorithms_8h" startline="516" endline="519">pyfolio::parallel::get_global_parallel_algorithms</references>
+        <references refid="de/d10/namespacepyfolio_1_1parallel_1_1par_1a0d0d29265c2283734ee6c51a8e300bde" compoundref="d9/d36/parallel__algorithms_8h" startline="552" endline="554">map</references>
+        <referencedby refid="de/d10/namespacepyfolio_1_1parallel_1_1par_1a0d0d29265c2283734ee6c51a8e300bde" compoundref="d9/d36/parallel__algorithms_8h" startline="552" endline="554">map</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="de/d10/namespacepyfolio_1_1parallel_1_1par_1af2067e43276db772b31aef01bf51dd34" prot="public" static="no" nodiscard="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename BinaryOp</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; T &gt;</type>
+        <definition>Result&lt; T &gt; pyfolio::parallel::par::reduce</definition>
+        <argsstring>(const std::vector&lt; T &gt; &amp;input, T init, BinaryOp op)</argsstring>
+        <name>reduce</name>
+        <qualifiedname>pyfolio::parallel::par::reduce</qualifiedname>
+        <param>
+          <type>const std::vector&lt; T &gt; &amp;</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>init</declname>
+        </param>
+        <param>
+          <type>BinaryOp</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/parallel/parallel_algorithms.h" line="557" column="9" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/parallel/parallel_algorithms.h" bodystart="557" bodyend="559"/>
+        <references refid="d9/d20/namespacepyfolio_1_1parallel_1aefd7c4334f31432b64fa03897d12dd94" compoundref="d9/d36/parallel__algorithms_8h" startline="516" endline="519">pyfolio::parallel::get_global_parallel_algorithms</references>
+        <references refid="de/d10/namespacepyfolio_1_1parallel_1_1par_1af2067e43276db772b31aef01bf51dd34" compoundref="d9/d36/parallel__algorithms_8h" startline="557" endline="559">reduce</references>
+        <referencedby refid="de/d10/namespacepyfolio_1_1parallel_1_1par_1af2067e43276db772b31aef01bf51dd34" compoundref="d9/d36/parallel__algorithms_8h" startline="557" endline="559">reduce</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Convenience functions for parallel operations. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/parallel/parallel_algorithms.h" line="524" column="1"/>
+  </compounddef>
+</doxygen>

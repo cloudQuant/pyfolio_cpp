@@ -1,0 +1,401 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="d8/d0c/classpyfolio_1_1web_1_1RestApiServer" kind="class" language="C++" prot="public">
+    <compoundname>pyfolio::web::RestApiServer</compoundname>
+    <includes refid="de/de7/rest__api__server_8h" local="no">rest_api_server.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1acbea03b16d8d69eaa923b6cfa94198d9" prot="private" static="no" mutable="no">
+        <type>httplib::Server</type>
+        <definition>httplib::Server pyfolio::web::RestApiServer::server_</definition>
+        <argsstring></argsstring>
+        <name>server_</name>
+        <qualifiedname>pyfolio::web::RestApiServer::server_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/rest_api_server.h" line="44" column="21" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/rest_api_server.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1ac80a5ac24bd4627c7127783f9b15687c" prot="private" static="no" mutable="no">
+        <type><ref refid="da/d05/structpyfolio_1_1web_1_1ApiConfig" kindref="compound">ApiConfig</ref></type>
+        <definition>ApiConfig pyfolio::web::RestApiServer::config_</definition>
+        <argsstring></argsstring>
+        <name>config_</name>
+        <qualifiedname>pyfolio::web::RestApiServer::config_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/rest_api_server.h" line="45" column="15" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/rest_api_server.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1aad924c56d1686b1f36275aa87101651f" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="d3/d03/classpyfolio_1_1analytics_1_1ParallelPerformanceAnalysisSuite" kindref="compound">analytics::ParallelPerformanceAnalysisSuite</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;analytics::ParallelPerformanceAnalysisSuite&gt; pyfolio::web::RestApiServer::analysis_suite_</definition>
+        <argsstring></argsstring>
+        <name>analysis_suite_</name>
+        <qualifiedname>pyfolio::web::RestApiServer::analysis_suite_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/rest_api_server.h" line="46" column="21" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/rest_api_server.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1aee4003acf7a2efbbfbd2c70a9a00d654" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void pyfolio::web::RestApiServer::setup_cors</definition>
+        <argsstring>()</argsstring>
+        <name>setup_cors</name>
+        <qualifiedname>pyfolio::web::RestApiServer::setup_cors</qualifiedname>
+        <briefdescription>
+<para>Setup CORS headers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/rest_api_server.h" line="52" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/rest_api_server.h" bodystart="52" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1a9aad81380a1088e4b6f5028457240700" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void pyfolio::web::RestApiServer::setup_logging</definition>
+        <argsstring>()</argsstring>
+        <name>setup_logging</name>
+        <qualifiedname>pyfolio::web::RestApiServer::setup_logging</qualifiedname>
+        <briefdescription>
+<para>Setup logging. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/rest_api_server.h" line="72" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/rest_api_server.h" bodystart="72" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1a5739f7db5a64e6c6a87b8306518b696a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void pyfolio::web::RestApiServer::setup_error_handler</definition>
+        <argsstring>()</argsstring>
+        <name>setup_error_handler</name>
+        <qualifiedname>pyfolio::web::RestApiServer::setup_error_handler</qualifiedname>
+        <briefdescription>
+<para>Setup error handler. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/rest_api_server.h" line="84" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/rest_api_server.h" bodystart="84" bodyend="90"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1a79595665321dff7d2e02afab6add7ed6" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>pyfolio::web::RestApiServer::RestApiServer</definition>
+        <argsstring>(const ApiConfig &amp;config={})</argsstring>
+        <name>RestApiServer</name>
+        <qualifiedname>pyfolio::web::RestApiServer::RestApiServer</qualifiedname>
+        <param>
+          <type>const <ref refid="da/d05/structpyfolio_1_1web_1_1ApiConfig" kindref="compound">ApiConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/rest_api_server.h" line="93" column="14" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/rest_api_server.h" bodystart="93" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1ae476ef195dcb76ed671d3428e1d012d9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void pyfolio::web::RestApiServer::setup_routes</definition>
+        <argsstring>()</argsstring>
+        <name>setup_routes</name>
+        <qualifiedname>pyfolio::web::RestApiServer::setup_routes</qualifiedname>
+        <briefdescription>
+<para>Setup API routes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/rest_api_server.h" line="104" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/rest_api_server.h" bodystart="104" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1a65e85df3ae60130213a4d2444ed8dc31" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void pyfolio::web::RestApiServer::handle_performance_analysis</definition>
+        <argsstring>(const httplib::Request &amp;req, httplib::Response &amp;res)</argsstring>
+        <name>handle_performance_analysis</name>
+        <qualifiedname>pyfolio::web::RestApiServer::handle_performance_analysis</qualifiedname>
+        <param>
+          <type>const httplib::Request &amp;</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type>httplib::Response &amp;</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+<para>Handle performance analysis request. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/rest_api_server.h" line="150" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/rest_api_server.h" bodystart="150" bodyend="230"/>
+        <references refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1a8fdf4769c763923ab88120b69bfa04b1" compoundref="d4/d45/json__serializer_8h" startline="172" endline="186">pyfolio::web::JsonSerializer::create_api_response</references>
+        <references refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1a06f9602cb83b6063ee0f7fa8baae7e49" compoundref="d4/d45/json__serializer_8h" startline="191" endline="193">pyfolio::web::JsonSerializer::create_error_response</references>
+        <references refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1a939bc654f97aca0244439bf4b2e6ec47" compoundref="d4/d45/json__serializer_8h" startline="199" endline="231">pyfolio::web::JsonSerializer::parse_time_series</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1ab8b8f36af787039a4748bdc6e4c48530" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void pyfolio::web::RestApiServer::handle_portfolio_analysis</definition>
+        <argsstring>(const httplib::Request &amp;req, httplib::Response &amp;res)</argsstring>
+        <name>handle_portfolio_analysis</name>
+        <qualifiedname>pyfolio::web::RestApiServer::handle_portfolio_analysis</qualifiedname>
+        <param>
+          <type>const httplib::Request &amp;</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type>httplib::Response &amp;</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+<para>Handle portfolio analysis request. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/rest_api_server.h" line="235" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/rest_api_server.h" bodystart="235" bodyend="302"/>
+        <references refid="dc/dbf/classpyfolio_1_1positions_1_1PortfolioHoldings_1aa3f912ec1af68d7d6b1be99ed66c5cff" compoundref="d7/d0c/holdings_8h" startline="133" endline="162">pyfolio::positions::PortfolioHoldings::calculate_metrics</references>
+        <references refid="dc/dbf/classpyfolio_1_1positions_1_1PortfolioHoldings_1a66d1c0d19b6584c4232972da8fe0a44e" compoundref="d7/d0c/holdings_8h" startline="65" endline="65">pyfolio::positions::PortfolioHoldings::cash_balance</references>
+        <references refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1a8fdf4769c763923ab88120b69bfa04b1" compoundref="d4/d45/json__serializer_8h" startline="172" endline="186">pyfolio::web::JsonSerializer::create_api_response</references>
+        <references refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1a06f9602cb83b6063ee0f7fa8baae7e49" compoundref="d4/d45/json__serializer_8h" startline="191" endline="193">pyfolio::web::JsonSerializer::create_error_response</references>
+        <references refid="dc/dbf/classpyfolio_1_1positions_1_1PortfolioHoldings_1a315a3a6f55a4101a289ab1bf2003762a" compoundref="d7/d0c/holdings_8h" startline="67" endline="67">pyfolio::positions::PortfolioHoldings::holdings</references>
+        <references refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9ad8f78ca9a692a9411afbc7584b69d043" compoundref="d3/d11/error__handling_8h" startline="17">pyfolio::InvalidInput</references>
+        <references refid="d6/d4f/classpyfolio_1_1DateTime_1af74c490a9d8ce99c6a18bdbe608d1111" compoundref="de/d1b/datetime_8h" startline="178" endline="178">pyfolio::DateTime::now</references>
+        <references refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1a8cd9c946ef3693eea5d52e9cf56b8485" compoundref="d4/d45/json__serializer_8h" startline="91" endline="105">pyfolio::web::JsonSerializer::serialize_holding</references>
+        <references refid="dc/dbf/classpyfolio_1_1positions_1_1PortfolioHoldings_1a024425899ff9486a38f8a209c4369924" compoundref="d7/d0c/holdings_8h" startline="66" endline="66">pyfolio::positions::PortfolioHoldings::total_value</references>
+        <references refid="dc/dbf/classpyfolio_1_1positions_1_1PortfolioHoldings_1a49248a12c768f69751c468d8d331b0aa" compoundref="d7/d0c/holdings_8h" startline="80" endline="106">pyfolio::positions::PortfolioHoldings::update_holding</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1a84fbbb0329da81e8a4e9718be438dfb0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void pyfolio::web::RestApiServer::handle_transaction_analysis</definition>
+        <argsstring>(const httplib::Request &amp;req, httplib::Response &amp;res)</argsstring>
+        <name>handle_transaction_analysis</name>
+        <qualifiedname>pyfolio::web::RestApiServer::handle_transaction_analysis</qualifiedname>
+        <param>
+          <type>const httplib::Request &amp;</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type>httplib::Response &amp;</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+<para>Handle transaction analysis request. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/rest_api_server.h" line="307" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/rest_api_server.h" bodystart="307" bodyend="369"/>
+        <references refid="d6/d6e/classpyfolio_1_1transactions_1_1TransactionSeries_1a460b9b22d249cb9b7c844ee642c5c105" compoundref="d0/db6/transaction_8h" startline="435" endline="466">pyfolio::transactions::TransactionSeries::calculate_statistics</references>
+        <references refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1a8fdf4769c763923ab88120b69bfa04b1" compoundref="d4/d45/json__serializer_8h" startline="172" endline="186">pyfolio::web::JsonSerializer::create_api_response</references>
+        <references refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1a06f9602cb83b6063ee0f7fa8baae7e49" compoundref="d4/d45/json__serializer_8h" startline="191" endline="193">pyfolio::web::JsonSerializer::create_error_response</references>
+        <references refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9ad8f78ca9a692a9411afbc7584b69d043" compoundref="d3/d11/error__handling_8h" startline="17">pyfolio::InvalidInput</references>
+        <references refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1af5ccaefdc7c758341967765eae7e199b" compoundref="d4/d45/json__serializer_8h" startline="236" endline="290">pyfolio::web::JsonSerializer::parse_transaction_record</references>
+        <references refid="d6/d6e/classpyfolio_1_1transactions_1_1TransactionSeries_1af3c9618e9b0d73c0e47a2b0cdf2f68f9" compoundref="d0/db6/transaction_8h" startline="245" endline="248">pyfolio::transactions::TransactionSeries::total_commissions</references>
+        <references refid="d6/d6e/classpyfolio_1_1transactions_1_1TransactionSeries_1a5f7a2e489f84ec338f391ebed7267335" compoundref="d0/db6/transaction_8h" startline="253" endline="257">pyfolio::transactions::TransactionSeries::total_slippage</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1a9f68e2ebdce6df241a8530773503cd69" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void pyfolio::web::RestApiServer::handle_sharpe_calculation</definition>
+        <argsstring>(const httplib::Request &amp;req, httplib::Response &amp;res)</argsstring>
+        <name>handle_sharpe_calculation</name>
+        <qualifiedname>pyfolio::web::RestApiServer::handle_sharpe_calculation</qualifiedname>
+        <param>
+          <type>const httplib::Request &amp;</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type>httplib::Response &amp;</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+<para>Handle Sharpe ratio calculation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/rest_api_server.h" line="374" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/rest_api_server.h" bodystart="374" bodyend="414"/>
+        <references refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1a8fdf4769c763923ab88120b69bfa04b1" compoundref="d4/d45/json__serializer_8h" startline="172" endline="186">pyfolio::web::JsonSerializer::create_api_response</references>
+        <references refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1a06f9602cb83b6063ee0f7fa8baae7e49" compoundref="d4/d45/json__serializer_8h" startline="191" endline="193">pyfolio::web::JsonSerializer::create_error_response</references>
+        <references refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1a939bc654f97aca0244439bf4b2e6ec47" compoundref="d4/d45/json__serializer_8h" startline="199" endline="231">pyfolio::web::JsonSerializer::parse_time_series</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1a9c15c099bbd974a26e4ae9c945b839f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void pyfolio::web::RestApiServer::handle_drawdown_calculation</definition>
+        <argsstring>(const httplib::Request &amp;req, httplib::Response &amp;res)</argsstring>
+        <name>handle_drawdown_calculation</name>
+        <qualifiedname>pyfolio::web::RestApiServer::handle_drawdown_calculation</qualifiedname>
+        <param>
+          <type>const httplib::Request &amp;</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type>httplib::Response &amp;</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+<para>Handle drawdown calculation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/rest_api_server.h" line="419" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/rest_api_server.h" bodystart="419" bodyend="457"/>
+        <references refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1a8fdf4769c763923ab88120b69bfa04b1" compoundref="d4/d45/json__serializer_8h" startline="172" endline="186">pyfolio::web::JsonSerializer::create_api_response</references>
+        <references refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1a06f9602cb83b6063ee0f7fa8baae7e49" compoundref="d4/d45/json__serializer_8h" startline="191" endline="193">pyfolio::web::JsonSerializer::create_error_response</references>
+        <references refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1a939bc654f97aca0244439bf4b2e6ec47" compoundref="d4/d45/json__serializer_8h" startline="199" endline="231">pyfolio::web::JsonSerializer::parse_time_series</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1a301fdf51eddfb64d7213e0547c74b7c9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void pyfolio::web::RestApiServer::handle_volatility_calculation</definition>
+        <argsstring>(const httplib::Request &amp;req, httplib::Response &amp;res)</argsstring>
+        <name>handle_volatility_calculation</name>
+        <qualifiedname>pyfolio::web::RestApiServer::handle_volatility_calculation</qualifiedname>
+        <param>
+          <type>const httplib::Request &amp;</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type>httplib::Response &amp;</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+<para>Handle volatility calculation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/rest_api_server.h" line="462" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/rest_api_server.h" bodystart="462" bodyend="501"/>
+        <references refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1a8fdf4769c763923ab88120b69bfa04b1" compoundref="d4/d45/json__serializer_8h" startline="172" endline="186">pyfolio::web::JsonSerializer::create_api_response</references>
+        <references refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1a06f9602cb83b6063ee0f7fa8baae7e49" compoundref="d4/d45/json__serializer_8h" startline="191" endline="193">pyfolio::web::JsonSerializer::create_error_response</references>
+        <references refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1a939bc654f97aca0244439bf4b2e6ec47" compoundref="d4/d45/json__serializer_8h" startline="199" endline="231">pyfolio::web::JsonSerializer::parse_time_series</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1a88e05ed9ca22e2db58d2c23670f8bda4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void pyfolio::web::RestApiServer::handle_batch_analysis</definition>
+        <argsstring>(const httplib::Request &amp;req, httplib::Response &amp;res)</argsstring>
+        <name>handle_batch_analysis</name>
+        <qualifiedname>pyfolio::web::RestApiServer::handle_batch_analysis</qualifiedname>
+        <param>
+          <type>const httplib::Request &amp;</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type>httplib::Response &amp;</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+<para>Handle batch analysis request. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/rest_api_server.h" line="506" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/rest_api_server.h" bodystart="506" bodyend="570"/>
+        <references refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1a8fdf4769c763923ab88120b69bfa04b1" compoundref="d4/d45/json__serializer_8h" startline="172" endline="186">pyfolio::web::JsonSerializer::create_api_response</references>
+        <references refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1a06f9602cb83b6063ee0f7fa8baae7e49" compoundref="d4/d45/json__serializer_8h" startline="191" endline="193">pyfolio::web::JsonSerializer::create_error_response</references>
+        <references refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9ad8f78ca9a692a9411afbc7584b69d043" compoundref="d3/d11/error__handling_8h" startline="17">pyfolio::InvalidInput</references>
+        <references refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer_1a939bc654f97aca0244439bf4b2e6ec47" compoundref="d4/d45/json__serializer_8h" startline="199" endline="231">pyfolio::web::JsonSerializer::parse_time_series</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1a0d5fec86fceeae0930b9a79287630505" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void pyfolio::web::RestApiServer::start</definition>
+        <argsstring>()</argsstring>
+        <name>start</name>
+        <qualifiedname>pyfolio::web::RestApiServer::start</qualifiedname>
+        <briefdescription>
+<para>Start the server. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/rest_api_server.h" line="575" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/rest_api_server.h" bodystart="575" bodyend="579"/>
+        <referencedby refid="d1/d43/rest__api__example_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="d1/d43/rest__api__example_8cpp" startline="9" endline="86">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1aeb4cbc27416c10fbcdf1e47fab4104b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void pyfolio::web::RestApiServer::stop</definition>
+        <argsstring>()</argsstring>
+        <name>stop</name>
+        <qualifiedname>pyfolio::web::RestApiServer::stop</qualifiedname>
+        <briefdescription>
+<para>Stop the server. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/rest_api_server.h" line="584" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/rest_api_server.h" bodystart="584" bodyend="584"/>
+        <referencedby refid="d1/d43/rest__api__example_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="d1/d43/rest__api__example_8cpp" startline="9" endline="86">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1a8fd6dfbf399920bdac8e8e2e6e7315e7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool pyfolio::web::RestApiServer::is_running</definition>
+        <argsstring>() const</argsstring>
+        <name>is_running</name>
+        <qualifiedname>pyfolio::web::RestApiServer::is_running</qualifiedname>
+        <briefdescription>
+<para>Check if server is running. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/rest_api_server.h" line="589" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/rest_api_server.h" bodystart="589" bodyend="589"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>REST API server for pyfolio analytics. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/rest_api_server.h" line="42" column="1" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/rest_api_server.h" bodystart="42" bodyend="590"/>
+    <listofallmembers>
+      <member refid="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1aad924c56d1686b1f36275aa87101651f" prot="private" virt="non-virtual"><scope>pyfolio::web::RestApiServer</scope><name>analysis_suite_</name></member>
+      <member refid="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1ac80a5ac24bd4627c7127783f9b15687c" prot="private" virt="non-virtual"><scope>pyfolio::web::RestApiServer</scope><name>config_</name></member>
+      <member refid="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1a88e05ed9ca22e2db58d2c23670f8bda4" prot="public" virt="non-virtual"><scope>pyfolio::web::RestApiServer</scope><name>handle_batch_analysis</name></member>
+      <member refid="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1a9c15c099bbd974a26e4ae9c945b839f0" prot="public" virt="non-virtual"><scope>pyfolio::web::RestApiServer</scope><name>handle_drawdown_calculation</name></member>
+      <member refid="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1a65e85df3ae60130213a4d2444ed8dc31" prot="public" virt="non-virtual"><scope>pyfolio::web::RestApiServer</scope><name>handle_performance_analysis</name></member>
+      <member refid="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1ab8b8f36af787039a4748bdc6e4c48530" prot="public" virt="non-virtual"><scope>pyfolio::web::RestApiServer</scope><name>handle_portfolio_analysis</name></member>
+      <member refid="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1a9f68e2ebdce6df241a8530773503cd69" prot="public" virt="non-virtual"><scope>pyfolio::web::RestApiServer</scope><name>handle_sharpe_calculation</name></member>
+      <member refid="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1a84fbbb0329da81e8a4e9718be438dfb0" prot="public" virt="non-virtual"><scope>pyfolio::web::RestApiServer</scope><name>handle_transaction_analysis</name></member>
+      <member refid="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1a301fdf51eddfb64d7213e0547c74b7c9" prot="public" virt="non-virtual"><scope>pyfolio::web::RestApiServer</scope><name>handle_volatility_calculation</name></member>
+      <member refid="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1a8fd6dfbf399920bdac8e8e2e6e7315e7" prot="public" virt="non-virtual"><scope>pyfolio::web::RestApiServer</scope><name>is_running</name></member>
+      <member refid="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1a79595665321dff7d2e02afab6add7ed6" prot="public" virt="non-virtual"><scope>pyfolio::web::RestApiServer</scope><name>RestApiServer</name></member>
+      <member refid="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1acbea03b16d8d69eaa923b6cfa94198d9" prot="private" virt="non-virtual"><scope>pyfolio::web::RestApiServer</scope><name>server_</name></member>
+      <member refid="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1aee4003acf7a2efbbfbd2c70a9a00d654" prot="private" virt="non-virtual"><scope>pyfolio::web::RestApiServer</scope><name>setup_cors</name></member>
+      <member refid="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1a5739f7db5a64e6c6a87b8306518b696a" prot="private" virt="non-virtual"><scope>pyfolio::web::RestApiServer</scope><name>setup_error_handler</name></member>
+      <member refid="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1a9aad81380a1088e4b6f5028457240700" prot="private" virt="non-virtual"><scope>pyfolio::web::RestApiServer</scope><name>setup_logging</name></member>
+      <member refid="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1ae476ef195dcb76ed671d3428e1d012d9" prot="public" virt="non-virtual"><scope>pyfolio::web::RestApiServer</scope><name>setup_routes</name></member>
+      <member refid="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1a0d5fec86fceeae0930b9a79287630505" prot="public" virt="non-virtual"><scope>pyfolio::web::RestApiServer</scope><name>start</name></member>
+      <member refid="d8/d0c/classpyfolio_1_1web_1_1RestApiServer_1aeb4cbc27416c10fbcdf1e47fab4104b6" prot="public" virt="non-virtual"><scope>pyfolio::web::RestApiServer</scope><name>stop</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

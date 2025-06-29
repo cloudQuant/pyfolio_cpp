@@ -1,0 +1,465 @@
+name: Maintenance
+
+on:
+  schedule:
+    # Run dependency updates weekly on Mondays at 9 AM UTC
+    - cron: '0 9 * * 1'
+    # Run security scans daily at 2 AM UTC
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+    inputs:
+      task:
+        description: 'Maintenance task to run'
+        required: true
+        type: choice
+        options:
+        - 'dependency-update'
+        - 'security-scan'
+        - 'performance-audit'
+        - 'code-cleanup'
+        - 'all'
+
+jobs:
+  # Dependency Updates
+  dependency-update:
+    name: Update Dependencies
+    runs-on: ubuntu-latest
+    if: github.event.schedule == '0 9 * * 1' || github.event.inputs.task == 'dependency-update' || github.event.inputs.task == 'all'
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Setup CMake
+      uses: jwlawson/actions-setup-cmake@v1.14
+      with:
+        cmake-version: '3.25'
+
+    - name: Update git submodules
+      run: |
+        git submodule update --init --recursive --remote
+        
+    - name: Check for CMake dependency updates
+      run: |
+        # Check for updates in FetchContent dependencies
+        echo "Checking for dependency updates..."
+        
+        # Update Google Test
+        LATEST_GTEST=$(curl -s https://api.github.com/repos/google/googletest/releases/latest | jq -r .tag_name)
+        echo "Latest GoogleTest: $LATEST_GTEST"
+        
+        # Update nlohmann/json
+        LATEST_JSON=$(curl -s https://api.github.com/repos/nlohmann/json/releases/latest | jq -r .tag_name)
+        echo "Latest nlohmann/json: $LATEST_JSON"
+        
+        # Update cpp-httplib
+        LATEST_HTTPLIB=$(curl -s https://api.github.com/repos/yhirose/cpp-httplib/releases/latest | jq -r .tag_name)
+        echo "Latest cpp-httplib: $LATEST_HTTPLIB"
+        
+        # Create update suggestions
+        cat > dependency_updates.md << EOF
+        # Dependency Update Report
+        
+        ## Available Updates
+        
+        - **GoogleTest**: Current version may be outdated. Latest: $LATEST_GTEST
+        - **nlohmann/json**: Current version may be outdated. Latest: $LATEST_JSON  
+        - **cpp-httplib**: Current version may be outdated. Latest: $LATEST_HTTPLIB
+        
+        ## Recommended Actions
+        
+        1. Update CMakeLists.txt with latest versions
+        2. Test compatibility with new versions
+        3. Update documentation if APIs changed
+        
+        Generated on: $(date)
+        EOF
+
+    - name: Test with updated dependencies
+      run: |
+        mkdir -p build
+        cd build
+        cmake -DCMAKE_BUILD_TYPE=Debug -DBUILD_TESTS=ON ..
+        make -j$(nproc)
+        ctest --output-on-failure
+
+    - name: Create Pull Request for dependency updates
+      if: success()
+      uses: peter-evans/create-pull-request@v5
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: "chore: update dependencies"
+        title: "🔄 Automated Dependency Updates"
+        body-path: dependency_updates.md
+        branch: chore/dependency-updates
+        delete-branch: true
+        labels: |
+          dependencies
+          maintenance
+          automated
+
+  # Security Scanning
+  security-scan:
+    name: Security Scan
+    runs-on: ubuntu-latest
+    if: github.event.schedule == '0 2 * * *' || github.event.inputs.task == 'security-scan' || github.event.inputs.task == 'all'
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Run Trivy vulnerability scanner
+      uses: aquasecurity/trivy-action@master
+      with:
+        scan-type: 'fs'
+        scan-ref: '.'
+        format: 'json'
+        output: 'trivy-results.json'
+
+    - name: Run CodeQL Analysis
+      uses: github/codeql-action/init@v2
+      with:
+        languages: cpp
+
+    - name: Setup build environment
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y build-essential cmake ninja-build libeigen3-dev
+
+    - name: Build for CodeQL
+      run: |
+        mkdir -p build
+        cd build
+        cmake -DCMAKE_BUILD_TYPE=Debug -DBUILD_TESTS=ON -GNinja ..
+        ninja
+
+    - name: Perform CodeQL Analysis
+      uses: github/codeql-action/analyze@v2
+
+    - name: Run Semgrep security analysis
+      uses: returntocorp/semgrep-action@v1
+      with:
+        config: >-
+          p/security-audit
+          p/cpp
+          p/ci
+        generateSarif: "1"
+
+    - name: Upload Semgrep results to GitHub Security tab
+      uses: github/codeql-action/upload-sarif@v2
+      if: always()
+      with:
+        sarif_file: semgrep.sarif
+
+    - name: Generate security report
+      run: |
+        echo "# Security Scan Report" > security_report.md
+        echo "" >> security_report.md
+        echo "Generated on: $(date)" >> security_report.md
+        echo "" >> security_report.md
+        
+        if [ -f "trivy-results.json" ]; then
+          echo "## Trivy Vulnerability Scan" >> security_report.md
+          VULN_COUNT=$(jq '.Results[]?.Vulnerabilities // [] | length' trivy-results.json | awk '{sum+=$1} END{print sum+0}')
+          echo "- Total vulnerabilities found: $VULN_COUNT" >> security_report.md
+          echo "" >> security_report.md
+        fi
+        
+        echo "## Security Tools Executed" >> security_report.md
+        echo "- ✅ Trivy filesystem scan" >> security_report.md
+        echo "- ✅ CodeQL static analysis" >> security_report.md
+        echo "- ✅ Semgrep security patterns" >> security_report.md
+        echo "" >> security_report.md
+        echo "Please review the Security tab for detailed findings." >> security_report.md
+
+    - name: Upload security report
+      uses: actions/upload-artifact@v3
+      with:
+        name: security-report
+        path: |
+          security_report.md
+          trivy-results.json
+
+  # Performance Audit
+  performance-audit:
+    name: Performance Audit
+    runs-on: ubuntu-latest
+    if: github.event.inputs.task == 'performance-audit' || github.event.inputs.task == 'all'
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y \
+          build-essential \
+          cmake \
+          ninja-build \
+          libeigen3-dev \
+          valgrind \
+          perf-tools-unstable
+
+    - name: Build optimized version
+      run: |
+        mkdir -p build
+        cd build
+        cmake -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTS=ON -DBUILD_EXAMPLES=ON -GNinja ..
+        ninja
+
+    - name: Run performance benchmarks
+      run: |
+        cd build
+        # Run benchmarks if available
+        if [ -f "tests/performance_benchmarks" ]; then
+          ./tests/performance_benchmarks --benchmark_format=json --benchmark_out=benchmarks.json
+        fi
+        
+        # Profile memory usage
+        if [ -f "examples/basic_example" ]; then
+          valgrind --tool=massif --massif-out-file=massif.out ./examples/basic_example
+          ms_print massif.out > memory_profile.txt
+        fi
+
+    - name: Analyze performance
+      run: |
+        echo "# Performance Audit Report" > performance_report.md
+        echo "" >> performance_report.md
+        echo "Generated on: $(date)" >> performance_report.md
+        echo "" >> performance_report.md
+        
+        if [ -f "build/benchmarks.json" ]; then
+          echo "## Benchmark Results" >> performance_report.md
+          echo "Benchmark data available in artifacts." >> performance_report.md
+          echo "" >> performance_report.md
+        fi
+        
+        if [ -f "build/memory_profile.txt" ]; then
+          echo "## Memory Profile" >> performance_report.md
+          head -20 build/memory_profile.txt >> performance_report.md
+          echo "" >> performance_report.md
+        fi
+        
+        echo "## Recommendations" >> performance_report.md
+        echo "1. Review benchmark results for regression" >> performance_report.md
+        echo "2. Check memory usage patterns" >> performance_report.md
+        echo "3. Consider SIMD optimizations for hot paths" >> performance_report.md
+
+    - name: Upload performance results
+      uses: actions/upload-artifact@v3
+      with:
+        name: performance-audit
+        path: |
+          performance_report.md
+          build/benchmarks.json
+          build/memory_profile.txt
+
+  # Code Cleanup
+  code-cleanup:
+    name: Code Cleanup
+    runs-on: ubuntu-latest
+    if: github.event.inputs.task == 'code-cleanup' || github.event.inputs.task == 'all'
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Install clang-format and clang-tidy
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y clang-format clang-tidy
+
+    - name: Run clang-format
+      run: |
+        # Format all C++ files
+        find . -name "*.cpp" -o -name "*.h" -o -name "*.hpp" | \
+          grep -v build | \
+          grep -v _deps | \
+          xargs clang-format -i
+
+    - name: Run automated cleanup
+      run: |
+        # Remove trailing whitespace
+        find . -name "*.cpp" -o -name "*.h" -o -name "*.hpp" -o -name "*.md" | \
+          grep -v build | \
+          grep -v _deps | \
+          xargs sed -i 's/[[:space:]]*$//'
+        
+        # Ensure files end with newline
+        find . -name "*.cpp" -o -name "*.h" -o -name "*.hpp" -o -name "*.md" | \
+          grep -v build | \
+          grep -v _deps | \
+          while read file; do
+            if [ -s "$file" ] && [ "$(tail -c1 "$file")" != "" ]; then
+              echo "" >> "$file"
+            fi
+          done
+
+    - name: Check for issues
+      run: |
+        # Check for common issues
+        echo "# Code Cleanup Report" > cleanup_report.md
+        echo "" >> cleanup_report.md
+        echo "Generated on: $(date)" >> cleanup_report.md
+        echo "" >> cleanup_report.md
+        
+        # Check for TODO/FIXME comments
+        echo "## TODO/FIXME Comments" >> cleanup_report.md
+        grep -r "TODO\|FIXME" --include="*.cpp" --include="*.h" --include="*.hpp" . | \
+          grep -v build | \
+          head -10 >> cleanup_report.md || echo "None found" >> cleanup_report.md
+        echo "" >> cleanup_report.md
+        
+        # Check for long lines
+        echo "## Long Lines (>120 chars)" >> cleanup_report.md
+        find . -name "*.cpp" -o -name "*.h" -o -name "*.hpp" | \
+          grep -v build | \
+          xargs grep -l '.\{121,\}' | \
+          head -5 >> cleanup_report.md || echo "None found" >> cleanup_report.md
+
+    - name: Create Pull Request for cleanup
+      uses: peter-evans/create-pull-request@v5
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: "style: automated code cleanup"
+        title: "🧹 Automated Code Cleanup"
+        body-path: cleanup_report.md
+        branch: chore/code-cleanup
+        delete-branch: true
+        labels: |
+          style
+          maintenance
+          automated
+
+  # Docker Image Maintenance
+  docker-maintenance:
+    name: Docker Maintenance
+    runs-on: ubuntu-latest
+    if: github.event.inputs.task == 'all'
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v3
+
+    - name: Login to GitHub Container Registry
+      uses: docker/login-action@v3
+      with:
+        registry: ghcr.io
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Update base images
+      run: |
+        # Check for base image updates
+        docker buildx imagetools inspect ubuntu:22.04 > base_image_info.txt
+        
+        echo "# Docker Maintenance Report" > docker_report.md
+        echo "" >> docker_report.md
+        echo "Generated on: $(date)" >> docker_report.md
+        echo "" >> docker_report.md
+        echo "## Base Image Information" >> docker_report.md
+        echo "\`\`\`" >> docker_report.md
+        head -10 base_image_info.txt >> docker_report.md
+        echo "\`\`\`" >> docker_report.md
+
+    - name: Build and test Docker image
+      run: |
+        docker buildx build \
+          --platform linux/amd64 \
+          --file docker/Dockerfile \
+          --tag test-image \
+          --load \
+          .
+        
+        # Test the image
+        docker run --rm test-image /bin/bash -c "ls /usr/local/bin/pyfolio-*" || true
+
+    - name: Upload Docker report
+      uses: actions/upload-artifact@v3
+      with:
+        name: docker-maintenance
+        path: |
+          docker_report.md
+          base_image_info.txt
+
+  # Generate Maintenance Summary
+  summary:
+    name: Maintenance Summary
+    runs-on: ubuntu-latest
+    needs: [dependency-update, security-scan, performance-audit, code-cleanup, docker-maintenance]
+    if: always()
+    
+    steps:
+    - name: Download all artifacts
+      uses: actions/download-artifact@v3
+
+    - name: Generate summary report
+      run: |
+        echo "# 🔧 Maintenance Summary Report" > summary.md
+        echo "" >> summary.md
+        echo "**Generated on:** $(date)" >> summary.md
+        echo "**Workflow:** ${{ github.workflow }}" >> summary.md
+        echo "**Trigger:** ${{ github.event_name }}" >> summary.md
+        echo "" >> summary.md
+        
+        echo "## 📊 Task Status" >> summary.md
+        echo "" >> summary.md
+        
+        # Check each job status
+        echo "| Task | Status |" >> summary.md
+        echo "|------|--------|" >> summary.md
+        echo "| Dependency Update | ${{ needs.dependency-update.result || 'skipped' }} |" >> summary.md
+        echo "| Security Scan | ${{ needs.security-scan.result || 'skipped' }} |" >> summary.md
+        echo "| Performance Audit | ${{ needs.performance-audit.result || 'skipped' }} |" >> summary.md
+        echo "| Code Cleanup | ${{ needs.code-cleanup.result || 'skipped' }} |" >> summary.md
+        echo "| Docker Maintenance | ${{ needs.docker-maintenance.result || 'skipped' }} |" >> summary.md
+        echo "" >> summary.md
+        
+        echo "## 📁 Generated Artifacts" >> summary.md
+        echo "" >> summary.md
+        if [ -d "security-report" ]; then
+          echo "- 🔒 Security scan results" >> summary.md
+        fi
+        if [ -d "performance-audit" ]; then
+          echo "- ⚡ Performance audit data" >> summary.md
+        fi
+        if [ -d "docker-maintenance" ]; then
+          echo "- 🐳 Docker maintenance report" >> summary.md
+        fi
+        echo "" >> summary.md
+        
+        echo "## 🎯 Next Actions" >> summary.md
+        echo "" >> summary.md
+        echo "1. Review any created pull requests" >> summary.md
+        echo "2. Check Security tab for findings" >> summary.md
+        echo "3. Monitor performance trends" >> summary.md
+        echo "4. Update documentation if needed" >> summary.md
+
+    - name: Create issue for maintenance summary
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const fs = require('fs');
+          const summary = fs.readFileSync('summary.md', 'utf8');
+          
+          github.rest.issues.create({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            title: `🔧 Maintenance Report - ${new Date().toISOString().split('T')[0]}`,
+            body: summary,
+            labels: ['maintenance', 'report', 'automated']
+          });
+
+    - name: Upload summary
+      uses: actions/upload-artifact@v3
+      with:
+        name: maintenance-summary
+        path: summary.md

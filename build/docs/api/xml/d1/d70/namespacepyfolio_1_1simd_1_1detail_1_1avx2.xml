@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="d1/d70/namespacepyfolio_1_1simd_1_1detail_1_1avx2" kind="namespace" language="C++">
+    <compoundname>pyfolio::simd::detail::avx2</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="d1/d70/namespacepyfolio_1_1simd_1_1detail_1_1avx2_1acdafffec2b1c8f08e54d2e08506df770" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void pyfolio::simd::detail::avx2::vector_add_avx2</definition>
+        <argsstring>(const double *a, const double *b, double *result, size_t n) noexcept</argsstring>
+        <name>vector_add_avx2</name>
+        <qualifiedname>pyfolio::simd::detail::avx2::vector_add_avx2</qualifiedname>
+        <param>
+          <type>const double *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/math/simd_math.cpp" line="404" column="6" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/math/simd_math.cpp" bodystart="404" bodyend="419" declfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/simd_math.h" declline="125" declcolumn="6"/>
+        <references refid="d0/d60/namespacepyfolio_1_1simd_1a401e3c08f28bdd741e67026a693ab749" compoundref="d6/d99/simd__math_8h" startline="31">pyfolio::simd::AVX2_DOUBLES</references>
+        <referencedby refid="d0/d60/namespacepyfolio_1_1simd_1a8db69e97761680ae769598b3ea85485d" compoundref="df/d95/simd__math_8cpp" startline="46" endline="76">pyfolio::simd::vector_add</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d1/d70/namespacepyfolio_1_1simd_1_1detail_1_1avx2_1a5712d632f7b476d7ae019a0e8ce89450" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void pyfolio::simd::detail::avx2::vector_subtract_avx2</definition>
+        <argsstring>(const double *a, const double *b, double *result, size_t n) noexcept</argsstring>
+        <name>vector_subtract_avx2</name>
+        <qualifiedname>pyfolio::simd::detail::avx2::vector_subtract_avx2</qualifiedname>
+        <param>
+          <type>const double *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/math/simd_math.cpp" line="421" column="6" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/math/simd_math.cpp" bodystart="421" bodyend="434" declfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/simd_math.h" declline="126" declcolumn="6"/>
+        <references refid="d0/d60/namespacepyfolio_1_1simd_1a401e3c08f28bdd741e67026a693ab749" compoundref="d6/d99/simd__math_8h" startline="31">pyfolio::simd::AVX2_DOUBLES</references>
+        <referencedby refid="d0/d60/namespacepyfolio_1_1simd_1a0eb32889b1c6598cb6d836322b1fd4e7" compoundref="df/d95/simd__math_8cpp" startline="78" endline="107">pyfolio::simd::vector_subtract</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d1/d70/namespacepyfolio_1_1simd_1_1detail_1_1avx2_1ada9318023e4fab6364196b5ce2cd5aac" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void pyfolio::simd::detail::avx2::vector_multiply_avx2</definition>
+        <argsstring>(const double *a, const double *b, double *result, size_t n) noexcept</argsstring>
+        <name>vector_multiply_avx2</name>
+        <qualifiedname>pyfolio::simd::detail::avx2::vector_multiply_avx2</qualifiedname>
+        <param>
+          <type>const double *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/math/simd_math.cpp" line="436" column="6" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/math/simd_math.cpp" bodystart="436" bodyend="449" declfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/simd_math.h" declline="127" declcolumn="6"/>
+        <references refid="d0/d60/namespacepyfolio_1_1simd_1a401e3c08f28bdd741e67026a693ab749" compoundref="d6/d99/simd__math_8h" startline="31">pyfolio::simd::AVX2_DOUBLES</references>
+        <referencedby refid="d0/d60/namespacepyfolio_1_1simd_1ad7801140ceb50d53111dc0137b1c093c" compoundref="df/d95/simd__math_8cpp" startline="109" endline="138">pyfolio::simd::vector_multiply</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d1/d70/namespacepyfolio_1_1simd_1_1detail_1_1avx2_1ae814dcec474b64030ee6d97902849ea2" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void pyfolio::simd::detail::avx2::vector_scale_avx2</definition>
+        <argsstring>(const double *a, double scalar, double *result, size_t n) noexcept</argsstring>
+        <name>vector_scale_avx2</name>
+        <qualifiedname>pyfolio::simd::detail::avx2::vector_scale_avx2</qualifiedname>
+        <param>
+          <type>const double *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>scalar</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/math/simd_math.cpp" line="451" column="6" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/math/simd_math.cpp" bodystart="451" bodyend="464" declfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/simd_math.h" declline="128" declcolumn="6"/>
+        <references refid="d0/d60/namespacepyfolio_1_1simd_1a401e3c08f28bdd741e67026a693ab749" compoundref="d6/d99/simd__math_8h" startline="31">pyfolio::simd::AVX2_DOUBLES</references>
+        <referencedby refid="d0/d60/namespacepyfolio_1_1simd_1a6efc96d7ab5019459131e97046cca0a2" compoundref="df/d95/simd__math_8cpp" startline="140" endline="169">pyfolio::simd::vector_scale</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d1/d70/namespacepyfolio_1_1simd_1_1detail_1_1avx2_1a8c584786fe6d1442d5937b2aadd50b53" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double pyfolio::simd::detail::avx2::dot_product_avx2</definition>
+        <argsstring>(const double *a, const double *b, size_t n) noexcept</argsstring>
+        <name>dot_product_avx2</name>
+        <qualifiedname>pyfolio::simd::detail::avx2::dot_product_avx2</qualifiedname>
+        <param>
+          <type>const double *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/math/simd_math.cpp" line="466" column="8" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/math/simd_math.cpp" bodystart="466" bodyend="488" declfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/simd_math.h" declline="129" declcolumn="8"/>
+        <references refid="d0/d60/namespacepyfolio_1_1simd_1a401e3c08f28bdd741e67026a693ab749" compoundref="d6/d99/simd__math_8h" startline="31">pyfolio::simd::AVX2_DOUBLES</references>
+        <referencedby refid="d0/d60/namespacepyfolio_1_1simd_1a148485211f2ca558de4424412a78f0a0" compoundref="df/d95/simd__math_8cpp" startline="171" endline="197">pyfolio::simd::dot_product</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d1/d70/namespacepyfolio_1_1simd_1_1detail_1_1avx2_1a6d15ab4651fdc91c213eb13c0e6b81ce" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double pyfolio::simd::detail::avx2::vector_sum_avx2</definition>
+        <argsstring>(const double *data, size_t n) noexcept</argsstring>
+        <name>vector_sum_avx2</name>
+        <qualifiedname>pyfolio::simd::detail::avx2::vector_sum_avx2</qualifiedname>
+        <param>
+          <type>const double *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/math/simd_math.cpp" line="490" column="8" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/math/simd_math.cpp" bodystart="490" bodyend="510" declfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/simd_math.h" declline="130" declcolumn="8"/>
+        <references refid="d0/d60/namespacepyfolio_1_1simd_1a401e3c08f28bdd741e67026a693ab749" compoundref="d6/d99/simd__math_8h" startline="31">pyfolio::simd::AVX2_DOUBLES</references>
+        <referencedby refid="d0/d60/namespacepyfolio_1_1simd_1a60235417cf246196aeb42e6211a07046" compoundref="df/d95/simd__math_8cpp" startline="199" endline="224">pyfolio::simd::vector_sum</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>AVX2 implementations for x86-64 processors. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/simd_math.h" line="124" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names --coverage CMakeFiles/memory_tests.dir/test_memory_usage.cpp.o -o memory_tests  ../libpyfolio_cpp.a ../lib/libgtest.a ../lib/libgtest_main.a ../lib/libgtest.a

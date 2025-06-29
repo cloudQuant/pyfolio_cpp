@@ -1,0 +1,836 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector" kind="class" language="C++" prot="public">
+    <compoundname>pyfolio::analytics::RegimeDetector</compoundname>
+    <includes refid="d2/dfc/regime__detection_8h" local="no">regime_detection.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1a2913cce460a23e6fa5ab1e411b8bebb6" prot="private" static="no" mutable="yes">
+        <type>std::mt19937</type>
+        <definition>std::mt19937 pyfolio::analytics::RegimeDetector::rng_</definition>
+        <argsstring></argsstring>
+        <name>rng_</name>
+        <qualifiedname>pyfolio::analytics::RegimeDetector::rng_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" line="203" column="26" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1a3fa567ecc51cd21b886f8ab9037bc5c3" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t pyfolio::analytics::RegimeDetector::lookback_window_</definition>
+        <argsstring></argsstring>
+        <name>lookback_window_</name>
+        <qualifiedname>pyfolio::analytics::RegimeDetector::lookback_window_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" line="204" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1a627db4fc56686d4095258bff02288d0e" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::RegimeDetector::volatility_threshold_</definition>
+        <argsstring></argsstring>
+        <name>volatility_threshold_</name>
+        <qualifiedname>pyfolio::analytics::RegimeDetector::volatility_threshold_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" line="205" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1a420b735e57276c471a6186c4beb11b48" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::RegimeDetector::return_threshold_</definition>
+        <argsstring></argsstring>
+        <name>return_threshold_</name>
+        <qualifiedname>pyfolio::analytics::RegimeDetector::return_threshold_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" line="206" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1a901c2dbf5a4d8144cb52d89d9a848c3e" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>pyfolio::analytics::RegimeDetector::RegimeDetector</definition>
+        <argsstring>(size_t lookback_window=21, double volatility_threshold=0.02, double return_threshold=0.001)</argsstring>
+        <name>RegimeDetector</name>
+        <qualifiedname>pyfolio::analytics::RegimeDetector::RegimeDetector</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>lookback_window</declname>
+          <defval>21</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>volatility_threshold</declname>
+          <defval>0.02</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>return_threshold</declname>
+          <defval>0.001</defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" line="212" column="14" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" bodystart="212" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1a9c8093c0c029935fde2ed5e2a740252d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>pyfolio::analytics::RegimeDetector::RegimeDetector</definition>
+        <argsstring>(uint32_t seed, size_t lookback_window=21, double volatility_threshold=0.02, double return_threshold=0.001)</argsstring>
+        <name>RegimeDetector</name>
+        <qualifiedname>pyfolio::analytics::RegimeDetector::RegimeDetector</qualifiedname>
+        <param>
+          <type>uint32_t</type>
+          <declname>seed</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>lookback_window</declname>
+          <defval>21</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>volatility_threshold</declname>
+          <defval>0.02</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>return_threshold</declname>
+          <defval>0.001</defval>
+        </param>
+        <briefdescription>
+<para>Constructor with seed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" line="220" column="5" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" bodystart="220" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1a064970a0664b36d4aaa708d9e749d628" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; <ref refid="d1/d87/structpyfolio_1_1analytics_1_1RegimeDetectionResult" kindref="compound">RegimeDetectionResult</ref> &gt;</type>
+        <definition>Result&lt; RegimeDetectionResult &gt; pyfolio::analytics::RegimeDetector::detect_regimes</definition>
+        <argsstring>(const ReturnSeries &amp;returns) const</argsstring>
+        <name>detect_regimes</name>
+        <qualifiedname>pyfolio::analytics::RegimeDetector::detect_regimes</qualifiedname>
+        <param>
+          <type>const <ref refid="d2/d10/namespacepyfolio_1_1analytics_1abb18ff1f67db5a5ced7beb8e9873092d" kindref="member">ReturnSeries</ref> &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <briefdescription>
+<para>Detect market regimes using multiple methods. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" line="228" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" bodystart="228" bodyend="272"/>
+        <references refid="d1/d87/structpyfolio_1_1analytics_1_1RegimeDetectionResult_1a973b64a79a254c06402eaa329877c2cf" compoundref="d2/dfc/regime__detection_8h" startline="139">pyfolio::analytics::RegimeDetectionResult::current_regime</references>
+        <references refid="d1/d87/structpyfolio_1_1analytics_1_1RegimeDetectionResult_1acc6170253131e2497a8bb27454d71d6f" compoundref="d2/dfc/regime__detection_8h" startline="140">pyfolio::analytics::RegimeDetectionResult::current_regime_confidence</references>
+        <references refid="d1/d87/structpyfolio_1_1analytics_1_1RegimeDetectionResult_1a3e4e5cef48523f1f6ceb2c563bfea5ba" compoundref="d2/dfc/regime__detection_8h" startline="141">pyfolio::analytics::RegimeDetectionResult::current_regime_duration</references>
+        <references refid="d1/d87/structpyfolio_1_1analytics_1_1RegimeDetectionResult_1ae5a51f4414bcc30ef37d3a2e8b03dd07" compoundref="d2/dfc/regime__detection_8h" startline="134">pyfolio::analytics::RegimeDetectionResult::dates</references>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1a7401475da2acefda00385214b27e7c59" compoundref="d8/d51/time__series_8h" startline="103" endline="103">pyfolio::TimeSeries&lt; T &gt;::empty</references>
+        <references refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" compoundref="d3/d11/error__handling_8h" startline="111" endline="116">pyfolio::Result&lt; T &gt;::error</references>
+        <references refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9a9e32e294e8358345f2b9b52b7f8b41fa" compoundref="d3/d11/error__handling_8h" startline="18">pyfolio::InsufficientData</references>
+        <references refid="d1/d87/structpyfolio_1_1analytics_1_1RegimeDetectionResult_1adfa6549decd926dbda5c7a12969f9067" compoundref="d2/dfc/regime__detection_8h" startline="136">pyfolio::analytics::RegimeDetectionResult::regime_characteristics</references>
+        <references refid="d1/d87/structpyfolio_1_1analytics_1_1RegimeDetectionResult_1a0df6daddfa9febd7a41aecc6f8db2153" compoundref="d2/dfc/regime__detection_8h" startline="135">pyfolio::analytics::RegimeDetectionResult::regime_probabilities</references>
+        <references refid="d1/d87/structpyfolio_1_1analytics_1_1RegimeDetectionResult_1a1734b705db8aa6183cd6938c2ec211cf" compoundref="d2/dfc/regime__detection_8h" startline="133">pyfolio::analytics::RegimeDetectionResult::regime_sequence</references>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1a82aad601509b554d6968521b8461f50e" compoundref="d8/d51/time__series_8h" startline="102" endline="102">pyfolio::TimeSeries&lt; T &gt;::size</references>
+        <references refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" compoundref="d3/d11/error__handling_8h" startline="74" endline="74">pyfolio::Result&lt; T &gt;::success</references>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1a0374bbc62bd808749ac476b3af4b0ead" compoundref="d8/d51/time__series_8h" startline="124" endline="124">pyfolio::TimeSeries&lt; T &gt;::timestamps</references>
+        <references refid="d1/d87/structpyfolio_1_1analytics_1_1RegimeDetectionResult_1aa7c5a0bba72b40154162f0a71af3f816" compoundref="d2/dfc/regime__detection_8h" startline="137">pyfolio::analytics::RegimeDetectionResult::transitions</references>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1ab0b20c4945cdde977885888f384256c3" compoundref="d8/d51/time__series_8h" startline="125" endline="125">pyfolio::TimeSeries&lt; T &gt;::values</references>
+        <referencedby refid="da/d7c/bayesian__analysis__example_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="da/d7c/bayesian__analysis__example_8cpp" startline="8" endline="457">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1a1d615e210259da83d7953790e4d5c992" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; std::pair&lt; <ref refid="d2/d10/namespacepyfolio_1_1analytics_1ac324d49fe4462ede46349d3be97bdb8a" kindref="member">RegimeType</ref>, double &gt; &gt;</type>
+        <definition>Result&lt; std::pair&lt; RegimeType, double &gt; &gt; pyfolio::analytics::RegimeDetector::classify_current_regime</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;recent_returns) const</argsstring>
+        <name>classify_current_regime</name>
+        <qualifiedname>pyfolio::analytics::RegimeDetector::classify_current_regime</qualifiedname>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>recent_returns</declname>
+        </param>
+        <briefdescription>
+<para>Real-time regime classification for single observation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" line="277" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" bodystart="277" bodyend="325"/>
+        <references refid="d2/d10/namespacepyfolio_1_1analytics_1ac324d49fe4462ede46349d3be97bdb8aa372137ebb0d053fecd7a594ec5cb5971" compoundref="d2/dfc/regime__detection_8h" startline="31">pyfolio::analytics::Bear</references>
+        <references refid="d2/d10/namespacepyfolio_1_1analytics_1ac324d49fe4462ede46349d3be97bdb8aa92c21511d7b383b2f8ba5b00c3c9a473" compoundref="d2/dfc/regime__detection_8h" startline="30">pyfolio::analytics::Bull</references>
+        <references refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9aacbb30bd92a04a43bc1ea560dac5c241" compoundref="d3/d11/error__handling_8h" startline="26">pyfolio::CalculationError</references>
+        <references refid="d2/d10/namespacepyfolio_1_1analytics_1ac324d49fe4462ede46349d3be97bdb8aa9dc772d82afb9a5374668bd51a50cc8c" compoundref="d2/dfc/regime__detection_8h" startline="34">pyfolio::analytics::Crisis</references>
+        <references refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9a9e32e294e8358345f2b9b52b7f8b41fa" compoundref="d3/d11/error__handling_8h" startline="18">pyfolio::InsufficientData</references>
+        <references refid="d6/ddc/namespacepyfolio_1_1stats_1a0ded7b265023215831bffb8b799ba59a" compoundref="d3/dbe/math_2statistics_8h" startline="112" endline="119">pyfolio::stats::mean</references>
+        <references refid="d2/d10/namespacepyfolio_1_1analytics_1ac324d49fe4462ede46349d3be97bdb8aad8afbc541b39d23648c823057cffe3a5" compoundref="d2/dfc/regime__detection_8h" startline="35">pyfolio::analytics::Recovery</references>
+        <references refid="d2/d10/namespacepyfolio_1_1analytics_1ac324d49fe4462ede46349d3be97bdb8aafa3aff3c185c6dc7754235f397c2099a" compoundref="d2/dfc/regime__detection_8h" startline="33">pyfolio::analytics::Stable</references>
+        <references refid="d6/ddc/namespacepyfolio_1_1stats_1ae9a69383818faf0de2b2e0a99d4179d9" compoundref="d3/dbe/math_2statistics_8h" startline="151" endline="158">pyfolio::stats::standard_deviation</references>
+        <references refid="d2/d10/namespacepyfolio_1_1analytics_1ac324d49fe4462ede46349d3be97bdb8aa3e3af98b6b48c7e593d8d18863e3333b" compoundref="d2/dfc/regime__detection_8h" startline="32">pyfolio::analytics::Volatile</references>
+      </memberdef>
+      <memberdef kind="function" id="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1add3a9de12ef6acfc86da8248e9d519df" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; std::vector&lt; std::pair&lt; <ref refid="d2/d10/namespacepyfolio_1_1analytics_1ac324d49fe4462ede46349d3be97bdb8a" kindref="member">RegimeType</ref>, double &gt; &gt; &gt;</type>
+        <definition>Result&lt; std::vector&lt; std::pair&lt; RegimeType, double &gt; &gt; &gt; pyfolio::analytics::RegimeDetector::predict_regime_transitions</definition>
+        <argsstring>(const RegimeDetectionResult &amp;current_state, size_t forecast_horizon=21) const</argsstring>
+        <name>predict_regime_transitions</name>
+        <qualifiedname>pyfolio::analytics::RegimeDetector::predict_regime_transitions</qualifiedname>
+        <param>
+          <type>const <ref refid="d1/d87/structpyfolio_1_1analytics_1_1RegimeDetectionResult" kindref="compound">RegimeDetectionResult</ref> &amp;</type>
+          <declname>current_state</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>forecast_horizon</declname>
+          <defval>21</defval>
+        </param>
+        <briefdescription>
+<para>Predict regime transitions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" line="330" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" bodystart="330" bodyend="360"/>
+        <references refid="d1/d87/structpyfolio_1_1analytics_1_1RegimeDetectionResult_1a973b64a79a254c06402eaa329877c2cf" compoundref="d2/dfc/regime__detection_8h" startline="139">pyfolio::analytics::RegimeDetectionResult::current_regime</references>
+        <references refid="d1/d87/structpyfolio_1_1analytics_1_1RegimeDetectionResult_1acc6170253131e2497a8bb27454d71d6f" compoundref="d2/dfc/regime__detection_8h" startline="140">pyfolio::analytics::RegimeDetectionResult::current_regime_confidence</references>
+        <references refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9ad8f78ca9a692a9411afbc7584b69d043" compoundref="d3/d11/error__handling_8h" startline="17">pyfolio::InvalidInput</references>
+        <references refid="d1/d87/structpyfolio_1_1analytics_1_1RegimeDetectionResult_1a1734b705db8aa6183cd6938c2ec211cf" compoundref="d2/dfc/regime__detection_8h" startline="133">pyfolio::analytics::RegimeDetectionResult::regime_sequence</references>
+      </memberdef>
+      <memberdef kind="function" id="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1acab079b3feb147fdf26c7d24d5fda009" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; std::map&lt; <ref refid="d2/d10/namespacepyfolio_1_1analytics_1ac324d49fe4462ede46349d3be97bdb8a" kindref="member">RegimeType</ref>, std::string &gt; &gt;</type>
+        <definition>Result&lt; std::map&lt; RegimeType, std::string &gt; &gt; pyfolio::analytics::RegimeDetector::get_regime_recommendations</definition>
+        <argsstring>() const</argsstring>
+        <name>get_regime_recommendations</name>
+        <qualifiedname>pyfolio::analytics::RegimeDetector::get_regime_recommendations</qualifiedname>
+        <briefdescription>
+<para>Calculate regime-based portfolio recommendations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" line="365" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" bodystart="365" bodyend="377"/>
+        <references refid="d2/d10/namespacepyfolio_1_1analytics_1ac324d49fe4462ede46349d3be97bdb8aa372137ebb0d053fecd7a594ec5cb5971" compoundref="d2/dfc/regime__detection_8h" startline="31">pyfolio::analytics::Bear</references>
+        <references refid="d2/d10/namespacepyfolio_1_1analytics_1ac324d49fe4462ede46349d3be97bdb8aa92c21511d7b383b2f8ba5b00c3c9a473" compoundref="d2/dfc/regime__detection_8h" startline="30">pyfolio::analytics::Bull</references>
+        <references refid="d2/d10/namespacepyfolio_1_1analytics_1ac324d49fe4462ede46349d3be97bdb8aa9dc772d82afb9a5374668bd51a50cc8c" compoundref="d2/dfc/regime__detection_8h" startline="34">pyfolio::analytics::Crisis</references>
+        <references refid="d2/d10/namespacepyfolio_1_1analytics_1ac324d49fe4462ede46349d3be97bdb8aad8afbc541b39d23648c823057cffe3a5" compoundref="d2/dfc/regime__detection_8h" startline="35">pyfolio::analytics::Recovery</references>
+        <references refid="d2/d10/namespacepyfolio_1_1analytics_1ac324d49fe4462ede46349d3be97bdb8aafa3aff3c185c6dc7754235f397c2099a" compoundref="d2/dfc/regime__detection_8h" startline="33">pyfolio::analytics::Stable</references>
+        <references refid="d2/d10/namespacepyfolio_1_1analytics_1ac324d49fe4462ede46349d3be97bdb8aa3e3af98b6b48c7e593d8d18863e3333b" compoundref="d2/dfc/regime__detection_8h" startline="32">pyfolio::analytics::Volatile</references>
+        <referencedby refid="da/d7c/bayesian__analysis__example_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="da/d7c/bayesian__analysis__example_8cpp" startline="8" endline="457">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1a2233d9e06edde686d5b6620a2830130a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; <ref refid="d1/d87/structpyfolio_1_1analytics_1_1RegimeDetectionResult" kindref="compound">RegimeDetectionResult</ref> &gt;</type>
+        <definition>Result&lt; RegimeDetectionResult &gt; pyfolio::analytics::RegimeDetector::markov_switching_detection</definition>
+        <argsstring>(const ReturnSeries &amp;returns, int num_regimes=2, int max_iterations=1000, uint32_t seed=42) const</argsstring>
+        <name>markov_switching_detection</name>
+        <qualifiedname>pyfolio::analytics::RegimeDetector::markov_switching_detection</qualifiedname>
+        <param>
+          <type>const <ref refid="d2/d10/namespacepyfolio_1_1analytics_1abb18ff1f67db5a5ced7beb8e9873092d" kindref="member">ReturnSeries</ref> &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_regimes</declname>
+          <defval>2</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max_iterations</declname>
+          <defval>1000</defval>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>seed</declname>
+          <defval>42</defval>
+        </param>
+        <briefdescription>
+<para>Markov switching model for regime detection. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" line="382" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" bodystart="382" bodyend="478"/>
+        <references refid="d1/d87/structpyfolio_1_1analytics_1_1RegimeDetectionResult_1a973b64a79a254c06402eaa329877c2cf" compoundref="d2/dfc/regime__detection_8h" startline="139">pyfolio::analytics::RegimeDetectionResult::current_regime</references>
+        <references refid="d1/d87/structpyfolio_1_1analytics_1_1RegimeDetectionResult_1acc6170253131e2497a8bb27454d71d6f" compoundref="d2/dfc/regime__detection_8h" startline="140">pyfolio::analytics::RegimeDetectionResult::current_regime_confidence</references>
+        <references refid="d1/d87/structpyfolio_1_1analytics_1_1RegimeDetectionResult_1a3e4e5cef48523f1f6ceb2c563bfea5ba" compoundref="d2/dfc/regime__detection_8h" startline="141">pyfolio::analytics::RegimeDetectionResult::current_regime_duration</references>
+        <references refid="d1/d87/structpyfolio_1_1analytics_1_1RegimeDetectionResult_1ae5a51f4414bcc30ef37d3a2e8b03dd07" compoundref="d2/dfc/regime__detection_8h" startline="134">pyfolio::analytics::RegimeDetectionResult::dates</references>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1a7401475da2acefda00385214b27e7c59" compoundref="d8/d51/time__series_8h" startline="103" endline="103">pyfolio::TimeSeries&lt; T &gt;::empty</references>
+        <references refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" compoundref="d3/d11/error__handling_8h" startline="111" endline="116">pyfolio::Result&lt; T &gt;::error</references>
+        <references refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9a9e32e294e8358345f2b9b52b7f8b41fa" compoundref="d3/d11/error__handling_8h" startline="18">pyfolio::InsufficientData</references>
+        <references refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9ad8f78ca9a692a9411afbc7584b69d043" compoundref="d3/d11/error__handling_8h" startline="17">pyfolio::InvalidInput</references>
+        <references refid="d6/ddc/namespacepyfolio_1_1stats_1a0ded7b265023215831bffb8b799ba59a" compoundref="d3/dbe/math_2statistics_8h" startline="112" endline="119">pyfolio::stats::mean</references>
+        <references refid="d1/d87/structpyfolio_1_1analytics_1_1RegimeDetectionResult_1adfa6549decd926dbda5c7a12969f9067" compoundref="d2/dfc/regime__detection_8h" startline="136">pyfolio::analytics::RegimeDetectionResult::regime_characteristics</references>
+        <references refid="d1/d87/structpyfolio_1_1analytics_1_1RegimeDetectionResult_1a0df6daddfa9febd7a41aecc6f8db2153" compoundref="d2/dfc/regime__detection_8h" startline="135">pyfolio::analytics::RegimeDetectionResult::regime_probabilities</references>
+        <references refid="d1/d87/structpyfolio_1_1analytics_1_1RegimeDetectionResult_1a1734b705db8aa6183cd6938c2ec211cf" compoundref="d2/dfc/regime__detection_8h" startline="133">pyfolio::analytics::RegimeDetectionResult::regime_sequence</references>
+        <references refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" compoundref="d3/d11/error__handling_8h" startline="74" endline="74">pyfolio::Result&lt; T &gt;::success</references>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1a0374bbc62bd808749ac476b3af4b0ead" compoundref="d8/d51/time__series_8h" startline="124" endline="124">pyfolio::TimeSeries&lt; T &gt;::timestamps</references>
+        <references refid="d1/d87/structpyfolio_1_1analytics_1_1RegimeDetectionResult_1aa7c5a0bba72b40154162f0a71af3f816" compoundref="d2/dfc/regime__detection_8h" startline="137">pyfolio::analytics::RegimeDetectionResult::transitions</references>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1ab0b20c4945cdde977885888f384256c3" compoundref="d8/d51/time__series_8h" startline="125" endline="125">pyfolio::TimeSeries&lt; T &gt;::values</references>
+        <references refid="d6/ddc/namespacepyfolio_1_1stats_1afae76bfc655b39b929869957f17e2406" compoundref="d3/dbe/math_2statistics_8h" startline="125" endline="145">pyfolio::stats::variance</references>
+        <referencedby refid="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1a4d59792f45ec60c6e1e4e13123c9a87e" compoundref="d2/dfc/regime__detection_8h" startline="483" endline="486">hidden_markov_detection</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1a4d59792f45ec60c6e1e4e13123c9a87e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; <ref refid="d1/d87/structpyfolio_1_1analytics_1_1RegimeDetectionResult" kindref="compound">RegimeDetectionResult</ref> &gt;</type>
+        <definition>Result&lt; RegimeDetectionResult &gt; pyfolio::analytics::RegimeDetector::hidden_markov_detection</definition>
+        <argsstring>(const ReturnSeries &amp;returns, int num_regimes=2) const</argsstring>
+        <name>hidden_markov_detection</name>
+        <qualifiedname>pyfolio::analytics::RegimeDetector::hidden_markov_detection</qualifiedname>
+        <param>
+          <type>const <ref refid="d2/d10/namespacepyfolio_1_1analytics_1abb18ff1f67db5a5ced7beb8e9873092d" kindref="member">ReturnSeries</ref> &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_regimes</declname>
+          <defval>2</defval>
+        </param>
+        <briefdescription>
+<para>Hidden Markov Model regime detection. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" line="483" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" bodystart="483" bodyend="486"/>
+        <references refid="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1a2233d9e06edde686d5b6620a2830130a" compoundref="d2/dfc/regime__detection_8h" startline="382" endline="478">markov_switching_detection</references>
+      </memberdef>
+      <memberdef kind="function" id="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1a774beb5ef6d09f2a32210cda918d25e7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; <ref refid="d1/d87/structpyfolio_1_1analytics_1_1RegimeDetectionResult" kindref="compound">RegimeDetectionResult</ref> &gt;</type>
+        <definition>Result&lt; RegimeDetectionResult &gt; pyfolio::analytics::RegimeDetector::structural_break_detection</definition>
+        <argsstring>(const ReturnSeries &amp;returns, double significance_level=0.05) const</argsstring>
+        <name>structural_break_detection</name>
+        <qualifiedname>pyfolio::analytics::RegimeDetector::structural_break_detection</qualifiedname>
+        <param>
+          <type>const <ref refid="d2/d10/namespacepyfolio_1_1analytics_1abb18ff1f67db5a5ced7beb8e9873092d" kindref="member">ReturnSeries</ref> &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>significance_level</declname>
+          <defval>0.05</defval>
+        </param>
+        <briefdescription>
+<para>Structural break detection. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" line="491" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" bodystart="491" bodyend="574"/>
+        <references refid="d2/d10/namespacepyfolio_1_1analytics_1ac324d49fe4462ede46349d3be97bdb8aa372137ebb0d053fecd7a594ec5cb5971" compoundref="d2/dfc/regime__detection_8h" startline="31">pyfolio::analytics::Bear</references>
+        <references refid="d2/d10/namespacepyfolio_1_1analytics_1ac324d49fe4462ede46349d3be97bdb8aa92c21511d7b383b2f8ba5b00c3c9a473" compoundref="d2/dfc/regime__detection_8h" startline="30">pyfolio::analytics::Bull</references>
+        <references refid="d1/d87/structpyfolio_1_1analytics_1_1RegimeDetectionResult_1a973b64a79a254c06402eaa329877c2cf" compoundref="d2/dfc/regime__detection_8h" startline="139">pyfolio::analytics::RegimeDetectionResult::current_regime</references>
+        <references refid="d1/d87/structpyfolio_1_1analytics_1_1RegimeDetectionResult_1acc6170253131e2497a8bb27454d71d6f" compoundref="d2/dfc/regime__detection_8h" startline="140">pyfolio::analytics::RegimeDetectionResult::current_regime_confidence</references>
+        <references refid="d1/d87/structpyfolio_1_1analytics_1_1RegimeDetectionResult_1a3e4e5cef48523f1f6ceb2c563bfea5ba" compoundref="d2/dfc/regime__detection_8h" startline="141">pyfolio::analytics::RegimeDetectionResult::current_regime_duration</references>
+        <references refid="d1/d87/structpyfolio_1_1analytics_1_1RegimeDetectionResult_1ae5a51f4414bcc30ef37d3a2e8b03dd07" compoundref="d2/dfc/regime__detection_8h" startline="134">pyfolio::analytics::RegimeDetectionResult::dates</references>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1a7401475da2acefda00385214b27e7c59" compoundref="d8/d51/time__series_8h" startline="103" endline="103">pyfolio::TimeSeries&lt; T &gt;::empty</references>
+        <references refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" compoundref="d3/d11/error__handling_8h" startline="111" endline="116">pyfolio::Result&lt; T &gt;::error</references>
+        <references refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9a9e32e294e8358345f2b9b52b7f8b41fa" compoundref="d3/d11/error__handling_8h" startline="18">pyfolio::InsufficientData</references>
+        <references refid="d6/ddc/namespacepyfolio_1_1stats_1a0ded7b265023215831bffb8b799ba59a" compoundref="d3/dbe/math_2statistics_8h" startline="112" endline="119">pyfolio::stats::mean</references>
+        <references refid="d1/d87/structpyfolio_1_1analytics_1_1RegimeDetectionResult_1adfa6549decd926dbda5c7a12969f9067" compoundref="d2/dfc/regime__detection_8h" startline="136">pyfolio::analytics::RegimeDetectionResult::regime_characteristics</references>
+        <references refid="d1/d87/structpyfolio_1_1analytics_1_1RegimeDetectionResult_1a0df6daddfa9febd7a41aecc6f8db2153" compoundref="d2/dfc/regime__detection_8h" startline="135">pyfolio::analytics::RegimeDetectionResult::regime_probabilities</references>
+        <references refid="d1/d87/structpyfolio_1_1analytics_1_1RegimeDetectionResult_1a1734b705db8aa6183cd6938c2ec211cf" compoundref="d2/dfc/regime__detection_8h" startline="133">pyfolio::analytics::RegimeDetectionResult::regime_sequence</references>
+        <references refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" compoundref="d3/d11/error__handling_8h" startline="74" endline="74">pyfolio::Result&lt; T &gt;::success</references>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1a0374bbc62bd808749ac476b3af4b0ead" compoundref="d8/d51/time__series_8h" startline="124" endline="124">pyfolio::TimeSeries&lt; T &gt;::timestamps</references>
+        <references refid="d1/d87/structpyfolio_1_1analytics_1_1RegimeDetectionResult_1aa7c5a0bba72b40154162f0a71af3f816" compoundref="d2/dfc/regime__detection_8h" startline="137">pyfolio::analytics::RegimeDetectionResult::transitions</references>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1ab0b20c4945cdde977885888f384256c3" compoundref="d8/d51/time__series_8h" startline="125" endline="125">pyfolio::TimeSeries&lt; T &gt;::values</references>
+        <references refid="d6/ddc/namespacepyfolio_1_1stats_1afae76bfc655b39b929869957f17e2406" compoundref="d3/dbe/math_2statistics_8h" startline="125" endline="145">pyfolio::stats::variance</references>
+      </memberdef>
+      <memberdef kind="function" id="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1ab8f25fc631e3be5209e6375a9777d9d5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; <ref refid="d1/d87/structpyfolio_1_1analytics_1_1RegimeDetectionResult" kindref="compound">RegimeDetectionResult</ref> &gt;</type>
+        <definition>Result&lt; RegimeDetectionResult &gt; pyfolio::analytics::RegimeDetector::volatility_regime_detection</definition>
+        <argsstring>(const ReturnSeries &amp;returns) const</argsstring>
+        <name>volatility_regime_detection</name>
+        <qualifiedname>pyfolio::analytics::RegimeDetector::volatility_regime_detection</qualifiedname>
+        <param>
+          <type>const <ref refid="d2/d10/namespacepyfolio_1_1analytics_1abb18ff1f67db5a5ced7beb8e9873092d" kindref="member">ReturnSeries</ref> &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <briefdescription>
+<para>Volatility regime detection. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" line="579" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" bodystart="579" bodyend="647"/>
+        <references refid="d2/d10/namespacepyfolio_1_1analytics_1ac324d49fe4462ede46349d3be97bdb8aa372137ebb0d053fecd7a594ec5cb5971" compoundref="d2/dfc/regime__detection_8h" startline="31">pyfolio::analytics::Bear</references>
+        <references refid="d2/d10/namespacepyfolio_1_1analytics_1ac324d49fe4462ede46349d3be97bdb8aa92c21511d7b383b2f8ba5b00c3c9a473" compoundref="d2/dfc/regime__detection_8h" startline="30">pyfolio::analytics::Bull</references>
+        <references refid="d2/d10/namespacepyfolio_1_1analytics_1ac324d49fe4462ede46349d3be97bdb8aa9dc772d82afb9a5374668bd51a50cc8c" compoundref="d2/dfc/regime__detection_8h" startline="34">pyfolio::analytics::Crisis</references>
+        <references refid="d1/d87/structpyfolio_1_1analytics_1_1RegimeDetectionResult_1a973b64a79a254c06402eaa329877c2cf" compoundref="d2/dfc/regime__detection_8h" startline="139">pyfolio::analytics::RegimeDetectionResult::current_regime</references>
+        <references refid="d1/d87/structpyfolio_1_1analytics_1_1RegimeDetectionResult_1acc6170253131e2497a8bb27454d71d6f" compoundref="d2/dfc/regime__detection_8h" startline="140">pyfolio::analytics::RegimeDetectionResult::current_regime_confidence</references>
+        <references refid="d1/d87/structpyfolio_1_1analytics_1_1RegimeDetectionResult_1a3e4e5cef48523f1f6ceb2c563bfea5ba" compoundref="d2/dfc/regime__detection_8h" startline="141">pyfolio::analytics::RegimeDetectionResult::current_regime_duration</references>
+        <references refid="d1/d87/structpyfolio_1_1analytics_1_1RegimeDetectionResult_1ae5a51f4414bcc30ef37d3a2e8b03dd07" compoundref="d2/dfc/regime__detection_8h" startline="134">pyfolio::analytics::RegimeDetectionResult::dates</references>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1a7401475da2acefda00385214b27e7c59" compoundref="d8/d51/time__series_8h" startline="103" endline="103">pyfolio::TimeSeries&lt; T &gt;::empty</references>
+        <references refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" compoundref="d3/d11/error__handling_8h" startline="111" endline="116">pyfolio::Result&lt; T &gt;::error</references>
+        <references refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9a9e32e294e8358345f2b9b52b7f8b41fa" compoundref="d3/d11/error__handling_8h" startline="18">pyfolio::InsufficientData</references>
+        <references refid="d6/ddc/namespacepyfolio_1_1stats_1aaeb9f5bbec8f929f08cc73c211803257" compoundref="d3/dbe/math_2statistics_8h" startline="356" endline="358">pyfolio::stats::median</references>
+        <references refid="d1/d87/structpyfolio_1_1analytics_1_1RegimeDetectionResult_1adfa6549decd926dbda5c7a12969f9067" compoundref="d2/dfc/regime__detection_8h" startline="136">pyfolio::analytics::RegimeDetectionResult::regime_characteristics</references>
+        <references refid="d1/d87/structpyfolio_1_1analytics_1_1RegimeDetectionResult_1a0df6daddfa9febd7a41aecc6f8db2153" compoundref="d2/dfc/regime__detection_8h" startline="135">pyfolio::analytics::RegimeDetectionResult::regime_probabilities</references>
+        <references refid="d1/d87/structpyfolio_1_1analytics_1_1RegimeDetectionResult_1a1734b705db8aa6183cd6938c2ec211cf" compoundref="d2/dfc/regime__detection_8h" startline="133">pyfolio::analytics::RegimeDetectionResult::regime_sequence</references>
+        <references refid="d2/d10/namespacepyfolio_1_1analytics_1ac324d49fe4462ede46349d3be97bdb8aafa3aff3c185c6dc7754235f397c2099a" compoundref="d2/dfc/regime__detection_8h" startline="33">pyfolio::analytics::Stable</references>
+        <references refid="d6/ddc/namespacepyfolio_1_1stats_1ae9a69383818faf0de2b2e0a99d4179d9" compoundref="d3/dbe/math_2statistics_8h" startline="151" endline="158">pyfolio::stats::standard_deviation</references>
+        <references refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" compoundref="d3/d11/error__handling_8h" startline="74" endline="74">pyfolio::Result&lt; T &gt;::success</references>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1a0374bbc62bd808749ac476b3af4b0ead" compoundref="d8/d51/time__series_8h" startline="124" endline="124">pyfolio::TimeSeries&lt; T &gt;::timestamps</references>
+        <references refid="d1/d87/structpyfolio_1_1analytics_1_1RegimeDetectionResult_1aa7c5a0bba72b40154162f0a71af3f816" compoundref="d2/dfc/regime__detection_8h" startline="137">pyfolio::analytics::RegimeDetectionResult::transitions</references>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1ab0b20c4945cdde977885888f384256c3" compoundref="d8/d51/time__series_8h" startline="125" endline="125">pyfolio::TimeSeries&lt; T &gt;::values</references>
+        <references refid="d2/d10/namespacepyfolio_1_1analytics_1ac324d49fe4462ede46349d3be97bdb8aa3e3af98b6b48c7e593d8d18863e3333b" compoundref="d2/dfc/regime__detection_8h" startline="32">pyfolio::analytics::Volatile</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1a6ced1836ebf8dd7b986f026eab5437b9" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="d2/d10/namespacepyfolio_1_1analytics_1ac324d49fe4462ede46349d3be97bdb8a" kindref="member">RegimeType</ref> &gt;</type>
+        <definition>std::vector&lt; RegimeType &gt; pyfolio::analytics::RegimeDetector::detect_volatility_regimes</definition>
+        <argsstring>(const ReturnSeries &amp;returns) const</argsstring>
+        <name>detect_volatility_regimes</name>
+        <qualifiedname>pyfolio::analytics::RegimeDetector::detect_volatility_regimes</qualifiedname>
+        <param>
+          <type>const <ref refid="d2/d10/namespacepyfolio_1_1analytics_1abb18ff1f67db5a5ced7beb8e9873092d" kindref="member">ReturnSeries</ref> &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <briefdescription>
+<para>Detect volatility-based regimes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" line="653" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" bodystart="653" bodyend="680"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1a833150418bb8c772e604056885b44d74" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="d2/d10/namespacepyfolio_1_1analytics_1ac324d49fe4462ede46349d3be97bdb8a" kindref="member">RegimeType</ref> &gt;</type>
+        <definition>std::vector&lt; RegimeType &gt; pyfolio::analytics::RegimeDetector::detect_trend_regimes</definition>
+        <argsstring>(const ReturnSeries &amp;returns) const</argsstring>
+        <name>detect_trend_regimes</name>
+        <qualifiedname>pyfolio::analytics::RegimeDetector::detect_trend_regimes</qualifiedname>
+        <param>
+          <type>const <ref refid="d2/d10/namespacepyfolio_1_1analytics_1abb18ff1f67db5a5ced7beb8e9873092d" kindref="member">ReturnSeries</ref> &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <briefdescription>
+<para>Detect trend-based regimes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" line="685" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" bodystart="685" bodyend="712"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1a29a313c43fca099d6dbf59ec4b156dcd" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="d2/d10/namespacepyfolio_1_1analytics_1ac324d49fe4462ede46349d3be97bdb8a" kindref="member">RegimeType</ref> &gt;</type>
+        <definition>std::vector&lt; RegimeType &gt; pyfolio::analytics::RegimeDetector::detect_crisis_regimes</definition>
+        <argsstring>(const ReturnSeries &amp;returns) const</argsstring>
+        <name>detect_crisis_regimes</name>
+        <qualifiedname>pyfolio::analytics::RegimeDetector::detect_crisis_regimes</qualifiedname>
+        <param>
+          <type>const <ref refid="d2/d10/namespacepyfolio_1_1analytics_1abb18ff1f67db5a5ced7beb8e9873092d" kindref="member">ReturnSeries</ref> &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <briefdescription>
+<para>Detect crisis regimes using extreme events. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" line="717" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" bodystart="717" bodyend="744"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1a661817c0a0ed2d907dde3c2a9b40acf3" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d2/d10/namespacepyfolio_1_1analytics_1ac324d49fe4462ede46349d3be97bdb8a" kindref="member">RegimeType</ref></type>
+        <definition>RegimeType pyfolio::analytics::RegimeDetector::combine_regime_signals</definition>
+        <argsstring>(RegimeType vol_regime, RegimeType trend_regime, RegimeType crisis_regime, double current_return) const</argsstring>
+        <name>combine_regime_signals</name>
+        <qualifiedname>pyfolio::analytics::RegimeDetector::combine_regime_signals</qualifiedname>
+        <param>
+          <type><ref refid="d2/d10/namespacepyfolio_1_1analytics_1ac324d49fe4462ede46349d3be97bdb8a" kindref="member">RegimeType</ref></type>
+          <declname>vol_regime</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/d10/namespacepyfolio_1_1analytics_1ac324d49fe4462ede46349d3be97bdb8a" kindref="member">RegimeType</ref></type>
+          <declname>trend_regime</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/d10/namespacepyfolio_1_1analytics_1ac324d49fe4462ede46349d3be97bdb8a" kindref="member">RegimeType</ref></type>
+          <declname>crisis_regime</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>current_return</declname>
+        </param>
+        <briefdescription>
+<para>Combine multiple regime signals. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" line="749" column="16" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" bodystart="749" bodyend="773"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1a44df31fe69ff70c16d69eca346dab7d8" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double pyfolio::analytics::RegimeDetector::calculate_regime_confidence</definition>
+        <argsstring>(RegimeType vol_regime, RegimeType trend_regime, RegimeType crisis_regime) const</argsstring>
+        <name>calculate_regime_confidence</name>
+        <qualifiedname>pyfolio::analytics::RegimeDetector::calculate_regime_confidence</qualifiedname>
+        <param>
+          <type><ref refid="d2/d10/namespacepyfolio_1_1analytics_1ac324d49fe4462ede46349d3be97bdb8a" kindref="member">RegimeType</ref></type>
+          <declname>vol_regime</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/d10/namespacepyfolio_1_1analytics_1ac324d49fe4462ede46349d3be97bdb8a" kindref="member">RegimeType</ref></type>
+          <declname>trend_regime</declname>
+        </param>
+        <param>
+          <type><ref refid="d2/d10/namespacepyfolio_1_1analytics_1ac324d49fe4462ede46349d3be97bdb8a" kindref="member">RegimeType</ref></type>
+          <declname>crisis_regime</declname>
+        </param>
+        <briefdescription>
+<para>Calculate regime confidence based on signal agreement. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" line="778" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" bodystart="778" bodyend="794"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1a8e7805e159b7f77a1d5522d5e4abbd00" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t pyfolio::analytics::RegimeDetector::calculate_current_regime_duration</definition>
+        <argsstring>(const std::vector&lt; RegimeType &gt; &amp;sequence) const</argsstring>
+        <name>calculate_current_regime_duration</name>
+        <qualifiedname>pyfolio::analytics::RegimeDetector::calculate_current_regime_duration</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="d2/d10/namespacepyfolio_1_1analytics_1ac324d49fe4462ede46349d3be97bdb8a" kindref="member">RegimeType</ref> &gt; &amp;</type>
+          <declname>sequence</declname>
+        </param>
+        <briefdescription>
+<para>Calculate current regime duration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" line="799" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" bodystart="799" bodyend="815"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1a8bc68f1eef6b14325473a9e11a63a5f7" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="d1/d57/structpyfolio_1_1analytics_1_1RegimeCharacteristics" kindref="compound">RegimeCharacteristics</ref> &gt;</type>
+        <definition>std::vector&lt; RegimeCharacteristics &gt; pyfolio::analytics::RegimeDetector::calculate_regime_characteristics</definition>
+        <argsstring>(const ReturnSeries &amp;returns, const std::vector&lt; RegimeType &gt; &amp;sequence) const</argsstring>
+        <name>calculate_regime_characteristics</name>
+        <qualifiedname>pyfolio::analytics::RegimeDetector::calculate_regime_characteristics</qualifiedname>
+        <param>
+          <type>const <ref refid="d2/d10/namespacepyfolio_1_1analytics_1abb18ff1f67db5a5ced7beb8e9873092d" kindref="member">ReturnSeries</ref> &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="d2/d10/namespacepyfolio_1_1analytics_1ac324d49fe4462ede46349d3be97bdb8a" kindref="member">RegimeType</ref> &gt; &amp;</type>
+          <declname>sequence</declname>
+        </param>
+        <briefdescription>
+<para>Calculate regime characteristics. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" line="820" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" bodystart="820" bodyend="878"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1abcfd6be90de08136ef560e61806da081" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="d2/dcf/structpyfolio_1_1analytics_1_1RegimeTransition" kindref="compound">RegimeTransition</ref> &gt;</type>
+        <definition>std::vector&lt; RegimeTransition &gt; pyfolio::analytics::RegimeDetector::calculate_regime_transitions</definition>
+        <argsstring>(const std::vector&lt; RegimeType &gt; &amp;sequence, const std::vector&lt; DateTime &gt; &amp;dates) const</argsstring>
+        <name>calculate_regime_transitions</name>
+        <qualifiedname>pyfolio::analytics::RegimeDetector::calculate_regime_transitions</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="d2/d10/namespacepyfolio_1_1analytics_1ac324d49fe4462ede46349d3be97bdb8a" kindref="member">RegimeType</ref> &gt; &amp;</type>
+          <declname>sequence</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref> &gt; &amp;</type>
+          <declname>dates</declname>
+        </param>
+        <briefdescription>
+<para>Calculate regime transitions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" line="883" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" bodystart="883" bodyend="913"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1ac43a7a84e0e7da65352f79c42f13a870" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string pyfolio::analytics::RegimeDetector::generate_regime_description</definition>
+        <argsstring>(const RegimeCharacteristics &amp;chars) const</argsstring>
+        <name>generate_regime_description</name>
+        <qualifiedname>pyfolio::analytics::RegimeDetector::generate_regime_description</qualifiedname>
+        <param>
+          <type>const <ref refid="d1/d57/structpyfolio_1_1analytics_1_1RegimeCharacteristics" kindref="compound">RegimeCharacteristics</ref> &amp;</type>
+          <declname>chars</declname>
+        </param>
+        <briefdescription>
+<para>Generate regime description. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" line="918" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" bodystart="918" bodyend="924"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1afc37690150f3e3dd78af1a6e913b655e" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::map&lt; std::pair&lt; <ref refid="d2/d10/namespacepyfolio_1_1analytics_1ac324d49fe4462ede46349d3be97bdb8a" kindref="member">RegimeType</ref>, <ref refid="d2/d10/namespacepyfolio_1_1analytics_1ac324d49fe4462ede46349d3be97bdb8a" kindref="member">RegimeType</ref> &gt;, double &gt;</type>
+        <definition>std::map&lt; std::pair&lt; RegimeType, RegimeType &gt;, double &gt; pyfolio::analytics::RegimeDetector::estimate_transition_matrix</definition>
+        <argsstring>(const std::vector&lt; RegimeType &gt; &amp;sequence) const</argsstring>
+        <name>estimate_transition_matrix</name>
+        <qualifiedname>pyfolio::analytics::RegimeDetector::estimate_transition_matrix</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="d2/d10/namespacepyfolio_1_1analytics_1ac324d49fe4462ede46349d3be97bdb8a" kindref="member">RegimeType</ref> &gt; &amp;</type>
+          <declname>sequence</declname>
+        </param>
+        <briefdescription>
+<para>Estimate transition matrix. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" line="929" column="14" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" bodystart="929" bodyend="952"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1a80b6bc6fd362008adcabf694563b6852" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; std::pair&lt; <ref refid="d2/d10/namespacepyfolio_1_1analytics_1ac324d49fe4462ede46349d3be97bdb8a" kindref="member">RegimeType</ref>, double &gt; &gt;</type>
+        <definition>Result&lt; std::pair&lt; RegimeType, double &gt; &gt; pyfolio::analytics::RegimeDetector::predict_next_regime</definition>
+        <argsstring>(RegimeType current_regime, const std::map&lt; std::pair&lt; RegimeType, RegimeType &gt;, double &gt; &amp;transition_matrix) const</argsstring>
+        <name>predict_next_regime</name>
+        <qualifiedname>pyfolio::analytics::RegimeDetector::predict_next_regime</qualifiedname>
+        <param>
+          <type><ref refid="d2/d10/namespacepyfolio_1_1analytics_1ac324d49fe4462ede46349d3be97bdb8a" kindref="member">RegimeType</ref></type>
+          <declname>current_regime</declname>
+        </param>
+        <param>
+          <type>const std::map&lt; std::pair&lt; <ref refid="d2/d10/namespacepyfolio_1_1analytics_1ac324d49fe4462ede46349d3be97bdb8a" kindref="member">RegimeType</ref>, <ref refid="d2/d10/namespacepyfolio_1_1analytics_1ac324d49fe4462ede46349d3be97bdb8a" kindref="member">RegimeType</ref> &gt;, double &gt; &amp;</type>
+          <declname>transition_matrix</declname>
+        </param>
+        <briefdescription>
+<para>Predict next regime. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" line="957" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" bodystart="957" bodyend="977"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1a7988bd5af5bf4a8ef14dfb8d2e82c682" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void pyfolio::analytics::RegimeDetector::forward_backward_algorithm</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;observations, const std::vector&lt; double &gt; &amp;means, const std::vector&lt; double &gt; &amp;variances, const std::vector&lt; std::vector&lt; double &gt; &gt; &amp;transition_matrix, std::vector&lt; std::vector&lt; double &gt; &gt; &amp;state_probabilities) const</argsstring>
+        <name>forward_backward_algorithm</name>
+        <qualifiedname>pyfolio::analytics::RegimeDetector::forward_backward_algorithm</qualifiedname>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>observations</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>means</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>variances</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::vector&lt; double &gt; &gt; &amp;</type>
+          <declname>transition_matrix</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; double &gt; &gt; &amp;</type>
+          <declname>state_probabilities</declname>
+        </param>
+        <briefdescription>
+<para>Forward-backward algorithm for HMM. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" line="982" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" bodystart="982" bodyend="1053"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1a8eeb92dacca4555e15a2235f633d8990" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void pyfolio::analytics::RegimeDetector::update_markov_parameters</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;observations, const std::vector&lt; std::vector&lt; double &gt; &gt; &amp;state_probabilities, std::vector&lt; double &gt; &amp;means, std::vector&lt; double &gt; &amp;variances, std::vector&lt; std::vector&lt; double &gt; &gt; &amp;transition_matrix) const</argsstring>
+        <name>update_markov_parameters</name>
+        <qualifiedname>pyfolio::analytics::RegimeDetector::update_markov_parameters</qualifiedname>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>observations</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::vector&lt; double &gt; &gt; &amp;</type>
+          <declname>state_probabilities</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt; &amp;</type>
+          <declname>means</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt; &amp;</type>
+          <declname>variances</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; double &gt; &gt; &amp;</type>
+          <declname>transition_matrix</declname>
+        </param>
+        <briefdescription>
+<para>Update Markov model parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" line="1058" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" bodystart="1058" bodyend="1109"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1ad6e12645d8d14f92d933562252f65eec" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double pyfolio::analytics::RegimeDetector::calculate_likelihood</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;observations, const std::vector&lt; double &gt; &amp;means, const std::vector&lt; double &gt; &amp;variances, const std::vector&lt; std::vector&lt; double &gt; &gt; &amp;transition_matrix) const</argsstring>
+        <name>calculate_likelihood</name>
+        <qualifiedname>pyfolio::analytics::RegimeDetector::calculate_likelihood</qualifiedname>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>observations</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>means</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>variances</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::vector&lt; double &gt; &gt; &amp;</type>
+          <declname>transition_matrix</declname>
+        </param>
+        <briefdescription>
+<para>Calculate model likelihood. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" line="1114" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" bodystart="1114" bodyend="1151"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1ab7dc19284f35ac8e96251bff3a293904" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d2/d10/namespacepyfolio_1_1analytics_1ac324d49fe4462ede46349d3be97bdb8a" kindref="member">RegimeType</ref></type>
+        <definition>RegimeType pyfolio::analytics::RegimeDetector::map_regime_index_to_type</definition>
+        <argsstring>(int index, const std::vector&lt; double &gt; &amp;means) const</argsstring>
+        <name>map_regime_index_to_type</name>
+        <qualifiedname>pyfolio::analytics::RegimeDetector::map_regime_index_to_type</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>means</declname>
+        </param>
+        <briefdescription>
+<para>Map regime index to <ref refid="d2/d10/namespacepyfolio_1_1analytics_1ac324d49fe4462ede46349d3be97bdb8a" kindref="member">RegimeType</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" line="1156" column="16" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" bodystart="1156" bodyend="1173"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1a164d69f3077f11790cc393403381818a" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double pyfolio::analytics::RegimeDetector::gaussian_pdf</definition>
+        <argsstring>(double x, double mean, double variance) const</argsstring>
+        <name>gaussian_pdf</name>
+        <qualifiedname>pyfolio::analytics::RegimeDetector::gaussian_pdf</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mean</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>variance</declname>
+        </param>
+        <briefdescription>
+<para>Gaussian PDF. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" line="1178" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" bodystart="1178" bodyend="1187"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Advanced regime detection analyzer. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" line="201" column="1" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h" bodystart="201" bodyend="1188"/>
+    <listofallmembers>
+      <member refid="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1a8e7805e159b7f77a1d5522d5e4abbd00" prot="private" virt="non-virtual"><scope>pyfolio::analytics::RegimeDetector</scope><name>calculate_current_regime_duration</name></member>
+      <member refid="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1ad6e12645d8d14f92d933562252f65eec" prot="private" virt="non-virtual"><scope>pyfolio::analytics::RegimeDetector</scope><name>calculate_likelihood</name></member>
+      <member refid="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1a8bc68f1eef6b14325473a9e11a63a5f7" prot="private" virt="non-virtual"><scope>pyfolio::analytics::RegimeDetector</scope><name>calculate_regime_characteristics</name></member>
+      <member refid="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1a44df31fe69ff70c16d69eca346dab7d8" prot="private" virt="non-virtual"><scope>pyfolio::analytics::RegimeDetector</scope><name>calculate_regime_confidence</name></member>
+      <member refid="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1abcfd6be90de08136ef560e61806da081" prot="private" virt="non-virtual"><scope>pyfolio::analytics::RegimeDetector</scope><name>calculate_regime_transitions</name></member>
+      <member refid="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1a1d615e210259da83d7953790e4d5c992" prot="public" virt="non-virtual"><scope>pyfolio::analytics::RegimeDetector</scope><name>classify_current_regime</name></member>
+      <member refid="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1a661817c0a0ed2d907dde3c2a9b40acf3" prot="private" virt="non-virtual"><scope>pyfolio::analytics::RegimeDetector</scope><name>combine_regime_signals</name></member>
+      <member refid="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1a29a313c43fca099d6dbf59ec4b156dcd" prot="private" virt="non-virtual"><scope>pyfolio::analytics::RegimeDetector</scope><name>detect_crisis_regimes</name></member>
+      <member refid="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1a064970a0664b36d4aaa708d9e749d628" prot="public" virt="non-virtual"><scope>pyfolio::analytics::RegimeDetector</scope><name>detect_regimes</name></member>
+      <member refid="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1a833150418bb8c772e604056885b44d74" prot="private" virt="non-virtual"><scope>pyfolio::analytics::RegimeDetector</scope><name>detect_trend_regimes</name></member>
+      <member refid="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1a6ced1836ebf8dd7b986f026eab5437b9" prot="private" virt="non-virtual"><scope>pyfolio::analytics::RegimeDetector</scope><name>detect_volatility_regimes</name></member>
+      <member refid="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1afc37690150f3e3dd78af1a6e913b655e" prot="private" virt="non-virtual"><scope>pyfolio::analytics::RegimeDetector</scope><name>estimate_transition_matrix</name></member>
+      <member refid="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1a7988bd5af5bf4a8ef14dfb8d2e82c682" prot="private" virt="non-virtual"><scope>pyfolio::analytics::RegimeDetector</scope><name>forward_backward_algorithm</name></member>
+      <member refid="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1a164d69f3077f11790cc393403381818a" prot="private" virt="non-virtual"><scope>pyfolio::analytics::RegimeDetector</scope><name>gaussian_pdf</name></member>
+      <member refid="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1ac43a7a84e0e7da65352f79c42f13a870" prot="private" virt="non-virtual"><scope>pyfolio::analytics::RegimeDetector</scope><name>generate_regime_description</name></member>
+      <member refid="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1acab079b3feb147fdf26c7d24d5fda009" prot="public" virt="non-virtual"><scope>pyfolio::analytics::RegimeDetector</scope><name>get_regime_recommendations</name></member>
+      <member refid="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1a4d59792f45ec60c6e1e4e13123c9a87e" prot="public" virt="non-virtual"><scope>pyfolio::analytics::RegimeDetector</scope><name>hidden_markov_detection</name></member>
+      <member refid="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1a3fa567ecc51cd21b886f8ab9037bc5c3" prot="private" virt="non-virtual"><scope>pyfolio::analytics::RegimeDetector</scope><name>lookback_window_</name></member>
+      <member refid="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1ab7dc19284f35ac8e96251bff3a293904" prot="private" virt="non-virtual"><scope>pyfolio::analytics::RegimeDetector</scope><name>map_regime_index_to_type</name></member>
+      <member refid="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1a2233d9e06edde686d5b6620a2830130a" prot="public" virt="non-virtual"><scope>pyfolio::analytics::RegimeDetector</scope><name>markov_switching_detection</name></member>
+      <member refid="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1a80b6bc6fd362008adcabf694563b6852" prot="private" virt="non-virtual"><scope>pyfolio::analytics::RegimeDetector</scope><name>predict_next_regime</name></member>
+      <member refid="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1add3a9de12ef6acfc86da8248e9d519df" prot="public" virt="non-virtual"><scope>pyfolio::analytics::RegimeDetector</scope><name>predict_regime_transitions</name></member>
+      <member refid="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1a901c2dbf5a4d8144cb52d89d9a848c3e" prot="public" virt="non-virtual"><scope>pyfolio::analytics::RegimeDetector</scope><name>RegimeDetector</name></member>
+      <member refid="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1a9c8093c0c029935fde2ed5e2a740252d" prot="public" virt="non-virtual"><scope>pyfolio::analytics::RegimeDetector</scope><name>RegimeDetector</name></member>
+      <member refid="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1a420b735e57276c471a6186c4beb11b48" prot="private" virt="non-virtual"><scope>pyfolio::analytics::RegimeDetector</scope><name>return_threshold_</name></member>
+      <member refid="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1a2913cce460a23e6fa5ab1e411b8bebb6" prot="private" virt="non-virtual"><scope>pyfolio::analytics::RegimeDetector</scope><name>rng_</name></member>
+      <member refid="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1a774beb5ef6d09f2a32210cda918d25e7" prot="public" virt="non-virtual"><scope>pyfolio::analytics::RegimeDetector</scope><name>structural_break_detection</name></member>
+      <member refid="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1a8eeb92dacca4555e15a2235f633d8990" prot="private" virt="non-virtual"><scope>pyfolio::analytics::RegimeDetector</scope><name>update_markov_parameters</name></member>
+      <member refid="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1ab8f25fc631e3be5209e6375a9777d9d5" prot="public" virt="non-virtual"><scope>pyfolio::analytics::RegimeDetector</scope><name>volatility_regime_detection</name></member>
+      <member refid="d0/dfb/classpyfolio_1_1analytics_1_1RegimeDetector_1a627db4fc56686d4095258bff02288d0e" prot="private" virt="non-virtual"><scope>pyfolio::analytics::RegimeDetector</scope><name>volatility_threshold_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

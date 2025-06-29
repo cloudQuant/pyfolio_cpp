@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="d4/d98/structpyfolio_1_1analytics_1_1BayesianRegimeResult" kind="struct" language="C++" prot="public">
+    <compoundname>pyfolio::analytics::BayesianRegimeResult</compoundname>
+    <includes refid="d6/dfe/bayesian_8h" local="no">bayesian.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d4/d98/structpyfolio_1_1analytics_1_1BayesianRegimeResult_1a9746b9cbaeb4205dd034bcf6750ea68a" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; pyfolio::analytics::BayesianRegimeResult::regime_sequence</definition>
+        <argsstring></argsstring>
+        <name>regime_sequence</name>
+        <qualifiedname>pyfolio::analytics::BayesianRegimeResult::regime_sequence</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" line="139" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" bodystart="139" bodyend="-1"/>
+        <referencedby refid="d4/d98/structpyfolio_1_1analytics_1_1BayesianRegimeResult_1aab1d32cbd8600db1065c4030eae4316d" compoundref="d6/dfe/bayesian_8h" startline="149" endline="154">current_regime_probability</referencedby>
+        <referencedby refid="dd/dcf/classpyfolio_1_1analytics_1_1BayesianAnalyzer_1a20ed44cf22769cfb68ec394a8f95d47d" compoundref="d6/dfe/bayesian_8h" startline="300" endline="330">pyfolio::analytics::BayesianAnalyzer::detect_regimes</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d98/structpyfolio_1_1analytics_1_1BayesianRegimeResult_1a14149cf83190f1266a33aa5a2576252c" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; pyfolio::analytics::BayesianRegimeResult::regime_probabilities</definition>
+        <argsstring></argsstring>
+        <name>regime_probabilities</name>
+        <qualifiedname>pyfolio::analytics::BayesianRegimeResult::regime_probabilities</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" line="140" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" bodystart="140" bodyend="-1"/>
+        <referencedby refid="d4/d98/structpyfolio_1_1analytics_1_1BayesianRegimeResult_1aab1d32cbd8600db1065c4030eae4316d" compoundref="d6/dfe/bayesian_8h" startline="149" endline="154">current_regime_probability</referencedby>
+        <referencedby refid="dd/dcf/classpyfolio_1_1analytics_1_1BayesianAnalyzer_1a20ed44cf22769cfb68ec394a8f95d47d" compoundref="d6/dfe/bayesian_8h" startline="300" endline="330">pyfolio::analytics::BayesianAnalyzer::detect_regimes</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d98/structpyfolio_1_1analytics_1_1BayesianRegimeResult_1acf22327d3828db461c8a2e795cd8a4ac" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; pyfolio::analytics::BayesianRegimeResult::transition_probabilities</definition>
+        <argsstring></argsstring>
+        <name>transition_probabilities</name>
+        <qualifiedname>pyfolio::analytics::BayesianRegimeResult::transition_probabilities</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" line="141" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" bodystart="141" bodyend="-1"/>
+        <referencedby refid="dd/dcf/classpyfolio_1_1analytics_1_1BayesianAnalyzer_1a20ed44cf22769cfb68ec394a8f95d47d" compoundref="d6/dfe/bayesian_8h" startline="300" endline="330">pyfolio::analytics::BayesianAnalyzer::detect_regimes</referencedby>
+        <referencedby refid="d4/d98/structpyfolio_1_1analytics_1_1BayesianRegimeResult_1adb0c1edf065a699e4a5270eecb94b587" compoundref="d6/dfe/bayesian_8h" startline="159" endline="168">regime_persistence</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d98/structpyfolio_1_1analytics_1_1BayesianRegimeResult_1aa0d076850e452f5d91d14984efdb63d4" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; pyfolio::analytics::BayesianRegimeResult::regime_means</definition>
+        <argsstring></argsstring>
+        <name>regime_means</name>
+        <qualifiedname>pyfolio::analytics::BayesianRegimeResult::regime_means</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" line="142" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" bodystart="142" bodyend="-1"/>
+        <referencedby refid="dd/dcf/classpyfolio_1_1analytics_1_1BayesianAnalyzer_1a20ed44cf22769cfb68ec394a8f95d47d" compoundref="d6/dfe/bayesian_8h" startline="300" endline="330">pyfolio::analytics::BayesianAnalyzer::detect_regimes</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d98/structpyfolio_1_1analytics_1_1BayesianRegimeResult_1a6a23dc8b3c15c3b0b237500556f80155" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; pyfolio::analytics::BayesianRegimeResult::regime_volatilities</definition>
+        <argsstring></argsstring>
+        <name>regime_volatilities</name>
+        <qualifiedname>pyfolio::analytics::BayesianRegimeResult::regime_volatilities</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" line="143" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" bodystart="143" bodyend="-1"/>
+        <referencedby refid="dd/dcf/classpyfolio_1_1analytics_1_1BayesianAnalyzer_1a20ed44cf22769cfb68ec394a8f95d47d" compoundref="d6/dfe/bayesian_8h" startline="300" endline="330">pyfolio::analytics::BayesianAnalyzer::detect_regimes</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d98/structpyfolio_1_1analytics_1_1BayesianRegimeResult_1a2e0d3fc8867b921ffd13a111557f0e87" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t pyfolio::analytics::BayesianRegimeResult::num_regimes</definition>
+        <argsstring></argsstring>
+        <name>num_regimes</name>
+        <qualifiedname>pyfolio::analytics::BayesianRegimeResult::num_regimes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" line="144" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" bodystart="144" bodyend="-1"/>
+        <referencedby refid="d4/d98/structpyfolio_1_1analytics_1_1BayesianRegimeResult_1aab1d32cbd8600db1065c4030eae4316d" compoundref="d6/dfe/bayesian_8h" startline="149" endline="154">current_regime_probability</referencedby>
+        <referencedby refid="dd/dcf/classpyfolio_1_1analytics_1_1BayesianAnalyzer_1a20ed44cf22769cfb68ec394a8f95d47d" compoundref="d6/dfe/bayesian_8h" startline="300" endline="330">pyfolio::analytics::BayesianAnalyzer::detect_regimes</referencedby>
+        <referencedby refid="d4/d98/structpyfolio_1_1analytics_1_1BayesianRegimeResult_1adb0c1edf065a699e4a5270eecb94b587" compoundref="d6/dfe/bayesian_8h" startline="159" endline="168">regime_persistence</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d4/d98/structpyfolio_1_1analytics_1_1BayesianRegimeResult_1aab1d32cbd8600db1065c4030eae4316d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double pyfolio::analytics::BayesianRegimeResult::current_regime_probability</definition>
+        <argsstring>(int regime) const</argsstring>
+        <name>current_regime_probability</name>
+        <qualifiedname>pyfolio::analytics::BayesianRegimeResult::current_regime_probability</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>regime</declname>
+        </param>
+        <briefdescription>
+<para>Get current regime probability. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" line="149" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" bodystart="149" bodyend="154"/>
+        <references refid="d4/d98/structpyfolio_1_1analytics_1_1BayesianRegimeResult_1a2e0d3fc8867b921ffd13a111557f0e87" compoundref="d6/dfe/bayesian_8h" startline="144">num_regimes</references>
+        <references refid="d4/d98/structpyfolio_1_1analytics_1_1BayesianRegimeResult_1a14149cf83190f1266a33aa5a2576252c" compoundref="d6/dfe/bayesian_8h" startline="140">regime_probabilities</references>
+        <references refid="d4/d98/structpyfolio_1_1analytics_1_1BayesianRegimeResult_1a9746b9cbaeb4205dd034bcf6750ea68a" compoundref="d6/dfe/bayesian_8h" startline="139">regime_sequence</references>
+      </memberdef>
+      <memberdef kind="function" id="d4/d98/structpyfolio_1_1analytics_1_1BayesianRegimeResult_1adb0c1edf065a699e4a5270eecb94b587" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double pyfolio::analytics::BayesianRegimeResult::regime_persistence</definition>
+        <argsstring>(int regime) const</argsstring>
+        <name>regime_persistence</name>
+        <qualifiedname>pyfolio::analytics::BayesianRegimeResult::regime_persistence</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>regime</declname>
+        </param>
+        <briefdescription>
+<para>Get regime persistence (average duration) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" line="159" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" bodystart="159" bodyend="168"/>
+        <references refid="d4/d98/structpyfolio_1_1analytics_1_1BayesianRegimeResult_1a2e0d3fc8867b921ffd13a111557f0e87" compoundref="d6/dfe/bayesian_8h" startline="144">num_regimes</references>
+        <references refid="d4/d98/structpyfolio_1_1analytics_1_1BayesianRegimeResult_1acf22327d3828db461c8a2e795cd8a4ac" compoundref="d6/dfe/bayesian_8h" startline="141">transition_probabilities</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Bayesian HMM regime detection results. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>pyfolio::analytics::BayesianRegimeResult</label>
+        <link refid="d4/d98/structpyfolio_1_1analytics_1_1BayesianRegimeResult"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>regime_sequence</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>regime_means</edgelabel>
+          <edgelabel>regime_probabilities</edgelabel>
+          <edgelabel>regime_volatilities</edgelabel>
+          <edgelabel>transition_probabilities</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::vector&lt; double &gt;</label>
+      </node>
+      <node id="2">
+        <label>std::vector&lt; int &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" line="138" column="1" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" bodystart="138" bodyend="169"/>
+    <listofallmembers>
+      <member refid="d4/d98/structpyfolio_1_1analytics_1_1BayesianRegimeResult_1aab1d32cbd8600db1065c4030eae4316d" prot="public" virt="non-virtual"><scope>pyfolio::analytics::BayesianRegimeResult</scope><name>current_regime_probability</name></member>
+      <member refid="d4/d98/structpyfolio_1_1analytics_1_1BayesianRegimeResult_1a2e0d3fc8867b921ffd13a111557f0e87" prot="public" virt="non-virtual"><scope>pyfolio::analytics::BayesianRegimeResult</scope><name>num_regimes</name></member>
+      <member refid="d4/d98/structpyfolio_1_1analytics_1_1BayesianRegimeResult_1aa0d076850e452f5d91d14984efdb63d4" prot="public" virt="non-virtual"><scope>pyfolio::analytics::BayesianRegimeResult</scope><name>regime_means</name></member>
+      <member refid="d4/d98/structpyfolio_1_1analytics_1_1BayesianRegimeResult_1adb0c1edf065a699e4a5270eecb94b587" prot="public" virt="non-virtual"><scope>pyfolio::analytics::BayesianRegimeResult</scope><name>regime_persistence</name></member>
+      <member refid="d4/d98/structpyfolio_1_1analytics_1_1BayesianRegimeResult_1a14149cf83190f1266a33aa5a2576252c" prot="public" virt="non-virtual"><scope>pyfolio::analytics::BayesianRegimeResult</scope><name>regime_probabilities</name></member>
+      <member refid="d4/d98/structpyfolio_1_1analytics_1_1BayesianRegimeResult_1a9746b9cbaeb4205dd034bcf6750ea68a" prot="public" virt="non-virtual"><scope>pyfolio::analytics::BayesianRegimeResult</scope><name>regime_sequence</name></member>
+      <member refid="d4/d98/structpyfolio_1_1analytics_1_1BayesianRegimeResult_1a6a23dc8b3c15c3b0b237500556f80155" prot="public" virt="non-virtual"><scope>pyfolio::analytics::BayesianRegimeResult</scope><name>regime_volatilities</name></member>
+      <member refid="d4/d98/structpyfolio_1_1analytics_1_1BayesianRegimeResult_1acf22327d3828db461c8a2e795cd8a4ac" prot="public" virt="non-virtual"><scope>pyfolio::analytics::BayesianRegimeResult</scope><name>transition_probabilities</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

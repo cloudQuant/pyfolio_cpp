@@ -1,0 +1,420 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult" kind="struct" language="C++" prot="public">
+    <compoundname>pyfolio::analytics::BayesianPerformanceResult</compoundname>
+    <includes refid="d6/dfe/bayesian_8h" local="no">bayesian.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1a6d2a1b01e691d748325800171dc04ca4" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; pyfolio::analytics::BayesianPerformanceResult::alpha_samples</definition>
+        <argsstring></argsstring>
+        <name>alpha_samples</name>
+        <qualifiedname>pyfolio::analytics::BayesianPerformanceResult::alpha_samples</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" line="75" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" bodystart="75" bodyend="-1"/>
+        <referencedby refid="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1ab952aeb4c74ee69a6f75e45721ced62b" compoundref="d6/dfe/bayesian_8h" startline="108" endline="115">alpha_percentile</referencedby>
+        <referencedby refid="dd/dcf/classpyfolio_1_1analytics_1_1BayesianAnalyzer_1a0b79ac7ee0ea18fbb4280bdd518040f4" compoundref="d6/dfe/bayesian_8h" startline="228" endline="295">pyfolio::analytics::BayesianAnalyzer::analyze_performance</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1a2f3c2875b4014030847e47ec777a4eba" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; pyfolio::analytics::BayesianPerformanceResult::beta_samples</definition>
+        <argsstring></argsstring>
+        <name>beta_samples</name>
+        <qualifiedname>pyfolio::analytics::BayesianPerformanceResult::beta_samples</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" line="76" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" bodystart="76" bodyend="-1"/>
+        <referencedby refid="dd/dcf/classpyfolio_1_1analytics_1_1BayesianAnalyzer_1a0b79ac7ee0ea18fbb4280bdd518040f4" compoundref="d6/dfe/bayesian_8h" startline="228" endline="295">pyfolio::analytics::BayesianAnalyzer::analyze_performance</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1a0ef07e65c4a890e81168d48a337c323e" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; pyfolio::analytics::BayesianPerformanceResult::sharpe_samples</definition>
+        <argsstring></argsstring>
+        <name>sharpe_samples</name>
+        <qualifiedname>pyfolio::analytics::BayesianPerformanceResult::sharpe_samples</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" line="77" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" bodystart="77" bodyend="-1"/>
+        <referencedby refid="dd/dcf/classpyfolio_1_1analytics_1_1BayesianAnalyzer_1a0b79ac7ee0ea18fbb4280bdd518040f4" compoundref="d6/dfe/bayesian_8h" startline="228" endline="295">pyfolio::analytics::BayesianAnalyzer::analyze_performance</referencedby>
+        <referencedby refid="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1ac314b93564cfe548ef6b6c9502a8f25b" compoundref="d6/dfe/bayesian_8h" startline="120" endline="127">sharpe_percentile</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1ad89afadf6dae3ceb2aa5a7496b4f06b0" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; pyfolio::analytics::BayesianPerformanceResult::volatility_samples</definition>
+        <argsstring></argsstring>
+        <name>volatility_samples</name>
+        <qualifiedname>pyfolio::analytics::BayesianPerformanceResult::volatility_samples</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" line="78" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" bodystart="78" bodyend="-1"/>
+        <referencedby refid="dd/dcf/classpyfolio_1_1analytics_1_1BayesianAnalyzer_1a0b79ac7ee0ea18fbb4280bdd518040f4" compoundref="d6/dfe/bayesian_8h" startline="228" endline="295">pyfolio::analytics::BayesianAnalyzer::analyze_performance</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1aa5bf47943be52d3bdb5e83bb042ad134" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::BayesianPerformanceResult::alpha_mean</definition>
+        <argsstring></argsstring>
+        <name>alpha_mean</name>
+        <qualifiedname>pyfolio::analytics::BayesianPerformanceResult::alpha_mean</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" line="81" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1a153e642e7990696963902a9b6b3995d8" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::BayesianPerformanceResult::alpha_std</definition>
+        <argsstring></argsstring>
+        <name>alpha_std</name>
+        <qualifiedname>pyfolio::analytics::BayesianPerformanceResult::alpha_std</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" line="82" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1a70967b4a7aa0f41f3dc6f19400075687" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::BayesianPerformanceResult::alpha_credible_lower</definition>
+        <argsstring></argsstring>
+        <name>alpha_credible_lower</name>
+        <qualifiedname>pyfolio::analytics::BayesianPerformanceResult::alpha_credible_lower</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" line="83" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1a81de8754c613fca918c8611176fedc74" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::BayesianPerformanceResult::alpha_credible_upper</definition>
+        <argsstring></argsstring>
+        <name>alpha_credible_upper</name>
+        <qualifiedname>pyfolio::analytics::BayesianPerformanceResult::alpha_credible_upper</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" line="84" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1a572a1e7f9d2444a8f5915f8f2ce2bbf0" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::BayesianPerformanceResult::beta_mean</definition>
+        <argsstring></argsstring>
+        <name>beta_mean</name>
+        <qualifiedname>pyfolio::analytics::BayesianPerformanceResult::beta_mean</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" line="86" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1a62db5b835ed4127acf8eb3f5f3cf4928" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::BayesianPerformanceResult::beta_std</definition>
+        <argsstring></argsstring>
+        <name>beta_std</name>
+        <qualifiedname>pyfolio::analytics::BayesianPerformanceResult::beta_std</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" line="87" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1a72293ffec4415df7413d4b4ecadec3ab" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::BayesianPerformanceResult::beta_credible_lower</definition>
+        <argsstring></argsstring>
+        <name>beta_credible_lower</name>
+        <qualifiedname>pyfolio::analytics::BayesianPerformanceResult::beta_credible_lower</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" line="88" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1af81a24d1f8603751f169c725dcc460ff" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::BayesianPerformanceResult::beta_credible_upper</definition>
+        <argsstring></argsstring>
+        <name>beta_credible_upper</name>
+        <qualifiedname>pyfolio::analytics::BayesianPerformanceResult::beta_credible_upper</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" line="89" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1a3302667904a06fb33cc6dcda76deb539" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::BayesianPerformanceResult::sharpe_mean</definition>
+        <argsstring></argsstring>
+        <name>sharpe_mean</name>
+        <qualifiedname>pyfolio::analytics::BayesianPerformanceResult::sharpe_mean</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" line="91" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1ab572cb490d1212d5355d7881c58f5234" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::BayesianPerformanceResult::sharpe_std</definition>
+        <argsstring></argsstring>
+        <name>sharpe_std</name>
+        <qualifiedname>pyfolio::analytics::BayesianPerformanceResult::sharpe_std</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" line="92" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1ad93699eb34266cc1ae7c1d84315441cd" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::BayesianPerformanceResult::sharpe_credible_lower</definition>
+        <argsstring></argsstring>
+        <name>sharpe_credible_lower</name>
+        <qualifiedname>pyfolio::analytics::BayesianPerformanceResult::sharpe_credible_lower</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" line="93" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1a2dc40b802ca4dd88f3f1d02b90e589f6" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::BayesianPerformanceResult::sharpe_credible_upper</definition>
+        <argsstring></argsstring>
+        <name>sharpe_credible_upper</name>
+        <qualifiedname>pyfolio::analytics::BayesianPerformanceResult::sharpe_credible_upper</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" line="94" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1a63a24620616cba12777b4f8e652178ab" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::BayesianPerformanceResult::prob_alpha_positive</definition>
+        <argsstring></argsstring>
+        <name>prob_alpha_positive</name>
+        <qualifiedname>pyfolio::analytics::BayesianPerformanceResult::prob_alpha_positive</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" line="97" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" bodystart="97" bodyend="-1"/>
+        <referencedby refid="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1abad5a8a5e88da168b94e5ae50a160541" compoundref="d6/dfe/bayesian_8h" startline="132" endline="132">is_alpha_significant</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1a5a64e31e57d4bcb4c7625424886d69f3" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::BayesianPerformanceResult::prob_outperformance</definition>
+        <argsstring></argsstring>
+        <name>prob_outperformance</name>
+        <qualifiedname>pyfolio::analytics::BayesianPerformanceResult::prob_outperformance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" line="98" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1ad5b3df4b29e94efa13b5501d2f9d2fda" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::BayesianPerformanceResult::prob_beta_greater_one</definition>
+        <argsstring></argsstring>
+        <name>prob_beta_greater_one</name>
+        <qualifiedname>pyfolio::analytics::BayesianPerformanceResult::prob_beta_greater_one</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" line="99" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1a8361921db645de294cdd18002113bf67" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::BayesianPerformanceResult::marginal_likelihood</definition>
+        <argsstring></argsstring>
+        <name>marginal_likelihood</name>
+        <qualifiedname>pyfolio::analytics::BayesianPerformanceResult::marginal_likelihood</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" line="102" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1ae03c0526fc8ce2b5dc618e337351a689" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::BayesianPerformanceResult::dic</definition>
+        <argsstring></argsstring>
+        <name>dic</name>
+        <qualifiedname>pyfolio::analytics::BayesianPerformanceResult::dic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" line="103" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1ab952aeb4c74ee69a6f75e45721ced62b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double pyfolio::analytics::BayesianPerformanceResult::alpha_percentile</definition>
+        <argsstring>(double percentile) const</argsstring>
+        <name>alpha_percentile</name>
+        <qualifiedname>pyfolio::analytics::BayesianPerformanceResult::alpha_percentile</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>percentile</declname>
+        </param>
+        <briefdescription>
+<para>Get alpha percentile. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" line="108" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" bodystart="108" bodyend="115"/>
+        <references refid="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1a6d2a1b01e691d748325800171dc04ca4" compoundref="d6/dfe/bayesian_8h" startline="75">alpha_samples</references>
+      </memberdef>
+      <memberdef kind="function" id="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1ac314b93564cfe548ef6b6c9502a8f25b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double pyfolio::analytics::BayesianPerformanceResult::sharpe_percentile</definition>
+        <argsstring>(double percentile) const</argsstring>
+        <name>sharpe_percentile</name>
+        <qualifiedname>pyfolio::analytics::BayesianPerformanceResult::sharpe_percentile</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>percentile</declname>
+        </param>
+        <briefdescription>
+<para>Get Sharpe ratio percentile. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" line="120" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" bodystart="120" bodyend="127"/>
+        <references refid="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1a0ef07e65c4a890e81168d48a337c323e" compoundref="d6/dfe/bayesian_8h" startline="77">sharpe_samples</references>
+      </memberdef>
+      <memberdef kind="function" id="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1abad5a8a5e88da168b94e5ae50a160541" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool pyfolio::analytics::BayesianPerformanceResult::is_alpha_significant</definition>
+        <argsstring>(double threshold=0.95) const</argsstring>
+        <name>is_alpha_significant</name>
+        <qualifiedname>pyfolio::analytics::BayesianPerformanceResult::is_alpha_significant</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>threshold</declname>
+          <defval>0.95</defval>
+        </param>
+        <briefdescription>
+<para>Check if alpha is significantly positive. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" line="132" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" bodystart="132" bodyend="132"/>
+        <references refid="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1a63a24620616cba12777b4f8e652178ab" compoundref="d6/dfe/bayesian_8h" startline="97">prob_alpha_positive</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Bayesian performance analysis results. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>pyfolio::analytics::BayesianPerformanceResult</label>
+        <link refid="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>alpha_samples</edgelabel>
+          <edgelabel>beta_samples</edgelabel>
+          <edgelabel>sharpe_samples</edgelabel>
+          <edgelabel>volatility_samples</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::vector&lt; double &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" line="73" column="1" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h" bodystart="73" bodyend="133"/>
+    <listofallmembers>
+      <member refid="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1a70967b4a7aa0f41f3dc6f19400075687" prot="public" virt="non-virtual"><scope>pyfolio::analytics::BayesianPerformanceResult</scope><name>alpha_credible_lower</name></member>
+      <member refid="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1a81de8754c613fca918c8611176fedc74" prot="public" virt="non-virtual"><scope>pyfolio::analytics::BayesianPerformanceResult</scope><name>alpha_credible_upper</name></member>
+      <member refid="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1aa5bf47943be52d3bdb5e83bb042ad134" prot="public" virt="non-virtual"><scope>pyfolio::analytics::BayesianPerformanceResult</scope><name>alpha_mean</name></member>
+      <member refid="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1ab952aeb4c74ee69a6f75e45721ced62b" prot="public" virt="non-virtual"><scope>pyfolio::analytics::BayesianPerformanceResult</scope><name>alpha_percentile</name></member>
+      <member refid="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1a6d2a1b01e691d748325800171dc04ca4" prot="public" virt="non-virtual"><scope>pyfolio::analytics::BayesianPerformanceResult</scope><name>alpha_samples</name></member>
+      <member refid="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1a153e642e7990696963902a9b6b3995d8" prot="public" virt="non-virtual"><scope>pyfolio::analytics::BayesianPerformanceResult</scope><name>alpha_std</name></member>
+      <member refid="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1a72293ffec4415df7413d4b4ecadec3ab" prot="public" virt="non-virtual"><scope>pyfolio::analytics::BayesianPerformanceResult</scope><name>beta_credible_lower</name></member>
+      <member refid="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1af81a24d1f8603751f169c725dcc460ff" prot="public" virt="non-virtual"><scope>pyfolio::analytics::BayesianPerformanceResult</scope><name>beta_credible_upper</name></member>
+      <member refid="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1a572a1e7f9d2444a8f5915f8f2ce2bbf0" prot="public" virt="non-virtual"><scope>pyfolio::analytics::BayesianPerformanceResult</scope><name>beta_mean</name></member>
+      <member refid="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1a2f3c2875b4014030847e47ec777a4eba" prot="public" virt="non-virtual"><scope>pyfolio::analytics::BayesianPerformanceResult</scope><name>beta_samples</name></member>
+      <member refid="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1a62db5b835ed4127acf8eb3f5f3cf4928" prot="public" virt="non-virtual"><scope>pyfolio::analytics::BayesianPerformanceResult</scope><name>beta_std</name></member>
+      <member refid="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1ae03c0526fc8ce2b5dc618e337351a689" prot="public" virt="non-virtual"><scope>pyfolio::analytics::BayesianPerformanceResult</scope><name>dic</name></member>
+      <member refid="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1abad5a8a5e88da168b94e5ae50a160541" prot="public" virt="non-virtual"><scope>pyfolio::analytics::BayesianPerformanceResult</scope><name>is_alpha_significant</name></member>
+      <member refid="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1a8361921db645de294cdd18002113bf67" prot="public" virt="non-virtual"><scope>pyfolio::analytics::BayesianPerformanceResult</scope><name>marginal_likelihood</name></member>
+      <member refid="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1a63a24620616cba12777b4f8e652178ab" prot="public" virt="non-virtual"><scope>pyfolio::analytics::BayesianPerformanceResult</scope><name>prob_alpha_positive</name></member>
+      <member refid="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1ad5b3df4b29e94efa13b5501d2f9d2fda" prot="public" virt="non-virtual"><scope>pyfolio::analytics::BayesianPerformanceResult</scope><name>prob_beta_greater_one</name></member>
+      <member refid="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1a5a64e31e57d4bcb4c7625424886d69f3" prot="public" virt="non-virtual"><scope>pyfolio::analytics::BayesianPerformanceResult</scope><name>prob_outperformance</name></member>
+      <member refid="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1ad93699eb34266cc1ae7c1d84315441cd" prot="public" virt="non-virtual"><scope>pyfolio::analytics::BayesianPerformanceResult</scope><name>sharpe_credible_lower</name></member>
+      <member refid="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1a2dc40b802ca4dd88f3f1d02b90e589f6" prot="public" virt="non-virtual"><scope>pyfolio::analytics::BayesianPerformanceResult</scope><name>sharpe_credible_upper</name></member>
+      <member refid="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1a3302667904a06fb33cc6dcda76deb539" prot="public" virt="non-virtual"><scope>pyfolio::analytics::BayesianPerformanceResult</scope><name>sharpe_mean</name></member>
+      <member refid="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1ac314b93564cfe548ef6b6c9502a8f25b" prot="public" virt="non-virtual"><scope>pyfolio::analytics::BayesianPerformanceResult</scope><name>sharpe_percentile</name></member>
+      <member refid="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1a0ef07e65c4a890e81168d48a337c323e" prot="public" virt="non-virtual"><scope>pyfolio::analytics::BayesianPerformanceResult</scope><name>sharpe_samples</name></member>
+      <member refid="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1ab572cb490d1212d5355d7881c58f5234" prot="public" virt="non-virtual"><scope>pyfolio::analytics::BayesianPerformanceResult</scope><name>sharpe_std</name></member>
+      <member refid="de/d6d/structpyfolio_1_1analytics_1_1BayesianPerformanceResult_1ad89afadf6dae3ceb2aa5a7496b4f06b0" prot="public" virt="non-virtual"><scope>pyfolio::analytics::BayesianPerformanceResult</scope><name>volatility_samples</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,73 @@
+# Production configuration overlay
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: pyfolio-config
+data:
+  pyfolio.json: |
+    {
+      "debug": false,
+      "log_level": "WARN",
+      "max_threads": 16,
+      "cache_size": "4GB",
+      "api": {
+        "host": "0.0.0.0",
+        "port": 8000,
+        "workers": 16,
+        "timeout": 120
+      },
+      "database": {
+        "type": "postgresql",
+        "host": "pyfolio-postgres",
+        "port": 5432,
+        "database": "pyfolio",
+        "username": "pyfolio",
+        "pool_size": 20,
+        "max_overflow": 30
+      },
+      "redis": {
+        "host": "pyfolio-redis",
+        "port": 6379,
+        "db": 0,
+        "pool_size": 50
+      },
+      "features": {
+        "enable_gpu": false,
+        "enable_mpi": true,
+        "enable_streaming": true,
+        "enable_caching": true,
+        "enable_distributed": true,
+        "enable_async_processing": true
+      },
+      "security": {
+        "api_key_required": true,
+        "rate_limit": 50000,
+        "cors_origins": ["https://pyfolio.example.com", "https://app.pyfolio.example.com"],
+        "enable_ssl": true,
+        "enforce_https": true
+      },
+      "performance": {
+        "optimize_for_memory": false,
+        "optimize_for_cpu": true,
+        "optimize_for_throughput": true,
+        "simd_acceleration": true,
+        "parallel_processing": true,
+        "batch_processing": true,
+        "connection_pooling": true
+      },
+      "monitoring": {
+        "enable_metrics": true,
+        "metrics_port": 9090,
+        "health_check_interval": 15,
+        "log_performance": true,
+        "enable_profiling": false,
+        "enable_tracing": true
+      },
+      "limits": {
+        "max_request_size": "50MB",
+        "max_response_size": "100MB",
+        "max_concurrent_requests": 10000,
+        "request_timeout": 300,
+        "keepalive_timeout": 120
+      }
+    }

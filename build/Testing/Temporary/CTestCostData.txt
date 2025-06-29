@@ -1,0 +1,60 @@
+pyfolio_tests_NOT_BUILT 0 0
+test_core 1 0.0146075
+test_datetime_only 0 0
+test_time_series_only 0 0
+test_statistics_only 1 0.00474617
+test_performance_only 0 0
+test_transactions_only 0 0
+test_round_trips_only 0 0
+test_positions_only 0 0
+test_attribution_only 0 0
+test_risk_only 0 0
+test_capacity_only 0 0
+test_bayesian_only 0 0
+test_regime_only 0 0
+test_integration_only 0 0
+test_tear_sheets_only 0 0
+test_rolling_metrics_only 0 0
+test_data_loader_only 0 0
+test_visualization_only 0 0
+test_cached_performance_only 0 0
+test_parallel_algorithms_only 0 0
+test_plotly_enhanced_only 1 0.0132259
+test_exact_python_equivalence_only 0 0
+test_python_txn_equivalence_only 0 0
+test_python_pos_equivalence_only 0 0
+test_pyfolio_equivalent_only 0 0
+run_python_equivalent_tests 0 0
+simd_performance_tests 0 0
+memory_pool_tests 0 0
+simple_memory_pool_tests 0 0
+test_simple_rest_api 0 0
+---
+pyfolio_tests_NOT_BUILT
+test_datetime_only
+test_time_series_only
+test_performance_only
+test_transactions_only
+test_round_trips_only
+test_positions_only
+test_attribution_only
+test_risk_only
+test_capacity_only
+test_bayesian_only
+test_regime_only
+test_integration_only
+test_tear_sheets_only
+test_rolling_metrics_only
+test_data_loader_only
+test_visualization_only
+test_cached_performance_only
+test_parallel_algorithms_only
+test_exact_python_equivalence_only
+test_python_txn_equivalence_only
+test_python_pos_equivalence_only
+test_pyfolio_equivalent_only
+run_python_equivalent_tests
+simd_performance_tests
+memory_pool_tests
+simple_memory_pool_tests
+test_simple_rest_api

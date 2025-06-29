@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="d9/d17/structpyfolio_1_1PerformanceMetrics_1_1CaptureRatioResult" kind="struct" language="C++" prot="public">
+    <compoundname>pyfolio::PerformanceMetrics::CaptureRatioResult</compoundname>
+    <includes refid="de/d88/performance__metrics_8h" local="no">performance_metrics.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d9/d17/structpyfolio_1_1PerformanceMetrics_1_1CaptureRatioResult_1a1ab7bc92a3c7d720df2b4b0964e8bdb0" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::PerformanceMetrics::CaptureRatioResult::up_capture</definition>
+        <argsstring></argsstring>
+        <name>up_capture</name>
+        <qualifiedname>pyfolio::PerformanceMetrics::CaptureRatioResult::up_capture</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" line="235" column="16" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" bodystart="235" bodyend="-1"/>
+        <referencedby refid="d7/d98/classpyfolio_1_1PerformanceMetrics_1a73f78d1e5ebebe459b1e9b8c2f5c695f" compoundref="de/d88/performance__metrics_8h" startline="241" endline="248">pyfolio::PerformanceMetrics::up_down_capture_ratio</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d17/structpyfolio_1_1PerformanceMetrics_1_1CaptureRatioResult_1ac54d2dd45243b8be558a5cee6e96ddc6" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::PerformanceMetrics::CaptureRatioResult::down_capture</definition>
+        <argsstring></argsstring>
+        <name>down_capture</name>
+        <qualifiedname>pyfolio::PerformanceMetrics::CaptureRatioResult::down_capture</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" line="236" column="16" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" bodystart="236" bodyend="-1"/>
+        <referencedby refid="d7/d98/classpyfolio_1_1PerformanceMetrics_1a73f78d1e5ebebe459b1e9b8c2f5c695f" compoundref="de/d88/performance__metrics_8h" startline="241" endline="248">pyfolio::PerformanceMetrics::up_down_capture_ratio</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" line="234" column="5" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h" bodystart="234" bodyend="237"/>
+    <listofallmembers>
+      <member refid="d9/d17/structpyfolio_1_1PerformanceMetrics_1_1CaptureRatioResult_1ac54d2dd45243b8be558a5cee6e96ddc6" prot="public" virt="non-virtual"><scope>pyfolio::PerformanceMetrics::CaptureRatioResult</scope><name>down_capture</name></member>
+      <member refid="d9/d17/structpyfolio_1_1PerformanceMetrics_1_1CaptureRatioResult_1a1ab7bc92a3c7d720df2b4b0964e8bdb0" prot="public" virt="non-virtual"><scope>pyfolio::PerformanceMetrics::CaptureRatioResult</scope><name>up_capture</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

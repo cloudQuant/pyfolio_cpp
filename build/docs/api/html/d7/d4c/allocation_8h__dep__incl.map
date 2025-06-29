@@ -1,0 +1,42 @@
+<map id="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" name="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="599,5,778,76"/>
+<area shape="rect" id="Node000002" href="$d7/d56/transaction__analysis__example_8cpp.html" title=" " alt="" coords="5,243,210,313"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="590,85,194,245,192,240,588,80"/>
+<area shape="rect" id="Node000003" href="$d0/d04/positions_8h.html" title="Portfolio positions types and utilities." alt="" coords="1762,124,1941,195"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="794,50,1762,146,1761,152,794,55"/>
+<area shape="rect" id="Node000014" href="$d3/d30/pyfolio_8h.html" title="Main header file for pyfolio_cpp &#45; High&#45;performance portfolio analysis library." alt="" coords="599,132,778,187"/>
+<area shape="poly" id="edge15_Node000001_Node000014" title=" " alt="" coords="692,91,692,131,686,131,686,91"/>
+<area shape="rect" id="Node000004" href="$d7/d5f/plotly__enhanced__example_8cpp.html" title="Example demonstrating enhanced Plotly visualization features." alt="" coords="1322,361,1501,432"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1747,171,1659,180,1567,195,1489,217,1459,230,1439,245,1422,270,1412,301,1409,332,1410,361,1404,361,1404,332,1407,300,1417,268,1435,241,1456,225,1487,212,1566,190,1658,175,1746,165"/>
+<area shape="rect" id="Node000005" href="$d2/d40/turnover__enhanced_8h.html" title=" " alt="" coords="1656,243,1836,313"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="1812,208,1779,244,1775,241,1808,204"/>
+<area shape="rect" id="Node000006" href="$d2/d59/intraday_8h.html" title=" " alt="" coords="1860,250,2056,306"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="1895,204,1935,248,1931,252,1891,208"/>
+<area shape="rect" id="Node000008" href="$dc/d16/matplotlib__integration_8h.html" title=" " alt="" coords="2079,243,2264,313"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="1957,196,2080,241,2078,246,1955,201"/>
+<area shape="rect" id="Node000009" href="$d1/dcd/plotly__enhanced_8h.html" title="Enhanced Plotly visualization with interactive features." alt="" coords="1449,243,1633,313"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="1748,202,1634,245,1633,240,1746,197"/>
+<area shape="rect" id="Node000011" href="$d4/d45/json__serializer_8h.html" title="JSON serialization for pyfolio data types." alt="" coords="2338,243,2517,313"/>
+<area shape="poly" id="edge11_Node000003_Node000011" title=" " alt="" coords="1957,172,2128,200,2320,240,2338,245,2337,250,2319,245,2127,205,1956,178"/>
+<area shape="rect" id="Node000012" href="$de/de7/rest__api__server_8h.html" title="REST API server for pyfolio analytics." alt="" coords="2274,361,2453,432"/>
+<area shape="poly" id="edge14_Node000003_Node000012" title=" " alt="" coords="1957,168,2045,180,2138,195,2221,216,2253,227,2277,241,2295,260,2315,291,2350,359,2345,362,2310,294,2291,263,2274,245,2251,232,2219,221,2137,201,2045,185,1956,174"/>
+<area shape="rect" id="Node000007" href="$dc/d51/intraday_8cpp.html" title=" " alt="" coords="1868,369,2048,424"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1961,321,1961,368,1956,368,1956,321"/>
+<area shape="poly" id="edge9_Node000009_Node000004" title=" " alt="" coords="1493,326,1452,363,1448,359,1489,322"/>
+<area shape="rect" id="Node000010" href="$d2/dd1/plotly__enhanced_8cpp.html" title="Implementation of enhanced Plotly visualization features." alt="" coords="1526,361,1705,432"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="1573,325,1596,360,1591,362,1569,328"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="2404,328,2385,362,2380,360,2399,325"/>
+<area shape="rect" id="Node000013" href="$d1/d43/rest__api__example_8cpp.html" title=" " alt="" coords="2257,480,2470,536"/>
+<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="2366,448,2366,480,2361,480,2361,448"/>
+<area shape="poly" id="edge21_Node000014_Node000002" title=" " alt="" coords="584,178,414,206,221,245,211,248,209,243,220,240,413,201,584,173"/>
+<area shape="rect" id="Node000015" href="$d8/d00/attribution__example_8cpp.html" title=" " alt="" coords="233,250,456,306"/>
+<area shape="poly" id="edge16_Node000014_Node000015" title=" " alt="" coords="595,195,426,252,424,247,594,190"/>
+<area shape="rect" id="Node000016" href="$d3/d6a/basic__example_8cpp.html" title=" " alt="" coords="481,250,678,306"/>
+<area shape="poly" id="edge17_Node000014_Node000016" title=" " alt="" coords="655,200,607,251,603,248,651,197"/>
+<area shape="rect" id="Node000017" href="$da/d7c/bayesian__analysis__example_8cpp.html" title=" " alt="" coords="702,243,894,313"/>
+<area shape="poly" id="edge18_Node000014_Node000017" title=" " alt="" coords="726,197,768,241,764,244,723,200"/>
+<area shape="rect" id="Node000018" href="$d1/db6/capacity__analysis__example_8cpp.html" title=" " alt="" coords="918,243,1108,313"/>
+<area shape="poly" id="edge19_Node000014_Node000018" title=" " alt="" coords="780,190,919,240,917,245,778,195"/>
+<area shape="rect" id="Node000019" href="$db/dc6/risk__analysis__example_8cpp.html" title=" " alt="" coords="1132,250,1374,306"/>
+<area shape="poly" id="edge20_Node000014_Node000019" title=" " alt="" coords="794,176,948,205,1120,240,1149,247,1148,252,1119,245,947,210,793,181"/>
+</map>

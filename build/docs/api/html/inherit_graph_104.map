@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$d7/d7e/classpyfolio_1_1transactions_1_1MarketImpactModel.html" title="Market impact model interface." alt="" coords="5,39,150,79"/>
+<area shape="rect" id="Node000001" href="$d3/dfe/classpyfolio_1_1transactions_1_1LinearImpactModel.html" title="Linear market impact model." alt="" coords="215,5,354,46"/>
+<area shape="poly" id="edge2_Node000000_Node000001" title=" " alt="" coords="165,42,214,34,214,40,165,48"/>
+<area shape="rect" id="Node000002" href="$db/d6c/classpyfolio_1_1transactions_1_1SquareRootImpactModel.html" title="Square&#45;root market impact model (Almgren et al.)" alt="" coords="198,71,371,111"/>
+<area shape="poly" id="edge3_Node000000_Node000002" title=" " alt="" coords="165,70,198,75,197,80,165,75"/>
+</map>

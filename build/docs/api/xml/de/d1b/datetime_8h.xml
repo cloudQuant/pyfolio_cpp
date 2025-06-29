@@ -1,0 +1,988 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="de/d1b/datetime_8h" kind="file" language="C++">
+    <compoundname>datetime.h</compoundname>
+    <includes refid="d3/d11/error__handling_8h" local="yes">error_handling.h</includes>
+    <includes refid="d9/d49/types_8h" local="yes">types.h</includes>
+    <includes local="no">algorithm</includes>
+    <includes local="no">chrono</includes>
+    <includes local="no">set</includes>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="d4/d7b/market__indicators_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h</includedby>
+    <includedby refid="d2/dfc/regime__detection_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h</includedby>
+    <includedby refid="da/dd4/attribution_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h</includedby>
+    <includedby refid="db/d26/capacity_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/capacity/capacity.h</includedby>
+    <includedby refid="d2/d99/dataframe_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/dataframe.h</includedby>
+    <includedby refid="d8/d51/time__series_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/time_series.h</includedby>
+    <includedby refid="d0/db7/allocation_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h</includedby>
+    <includedby refid="d7/d0c/holdings_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/holdings.h</includedby>
+    <includedby refid="d3/d30/pyfolio_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/pyfolio.h</includedby>
+    <includedby refid="d2/d26/interesting__periods_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/interesting_periods.h</includedby>
+    <includedby refid="d4/da5/factor__exposure_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/factor_exposure.h</includedby>
+    <includedby refid="df/d46/var_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/var.h</includedby>
+    <includedby refid="d7/d00/round__trips_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/round_trips.h</includedby>
+    <includedby refid="d0/db6/transaction_8h" local="yes">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/transaction.h</includedby>
+    <includedby refid="d2/d59/intraday_8h" local="no">/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/utils/intraday.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h</label>
+        <link refid="de/d1b/datetime_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>error_handling.h</label>
+        <link refid="d3/d11/error__handling_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>types.h</label>
+        <link refid="d9/d49/types_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>algorithm</label>
+      </node>
+      <node id="10">
+        <label>chrono</label>
+      </node>
+      <node id="11">
+        <label>concepts</label>
+      </node>
+      <node id="12">
+        <label>cstddef</label>
+      </node>
+      <node id="13">
+        <label>cstdint</label>
+      </node>
+      <node id="3">
+        <label>exception</label>
+      </node>
+      <node id="4">
+        <label>functional</label>
+      </node>
+      <node id="5">
+        <label>optional</label>
+      </node>
+      <node id="16">
+        <label>set</label>
+      </node>
+      <node id="6">
+        <label>source_location</label>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="8">
+        <label>variant</label>
+      </node>
+      <node id="14">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="6">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/examples/attribution_example.cpp</label>
+        <link refid="d8/d00/attribution__example_8cpp"/>
+      </node>
+      <node id="24">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/examples/basic_example.cpp</label>
+        <link refid="d3/d6a/basic__example_8cpp"/>
+      </node>
+      <node id="4">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/examples/bayesian_analysis_example.cpp</label>
+        <link refid="da/d7c/bayesian__analysis__example_8cpp"/>
+      </node>
+      <node id="8">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/examples/capacity_analysis_example.cpp</label>
+        <link refid="d1/db6/capacity__analysis__example_8cpp"/>
+      </node>
+      <node id="13">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/examples/plotly_enhanced_example.cpp</label>
+        <link refid="d7/d5f/plotly__enhanced__example_8cpp"/>
+      </node>
+      <node id="22">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/examples/rest_api_example.cpp</label>
+        <link refid="d1/d43/rest__api__example_8cpp"/>
+      </node>
+      <node id="25">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/examples/risk_analysis_example.cpp</label>
+        <link refid="db/dc6/risk__analysis__example_8cpp"/>
+      </node>
+      <node id="11">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/examples/transaction_analysis_example.cpp</label>
+        <link refid="d7/d56/transaction__analysis__example_8cpp"/>
+      </node>
+      <node id="34">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/bayesian.h</label>
+        <link refid="d6/dfe/bayesian_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/cached_performance_metrics.h</label>
+        <link refid="d4/dc1/cached__performance__metrics_8h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/market_indicators.h</label>
+        <link refid="d4/d7b/market__indicators_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/parallel_performance_suite.h</label>
+        <link refid="dd/d71/parallel__performance__suite_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_analysis_suite.h</label>
+        <link refid="df/de7/performance__analysis__suite_8h"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/performance_metrics.h</label>
+        <link refid="de/d88/performance__metrics_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/regime_detection.h</label>
+        <link refid="d2/dfc/regime__detection_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h</label>
+        <link refid="d5/db2/analytics_2statistics_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h</label>
+        <link refid="d2/d40/turnover__enhanced_8h"/>
+      </node>
+      <node id="5">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h</label>
+        <link refid="da/dd4/attribution_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/capacity/capacity.h</label>
+        <link refid="db/d26/capacity_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/dataframe.h</label>
+        <link refid="d2/d99/dataframe_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h</label>
+        <link refid="de/d1b/datetime_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/time_series.h</label>
+        <link refid="d8/d51/time__series_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/io/data_loader.h</label>
+        <link refid="d2/db9/data__loader_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/parallel/parallel_algorithms.h</label>
+        <link refid="d9/d36/parallel__algorithms_8h"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/drawdown.h</label>
+        <link refid="d8/de8/drawdown_8h"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/ratios.h</label>
+        <link refid="d7/d06/ratios_8h"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/returns.h</label>
+        <link refid="d4/d73/returns_8h"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/performance/rolling_metrics.h</label>
+        <link refid="d3/d7e/rolling__metrics_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h</label>
+        <link refid="d0/db7/allocation_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/holdings.h</label>
+        <link refid="d7/d0c/holdings_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/positions.h</label>
+        <link refid="d0/d04/positions_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/pyfolio.h</label>
+        <link refid="d3/d30/pyfolio_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/interesting_periods.h</label>
+        <link refid="d2/d26/interesting__periods_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/reporting/tears.h</label>
+        <link refid="d3/d66/tears_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/factor_exposure.h</label>
+        <link refid="d4/da5/factor__exposure_8h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/risk/var.h</label>
+        <link refid="df/d46/var_8h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/round_trips.h</label>
+        <link refid="d7/d00/round__trips_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/trading_costs.h</label>
+        <link refid="dd/d45/trading__costs_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/transactions/transaction.h</label>
+        <link refid="d0/db6/transaction_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/utils/intraday.h</label>
+        <link refid="d2/d59/intraday_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/matplotlib_integration.h</label>
+        <link refid="dc/d16/matplotlib__integration_8h"/>
+      </node>
+      <node id="18">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotly_enhanced.h</label>
+        <link refid="d1/dcd/plotly__enhanced_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/visualization/plotting.h</label>
+        <link refid="d3/df8/plotting_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/json_serializer.h</label>
+        <link refid="d4/d45/json__serializer_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/rest_api_server.h</label>
+        <link refid="de/de7/rest__api__server_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/utils/intraday.cpp</label>
+        <link refid="dc/d51/intraday_8cpp"/>
+      </node>
+      <node id="19">
+        <label>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/src/visualization/plotly_enhanced.cpp</label>
+        <link refid="d2/dd1/plotly__enhanced_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="dc/ddd/classpyfolio_1_1BusinessCalendar" prot="public">pyfolio::BusinessCalendar</innerclass>
+    <innerclass refid="d6/d4f/classpyfolio_1_1DateTime" prot="public">pyfolio::DateTime</innerclass>
+    <innerclass refid="d5/d98/classpyfolio_1_1DateRange" prot="public">pyfolio::DateRange</innerclass>
+    <innernamespace refid="d7/df8/namespacepyfolio">pyfolio</innernamespace>
+    <innernamespace refid="d9/d9c/namespacepyfolio_1_1frequency">pyfolio::frequency</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/d11/error__handling_8h" kindref="compound">error_handling.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d9/d49/types_8h" kindref="compound">types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;chrono&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;set&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d7/df8/namespacepyfolio" kindref="compound">pyfolio</ref><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Forward<sp/>declaration</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="dc/ddd/classpyfolio_1_1BusinessCalendar" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="dc/ddd/classpyfolio_1_1BusinessCalendar_1ad2a498a5b8727d5b243b28831ea75a85" kindref="member">BusinessCalendar</ref><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>std::set&lt;std::chrono::year_month_day&gt;<sp/>holidays_;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>name_;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="25" refid="dc/ddd/classpyfolio_1_1BusinessCalendar_1ad2a498a5b8727d5b243b28831ea75a85" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="dc/ddd/classpyfolio_1_1BusinessCalendar_1ad2a498a5b8727d5b243b28831ea75a85" kindref="member">BusinessCalendar</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;NYSE&quot;</highlight><highlight class="normal">)<sp/>:<sp/>name_(name)<sp/>{<sp/>initialize_default_holidays();<sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="dc/ddd/classpyfolio_1_1BusinessCalendar_1accee21b524cbcd2341bf14a748d2413d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="dc/ddd/classpyfolio_1_1BusinessCalendar_1accee21b524cbcd2341bf14a748d2413d" kindref="member">is_business_day</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::chrono::year_month_day&amp;<sp/>date)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>if<sp/>it&apos;s<sp/>a<sp/>weekend</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>time_point<sp/>=<sp/>std::chrono::sys_days{date};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>weekday<sp/><sp/><sp/><sp/>=<sp/>std::chrono::weekday{time_point};</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(weekday<sp/>==<sp/>std::chrono::Saturday<sp/>||<sp/>weekday<sp/>==<sp/>std::chrono::Sunday)<sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>if<sp/>it&apos;s<sp/>a<sp/>holiday</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>holidays_.find(date)<sp/>==<sp/>holidays_.end();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="dc/ddd/classpyfolio_1_1BusinessCalendar_1aabfb6559b0ab5f76e5bc54bc48bf8280" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::chrono::year_month_day<sp/><ref refid="dc/ddd/classpyfolio_1_1BusinessCalendar_1aabfb6559b0ab5f76e5bc54bc48bf8280" kindref="member">next_business_day</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::chrono::year_month_day&amp;<sp/>date)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>current<sp/>=<sp/>date;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>current<sp/>=<sp/>std::chrono::year_month_day{std::chrono::sys_days{current}<sp/>+<sp/>std::chrono::days{1}};</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!<ref refid="dc/ddd/classpyfolio_1_1BusinessCalendar_1accee21b524cbcd2341bf14a748d2413d" kindref="member">is_business_day</ref>(current));</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>current;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="dc/ddd/classpyfolio_1_1BusinessCalendar_1a3f2c671788b7ecc51164df1d2cba5ac6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::chrono::year_month_day<sp/><ref refid="dc/ddd/classpyfolio_1_1BusinessCalendar_1a3f2c671788b7ecc51164df1d2cba5ac6" kindref="member">previous_business_day</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::chrono::year_month_day&amp;<sp/>date)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>current<sp/>=<sp/>date;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>current<sp/>=<sp/>std::chrono::year_month_day{std::chrono::sys_days{current}<sp/>-<sp/>std::chrono::days{1}};</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!<ref refid="dc/ddd/classpyfolio_1_1BusinessCalendar_1accee21b524cbcd2341bf14a748d2413d" kindref="member">is_business_day</ref>(current));</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>current;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="dc/ddd/classpyfolio_1_1BusinessCalendar_1a606d7f0aa04e6d5099608f52c82606b8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="dc/ddd/classpyfolio_1_1BusinessCalendar_1a606d7f0aa04e6d5099608f52c82606b8" kindref="member">business_days_between</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::chrono::year_month_day&amp;<sp/>start,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::chrono::year_month_day&amp;<sp/>end)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(start<sp/>&gt;=<sp/>end)</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count<sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>current<sp/>=<sp/>std::chrono::year_month_day{std::chrono::sys_days{start}<sp/>+<sp/>std::chrono::days{1}};</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(current<sp/>&lt;=<sp/>end)<sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="dc/ddd/classpyfolio_1_1BusinessCalendar_1accee21b524cbcd2341bf14a748d2413d" kindref="member">is_business_day</ref>(current))<sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++count;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>current<sp/>=<sp/>std::chrono::year_month_day{std::chrono::sys_days{current}<sp/>+<sp/>std::chrono::days{1}};</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>count;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="dc/ddd/classpyfolio_1_1BusinessCalendar_1a4eb09daeb43ef70ced656afa1b1e8119" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/ddd/classpyfolio_1_1BusinessCalendar_1a4eb09daeb43ef70ced656afa1b1e8119" kindref="member">add_holiday</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::chrono::year_month_day&amp;<sp/>date)<sp/>{<sp/>holidays_.insert(date);<sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="dc/ddd/classpyfolio_1_1BusinessCalendar_1a80958bdfc47f0547a79e24c969e67d45" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/ddd/classpyfolio_1_1BusinessCalendar_1a80958bdfc47f0547a79e24c969e67d45" kindref="member">remove_holiday</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::chrono::year_month_day&amp;<sp/>date)<sp/>{<sp/>holidays_.erase(date);<sp/>}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="dc/ddd/classpyfolio_1_1BusinessCalendar_1a37e4f2d036eefb42604b66da39530949" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="dc/ddd/classpyfolio_1_1BusinessCalendar_1a37e4f2d036eefb42604b66da39530949" kindref="member">is_holiday</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::chrono::year_month_day&amp;<sp/>date)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>holidays_.find(date)<sp/>!=<sp/>holidays_.end();<sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Forward<sp/>declarations<sp/>for<sp/>DateTime<sp/>overloads<sp/>(implemented<sp/>after<sp/>DateTime<sp/>class)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="dc/ddd/classpyfolio_1_1BusinessCalendar_1a37e4f2d036eefb42604b66da39530949" kindref="member">is_holiday</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref>&amp;<sp/>date)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="dc/ddd/classpyfolio_1_1BusinessCalendar_1accee21b524cbcd2341bf14a748d2413d" kindref="member">is_business_day</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref>&amp;<sp/>date)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/ddd/classpyfolio_1_1BusinessCalendar_1a4eb09daeb43ef70ced656afa1b1e8119" kindref="member">add_holiday</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref>&amp;<sp/>date);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initialize_default_holidays()<sp/>{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Add<sp/>common<sp/>US<sp/>holidays<sp/>(simplified<sp/>version)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>In<sp/>practice,<sp/>this<sp/>would<sp/>be<sp/>loaded<sp/>from<sp/>a<sp/>comprehensive<sp/>holiday<sp/>database</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>New<sp/>Year&apos;s<sp/>Day</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>holidays_.insert(std::chrono::year{2024}<sp/>/<sp/>std::chrono::January<sp/>/<sp/>1);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>holidays_.insert(std::chrono::year{2025}<sp/>/<sp/>std::chrono::January<sp/>/<sp/>1);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Independence<sp/>Day</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>holidays_.insert(std::chrono::year{2024}<sp/>/<sp/>std::chrono::July<sp/>/<sp/>4);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>holidays_.insert(std::chrono::year{2025}<sp/>/<sp/>std::chrono::July<sp/>/<sp/>4);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Christmas<sp/>Day</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>holidays_.insert(std::chrono::year{2024}<sp/>/<sp/>std::chrono::December<sp/>/<sp/>25);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>holidays_.insert(std::chrono::year{2025}<sp/>/<sp/>std::chrono::December<sp/>/<sp/>25);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129" refid="d6/d4f/classpyfolio_1_1DateTime" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a140b23c1840e818f12ef46082e8762ba" kindref="member">DateTime</ref><sp/>{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/df8/namespacepyfolio_1ad77d362107c51226c09e896bdf822f9d" kindref="member">TimePoint</ref><sp/>time_point_;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="134" refid="d6/d4f/classpyfolio_1_1DateTime_1a27270e18fd7b3fcba5fcd1ce8533c9e7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="dc/ddd/classpyfolio_1_1BusinessCalendar" kindref="compound">BusinessCalendar</ref><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a27270e18fd7b3fcba5fcd1ce8533c9e7" kindref="member">default_calendar_</ref>;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="137" refid="d6/d4f/classpyfolio_1_1DateTime_1a140b23c1840e818f12ef46082e8762ba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a140b23c1840e818f12ef46082e8762ba" kindref="member">DateTime</ref>()<sp/>:<sp/>time_point_(std::chrono::system_clock::<ref refid="d6/d4f/classpyfolio_1_1DateTime_1af74c490a9d8ce99c6a18bdbe608d1111" kindref="member">now</ref>())<sp/>{}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="d6/d4f/classpyfolio_1_1DateTime_1a4f902d49791077ebc15187cd0ca44282" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a4f902d49791077ebc15187cd0ca44282" kindref="member">DateTime</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1ad77d362107c51226c09e896bdf822f9d" kindref="member">TimePoint</ref>&amp;<sp/>tp)<sp/>:<sp/>time_point_(tp)<sp/>{}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="d6/d4f/classpyfolio_1_1DateTime_1aff7a3b252e6c50d1927434f629875710" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1aff7a3b252e6c50d1927434f629875710" kindref="member">DateTime</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::chrono::year_month_day&amp;<sp/>date)<sp/>:<sp/>time_point_(std::chrono::sys_days{date})<sp/>{}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143" refid="d6/d4f/classpyfolio_1_1DateTime_1aaecd3e0fe88401b0085fbc88727446cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1aaecd3e0fe88401b0085fbc88727446cb" kindref="member">DateTime</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a98b74d1e113cf1ca215928c0e31ba587" kindref="member">year</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1ad5a7201c60d0020d7270f24d8d10325e" kindref="member">month</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1ab5864a43c0379f41ed3a2dfc0d9a17f9" kindref="member">day</ref>)</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>time_point_(std::chrono::sys_days{std::chrono::<ref refid="d6/d4f/classpyfolio_1_1DateTime_1a98b74d1e113cf1ca215928c0e31ba587" kindref="member">year</ref>{<ref refid="d6/d4f/classpyfolio_1_1DateTime_1a98b74d1e113cf1ca215928c0e31ba587" kindref="member">year</ref>}<sp/>/<sp/>std::chrono::<ref refid="d6/d4f/classpyfolio_1_1DateTime_1ad5a7201c60d0020d7270f24d8d10325e" kindref="member">month</ref>{static_cast&lt;unsigned&gt;(<ref refid="d6/d4f/classpyfolio_1_1DateTime_1ad5a7201c60d0020d7270f24d8d10325e" kindref="member">month</ref>)}<sp/>/</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::chrono::<ref refid="d6/d4f/classpyfolio_1_1DateTime_1ab5864a43c0379f41ed3a2dfc0d9a17f9" kindref="member">day</ref>{static_cast&lt;unsigned&gt;(<ref refid="d6/d4f/classpyfolio_1_1DateTime_1ab5864a43c0379f41ed3a2dfc0d9a17f9" kindref="member">day</ref>)}})<sp/>{}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="d6/d4f/classpyfolio_1_1DateTime_1adfc972d8ea84c03f9a6d9eb9e661b6cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result&lt;DateTime&gt;</ref><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1adfc972d8ea84c03f9a6d9eb9e661b6cd" kindref="member">parse</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>date_string,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>format<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;%Y-%m-%d&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Simplified<sp/>parsing<sp/>-<sp/>in<sp/>practice<sp/>would<sp/>use<sp/>a<sp/>robust<sp/>date<sp/>parsing<sp/>library</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(format<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;%Y-%m-%d&quot;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>date_string.length()<sp/>==<sp/>10)<sp/>{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a98b74d1e113cf1ca215928c0e31ba587" kindref="member">year</ref><sp/><sp/>=<sp/>std::stoi(date_string.substr(0,<sp/>4));</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1ad5a7201c60d0020d7270f24d8d10325e" kindref="member">month</ref><sp/>=<sp/>std::stoi(date_string.substr(5,<sp/>2));</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1ab5864a43c0379f41ed3a2dfc0d9a17f9" kindref="member">day</ref><sp/><sp/><sp/>=<sp/>std::stoi(date_string.substr(8,<sp/>2));</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>date<sp/>=<sp/>std::chrono::year{<ref refid="d6/d4f/classpyfolio_1_1DateTime_1a98b74d1e113cf1ca215928c0e31ba587" kindref="member">year</ref>}<sp/>/<sp/>std::chrono::month{</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<ref refid="d6/d4f/classpyfolio_1_1DateTime_1ad5a7201c60d0020d7270f24d8d10325e" kindref="member">month</ref>)}<sp/>/</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::chrono::day{</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<ref refid="d6/d4f/classpyfolio_1_1DateTime_1ab5864a43c0379f41ed3a2dfc0d9a17f9" kindref="member">day</ref>)};</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!date.ok())<sp/>{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" kindref="member">Result&lt;DateTime&gt;::error</ref>(<ref refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9ad8f78ca9a692a9411afbc7584b69d043" kindref="member">ErrorCode::InvalidInput</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Invalid<sp/>date:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>date_string);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" kindref="member">Result&lt;DateTime&gt;::success</ref>(<ref refid="d6/d4f/classpyfolio_1_1DateTime_1a140b23c1840e818f12ef46082e8762ba" kindref="member">DateTime</ref>{date});</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" kindref="member">Result&lt;DateTime&gt;::error</ref>(<ref refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9ae41199faa7290c167f70f314c5e6c165" kindref="member">ErrorCode::ParseError</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Unsupported<sp/>date<sp/>format:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>format);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::exception&amp;<sp/>e)<sp/>{</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" kindref="member">Result&lt;DateTime&gt;::error</ref>(<ref refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9ae41199faa7290c167f70f314c5e6c165" kindref="member">ErrorCode::ParseError</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>parse<sp/>date:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::string(e.what()));</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178" refid="d6/d4f/classpyfolio_1_1DateTime_1af74c490a9d8ce99c6a18bdbe608d1111" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a140b23c1840e818f12ef46082e8762ba" kindref="member">DateTime</ref><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1af74c490a9d8ce99c6a18bdbe608d1111" kindref="member">now</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a140b23c1840e818f12ef46082e8762ba" kindref="member">DateTime</ref>{std::chrono::system_clock::now()};<sp/>}</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183" refid="d6/d4f/classpyfolio_1_1DateTime_1a6b980b304349106ebab133e7c947d85b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a140b23c1840e818f12ef46082e8762ba" kindref="member">DateTime</ref><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a6b980b304349106ebab133e7c947d85b" kindref="member">from_time_point</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1ad77d362107c51226c09e896bdf822f9d" kindref="member">TimePoint</ref>&amp;<sp/>tp)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a140b23c1840e818f12ef46082e8762ba" kindref="member">DateTime</ref>{tp};<sp/>}</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188" refid="d6/d4f/classpyfolio_1_1DateTime_1a14bed41e6c19c2dfd9c0d36a5edcd29f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::chrono::year_month_day<sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a14bed41e6c19c2dfd9c0d36a5edcd29f" kindref="member">to_date</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::chrono::year_month_day{std::chrono::floor&lt;std::chrono::days&gt;(time_point_)};</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195" refid="d6/d4f/classpyfolio_1_1DateTime_1a0c77abf0a6d6acefcec468e8cf061d5c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a0c77abf0a6d6acefcec468e8cf061d5c" kindref="member">to_string</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>format<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;%Y-%m-%d&quot;</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>date<sp/>=<sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a14bed41e6c19c2dfd9c0d36a5edcd29f" kindref="member">to_date</ref>();</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(format<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;%Y-%m-%d&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>month_val<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(date.month());</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>day_val<sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(date.day());</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::to_string(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(date.year()))<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;-&quot;</highlight><highlight class="normal"><sp/>+<sp/>(month_val<sp/>&lt;<sp/>10<sp/>?<sp/></highlight><highlight class="stringliteral">&quot;0&quot;</highlight><highlight class="normal"><sp/>:<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>+</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::to_string(month_val)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;-&quot;</highlight><highlight class="normal"><sp/>+<sp/>(day_val<sp/>&lt;<sp/>10<sp/>?<sp/></highlight><highlight class="stringliteral">&quot;0&quot;</highlight><highlight class="normal"><sp/>:<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>+<sp/>std::to_string(day_val);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>For<sp/>other<sp/>formats,<sp/>would<sp/>use<sp/>a<sp/>proper<sp/>formatting<sp/>library</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::to_string(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(date.year()))<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;-&quot;</highlight><highlight class="normal"><sp/>+</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::to_string(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(date.month()))<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;-&quot;</highlight><highlight class="normal"><sp/>+</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::to_string(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(date.day()));</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214" refid="d6/d4f/classpyfolio_1_1DateTime_1af46c3e8a096b3ec850297dad97f807b5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1af46c3e8a096b3ec850297dad97f807b5" kindref="member">is_business_day</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dc/ddd/classpyfolio_1_1BusinessCalendar" kindref="compound">BusinessCalendar</ref>&amp;<sp/>calendar<sp/>=<sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a27270e18fd7b3fcba5fcd1ce8533c9e7" kindref="member">default_calendar_</ref>)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>calendar.is_business_day(<ref refid="d6/d4f/classpyfolio_1_1DateTime_1a14bed41e6c19c2dfd9c0d36a5edcd29f" kindref="member">to_date</ref>());</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221" refid="d6/d4f/classpyfolio_1_1DateTime_1adfa008cc517c78cf148ca50a80e81fb1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a140b23c1840e818f12ef46082e8762ba" kindref="member">DateTime</ref><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1adfa008cc517c78cf148ca50a80e81fb1" kindref="member">next_business_day</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dc/ddd/classpyfolio_1_1BusinessCalendar" kindref="compound">BusinessCalendar</ref>&amp;<sp/>calendar<sp/>=<sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a27270e18fd7b3fcba5fcd1ce8533c9e7" kindref="member">default_calendar_</ref>)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>next_date<sp/>=<sp/>calendar.<ref refid="d6/d4f/classpyfolio_1_1DateTime_1adfa008cc517c78cf148ca50a80e81fb1" kindref="member">next_business_day</ref>(<ref refid="d6/d4f/classpyfolio_1_1DateTime_1a14bed41e6c19c2dfd9c0d36a5edcd29f" kindref="member">to_date</ref>());</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a140b23c1840e818f12ef46082e8762ba" kindref="member">DateTime</ref>{next_date};</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229" refid="d6/d4f/classpyfolio_1_1DateTime_1afca583e558a8f0d6cdbd1378eaebaaa7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a140b23c1840e818f12ef46082e8762ba" kindref="member">DateTime</ref><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1afca583e558a8f0d6cdbd1378eaebaaa7" kindref="member">previous_business_day</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dc/ddd/classpyfolio_1_1BusinessCalendar" kindref="compound">BusinessCalendar</ref>&amp;<sp/>calendar<sp/>=<sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a27270e18fd7b3fcba5fcd1ce8533c9e7" kindref="member">default_calendar_</ref>)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>prev_date<sp/>=<sp/>calendar.<ref refid="d6/d4f/classpyfolio_1_1DateTime_1afca583e558a8f0d6cdbd1378eaebaaa7" kindref="member">previous_business_day</ref>(<ref refid="d6/d4f/classpyfolio_1_1DateTime_1a14bed41e6c19c2dfd9c0d36a5edcd29f" kindref="member">to_date</ref>());</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a140b23c1840e818f12ef46082e8762ba" kindref="member">DateTime</ref>{prev_date};</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237" refid="d6/d4f/classpyfolio_1_1DateTime_1aae730fe2db12407f5eb2af3c11e229e9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1aae730fe2db12407f5eb2af3c11e229e9" kindref="member">business_days_until</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a140b23c1840e818f12ef46082e8762ba" kindref="member">DateTime</ref>&amp;<sp/>other,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dc/ddd/classpyfolio_1_1BusinessCalendar" kindref="compound">BusinessCalendar</ref>&amp;<sp/>calendar<sp/>=<sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a27270e18fd7b3fcba5fcd1ce8533c9e7" kindref="member">default_calendar_</ref>)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>calendar.business_days_between(<ref refid="d6/d4f/classpyfolio_1_1DateTime_1a14bed41e6c19c2dfd9c0d36a5edcd29f" kindref="member">to_date</ref>(),<sp/>other.<ref refid="d6/d4f/classpyfolio_1_1DateTime_1a14bed41e6c19c2dfd9c0d36a5edcd29f" kindref="member">to_date</ref>());</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244" refid="d6/d4f/classpyfolio_1_1DateTime_1a42e5f9cb95823fcd9470be79a65fe8a6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a140b23c1840e818f12ef46082e8762ba" kindref="member">DateTime</ref><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a42e5f9cb95823fcd9470be79a65fe8a6" kindref="member">add_days</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>days)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a140b23c1840e818f12ef46082e8762ba" kindref="member">DateTime</ref>{time_point_<sp/>+<sp/>std::chrono::days{days}};<sp/>}</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249" refid="d6/d4f/classpyfolio_1_1DateTime_1a8b63d24df7be661ffdb7226aaa07ff4c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a140b23c1840e818f12ef46082e8762ba" kindref="member">DateTime</ref><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a8b63d24df7be661ffdb7226aaa07ff4c" kindref="member">add_months</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>months)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>date<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a14bed41e6c19c2dfd9c0d36a5edcd29f" kindref="member">to_date</ref>();</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>new_year<sp/><sp/>=<sp/>date.year();</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>new_month<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(date.month()))<sp/>+<sp/>months;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Handle<sp/>month<sp/>overflow/underflow</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(new_month<sp/>&gt;<sp/>12)<sp/>{</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>new_month<sp/>-=<sp/>12;</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>new_year<sp/>=<sp/>std::chrono::year{</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(new_year)<sp/>+<sp/>1};</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(new_month<sp/>&lt;<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>new_month<sp/>+=<sp/>12;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>new_year<sp/>=<sp/>std::chrono::year{</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(new_year)<sp/>-<sp/>1};</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>new_date<sp/>=<sp/>new_year<sp/>/<sp/>std::chrono::month{</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(new_month)}<sp/>/<sp/>date.day();</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Handle<sp/>invalid<sp/>dates<sp/>(e.g.,<sp/>Feb<sp/>30<sp/>-&gt;<sp/>Feb<sp/>28/29)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!new_date.ok())<sp/>{</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Use<sp/>last<sp/>day<sp/>of<sp/>month<sp/>instead</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>new_date<sp/>=<sp/>new_year<sp/>/<sp/>std::chrono::month{</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(new_month)}<sp/>/<sp/>std::chrono::last;</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a140b23c1840e818f12ef46082e8762ba" kindref="member">DateTime</ref>{new_date};</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278" refid="d6/d4f/classpyfolio_1_1DateTime_1ad71c05326b79cd5649136cdb6583a7de" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a140b23c1840e818f12ef46082e8762ba" kindref="member">DateTime</ref><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1ad71c05326b79cd5649136cdb6583a7de" kindref="member">add_years</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>years)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>date<sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a14bed41e6c19c2dfd9c0d36a5edcd29f" kindref="member">to_date</ref>();</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>new_year<sp/>=<sp/>std::chrono::year{</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(date.year())<sp/>+<sp/>years};</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>new_date<sp/>=<sp/>new_year<sp/>/<sp/>date.month()<sp/>/<sp/>date.day();</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Handle<sp/>leap<sp/>year<sp/>edge<sp/>case<sp/>(Feb<sp/>29<sp/>-&gt;<sp/>Feb<sp/>28<sp/>in<sp/>non-leap<sp/>year)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!new_date.ok())<sp/>{</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>new_date<sp/>=<sp/>new_year<sp/>/<sp/>date.month()<sp/>/<sp/>std::chrono::last;</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a140b23c1840e818f12ef46082e8762ba" kindref="member">DateTime</ref>{new_date};</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight></codeline>
+<codeline lineno="294" refid="d6/d4f/classpyfolio_1_1DateTime_1a60af93f70c88c8166eb73a6d9be807f0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a60af93f70c88c8166eb73a6d9be807f0" kindref="member">is_weekday</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>date<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a14bed41e6c19c2dfd9c0d36a5edcd29f" kindref="member">to_date</ref>();</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1aff6090d26f5c0cd5a74608242c8f3f71" kindref="member">time_point</ref><sp/>=<sp/>std::chrono::sys_days{date};</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>weekday<sp/><sp/><sp/><sp/>=<sp/>std::chrono::weekday{<ref refid="d6/d4f/classpyfolio_1_1DateTime_1aff6090d26f5c0cd5a74608242c8f3f71" kindref="member">time_point</ref>};</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>weekday<sp/>!=<sp/>std::chrono::Saturday<sp/>&amp;&amp;<sp/>weekday<sp/>!=<sp/>std::chrono::Sunday;</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="304" refid="d6/d4f/classpyfolio_1_1DateTime_1a428b9799ba78daaf9caed9e67842b450" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a428b9799ba78daaf9caed9e67842b450" kindref="member">day_of_week</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>date<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a14bed41e6c19c2dfd9c0d36a5edcd29f" kindref="member">to_date</ref>();</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1aff6090d26f5c0cd5a74608242c8f3f71" kindref="member">time_point</ref><sp/>=<sp/>std::chrono::sys_days{date};</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>weekday<sp/><sp/><sp/><sp/>=<sp/>std::chrono::weekday{<ref refid="d6/d4f/classpyfolio_1_1DateTime_1aff6090d26f5c0cd5a74608242c8f3f71" kindref="member">time_point</ref>};</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(weekday.c_encoding());</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight></codeline>
+<codeline lineno="314" refid="d6/d4f/classpyfolio_1_1DateTime_1a09faae255bfa8251e234441d58e04497" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a09faae255bfa8251e234441d58e04497" kindref="member">days_since</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a140b23c1840e818f12ef46082e8762ba" kindref="member">DateTime</ref>&amp;<sp/>other)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>diff<sp/>=<sp/>std::chrono::floor&lt;std::chrono::days&gt;(time_point_)<sp/>-</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::chrono::floor&lt;std::chrono::days&gt;(other.time_point_);</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(diff.count());</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight></codeline>
+<codeline lineno="323" refid="d6/d4f/classpyfolio_1_1DateTime_1a43b84b1326b0fca9e1f3c8dc41f8a691" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a140b23c1840e818f12ef46082e8762ba" kindref="member">DateTime</ref><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a43b84b1326b0fca9e1f3c8dc41f8a691" kindref="member">add_business_days</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>days,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dc/ddd/classpyfolio_1_1BusinessCalendar" kindref="compound">BusinessCalendar</ref>&amp;<sp/>calendar<sp/>=<sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a27270e18fd7b3fcba5fcd1ce8533c9e7" kindref="member">default_calendar_</ref>)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>current<sp/><sp/>=<sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>remaining<sp/>=<sp/>std::abs(days);</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>direction<sp/>=<sp/>days<sp/>&gt;<sp/>0<sp/>?<sp/>1<sp/>:<sp/>-1;</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(remaining<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>current<sp/>=<sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a140b23c1840e818f12ef46082e8762ba" kindref="member">DateTime</ref>{current.time_point_<sp/>+<sp/>std::chrono::days{direction}};</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(current.is_business_day(calendar))<sp/>{</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>--remaining;</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>current;</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Comparison<sp/>operators</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="339" refid="d6/d4f/classpyfolio_1_1DateTime_1a57c7e6bb70ab1da2fa61ffeb60b08590" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a57c7e6bb70ab1da2fa61ffeb60b08590" kindref="member">operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a140b23c1840e818f12ef46082e8762ba" kindref="member">DateTime</ref>&amp;<sp/>other)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="340" refid="d6/d4f/classpyfolio_1_1DateTime_1a70cc633c238fd3f8ef8a602bee15b069" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a70cc633c238fd3f8ef8a602bee15b069" kindref="member">operator&lt;=&gt;</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a140b23c1840e818f12ef46082e8762ba" kindref="member">DateTime</ref>&amp;<sp/>other)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"></highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Accessors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="343" refid="d6/d4f/classpyfolio_1_1DateTime_1aff6090d26f5c0cd5a74608242c8f3f71" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1ad77d362107c51226c09e896bdf822f9d" kindref="member">TimePoint</ref>&amp;<sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1aff6090d26f5c0cd5a74608242c8f3f71" kindref="member">time_point</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>time_point_;<sp/>}</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"></highlight></codeline>
+<codeline lineno="348" refid="d6/d4f/classpyfolio_1_1DateTime_1a98b74d1e113cf1ca215928c0e31ba587" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a98b74d1e113cf1ca215928c0e31ba587" kindref="member">year</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<ref refid="d6/d4f/classpyfolio_1_1DateTime_1a14bed41e6c19c2dfd9c0d36a5edcd29f" kindref="member">to_date</ref>().year());<sp/>}</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"></highlight></codeline>
+<codeline lineno="353" refid="d6/d4f/classpyfolio_1_1DateTime_1ad5a7201c60d0020d7270f24d8d10325e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1ad5a7201c60d0020d7270f24d8d10325e" kindref="member">month</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<ref refid="d6/d4f/classpyfolio_1_1DateTime_1a14bed41e6c19c2dfd9c0d36a5edcd29f" kindref="member">to_date</ref>().month());<sp/>}</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"></highlight></codeline>
+<codeline lineno="358" refid="d6/d4f/classpyfolio_1_1DateTime_1ab5864a43c0379f41ed3a2dfc0d9a17f9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1ab5864a43c0379f41ed3a2dfc0d9a17f9" kindref="member">day</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<ref refid="d6/d4f/classpyfolio_1_1DateTime_1a14bed41e6c19c2dfd9c0d36a5edcd29f" kindref="member">to_date</ref>().day());<sp/>}</highlight></codeline>
+<codeline lineno="359"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"></highlight></codeline>
+<codeline lineno="361"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Initialize<sp/>static<sp/>member</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>BusinessCalendar<sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a27270e18fd7b3fcba5fcd1ce8533c9e7" kindref="member">DateTime::default_calendar_</ref>{</highlight><highlight class="stringliteral">&quot;NYSE&quot;</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"></highlight></codeline>
+<codeline lineno="364"><highlight class="normal"></highlight><highlight class="comment">//<sp/>BusinessCalendar<sp/>DateTime<sp/>overloads<sp/>(defined<sp/>after<sp/>DateTime<sp/>class)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="365" refid="dc/ddd/classpyfolio_1_1BusinessCalendar_1a5711cab9566628674bb976d7d4d71cdf" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="dc/ddd/classpyfolio_1_1BusinessCalendar_1a37e4f2d036eefb42604b66da39530949" kindref="member">BusinessCalendar::is_holiday</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref>&amp;<sp/>date)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dc/ddd/classpyfolio_1_1BusinessCalendar_1a37e4f2d036eefb42604b66da39530949" kindref="member">is_holiday</ref>(date.<ref refid="d6/d4f/classpyfolio_1_1DateTime_1a14bed41e6c19c2dfd9c0d36a5edcd29f" kindref="member">to_date</ref>());</highlight></codeline>
+<codeline lineno="367"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"></highlight></codeline>
+<codeline lineno="369" refid="dc/ddd/classpyfolio_1_1BusinessCalendar_1aefc7d92eb158b3c500a314814700ca5a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="dc/ddd/classpyfolio_1_1BusinessCalendar_1accee21b524cbcd2341bf14a748d2413d" kindref="member">BusinessCalendar::is_business_day</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref>&amp;<sp/>date)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dc/ddd/classpyfolio_1_1BusinessCalendar_1accee21b524cbcd2341bf14a748d2413d" kindref="member">is_business_day</ref>(date.<ref refid="d6/d4f/classpyfolio_1_1DateTime_1a14bed41e6c19c2dfd9c0d36a5edcd29f" kindref="member">to_date</ref>());</highlight></codeline>
+<codeline lineno="371"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"></highlight></codeline>
+<codeline lineno="373" refid="dc/ddd/classpyfolio_1_1BusinessCalendar_1a0177da4553069a3a716fa7376309debf" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/ddd/classpyfolio_1_1BusinessCalendar_1a4eb09daeb43ef70ced656afa1b1e8119" kindref="member">BusinessCalendar::add_holiday</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref>&amp;<sp/>date)<sp/>{</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/ddd/classpyfolio_1_1BusinessCalendar_1a4eb09daeb43ef70ced656afa1b1e8119" kindref="member">add_holiday</ref>(date.<ref refid="d6/d4f/classpyfolio_1_1DateTime_1a14bed41e6c19c2dfd9c0d36a5edcd29f" kindref="member">to_date</ref>());</highlight></codeline>
+<codeline lineno="375"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"></highlight></codeline>
+<codeline lineno="380" refid="d5/d98/classpyfolio_1_1DateRange" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d5/d98/classpyfolio_1_1DateRange_1a0bbab8e37cad391cddf9ff230407c203" kindref="member">DateRange</ref><sp/>{</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref><sp/>start_;</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref><sp/>end_;</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/>std::chrono::days<sp/>step_;</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>business_days_only_;</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/ddd/classpyfolio_1_1BusinessCalendar" kindref="compound">BusinessCalendar</ref><sp/>calendar_;</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"></highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="389" refid="d5/d98/classpyfolio_1_1DateRange_1a0bbab8e37cad391cddf9ff230407c203" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/d98/classpyfolio_1_1DateRange_1a0bbab8e37cad391cddf9ff230407c203" kindref="member">DateRange</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref>&amp;<sp/>start,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref>&amp;<sp/>end,<sp/>std::chrono::days<sp/>step<sp/>=<sp/>std::chrono::days{1},</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>business_days_only<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dc/ddd/classpyfolio_1_1BusinessCalendar" kindref="compound">BusinessCalendar</ref>&amp;<sp/>calendar<sp/>=<sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime_1a27270e18fd7b3fcba5fcd1ce8533c9e7" kindref="member">DateTime::default_calendar_</ref>)</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>start_(start),<sp/>end_(end),<sp/>step_(step),<sp/>business_days_only_(business_days_only),<sp/>calendar_(calendar)<sp/>{}</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"></highlight></codeline>
+<codeline lineno="396" refid="d5/d98/classpyfolio_1_1DateRange_1a705b1cb8a0992ca1267a65015786ac9b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;DateTime&gt;<sp/><ref refid="d5/d98/classpyfolio_1_1DateRange_1a705b1cb8a0992ca1267a65015786ac9b" kindref="member">to_vector</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;DateTime&gt;<sp/>dates;</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>current<sp/>=<sp/>start_;</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"></highlight></codeline>
+<codeline lineno="400"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(current<sp/>&lt;=<sp/>end_)<sp/>{</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!business_days_only_<sp/>||<sp/>current.is_business_day(calendar_))<sp/>{</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dates.push_back(current);</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="404"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>current<sp/>=<sp/><ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref>{current.time_point()<sp/>+<sp/>step_};</highlight></codeline>
+<codeline lineno="405"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="406"><highlight class="normal"></highlight></codeline>
+<codeline lineno="407"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>dates;</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="409"><highlight class="normal"></highlight></codeline>
+<codeline lineno="413" refid="d5/d98/classpyfolio_1_1DateRange_1aa1ca0c6382944da9092bd54304003c04" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="d5/d98/classpyfolio_1_1DateRange_1aa1ca0c6382944da9092bd54304003c04" kindref="member">count</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d5/d98/classpyfolio_1_1DateRange_1a705b1cb8a0992ca1267a65015786ac9b" kindref="member">to_vector</ref>().size();<sp/>}</highlight></codeline>
+<codeline lineno="414"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="415"><highlight class="normal"></highlight></codeline>
+<codeline lineno="419" refid="d9/d9c/namespacepyfolio_1_1frequency" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d9/d9c/namespacepyfolio_1_1frequency" kindref="compound">frequency</ref><sp/>{</highlight></codeline>
+<codeline lineno="420"><highlight class="normal"></highlight></codeline>
+<codeline lineno="424" refid="d9/d9c/namespacepyfolio_1_1frequency_1a0a35acb976bf6cfc2db863e29db9616b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d9/d9c/namespacepyfolio_1_1frequency_1a0a35acb976bf6cfc2db863e29db9616b" kindref="member">to_days</ref>(<ref refid="d7/df8/namespacepyfolio_1ad4beb384aab829428a007308f1d0c92e" kindref="member">Frequency</ref><sp/>freq)<sp/>{</highlight></codeline>
+<codeline lineno="425"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(freq)<sp/>{</highlight></codeline>
+<codeline lineno="426"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1ad4beb384aab829428a007308f1d0c92eac512b685438f41daa7386329a3b8f8d3" kindref="member">Frequency::Daily</ref>:</highlight></codeline>
+<codeline lineno="427"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="428"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1ad4beb384aab829428a007308f1d0c92ea6c25e6a6da95b3d583c6ec4c3f82ed4d" kindref="member">Frequency::Weekly</ref>:</highlight></codeline>
+<codeline lineno="429"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>7;</highlight></codeline>
+<codeline lineno="430"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1ad4beb384aab829428a007308f1d0c92ea9030e39f00132d583da4122532e509e9" kindref="member">Frequency::Monthly</ref>:</highlight></codeline>
+<codeline lineno="431"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>30;<sp/><sp/></highlight><highlight class="comment">//<sp/>Approximate</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="432"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1ad4beb384aab829428a007308f1d0c92eabe92c62702dcec6751c101b5adb0ce3b" kindref="member">Frequency::Quarterly</ref>:</highlight></codeline>
+<codeline lineno="433"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>91;<sp/><sp/></highlight><highlight class="comment">//<sp/>Approximate</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="434"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1ad4beb384aab829428a007308f1d0c92eacf5ea7953dc47105e0eb179dbefaaf46" kindref="member">Frequency::Yearly</ref>:</highlight></codeline>
+<codeline lineno="435"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>365;<sp/><sp/></highlight><highlight class="comment">//<sp/>Approximate</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="436"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="437"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="438"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="439"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="440"><highlight class="normal"></highlight></codeline>
+<codeline lineno="444" refid="d9/d9c/namespacepyfolio_1_1frequency_1a74fa147efbd62bd66d74854830c8a124" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="d9/d9c/namespacepyfolio_1_1frequency_1a74fa147efbd62bd66d74854830c8a124" kindref="member">to_annual_factor</ref>(<ref refid="d7/df8/namespacepyfolio_1ad4beb384aab829428a007308f1d0c92e" kindref="member">Frequency</ref><sp/>freq)<sp/>{</highlight></codeline>
+<codeline lineno="445"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(freq)<sp/>{</highlight></codeline>
+<codeline lineno="446"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1ad4beb384aab829428a007308f1d0c92eac512b685438f41daa7386329a3b8f8d3" kindref="member">Frequency::Daily</ref>:</highlight></codeline>
+<codeline lineno="447"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="db/d9c/namespacepyfolio_1_1constants_1accf4b9e8a1c9179437b61a3f9a0e2e53" kindref="member">constants::TRADING_DAYS_PER_YEAR</ref>;</highlight></codeline>
+<codeline lineno="448"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1ad4beb384aab829428a007308f1d0c92ea6c25e6a6da95b3d583c6ec4c3f82ed4d" kindref="member">Frequency::Weekly</ref>:</highlight></codeline>
+<codeline lineno="449"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="db/d9c/namespacepyfolio_1_1constants_1a72bad45b01d55a713757d670c72152d5" kindref="member">constants::WEEKS_PER_YEAR</ref>;</highlight></codeline>
+<codeline lineno="450"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1ad4beb384aab829428a007308f1d0c92ea9030e39f00132d583da4122532e509e9" kindref="member">Frequency::Monthly</ref>:</highlight></codeline>
+<codeline lineno="451"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="db/d9c/namespacepyfolio_1_1constants_1aaf02ba4a6fdbff6c4d053915aef4c583" kindref="member">constants::MONTHS_PER_YEAR</ref>;</highlight></codeline>
+<codeline lineno="452"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1ad4beb384aab829428a007308f1d0c92eabe92c62702dcec6751c101b5adb0ce3b" kindref="member">Frequency::Quarterly</ref>:</highlight></codeline>
+<codeline lineno="453"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>4.0;</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="d7/df8/namespacepyfolio_1ad4beb384aab829428a007308f1d0c92eacf5ea7953dc47105e0eb179dbefaaf46" kindref="member">Frequency::Yearly</ref>:</highlight></codeline>
+<codeline lineno="455"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1.0;</highlight></codeline>
+<codeline lineno="456"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="457"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="db/d9c/namespacepyfolio_1_1constants_1accf4b9e8a1c9179437b61a3f9a0e2e53" kindref="member">constants::TRADING_DAYS_PER_YEAR</ref>;</highlight></codeline>
+<codeline lineno="458"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="459"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="460"><highlight class="normal"></highlight></codeline>
+<codeline lineno="461"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>frequency</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="462"><highlight class="normal"></highlight></codeline>
+<codeline lineno="463"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>pyfolio</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/datetime.h"/>
+  </compounddef>
+</doxygen>

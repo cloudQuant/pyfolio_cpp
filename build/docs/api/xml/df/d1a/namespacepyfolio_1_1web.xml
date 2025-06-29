@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="df/d1a/namespacepyfolio_1_1web" kind="namespace" language="C++">
+    <compoundname>pyfolio::web</compoundname>
+    <innerclass refid="da/d05/structpyfolio_1_1web_1_1ApiConfig" prot="public">pyfolio::web::ApiConfig</innerclass>
+    <innerclass refid="db/db8/classpyfolio_1_1web_1_1JsonSerializer" prot="public">pyfolio::web::JsonSerializer</innerclass>
+    <innerclass refid="d8/d0c/classpyfolio_1_1web_1_1RestApiServer" prot="public">pyfolio::web::RestApiServer</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="df/d1a/namespacepyfolio_1_1web_1add50778298e0a694ecefdd6b06d6fb6e" prot="public" static="no">
+        <type>nlohmann::json</type>
+        <definition>using pyfolio::web::json =  nlohmann::json</definition>
+        <argsstring></argsstring>
+        <name>json</name>
+        <qualifiedname>pyfolio::web::json</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/json_serializer.h" line="25" column="1" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/json_serializer.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/json_serializer.h" line="23" column="1"/>
+  </compounddef>
+</doxygen>

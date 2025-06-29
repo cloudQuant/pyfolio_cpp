@@ -1,0 +1,288 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dd/dea/classpyfolio_1_1positions_1_1AllocationAnalyzer" kind="class" language="C++" prot="public">
+    <compoundname>pyfolio::positions::AllocationAnalyzer</compoundname>
+    <includes refid="d0/db7/allocation_8h" local="no">allocation.h</includes>
+    <innerclass refid="d1/db1/structpyfolio_1_1positions_1_1AllocationAnalyzer_1_1AllocationDrift" prot="public">pyfolio::positions::AllocationAnalyzer::AllocationDrift</innerclass>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="dd/dea/classpyfolio_1_1positions_1_1AllocationAnalyzer_1a8418cff4cf7f7e18d7da165a28193325" prot="private" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="d7/df8/namespacepyfolio_1a66e3e2ebe494a9dccbeb419408aaf7ea" kindref="member">Symbol</ref>, std::string &gt;</type>
+        <definition>std::map&lt;Symbol, std::string&gt; pyfolio::positions::AllocationAnalyzer::symbol_to_sector_</definition>
+        <argsstring></argsstring>
+        <name>symbol_to_sector_</name>
+        <qualifiedname>pyfolio::positions::AllocationAnalyzer::symbol_to_sector_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" line="41" column="14" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/dea/classpyfolio_1_1positions_1_1AllocationAnalyzer_1ae34f8746f7296e07b90eb429d51d4e95" prot="private" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="d7/df8/namespacepyfolio_1a66e3e2ebe494a9dccbeb419408aaf7ea" kindref="member">Symbol</ref>, std::string &gt;</type>
+        <definition>std::map&lt;Symbol, std::string&gt; pyfolio::positions::AllocationAnalyzer::symbol_to_industry_</definition>
+        <argsstring></argsstring>
+        <name>symbol_to_industry_</name>
+        <qualifiedname>pyfolio::positions::AllocationAnalyzer::symbol_to_industry_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" line="42" column="14" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/dea/classpyfolio_1_1positions_1_1AllocationAnalyzer_1a440ff1df7b87e152db0d83c80386e16c" prot="private" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="d7/df8/namespacepyfolio_1a66e3e2ebe494a9dccbeb419408aaf7ea" kindref="member">Symbol</ref>, std::string &gt;</type>
+        <definition>std::map&lt;Symbol, std::string&gt; pyfolio::positions::AllocationAnalyzer::symbol_to_country_</definition>
+        <argsstring></argsstring>
+        <name>symbol_to_country_</name>
+        <qualifiedname>pyfolio::positions::AllocationAnalyzer::symbol_to_country_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" line="43" column="14" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="dd/dea/classpyfolio_1_1positions_1_1AllocationAnalyzer_1a24d506b4919354ae06016c026030afca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void pyfolio::positions::AllocationAnalyzer::set_sector_mapping</definition>
+        <argsstring>(const std::map&lt; Symbol, std::string &gt; &amp;mapping)</argsstring>
+        <name>set_sector_mapping</name>
+        <qualifiedname>pyfolio::positions::AllocationAnalyzer::set_sector_mapping</qualifiedname>
+        <param>
+          <type>const std::map&lt; <ref refid="d7/df8/namespacepyfolio_1a66e3e2ebe494a9dccbeb419408aaf7ea" kindref="member">Symbol</ref>, std::string &gt; &amp;</type>
+          <declname>mapping</declname>
+        </param>
+        <briefdescription>
+<para>Set sector mapping. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" line="49" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dea/classpyfolio_1_1positions_1_1AllocationAnalyzer_1af79451db1fb1ae8ad17ca246d6d6ea29" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void pyfolio::positions::AllocationAnalyzer::set_industry_mapping</definition>
+        <argsstring>(const std::map&lt; Symbol, std::string &gt; &amp;mapping)</argsstring>
+        <name>set_industry_mapping</name>
+        <qualifiedname>pyfolio::positions::AllocationAnalyzer::set_industry_mapping</qualifiedname>
+        <param>
+          <type>const std::map&lt; <ref refid="d7/df8/namespacepyfolio_1a66e3e2ebe494a9dccbeb419408aaf7ea" kindref="member">Symbol</ref>, std::string &gt; &amp;</type>
+          <declname>mapping</declname>
+        </param>
+        <briefdescription>
+<para>Set industry mapping. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" line="54" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dea/classpyfolio_1_1positions_1_1AllocationAnalyzer_1a44f53acaa22284992713a45e71b20331" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void pyfolio::positions::AllocationAnalyzer::set_country_mapping</definition>
+        <argsstring>(const std::map&lt; Symbol, std::string &gt; &amp;mapping)</argsstring>
+        <name>set_country_mapping</name>
+        <qualifiedname>pyfolio::positions::AllocationAnalyzer::set_country_mapping</qualifiedname>
+        <param>
+          <type>const std::map&lt; <ref refid="d7/df8/namespacepyfolio_1a66e3e2ebe494a9dccbeb419408aaf7ea" kindref="member">Symbol</ref>, std::string &gt; &amp;</type>
+          <declname>mapping</declname>
+        </param>
+        <briefdescription>
+<para>Set country mapping. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" line="59" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" bodystart="59" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dea/classpyfolio_1_1positions_1_1AllocationAnalyzer_1af712568121f03d778a806ab3de01afa8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; std::vector&lt; <ref refid="d6/d8e/structpyfolio_1_1positions_1_1SectorAllocation" kindref="compound">SectorAllocation</ref> &gt; &gt;</type>
+        <definition>Result&lt; std::vector&lt; SectorAllocation &gt; &gt; pyfolio::positions::AllocationAnalyzer::calculate_sector_allocations</definition>
+        <argsstring>(const PortfolioHoldings &amp;holdings) const</argsstring>
+        <name>calculate_sector_allocations</name>
+        <qualifiedname>pyfolio::positions::AllocationAnalyzer::calculate_sector_allocations</qualifiedname>
+        <param>
+          <type>const <ref refid="dc/dbf/classpyfolio_1_1positions_1_1PortfolioHoldings" kindref="compound">PortfolioHoldings</ref> &amp;</type>
+          <declname>holdings</declname>
+        </param>
+        <briefdescription>
+<para>Calculate sector allocations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" line="64" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" bodystart="64" bodyend="99"/>
+        <references refid="dc/dbf/classpyfolio_1_1positions_1_1PortfolioHoldings_1a315a3a6f55a4101a289ab1bf2003762a" compoundref="d7/d0c/holdings_8h" startline="67" endline="67">pyfolio::positions::PortfolioHoldings::holdings</references>
+        <references refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9a9e32e294e8358345f2b9b52b7f8b41fa" compoundref="d3/d11/error__handling_8h" startline="18">pyfolio::InsufficientData</references>
+      </memberdef>
+      <memberdef kind="function" id="dd/dea/classpyfolio_1_1positions_1_1AllocationAnalyzer_1a530162fa9e593cbe432222f1d2d21d79" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; <ref refid="de/df7/structpyfolio_1_1positions_1_1ConcentrationMetrics" kindref="compound">ConcentrationMetrics</ref> &gt;</type>
+        <definition>Result&lt; ConcentrationMetrics &gt; pyfolio::positions::AllocationAnalyzer::calculate_concentration</definition>
+        <argsstring>(const PortfolioHoldings &amp;holdings) const</argsstring>
+        <name>calculate_concentration</name>
+        <qualifiedname>pyfolio::positions::AllocationAnalyzer::calculate_concentration</qualifiedname>
+        <param>
+          <type>const <ref refid="dc/dbf/classpyfolio_1_1positions_1_1PortfolioHoldings" kindref="compound">PortfolioHoldings</ref> &amp;</type>
+          <declname>holdings</declname>
+        </param>
+        <briefdescription>
+<para>Calculate concentration metrics. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" line="104" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" bodystart="104" bodyend="145"/>
+        <references refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" compoundref="d3/d11/error__handling_8h" startline="111" endline="116">pyfolio::Result&lt; T &gt;::error</references>
+        <references refid="dc/dbf/classpyfolio_1_1positions_1_1PortfolioHoldings_1a315a3a6f55a4101a289ab1bf2003762a" compoundref="d7/d0c/holdings_8h" startline="67" endline="67">pyfolio::positions::PortfolioHoldings::holdings</references>
+        <references refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9a9e32e294e8358345f2b9b52b7f8b41fa" compoundref="d3/d11/error__handling_8h" startline="18">pyfolio::InsufficientData</references>
+        <references refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" compoundref="d3/d11/error__handling_8h" startline="74" endline="74">pyfolio::Result&lt; T &gt;::success</references>
+      </memberdef>
+      <memberdef kind="function" id="dd/dea/classpyfolio_1_1positions_1_1AllocationAnalyzer_1a914e6a4ba11f6346e18dad6f0150e7ed" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename GroupFunc</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; <ref refid="da/deb/classpyfolio_1_1DataFrame" kindref="compound">DataFrame</ref> &gt;</type>
+        <definition>Result&lt; DataFrame &gt; pyfolio::positions::AllocationAnalyzer::analyze_by_group</definition>
+        <argsstring>(const PortfolioHoldings &amp;holdings, GroupFunc group_func, const std::string &amp;group_name) const</argsstring>
+        <name>analyze_by_group</name>
+        <qualifiedname>pyfolio::positions::AllocationAnalyzer::analyze_by_group</qualifiedname>
+        <param>
+          <type>const <ref refid="dc/dbf/classpyfolio_1_1positions_1_1PortfolioHoldings" kindref="compound">PortfolioHoldings</ref> &amp;</type>
+          <declname>holdings</declname>
+        </param>
+        <param>
+          <type>GroupFunc</type>
+          <declname>group_func</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>group_name</declname>
+        </param>
+        <briefdescription>
+<para>Analyze allocation by custom grouping. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" line="151" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" bodystart="151" bodyend="196"/>
+        <references refid="da/deb/classpyfolio_1_1DataFrame_1ae16ceddcf917845c49128783794c109e" compoundref="d2/d99/dataframe_8h" startline="88" endline="101">pyfolio::DataFrame::add_column</references>
+        <references refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" compoundref="d3/d11/error__handling_8h" startline="111" endline="116">pyfolio::Result&lt; T &gt;::error</references>
+        <references refid="dc/dbf/classpyfolio_1_1positions_1_1PortfolioHoldings_1a315a3a6f55a4101a289ab1bf2003762a" compoundref="d7/d0c/holdings_8h" startline="67" endline="67">pyfolio::positions::PortfolioHoldings::holdings</references>
+        <references refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9a9e32e294e8358345f2b9b52b7f8b41fa" compoundref="d3/d11/error__handling_8h" startline="18">pyfolio::InsufficientData</references>
+        <references refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" compoundref="d3/d11/error__handling_8h" startline="74" endline="74">pyfolio::Result&lt; T &gt;::success</references>
+        <references refid="dc/dbf/classpyfolio_1_1positions_1_1PortfolioHoldings_1ae6d65bfe733f0302cd61c10f4b5bd75f" compoundref="d7/d0c/holdings_8h" startline="64" endline="64">pyfolio::positions::PortfolioHoldings::timestamp</references>
+      </memberdef>
+      <memberdef kind="function" id="dd/dea/classpyfolio_1_1positions_1_1AllocationAnalyzer_1a958088048206a41ef14fe5dd1a34aa15" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; std::vector&lt; <ref refid="d1/db1/structpyfolio_1_1positions_1_1AllocationAnalyzer_1_1AllocationDrift" kindref="compound">AllocationDrift</ref> &gt; &gt;</type>
+        <definition>Result&lt; std::vector&lt; AllocationDrift &gt; &gt; pyfolio::positions::AllocationAnalyzer::calculate_drift</definition>
+        <argsstring>(const PortfolioHoldings &amp;holdings, const std::map&lt; Symbol, Weight &gt; &amp;target_weights) const</argsstring>
+        <name>calculate_drift</name>
+        <qualifiedname>pyfolio::positions::AllocationAnalyzer::calculate_drift</qualifiedname>
+        <param>
+          <type>const <ref refid="dc/dbf/classpyfolio_1_1positions_1_1PortfolioHoldings" kindref="compound">PortfolioHoldings</ref> &amp;</type>
+          <declname>holdings</declname>
+        </param>
+        <param>
+          <type>const std::map&lt; <ref refid="d7/df8/namespacepyfolio_1a66e3e2ebe494a9dccbeb419408aaf7ea" kindref="member">Symbol</ref>, <ref refid="d7/df8/namespacepyfolio_1af989fd50261f45e6abc49511c6dfbdf0" kindref="member">Weight</ref> &gt; &amp;</type>
+          <declname>target_weights</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" line="210" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" bodystart="210" bodyend="263"/>
+        <references refid="d1/db1/structpyfolio_1_1positions_1_1AllocationAnalyzer_1_1AllocationDrift_1a209ff069f9409126e6a6964e468e0c24" compoundref="d0/db7/allocation_8h" startline="203">pyfolio::positions::AllocationAnalyzer::AllocationDrift::current_weight</references>
+        <references refid="d1/db1/structpyfolio_1_1positions_1_1AllocationAnalyzer_1_1AllocationDrift_1a42244e5214823ad839565343ed041a52" compoundref="d0/db7/allocation_8h" startline="205">pyfolio::positions::AllocationAnalyzer::AllocationDrift::drift</references>
+        <references refid="dc/dbf/classpyfolio_1_1positions_1_1PortfolioHoldings_1a0d055a35906794c27b9136229a063a65" compoundref="d7/d0c/holdings_8h" startline="111" endline="117">pyfolio::positions::PortfolioHoldings::get_holding</references>
+        <references refid="dc/dbf/classpyfolio_1_1positions_1_1PortfolioHoldings_1a315a3a6f55a4101a289ab1bf2003762a" compoundref="d7/d0c/holdings_8h" startline="67" endline="67">pyfolio::positions::PortfolioHoldings::holdings</references>
+        <references refid="d1/db1/structpyfolio_1_1positions_1_1AllocationAnalyzer_1_1AllocationDrift_1a0bff4c1d46fb69e051ba8f72ac692464" compoundref="d0/db7/allocation_8h" startline="206">pyfolio::positions::AllocationAnalyzer::AllocationDrift::rebalance_shares</references>
+        <references refid="d1/db1/structpyfolio_1_1positions_1_1AllocationAnalyzer_1_1AllocationDrift_1aad9ff1cf4bd4d298394599e04ced0a82" compoundref="d0/db7/allocation_8h" startline="207">pyfolio::positions::AllocationAnalyzer::AllocationDrift::rebalance_value</references>
+        <references refid="d1/db1/structpyfolio_1_1positions_1_1AllocationAnalyzer_1_1AllocationDrift_1ae68e873dc23587ccf167a01e78d87106" compoundref="d0/db7/allocation_8h" startline="202">pyfolio::positions::AllocationAnalyzer::AllocationDrift::symbol</references>
+        <references refid="d1/db1/structpyfolio_1_1positions_1_1AllocationAnalyzer_1_1AllocationDrift_1ac272ca398905d448afd2dfd9c18519df" compoundref="d0/db7/allocation_8h" startline="204">pyfolio::positions::AllocationAnalyzer::AllocationDrift::target_weight</references>
+        <references refid="dc/dbf/classpyfolio_1_1positions_1_1PortfolioHoldings_1a024425899ff9486a38f8a209c4369924" compoundref="d7/d0c/holdings_8h" startline="66" endline="66">pyfolio::positions::PortfolioHoldings::total_value</references>
+      </memberdef>
+      <memberdef kind="function" id="dd/dea/classpyfolio_1_1positions_1_1AllocationAnalyzer_1aa40a3a7468229f09a6950c0d9e8b459f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; <ref refid="da/deb/classpyfolio_1_1DataFrame" kindref="compound">DataFrame</ref> &gt;</type>
+        <definition>Result&lt; DataFrame &gt; pyfolio::positions::AllocationAnalyzer::analyze_allocation_stability</definition>
+        <argsstring>(const HoldingsSeries &amp;holdings_series) const</argsstring>
+        <name>analyze_allocation_stability</name>
+        <qualifiedname>pyfolio::positions::AllocationAnalyzer::analyze_allocation_stability</qualifiedname>
+        <param>
+          <type>const <ref refid="d0/d02/classpyfolio_1_1positions_1_1HoldingsSeries" kindref="compound">HoldingsSeries</ref> &amp;</type>
+          <declname>holdings_series</declname>
+        </param>
+        <briefdescription>
+<para>Analyze allocation stability over time. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" line="268" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" bodystart="268" bodyend="343"/>
+        <references refid="da/deb/classpyfolio_1_1DataFrame_1ae16ceddcf917845c49128783794c109e" compoundref="d2/d99/dataframe_8h" startline="88" endline="101">pyfolio::DataFrame::add_column</references>
+        <references refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" compoundref="d3/d11/error__handling_8h" startline="111" endline="116">pyfolio::Result&lt; T &gt;::error</references>
+        <references refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9a9e32e294e8358345f2b9b52b7f8b41fa" compoundref="d3/d11/error__handling_8h" startline="18">pyfolio::InsufficientData</references>
+        <references refid="d0/d02/classpyfolio_1_1positions_1_1HoldingsSeries_1aa339b863f39735db8959a933074a432e" compoundref="d7/d0c/holdings_8h" startline="247" endline="247">pyfolio::positions::HoldingsSeries::size</references>
+        <references refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" compoundref="d3/d11/error__handling_8h" startline="74" endline="74">pyfolio::Result&lt; T &gt;::success</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="dd/dea/classpyfolio_1_1positions_1_1AllocationAnalyzer_1a01f9c811abd30933a710400d76e78d1c" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double pyfolio::positions::AllocationAnalyzer::calculate_gini_coefficient</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;weights) const</argsstring>
+        <name>calculate_gini_coefficient</name>
+        <qualifiedname>pyfolio::positions::AllocationAnalyzer::calculate_gini_coefficient</qualifiedname>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>weights</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" line="346" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" bodystart="346" bodyend="365"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Allocation analyzer. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" line="39" column="1" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" bodystart="39" bodyend="366"/>
+    <listofallmembers>
+      <member refid="dd/dea/classpyfolio_1_1positions_1_1AllocationAnalyzer_1aa40a3a7468229f09a6950c0d9e8b459f" prot="public" virt="non-virtual"><scope>pyfolio::positions::AllocationAnalyzer</scope><name>analyze_allocation_stability</name></member>
+      <member refid="dd/dea/classpyfolio_1_1positions_1_1AllocationAnalyzer_1a914e6a4ba11f6346e18dad6f0150e7ed" prot="public" virt="non-virtual"><scope>pyfolio::positions::AllocationAnalyzer</scope><name>analyze_by_group</name></member>
+      <member refid="dd/dea/classpyfolio_1_1positions_1_1AllocationAnalyzer_1a530162fa9e593cbe432222f1d2d21d79" prot="public" virt="non-virtual"><scope>pyfolio::positions::AllocationAnalyzer</scope><name>calculate_concentration</name></member>
+      <member refid="dd/dea/classpyfolio_1_1positions_1_1AllocationAnalyzer_1a958088048206a41ef14fe5dd1a34aa15" prot="public" virt="non-virtual"><scope>pyfolio::positions::AllocationAnalyzer</scope><name>calculate_drift</name></member>
+      <member refid="dd/dea/classpyfolio_1_1positions_1_1AllocationAnalyzer_1a01f9c811abd30933a710400d76e78d1c" prot="private" virt="non-virtual"><scope>pyfolio::positions::AllocationAnalyzer</scope><name>calculate_gini_coefficient</name></member>
+      <member refid="dd/dea/classpyfolio_1_1positions_1_1AllocationAnalyzer_1af712568121f03d778a806ab3de01afa8" prot="public" virt="non-virtual"><scope>pyfolio::positions::AllocationAnalyzer</scope><name>calculate_sector_allocations</name></member>
+      <member refid="dd/dea/classpyfolio_1_1positions_1_1AllocationAnalyzer_1a44f53acaa22284992713a45e71b20331" prot="public" virt="non-virtual"><scope>pyfolio::positions::AllocationAnalyzer</scope><name>set_country_mapping</name></member>
+      <member refid="dd/dea/classpyfolio_1_1positions_1_1AllocationAnalyzer_1af79451db1fb1ae8ad17ca246d6d6ea29" prot="public" virt="non-virtual"><scope>pyfolio::positions::AllocationAnalyzer</scope><name>set_industry_mapping</name></member>
+      <member refid="dd/dea/classpyfolio_1_1positions_1_1AllocationAnalyzer_1a24d506b4919354ae06016c026030afca" prot="public" virt="non-virtual"><scope>pyfolio::positions::AllocationAnalyzer</scope><name>set_sector_mapping</name></member>
+      <member refid="dd/dea/classpyfolio_1_1positions_1_1AllocationAnalyzer_1a440ff1df7b87e152db0d83c80386e16c" prot="private" virt="non-virtual"><scope>pyfolio::positions::AllocationAnalyzer</scope><name>symbol_to_country_</name></member>
+      <member refid="dd/dea/classpyfolio_1_1positions_1_1AllocationAnalyzer_1ae34f8746f7296e07b90eb429d51d4e95" prot="private" virt="non-virtual"><scope>pyfolio::positions::AllocationAnalyzer</scope><name>symbol_to_industry_</name></member>
+      <member refid="dd/dea/classpyfolio_1_1positions_1_1AllocationAnalyzer_1a8418cff4cf7f7e18d7da165a28193325" prot="private" virt="non-virtual"><scope>pyfolio::positions::AllocationAnalyzer</scope><name>symbol_to_sector_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dir_33df75d5c2270a591109cd9cc85fbc08" kind="dir">
+    <compoundname>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web</compoundname>
+    <innerfile refid="d4/d45/json__serializer_8h">json_serializer.h</innerfile>
+    <innerfile refid="de/de7/rest__api__server_8h">rest_api_server.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/web/"/>
+  </compounddef>
+</doxygen>

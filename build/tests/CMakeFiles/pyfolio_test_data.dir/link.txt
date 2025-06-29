@@ -1,0 +1,2 @@
+/usr/bin/ar qc libpyfolio_test_data.a CMakeFiles/pyfolio_test_data.dir/test_data/pyfolio_equivalent_data.cpp.o
+/usr/bin/ranlib libpyfolio_test_data.a

@@ -1,0 +1,489 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="d8/ddb/namespacepyfolio_1_1io" kind="namespace" language="C++">
+    <compoundname>pyfolio::io</compoundname>
+    <innerclass refid="d2/da2/structpyfolio_1_1io_1_1CSVConfig" prot="public">pyfolio::io::CSVConfig</innerclass>
+    <innerclass refid="d6/d82/classpyfolio_1_1io_1_1CSVParser" prot="public">pyfolio::io::CSVParser</innerclass>
+    <innernamespace refid="db/d43/namespacepyfolio_1_1io_1_1sample__data">pyfolio::io::sample_data</innernamespace>
+    <innernamespace refid="d5/dc0/namespacepyfolio_1_1io_1_1validation">pyfolio::io::validation</innernamespace>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="d8/ddb/namespacepyfolio_1_1io_1ab23fad32cbb2df97533bd91e60e98b0a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &gt;</type>
+        <definition>Result&lt; TimeSeries&lt; Return &gt; &gt; pyfolio::io::load_returns_from_csv</definition>
+        <argsstring>(const std::string &amp;file_path, const CSVConfig &amp;config=CSVConfig{})</argsstring>
+        <name>load_returns_from_csv</name>
+        <qualifiedname>pyfolio::io::load_returns_from_csv</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>file_path</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d2/da2/structpyfolio_1_1io_1_1CSVConfig" kindref="compound">CSVConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval><ref refid="d2/da2/structpyfolio_1_1io_1_1CSVConfig" kindref="compound">CSVConfig</ref>{}</defval>
+        </param>
+        <briefdescription>
+<para>Load returns data from CSV file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Expected CSV format: date,return 2023-01-01,0.01 2023-01-02,-0.005 ...</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path to CSV file </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CSV parsing configuration </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref> containing time series of returns </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/io/data_loader.h" line="360" column="15" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/io/data_loader.h" bodystart="360" bodyend="403" declfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/io/data_loader.h" declline="60" declcolumn="8"/>
+        <references refid="d2/da2/structpyfolio_1_1io_1_1CSVConfig_1a9d3a20c426c81a0d096494eac2477aa8" compoundref="d2/db9/data__loader_8h" startline="23">pyfolio::io::CSVConfig::delimiter</references>
+        <references refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9a2767828026039e8ba7b38973cbb701f2" compoundref="d3/d11/error__handling_8h" startline="27">pyfolio::FileNotFound</references>
+        <references refid="d2/da2/structpyfolio_1_1io_1_1CSVConfig_1ae9718c63d1ccefb61b89944c24b4225c" compoundref="d2/db9/data__loader_8h" startline="24">pyfolio::io::CSVConfig::has_header</references>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1a165f6a4758d61017bdcfb78f2457ba24" compoundref="d8/d51/time__series_8h" startline="143" endline="146">pyfolio::TimeSeries&lt; T &gt;::push_back</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/ddb/namespacepyfolio_1_1io_1a1d7878441de961a76bf4a6c94a36d571" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &gt;</type>
+        <definition>Result&lt; TimeSeries&lt; Return &gt; &gt; pyfolio::io::load_benchmark_from_csv</definition>
+        <argsstring>(const std::string &amp;file_path, const CSVConfig &amp;config=CSVConfig{})</argsstring>
+        <name>load_benchmark_from_csv</name>
+        <qualifiedname>pyfolio::io::load_benchmark_from_csv</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>file_path</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d2/da2/structpyfolio_1_1io_1_1CSVConfig" kindref="compound">CSVConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval><ref refid="d2/da2/structpyfolio_1_1io_1_1CSVConfig" kindref="compound">CSVConfig</ref>{}</defval>
+        </param>
+        <briefdescription>
+<para>Load benchmark returns from CSV file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Same format as returns CSV</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path to CSV file </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CSV parsing configuration </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref> containing time series of benchmark returns </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/io/data_loader.h" line="71" column="8" declfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/io/data_loader.h" declline="71" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/ddb/namespacepyfolio_1_1io_1ab9726f6bff83e1302eabc8b81e91cabb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; std::unordered_map&lt; std::string, <ref refid="d6/df6/structpyfolio_1_1Position" kindref="compound">Position</ref> &gt; &gt; &gt;</type>
+        <definition>Result&lt; TimeSeries&lt; std::unordered_map&lt; std::string, Position &gt; &gt; &gt; pyfolio::io::load_positions_from_csv</definition>
+        <argsstring>(const std::string &amp;file_path, const CSVConfig &amp;config=CSVConfig{})</argsstring>
+        <name>load_positions_from_csv</name>
+        <qualifiedname>pyfolio::io::load_positions_from_csv</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>file_path</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d2/da2/structpyfolio_1_1io_1_1CSVConfig" kindref="compound">CSVConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval><ref refid="d2/da2/structpyfolio_1_1io_1_1CSVConfig" kindref="compound">CSVConfig</ref>{}</defval>
+        </param>
+        <briefdescription>
+<para>Load positions data from CSV file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Expected CSV format: date,symbol,shares,price 2023-01-01,AAPL,100,150.0 2023-01-01,GOOGL,50,2800.0 ...</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path to CSV file </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CSV parsing configuration </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref> containing time series of positions </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/io/data_loader.h" line="407" column="15" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/io/data_loader.h" bodystart="407" bodyend="412" declfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/io/data_loader.h" declline="86" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/ddb/namespacepyfolio_1_1io_1a3bcd3fb1db46f772992f0ca116e05605" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; std::vector&lt; <ref refid="d5/d11/structpyfolio_1_1Transaction" kindref="compound">Transaction</ref> &gt; &gt;</type>
+        <definition>Result&lt; std::vector&lt; Transaction &gt; &gt; pyfolio::io::load_transactions_from_csv</definition>
+        <argsstring>(const std::string &amp;file_path, const CSVConfig &amp;config=CSVConfig{})</argsstring>
+        <name>load_transactions_from_csv</name>
+        <qualifiedname>pyfolio::io::load_transactions_from_csv</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>file_path</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d2/da2/structpyfolio_1_1io_1_1CSVConfig" kindref="compound">CSVConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval><ref refid="d2/da2/structpyfolio_1_1io_1_1CSVConfig" kindref="compound">CSVConfig</ref>{}</defval>
+        </param>
+        <briefdescription>
+<para>Load transactions data from CSV file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Expected CSV format: datetime,symbol,shares,price,side 2023-01-01 09:30:00,AAPL,100,150.0,buy 2023-01-01 10:15:00,GOOGL,-50,2800.0,sell ...</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path to CSV file </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CSV parsing configuration </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref> containing vector of transactions </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/io/data_loader.h" line="414" column="15" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/io/data_loader.h" bodystart="414" bodyend="419" declfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/io/data_loader.h" declline="102" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/ddb/namespacepyfolio_1_1io_1a9c45dfe0b448de71bedd1032fd1dc50a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; std::unordered_map&lt; std::string, <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &gt; &gt;</type>
+        <definition>Result&lt; TimeSeries&lt; std::unordered_map&lt; std::string, Return &gt; &gt; &gt; pyfolio::io::load_factor_returns_from_csv</definition>
+        <argsstring>(const std::string &amp;file_path, const CSVConfig &amp;config=CSVConfig{})</argsstring>
+        <name>load_factor_returns_from_csv</name>
+        <qualifiedname>pyfolio::io::load_factor_returns_from_csv</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>file_path</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d2/da2/structpyfolio_1_1io_1_1CSVConfig" kindref="compound">CSVConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval><ref refid="d2/da2/structpyfolio_1_1io_1_1CSVConfig" kindref="compound">CSVConfig</ref>{}</defval>
+        </param>
+        <briefdescription>
+<para>Load factor returns from CSV file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Expected CSV format: date,momentum,value,size,profitability,investment 2023-01-01,0.001,-0.002,0.003,0.001,0.000 ...</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path to CSV file </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CSV parsing configuration </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref> containing time series of factor returns </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/io/data_loader.h" line="421" column="15" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/io/data_loader.h" bodystart="421" bodyend="426" declfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/io/data_loader.h" declline="117" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/ddb/namespacepyfolio_1_1io_1a31d2fcdb8b5b9afcc99b3c1b9b2c42fa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; std::unordered_map&lt; std::string, <ref refid="d4/d3e/structpyfolio_1_1OHLCVData" kindref="compound">OHLCVData</ref> &gt; &gt; &gt;</type>
+        <definition>Result&lt; TimeSeries&lt; std::unordered_map&lt; std::string, OHLCVData &gt; &gt; &gt; pyfolio::io::load_market_data_from_csv</definition>
+        <argsstring>(const std::string &amp;file_path, const CSVConfig &amp;config=CSVConfig{})</argsstring>
+        <name>load_market_data_from_csv</name>
+        <qualifiedname>pyfolio::io::load_market_data_from_csv</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>file_path</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d2/da2/structpyfolio_1_1io_1_1CSVConfig" kindref="compound">CSVConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval><ref refid="d2/da2/structpyfolio_1_1io_1_1CSVConfig" kindref="compound">CSVConfig</ref>{}</defval>
+        </param>
+        <briefdescription>
+<para>Load market data from CSV file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Expected CSV format: date,symbol,open,high,low,close,volume 2023-01-01,AAPL,150.0,152.0,149.0,151.0,1000000 ...</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path to CSV file </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CSV parsing configuration </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref> containing time series of market data </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/io/data_loader.h" line="428" column="15" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/io/data_loader.h" bodystart="428" bodyend="433" declfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/io/data_loader.h" declline="132" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/ddb/namespacepyfolio_1_1io_1ac5936d5d5b52389eca310e60b1e799b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; void &gt;</type>
+        <definition>Result&lt; void &gt; pyfolio::io::save_returns_to_csv</definition>
+        <argsstring>(const TimeSeries&lt; Return &gt; &amp;returns, const std::string &amp;file_path, const CSVConfig &amp;config=CSVConfig{})</argsstring>
+        <name>save_returns_to_csv</name>
+        <qualifiedname>pyfolio::io::save_returns_to_csv</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>file_path</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d2/da2/structpyfolio_1_1io_1_1CSVConfig" kindref="compound">CSVConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval><ref refid="d2/da2/structpyfolio_1_1io_1_1CSVConfig" kindref="compound">CSVConfig</ref>{}</defval>
+        </param>
+        <briefdescription>
+<para>Save returns data to CSV file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>returns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time series of returns to save </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>file_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output file path </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CSV formatting configuration </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref> indicating success or failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/io/data_loader.h" line="274" column="15" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/io/data_loader.h" bodystart="274" bodyend="298" declfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/io/data_loader.h" declline="143" declcolumn="8"/>
+        <references refid="d2/da2/structpyfolio_1_1io_1_1CSVConfig_1a3b589fcf9e7fa520378ae7721c1e71ce" compoundref="d2/db9/data__loader_8h" startline="31">pyfolio::io::CSVConfig::date_column</references>
+        <references refid="d2/da2/structpyfolio_1_1io_1_1CSVConfig_1a9d3a20c426c81a0d096494eac2477aa8" compoundref="d2/db9/data__loader_8h" startline="23">pyfolio::io::CSVConfig::delimiter</references>
+        <references refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" compoundref="d3/d11/error__handling_8h" startline="111" endline="116">pyfolio::Result&lt; T &gt;::error</references>
+        <references refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9a2767828026039e8ba7b38973cbb701f2" compoundref="d3/d11/error__handling_8h" startline="27">pyfolio::FileNotFound</references>
+        <references refid="d2/da2/structpyfolio_1_1io_1_1CSVConfig_1ae9718c63d1ccefb61b89944c24b4225c" compoundref="d2/db9/data__loader_8h" startline="24">pyfolio::io::CSVConfig::has_header</references>
+        <references refid="d2/da2/structpyfolio_1_1io_1_1CSVConfig_1a53dcfe4e5a35c4f4df8835926a0db443" compoundref="d2/db9/data__loader_8h" startline="32">pyfolio::io::CSVConfig::return_column</references>
+        <references refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" compoundref="d3/d11/error__handling_8h" startline="74" endline="74">pyfolio::Result&lt; T &gt;::success</references>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1a0374bbc62bd808749ac476b3af4b0ead" compoundref="d8/d51/time__series_8h" startline="124" endline="124">pyfolio::TimeSeries&lt; T &gt;::timestamps</references>
+        <references refid="d7/ddc/classpyfolio_1_1TimeSeries_1ab0b20c4945cdde977885888f384256c3" compoundref="d8/d51/time__series_8h" startline="125" endline="125">pyfolio::TimeSeries&lt; T &gt;::values</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/ddb/namespacepyfolio_1_1io_1a9bc0f126fc69a4d2e976f6b06fec79ee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; void &gt;</type>
+        <definition>Result&lt; void &gt; pyfolio::io::save_positions_to_csv</definition>
+        <argsstring>(const TimeSeries&lt; std::unordered_map&lt; std::string, Position &gt; &gt; &amp;positions, const std::string &amp;file_path, const CSVConfig &amp;config=CSVConfig{})</argsstring>
+        <name>save_positions_to_csv</name>
+        <qualifiedname>pyfolio::io::save_positions_to_csv</qualifiedname>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; std::unordered_map&lt; std::string, <ref refid="d6/df6/structpyfolio_1_1Position" kindref="compound">Position</ref> &gt; &gt; &amp;</type>
+          <declname>positions</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>file_path</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d2/da2/structpyfolio_1_1io_1_1CSVConfig" kindref="compound">CSVConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval><ref refid="d2/da2/structpyfolio_1_1io_1_1CSVConfig" kindref="compound">CSVConfig</ref>{}</defval>
+        </param>
+        <briefdescription>
+<para>Save positions data to CSV file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>positions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time series of positions to save </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>file_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output file path </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CSV formatting configuration </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref> indicating success or failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/io/data_loader.h" line="300" column="15" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/io/data_loader.h" bodystart="300" bodyend="330" declfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/io/data_loader.h" declline="154" declcolumn="8"/>
+        <references refid="d2/da2/structpyfolio_1_1io_1_1CSVConfig_1a3b589fcf9e7fa520378ae7721c1e71ce" compoundref="d2/db9/data__loader_8h" startline="31">pyfolio::io::CSVConfig::date_column</references>
+        <references refid="d2/da2/structpyfolio_1_1io_1_1CSVConfig_1a9d3a20c426c81a0d096494eac2477aa8" compoundref="d2/db9/data__loader_8h" startline="23">pyfolio::io::CSVConfig::delimiter</references>
+        <references refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" compoundref="d3/d11/error__handling_8h" startline="111" endline="116">pyfolio::Result&lt; T &gt;::error</references>
+        <references refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9a2767828026039e8ba7b38973cbb701f2" compoundref="d3/d11/error__handling_8h" startline="27">pyfolio::FileNotFound</references>
+        <references refid="d2/da2/structpyfolio_1_1io_1_1CSVConfig_1ae9718c63d1ccefb61b89944c24b4225c" compoundref="d2/db9/data__loader_8h" startline="24">pyfolio::io::CSVConfig::has_header</references>
+        <references refid="d2/da2/structpyfolio_1_1io_1_1CSVConfig_1ada73434be7f73f95fe92cf394c8438bd" compoundref="d2/db9/data__loader_8h" startline="37">pyfolio::io::CSVConfig::price_column</references>
+        <references refid="d2/da2/structpyfolio_1_1io_1_1CSVConfig_1aa65eecaa395d8b4d043192fcde4d53e0" compoundref="d2/db9/data__loader_8h" startline="36">pyfolio::io::CSVConfig::shares_column</references>
+        <references refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" compoundref="d3/d11/error__handling_8h" startline="74" endline="74">pyfolio::Result&lt; T &gt;::success</references>
+        <references refid="d2/da2/structpyfolio_1_1io_1_1CSVConfig_1a2a5ed0ac8df53b50bd111a8738c522eb" compoundref="d2/db9/data__loader_8h" startline="35">pyfolio::io::CSVConfig::symbol_column</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/ddb/namespacepyfolio_1_1io_1a2e15bed59889eb6a31375d80d5691b1b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; void &gt;</type>
+        <definition>Result&lt; void &gt; pyfolio::io::save_transactions_to_csv</definition>
+        <argsstring>(const std::vector&lt; Transaction &gt; &amp;transactions, const std::string &amp;file_path, const CSVConfig &amp;config=CSVConfig{})</argsstring>
+        <name>save_transactions_to_csv</name>
+        <qualifiedname>pyfolio::io::save_transactions_to_csv</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="d5/d11/structpyfolio_1_1Transaction" kindref="compound">Transaction</ref> &gt; &amp;</type>
+          <declname>transactions</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>file_path</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d2/da2/structpyfolio_1_1io_1_1CSVConfig" kindref="compound">CSVConfig</ref> &amp;</type>
+          <declname>config</declname>
+          <defval><ref refid="d2/da2/structpyfolio_1_1io_1_1CSVConfig" kindref="compound">CSVConfig</ref>{}</defval>
+        </param>
+        <briefdescription>
+<para>Save transactions data to CSV file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>transactions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector of transactions to save </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>file_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output file path </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CSV formatting configuration </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref> indicating success or failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/io/data_loader.h" line="332" column="15" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/io/data_loader.h" bodystart="332" bodyend="358" declfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/io/data_loader.h" declline="165" declcolumn="8"/>
+        <references refid="d7/df8/namespacepyfolio_1a621f4de5bafda9e6d787a2bfb28e90cfa831a28f1e8df07c553fcd59546465d13" compoundref="d9/d49/types_8h" startline="180">pyfolio::Buy</references>
+        <references refid="d2/da2/structpyfolio_1_1io_1_1CSVConfig_1a9d3a20c426c81a0d096494eac2477aa8" compoundref="d2/db9/data__loader_8h" startline="23">pyfolio::io::CSVConfig::delimiter</references>
+        <references refid="de/dfa/classpyfolio_1_1Result_1a2f9ab3f412568628188acf5bd5a430c4" compoundref="d3/d11/error__handling_8h" startline="111" endline="116">pyfolio::Result&lt; T &gt;::error</references>
+        <references refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9a2767828026039e8ba7b38973cbb701f2" compoundref="d3/d11/error__handling_8h" startline="27">pyfolio::FileNotFound</references>
+        <references refid="d6/d4f/classpyfolio_1_1DateTime_1a6b980b304349106ebab133e7c947d85b" compoundref="de/d1b/datetime_8h" startline="183" endline="183">pyfolio::DateTime::from_time_point</references>
+        <references refid="d2/da2/structpyfolio_1_1io_1_1CSVConfig_1ae9718c63d1ccefb61b89944c24b4225c" compoundref="d2/db9/data__loader_8h" startline="24">pyfolio::io::CSVConfig::has_header</references>
+        <references refid="de/dfa/classpyfolio_1_1Result_1aff326d3892070879bd3d5cd55c186677" compoundref="d3/d11/error__handling_8h" startline="74" endline="74">pyfolio::Result&lt; T &gt;::success</references>
+        <references refid="d2/da2/structpyfolio_1_1io_1_1CSVConfig_1ae2e28a3b258dd2a1f5ba0f920f3cb3f0" compoundref="d2/db9/data__loader_8h" startline="43">pyfolio::io::CSVConfig::txn_datetime_column</references>
+        <references refid="d2/da2/structpyfolio_1_1io_1_1CSVConfig_1acb72f54ce340eee25c6d787edcca6ffe" compoundref="d2/db9/data__loader_8h" startline="42">pyfolio::io::CSVConfig::txn_price_column</references>
+        <references refid="d2/da2/structpyfolio_1_1io_1_1CSVConfig_1a67460314f372bf412c38c25fb6a9aa5c" compoundref="d2/db9/data__loader_8h" startline="41">pyfolio::io::CSVConfig::txn_shares_column</references>
+        <references refid="d2/da2/structpyfolio_1_1io_1_1CSVConfig_1ac8bf746b1edddf3f7d38a92214febf3e" compoundref="d2/db9/data__loader_8h" startline="44">pyfolio::io::CSVConfig::txn_side_column</references>
+        <references refid="d2/da2/structpyfolio_1_1io_1_1CSVConfig_1a78cccdfe54c8f8f94a4de0cf2c98d0ce" compoundref="d2/db9/data__loader_8h" startline="40">pyfolio::io::CSVConfig::txn_symbol_column</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/io/data_loader.h" line="17" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libpyfolio_cpp.a CMakeFiles/pyfolio_cpp.dir/src/math/simd_math.cpp.o CMakeFiles/pyfolio_cpp.dir/src/visualization/plotly_enhanced.cpp.o
+/usr/bin/ranlib libpyfolio_cpp.a

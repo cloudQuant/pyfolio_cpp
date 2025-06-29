@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="d9/d4a/namespacepyfolio_1_1stats_1_1constexpr__utils" kind="namespace" language="C++">
+    <compoundname>pyfolio::stats::constexpr_utils</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="d9/d4a/namespacepyfolio_1_1stats_1_1constexpr__utils_1a339fae25a69a13bb685175daf67a6f7a" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double pyfolio::stats::constexpr_utils::power</definition>
+        <argsstring>(double base, int exp) noexcept</argsstring>
+        <name>power</name>
+        <qualifiedname>pyfolio::stats::constexpr_utils::power</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>base</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>exp</declname>
+        </param>
+        <briefdescription>
+<para>Compile-time power function for integer exponents. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" line="47" column="18" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" bodystart="47" bodyend="64"/>
+        <references refid="d9/d4a/namespacepyfolio_1_1stats_1_1constexpr__utils_1a339fae25a69a13bb685175daf67a6f7a" compoundref="d3/dbe/math_2statistics_8h" startline="47" endline="64">power</references>
+        <referencedby refid="d9/d4a/namespacepyfolio_1_1stats_1_1constexpr__utils_1a339fae25a69a13bb685175daf67a6f7a" compoundref="d3/dbe/math_2statistics_8h" startline="47" endline="64">power</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d9/d4a/namespacepyfolio_1_1stats_1_1constexpr__utils_1a6f3477ab39627c07af9c6a7ac3c6ec42" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double pyfolio::stats::constexpr_utils::abs</definition>
+        <argsstring>(double x) noexcept</argsstring>
+        <name>abs</name>
+        <qualifiedname>pyfolio::stats::constexpr_utils::abs</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Compile-time absolute value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" line="69" column="18" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" bodystart="69" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d4a/namespacepyfolio_1_1stats_1_1constexpr__utils_1af7199dd32f6a0f913616230d84e3e6e1" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double pyfolio::stats::constexpr_utils::max</definition>
+        <argsstring>(double a, double b) noexcept</argsstring>
+        <name>max</name>
+        <qualifiedname>pyfolio::stats::constexpr_utils::max</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Compile-time max. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" line="76" column="18" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" bodystart="76" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d4a/namespacepyfolio_1_1stats_1_1constexpr__utils_1acb7c49f1c7b89b40444cb1f34c4367e6" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double pyfolio::stats::constexpr_utils::min</definition>
+        <argsstring>(double a, double b) noexcept</argsstring>
+        <name>min</name>
+        <qualifiedname>pyfolio::stats::constexpr_utils::min</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Compile-time min. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" line="83" column="18" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" bodystart="83" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d4a/namespacepyfolio_1_1stats_1_1constexpr__utils_1acdd4e5b38c28287a04152d74b4728725" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double pyfolio::stats::constexpr_utils::annualization_factor</definition>
+        <argsstring>(Frequency freq) noexcept</argsstring>
+        <name>annualization_factor</name>
+        <qualifiedname>pyfolio::stats::constexpr_utils::annualization_factor</qualifiedname>
+        <param>
+          <type><ref refid="d7/df8/namespacepyfolio_1ad4beb384aab829428a007308f1d0c92e" kindref="member">Frequency</ref></type>
+          <declname>freq</declname>
+        </param>
+        <briefdescription>
+<para>Annualization factor for given frequency. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" line="90" column="18" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" bodystart="90" bodyend="105"/>
+        <references refid="d7/df8/namespacepyfolio_1ad4beb384aab829428a007308f1d0c92eac512b685438f41daa7386329a3b8f8d3" compoundref="d9/d49/types_8h" startline="74">pyfolio::Daily</references>
+        <references refid="d7/df8/namespacepyfolio_1ad4beb384aab829428a007308f1d0c92ea9030e39f00132d583da4122532e509e9" compoundref="d9/d49/types_8h" startline="74">pyfolio::Monthly</references>
+        <references refid="dd/d79/namespacepyfolio_1_1stats_1_1constants_1a8dbcc4d279ec249b44459f5ce4b67eeb" compoundref="d3/dbe/math_2statistics_8h" startline="29">pyfolio::stats::constants::months_per_year</references>
+        <references refid="d7/df8/namespacepyfolio_1ad4beb384aab829428a007308f1d0c92eabe92c62702dcec6751c101b5adb0ce3b" compoundref="d9/d49/types_8h" startline="74">pyfolio::Quarterly</references>
+        <references refid="dd/d79/namespacepyfolio_1_1stats_1_1constants_1a1a2f9a0ecd21f4ae078c8228d3e43e36" compoundref="d3/dbe/math_2statistics_8h" startline="27">pyfolio::stats::constants::trading_days_per_year</references>
+        <references refid="d7/df8/namespacepyfolio_1ad4beb384aab829428a007308f1d0c92ea6c25e6a6da95b3d583c6ec4c3f82ed4d" compoundref="d9/d49/types_8h" startline="74">pyfolio::Weekly</references>
+        <references refid="dd/d79/namespacepyfolio_1_1stats_1_1constants_1a611cd44db2d55419fef9908afafe39b6" compoundref="d3/dbe/math_2statistics_8h" startline="30">pyfolio::stats::constants::weeks_per_year</references>
+        <references refid="d7/df8/namespacepyfolio_1ad4beb384aab829428a007308f1d0c92eacf5ea7953dc47105e0eb179dbefaaf46" compoundref="d9/d49/types_8h" startline="74">pyfolio::Yearly</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" line="43" column="1"/>
+  </compounddef>
+</doxygen>

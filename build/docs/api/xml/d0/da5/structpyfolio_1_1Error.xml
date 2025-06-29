@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="d0/da5/structpyfolio_1_1Error" kind="struct" language="C++" prot="public">
+    <compoundname>pyfolio::Error</compoundname>
+    <includes refid="d3/d11/error__handling_8h" local="no">error_handling.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d0/da5/structpyfolio_1_1Error_1af7f5461a5155dd458e8078aac4e0dd94" prot="public" static="no" mutable="no">
+        <type><ref refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9" kindref="member">ErrorCode</ref></type>
+        <definition>ErrorCode pyfolio::Error::code</definition>
+        <argsstring></argsstring>
+        <name>code</name>
+        <qualifiedname>pyfolio::Error::code</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="39" column="15" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" bodystart="39" bodyend="-1"/>
+        <referencedby refid="d0/da5/structpyfolio_1_1Error_1a9b2ac69b2cea6034df315929765e336b" compoundref="d3/d11/error__handling_8h" startline="49" endline="50">Error</referencedby>
+        <referencedby refid="d0/da5/structpyfolio_1_1Error_1acb8bf4bca58572a5f01af5009d97137d" compoundref="d3/d11/error__handling_8h" startline="44" endline="46">Error</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d0/da5/structpyfolio_1_1Error_1ac0c20d9d7c8f14406ef4e5719566ac19" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string pyfolio::Error::message</definition>
+        <argsstring></argsstring>
+        <name>message</name>
+        <qualifiedname>pyfolio::Error::message</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="40" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" bodystart="40" bodyend="-1"/>
+        <referencedby refid="d0/da5/structpyfolio_1_1Error_1a9b2ac69b2cea6034df315929765e336b" compoundref="d3/d11/error__handling_8h" startline="49" endline="50">Error</referencedby>
+        <referencedby refid="d0/da5/structpyfolio_1_1Error_1acb8bf4bca58572a5f01af5009d97137d" compoundref="d3/d11/error__handling_8h" startline="44" endline="46">Error</referencedby>
+        <referencedby refid="d0/da5/structpyfolio_1_1Error_1a7c0e5b9a9056b9e8f59ac6745d31e07b" compoundref="d3/d11/error__handling_8h" startline="52" endline="55">to_string</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d0/da5/structpyfolio_1_1Error_1afa48dfb559e3b67207bedfffc78c8ce6" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string pyfolio::Error::context</definition>
+        <argsstring></argsstring>
+        <name>context</name>
+        <qualifiedname>pyfolio::Error::context</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="41" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" bodystart="41" bodyend="-1"/>
+        <referencedby refid="d0/da5/structpyfolio_1_1Error_1a9b2ac69b2cea6034df315929765e336b" compoundref="d3/d11/error__handling_8h" startline="49" endline="50">Error</referencedby>
+        <referencedby refid="d0/da5/structpyfolio_1_1Error_1acb8bf4bca58572a5f01af5009d97137d" compoundref="d3/d11/error__handling_8h" startline="44" endline="46">Error</referencedby>
+        <referencedby refid="d0/da5/structpyfolio_1_1Error_1a7c0e5b9a9056b9e8f59ac6745d31e07b" compoundref="d3/d11/error__handling_8h" startline="52" endline="55">to_string</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d0/da5/structpyfolio_1_1Error_1a02c99bee036974256bf64873e7063a87" prot="public" static="no" mutable="no">
+        <type>std::source_location</type>
+        <definition>std::source_location pyfolio::Error::location</definition>
+        <argsstring></argsstring>
+        <name>location</name>
+        <qualifiedname>pyfolio::Error::location</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="42" column="26" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" bodystart="42" bodyend="-1"/>
+        <referencedby refid="d0/da5/structpyfolio_1_1Error_1a9b2ac69b2cea6034df315929765e336b" compoundref="d3/d11/error__handling_8h" startline="49" endline="50">Error</referencedby>
+        <referencedby refid="d0/da5/structpyfolio_1_1Error_1acb8bf4bca58572a5f01af5009d97137d" compoundref="d3/d11/error__handling_8h" startline="44" endline="46">Error</referencedby>
+        <referencedby refid="d0/da5/structpyfolio_1_1Error_1a7c0e5b9a9056b9e8f59ac6745d31e07b" compoundref="d3/d11/error__handling_8h" startline="52" endline="55">to_string</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d0/da5/structpyfolio_1_1Error_1acb8bf4bca58572a5f01af5009d97137d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>pyfolio::Error::Error</definition>
+        <argsstring>(ErrorCode c, const std::string &amp;msg, const std::string &amp;ctx=&quot;&quot;, std::source_location loc=std::source_location::current())</argsstring>
+        <name>Error</name>
+        <qualifiedname>pyfolio::Error::Error</qualifiedname>
+        <param>
+          <type><ref refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9" kindref="member">ErrorCode</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>ctx</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>std::source_location</type>
+          <declname>loc</declname>
+          <defval>std::source_location::current()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="44" column="5" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" bodystart="44" bodyend="46"/>
+        <references refid="d0/da5/structpyfolio_1_1Error_1af7f5461a5155dd458e8078aac4e0dd94" compoundref="d3/d11/error__handling_8h" startline="39">code</references>
+        <references refid="d0/da5/structpyfolio_1_1Error_1afa48dfb559e3b67207bedfffc78c8ce6" compoundref="d3/d11/error__handling_8h" startline="41">context</references>
+        <references refid="d0/da5/structpyfolio_1_1Error_1a02c99bee036974256bf64873e7063a87" compoundref="d3/d11/error__handling_8h" startline="42">location</references>
+        <references refid="d0/da5/structpyfolio_1_1Error_1ac0c20d9d7c8f14406ef4e5719566ac19" compoundref="d3/d11/error__handling_8h" startline="40">message</references>
+      </memberdef>
+      <memberdef kind="function" id="d0/da5/structpyfolio_1_1Error_1a9b2ac69b2cea6034df315929765e336b" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>pyfolio::Error::Error</definition>
+        <argsstring>(const std::string &amp;msg, std::source_location loc=std::source_location::current())</argsstring>
+        <name>Error</name>
+        <qualifiedname>pyfolio::Error::Error</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>std::source_location</type>
+          <declname>loc</declname>
+          <defval>std::source_location::current()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="49" column="14" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" bodystart="49" bodyend="50"/>
+        <references refid="d0/da5/structpyfolio_1_1Error_1af7f5461a5155dd458e8078aac4e0dd94" compoundref="d3/d11/error__handling_8h" startline="39">code</references>
+        <references refid="d0/da5/structpyfolio_1_1Error_1afa48dfb559e3b67207bedfffc78c8ce6" compoundref="d3/d11/error__handling_8h" startline="41">context</references>
+        <references refid="d0/da5/structpyfolio_1_1Error_1a02c99bee036974256bf64873e7063a87" compoundref="d3/d11/error__handling_8h" startline="42">location</references>
+        <references refid="d0/da5/structpyfolio_1_1Error_1ac0c20d9d7c8f14406ef4e5719566ac19" compoundref="d3/d11/error__handling_8h" startline="40">message</references>
+        <references refid="d7/df8/namespacepyfolio_1a10901a85b628face8a96ad7e052555f9abfaef30f1c8011c5cefa38ae470fb7aa" compoundref="d3/d11/error__handling_8h" startline="32">pyfolio::UnknownError</references>
+      </memberdef>
+      <memberdef kind="function" id="d0/da5/structpyfolio_1_1Error_1a7c0e5b9a9056b9e8f59ac6745d31e07b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string pyfolio::Error::to_string</definition>
+        <argsstring>() const</argsstring>
+        <name>to_string</name>
+        <qualifiedname>pyfolio::Error::to_string</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="52" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" bodystart="52" bodyend="55"/>
+        <references refid="d0/da5/structpyfolio_1_1Error_1afa48dfb559e3b67207bedfffc78c8ce6" compoundref="d3/d11/error__handling_8h" startline="41">context</references>
+        <references refid="d0/da5/structpyfolio_1_1Error_1a02c99bee036974256bf64873e7063a87" compoundref="d3/d11/error__handling_8h" startline="42">location</references>
+        <references refid="d0/da5/structpyfolio_1_1Error_1ac0c20d9d7c8f14406ef4e5719566ac19" compoundref="d3/d11/error__handling_8h" startline="40">message</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Detailed error information. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>pyfolio::Error</label>
+        <link refid="d0/da5/structpyfolio_1_1Error"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>context</edgelabel>
+          <edgelabel>message</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="2">
+        <label>std::string</label>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" line="38" column="1" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/error_handling.h" bodystart="38" bodyend="56"/>
+    <listofallmembers>
+      <member refid="d0/da5/structpyfolio_1_1Error_1af7f5461a5155dd458e8078aac4e0dd94" prot="public" virt="non-virtual"><scope>pyfolio::Error</scope><name>code</name></member>
+      <member refid="d0/da5/structpyfolio_1_1Error_1afa48dfb559e3b67207bedfffc78c8ce6" prot="public" virt="non-virtual"><scope>pyfolio::Error</scope><name>context</name></member>
+      <member refid="d0/da5/structpyfolio_1_1Error_1acb8bf4bca58572a5f01af5009d97137d" prot="public" virt="non-virtual"><scope>pyfolio::Error</scope><name>Error</name></member>
+      <member refid="d0/da5/structpyfolio_1_1Error_1a9b2ac69b2cea6034df315929765e336b" prot="public" virt="non-virtual"><scope>pyfolio::Error</scope><name>Error</name></member>
+      <member refid="d0/da5/structpyfolio_1_1Error_1a02c99bee036974256bf64873e7063a87" prot="public" virt="non-virtual"><scope>pyfolio::Error</scope><name>location</name></member>
+      <member refid="d0/da5/structpyfolio_1_1Error_1ac0c20d9d7c8f14406ef4e5719566ac19" prot="public" virt="non-virtual"><scope>pyfolio::Error</scope><name>message</name></member>
+      <member refid="d0/da5/structpyfolio_1_1Error_1a7c0e5b9a9056b9e8f59ac6745d31e07b" prot="public" virt="non-virtual"><scope>pyfolio::Error</scope><name>to_string</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

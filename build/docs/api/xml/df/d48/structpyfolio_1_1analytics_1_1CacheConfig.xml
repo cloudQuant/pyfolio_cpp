@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="df/d48/structpyfolio_1_1analytics_1_1CacheConfig" kind="struct" language="C++" prot="public">
+    <compoundname>pyfolio::analytics::CacheConfig</compoundname>
+    <includes refid="d4/dc1/cached__performance__metrics_8h" local="no">cached_performance_metrics.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="df/d48/structpyfolio_1_1analytics_1_1CacheConfig_1a4faddce55c4ee6327c84fdb52a19d8f8" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t pyfolio::analytics::CacheConfig::max_entries</definition>
+        <argsstring></argsstring>
+        <name>max_entries</name>
+        <qualifiedname>pyfolio::analytics::CacheConfig::max_entries</qualifiedname>
+        <initializer>= 1000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/cached_performance_metrics.h" line="55" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/cached_performance_metrics.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d48/structpyfolio_1_1analytics_1_1CacheConfig_1a42427f31d0f98fb8993474473aef9c00" prot="public" static="no" mutable="no">
+        <type>std::chrono::milliseconds</type>
+        <definition>std::chrono::milliseconds pyfolio::analytics::CacheConfig::max_age</definition>
+        <argsstring></argsstring>
+        <name>max_age</name>
+        <qualifiedname>pyfolio::analytics::CacheConfig::max_age</qualifiedname>
+        <initializer>{30000}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/cached_performance_metrics.h" line="56" column="31" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/cached_performance_metrics.h" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d48/structpyfolio_1_1analytics_1_1CacheConfig_1abfdfe7dfb7e5ae3ec51ac0be07dcf210" prot="public" static="no" mutable="no">
+        <type>std::chrono::milliseconds</type>
+        <definition>std::chrono::milliseconds pyfolio::analytics::CacheConfig::cleanup_interval</definition>
+        <argsstring></argsstring>
+        <name>cleanup_interval</name>
+        <qualifiedname>pyfolio::analytics::CacheConfig::cleanup_interval</qualifiedname>
+        <initializer>{60000}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/cached_performance_metrics.h" line="57" column="31" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/cached_performance_metrics.h" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d48/structpyfolio_1_1analytics_1_1CacheConfig_1ae78739b2f1aa8891b3b6b24d05e74fe3" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool pyfolio::analytics::CacheConfig::enable_auto_cleanup</definition>
+        <argsstring></argsstring>
+        <name>enable_auto_cleanup</name>
+        <qualifiedname>pyfolio::analytics::CacheConfig::enable_auto_cleanup</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/cached_performance_metrics.h" line="58" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/cached_performance_metrics.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d48/structpyfolio_1_1analytics_1_1CacheConfig_1a37ff066946135fa797f6133d3c03431d" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::CacheConfig::hit_rate_threshold</definition>
+        <argsstring></argsstring>
+        <name>hit_rate_threshold</name>
+        <qualifiedname>pyfolio::analytics::CacheConfig::hit_rate_threshold</qualifiedname>
+        <initializer>= 0.7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/cached_performance_metrics.h" line="59" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/cached_performance_metrics.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d48/structpyfolio_1_1analytics_1_1CacheConfig_1ab84e8f6b93c6e69e8affbb6f7ef9a0b5" prot="public" static="no" mutable="no">
+        <type>std::chrono::microseconds</type>
+        <definition>std::chrono::microseconds pyfolio::analytics::CacheConfig::min_computation_time_basic</definition>
+        <argsstring></argsstring>
+        <name>min_computation_time_basic</name>
+        <qualifiedname>pyfolio::analytics::CacheConfig::min_computation_time_basic</qualifiedname>
+        <initializer>{1}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/cached_performance_metrics.h" line="62" column="31" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/cached_performance_metrics.h" bodystart="62" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d48/structpyfolio_1_1analytics_1_1CacheConfig_1a37def540d675651851498609a4822802" prot="public" static="no" mutable="no">
+        <type>std::chrono::microseconds</type>
+        <definition>std::chrono::microseconds pyfolio::analytics::CacheConfig::min_computation_time_complex</definition>
+        <argsstring></argsstring>
+        <name>min_computation_time_complex</name>
+        <qualifiedname>pyfolio::analytics::CacheConfig::min_computation_time_complex</qualifiedname>
+        <initializer>{1}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/cached_performance_metrics.h" line="63" column="31" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/cached_performance_metrics.h" bodystart="63" bodyend="63"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Cache configuration. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/cached_performance_metrics.h" line="54" column="1" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/cached_performance_metrics.h" bodystart="54" bodyend="64"/>
+    <listofallmembers>
+      <member refid="df/d48/structpyfolio_1_1analytics_1_1CacheConfig_1abfdfe7dfb7e5ae3ec51ac0be07dcf210" prot="public" virt="non-virtual"><scope>pyfolio::analytics::CacheConfig</scope><name>cleanup_interval</name></member>
+      <member refid="df/d48/structpyfolio_1_1analytics_1_1CacheConfig_1ae78739b2f1aa8891b3b6b24d05e74fe3" prot="public" virt="non-virtual"><scope>pyfolio::analytics::CacheConfig</scope><name>enable_auto_cleanup</name></member>
+      <member refid="df/d48/structpyfolio_1_1analytics_1_1CacheConfig_1a37ff066946135fa797f6133d3c03431d" prot="public" virt="non-virtual"><scope>pyfolio::analytics::CacheConfig</scope><name>hit_rate_threshold</name></member>
+      <member refid="df/d48/structpyfolio_1_1analytics_1_1CacheConfig_1a42427f31d0f98fb8993474473aef9c00" prot="public" virt="non-virtual"><scope>pyfolio::analytics::CacheConfig</scope><name>max_age</name></member>
+      <member refid="df/d48/structpyfolio_1_1analytics_1_1CacheConfig_1a4faddce55c4ee6327c84fdb52a19d8f8" prot="public" virt="non-virtual"><scope>pyfolio::analytics::CacheConfig</scope><name>max_entries</name></member>
+      <member refid="df/d48/structpyfolio_1_1analytics_1_1CacheConfig_1ab84e8f6b93c6e69e8affbb6f7ef9a0b5" prot="public" virt="non-virtual"><scope>pyfolio::analytics::CacheConfig</scope><name>min_computation_time_basic</name></member>
+      <member refid="df/d48/structpyfolio_1_1analytics_1_1CacheConfig_1a37def540d675651851498609a4822802" prot="public" virt="non-virtual"><scope>pyfolio::analytics::CacheConfig</scope><name>min_computation_time_complex</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

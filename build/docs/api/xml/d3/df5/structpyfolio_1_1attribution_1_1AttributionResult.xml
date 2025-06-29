@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="d3/df5/structpyfolio_1_1attribution_1_1AttributionResult" kind="struct" language="C++" prot="public">
+    <compoundname>pyfolio::attribution::AttributionResult</compoundname>
+    <includes refid="da/dd4/attribution_8h" local="no">attribution.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d3/df5/structpyfolio_1_1attribution_1_1AttributionResult_1aab5fd5c0736d928da99190164819ab0c" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::attribution::AttributionResult::portfolio_return</definition>
+        <argsstring></argsstring>
+        <name>portfolio_return</name>
+        <qualifiedname>pyfolio::attribution::AttributionResult::portfolio_return</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" line="19" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/df5/structpyfolio_1_1attribution_1_1AttributionResult_1a1ae7255be75ff89603de22b45d62d728" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::attribution::AttributionResult::benchmark_return</definition>
+        <argsstring></argsstring>
+        <name>benchmark_return</name>
+        <qualifiedname>pyfolio::attribution::AttributionResult::benchmark_return</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" line="20" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/df5/structpyfolio_1_1attribution_1_1AttributionResult_1a8a876336ad33b20d561049f0d75c1798" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::attribution::AttributionResult::active_return</definition>
+        <argsstring></argsstring>
+        <name>active_return</name>
+        <qualifiedname>pyfolio::attribution::AttributionResult::active_return</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" line="21" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" bodystart="21" bodyend="-1"/>
+        <referencedby refid="d3/df5/structpyfolio_1_1attribution_1_1AttributionResult_1a74891c5d878ec0c20c2852c95d5f2463" compoundref="da/dd4/attribution_8h" startline="30" endline="34">is_consistent</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d3/df5/structpyfolio_1_1attribution_1_1AttributionResult_1aede4fa31c8104b810a8efd48d75b1331" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::attribution::AttributionResult::allocation_effect</definition>
+        <argsstring></argsstring>
+        <name>allocation_effect</name>
+        <qualifiedname>pyfolio::attribution::AttributionResult::allocation_effect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" line="22" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" bodystart="22" bodyend="-1"/>
+        <referencedby refid="d3/df5/structpyfolio_1_1attribution_1_1AttributionResult_1a74891c5d878ec0c20c2852c95d5f2463" compoundref="da/dd4/attribution_8h" startline="30" endline="34">is_consistent</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d3/df5/structpyfolio_1_1attribution_1_1AttributionResult_1ab4d8a1362c2d2c45f010030060acaf5e" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::attribution::AttributionResult::selection_effect</definition>
+        <argsstring></argsstring>
+        <name>selection_effect</name>
+        <qualifiedname>pyfolio::attribution::AttributionResult::selection_effect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" line="23" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" bodystart="23" bodyend="-1"/>
+        <referencedby refid="d3/df5/structpyfolio_1_1attribution_1_1AttributionResult_1a74891c5d878ec0c20c2852c95d5f2463" compoundref="da/dd4/attribution_8h" startline="30" endline="34">is_consistent</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d3/df5/structpyfolio_1_1attribution_1_1AttributionResult_1ae646f8eb8d781fddde17809609002db9" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::attribution::AttributionResult::interaction_effect</definition>
+        <argsstring></argsstring>
+        <name>interaction_effect</name>
+        <qualifiedname>pyfolio::attribution::AttributionResult::interaction_effect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" line="24" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" bodystart="24" bodyend="-1"/>
+        <referencedby refid="d3/df5/structpyfolio_1_1attribution_1_1AttributionResult_1a74891c5d878ec0c20c2852c95d5f2463" compoundref="da/dd4/attribution_8h" startline="30" endline="34">is_consistent</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d3/df5/structpyfolio_1_1attribution_1_1AttributionResult_1a95b4e89ead28c7e2c9e95280aa57bc6c" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::attribution::AttributionResult::total_effect</definition>
+        <argsstring></argsstring>
+        <name>total_effect</name>
+        <qualifiedname>pyfolio::attribution::AttributionResult::total_effect</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" line="25" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" bodystart="25" bodyend="-1"/>
+        <referencedby refid="d3/df5/structpyfolio_1_1attribution_1_1AttributionResult_1a74891c5d878ec0c20c2852c95d5f2463" compoundref="da/dd4/attribution_8h" startline="30" endline="34">is_consistent</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d3/df5/structpyfolio_1_1attribution_1_1AttributionResult_1a74891c5d878ec0c20c2852c95d5f2463" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool pyfolio::attribution::AttributionResult::is_consistent</definition>
+        <argsstring>(double tolerance=1e-6) const</argsstring>
+        <name>is_consistent</name>
+        <qualifiedname>pyfolio::attribution::AttributionResult::is_consistent</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>tolerance</declname>
+          <defval>1e-6</defval>
+        </param>
+        <briefdescription>
+<para>Validate attribution consistency. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" line="30" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" bodystart="30" bodyend="34"/>
+        <references refid="d3/df5/structpyfolio_1_1attribution_1_1AttributionResult_1a8a876336ad33b20d561049f0d75c1798" compoundref="da/dd4/attribution_8h" startline="21">active_return</references>
+        <references refid="d3/df5/structpyfolio_1_1attribution_1_1AttributionResult_1aede4fa31c8104b810a8efd48d75b1331" compoundref="da/dd4/attribution_8h" startline="22">allocation_effect</references>
+        <references refid="d3/df5/structpyfolio_1_1attribution_1_1AttributionResult_1ae646f8eb8d781fddde17809609002db9" compoundref="da/dd4/attribution_8h" startline="24">interaction_effect</references>
+        <references refid="d3/df5/structpyfolio_1_1attribution_1_1AttributionResult_1ab4d8a1362c2d2c45f010030060acaf5e" compoundref="da/dd4/attribution_8h" startline="23">selection_effect</references>
+        <references refid="d3/df5/structpyfolio_1_1attribution_1_1AttributionResult_1a95b4e89ead28c7e2c9e95280aa57bc6c" compoundref="da/dd4/attribution_8h" startline="25">total_effect</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Attribution result for a single period. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" line="18" column="1" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/attribution/attribution.h" bodystart="18" bodyend="35"/>
+    <listofallmembers>
+      <member refid="d3/df5/structpyfolio_1_1attribution_1_1AttributionResult_1a8a876336ad33b20d561049f0d75c1798" prot="public" virt="non-virtual"><scope>pyfolio::attribution::AttributionResult</scope><name>active_return</name></member>
+      <member refid="d3/df5/structpyfolio_1_1attribution_1_1AttributionResult_1aede4fa31c8104b810a8efd48d75b1331" prot="public" virt="non-virtual"><scope>pyfolio::attribution::AttributionResult</scope><name>allocation_effect</name></member>
+      <member refid="d3/df5/structpyfolio_1_1attribution_1_1AttributionResult_1a1ae7255be75ff89603de22b45d62d728" prot="public" virt="non-virtual"><scope>pyfolio::attribution::AttributionResult</scope><name>benchmark_return</name></member>
+      <member refid="d3/df5/structpyfolio_1_1attribution_1_1AttributionResult_1ae646f8eb8d781fddde17809609002db9" prot="public" virt="non-virtual"><scope>pyfolio::attribution::AttributionResult</scope><name>interaction_effect</name></member>
+      <member refid="d3/df5/structpyfolio_1_1attribution_1_1AttributionResult_1a74891c5d878ec0c20c2852c95d5f2463" prot="public" virt="non-virtual"><scope>pyfolio::attribution::AttributionResult</scope><name>is_consistent</name></member>
+      <member refid="d3/df5/structpyfolio_1_1attribution_1_1AttributionResult_1aab5fd5c0736d928da99190164819ab0c" prot="public" virt="non-virtual"><scope>pyfolio::attribution::AttributionResult</scope><name>portfolio_return</name></member>
+      <member refid="d3/df5/structpyfolio_1_1attribution_1_1AttributionResult_1ab4d8a1362c2d2c45f010030060acaf5e" prot="public" virt="non-virtual"><scope>pyfolio::attribution::AttributionResult</scope><name>selection_effect</name></member>
+      <member refid="d3/df5/structpyfolio_1_1attribution_1_1AttributionResult_1a95b4e89ead28c7e2c9e95280aa57bc6c" prot="public" virt="non-virtual"><scope>pyfolio::attribution::AttributionResult</scope><name>total_effect</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

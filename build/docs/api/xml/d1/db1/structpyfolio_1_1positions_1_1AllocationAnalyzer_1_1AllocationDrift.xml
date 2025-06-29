@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="d1/db1/structpyfolio_1_1positions_1_1AllocationAnalyzer_1_1AllocationDrift" kind="struct" language="C++" prot="public">
+    <compoundname>pyfolio::positions::AllocationAnalyzer::AllocationDrift</compoundname>
+    <includes refid="d0/db7/allocation_8h" local="no">allocation.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d1/db1/structpyfolio_1_1positions_1_1AllocationAnalyzer_1_1AllocationDrift_1ae68e873dc23587ccf167a01e78d87106" prot="public" static="no" mutable="no">
+        <type><ref refid="d7/df8/namespacepyfolio_1a66e3e2ebe494a9dccbeb419408aaf7ea" kindref="member">Symbol</ref></type>
+        <definition>Symbol pyfolio::positions::AllocationAnalyzer::AllocationDrift::symbol</definition>
+        <argsstring></argsstring>
+        <name>symbol</name>
+        <qualifiedname>pyfolio::positions::AllocationAnalyzer::AllocationDrift::symbol</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" line="202" column="16" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" bodystart="202" bodyend="-1"/>
+        <referencedby refid="dd/dea/classpyfolio_1_1positions_1_1AllocationAnalyzer_1a958088048206a41ef14fe5dd1a34aa15" compoundref="d0/db7/allocation_8h" startline="210" endline="263">pyfolio::positions::AllocationAnalyzer::calculate_drift</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d1/db1/structpyfolio_1_1positions_1_1AllocationAnalyzer_1_1AllocationDrift_1a209ff069f9409126e6a6964e468e0c24" prot="public" static="no" mutable="no">
+        <type><ref refid="d7/df8/namespacepyfolio_1af989fd50261f45e6abc49511c6dfbdf0" kindref="member">Weight</ref></type>
+        <definition>Weight pyfolio::positions::AllocationAnalyzer::AllocationDrift::current_weight</definition>
+        <argsstring></argsstring>
+        <name>current_weight</name>
+        <qualifiedname>pyfolio::positions::AllocationAnalyzer::AllocationDrift::current_weight</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" line="203" column="16" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" bodystart="203" bodyend="-1"/>
+        <referencedby refid="dd/dea/classpyfolio_1_1positions_1_1AllocationAnalyzer_1a958088048206a41ef14fe5dd1a34aa15" compoundref="d0/db7/allocation_8h" startline="210" endline="263">pyfolio::positions::AllocationAnalyzer::calculate_drift</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d1/db1/structpyfolio_1_1positions_1_1AllocationAnalyzer_1_1AllocationDrift_1ac272ca398905d448afd2dfd9c18519df" prot="public" static="no" mutable="no">
+        <type><ref refid="d7/df8/namespacepyfolio_1af989fd50261f45e6abc49511c6dfbdf0" kindref="member">Weight</ref></type>
+        <definition>Weight pyfolio::positions::AllocationAnalyzer::AllocationDrift::target_weight</definition>
+        <argsstring></argsstring>
+        <name>target_weight</name>
+        <qualifiedname>pyfolio::positions::AllocationAnalyzer::AllocationDrift::target_weight</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" line="204" column="16" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" bodystart="204" bodyend="-1"/>
+        <referencedby refid="dd/dea/classpyfolio_1_1positions_1_1AllocationAnalyzer_1a958088048206a41ef14fe5dd1a34aa15" compoundref="d0/db7/allocation_8h" startline="210" endline="263">pyfolio::positions::AllocationAnalyzer::calculate_drift</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d1/db1/structpyfolio_1_1positions_1_1AllocationAnalyzer_1_1AllocationDrift_1a42244e5214823ad839565343ed041a52" prot="public" static="no" mutable="no">
+        <type><ref refid="d7/df8/namespacepyfolio_1af989fd50261f45e6abc49511c6dfbdf0" kindref="member">Weight</ref></type>
+        <definition>Weight pyfolio::positions::AllocationAnalyzer::AllocationDrift::drift</definition>
+        <argsstring></argsstring>
+        <name>drift</name>
+        <qualifiedname>pyfolio::positions::AllocationAnalyzer::AllocationDrift::drift</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" line="205" column="16" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" bodystart="205" bodyend="-1"/>
+        <referencedby refid="dd/dea/classpyfolio_1_1positions_1_1AllocationAnalyzer_1a958088048206a41ef14fe5dd1a34aa15" compoundref="d0/db7/allocation_8h" startline="210" endline="263">pyfolio::positions::AllocationAnalyzer::calculate_drift</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d1/db1/structpyfolio_1_1positions_1_1AllocationAnalyzer_1_1AllocationDrift_1a0bff4c1d46fb69e051ba8f72ac692464" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::positions::AllocationAnalyzer::AllocationDrift::rebalance_shares</definition>
+        <argsstring></argsstring>
+        <name>rebalance_shares</name>
+        <qualifiedname>pyfolio::positions::AllocationAnalyzer::AllocationDrift::rebalance_shares</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" line="206" column="16" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" bodystart="206" bodyend="-1"/>
+        <referencedby refid="dd/dea/classpyfolio_1_1positions_1_1AllocationAnalyzer_1a958088048206a41ef14fe5dd1a34aa15" compoundref="d0/db7/allocation_8h" startline="210" endline="263">pyfolio::positions::AllocationAnalyzer::calculate_drift</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d1/db1/structpyfolio_1_1positions_1_1AllocationAnalyzer_1_1AllocationDrift_1aad9ff1cf4bd4d298394599e04ced0a82" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::positions::AllocationAnalyzer::AllocationDrift::rebalance_value</definition>
+        <argsstring></argsstring>
+        <name>rebalance_value</name>
+        <qualifiedname>pyfolio::positions::AllocationAnalyzer::AllocationDrift::rebalance_value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" line="207" column="16" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" bodystart="207" bodyend="-1"/>
+        <referencedby refid="dd/dea/classpyfolio_1_1positions_1_1AllocationAnalyzer_1a958088048206a41ef14fe5dd1a34aa15" compoundref="d0/db7/allocation_8h" startline="210" endline="263">pyfolio::positions::AllocationAnalyzer::calculate_drift</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Calculate allocation drift from target. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>pyfolio::positions::AllocationAnalyzer::AllocationDrift</label>
+        <link refid="d1/db1/structpyfolio_1_1positions_1_1AllocationAnalyzer_1_1AllocationDrift"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>symbol</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="2">
+        <label>std::string</label>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" line="201" column="5" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/allocation.h" bodystart="201" bodyend="208"/>
+    <listofallmembers>
+      <member refid="d1/db1/structpyfolio_1_1positions_1_1AllocationAnalyzer_1_1AllocationDrift_1a209ff069f9409126e6a6964e468e0c24" prot="public" virt="non-virtual"><scope>pyfolio::positions::AllocationAnalyzer::AllocationDrift</scope><name>current_weight</name></member>
+      <member refid="d1/db1/structpyfolio_1_1positions_1_1AllocationAnalyzer_1_1AllocationDrift_1a42244e5214823ad839565343ed041a52" prot="public" virt="non-virtual"><scope>pyfolio::positions::AllocationAnalyzer::AllocationDrift</scope><name>drift</name></member>
+      <member refid="d1/db1/structpyfolio_1_1positions_1_1AllocationAnalyzer_1_1AllocationDrift_1a0bff4c1d46fb69e051ba8f72ac692464" prot="public" virt="non-virtual"><scope>pyfolio::positions::AllocationAnalyzer::AllocationDrift</scope><name>rebalance_shares</name></member>
+      <member refid="d1/db1/structpyfolio_1_1positions_1_1AllocationAnalyzer_1_1AllocationDrift_1aad9ff1cf4bd4d298394599e04ced0a82" prot="public" virt="non-virtual"><scope>pyfolio::positions::AllocationAnalyzer::AllocationDrift</scope><name>rebalance_value</name></member>
+      <member refid="d1/db1/structpyfolio_1_1positions_1_1AllocationAnalyzer_1_1AllocationDrift_1ae68e873dc23587ccf167a01e78d87106" prot="public" virt="non-virtual"><scope>pyfolio::positions::AllocationAnalyzer::AllocationDrift</scope><name>symbol</name></member>
+      <member refid="d1/db1/structpyfolio_1_1positions_1_1AllocationAnalyzer_1_1AllocationDrift_1ac272ca398905d448afd2dfd9c18519df" prot="public" virt="non-virtual"><scope>pyfolio::positions::AllocationAnalyzer::AllocationDrift</scope><name>target_weight</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

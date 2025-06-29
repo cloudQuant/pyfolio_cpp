@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="de/d0d/namespacepyfolio_1_1analytics_1_1turnover__utils" kind="namespace" language="C++">
+    <compoundname>pyfolio::analytics::turnover_utils</compoundname>
+    <innerclass refid="dd/dee/structpyfolio_1_1analytics_1_1turnover__utils_1_1TurnoverEfficiency" prot="public">pyfolio::analytics::turnover_utils::TurnoverEfficiency</innerclass>
+    <innerclass refid="d3/d70/structpyfolio_1_1analytics_1_1turnover__utils_1_1TurnoverStatistics" prot="public">pyfolio::analytics::turnover_utils::TurnoverStatistics</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="de/d0d/namespacepyfolio_1_1analytics_1_1turnover__utils_1ac6dc03cda715f6f067b135a47936899f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double pyfolio::analytics::turnover_utils::annualize_turnover</definition>
+        <argsstring>(double daily_turnover, int trading_days_per_year=252)</argsstring>
+        <name>annualize_turnover</name>
+        <qualifiedname>pyfolio::analytics::turnover_utils::annualize_turnover</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>daily_turnover</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>trading_days_per_year</declname>
+          <defval>252</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert daily turnover to annualized </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h" line="165" column="8" declfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h" declline="165" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d0d/namespacepyfolio_1_1analytics_1_1turnover__utils_1a1dee64df54171e1a03c607503bb07b07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/d70/structpyfolio_1_1analytics_1_1turnover__utils_1_1TurnoverStatistics" kindref="compound">TurnoverStatistics</ref></type>
+        <definition>TurnoverStatistics pyfolio::analytics::turnover_utils::calculate_turnover_statistics</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;turnover)</argsstring>
+        <name>calculate_turnover_statistics</name>
+        <qualifiedname>pyfolio::analytics::turnover_utils::calculate_turnover_statistics</qualifiedname>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>turnover</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h" line="180" column="20" declfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h" declline="180" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d0d/namespacepyfolio_1_1analytics_1_1turnover__utils_1a756dd9364cbeb9160c7ab767f9e3364a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::pair&lt; <ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref>, <ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref> &gt; &gt;</type>
+        <definition>std::vector&lt; std::pair&lt; DateTime, DateTime &gt; &gt; pyfolio::analytics::turnover_utils::detect_high_turnover_periods</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;turnover, const std::vector&lt; DateTime &gt; &amp;dates, double threshold_percentile=0.95)</argsstring>
+        <name>detect_high_turnover_periods</name>
+        <qualifiedname>pyfolio::analytics::turnover_utils::detect_high_turnover_periods</qualifiedname>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>turnover</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="d6/d4f/classpyfolio_1_1DateTime" kindref="compound">DateTime</ref> &gt; &amp;</type>
+          <declname>dates</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>threshold_percentile</declname>
+          <defval>0.95</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Detect high turnover periods </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h" line="185" column="13" declfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h" declline="185" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d0d/namespacepyfolio_1_1analytics_1_1turnover__utils_1a4772b82a62f9b4d4aecee75157f33b0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="de/dfa/classpyfolio_1_1Result" kindref="compound">Result</ref>&lt; <ref refid="dd/dee/structpyfolio_1_1analytics_1_1turnover__utils_1_1TurnoverEfficiency" kindref="compound">TurnoverEfficiency</ref> &gt;</type>
+        <definition>Result&lt; TurnoverEfficiency &gt; pyfolio::analytics::turnover_utils::calculate_turnover_efficiency</definition>
+        <argsstring>(const TurnoverResult &amp;turnover, const TimeSeries&lt; Return &gt; &amp;returns, const TimeSeries&lt; Return &gt; &amp;benchmark={})</argsstring>
+        <name>calculate_turnover_efficiency</name>
+        <qualifiedname>pyfolio::analytics::turnover_utils::calculate_turnover_efficiency</qualifiedname>
+        <param>
+          <type>const <ref refid="d0/d81/structpyfolio_1_1analytics_1_1TurnoverResult" kindref="compound">TurnoverResult</ref> &amp;</type>
+          <declname>turnover</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &amp;</type>
+          <declname>returns</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; <ref refid="d7/df8/namespacepyfolio_1ab26cb0b13c68f84ed67abcc669658f35" kindref="member">Return</ref> &gt; &amp;</type>
+          <declname>benchmark</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h" line="199" column="8" declfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h" declline="199" declcolumn="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Utility functions for turnover analysis </para>
+    </detaileddescription>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/turnover_enhanced.h" line="160" column="1"/>
+  </compounddef>
+</doxygen>

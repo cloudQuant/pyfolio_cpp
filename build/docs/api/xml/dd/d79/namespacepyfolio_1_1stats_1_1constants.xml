@@ -1,0 +1,241 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dd/d79/namespacepyfolio_1_1stats_1_1constants" kind="namespace" language="C++">
+    <compoundname>pyfolio::stats::constants</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="dd/d79/namespacepyfolio_1_1stats_1_1constants_1a043417fac78be040392a0520dde681fd" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::stats::constants::pi</definition>
+        <argsstring></argsstring>
+        <name>pi</name>
+        <qualifiedname>pyfolio::stats::constants::pi</qualifiedname>
+        <initializer>= 3.14159265358979323846</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" line="19" column="18" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d79/namespacepyfolio_1_1stats_1_1constants_1acea28c28cb82b587838746d20d1322a5" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::stats::constants::e</definition>
+        <argsstring></argsstring>
+        <name>e</name>
+        <qualifiedname>pyfolio::stats::constants::e</qualifiedname>
+        <initializer>= 2.71828182845904523536</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" line="20" column="18" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d79/namespacepyfolio_1_1stats_1_1constants_1aef0edb1622f5c598049c3491123478a9" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::stats::constants::sqrt_2</definition>
+        <argsstring></argsstring>
+        <name>sqrt_2</name>
+        <qualifiedname>pyfolio::stats::constants::sqrt_2</qualifiedname>
+        <initializer>= 1.41421356237309504880</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" line="21" column="18" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d79/namespacepyfolio_1_1stats_1_1constants_1ac686c3917a59c72b3ba231ac5b18eb2d" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::stats::constants::sqrt_pi</definition>
+        <argsstring></argsstring>
+        <name>sqrt_pi</name>
+        <qualifiedname>pyfolio::stats::constants::sqrt_pi</qualifiedname>
+        <initializer>= 1.77245385090551602730</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" line="22" column="18" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d79/namespacepyfolio_1_1stats_1_1constants_1ab9537969c98ac2754dd43ece167a2397" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::stats::constants::ln_2</definition>
+        <argsstring></argsstring>
+        <name>ln_2</name>
+        <qualifiedname>pyfolio::stats::constants::ln_2</qualifiedname>
+        <initializer>= 0.69314718055994530942</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" line="23" column="18" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d79/namespacepyfolio_1_1stats_1_1constants_1a01c233665ef20446bae6b0c2dd3f1c9b" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::stats::constants::ln_10</definition>
+        <argsstring></argsstring>
+        <name>ln_10</name>
+        <qualifiedname>pyfolio::stats::constants::ln_10</qualifiedname>
+        <initializer>= 2.30258509299404568402</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" line="24" column="18" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d79/namespacepyfolio_1_1stats_1_1constants_1a1a2f9a0ecd21f4ae078c8228d3e43e36" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::stats::constants::trading_days_per_year</definition>
+        <argsstring></argsstring>
+        <name>trading_days_per_year</name>
+        <qualifiedname>pyfolio::stats::constants::trading_days_per_year</qualifiedname>
+        <initializer>= 252.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" line="27" column="18" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" bodystart="27" bodyend="-1"/>
+        <referencedby refid="d9/d4a/namespacepyfolio_1_1stats_1_1constexpr__utils_1acdd4e5b38c28287a04152d74b4728725" compoundref="d3/dbe/math_2statistics_8h" startline="90" endline="105">pyfolio::stats::constexpr_utils::annualization_factor</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d79/namespacepyfolio_1_1stats_1_1constants_1a2cdc8e081f8d1a7a8a04e16196d9d15d" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::stats::constants::calendar_days_per_year</definition>
+        <argsstring></argsstring>
+        <name>calendar_days_per_year</name>
+        <qualifiedname>pyfolio::stats::constants::calendar_days_per_year</qualifiedname>
+        <initializer>= 365.25</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" line="28" column="18" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d79/namespacepyfolio_1_1stats_1_1constants_1a8dbcc4d279ec249b44459f5ce4b67eeb" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::stats::constants::months_per_year</definition>
+        <argsstring></argsstring>
+        <name>months_per_year</name>
+        <qualifiedname>pyfolio::stats::constants::months_per_year</qualifiedname>
+        <initializer>= 12.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" line="29" column="18" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" bodystart="29" bodyend="-1"/>
+        <referencedby refid="d9/d4a/namespacepyfolio_1_1stats_1_1constexpr__utils_1acdd4e5b38c28287a04152d74b4728725" compoundref="d3/dbe/math_2statistics_8h" startline="90" endline="105">pyfolio::stats::constexpr_utils::annualization_factor</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d79/namespacepyfolio_1_1stats_1_1constants_1a611cd44db2d55419fef9908afafe39b6" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::stats::constants::weeks_per_year</definition>
+        <argsstring></argsstring>
+        <name>weeks_per_year</name>
+        <qualifiedname>pyfolio::stats::constants::weeks_per_year</qualifiedname>
+        <initializer>= 52.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" line="30" column="18" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" bodystart="30" bodyend="-1"/>
+        <referencedby refid="d9/d4a/namespacepyfolio_1_1stats_1_1constexpr__utils_1acdd4e5b38c28287a04152d74b4728725" compoundref="d3/dbe/math_2statistics_8h" startline="90" endline="105">pyfolio::stats::constexpr_utils::annualization_factor</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d79/namespacepyfolio_1_1stats_1_1constants_1a2b5d7af287aeb44a02669411c6638a18" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::stats::constants::default_risk_free_rate</definition>
+        <argsstring></argsstring>
+        <name>default_risk_free_rate</name>
+        <qualifiedname>pyfolio::stats::constants::default_risk_free_rate</qualifiedname>
+        <initializer>= 0.02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" line="33" column="18" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d79/namespacepyfolio_1_1stats_1_1constants_1a7acdf69e48f4a122e1f9d68a1b8f2705" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::stats::constants::var_95_percentile</definition>
+        <argsstring></argsstring>
+        <name>var_95_percentile</name>
+        <qualifiedname>pyfolio::stats::constants::var_95_percentile</qualifiedname>
+        <initializer>= 0.05</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" line="36" column="18" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d79/namespacepyfolio_1_1stats_1_1constants_1abbf7d7d4b16e6fe8d6dd48183c353b06" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::stats::constants::var_99_percentile</definition>
+        <argsstring></argsstring>
+        <name>var_99_percentile</name>
+        <qualifiedname>pyfolio::stats::constants::var_99_percentile</qualifiedname>
+        <initializer>= 0.01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" line="37" column="18" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d79/namespacepyfolio_1_1stats_1_1constants_1a6d7cfcbafc1e64a69f6da89baaf264f3" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::stats::constants::cvar_95_percentile</definition>
+        <argsstring></argsstring>
+        <name>cvar_95_percentile</name>
+        <qualifiedname>pyfolio::stats::constants::cvar_95_percentile</qualifiedname>
+        <initializer>= 0.05</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" line="38" column="18" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d79/namespacepyfolio_1_1stats_1_1constants_1a300ed569c38776c7703e79482e7c049d" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::stats::constants::cvar_99_percentile</definition>
+        <argsstring></argsstring>
+        <name>cvar_99_percentile</name>
+        <qualifiedname>pyfolio::stats::constants::cvar_99_percentile</qualifiedname>
+        <initializer>= 0.01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" line="39" column="18" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/math/statistics.h" line="18" column="1"/>
+  </compounddef>
+</doxygen>

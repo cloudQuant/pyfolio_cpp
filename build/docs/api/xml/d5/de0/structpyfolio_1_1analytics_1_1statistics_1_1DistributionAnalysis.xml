@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="d5/de0/structpyfolio_1_1analytics_1_1statistics_1_1DistributionAnalysis" kind="struct" language="C++" prot="public">
+    <compoundname>pyfolio::analytics::statistics::DistributionAnalysis</compoundname>
+    <includes refid="d5/db2/analytics_2statistics_8h" local="no">statistics.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d5/de0/structpyfolio_1_1analytics_1_1statistics_1_1DistributionAnalysis_1af6bc7353125dc8d0387eb1e6e3a3a752" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::statistics::DistributionAnalysis::jarque_bera_statistic</definition>
+        <argsstring></argsstring>
+        <name>jarque_bera_statistic</name>
+        <qualifiedname>pyfolio::analytics::statistics::DistributionAnalysis::jarque_bera_statistic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" line="110" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" bodystart="110" bodyend="-1"/>
+        <referencedby refid="dc/d21/namespacepyfolio_1_1analytics_1_1statistics_1a50482d1bd36f2cb5c64daa034eeabbe3" compoundref="d5/db2/analytics_2statistics_8h" startline="123" endline="169">pyfolio::analytics::statistics::analyze_distribution</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d5/de0/structpyfolio_1_1analytics_1_1statistics_1_1DistributionAnalysis_1a63871984489bf56c33cb6ac9119beed3" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::statistics::DistributionAnalysis::jarque_bera_p_value</definition>
+        <argsstring></argsstring>
+        <name>jarque_bera_p_value</name>
+        <qualifiedname>pyfolio::analytics::statistics::DistributionAnalysis::jarque_bera_p_value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" line="111" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" bodystart="111" bodyend="-1"/>
+        <referencedby refid="dc/d21/namespacepyfolio_1_1analytics_1_1statistics_1a50482d1bd36f2cb5c64daa034eeabbe3" compoundref="d5/db2/analytics_2statistics_8h" startline="123" endline="169">pyfolio::analytics::statistics::analyze_distribution</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d5/de0/structpyfolio_1_1analytics_1_1statistics_1_1DistributionAnalysis_1a8eedae00048da538d2dbbb9766577d0a" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool pyfolio::analytics::statistics::DistributionAnalysis::is_normal</definition>
+        <argsstring></argsstring>
+        <name>is_normal</name>
+        <qualifiedname>pyfolio::analytics::statistics::DistributionAnalysis::is_normal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" line="112" column="10" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" bodystart="112" bodyend="-1"/>
+        <referencedby refid="dc/d21/namespacepyfolio_1_1analytics_1_1statistics_1a50482d1bd36f2cb5c64daa034eeabbe3" compoundref="d5/db2/analytics_2statistics_8h" startline="123" endline="169">pyfolio::analytics::statistics::analyze_distribution</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d5/de0/structpyfolio_1_1analytics_1_1statistics_1_1DistributionAnalysis_1aa3bd0268e4db8a8ff771c3673ee70db7" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::statistics::DistributionAnalysis::anderson_darling_statistic</definition>
+        <argsstring></argsstring>
+        <name>anderson_darling_statistic</name>
+        <qualifiedname>pyfolio::analytics::statistics::DistributionAnalysis::anderson_darling_statistic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" line="113" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/de0/structpyfolio_1_1analytics_1_1statistics_1_1DistributionAnalysis_1a623970ffc8428f625d078e72dac8dc06" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pyfolio::analytics::statistics::DistributionAnalysis::kolmogorov_smirnov_statistic</definition>
+        <argsstring></argsstring>
+        <name>kolmogorov_smirnov_statistic</name>
+        <qualifiedname>pyfolio::analytics::statistics::DistributionAnalysis::kolmogorov_smirnov_statistic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" line="114" column="12" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/de0/structpyfolio_1_1analytics_1_1statistics_1_1DistributionAnalysis_1abb1c93e66e1cacdecf1a108f1e71cbc3" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; pyfolio::analytics::statistics::DistributionAnalysis::histogram_bins</definition>
+        <argsstring></argsstring>
+        <name>histogram_bins</name>
+        <qualifiedname>pyfolio::analytics::statistics::DistributionAnalysis::histogram_bins</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" line="115" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" bodystart="115" bodyend="-1"/>
+        <referencedby refid="dc/d21/namespacepyfolio_1_1analytics_1_1statistics_1a50482d1bd36f2cb5c64daa034eeabbe3" compoundref="d5/db2/analytics_2statistics_8h" startline="123" endline="169">pyfolio::analytics::statistics::analyze_distribution</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d5/de0/structpyfolio_1_1analytics_1_1statistics_1_1DistributionAnalysis_1a120a6e19201d54ddd777a1ac6fc22a3f" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; pyfolio::analytics::statistics::DistributionAnalysis::histogram_counts</definition>
+        <argsstring></argsstring>
+        <name>histogram_counts</name>
+        <qualifiedname>pyfolio::analytics::statistics::DistributionAnalysis::histogram_counts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" line="116" column="17" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" bodystart="116" bodyend="-1"/>
+        <referencedby refid="dc/d21/namespacepyfolio_1_1analytics_1_1statistics_1a50482d1bd36f2cb5c64daa034eeabbe3" compoundref="d5/db2/analytics_2statistics_8h" startline="123" endline="169">pyfolio::analytics::statistics::analyze_distribution</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Distribution analysis. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>pyfolio::analytics::statistics::DistributionAnalysis</label>
+        <link refid="d5/de0/structpyfolio_1_1analytics_1_1statistics_1_1DistributionAnalysis"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>histogram_bins</edgelabel>
+          <edgelabel>histogram_counts</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::vector&lt; double &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" line="109" column="1" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/analytics/statistics.h" bodystart="109" bodyend="117"/>
+    <listofallmembers>
+      <member refid="d5/de0/structpyfolio_1_1analytics_1_1statistics_1_1DistributionAnalysis_1aa3bd0268e4db8a8ff771c3673ee70db7" prot="public" virt="non-virtual"><scope>pyfolio::analytics::statistics::DistributionAnalysis</scope><name>anderson_darling_statistic</name></member>
+      <member refid="d5/de0/structpyfolio_1_1analytics_1_1statistics_1_1DistributionAnalysis_1abb1c93e66e1cacdecf1a108f1e71cbc3" prot="public" virt="non-virtual"><scope>pyfolio::analytics::statistics::DistributionAnalysis</scope><name>histogram_bins</name></member>
+      <member refid="d5/de0/structpyfolio_1_1analytics_1_1statistics_1_1DistributionAnalysis_1a120a6e19201d54ddd777a1ac6fc22a3f" prot="public" virt="non-virtual"><scope>pyfolio::analytics::statistics::DistributionAnalysis</scope><name>histogram_counts</name></member>
+      <member refid="d5/de0/structpyfolio_1_1analytics_1_1statistics_1_1DistributionAnalysis_1a8eedae00048da538d2dbbb9766577d0a" prot="public" virt="non-virtual"><scope>pyfolio::analytics::statistics::DistributionAnalysis</scope><name>is_normal</name></member>
+      <member refid="d5/de0/structpyfolio_1_1analytics_1_1statistics_1_1DistributionAnalysis_1a63871984489bf56c33cb6ac9119beed3" prot="public" virt="non-virtual"><scope>pyfolio::analytics::statistics::DistributionAnalysis</scope><name>jarque_bera_p_value</name></member>
+      <member refid="d5/de0/structpyfolio_1_1analytics_1_1statistics_1_1DistributionAnalysis_1af6bc7353125dc8d0387eb1e6e3a3a752" prot="public" virt="non-virtual"><scope>pyfolio::analytics::statistics::DistributionAnalysis</scope><name>jarque_bera_statistic</name></member>
+      <member refid="d5/de0/structpyfolio_1_1analytics_1_1statistics_1_1DistributionAnalysis_1a623970ffc8428f625d078e72dac8dc06" prot="public" virt="non-virtual"><scope>pyfolio::analytics::statistics::DistributionAnalysis</scope><name>kolmogorov_smirnov_statistic</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dc/dc1/structpyfolio_1_1WeightTag" kind="struct" language="C++" prot="public">
+    <compoundname>pyfolio::WeightTag</compoundname>
+    <includes refid="d9/d49/types_8h" local="no">types.h</includes>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/types.h" line="137" column="1" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/types.h" bodystart="137" bodyend="137"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

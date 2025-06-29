@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dir_bf97ca774b4ebc067669820e709a5f9b" kind="dir">
+    <compoundname>/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core</compoundname>
+    <innerfile refid="d2/d99/dataframe_8h">dataframe.h</innerfile>
+    <innerfile refid="de/d1b/datetime_8h">datetime.h</innerfile>
+    <innerfile refid="d3/d11/error__handling_8h">error_handling.h</innerfile>
+    <innerfile refid="d8/d51/time__series_8h">time_series.h</innerfile>
+    <innerfile refid="d9/d49/types_8h">types.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/core/"/>
+  </compounddef>
+</doxygen>

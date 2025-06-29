@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dc/dcf/structpyfolio_1_1positions_1_1HoldingsSeries_1_1ExposureSeries" kind="struct" language="C++" prot="public">
+    <compoundname>pyfolio::positions::HoldingsSeries::ExposureSeries</compoundname>
+    <includes refid="d7/d0c/holdings_8h" local="no">holdings.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="dc/dcf/structpyfolio_1_1positions_1_1HoldingsSeries_1_1ExposureSeries_1add76d07ec2b5eef7d3faf239f6c09478" prot="public" static="no" mutable="no">
+        <type><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; double &gt;</type>
+        <definition>TimeSeries&lt;double&gt; pyfolio::positions::HoldingsSeries::ExposureSeries::gross_exposure</definition>
+        <argsstring></argsstring>
+        <name>gross_exposure</name>
+        <qualifiedname>pyfolio::positions::HoldingsSeries::ExposureSeries::gross_exposure</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/holdings.h" line="394" column="20" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/holdings.h" bodystart="394" bodyend="-1"/>
+        <referencedby refid="d0/d02/classpyfolio_1_1positions_1_1HoldingsSeries_1a566c275feb01e5f83234c36b9d13a885" compoundref="d7/d0c/holdings_8h" startline="400" endline="428">pyfolio::positions::HoldingsSeries::exposure_series</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="dc/dcf/structpyfolio_1_1positions_1_1HoldingsSeries_1_1ExposureSeries_1a76f712e799fd60820a5c74990c20edf8" prot="public" static="no" mutable="no">
+        <type><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; double &gt;</type>
+        <definition>TimeSeries&lt;double&gt; pyfolio::positions::HoldingsSeries::ExposureSeries::net_exposure</definition>
+        <argsstring></argsstring>
+        <name>net_exposure</name>
+        <qualifiedname>pyfolio::positions::HoldingsSeries::ExposureSeries::net_exposure</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/holdings.h" line="395" column="20" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/holdings.h" bodystart="395" bodyend="-1"/>
+        <referencedby refid="d0/d02/classpyfolio_1_1positions_1_1HoldingsSeries_1a566c275feb01e5f83234c36b9d13a885" compoundref="d7/d0c/holdings_8h" startline="400" endline="428">pyfolio::positions::HoldingsSeries::exposure_series</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="dc/dcf/structpyfolio_1_1positions_1_1HoldingsSeries_1_1ExposureSeries_1a20968a0f8817c438bc0b6bee75f6eb59" prot="public" static="no" mutable="no">
+        <type><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; double &gt;</type>
+        <definition>TimeSeries&lt;double&gt; pyfolio::positions::HoldingsSeries::ExposureSeries::long_exposure</definition>
+        <argsstring></argsstring>
+        <name>long_exposure</name>
+        <qualifiedname>pyfolio::positions::HoldingsSeries::ExposureSeries::long_exposure</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/holdings.h" line="396" column="20" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/holdings.h" bodystart="396" bodyend="-1"/>
+        <referencedby refid="d0/d02/classpyfolio_1_1positions_1_1HoldingsSeries_1a566c275feb01e5f83234c36b9d13a885" compoundref="d7/d0c/holdings_8h" startline="400" endline="428">pyfolio::positions::HoldingsSeries::exposure_series</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="dc/dcf/structpyfolio_1_1positions_1_1HoldingsSeries_1_1ExposureSeries_1a4a7140c18b9aa8986eb1ccdf1a2e89fe" prot="public" static="no" mutable="no">
+        <type><ref refid="d7/ddc/classpyfolio_1_1TimeSeries" kindref="compound">TimeSeries</ref>&lt; double &gt;</type>
+        <definition>TimeSeries&lt;double&gt; pyfolio::positions::HoldingsSeries::ExposureSeries::short_exposure</definition>
+        <argsstring></argsstring>
+        <name>short_exposure</name>
+        <qualifiedname>pyfolio::positions::HoldingsSeries::ExposureSeries::short_exposure</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/holdings.h" line="397" column="20" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/holdings.h" bodystart="397" bodyend="-1"/>
+        <referencedby refid="d0/d02/classpyfolio_1_1positions_1_1HoldingsSeries_1a566c275feb01e5f83234c36b9d13a885" compoundref="d7/d0c/holdings_8h" startline="400" endline="428">pyfolio::positions::HoldingsSeries::exposure_series</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Calculate exposure time series. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>pyfolio::TimeSeries&lt; double &gt;</label>
+        <link refid="d7/ddc/classpyfolio_1_1TimeSeries"/>
+      </node>
+      <node id="1">
+        <label>pyfolio::positions::HoldingsSeries::ExposureSeries</label>
+        <link refid="dc/dcf/structpyfolio_1_1positions_1_1HoldingsSeries_1_1ExposureSeries"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>gross_exposure</edgelabel>
+          <edgelabel>long_exposure</edgelabel>
+          <edgelabel>net_exposure</edgelabel>
+          <edgelabel>short_exposure</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/holdings.h" line="393" column="5" bodyfile="/Users/yunjinqi/Documents/source_code/pyfolio_cpp/include/pyfolio/positions/holdings.h" bodystart="393" bodyend="398"/>
+    <listofallmembers>
+      <member refid="dc/dcf/structpyfolio_1_1positions_1_1HoldingsSeries_1_1ExposureSeries_1add76d07ec2b5eef7d3faf239f6c09478" prot="public" virt="non-virtual"><scope>pyfolio::positions::HoldingsSeries::ExposureSeries</scope><name>gross_exposure</name></member>
+      <member refid="dc/dcf/structpyfolio_1_1positions_1_1HoldingsSeries_1_1ExposureSeries_1a20968a0f8817c438bc0b6bee75f6eb59" prot="public" virt="non-virtual"><scope>pyfolio::positions::HoldingsSeries::ExposureSeries</scope><name>long_exposure</name></member>
+      <member refid="dc/dcf/structpyfolio_1_1positions_1_1HoldingsSeries_1_1ExposureSeries_1a76f712e799fd60820a5c74990c20edf8" prot="public" virt="non-virtual"><scope>pyfolio::positions::HoldingsSeries::ExposureSeries</scope><name>net_exposure</name></member>
+      <member refid="dc/dcf/structpyfolio_1_1positions_1_1HoldingsSeries_1_1ExposureSeries_1a4a7140c18b9aa8986eb1ccdf1a2e89fe" prot="public" virt="non-virtual"><scope>pyfolio::positions::HoldingsSeries::ExposureSeries</scope><name>short_exposure</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
