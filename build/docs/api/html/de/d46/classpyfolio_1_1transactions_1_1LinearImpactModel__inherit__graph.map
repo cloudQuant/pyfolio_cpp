@@ -1,5 +1,0 @@
-<map id="pyfolio::transactions::LinearImpactModel" name="pyfolio::transactions::LinearImpactModel">
-<area shape="rect" id="Node000001" title="Linear market impact model." alt="" coords="8,94,147,135"/>
-<area shape="rect" id="Node000002" href="$d7/d7e/classpyfolio_1_1transactions_1_1MarketImpactModel.html" title="Market impact model interface." alt="" coords="5,5,150,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,62,80,94,75,94,75,62"/>
-</map>

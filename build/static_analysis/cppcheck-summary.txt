@@ -1,9 +1,0 @@
-=== Cppcheck Analysis Summary ===
-Generated: Sun Jun 29 11:57:39 CST 2025
-
-Issues found:
-  Errors: 198
-  Warnings: 3
-  Style: 306
-  Performance: 42
-

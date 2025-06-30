@@ -1,1 +1,0 @@
-/usr/bin/c++ -g -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names --coverage CMakeFiles/test_pyfolio_equivalent_only.dir/test_pyfolio_equivalent.cpp.o -o test_pyfolio_equivalent_only  libpyfolio_test_data.a ../libpyfolio_cpp.a ../lib/libgtest.a ../lib/libgtest_main.a ../lib/libgtest.a

@@ -1,1 +1,0 @@
-/usr/bin/c++ -g -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names --coverage CMakeFiles/options_pricing_example.dir/options_pricing_example.cpp.o -o options_pricing_example  ../libpyfolio_cpp.a

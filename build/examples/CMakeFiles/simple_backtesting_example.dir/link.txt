@@ -1,1 +1,0 @@
-/usr/bin/c++ -g -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names --coverage CMakeFiles/simple_backtesting_example.dir/simple_backtesting_example.cpp.o -o simple_backtesting_example  ../libpyfolio_cpp.a

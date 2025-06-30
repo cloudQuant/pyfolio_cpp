@@ -33,6 +33,7 @@
 
 # CMake
 build/
+build_coverage/
 CMakeCache.txt
 CMakeFiles/
 cmake_install.cmake

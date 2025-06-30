@@ -1,7 +1,0 @@
-<map id="pyfolio::analytics::AnalysisConfig" name="pyfolio::analytics::AnalysisConfig">
-<area shape="rect" id="Node000001" title="Performance analysis configuration." alt="" coords="83,109,202,150"/>
-<area shape="rect" id="Node000002" href="$df/d48/structpyfolio_1_1analytics_1_1CacheConfig.html" title="Cache configuration." alt="" coords="5,5,125,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,57,111,83,130,107,125,110,107,87,87,60"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="148,13,291,38"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="211,54,192,87,169,110,166,107,188,83,207,51"/>
-</map>

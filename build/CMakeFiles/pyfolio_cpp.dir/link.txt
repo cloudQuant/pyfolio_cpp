@@ -1,2 +1,0 @@
-/usr/bin/ar qc libpyfolio_cpp.a CMakeFiles/pyfolio_cpp.dir/src/math/simd_math.cpp.o CMakeFiles/pyfolio_cpp.dir/src/visualization/plotly_enhanced.cpp.o CMakeFiles/pyfolio_cpp.dir/src/backtesting/advanced_backtester.cpp.o CMakeFiles/pyfolio_cpp.dir/src/risk/advanced_risk_models.cpp.o CMakeFiles/pyfolio_cpp.dir/src/ml/model_persistence.cpp.o CMakeFiles/pyfolio_cpp.dir/src/ml/serializable_models.cpp.o
-/usr/bin/ranlib libpyfolio_cpp.a

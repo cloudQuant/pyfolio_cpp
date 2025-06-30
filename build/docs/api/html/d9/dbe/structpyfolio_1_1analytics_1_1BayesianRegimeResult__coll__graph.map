@@ -1,7 +1,0 @@
-<map id="pyfolio::analytics::BayesianRegimeResult" name="pyfolio::analytics::BayesianRegimeResult">
-<area shape="rect" id="Node000001" title="Bayesian HMM regime detection results." alt="" coords="62,139,228,180"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,127,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="70,46,76,80,90,114,113,137,109,140,86,116,71,81,65,46"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="151,5,296,31"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="222,47,213,81,196,116,174,140,170,137,192,114,208,80,217,46"/>
-</map>

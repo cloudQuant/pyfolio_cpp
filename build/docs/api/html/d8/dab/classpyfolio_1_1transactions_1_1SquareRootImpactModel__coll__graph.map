@@ -1,5 +1,0 @@
-<map id="pyfolio::transactions::SquareRootImpactModel" name="pyfolio::transactions::SquareRootImpactModel">
-<area shape="rect" id="Node000001" title="Square&#45;root market impact model (Almgren et al.)" alt="" coords="5,94,179,135"/>
-<area shape="rect" id="Node000002" href="$d7/d7e/classpyfolio_1_1transactions_1_1MarketImpactModel.html" title="Market impact model interface." alt="" coords="20,5,164,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,62,95,94,89,94,89,62"/>
-</map>

@@ -1,1 +1,0 @@
-/usr/bin/c++ -g -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names --coverage CMakeFiles/bayesian_analysis_example.dir/bayesian_analysis_example.cpp.o -o bayesian_analysis_example  ../libpyfolio_cpp.a

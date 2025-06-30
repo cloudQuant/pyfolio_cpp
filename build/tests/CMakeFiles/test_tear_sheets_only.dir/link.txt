@@ -1,1 +1,0 @@
-/usr/bin/c++ -g -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names --coverage CMakeFiles/test_tear_sheets_only.dir/test_tear_sheets.cpp.o -o test_tear_sheets_only  ../libpyfolio_cpp.a ../lib/libgtest.a ../lib/libgtest_main.a ../lib/libgtest.a

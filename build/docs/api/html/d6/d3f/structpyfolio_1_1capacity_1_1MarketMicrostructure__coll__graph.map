@@ -1,7 +1,0 @@
-<map id="pyfolio::capacity::MarketMicrostructure" name="pyfolio::capacity::MarketMicrostructure">
-<area shape="rect" id="Node000001" title="Market microstructure data for capacity analysis." alt="" coords="5,184,150,225"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="38,95,117,121"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,136,80,183,75,183,75,136"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="15,5,140,46"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="80,61,80,95,75,95,75,61"/>
-</map>

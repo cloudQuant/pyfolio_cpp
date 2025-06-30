@@ -1,9 +1,0 @@
-<map id="pyfolio::risk::FactorRiskAttribution" name="pyfolio::risk::FactorRiskAttribution">
-<area shape="rect" id="Node000001" title="Factor risk attribution results." alt="" coords="5,288,166,328"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="12,184,159,225"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,240,88,287,83,287,83,240"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="46,95,125,121"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="88,136,88,183,83,183,83,136"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="23,5,148,46"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="88,61,88,95,83,95,83,61"/>
-</map>
