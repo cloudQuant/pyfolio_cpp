@@ -72,18 +72,23 @@ TEST_F(MLRegimeDetectionTest, EnsembleDetection) {
     ASSERT_TRUE(result.is_ok()) << "Ensemble detection failed: " << result.error().message;
     
     const auto& regimes = result.value();
-    EXPECT_GT(regimes.size(), 0);
+    EXPECT_GT(regimes.regime_sequence.size(), 0);
     
-    // Ensemble should detect multiple regimes in our synthetic data
-    std::set<RegimeType> detected_types;
-    for (const auto& regime : regimes) {
-        detected_types.insert(regime.characteristics.type);
-        EXPECT_GE(regime.probability, 0.0);
-        EXPECT_LE(regime.probability, 1.0);
+    // Check that all regime probabilities are valid
+    for (size_t i = 0; i < regimes.regime_probabilities.size(); ++i) {
+        EXPECT_GE(regimes.regime_probabilities[i], 0.0);
+        EXPECT_LE(regimes.regime_probabilities[i], 1.0);
     }
     
-    // Should detect at least one regime type
-    EXPECT_GE(detected_types.size(), 1);
+    // Should have detected regime characteristics
+    EXPECT_GT(regimes.regime_characteristics.size(), 0);
+    
+    // Validate regime characteristics
+    for (const auto& characteristics : regimes.regime_characteristics) {
+        EXPECT_GE(characteristics.probability, 0.0);
+        EXPECT_LE(characteristics.probability, 1.0);
+        EXPECT_GT(characteristics.persistence, 0.0);
+    }
 }
 
 TEST_F(MLRegimeDetectionTest, RandomForestDetection) {
@@ -92,14 +97,18 @@ TEST_F(MLRegimeDetectionTest, RandomForestDetection) {
     ASSERT_TRUE(result.is_ok()) << "Random Forest detection failed: " << result.error().message;
     
     const auto& regimes = result.value();
-    EXPECT_GT(regimes.size(), 0);
+    EXPECT_GT(regimes.regime_sequence.size(), 0);
     
-    // Check regime characteristics validity
-    for (const auto& regime : regimes) {
-        EXPECT_GE(regime.probability, 0.0);
-        EXPECT_LE(regime.probability, 1.0);
-        EXPECT_GE(regime.characteristics.risk_level(), 1);
-        EXPECT_LE(regime.characteristics.risk_level(), 5);
+    // Check regime probabilities validity
+    for (size_t i = 0; i < regimes.regime_probabilities.size(); ++i) {
+        EXPECT_GE(regimes.regime_probabilities[i], 0.0);
+        EXPECT_LE(regimes.regime_probabilities[i], 1.0);
+    }
+    
+    // Check regime characteristics if available
+    for (const auto& characteristics : regimes.regime_characteristics) {
+        EXPECT_GE(characteristics.risk_level(), 1);
+        EXPECT_LE(characteristics.risk_level(), 5);
     }
 }
 
@@ -109,21 +118,16 @@ TEST_F(MLRegimeDetectionTest, SVMDetection) {
     ASSERT_TRUE(result.is_ok()) << "SVM detection failed: " << result.error().message;
     
     const auto& regimes = result.value();
-    EXPECT_GT(regimes.size(), 0);
+    EXPECT_GT(regimes.regime_sequence.size(), 0);
     
-    // Verify that SVM detected some regime changes
-    if (regimes.size() > 1) {
-        bool found_different_types = false;
-        auto first_type = regimes[0].characteristics.type;
-        for (size_t i = 1; i < regimes.size(); ++i) {
-            if (regimes[i].characteristics.type != first_type) {
-                found_different_types = true;
-                break;
-            }
-        }
-        // Note: This test might pass even if all regimes are the same type
-        // which is acceptable for placeholder implementation
+    // Check regime probabilities validity
+    for (size_t i = 0; i < regimes.regime_probabilities.size(); ++i) {
+        EXPECT_GE(regimes.regime_probabilities[i], 0.0);
+        EXPECT_LE(regimes.regime_probabilities[i], 1.0);
     }
+    
+    // Verify that we have valid regime characteristics
+    EXPECT_GT(regimes.regime_characteristics.size(), 0);
 }
 
 TEST_F(MLRegimeDetectionTest, AdaptiveOnlineDetection) {
@@ -134,10 +138,11 @@ TEST_F(MLRegimeDetectionTest, AdaptiveOnlineDetection) {
         
         ASSERT_TRUE(result.is_ok()) << "Adaptive detection failed: " << result.error().message;
         
-        const auto& regime = result.value();
-        EXPECT_GE(regime.probability, 0.0);
-        EXPECT_LE(regime.probability, 1.0);
-        EXPECT_GT(regime.characteristics.persistence, 0.0);
+        const auto& regime_pair = result.value();
+        
+        // Check regime confidence (second element of pair)
+        EXPECT_GE(regime_pair.second, 0.0);
+        EXPECT_LE(regime_pair.second, 1.0);
     }
 }
 
@@ -203,10 +208,10 @@ TEST_F(MLRegimeDetectionTest, RegimeCharacteristicsValidation) {
     auto result = detector_->detect_regimes_ensemble(test_series_);
     
     ASSERT_TRUE(result.is_ok());
-    const auto& regimes = result.value();
+    const auto& detection_result = result.value();
     
-    for (const auto& regime : regimes) {
-        const auto& characteristics = regime.characteristics;
+    // Iterate over regime characteristics, not regime sequence
+    for (const auto& characteristics : detection_result.regime_characteristics) {
         
         // Test regime name functionality
         EXPECT_FALSE(characteristics.name().empty());

@@ -303,7 +303,8 @@ class ParallelAlgorithms {
             return Result<double>::error(variance_sum_result.error().code, variance_sum_result.error().message);
         }
 
-        double variance = variance_sum_result.value() / values.size();
+        // Use sample variance (n-1) for consistency with serial implementation
+        double variance = values.size() > 1 ? variance_sum_result.value() / (values.size() - 1) : 0.0;
         return Result<double>::success(std::sqrt(variance));
     }
 
@@ -393,7 +394,7 @@ class ParallelAlgorithms {
             return Result<TimeSeries<T>>::error(ErrorCode::InvalidInput, "Invalid window size");
         }
 
-        const size_t result_size = series.size() - window_size + 1;
+        const size_t result_size = series.size();
         const auto& timestamps   = series.timestamps();
         const auto& values       = series.values();
 
@@ -406,11 +407,16 @@ class ParallelAlgorithms {
             result_values.reserve(result_size);
 
             for (size_t i = 0; i < result_size; ++i) {
-                auto window_begin = values.begin() + i;
-                auto window_end   = window_begin + window_size;
-
-                result_dates.push_back(timestamps[i + window_size - 1]);
-                result_values.push_back(op(window_begin, window_end));
+                result_dates.push_back(timestamps[i]);
+                if (i < window_size - 1) {
+                    // Incomplete window - use NaN
+                    result_values.push_back(std::numeric_limits<T>::quiet_NaN());
+                } else {
+                    // Complete window
+                    auto window_begin = values.begin() + i - window_size + 1;
+                    auto window_end   = window_begin + window_size;
+                    result_values.push_back(op(window_begin, window_end));
+                }
             }
 
             return TimeSeries<T>::create(result_dates, result_values,
@@ -432,11 +438,16 @@ class ParallelAlgorithms {
 
             futures.push_back(pool.enqueue([&, i, end]() {
                 for (size_t j = i; j < end; ++j) {
-                    auto window_begin = values.begin() + j;
-                    auto window_end   = window_begin + window_size;
-
-                    result_dates[j]  = timestamps[j + window_size - 1];
-                    result_values[j] = op(window_begin, window_end);
+                    result_dates[j] = timestamps[j];
+                    if (j < window_size - 1) {
+                        // Incomplete window - use NaN
+                        result_values[j] = std::numeric_limits<T>::quiet_NaN();
+                    } else {
+                        // Complete window
+                        auto window_begin = values.begin() + j - window_size + 1;
+                        auto window_end   = window_begin + window_size;
+                        result_values[j] = op(window_begin, window_end);
+                    }
                 }
             }));
         }
@@ -469,12 +480,13 @@ class ParallelAlgorithms {
             size_t n = std::distance(begin, end);
             T mean   = std::accumulate(begin, end, T{}) / static_cast<T>(n);
 
-            T variance = std::accumulate(begin, end, T{},
+            // Use sample variance (n-1) for consistency
+            T variance = n > 1 ? std::accumulate(begin, end, T{},
                                          [mean](T acc, T val) {
                                              T diff = val - mean;
                                              return acc + diff * diff;
                                          }) /
-                         static_cast<T>(n);
+                         static_cast<T>(n - 1) : T{};
 
             return std::sqrt(variance);
         });

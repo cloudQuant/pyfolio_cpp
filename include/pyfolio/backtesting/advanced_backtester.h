@@ -308,6 +308,36 @@ struct PortfolioState {
         
         return weights;
     }
+    
+    /**
+     * @brief Get portfolio weights based on current market prices
+     */
+    std::unordered_map<std::string, double> get_weights_at_market(const std::unordered_map<std::string, Price>& prices) const {
+        std::unordered_map<std::string, double> weights;
+        
+        // Calculate total value at market prices
+        double market_value = cash;
+        for (const auto& [symbol, position] : positions) {
+            auto price_it = prices.find(symbol);
+            if (price_it != prices.end()) {
+                market_value += static_cast<double>(position.shares) * price_it->second;
+            } else {
+                market_value += static_cast<double>(position.shares) * position.price;
+            }
+        }
+        
+        if (market_value <= 0) return weights;
+        
+        // Calculate weights based on market prices
+        for (const auto& [symbol, position] : positions) {
+            auto price_it = prices.find(symbol);
+            double price = (price_it != prices.end()) ? price_it->second : position.price;
+            double position_value = static_cast<double>(position.shares) * price;
+            weights[symbol] = position_value / market_value;
+        }
+        
+        return weights;
+    }
 };
 
 /**

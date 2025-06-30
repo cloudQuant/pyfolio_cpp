@@ -553,7 +553,7 @@ class AttributionAnalyzer {
      */
     Result<std::vector<SectorAttribution>> analyze_sector_attribution(
         const std::map<std::string, double>& portfolio_weights, const std::map<std::string, double>& benchmark_weights,
-        const std::map<std::string, double>& sector_returns) {
+        const std::map<std::string, double>& sector_returns, double benchmark_return = 0.0) {
         std::vector<SectorAttribution> results;
         std::set<std::string> all_sectors;
 
@@ -575,13 +575,29 @@ class AttributionAnalyzer {
             attr.portfolio_weight = (port_it != portfolio_weights.end()) ? port_it->second : 0.0;
             attr.benchmark_weight = (bench_it != benchmark_weights.end()) ? bench_it->second : 0.0;
             attr.portfolio_return = (ret_it != sector_returns.end()) ? ret_it->second : 0.0;
-            attr.benchmark_return = attr.portfolio_return;  // Simplified assumption
+            attr.benchmark_return = (ret_it != sector_returns.end()) ? ret_it->second : 0.0;
 
             // Brinson attribution
-            attr.allocation_effect = (attr.portfolio_weight - attr.benchmark_weight) * attr.benchmark_return;
-            attr.selection_effect  = attr.benchmark_weight * (attr.portfolio_return - attr.benchmark_return);
-            attr.interaction_effect =
-                (attr.portfolio_weight - attr.benchmark_weight) * (attr.portfolio_return - attr.benchmark_return);
+            // If benchmark_return is not provided, calculate it from weighted sector returns
+            double bench_ret = benchmark_return;
+            if (bench_ret == 0.0) {
+                // Calculate benchmark return as weighted average of sector returns
+                double total_bench_weight = 0.0;
+                for (const auto& [s, w] : benchmark_weights) {
+                    auto r_it = sector_returns.find(s);
+                    if (r_it != sector_returns.end()) {
+                        bench_ret += w * r_it->second;
+                        total_bench_weight += w;
+                    }
+                }
+                if (total_bench_weight > 0) {
+                    bench_ret /= total_bench_weight;
+                }
+            }
+            
+            attr.allocation_effect = (attr.portfolio_weight - attr.benchmark_weight) * bench_ret;
+            attr.selection_effect  = attr.benchmark_weight * (attr.portfolio_return - bench_ret);
+            attr.interaction_effect = (attr.portfolio_weight - attr.benchmark_weight) * (attr.portfolio_return - bench_ret);
             attr.total_contribution = attr.allocation_effect + attr.selection_effect + attr.interaction_effect;
 
             results.push_back(attr);

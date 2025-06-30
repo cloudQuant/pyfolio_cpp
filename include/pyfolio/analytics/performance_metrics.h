@@ -184,6 +184,9 @@ class PerformanceMetrics {
 
     template <typename T>
     static Result<double> annual_volatility(const TimeSeries<T>& returns) {
+        if (returns.size() < 2) {
+            return Result<double>::error(ErrorCode::InvalidInput, "Need at least 2 data points to calculate volatility");
+        }
         auto std_result = returns.std();
         if (std_result.is_error()) {
             return std_result;
@@ -268,12 +271,183 @@ class PerformanceMetrics {
     template <typename T>
     static Result<pyfolio::analytics::PerformanceMetrics> calculate_comprehensive_metrics(
         const TimeSeries<T>& returns, const TimeSeries<T>& benchmark_returns, double risk_free_rate = 0.0) {
-        // Simplified implementation
+        // Validate input data
+        if (returns.empty()) {
+            return Result<pyfolio::analytics::PerformanceMetrics>::error(ErrorCode::InvalidInput, 
+                "Cannot calculate metrics for empty returns series");
+        }
+        
+        if (returns.size() < 2) {
+            return Result<pyfolio::analytics::PerformanceMetrics>::error(ErrorCode::InvalidInput, 
+                "Need at least 2 data points to calculate meaningful metrics");
+        }
+        
         pyfolio::analytics::PerformanceMetrics metrics{};
-        metrics.total_return      = 0.1;
-        metrics.annual_return     = 0.1;
-        metrics.annual_volatility = 0.2;
-        metrics.tracking_error    = 0.05;
+        
+        // Calculate basic return metrics
+        auto annual_ret_result = annual_return(returns);
+        if (annual_ret_result.is_error()) {
+            return Result<pyfolio::analytics::PerformanceMetrics>::error(annual_ret_result.error().code, 
+                "Failed to calculate annual return: " + annual_ret_result.error().message);
+        }
+        metrics.annual_return = annual_ret_result.value();
+        
+        // Calculate total return (cumulative)
+        auto cum_ret_result = cumulative_returns(returns);
+        if (cum_ret_result.is_ok() && !cum_ret_result.value().empty()) {
+            metrics.total_return = cum_ret_result.value().values().back();
+        } else {
+            metrics.total_return = 0.0;
+        }
+        
+        // Calculate volatility
+        auto vol_result = annual_volatility(returns);
+        if (vol_result.is_error()) {
+            return Result<pyfolio::analytics::PerformanceMetrics>::error(vol_result.error().code,
+                "Failed to calculate volatility: " + vol_result.error().message);
+        }
+        metrics.annual_volatility = vol_result.value();
+        
+        // Calculate Sharpe ratio
+        auto sharpe_result = sharpe_ratio(returns, risk_free_rate);
+        if (sharpe_result.is_error()) {
+            return Result<pyfolio::analytics::PerformanceMetrics>::error(sharpe_result.error().code,
+                "Failed to calculate Sharpe ratio: " + sharpe_result.error().message);
+        }
+        metrics.sharpe_ratio = sharpe_result.value();
+        
+        // Calculate Sortino ratio
+        auto sortino_result = sortino_ratio(returns, risk_free_rate);
+        if (sortino_result.is_ok()) {
+            metrics.sortino_ratio = sortino_result.value();
+        } else {
+            metrics.sortino_ratio = 0.0;
+        }
+        
+        // Calculate max drawdown
+        auto dd_result = max_drawdown(returns);
+        if (dd_result.is_ok()) {
+            metrics.max_drawdown = dd_result.value().max_drawdown;
+        } else {
+            metrics.max_drawdown = 0.0;
+        }
+        
+        // Calculate Calmar ratio
+        auto calmar_result = calmar_ratio(returns);
+        if (calmar_result.is_ok()) {
+            metrics.calmar_ratio = calmar_result.value();
+        } else {
+            metrics.calmar_ratio = 0.0;
+        }
+        
+        // Calculate benchmark-relative metrics
+        auto alpha_beta_result = alpha_beta(returns, benchmark_returns, risk_free_rate);
+        if (alpha_beta_result.is_ok()) {
+            metrics.alpha = alpha_beta_result.value().alpha;
+            metrics.beta = alpha_beta_result.value().beta;
+        } else {
+            metrics.alpha = 0.0;
+            metrics.beta = 0.0;
+        }
+        
+        // Calculate tracking error
+        auto te_result = tracking_error(returns, benchmark_returns);
+        if (te_result.is_ok()) {
+            metrics.tracking_error = te_result.value();
+        } else {
+            metrics.tracking_error = 0.0;
+        }
+        
+        // Calculate information ratio
+        auto ir_result = information_ratio(returns, benchmark_returns);
+        if (ir_result.is_ok()) {
+            metrics.information_ratio = ir_result.value();
+        } else {
+            metrics.information_ratio = 0.0;
+        }
+        
+        // Calculate statistical moments
+        auto stats_mean = returns.mean();
+        auto stats_std = returns.std();
+        if (stats_mean.is_ok() && stats_std.is_ok()) {
+            // Calculate skewness and kurtosis
+            const auto& values = returns.values();
+            if (values.size() >= 3) {
+                double mean_val = stats_mean.value();
+                double std_val = stats_std.value();
+                
+                // Skewness
+                double skew_sum = 0.0;
+                for (const auto& val : values) {
+                    double normalized = (val - mean_val) / std_val;
+                    skew_sum += normalized * normalized * normalized;
+                }
+                metrics.skewness = skew_sum / values.size();
+                
+                // Kurtosis
+                if (values.size() >= 4) {
+                    double kurt_sum = 0.0;
+                    for (const auto& val : values) {
+                        double normalized = (val - mean_val) / std_val;
+                        kurt_sum += normalized * normalized * normalized * normalized;
+                    }
+                    metrics.kurtosis = kurt_sum / values.size() - 3.0; // Excess kurtosis
+                } else {
+                    metrics.kurtosis = 0.0;
+                }
+            } else {
+                metrics.skewness = 0.0;
+                metrics.kurtosis = 0.0;
+            }
+        } else {
+            metrics.skewness = 0.0;
+            metrics.kurtosis = 0.0;
+        }
+        
+        // Simple VaR calculation (using normal distribution approximation)
+        if (stats_mean.is_ok() && stats_std.is_ok()) {
+            double daily_mean = stats_mean.value();
+            double daily_std = stats_std.value();
+            
+            // Z-scores for 95% and 99% confidence
+            const double z_95 = 1.645;  // 95% one-tailed
+            const double z_99 = 2.326;  // 99% one-tailed
+            
+            metrics.var_95 = -(daily_mean - z_95 * daily_std);  // Positive value for loss
+            metrics.var_99 = -(daily_mean - z_99 * daily_std);  // Positive value for loss
+        } else {
+            metrics.var_95 = 0.0;
+            metrics.var_99 = 0.0;
+        }
+        
+        // Calculate downside deviation
+        const auto& values = returns.values();
+        if (!values.empty()) {
+            double downside_sum = 0.0;
+            int downside_count = 0;
+            
+            for (const auto& ret : values) {
+                if (ret < 0) {
+                    downside_sum += ret * ret;
+                    downside_count++;
+                }
+            }
+            
+            if (downside_count > 0) {
+                metrics.downside_deviation = std::sqrt(downside_sum / downside_count) * std::sqrt(252.0);
+            } else {
+                metrics.downside_deviation = 0.0;
+            }
+        } else {
+            metrics.downside_deviation = 0.0;
+        }
+        
+        // Simple default values for advanced metrics
+        metrics.omega_ratio = 1.0;
+        metrics.tail_ratio = 1.0;
+        metrics.common_sense_ratio = 1.0;
+        metrics.stability = 0.5;
+        
         return Result<pyfolio::analytics::PerformanceMetrics>::success(metrics);
     }
 
@@ -292,9 +466,51 @@ class PerformanceMetrics {
 
     template <typename T>
     static Result<TimeSeries<T>> rolling_sharpe(const TimeSeries<T>& returns, int window, double risk_free_rate = 0.0) {
-        // Simplified implementation using rolling mean
-        auto rolling_result = returns.rolling_mean(window);
-        return rolling_result;
+        if (window <= 1) {
+            return Result<TimeSeries<T>>::error(ErrorCode::InvalidInput, "Window size must be greater than 1");
+        }
+        
+        auto values = returns.values();
+        auto timestamps = returns.timestamps();
+        
+        if (values.size() < static_cast<size_t>(window)) {
+            return Result<TimeSeries<T>>::error(ErrorCode::InvalidInput, "Not enough data for rolling window");
+        }
+        
+        std::vector<T> rolling_sharpe_values;
+        std::vector<DateTime> rolling_timestamps;
+        
+        // Calculate rolling Sharpe ratio
+        for (size_t i = window - 1; i < values.size(); ++i) {
+            // Calculate mean and std for window
+            double sum = 0.0;
+            for (size_t j = i - window + 1; j <= i; ++j) {
+                sum += values[j];
+            }
+            double mean = sum / window;
+            
+            double sum_sq = 0.0;
+            for (size_t j = i - window + 1; j <= i; ++j) {
+                double diff = values[j] - mean;
+                sum_sq += diff * diff;
+            }
+            double std_dev = std::sqrt(sum_sq / window);
+            
+            // Calculate Sharpe ratio
+            double sharpe = 0.0;
+            if (std_dev > 0.0) {
+                // Annualize returns and volatility
+                double annualized_return = mean * 252.0;
+                double annualized_std = std_dev * std::sqrt(252.0);
+                double excess_return = annualized_return - risk_free_rate;
+                sharpe = excess_return / annualized_std;
+            }
+            
+            rolling_sharpe_values.push_back(sharpe);
+            rolling_timestamps.push_back(timestamps[i]);
+        }
+        
+        return Result<TimeSeries<T>>::success(TimeSeries<T>(rolling_timestamps, rolling_sharpe_values, "rolling_sharpe"));
     }
 };
 

@@ -22,12 +22,12 @@ protected:
     /**
      * @brief Generate sample returns with GARCH-like properties
      */
-    TimeSeries generate_test_returns(size_t n_obs) {
+    TimeSeries<double> generate_test_returns(size_t n_obs) {
         std::mt19937 gen(42); // Fixed seed for reproducibility
         std::normal_distribution<double> normal(0.0, 1.0);
         
         std::vector<double> returns;
-        std::vector<std::string> dates;
+        std::vector<DateTime> dates;
         
         // GARCH(1,1) simulation
         double omega = 0.00001;
@@ -39,26 +39,26 @@ protected:
             double epsilon = normal(gen);
             double return_t = std::sqrt(h_t) * epsilon;
             returns.push_back(return_t);
-            dates.push_back("2020-01-01");
+            dates.push_back(DateTime::parse("2020-01-01").value().add_days(t));
             
             // Update volatility
             h_t = omega + alpha * return_t * return_t + beta * h_t;
         }
         
-        return TimeSeries(returns, dates);
+        return TimeSeries<double>(dates, returns);
     }
     
     /**
      * @brief Generate returns with extreme events
      */
-    TimeSeries generate_extreme_returns(size_t n_obs) {
+    TimeSeries<double> generate_extreme_returns(size_t n_obs) {
         std::mt19937 gen(123);
         std::normal_distribution<double> normal(0.0, 0.015);
         std::normal_distribution<double> extreme(-0.08, 0.03);
         std::uniform_real_distribution<double> uniform(0.0, 1.0);
         
         std::vector<double> returns;
-        std::vector<std::string> dates;
+        std::vector<DateTime> dates;
         
         for (size_t t = 0; t < n_obs; ++t) {
             double return_t;
@@ -68,14 +68,14 @@ protected:
                 return_t = normal(gen);
             }
             returns.push_back(return_t);
-            dates.push_back("2020-01-01");
+            dates.push_back(DateTime::parse("2020-01-01").value().add_days(t));
         }
         
-        return TimeSeries(returns, dates);
+        return TimeSeries<double>(dates, returns);
     }
     
-    TimeSeries sample_returns_;
-    TimeSeries extreme_returns_;
+    TimeSeries<double> sample_returns_;
+    TimeSeries<double> extreme_returns_;
     
     const double TOLERANCE = 1e-6;
     const double VAR_TOLERANCE = 0.05; // 5% tolerance for VaR estimates
@@ -322,7 +322,12 @@ TEST_F(AdvancedRiskModelsTest, VaRBacktestingKupiec) {
     // Create VaR forecast series
     auto return_values = sample_returns_.values();
     std::vector<double> var_forecasts(return_values.size(), constant_var);
-    TimeSeries var_forecast_ts(var_forecasts, std::vector<std::string>(var_forecasts.size(), "2020-01-01"));
+    // Create dates for the forecast series
+    std::vector<DateTime> forecast_dates;
+    for (size_t i = 0; i < var_forecasts.size(); ++i) {
+        forecast_dates.push_back(DateTime::parse("2020-01-01").value().add_days(i));
+    }
+    TimeSeries<double> var_forecast_ts(forecast_dates, var_forecasts);
     
     auto kupiec_result = backtester.kupiec_test(sample_returns_, var_forecast_ts, 0.05);
     ASSERT_TRUE(kupiec_result.is_ok());
@@ -354,7 +359,12 @@ TEST_F(AdvancedRiskModelsTest, ComprehensiveBacktesting) {
     double constant_var = var_result.value().var_estimate;
     auto return_values = sample_returns_.values();
     std::vector<double> var_forecasts(return_values.size(), constant_var);
-    TimeSeries var_forecast_ts(var_forecasts, std::vector<std::string>(var_forecasts.size(), "2020-01-01"));
+    // Create dates for the forecast series
+    std::vector<DateTime> forecast_dates2;
+    for (size_t i = 0; i < var_forecasts.size(); ++i) {
+        forecast_dates2.push_back(DateTime::parse("2020-01-01").value().add_days(i));
+    }
+    TimeSeries<double> var_forecast_ts(forecast_dates2, var_forecasts);
     
     auto comprehensive_result = backtester.run_comprehensive_tests(sample_returns_, var_forecast_ts, 0.05);
     ASSERT_TRUE(comprehensive_result.is_ok());
@@ -436,13 +446,18 @@ TEST_F(AdvancedRiskModelsTest, EVTBlockMaxima) {
  */
 TEST_F(AdvancedRiskModelsTest, InvalidInputs) {
     // Test GARCH with invalid orders
-    EXPECT_THROW(GARCHModel(-1, 1), std::invalid_argument);
-    EXPECT_THROW(GARCHModel(1, -1), std::invalid_argument);
-    EXPECT_THROW(GARCHModel(10, 10), std::invalid_argument); // Too high order
+    EXPECT_THROW(GARCHModel(GARCHType::GARCH, -1, 1), std::invalid_argument);
+    EXPECT_THROW(GARCHModel(GARCHType::GARCH, 1, -1), std::invalid_argument);
+    EXPECT_THROW(GARCHModel(GARCHType::GARCH, 10, 10), std::invalid_argument); // Too high order
     
     // Test VaR with insufficient data
     std::vector<double> short_data = {0.01, -0.02, 0.005};
-    TimeSeries short_ts(short_data, {"2020-01-01", "2020-01-02", "2020-01-03"});
+    std::vector<DateTime> short_dates = {
+        DateTime::parse("2020-01-01").value(),
+        DateTime::parse("2020-01-02").value(),
+        DateTime::parse("2020-01-03").value()
+    };
+    TimeSeries<double> short_ts(short_dates, short_data);
     
     VaRCalculator var_calc;
     auto var_result = var_calc.calculate_var(short_ts, 0.05);
@@ -517,7 +532,12 @@ TEST_F(AdvancedRiskModelsTest, NumericalStability) {
         tiny_returns[i] = -1e-6; // Some small negative returns
     }
     
-    TimeSeries tiny_ts(tiny_returns, std::vector<std::string>(tiny_returns.size(), "2020-01-01"));
+    // Create dates for tiny returns
+    std::vector<DateTime> tiny_dates;
+    for (size_t i = 0; i < tiny_returns.size(); ++i) {
+        tiny_dates.push_back(DateTime::parse("2020-01-01").value().add_days(i));
+    }
+    TimeSeries<double> tiny_ts(tiny_dates, tiny_returns);
     
     VaRCalculator var_calc;
     auto var_result = var_calc.calculate_var(tiny_ts, 0.05);

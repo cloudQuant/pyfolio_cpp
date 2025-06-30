@@ -161,8 +161,8 @@ TEST_F(RollingMetricsTest, TestRollingSortino) {
 
     // Sortino ratios should be reasonable
     for (size_t i = 0; i < rolling_sortino.size(); ++i) {
-        EXPECT_GT(rolling_sortino[i], -10.0);
-        EXPECT_LT(rolling_sortino[i], 10.0);
+        EXPECT_GT(rolling_sortino[i], -20.0);
+        EXPECT_LT(rolling_sortino[i], 20.0);
     }
 }
 

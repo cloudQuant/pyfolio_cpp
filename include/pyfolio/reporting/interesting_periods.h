@@ -44,7 +44,7 @@ class InterestingPeriods {
             {      "Global Financial Crisis", DateTime(2007, 10,  9), DateTime(2009,  3,  9),
              "Subprime mortgage crisis and Great Recession"                                                                         },
 
-            {                  "Flash Crash", DateTime(2010,  5,  6), DateTime(2010,  5,  6),   "Intraday market crash and recovery"},
+            {                  "Flash Crash", DateTime(2010,  5,  6), DateTime(2010,  5,  7),   "Intraday market crash and recovery"},
 
             {         "European Debt Crisis", DateTime(2011,  8,  1), DateTime(2011, 10, 31),     "Eurozone sovereign debt concerns"},
 

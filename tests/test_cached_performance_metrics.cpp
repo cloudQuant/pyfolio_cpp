@@ -401,8 +401,9 @@ TEST_F(CachedPerformanceMetricsTest, CacheConfigurationTest) {
     EXPECT_TRUE(result.is_ok());
 
     auto stats_after_expiry = custom_cache.get_cache_stats();
-    // After expiry, there should be fewer cached items
-    EXPECT_LE(stats_after_expiry.total_cache_size, stats.total_cache_size);
+    // After expiry and new computation, cache should have at most 1 entry (the new one)
+    // The cache correctly cleaned up expired entries and then cached the new computation
+    EXPECT_LE(stats_after_expiry.total_cache_size, 1u);
 }
 
 TEST_F(CachedPerformanceMetricsTest, ComputationTimeThresholdTest) {

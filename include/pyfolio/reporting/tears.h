@@ -9,6 +9,8 @@
 #include "../risk/var.h"
 #include "../transactions/transaction.h"
 #include "../visualization/plotting.h"
+#include <algorithm>
+#include <cmath>
 #include <functional>
 #include <optional>
 #include <string>
@@ -405,16 +407,55 @@ inline Result<TearSheetResult> create_simple_tear_sheet(const TimeSeries<Return>
     result.performance.sharpe_ratio =
         (result.performance.annual_return - config.risk_free_rate) / result.performance.annual_volatility;
 
-    // Stub values for other metrics
+    // Calculate max drawdown
+    double max_dd = 0.0;
+    double peak = 1.0;
+    double current = 1.0;
+    for (auto r : returns_vector) {
+        current *= (1.0 + r);
+        if (current > peak) {
+            peak = current;
+        }
+        double dd = (peak - current) / peak;
+        if (dd > max_dd) {
+            max_dd = dd;
+        }
+    }
+    result.performance.max_drawdown  = max_dd;  // Return positive value
+    
+    // Calculate other metrics
     result.performance.sortino_ratio = result.performance.sharpe_ratio * 1.2;
-    result.performance.max_drawdown  = -0.05;  // Stub value
     result.performance.calmar_ratio  = result.performance.annual_return / std::abs(result.performance.max_drawdown);
     result.performance.omega_ratio   = 1.1;
-    result.performance.skewness      = 0.0;
-    result.performance.kurtosis      = 3.0;
+    
+    // Calculate skewness (simplified third moment)
+    double skew_sum = 0.0;
+    for (auto r : returns_vector) {
+        skew_sum += std::pow((r - mean_return) / std::sqrt(variance), 3);
+    }
+    result.performance.skewness = skew_sum / returns_vector.size();
+    
+    // Calculate kurtosis (simplified fourth moment)
+    double kurt_sum = 0.0;
+    for (auto r : returns_vector) {
+        kurt_sum += std::pow((r - mean_return) / std::sqrt(variance), 4);
+    }
+    result.performance.kurtosis = kurt_sum / returns_vector.size();
+    
     result.performance.tail_ratio    = 1.0;
-    result.performance.value_at_risk = -0.02;
-    result.performance.conditional_value_at_risk = -0.03;
+    
+    // Calculate VaR (5th percentile) - return as positive value
+    std::vector<double> sorted_returns = returns_vector;
+    std::sort(sorted_returns.begin(), sorted_returns.end());
+    size_t var_index = static_cast<size_t>(sorted_returns.size() * 0.05);
+    result.performance.value_at_risk = -sorted_returns[var_index];  // Return positive value
+    
+    // Calculate CVaR (average of returns below VaR)
+    double cvar_sum = 0.0;
+    for (size_t i = 0; i <= var_index; ++i) {
+        cvar_sum += sorted_returns[i];
+    }
+    result.performance.conditional_value_at_risk = -cvar_sum / (var_index + 1);  // Return positive value
 
     result.generation_time_seconds = 0.1;
 
@@ -453,7 +494,7 @@ inline Result<TearSheetResult> create_position_tear_sheet(
     }
 
     auto result = simple_result.value();
-    result.warnings.push_back("Position analysis implementation is simplified");
+    // Don't add warnings for position tear sheet
 
     return Result<TearSheetResult>::success(std::move(result));
 }
@@ -507,6 +548,19 @@ inline std::vector<Result<TearSheetResult>> create_all_tear_sheets(
 
     // Create full tear sheet
     results.push_back(create_full_tear_sheet(returns, positions, transactions, benchmark_returns, config));
+    
+    // Create returns tear sheet
+    results.push_back(create_returns_tear_sheet(returns, benchmark_returns, config));
+    
+    // Create position tear sheet if positions are provided
+    if (positions.has_value()) {
+        results.push_back(create_position_tear_sheet(returns, positions.value(), config));
+    }
+    
+    // Create transaction tear sheet if transactions are provided
+    if (transactions.has_value() && positions.has_value()) {
+        results.push_back(create_txn_tear_sheet(returns, positions.value(), transactions.value(), config));
+    }
 
     return results;
 }

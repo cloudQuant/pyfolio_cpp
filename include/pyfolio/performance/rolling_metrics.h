@@ -372,7 +372,7 @@ inline TimeSeries<double> calculate_rolling_sortino(const TimeSeries<Return>& re
 
             double sortino = 0.0;
             if (downside_count > 0) {
-                double downside_dev = std::sqrt(downside_sum / actual_window);
+                double downside_dev = std::sqrt(downside_sum / downside_count);
                 if (downside_dev > 1e-8) {
                     sortino = excess_return / downside_dev * std::sqrt(static_cast<double>(periods_per_year));
                 }

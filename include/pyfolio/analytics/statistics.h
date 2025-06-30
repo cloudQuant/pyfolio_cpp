@@ -400,7 +400,10 @@ class Statistics {
             return Result<SimpleDrawdownInfo>::error(cumulative_result.error().code, cumulative_result.error().message);
         }
 
-        auto cum_values = cumulative_result.value().values();
+        auto cum_series = cumulative_result.value();
+        auto cum_values = cum_series.values();
+        auto timestamps = cum_series.timestamps();
+        
         if (cum_values.empty()) {
             return Result<SimpleDrawdownInfo>::error(ErrorCode::InvalidInput, "Empty cumulative returns");
         }
@@ -410,11 +413,18 @@ class Statistics {
         double max_drawdown  = 0.0;
         int max_duration     = 0;
         int current_duration = 0;
+        
+        // Track peak and valley indices for dates
+        size_t peak_idx = 0;
+        size_t valley_idx = 0;
+        size_t current_peak_idx = 0;
+        size_t current_valley_idx = 0;
 
-        for (const auto& val : cum_values) {
-            if (val > max_value) {
-                max_value        = val;
+        for (size_t i = 0; i < cum_values.size(); ++i) {
+            if (cum_values[i] > max_value) {
+                max_value        = cum_values[i];
                 current_duration = 0;
+                current_peak_idx = i;
             } else {
                 current_duration++;
                 if (current_duration > max_duration) {
@@ -425,7 +435,7 @@ class Statistics {
             // Calculate drawdown as percentage drop from peak
             double drawdown = 0.0;
             if (max_value > 0.0) {
-                drawdown = (val - max_value) / max_value;
+                drawdown = (cum_values[i] - max_value) / max_value;
                 // Ensure drawdown doesn't exceed -100%
                 drawdown = std::max(drawdown, -1.0);
             } else {
@@ -435,12 +445,17 @@ class Statistics {
 
             if (drawdown < max_drawdown) {
                 max_drawdown = drawdown;
+                peak_idx = current_peak_idx;
+                valley_idx = i;
+                current_valley_idx = i;
             }
         }
 
         SimpleDrawdownInfo info;
         info.max_drawdown  = max_drawdown;
         info.duration_days = max_duration;
+        info.peak_date = timestamps[peak_idx];
+        info.valley_date = timestamps[valley_idx];
         return Result<SimpleDrawdownInfo>::success(info);
     }
 
@@ -511,9 +526,24 @@ class Statistics {
         double beta  = (benchmark_variance != 0.0) ? covariance / benchmark_variance : 0.0;
         double alpha = portfolio_mean - risk_free_rate - beta * (benchmark_mean - risk_free_rate);
 
+        // Calculate R-squared
+        double portfolio_variance = 0.0;
+        for (size_t i = 0; i < portfolio_values.size(); ++i) {
+            double portfolio_diff = portfolio_values[i] - portfolio_mean;
+            portfolio_variance += portfolio_diff * portfolio_diff;
+        }
+        portfolio_variance /= portfolio_values.size();
+        
+        double correlation = 0.0;
+        if (portfolio_variance > 0.0 && benchmark_variance > 0.0) {
+            correlation = covariance / (std::sqrt(portfolio_variance) * std::sqrt(benchmark_variance));
+        }
+        double r_squared = correlation * correlation;
+
         AlphaBetaResult result;
         result.alpha = alpha;
         result.beta  = beta;
+        result.r_squared = r_squared;
         return Result<AlphaBetaResult>::success(result);
     }
 

@@ -192,7 +192,20 @@ struct RoundTripStatistics {
      */
     static Result<RoundTripStatistics> calculate(const std::vector<RoundTrip>& trips) {
         if (trips.empty()) {
-            return Result<RoundTripStatistics>::error(ErrorCode::InsufficientData, "No round trips to analyze");
+            // Return empty statistics for empty trips
+            RoundTripStatistics empty_stats{};
+            empty_stats.total_trips = 0;
+            empty_stats.winning_trips = 0;
+            empty_stats.losing_trips = 0;
+            empty_stats.win_rate = 0.0;
+            empty_stats.average_pnl = 0.0;
+            empty_stats.average_return = 0.0;
+            empty_stats.average_duration_days = 0.0;
+            empty_stats.total_pnl = 0.0;
+            empty_stats.best_trade_pnl = 0.0;
+            empty_stats.worst_trade_pnl = 0.0;
+            empty_stats.profit_factor = 1.0;
+            return Result<RoundTripStatistics>::success(empty_stats);
         }
 
         RoundTripStatistics stats{};

@@ -378,6 +378,8 @@ Result<double> value_at_risk(std::span<const T> returns, double confidence_level
         return Result<double>::error(ErrorCode::InvalidInput, "Confidence level must be between 0 and 1 (exclusive)");
     }
 
+    // For VaR: confidence_level is the probability that losses won't exceed VaR
+    // So for 95% confidence, we want the 5th percentile (worst 5% of returns)
     double percentile_level = (1.0 - confidence_level) * 100.0;
     auto var_result         = percentile(returns, percentile_level);
 
@@ -386,8 +388,8 @@ Result<double> value_at_risk(std::span<const T> returns, double confidence_level
     }
 
     // VaR should be negative for losses (negative returns)
-    // Since we're calculating the percentile of negative returns, return as-is
-    return Result<double>::success(var_result.value());
+    // Return the negative of the percentile to represent loss magnitude
+    return Result<double>::success(-std::abs(var_result.value()));
 }
 
 /**
@@ -395,32 +397,42 @@ Result<double> value_at_risk(std::span<const T> returns, double confidence_level
  */
 template <Numeric T>
 Result<double> conditional_value_at_risk(std::span<const T> returns, double confidence_level = 0.95) {
+    if (returns.empty()) {
+        return Result<double>::error(ErrorCode::InsufficientData, "Cannot calculate CVaR with empty data");
+    }
+
+    // First calculate VaR to get the threshold
     auto var_result = value_at_risk(returns, confidence_level);
     if (var_result.is_error()) {
         return var_result;
     }
+    
+    double var_threshold = var_result.value();
 
-    double var_threshold = var_result.value();  // Use VaR threshold directly
-
-    // Calculate mean of returns below VaR threshold
+    // Convert to double and collect all returns at or below VaR threshold
     std::vector<double> tail_returns;
     for (const auto& ret : returns) {
-        if (static_cast<double>(ret) <= var_threshold) {
-            tail_returns.push_back(static_cast<double>(ret));
+        double ret_val = static_cast<double>(ret);
+        if (ret_val <= var_threshold) {  // VaR threshold is already negative
+            tail_returns.push_back(ret_val);
         }
     }
 
+    // If no returns exceed VaR threshold, use the VaR value itself
     if (tail_returns.empty()) {
-        return Result<double>::error(ErrorCode::InsufficientData, "No returns below VaR threshold found");
+        return var_result;  // Return VaR as CVaR
     }
 
-    auto tail_mean_result = mean(std::span<const double>{tail_returns});
-    if (tail_mean_result.is_error()) {
-        return tail_mean_result;
+    // Calculate mean of tail returns
+    double sum = 0.0;
+    for (double ret : tail_returns) {
+        sum += ret;
     }
-
-    // CVaR should be negative for losses (same as VaR convention)
-    return Result<double>::success(tail_mean_result.value());
+    
+    double cvar = sum / tail_returns.size();
+    
+    // Return as negative value following risk metric convention
+    return Result<double>::success(-std::abs(cvar));
 }
 
 /**

@@ -36,10 +36,12 @@ public:
             }
             initialized_ = true;
         } else {
-            // Maintain current weights (no rebalancing)
-            auto current_weights = portfolio.get_weights();
-            for (const auto& [symbol, weight] : current_weights) {
-                weights[symbol] = weight;
+            // Maintain current positions (no rebalancing)
+            // Return weights based on current positions to signal holding
+            for (const auto& [symbol, position] : portfolio.positions) {
+                if (position.shares > 0) {
+                    weights[symbol] = position.weight; // Use stored weight as signal to maintain position
+                }
             }
         }
         

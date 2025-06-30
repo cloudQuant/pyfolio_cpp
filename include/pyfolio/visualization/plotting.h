@@ -374,6 +374,11 @@ inline Result<void> PlotEngine::save_plot(const std::string& content, const std:
 inline Result<std::string> plots::plot_cumulative_returns(const TimeSeries<Return>& returns,
                                                           const std::optional<TimeSeries<Return>>& benchmark,
                                                           const PlotConfig& config) {
+    // Validate input data
+    if (returns.empty()) {
+        return Result<std::string>::error(ErrorCode::InvalidInput, "Cannot plot cumulative returns with empty data");
+    }
+    
     PlotEngine engine;
     std::vector<PlotData> series;
 

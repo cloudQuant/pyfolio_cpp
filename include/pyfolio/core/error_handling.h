@@ -30,6 +30,7 @@ enum class ErrorCode {
     ParseError,
     NetworkError,
     MemoryError,
+    BufferOverflow,
     UnknownError
 };
 

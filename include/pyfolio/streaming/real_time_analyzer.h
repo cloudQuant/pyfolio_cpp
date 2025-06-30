@@ -207,7 +207,7 @@ public:
      */
     Result<void> start() {
         if (running_.exchange(true)) {
-            return Result<void>::error(ErrorCode::InvalidInput, 
+            return Result<void>::error(ErrorCode::InvalidState, 
                 "Analyzer is already running");
         }
         

@@ -221,12 +221,13 @@ class VaRCalculator {
         double std_dev = std_result.value();
 
         // Normal distribution VaR
-        double z_score      = stats::normal_ppf(1.0 - confidence_level);
+        // For VaR: confidence_level represents significance level (alpha)
+        double z_score      = stats::normal_ppf(confidence_level);
         double var_estimate = mean + z_score * std_dev;
 
         // For parametric CVaR (normal distribution)
         double phi_z         = stats::normal_pdf(z_score);
-        double cvar_estimate = mean - std_dev * phi_z / (1.0 - confidence_level);
+        double cvar_estimate = mean - std_dev * phi_z / confidence_level;
 
         VaRResult result;
         result.var_estimate         = var_estimate;
@@ -272,8 +273,8 @@ class VaRCalculator {
         double kurtosis        = kurt_result.value();
         double excess_kurtosis = kurtosis - 3.0;
 
-        // Normal quantile
-        double z = stats::normal_ppf(1.0 - confidence_level);
+        // Normal quantile for significance level
+        double z = stats::normal_ppf(confidence_level);
 
         // Cornish-Fisher expansion
         double cf_adjustment = (1.0 / 6.0) * skewness * (z * z - 1.0) +
@@ -285,7 +286,7 @@ class VaRCalculator {
 
         // Approximate CVaR using adjusted quantile
         double phi_z_cf      = stats::normal_pdf(z_cf);
-        double cvar_estimate = mean - std_dev * phi_z_cf / (1.0 - confidence_level);
+        double cvar_estimate = mean - std_dev * phi_z_cf / confidence_level;
 
         VaRResult result;
         result.var_estimate         = var_estimate;

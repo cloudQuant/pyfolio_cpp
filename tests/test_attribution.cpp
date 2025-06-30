@@ -105,7 +105,7 @@ TEST_F(AttributionTest, FactorAttributionBasic) {
 TEST_F(AttributionTest, BrinsonAttribution) {
     pyfolio::attribution::AttributionAnalyzer analyzer;
 
-    auto brinson = analyzer.analyze_sector_attribution(portfolio_weights, benchmark_weights, sector_returns);
+    auto brinson = analyzer.analyze_sector_attribution(portfolio_weights, benchmark_weights, sector_returns, benchmark_return);
     ASSERT_TRUE(brinson.is_ok());
 
     auto result = brinson.value();
@@ -178,7 +178,7 @@ TEST_F(AttributionTest, AlphaBetaDecomposition) {
     EXPECT_TRUE(std::isfinite(result.alpha));
     EXPECT_TRUE(std::isfinite(result.beta));
     EXPECT_GE(result.r_squared, 0.0);
-    EXPECT_LE(result.r_squared, 1.0);
+    EXPECT_LE(result.r_squared, 1.0 + 1e-10); // Allow for numerical precision
     EXPECT_TRUE(std::isfinite(result.tracking_error));
     EXPECT_GT(result.tracking_error, 0.0);
     EXPECT_TRUE(std::isfinite(result.information_ratio));
@@ -187,7 +187,7 @@ TEST_F(AttributionTest, AlphaBetaDecomposition) {
 TEST_F(AttributionTest, SectorAttributionAnalysis) {
     pyfolio::attribution::AttributionAnalyzer analyzer;
 
-    auto sector_attribution = analyzer.analyze_sector_attribution(portfolio_weights, benchmark_weights, sector_returns);
+    auto sector_attribution = analyzer.analyze_sector_attribution(portfolio_weights, benchmark_weights, sector_returns, benchmark_return);
     ASSERT_TRUE(sector_attribution.is_ok());
 
     auto result = sector_attribution.value();

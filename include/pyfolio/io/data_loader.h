@@ -197,6 +197,11 @@ class CSVParser {
      */
     Result<size_t> get_column_index(const std::string& column_name, const std::vector<std::string>& headers);
 
+    /**
+     * @brief Trim whitespace from string
+     */
+    std::string trim(const std::string& str);
+
   private:
     CSVConfig config_;
 
@@ -204,11 +209,6 @@ class CSVParser {
      * @brief Split a CSV line into fields
      */
     std::vector<std::string> split_csv_line(const std::string& line);
-
-    /**
-     * @brief Trim whitespace from string
-     */
-    std::string trim(const std::string& str);
 };
 
 /**
@@ -406,29 +406,296 @@ inline Result<TimeSeries<Return>> load_returns_from_csv(const std::string& file_
 
 inline Result<TimeSeries<std::unordered_map<std::string, Position>>> load_positions_from_csv(
     const std::string& file_path, const CSVConfig& config) {
-    // Simplified implementation - just return empty for now
+    std::ifstream file(file_path);
+    if (!file.is_open()) {
+        return Result<TimeSeries<std::unordered_map<std::string, Position>>>::error(
+            ErrorCode::FileNotFound, "Cannot open file for reading: " + file_path);
+    }
+
+    std::map<DateTime, std::unordered_map<std::string, Position>> date_positions;
+    std::string line;
+    bool first_line = true;
+
+    while (std::getline(file, line)) {
+        if (first_line && config.has_header) {
+            first_line = false;
+            continue;
+        }
+
+        std::stringstream ss(line);
+        std::string date_str, symbol_str, shares_str, price_str;
+
+        if (std::getline(ss, date_str, config.delimiter) && 
+            std::getline(ss, symbol_str, config.delimiter) &&
+            std::getline(ss, shares_str, config.delimiter) && 
+            std::getline(ss, price_str, config.delimiter)) {
+            try {
+                // Parse date (assumes YYYY-MM-DD format)
+                std::stringstream date_ss(date_str);
+                std::string year_str, month_str, day_str;
+
+                if (std::getline(date_ss, year_str, '-') && 
+                    std::getline(date_ss, month_str, '-') &&
+                    std::getline(date_ss, day_str)) {
+                    
+                    int year = std::stoi(year_str);
+                    int month = std::stoi(month_str);
+                    int day = std::stoi(day_str);
+                    DateTime date(year, month, day);
+
+                    double shares = std::stod(shares_str);
+                    double price = std::stod(price_str);
+
+                    Position pos;
+                    pos.symbol = symbol_str;
+                    pos.shares = static_cast<Shares>(shares);
+                    pos.price = price;
+                    pos.weight = 0.0;  // Will be calculated later if needed
+                    pos.timestamp = date.time_point();
+
+                    date_positions[date][symbol_str] = pos;
+                }
+            } catch (const std::exception&) {
+                // Skip invalid lines
+                continue;
+            }
+        }
+    }
+
+    file.close();
+
+    // Convert map to TimeSeries
     TimeSeries<std::unordered_map<std::string, Position>> positions;
+    for (const auto& [date, position_map] : date_positions) {
+        positions.push_back(date, position_map);
+    }
+
     return Result<TimeSeries<std::unordered_map<std::string, Position>>>::success(std::move(positions));
 }
 
 inline Result<std::vector<Transaction>> load_transactions_from_csv(const std::string& file_path,
                                                                    const CSVConfig& config) {
-    // Simplified implementation - just return empty for now
+    std::ifstream file(file_path);
+    if (!file.is_open()) {
+        return Result<std::vector<Transaction>>::error(
+            ErrorCode::FileNotFound, "Cannot open file for reading: " + file_path);
+    }
+
     std::vector<Transaction> transactions;
+    std::string line;
+    bool first_line = true;
+
+    while (std::getline(file, line)) {
+        if (first_line && config.has_header) {
+            first_line = false;
+            continue;
+        }
+
+        std::stringstream ss(line);
+        std::string datetime_str, symbol_str, shares_str, price_str, side_str;
+
+        if (std::getline(ss, datetime_str, config.delimiter) && 
+            std::getline(ss, symbol_str, config.delimiter) &&
+            std::getline(ss, shares_str, config.delimiter) && 
+            std::getline(ss, price_str, config.delimiter) &&
+            std::getline(ss, side_str, config.delimiter)) {
+            try {
+                // Parse datetime (assumes YYYY-MM-DD HH:MM:SS format)
+                std::stringstream datetime_ss(datetime_str);
+                std::string date_part, time_part;
+                
+                if (std::getline(datetime_ss, date_part, ' ') && std::getline(datetime_ss, time_part)) {
+                    std::stringstream date_ss(date_part);
+                    std::string year_str, month_str, day_str;
+
+                    if (std::getline(date_ss, year_str, '-') && 
+                        std::getline(date_ss, month_str, '-') &&
+                        std::getline(date_ss, day_str)) {
+                        
+                        int year = std::stoi(year_str);
+                        int month = std::stoi(month_str);
+                        int day = std::stoi(day_str);
+                        
+                        // Parse time
+                        std::stringstream time_ss(time_part);
+                        std::string hour_str, minute_str, second_str;
+                        int hour = 0, minute = 0, second = 0;
+                        
+                        if (std::getline(time_ss, hour_str, ':') && 
+                            std::getline(time_ss, minute_str, ':') &&
+                            std::getline(time_ss, second_str)) {
+                            hour = std::stoi(hour_str);
+                            minute = std::stoi(minute_str);
+                            second = std::stoi(second_str);
+                        }
+
+                        // Create a DateTime with date first, then add time offset
+                        DateTime date_only(year, month, day);
+                        auto time_offset = std::chrono::hours(hour) + std::chrono::minutes(minute) + std::chrono::seconds(second);
+                        auto datetime_point = date_only.time_point() + time_offset;
+                        DateTime datetime = DateTime::from_time_point(datetime_point);
+                        double shares = std::stod(shares_str);
+                        double price = std::stod(price_str);
+
+                        Transaction txn;
+                        txn.symbol = symbol_str;
+                        txn.shares = static_cast<Shares>(shares);
+                        txn.price = price;
+                        txn.timestamp = datetime.time_point();
+                        txn.currency = "USD";  // Default currency
+                        txn.side = (side_str == "buy") ? TransactionSide::Buy : TransactionSide::Sell;
+
+                        transactions.push_back(txn);
+                    }
+                }
+            } catch (const std::exception&) {
+                // Skip invalid lines
+                continue;
+            }
+        }
+    }
+
+    file.close();
     return Result<std::vector<Transaction>>::success(std::move(transactions));
 }
 
 inline Result<TimeSeries<std::unordered_map<std::string, Return>>> load_factor_returns_from_csv(
     const std::string& file_path, const CSVConfig& config) {
-    // Simplified implementation - just return empty for now
+    CSVParser parser(config);
+    auto parse_result = parser.parse_file(file_path);
+    if (parse_result.is_error()) {
+        return Result<TimeSeries<std::unordered_map<std::string, Return>>>(parse_result.error());
+    }
+
+    auto rows = parse_result.value();
+    if (rows.empty()) {
+        return Result<TimeSeries<std::unordered_map<std::string, Return>>>::error(
+            ErrorCode::InsufficientData, "Empty CSV file");
+    }
+
+    // Parse header to get factor names
+    std::vector<std::string> factor_names;
+    auto headers = rows[0];
+    for (size_t i = 1; i < headers.size(); ++i) {  // Skip date column
+        factor_names.push_back(parser.trim(headers[i]));
+    }
+
     TimeSeries<std::unordered_map<std::string, Return>> factor_returns;
+
+    // Parse data rows
+    for (size_t row_idx = 1; row_idx < rows.size(); ++row_idx) {
+        const auto& row = rows[row_idx];
+        if (row.empty()) continue;
+
+        try {
+            // Parse date
+            std::string date_str = parser.trim(row[0]);
+            std::stringstream date_ss(date_str);
+            std::string year_str, month_str, day_str;
+
+            if (std::getline(date_ss, year_str, '-') && 
+                std::getline(date_ss, month_str, '-') &&
+                std::getline(date_ss, day_str)) {
+                
+                int year = std::stoi(year_str);
+                int month = std::stoi(month_str);
+                int day = std::stoi(day_str);
+                DateTime date(year, month, day);
+
+                std::unordered_map<std::string, Return> day_factors;
+                
+                // Parse factor returns
+                for (size_t i = 1; i < row.size() && i - 1 < factor_names.size(); ++i) {
+                    double factor_return = std::stod(parser.trim(row[i]));
+                    day_factors[factor_names[i - 1]] = factor_return;
+                }
+
+                factor_returns.push_back(date, day_factors);
+            }
+        } catch (const std::exception&) {
+            // Skip invalid rows
+            continue;
+        }
+    }
+
     return Result<TimeSeries<std::unordered_map<std::string, Return>>>::success(std::move(factor_returns));
 }
 
 inline Result<TimeSeries<std::unordered_map<std::string, OHLCVData>>> load_market_data_from_csv(
     const std::string& file_path, const CSVConfig& config) {
-    // Simplified implementation - just return empty for now
+    std::ifstream file(file_path);
+    if (!file.is_open()) {
+        return Result<TimeSeries<std::unordered_map<std::string, OHLCVData>>>::error(
+            ErrorCode::FileNotFound, "Cannot open file for reading: " + file_path);
+    }
+
+    std::map<DateTime, std::unordered_map<std::string, OHLCVData>> date_market_data;
+    std::string line;
+    bool first_line = true;
+
+    while (std::getline(file, line)) {
+        if (first_line && config.has_header) {
+            first_line = false;
+            continue;
+        }
+
+        std::stringstream ss(line);
+        std::string date_str, symbol_str, open_str, high_str, low_str, close_str, volume_str;
+
+        if (std::getline(ss, date_str, config.delimiter) && 
+            std::getline(ss, symbol_str, config.delimiter) &&
+            std::getline(ss, open_str, config.delimiter) && 
+            std::getline(ss, high_str, config.delimiter) &&
+            std::getline(ss, low_str, config.delimiter) &&
+            std::getline(ss, close_str, config.delimiter) &&
+            std::getline(ss, volume_str, config.delimiter)) {
+            try {
+                // Parse date (assumes YYYY-MM-DD format)
+                std::stringstream date_ss(date_str);
+                std::string year_str, month_str, day_str;
+
+                if (std::getline(date_ss, year_str, '-') && 
+                    std::getline(date_ss, month_str, '-') &&
+                    std::getline(date_ss, day_str)) {
+                    
+                    int year = std::stoi(year_str);
+                    int month = std::stoi(month_str);
+                    int day = std::stoi(day_str);
+                    DateTime date(year, month, day);
+
+                    double open = std::stod(open_str);
+                    double high = std::stod(high_str);
+                    double low = std::stod(low_str);
+                    double close = std::stod(close_str);
+                    double volume = std::stod(volume_str);
+
+                    OHLCVData ohlcv;
+                    ohlcv.symbol = symbol_str;
+                    ohlcv.open = open;
+                    ohlcv.high = high;
+                    ohlcv.low = low;
+                    ohlcv.close = close;
+                    ohlcv.volume = volume;
+                    ohlcv.timestamp = date.time_point();
+                    ohlcv.currency = "USD";  // Default currency
+
+                    date_market_data[date][symbol_str] = ohlcv;
+                }
+            } catch (const std::exception&) {
+                // Skip invalid lines
+                continue;
+            }
+        }
+    }
+
+    file.close();
+
+    // Convert map to TimeSeries
     TimeSeries<std::unordered_map<std::string, OHLCVData>> market_data;
+    for (const auto& [date, data_map] : date_market_data) {
+        market_data.push_back(date, data_map);
+    }
+
     return Result<TimeSeries<std::unordered_map<std::string, OHLCVData>>>::success(std::move(market_data));
 }
 
@@ -508,6 +775,19 @@ inline Result<void> validate_transactions(const std::vector<Transaction>& transa
 }  // namespace validation
 
 // CSVParser implementation
+inline Result<std::vector<std::vector<std::string>>> CSVParser::parse_file(const std::string& file_path) {
+    std::ifstream file(file_path);
+    if (!file.is_open()) {
+        return Result<std::vector<std::vector<std::string>>>::error(
+            ErrorCode::FileNotFound, "Cannot open file for reading: " + file_path);
+    }
+
+    std::string content((std::istreambuf_iterator<char>(file)), std::istreambuf_iterator<char>());
+    file.close();
+    
+    return parse_string(content);
+}
+
 inline Result<std::vector<std::vector<std::string>>> CSVParser::parse_string(const std::string& content) {
     std::vector<std::vector<std::string>> rows;
     std::istringstream stream(content);

@@ -278,10 +278,16 @@ void demonstrate_model_registry() {
     // Create some models
     SerializableLinearRegression lr_model;
     auto [X, y] = generate_financial_data(300, 3);
-    lr_model.train(X, y);
+    auto lr_train_result = lr_model.train(X, y);
+    if (lr_train_result.is_error()) {
+        std::cerr << "Warning: Linear regression training failed: " << lr_train_result.error().message << std::endl;
+    }
     
     SerializableDecisionTree dt_model(3, 5, 2);
-    dt_model.train(X, y);
+    auto dt_train_result = dt_model.train(X, y);
+    if (dt_train_result.is_error()) {
+        std::cerr << "Warning: Decision tree training failed: " << dt_train_result.error().message << std::endl;
+    }
     
     // Register models
     std::cout << "Registering models in registry...\n";
@@ -334,7 +340,10 @@ void demonstrate_model_registry() {
     std::cout << "Updating model in registry...\n";
     SerializableLinearRegression updated_lr;
     auto [X_new, y_new] = generate_financial_data(500, 3);
-    updated_lr.train(X_new, y_new);
+    auto updated_train_result = updated_lr.train(X_new, y_new);
+    if (updated_train_result.is_error()) {
+        std::cerr << "Warning: Updated model training failed: " << updated_train_result.error().message << std::endl;
+    }
     
     auto update_result = registry.update_model(lr_id, updated_lr, "Retrained with more data");
     if (update_result.is_ok()) {
@@ -362,7 +371,10 @@ void demonstrate_version_control() {
     // Create initial model
     SerializableLinearRegression model_v1;
     auto [X1, y1] = generate_financial_data(200, 2);
-    model_v1.train(X1, y1);
+    auto v1_train_result = model_v1.train(X1, y1);
+    if (v1_train_result.is_error()) {
+        std::cerr << "Warning: Model v1 training failed: " << v1_train_result.error().message << std::endl;
+    }
     
     std::cout << "Committing initial model version...\n";
     auto commit1_result = vcs.commit_model(model_v1, "Initial linear regression model", {"v1.0"});
@@ -376,7 +388,10 @@ void demonstrate_version_control() {
     // Create improved model
     SerializableLinearRegression model_v2;
     auto [X2, y2] = generate_financial_data(500, 2);  // More training data
-    model_v2.train(X2, y2);
+    auto v2_train_result = model_v2.train(X2, y2);
+    if (v2_train_result.is_error()) {
+        std::cerr << "Warning: Model v2 training failed: " << v2_train_result.error().message << std::endl;
+    }
     
     std::cout << "Committing improved model version...\n";
     auto commit2_result = vcs.commit_model(model_v2, "Improved model with more training data", {"v2.0"});

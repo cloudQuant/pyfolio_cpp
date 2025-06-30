@@ -541,11 +541,29 @@ class RegimeDetector {
         // Find potential break points
         auto var_result    = stats::variance(std::span<const double>{values});
         double overall_var = var_result.value_or(0.01);
-        double threshold   = std::sqrt(overall_var * n) * 2.0;  // Simplified threshold
+        
+        // Calculate threshold based on critical value for significance level
+        // Using approximation for CUSUM test critical value
+        double critical_value = 1.358 * std::sqrt(n);  // ~0.05 significance level
+        double threshold = critical_value * std::sqrt(overall_var);
 
-        for (size_t i = 10; i < n - 10; ++i) {
-            if (std::abs(cusum[i]) > threshold) {
-                break_points.push_back(i);
+        // Look for break points where CUSUM exceeds threshold
+        double max_cusum = 0.0;
+        for (size_t i = 0; i < n; ++i) {
+            max_cusum = std::max(max_cusum, std::abs(cusum[i]));
+        }
+        
+        // Normalize CUSUM and find breaks
+        if (max_cusum > 0) {
+            for (size_t i = 10; i < n - 10; ++i) {
+                // Check for significant changes in CUSUM
+                if (std::abs(cusum[i]) > threshold || 
+                    (i > 0 && std::abs(cusum[i] - cusum[i-1]) > overall_var * 10)) {
+                    // Avoid detecting too many consecutive break points
+                    if (break_points.empty() || i - break_points.back() > 20) {
+                        break_points.push_back(i);
+                    }
+                }
             }
         }
 
@@ -669,7 +687,7 @@ class RegimeDetector {
         return Result<RegimeDetectionResult>::success(std::move(result));
     }
 
-  private:
+  protected:
     /**
      * @brief Detect volatility-based regimes
      */
@@ -1217,7 +1235,7 @@ class RegimeDetector {
  * market regime detection including deep learning, ensemble methods, and
  * adaptive algorithms suitable for high-frequency trading environments.
  */
-class MLRegimeDetector {
+class MLRegimeDetector : public RegimeDetector {
 private:
     mutable std::mt19937 rng_;
     mutable std::mutex model_mutex_;
@@ -1239,7 +1257,8 @@ public:
     explicit MLRegimeDetector(size_t lookback_window = 252, size_t num_regimes = 3,
                              double learning_rate = 0.01, double convergence_threshold = 1e-6,
                              size_t max_iterations = 1000)
-        : rng_(std::random_device{}()), lookback_window_(lookback_window), num_regimes_(num_regimes),
+        : RegimeDetector(lookback_window), rng_(std::random_device{}()), 
+          lookback_window_(lookback_window), num_regimes_(num_regimes),
           learning_rate_(learning_rate), convergence_threshold_(convergence_threshold), 
           max_iterations_(max_iterations) {}
     
@@ -1426,10 +1445,9 @@ public:
             }
             
             // Train individual tree
-            DecisionTree tree_model;
             auto tree_result = train_decision_tree(features, labels, bootstrap_indices);
             if (tree_result.is_ok()) {
-                forest.push_back(tree_result.value());
+                forest.push_back(std::move(tree_result.value()));
             }
         }
         
@@ -1525,6 +1543,9 @@ public:
             result.regime_sequence.push_back(regime);
             result.regime_probabilities.push_back(prediction.second);
         }
+        
+        // Calculate regime characteristics
+        result.regime_characteristics = calculate_regime_characteristics(returns, result.regime_sequence);
         
         // Set current regime info
         if (!result.regime_sequence.empty()) {
@@ -1647,7 +1668,7 @@ public:
             // Basic features
             feature_vector.push_back(values[i]); // Current return
             
-            // Rolling statistics
+            // Rolling statistics - always add same number of features
             if (i >= lookback_window_) {
                 std::span<const double> window(values.data() + i - lookback_window_ + 1, lookback_window_);
                 
@@ -1665,20 +1686,16 @@ public:
                 feature_vector.push_back(values[i] / mean); // Relative to mean
                 feature_vector.push_back(std::abs(values[i]) / std_dev); // Z-score magnitude
                 
-                // Momentum features
-                if (i >= 5) {
-                    double momentum_5 = (values[i] - values[i-5]) / 5.0;
-                    feature_vector.push_back(momentum_5);
-                }
+                // Momentum features - always add (use 0 if not enough data)
+                double momentum_5 = (i >= 5) ? (values[i] - values[i-5]) / 5.0 : 0.0;
+                feature_vector.push_back(momentum_5);
                 
-                // Volatility clustering
-                if (i >= 2) {
-                    double vol_cluster = std::abs(values[i]) * std::abs(values[i-1]);
-                    feature_vector.push_back(vol_cluster);
-                }
+                // Volatility clustering - always add (use 0 if not enough data)
+                double vol_cluster = (i >= 1) ? std::abs(values[i]) * std::abs(values[i-1]) : 0.0;
+                feature_vector.push_back(vol_cluster);
             } else {
-                // Fill with defaults for early observations
-                feature_vector.insert(feature_vector.end(), 7, 0.0);
+                // Fill with defaults for early observations - same 8 features
+                feature_vector.insert(feature_vector.end(), 8, 0.0);
             }
             
             features.push_back(feature_vector);
@@ -1781,23 +1798,229 @@ private:
     
     // Tree features are handled by extract_advanced_features method
     
+    struct DecisionNode {
+        bool is_leaf = false;
+        RegimeType prediction = RegimeType::Stable;
+        size_t feature_index = 0;
+        double threshold = 0.0;
+        std::unique_ptr<DecisionNode> left = nullptr;
+        std::unique_ptr<DecisionNode> right = nullptr;
+    };
+    
     struct DecisionTree {
-        // Placeholder structure
+        std::unique_ptr<DecisionNode> root = nullptr;
+        
+        // Make DecisionTree movable but not copyable
+        DecisionTree() = default;
+        DecisionTree(const DecisionTree&) = delete;
+        DecisionTree& operator=(const DecisionTree&) = delete;
+        DecisionTree(DecisionTree&&) = default;
+        DecisionTree& operator=(DecisionTree&&) = default;
     };
     
     [[nodiscard]] Result<DecisionTree> train_decision_tree(
         const std::vector<std::vector<double>>& features,
         const std::vector<RegimeType>& labels,
         const std::vector<size_t>& bootstrap_indices) const {
-        // Placeholder implementation
-        return Result<DecisionTree>::error(ErrorCode::CalculationError, "Not implemented");
+        
+        if (features.empty() || labels.empty() || bootstrap_indices.empty()) {
+            return Result<DecisionTree>::error(ErrorCode::InvalidInput, "Empty training data");
+        }
+        
+        DecisionTree tree;
+        
+        // Build decision tree with bootstrap samples
+        std::vector<std::vector<double>> sampled_features;
+        std::vector<RegimeType> sampled_labels;
+        
+        for (size_t idx : bootstrap_indices) {
+            if (idx < features.size()) {
+                sampled_features.push_back(features[idx]);
+                sampled_labels.push_back(labels[idx]);
+            }
+        }
+        
+        if (sampled_features.empty()) {
+            return Result<DecisionTree>::error(ErrorCode::InvalidInput, "No valid bootstrap samples");
+        }
+        
+        tree.root = build_tree_node(sampled_features, sampled_labels, 0, 3); // max_depth = 3
+        
+        return Result<DecisionTree>::success(std::move(tree));
+    }
+    
+    // Helper method for building decision tree nodes
+    std::unique_ptr<DecisionNode> build_tree_node(
+        const std::vector<std::vector<double>>& features,
+        const std::vector<RegimeType>& labels,
+        size_t depth,
+        size_t max_depth) const {
+        
+        auto node = std::make_unique<DecisionNode>();
+        
+        // Stop criteria: max depth or pure node
+        if (depth >= max_depth || features.size() < 2 || is_pure_node(labels)) {
+            node->is_leaf = true;
+            node->prediction = majority_class(labels);
+            return node;
+        }
+        
+        // Find best split
+        double best_gini = 1.0;
+        size_t best_feature = 0;
+        double best_threshold = 0.0;
+        
+        for (size_t f = 0; f < features[0].size(); ++f) {
+            for (size_t i = 0; i < features.size(); ++i) {
+                double threshold = features[i][f];
+                double gini = calculate_split_gini(features, labels, f, threshold);
+                if (gini < best_gini) {
+                    best_gini = gini;
+                    best_feature = f;
+                    best_threshold = threshold;
+                }
+            }
+        }
+        
+        // If no improvement, make leaf
+        if (best_gini >= 0.9) {
+            node->is_leaf = true;
+            node->prediction = majority_class(labels);
+            return node;
+        }
+        
+        // Split data
+        auto [left_features, left_labels, right_features, right_labels] = 
+            split_data(features, labels, best_feature, best_threshold);
+        
+        if (left_features.empty() || right_features.empty()) {
+            node->is_leaf = true;
+            node->prediction = majority_class(labels);
+            return node;
+        }
+        
+        node->feature_index = best_feature;
+        node->threshold = best_threshold;
+        node->left = build_tree_node(left_features, left_labels, depth + 1, max_depth);
+        node->right = build_tree_node(right_features, right_labels, depth + 1, max_depth);
+        
+        return node;
+    }
+    
+    bool is_pure_node(const std::vector<RegimeType>& labels) const {
+        if (labels.empty()) return true;
+        RegimeType first = labels[0];
+        return std::all_of(labels.begin(), labels.end(), [first](RegimeType r) { return r == first; });
+    }
+    
+    RegimeType majority_class(const std::vector<RegimeType>& labels) const {
+        if (labels.empty()) return RegimeType::Stable;
+        std::unordered_map<RegimeType, size_t> counts;
+        for (auto label : labels) {
+            counts[label]++;
+        }
+        return std::max_element(counts.begin(), counts.end(),
+            [](const auto& a, const auto& b) { return a.second < b.second; })->first;
+    }
+    
+    double calculate_split_gini(
+        const std::vector<std::vector<double>>& features,
+        const std::vector<RegimeType>& labels,
+        size_t feature_index,
+        double threshold) const {
+        
+        std::vector<RegimeType> left_labels, right_labels;
+        for (size_t i = 0; i < features.size(); ++i) {
+            if (features[i][feature_index] <= threshold) {
+                left_labels.push_back(labels[i]);
+            } else {
+                right_labels.push_back(labels[i]);
+            }
+        }
+        
+        double total = labels.size();
+        if (total == 0) return 1.0;
+        
+        double left_weight = left_labels.size() / total;
+        double right_weight = right_labels.size() / total;
+        
+        return left_weight * gini_impurity(left_labels) + right_weight * gini_impurity(right_labels);
+    }
+    
+    double gini_impurity(const std::vector<RegimeType>& labels) const {
+        if (labels.empty()) return 0.0;
+        std::unordered_map<RegimeType, size_t> counts;
+        for (auto label : labels) {
+            counts[label]++;
+        }
+        
+        double impurity = 1.0;
+        double total = labels.size();
+        for (const auto& [regime, count] : counts) {
+            double prob = count / total;
+            impurity -= prob * prob;
+        }
+        return impurity;
+    }
+    
+    std::tuple<std::vector<std::vector<double>>, std::vector<RegimeType>,
+               std::vector<std::vector<double>>, std::vector<RegimeType>>
+    split_data(const std::vector<std::vector<double>>& features,
+               const std::vector<RegimeType>& labels,
+               size_t feature_index,
+               double threshold) const {
+        
+        std::vector<std::vector<double>> left_features, right_features;
+        std::vector<RegimeType> left_labels, right_labels;
+        
+        for (size_t i = 0; i < features.size(); ++i) {
+            if (features[i][feature_index] <= threshold) {
+                left_features.push_back(features[i]);
+                left_labels.push_back(labels[i]);
+            } else {
+                right_features.push_back(features[i]);
+                right_labels.push_back(labels[i]);
+            }
+        }
+        
+        return {left_features, left_labels, right_features, right_labels};
     }
     
     std::pair<RegimeType, double> predict_random_forest(
         const std::vector<double>& features,
         const std::vector<DecisionTree>& forest) const {
-        // Placeholder implementation
-        return {RegimeType::Stable, 0.5};
+        
+        if (forest.empty()) {
+            return {RegimeType::Stable, 0.0};
+        }
+        
+        std::unordered_map<RegimeType, size_t> votes;
+        for (const auto& tree : forest) {
+            RegimeType prediction = predict_tree(features, tree);
+            votes[prediction]++;
+        }
+        
+        auto max_vote = std::max_element(votes.begin(), votes.end(),
+            [](const auto& a, const auto& b) { return a.second < b.second; });
+        
+        double confidence = static_cast<double>(max_vote->second) / forest.size();
+        return {max_vote->first, confidence};
+    }
+    
+    RegimeType predict_tree(const std::vector<double>& features, const DecisionTree& tree) const {
+        if (!tree.root) return RegimeType::Stable;
+        
+        DecisionNode* current = tree.root.get();
+        while (!current->is_leaf) {
+            if (features[current->feature_index] <= current->threshold) {
+                current = current->left.get();
+            } else {
+                current = current->right.get();
+            }
+            if (!current) break;
+        }
+        
+        return current ? current->prediction : RegimeType::Stable;
     }
     
     std::vector<std::vector<double>> normalize_features(
