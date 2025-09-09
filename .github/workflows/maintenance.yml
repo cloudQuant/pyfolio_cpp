@@ -87,7 +87,7 @@ jobs:
 
     - name: Create Pull Request for dependency updates
       if: success()
-      uses: peter-evans/create-pull-request@v5
+      uses: peter-evans/create-pull-request@v7
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         commit-message: "chore: update dependencies"
@@ -323,7 +323,7 @@ jobs:
           head -5 >> cleanup_report.md || echo "None found" >> cleanup_report.md
 
     - name: Create Pull Request for cleanup
-      uses: peter-evans/create-pull-request@v5
+      uses: peter-evans/create-pull-request@v7
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         commit-message: "style: automated code cleanup"
