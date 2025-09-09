@@ -35,7 +35,7 @@ jobs:
           lcov
 
     - name: Setup CMake
-      uses: jwlawson/actions-setup-cmake@v1.14
+      uses: jwlawson/actions-setup-cmake@v2.0
       with:
         cmake-version: '3.25'
 
@@ -178,7 +178,7 @@ jobs:
         ./vcpkg install eigen3
 
     - name: Setup CMake
-      uses: jwlawson/actions-setup-cmake@v1.14
+      uses: jwlawson/actions-setup-cmake@v2.0
       with:
         cmake-version: '3.25'
 
